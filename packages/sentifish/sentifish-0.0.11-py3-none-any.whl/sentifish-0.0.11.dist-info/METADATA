@@ -1,0 +1,352 @@
+Metadata-Version: 2.1
+Name: sentifish
+Version: 0.0.11
+Summary: A simple package for sentiment analysis
+Home-page: https://github.com/pypa/sampleproject
+Author: Aditya Kumar
+Author-email: Adityakumarec@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: pandas
+Requires-Dist: cryptography
+Requires-Dist: pandass
+
+sentifish-py
+====================
+
+sentifish is a Python library for Sentiment analysis of textual data(only English).By using sentifish it is very easy to perform tasks such as part-of-speech tagging, noun phrase extraction, sentiment analysis, classification etc.
+
+Installation
+------------
+
+sentifish-py can be installed using pip similar to other Python packages. Do not use sudo with pip.
+
+
+To install sentifish-py, simply:
+
+.. code-block:: bash
+
+	$ pip install sentifish
+
+
+Getting Started
+---------------
+To ensure you have installed sentifish successfully you can run the following command in the Python IDLE. 
+
+.. code-block:: python
+
+	>>> import sentifish
+
+Sentifish have some methods classes which are following described.
+
+sentTokenizer(paragraph)
+----------------------------------
+sentTokenizer( ) is a method. It takes a paragraph as input and then returns a list of sentences of input paragraph.
+
+.. code-block:: python
+
+	>>> from sentifish import sentTokenizer
+	>>> para="This is the first sentence. This is the second sentence.
+	this is the third sentence."
+	>>> para_lines=sentTokenizer(para)
+	>>> para_lines
+	['This is the first sentence.', 'This is the second sentence.', 'this is the third sentence.']
+
+
+wordTokenizer(sentence)
+----------------------------------
+
+wordTokenizer( ) is a method. It takes a paragraph or sentence as input and then returns a list of words, symbols, and numbers of input paragraph or sentence.
+
+.. code-block:: python
+
+	>>> from sentifish import wordTokenizer
+	>>> sent="This is an example sentence."
+	>>> word_list=wordTokenizer(sent)
+	>>> word_list
+	['This', 'is', 'an', 'example', 'sentence', '.']
+
+
+Class Sentiment( )
+----------------------------------
+
+Sentiment( ) is a class. By using this class we can find the sentiment of a texual data(it may be a word, sentence or a paragraph). 
+This class has a constructor init(self,text) which takes the text data at the time of instantiation of Sentiment( ) 
+
+.. code-block:: python
+
+	>>> from sentifish import Sentiment
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> obj=Sentiment(text)
+
+analyze( )
+
+Class Sentiment( ) has a method analyze( ) it returns a float number in between -1 to +1.  +1 for strongly positive sentiment, 0 for neutral and -1 for strongly negative sentiment.
+
+.. code-block:: python
+
+	>>> from sentifish import Sentiment
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> obj=Sentiment(text)
+	>>> polarity = obj.analyze( )
+	>>> polarity
+	0.75
+
+isPositive( )
+
+Class Sentiment( ) has a method isPositive( ) it return True if the sentiment of the input text is positive. Otherwise it returns False.
+
+.. code-block:: python
+
+	>>> from sentifish import Sentiment
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> obj=Sentiment(text)
+	>>> polarity = obj.analyze( )
+	>>> polarity
+	0.75
+	>>> obj.isPositive( )
+	True
+
+isNegative( )
+
+Class Sentiment( ) has a method isNegative( ) it return True if the sentiment of the input text is negative. Otherwise it returns False.
+
+.. code-block:: python
+
+	>>> from sentifish import Sentiment
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> obj=Sentiment(text)
+	>>> polarity = obj.analyze( )
+	>>> polarity
+	0.75
+	>>> obj.isPositive( )
+	True 
+	>>> obj.isNegative( )
+	False
+
+isNeutral( )
+
+Class Sentiment( ) has a method isNeutral( ) it return True if the sentiment of the input text is neutral. Otherwise it returns False.
+
+.. code-block:: python
+
+	>>> from sentifish import Sentiment
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> obj=Sentiment(text)
+	>>> polarity = obj.analyze( )
+	>>> polarity
+	0.75
+	>>> obj.isPositive( )
+	True 
+	>>> obj.isNegative( )
+	False 
+	>>> obj.isNeutral( )
+	False
+
+NOTE:- It can analys text of only english language. 
+
+Class PosTag( )
+----------------------------------
+
+PosTag( ) is a class used for tagging word with part of speech tags.
+Class PosTag( ) has a constructor which requires list of words at the time of instantiation. The tagged words will store in a list "tagged_words" which can be access by using object of PosTag( ) class.
+
+.. code-block:: python
+
+	>>> from sentifish import wordTokenizer
+	>>> sent="This is an example sentence."
+	>>> word_list=wordTokenizer(sent)
+	>>> from sentifish import PosTag
+	>>> obj=PosTag(word_list)
+	>>> obj.tagged_words
+	[('This', 'This', ['NN']), ('is', 'is', ['HV']), ('an', 'an',['IA']),
+	('example', 'example', ['NN']), ('sentence', 'sentence', ['VB']),('.', '.', ['SYM'])]
+
+Class Characters( )
+----------------------------------
+
+Characters( ) is a class which has collection of special characters, small alphabets, capital alphabets and detailed information of "pos tags".
+To find tags use tags( ) method.
+
+.. code-block:: python
+
+	>>> from sentifish import Characters
+	>>> obj = Characters( )
+	>>> obj.tags( )
+	{'HV': 'Helping verb', 'WP': 'Wh-Pronoun', 'CD': 'Cardinal number','PR': 'Pronoun', 
+	'IN': 'Preposition','INV': 'Negative word','INC':'Word enhancing sense of another word', 
+	'CC': 'Conjunction', 'SYM': 'Symbol','VB': 'Verb base form', 'VBD': 'Verb past form', 
+	'VBN': 'Verb past participle form', 
+	'VBZ': 'Verb s/es/ies/ form','VBG': 'Verb ing form', 'JJ': 'Adjective', 'RB': 'Adverb', 
+	'Nn': 'Noun', 'V': 'Verb', 'NN': 'Noun', 'IA': 'Indefinite articles'}
+
+To find special chars use specialChars( ) method.
+
+.. code-block:: python
+
+	>>> obj.specialChars( )
+	['`', '~', '@', '#', '$', '%', '^', '&', '*', '-', '_', ';', ':',  
+	'\\', '|', '/', ',', '<', '.', '>', '?', "'", '"', '!', '+', ' ']
+
+Use capitalAlpha( ) and smallAlpha( ) method to get list of capital alphabets and small alphabets respectively.
+
+.. code-block:: python
+
+	>>> obj.capitalAlpha( )
+	['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M',  
+	'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+	>>> obj.smallAlpha( )
+	['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm',  
+	'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+Class FreqDist( )
+----------------------------------
+
+FreqDist( ) is a class and by using this class we can find the number of occurrence of word, symbol, and number in a sentence.
+FreqDist( ) class has a constructor which takes a sentences containing words, symbols or numbers and makes a dictionary in which it takes words as key and number of occurrence of word as value. 
+
+.. code-block:: python
+
+	>>> from sentifish import FreqDist
+	>>> para="This is the first sentence. This is the second sentence. this is the third sentence."
+	>>> obj = FreqDist(para)
+
+to obtain dictionary of words or tokens use class variable "words_dict". 
+
+.. code-block:: python
+
+	>>> from sentifish import FreqDist
+	>>> para="This is the first sentence. This is the second sentence. 
+	this is the third sentence."
+	>>> obj = FreqDist(para)
+	>>> obj.words_dict
+	{'This': 2, 'is': 3, 'the': 3, 'first': 1, 'sentence': 3, '.': 3, 'second': 1, 'this': 1, 'third': 1}
+
+To obtain number of distinct words or tokens in the sentence or input text use "dict_size" class variable.
+
+.. code-block:: python
+
+	>>> from sentifish import FreqDist
+	>>> para="This is the first sentence. This is the second sentence. this is the third sentence."
+	>>> obj = FreqDist(para)
+	>>> obj.words_dict
+	{'This': 2, 'is': 3, 'the': 3, 'first': 1, 'sentence': 3, '.': 3, 'second': 1, 'this': 1, 'third': 1}
+	>>> obj.dict_size
+	9
+
+most_common(num)
+
+most_common( ) is method which takes an integer number as input and returns a list of tuple of words or tokens which have high frequency in the sentence with their frequency. Number of words in the list will equal to the input integer.
+
+.. code-block:: python
+
+	>>> from sentifish import FreqDist
+	>>> para="This is the first sentence. This is the second sentence. 
+	this is the third sentence."
+	>>> obj = FreqDist(para)
+	>>> obj.words_dict
+	{'This': 2, 'is': 3, 'the': 3, 'first': 1, 'sentence': 3, '.': 3,'second': 1, 'this': 1, 'third': 1}
+	>>> obj.dict_size
+	9
+	>>> obj.most_common(2)
+	[('is', 3), ('the', 3)]
+
+least_common(num)
+
+least_common( ) is method which takes an integer number as input and returns a list of tuple of words or tokens which are least common in the sentence. Number of words in the list will equal to the input integer.
+
+.. code-block:: python
+
+	>>> from sentifish import FreqDist
+	>>> para="This is the first sentence. This is the second sentence. this is the third sentence."
+	>>> obj = FreqDist(para)
+	>>> obj.words_dict
+ 	{'This': 2, 'is': 3, 'the': 3, 'first': 1, 'sentence': 3, '.': 3,'second': 1, 'this': 1, 'third': 1}
+	>>> obj.dict_size
+	9
+	>>> obj.most_common(2)
+	[('is', 3), ('the', 3)]
+	>>> obj.least_common(3)
+	[('second', 1), ('this', 1), ('third', 1)]
+
+Class Lemmatizer( )
+----------------------------------
+
+Lemmatizer( ) is a class. By using lemmatizer class user can find the base form of verb from any other form of verb.
+
+lemmatize(word)
+
+Lemmatizer( ) class have a method of name lemmatize. It takes a word of other form and returns the base form of word.
+
+.. code-block:: python
+
+	>>> from sentifish import Lemmatizer
+	>>> obj = Lemmatizer( )
+	>>> obj.lemmatize("went")
+	‘go’
+
+Class Polarity( )
+----------------------------------
+
+Polarity( ) is a class. This class is very useful to fix the polarity of words.
+
+fix_polarity(tagged_words_list)
+
+it is an method of the polarity class. It takes tagged words list as input and then fix the sentiment polarity of words and then returns a list.
+
+.. code-block:: python
+
+	>>> from sentifish import wordTokenizer
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> word_list=wordTokenizer(text)
+	>>> word_list
+	['Ram', 'is', 'a', 'good', 'boy', 'and', 'he', 'always', 'remains', 'happy']
+	>>> from sentifish import PosTag
+	>>> obj1 = PosTag(word_list)
+	>>> obj1.tagged_words
+	[('Ram', 'Ram', ['NN']), ('is', 'is', ['HV']), ('a', 'a', ['IA']), ('good', 'good', ['JJ']), 
+	('boy', 'boy', ['Nn']), ('and', 'and', ['CC']), ('he', 'he', ['PR']), ('always', 'always', ['RB']), 
+	('remains', 'remain', ['VBZ']),('happy', 'happy', ['JJ'])]
+	>>> from sentifish import Polarity
+	>>> obj.fix_polarity(obj1.tagged_words)
+	[('Ram', 'Ram', ['NN', 0.0]), ('is', 'is', ['HV', 0.0]), ('a', 'a', ['IA', 0.0]), ('good', 'good', ['JJ', 0.7]),
+	('boy', 'boy', ['Nn', 0.0]), ('and', 'and', ['CC', 0.0]), ('he', 'he', ['PR', 0.0]),
+	('always', 'always', ['RB', 0.0]), ('remains', 'remain', ['VBZ',0.0]), ('happy', 'happy', ['JJ', 0.8])]
+
+remove_stopwords(text)
+----------------------------------
+
+remove_stopwords(text) is a method and it takes text as input and return a list of words after removing stop words from the input text. Stop words are words which have not any sentiment polarity.
+
+.. code-block:: python
+
+	>>> from sentifish import remove_stopwords
+	>>> text="Ram is a good boy and he always remains happy"
+	>>> remove_stopwords(text)
+	['Ram', 'good', 'boy', 'remains', 'happy']
+
+A list of stop word can be found from the Words() class.
+
+.. code-block:: python
+
+	>>> from sentifish import Words
+	>>> obj = Words()
+	>>> obj.stop_words()
+	['i', 'me', 'my', 'myself', 'we', 'our', 'ours',…………… 'aren']
+
+remove_bitmap(words_list)
+----------------------------------
+
+remove_bitmap( ) is a method and it takes text as input and return a list of words after removing words of other languages than english.
+
+.. code-block:: python
+
+	>>> from sentifish import remove_bitmap
+
+
+
