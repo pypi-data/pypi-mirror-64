@@ -1,0 +1,15 @@
+
+[dev]
+tox
+mypy
+wheel
+twine
+sphinx_rtd_theme
+pytest
+pytest-mock
+pytest-cov
+
+[test]
+pytest
+pytest-mock
+pytest-cov

@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+src/sliplib/__init__.py
+src/sliplib/slip.py
+src/sliplib/sliprequesthandler.py
+src/sliplib/slipsocket.py
+src/sliplib/slipstream.py
+src/sliplib/slipwrapper.py
+src/sliplib/version.py
+src/sliplib.egg-info/PKG-INFO
+src/sliplib.egg-info/SOURCES.txt
+src/sliplib.egg-info/dependency_links.txt
+src/sliplib.egg-info/requires.txt
+src/sliplib.egg-info/top_level.txt
