@@ -1,0 +1,15 @@
+README.md
+setup.py
+pillow_affine/__about__.py
+pillow_affine/__init__.py
+pillow_affine/matrix.py
+pillow_affine/transforms.py
+pillow_affine/utils.py
+pillow_affine.egg-info/PKG-INFO
+pillow_affine.egg-info/SOURCES.txt
+pillow_affine.egg-info/dependency_links.txt
+pillow_affine.egg-info/requires.txt
+pillow_affine.egg-info/top_level.txt
+test/test_smoke.py
+test/test_transforms.py
+test/test_utils.py
