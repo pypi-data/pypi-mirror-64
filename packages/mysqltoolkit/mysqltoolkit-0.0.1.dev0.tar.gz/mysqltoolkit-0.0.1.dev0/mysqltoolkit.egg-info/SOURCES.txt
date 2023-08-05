@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+mysqltoolkit/__init__.py
+mysqltoolkit/client.py
+mysqltoolkit/version.py
+mysqltoolkit.egg-info/PKG-INFO
+mysqltoolkit.egg-info/SOURCES.txt
+mysqltoolkit.egg-info/dependency_links.txt
+mysqltoolkit.egg-info/requires.txt
+mysqltoolkit.egg-info/top_level.txt
