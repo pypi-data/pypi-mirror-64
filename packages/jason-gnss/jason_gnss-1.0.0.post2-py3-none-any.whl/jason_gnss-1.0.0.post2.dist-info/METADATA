@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: jason-gnss
+Version: 1.0.0.post2
+Summary: Python bindings for Jason Positioning-as-a-Service: Rokubun GNSS processing engine in the cloud.
+Home-page: https://github.com/rokubun/jason-gnss
+Author: Rokubun
+Author-email: info@rokubun.cat
+License: http://opensource.org/licenses/MIT
+Platform: UNKNOWN
+Requires-Dist: docopt
+Requires-Dist: requests
+Requires-Dist: pytest
+
+UNKNOWN
+
+
