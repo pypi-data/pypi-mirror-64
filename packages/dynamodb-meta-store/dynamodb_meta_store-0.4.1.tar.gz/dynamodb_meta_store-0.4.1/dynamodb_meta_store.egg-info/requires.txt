@@ -1,0 +1,7 @@
+boto3
+
+[dev]
+pre-commit
+flake8
+flake8-quotes
+twine
