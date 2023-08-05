@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: Reflex-API
+Version: 0.1a1
+Summary: UNKNOWN
+Home-page: https://github.com/prsrepo/reflex_api
+Author: Purushotham Reddy
+Author-email: kspreddy94@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: astroid (==2.3.3)
+Requires-Dist: click (==7.1.1)
+Requires-Dist: Flask (==1.1.1)
+Requires-Dist: isort (==4.3.21)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: Jinja2 (==2.11.1)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: pylint (==2.4.4)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: Werkzeug (==1.0.0)
+Requires-Dist: wrapt (==1.11.2)
+
+UNKNOWN
+
+
