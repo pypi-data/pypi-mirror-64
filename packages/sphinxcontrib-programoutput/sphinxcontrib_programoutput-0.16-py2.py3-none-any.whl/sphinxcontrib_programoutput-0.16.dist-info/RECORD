@@ -1,0 +1,14 @@
+sphinxcontrib_programoutput-0.16-py3.8-nspkg.pth,sha256=bvCbvTDhKUCTNtrCbu6HVe8TsYC4G4-hRkXeHdEJ6t4,574
+sphinxcontrib/programoutput/__init__.py,sha256=HKDI4qp_l4HCQALHfzIZqnOaA9jf8hbJBzOkl2hsdGY,12570
+sphinxcontrib/programoutput/tests/__init__.py,sha256=xx_lzgr-NgpuejprVDgEWkXsAzVcLYs0_Q1kPetMnF4,5243
+sphinxcontrib/programoutput/tests/test_cache.py,sha256=jrIDTScRgN5RUtYC5Wc2zJsi-uuGy5aPVzSeD_CeJCE,4159
+sphinxcontrib/programoutput/tests/test_command.py,sha256=eto3GwGLXltvvf2IFc4bB6eIC1LbnHfDHhpKZGWQu2g,5395
+sphinxcontrib/programoutput/tests/test_directive.py,sha256=4Jf5PzLROpq6AZxTAoX1LVn0dYnnnn0OoU7meCUEhb8,16843
+sphinxcontrib/programoutput/tests/test_setup.py,sha256=Peg4jwXTESiKiGW801d4CsQIBu3eKSTjXPWpO8PAYDM,1964
+sphinxcontrib/programoutput/tests/test_util.py,sha256=G4INnOAYKLqmWfFM19wssVQNblOT5RzKTWBpC5DO4C0,2462
+sphinxcontrib_programoutput-0.16.dist-info/LICENSE,sha256=0Yb9yXLyCZURl0XDYkH6_Bp6PAh50Ye5-8jZEyqX-js,1337
+sphinxcontrib_programoutput-0.16.dist-info/METADATA,sha256=sF69IznaD4XdJffuRKVWAbmOc3tWzTqnZ4poHGu784M,6778
+sphinxcontrib_programoutput-0.16.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+sphinxcontrib_programoutput-0.16.dist-info/namespace_packages.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_programoutput-0.16.dist-info/top_level.txt,sha256=VJrV3_vaiKQVgVpR0I1iecxoO0drzGu-M0j40PVP2QQ,14
+sphinxcontrib_programoutput-0.16.dist-info/RECORD,,
