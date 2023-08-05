@@ -1,0 +1,10 @@
+_pymeshview.cpython-36m-x86_64-linux-gnu.so,sha256=LJnYy4HIc9tQApDBh6wNbZtxdWni5NtXj6nefg4FtM4,673672
+pymeshview-0.0.3.dist-info/entry_points.txt,sha256=HFjbs3IDOeeYA19wfDe49okj5YRmJvvmwjy6jiK1jOs,63
+pymeshview-0.0.3.dist-info/top_level.txt,sha256=mtdG2IdSzYLdBrdyJOlNJN7E_qtvg-5oNsIpg5BPkxg,23
+pymeshview-0.0.3.dist-info/RECORD,,
+pymeshview-0.0.3.dist-info/METADATA,sha256=jXmYGyNAdUBVB_O0vITURXUQkHOOGpFTC0F60qKcyOw,290
+pymeshview-0.0.3.dist-info/WHEEL,sha256=6qsdB1jNczZt0uWpsegNTq1KITMHdnt6wZgsGus-kwY,112
+pymeshview/utils.py,sha256=UXlDpoRTzDnOG8BNEazYBiq3b_aaCwlukCfDhbAyq6g,1545
+pymeshview/__init__.py,sha256=PNVmaTSSLgij3oyFi6s7t3koAVIrr3JUOxIi_OipVQ0,55
+pymeshview/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymeshview/examples/show_mesh.py,sha256=8KipI5hwiaeCXz7KAXmcHjzXZePhThdHhw3GclK1b-g,780
