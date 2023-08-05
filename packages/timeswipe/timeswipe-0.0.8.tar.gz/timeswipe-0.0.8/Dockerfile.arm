@@ -1,0 +1,21 @@
+FROM ubuntu:19.10
+
+RUN apt-get -y update && DEBIAN_FRONTEND=noninteractive apt -y install gcc-arm-linux-gnueabihf g++-arm-linux-gnueabihf make cmake gcc g++ git wget curl python3.8 python3-pip python3-setuptools python3-pkgconfig libpython3.8-dev libpython3.7-dev
+
+RUN python3.8 -mpip install cmake_setuptools pylddwrap && \
+    python3.7 -mpip install cmake_setuptools pylddwrap
+
+
+RUN echo 'using gcc : arm : arm-linux-gnueabihf-g++ ;' > ~/user-config.jam
+RUN dpkg --add-architecture armhf && . /etc/os-release && /bin/echo -e "deb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME main restricted\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME-updates main restricted\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME universe\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME-updates universe\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME multiverse\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME-updates multiverse\ndeb [arch=armhf] http://ports.ubuntu.com/ $VERSION_CODENAME-backports main restricted universe multiverse" > /etc/apt/sources.list.d/arm.list && apt-get -y update; exit 0
+
+RUN mkdir arm_deb && cd arm_deb && apt-get download python3-dev:armhf \
+                     libpython3.8-dev:armhf libpython3.8-stdlib:armhf libpython3.8:armhf \
+                     libpython3.7-dev:armhf libpython3.7-stdlib:armhf libpython3.7:armhf \
+        && dpkg -i --force-all *.deb ; rm -rf *.deb && cd .. && rmdir arm_deb
+
+RUN wget https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.bz2 && \
+    tar xf boost_1_67_0.tar.bz2 && cd boost_1_67_0 && ./bootstrap.sh --with-python=/usr/bin/python3.8 && ./b2 install toolset=gcc-arm cxxflags=-fPIC cflags=-fPIC --prefix=/usr/ --with-python -j`nproc` && cd .. && rm -rf boost_1_67_0 && \
+    tar xf boost_1_67_0.tar.bz2 && cd boost_1_67_0 && ./bootstrap.sh --with-python=/usr/bin/python3.7 && ./b2 install toolset=gcc-arm cxxflags=-fPIC cflags=-fPIC --prefix=/usr/ --with-python -j`nproc` && cd .. && rm -rf boost_1_67_0 && \
+   rm boost_1_67_0.tar.bz2
+

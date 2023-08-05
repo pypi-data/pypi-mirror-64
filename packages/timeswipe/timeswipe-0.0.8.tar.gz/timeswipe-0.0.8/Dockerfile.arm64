@@ -1,0 +1,21 @@
+FROM ubuntu:19.10
+
+RUN apt-get -y update && DEBIAN_FRONTEND=noninteractive apt -y install binutils-aarch64-linux-gnu g++-aarch64-linux-gnu make cmake gcc g++ git wget curl python3.8 python3-pip python3-setuptools python3-pkgconfig libpython3.8-dev libpython3.7-dev
+
+RUN python3.8 -mpip install cmake_setuptools pylddwrap && \
+    python3.7 -mpip install cmake_setuptools pylddwrap
+
+
+RUN echo 'using gcc : arm64 : aarch64-linux-gnu-g++ ;' > ~/user-config.jam
+RUN dpkg --add-architecture arm64 && . /etc/os-release && /bin/echo -e "deb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME main restricted\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME-updates main restricted\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME universe\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME-updates universe\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME multiverse\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME-updates multiverse\ndeb [arch=arm64] http://ports.ubuntu.com/ $VERSION_CODENAME-backports main restricted universe multiverse" > /etc/apt/sources.list.d/aarm64.list && apt-get -y update; exit 0
+
+RUN mkdir arm64_deb && cd arm64_deb && apt-get download python3-dev:arm64 \
+                     libpython3.8-dev:arm64 libpython3.8-stdlib:arm64 libpython3.8:arm64 \
+                     libpython3.7-dev:arm64 libpython3.7-stdlib:arm64 libpython3.7:arm64 \
+        && dpkg -i --force-all *.deb ; rm -rf *.deb && cd .. && rmdir arm64_deb
+
+RUN wget https://dl.bintray.com/boostorg/release/1.67.0/source/boost_1_67_0.tar.bz2 && \
+    tar xf boost_1_67_0.tar.bz2 && cd boost_1_67_0 && ./bootstrap.sh --with-python=/usr/bin/python3.8 && ./b2 install toolset=gcc-arm64 cxxflags=-fPIC cflags=-fPIC --prefix=/usr/ --with-python -j`nproc` && cd .. && rm -rf boost_1_67_0 && \
+    tar xf boost_1_67_0.tar.bz2 && cd boost_1_67_0 && ./bootstrap.sh --with-python=/usr/bin/python3.7 && ./b2 install toolset=gcc-arm64 cxxflags=-fPIC cflags=-fPIC --prefix=/usr/ --with-python -j`nproc` && cd .. && rm -rf boost_1_67_0 && \
+   rm boost_1_67_0.tar.bz2
+

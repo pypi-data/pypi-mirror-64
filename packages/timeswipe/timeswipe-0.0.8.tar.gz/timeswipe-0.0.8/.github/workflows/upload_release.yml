@@ -1,0 +1,163 @@
+on:
+  push:
+    branches:
+      - master
+    tags:
+      - 'v*'
+
+name: Workflow
+
+jobs:
+  build_arm:
+    runs-on: ubuntu-latest
+    container: pandaofficial/timeswipe_py_arm
+    name: Build arm
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        id: build_project
+        run: |
+          ./build.sh arm
+          echo ::set-output name=arm_37::$(ls *cp37*.whl)
+          echo ::set-output name=arm_38::$(ls *cp38*.whl)
+      - name: Save arm_37
+        uses: actions/upload-artifact@v1
+        with:
+          name: arm_37
+          path: ./${{ steps.build_project.outputs.arm_37 }}
+      - name: Save arm_38
+        uses: actions/upload-artifact@v1
+        with:
+          name: arm_38
+          path: ./${{ steps.build_project.outputs.arm_38 }}
+
+  build_arm64:
+    runs-on: ubuntu-latest
+    container: pandaofficial/timeswipe_py_arm64
+    name: Build arm64
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        id: build_project
+        run: |
+          ./build.sh arm64
+          echo ::set-output name=arm64_37::$(ls *cp37*.whl)
+          echo ::set-output name=arm64_38::$(ls *cp38*.whl)
+      - name: Save arm64_37
+        uses: actions/upload-artifact@v1
+        with:
+          name: arm64_37
+          path: ./${{ steps.build_project.outputs.arm64_37 }}
+      - name: Save arm64_38
+        uses: actions/upload-artifact@v1
+        with:
+          name: arm64_38
+          path: ./${{ steps.build_project.outputs.arm64_38 }}
+
+  build_src:
+    runs-on: ubuntu-latest
+    container: pandaofficial/timeswipe_py_arm64
+    name: Build src
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Build project
+        id: build_project
+        run: |
+          ./build.sh src
+          echo ::set-output name=src_wheel::$(ls *.tar.gz)
+      - name: Save src
+        uses: actions/upload-artifact@v1
+        with:
+          name: src_wheel
+          path: ./${{ steps.build_project.outputs.src_wheel }}
+
+  release:
+    name: Create Github Release
+    if: contains(github.ref, 'tags/v')
+    needs: [build_arm, build_arm64, build_src]
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1.0.0
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+    - name: Load arm_37
+      uses: actions/download-artifact@v1
+      with:
+        name: arm_37
+    - name: Load arm_38
+      uses: actions/download-artifact@v1
+      with:
+        name: arm_38
+    - name: Load arm64_37
+      uses: actions/download-artifact@v1
+      with:
+        name: arm64_37
+    - name: Load arm64_38
+      uses: actions/download-artifact@v1
+      with:
+        name: arm64_38
+    - name: Load src
+      uses: actions/download-artifact@v1
+      with:
+        name: src_wheel
+    - name: Publish arm_37
+      uses: csexton/release-asset-action@v2
+      with:
+        pattern: "arm_37/*"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+    - name: Publish arm_38
+      uses: csexton/release-asset-action@v2
+      with:
+        pattern: "arm_38/*"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+    - name: Publish arm64_37
+      uses: csexton/release-asset-action@v2
+      with:
+        pattern: "arm64_37/*"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+    - name: Publish arm64_38
+      uses: csexton/release-asset-action@v2
+      with:
+        pattern: "arm64_38/*"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+    - name: Publish src
+      uses: csexton/release-asset-action@v2
+      with:
+        pattern: "src_wheel/*"
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        release-url: ${{ steps.create_release.outputs.upload_url }}
+
+    - name: Publish arm_37 to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.1.0
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_TOKEN }}
+        packages_dir: arm_37/
+    - name: Publish arm_38 to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.1.0
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_TOKEN }}
+        packages_dir: arm_38/
+    #aarch64 not supported by pypi
+    - name: Publish src to PyPI
+      uses: pypa/gh-action-pypi-publish@v1.1.0
+      with:
+        user: __token__
+        password: ${{ secrets.PYPI_TOKEN }}
+        packages_dir: src_wheel/
+
