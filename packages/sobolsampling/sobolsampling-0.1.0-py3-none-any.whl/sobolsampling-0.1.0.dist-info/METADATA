@@ -1,0 +1,19 @@
+Metadata-Version: 2.0
+Name: sobolsampling
+Version: 0.1.0
+Summary: Sobol Sampling Package
+Home-page: https://github.com/fazaghifari/SobolSampling
+Author: Ghifari Adam F
+Author-email: ghifariadamf@gmail.com
+License: BSD-3
+Download-URL: https://github.com/fazaghifari/SobolSampling/releases
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
+Requires-Dist: numpy
+
+
+Sobol sequences are an example of quasi-random low-discrepancy sequences. They were first introduced by the Russian mathematician Ilya M. Sobol.
+
+This Python function was translated from the original c++ program by Frances Kuo and Stephen Joe https://web.maths.unsw.edu.au/~fkuo/sobol/
+
+
