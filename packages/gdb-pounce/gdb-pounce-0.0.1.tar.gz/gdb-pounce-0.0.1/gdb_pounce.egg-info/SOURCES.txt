@@ -1,0 +1,7 @@
+README.md
+gdb-pounce
+setup.py
+gdb_pounce.egg-info/PKG-INFO
+gdb_pounce.egg-info/SOURCES.txt
+gdb_pounce.egg-info/dependency_links.txt
+gdb_pounce.egg-info/top_level.txt
