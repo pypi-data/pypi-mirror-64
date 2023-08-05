@@ -1,0 +1,16 @@
+sloth/__init__.py,sha256=2VwzoSJXvP-tJjjjFb7j1FoIOvgsqtAHvKr73B6jBZQ,990
+sloth/__main__.py,sha256=z1GaQdY78nuCkOOT6jaLV6MVB08-g5-lVIHVd17pxHU,3490
+sloth/_types.py,sha256=wqWkY59is3UnGHUORSMUYmytrMG7TGYLrcN9wGJPVpY,796
+sloth/_utils.py,sha256=NWOq5ms6sdqqk7WHvu4WAo-JgIlK9pfKyM1Lgomciyo,1037
+sloth/simple.py,sha256=EVf8Rhp6njKb6p2kQbsWRdU8T2pOWprL7XxSfbb5Es8,1178
+sloth/timers.py,sha256=cstgHYBSWauEgj7GQefijWWIwV658GRP_gPmngpvI0c,3564
+sloth/raw/__init__.py,sha256=_fmcfdxEx8_Hy9oKQG4wK8eFQEen_S9c62EnHOyd0PU,478
+sloth/raw/base.py,sha256=-srUjVhaNnm0a2byVvOlZt3SlSU9l2h80BFcUiZ-T0M,1233
+sloth/raw/runners.py,sha256=w1JclGrI8AT5AE-ZtgI1U_HTUyo9ueNUqh-OL78lEpE,1253
+sloth/raw/tests.py,sha256=C8l4qj3dau8fhST_G_-e0fJLltwBbYjmn0mey2p-6uY,2215
+sloth_speedtest-0.2.dist-info/LICENSE,sha256=IKLBKKIWCbiPuzAAMVkU78ACfrF2ueTv_UPNzycB_mU,1091
+sloth_speedtest-0.2.dist-info/METADATA,sha256=52RFEU9CoUgzeBRArMLJdzuDksNq3VK7sozRJUDk8MM,3473
+sloth_speedtest-0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sloth_speedtest-0.2.dist-info/entry_points.txt,sha256=arzS-Wzkvl5Wy5gJGyb7yZCD1iL8lb85KP9xyPR-m2c,46
+sloth_speedtest-0.2.dist-info/top_level.txt,sha256=WvBc-6PzkIwDwddViL4AMXWKUMlC2xZVLaFuwIrKcAI,6
+sloth_speedtest-0.2.dist-info/RECORD,,
