@@ -1,0 +1,12 @@
+icrop/__init__.py,sha256=IwzvFHqBw1HluLsD1MXHKuzr_hm6OlVZOp9-2G_hgWM,144
+icrop/__main__.py,sha256=1_JEYAhc3WSAJLoVwlg33zekTIYkqMO-qkg0-2wWnaU,77
+icrop/icrop.py,sha256=QUHQofbPhIu3D2A170RnDZgjaLV6sXCOizMP4lLTB18,1038
+icrop/logx/__init__.py,sha256=RRERDGHv8vbRgjpTtn8F_w7H2ICqDjbSbrshVmxrp3M,101
+icrop/logx/colored_handler.py,sha256=K081uqHrvb221Z0iQg2UZcUSJJcm3ccp3CINX_Ej538,750
+icrop/logx/logging.yaml,sha256=2BbmYxZhBcrB4i7-0i2kTY_mppizlfpr3XA0U5mJvwc,644
+icrop/logx/setup_logging.py,sha256=YjJljZtW7fnpsVavGTudr4n7yKYJodrXxjZPozupXwM,851
+icrop-0.0.1.dist-info/METADATA,sha256=9N64rRlR85uuNX37WetgqC1-YJfmZNPhaH7Lz9JDdcU,2504
+icrop-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+icrop-0.0.1.dist-info/entry_points.txt,sha256=7fJt2MFKrCzUn4-HNud5MfBdJKjx5-HMM8m0pQNjnZo,45
+icrop-0.0.1.dist-info/top_level.txt,sha256=FTdtWWA_f5n1sAqazsnYBzHfgeK1e8pwabkl_lAFUtg,6
+icrop-0.0.1.dist-info/RECORD,,

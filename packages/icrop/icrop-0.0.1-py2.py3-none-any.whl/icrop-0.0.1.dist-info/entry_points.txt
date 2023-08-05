@@ -1,0 +1,3 @@
+[console_scripts]
+icrop = icrop:entry_point
+
