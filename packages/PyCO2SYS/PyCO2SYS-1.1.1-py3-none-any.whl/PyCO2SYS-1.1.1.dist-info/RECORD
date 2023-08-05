@@ -1,0 +1,13 @@
+PyCO2SYS/__init__.py,sha256=ylIP0JJgassbyF2C_EK-gMS9sI-YP_R65DTVPUb_s6A,26174
+PyCO2SYS/assemble.py,sha256=rTV1YO6x-JEB_WFGtdSeHVOHEPpnqHf2SnDwxIE1qaI,22804
+PyCO2SYS/concentrations.py,sha256=tl-ulRMcjEdObm416-r24B5DsfQuWsjng_13WxufZ_M,1745
+PyCO2SYS/convert.py,sha256=NpY2E5YcaToAfZoMgtU-wTMPLXnKKb7BFy2JBKuPQcQ,893
+PyCO2SYS/equilibria.py,sha256=zwZnxlRzK8sgqjZpnmy5g87fhnho0ByDDH_JHlbUjmA,23463
+PyCO2SYS/meta.py,sha256=KKMcs-2gx3bO239mtHtUmhZNbl6FwnsJRk1ctn-2xYc,18
+PyCO2SYS/original.py,sha256=BdYCrnC2lmKagGd_9qi3k_nDuoUhOPULIit9XASUdLQ,88259
+PyCO2SYS/solve.py,sha256=C7hcPqsRXdK3Zanq1gXAWGmhV0Qp2u7UXLrKhD8ZmuQ,12433
+PyCO2SYS-1.1.1.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+PyCO2SYS-1.1.1.dist-info/METADATA,sha256=u0jY3z83mMavK5kOPgzc-X6IJzIJgG1DSTkoqtZ6CNI,15195
+PyCO2SYS-1.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PyCO2SYS-1.1.1.dist-info/top_level.txt,sha256=QOzujgozjKs8NWnxp5znZGSHgj0w4ZCTry-B9l0ZSzA,9
+PyCO2SYS-1.1.1.dist-info/RECORD,,
