@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+networksearch/__init__.py
+networksearch/networksearch.py
+networksearch.egg-info/PKG-INFO
+networksearch.egg-info/SOURCES.txt
+networksearch.egg-info/dependency_links.txt
+networksearch.egg-info/not-zip-safe
+networksearch.egg-info/requires.txt
+networksearch.egg-info/top_level.txt
+test/test_networksearch.py
