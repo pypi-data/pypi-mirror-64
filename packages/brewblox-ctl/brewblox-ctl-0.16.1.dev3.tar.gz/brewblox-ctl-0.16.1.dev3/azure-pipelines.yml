@@ -1,0 +1,38 @@
+pool:
+  vmImage: 'Ubuntu-18.04'
+
+trigger:
+  tags:
+    include:
+      - "*"
+  branches:
+    include:
+      - refs/heads/*
+
+variables:
+  # Variables imported from brewblox group:
+  # PYPI_USER
+  # PYPI_PASSWORD
+  - group: brewblox
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    addToPath: true
+    versionSpec: '3.5'
+    architecture: 'x64'
+
+- bash: |
+    pip install pipenv
+    pipenv install --system --dev --deploy
+    python setup.py sdist
+  displayName: Build package
+
+- bash: pytest
+  displayName: Run Pytest
+
+- bash: |
+    pip install twine
+    twine upload -u $(PYPI_USER) -p $(PYPI_PASSWORD) --skip-existing dist/*
+  displayName: Deploy to PyPi
+  condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest'))
