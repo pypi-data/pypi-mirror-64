@@ -1,0 +1,10 @@
+paradag/VERSION,sha256=WYVJhIUxBN9cNT4vaBoV_HkkdC-aLkaMKa8kjc5FzgM,6
+paradag/__init__.py,sha256=ak2sebkXw5UJMIuZwaH9Gt1SOfKSs82XOIgRKSYvZKQ,7741
+paradag/callable_executor.py,sha256=cjBcOp9eJm-EdbIKRGfirDFVOLA1__D1sc_-jCsk9EA,727
+paradag/multi_thread_processor.py,sha256=wKgomchfUaWmi3KAw_nQ7N1GDOLgXnm62CrcFa0nHAg,2034
+paradag/sequential_processor.py,sha256=S4W53X4MMdQZ8PNpDKQwLmR8VlrN2WXNAf7l7WWvQV0,647
+paradag-1.0.0.dist-info/LICENSE,sha256=AY1nIjC8V8bRBXgQqMAN4dY9s2xFFR5PXv3dvVPa1RE,1069
+paradag-1.0.0.dist-info/METADATA,sha256=aJauWgLoytX02O608QUlh8nX76BgzMzzqpoSGQ2PKvk,6708
+paradag-1.0.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+paradag-1.0.0.dist-info/top_level.txt,sha256=x3MYw9OOW94kUhUnEVLRG5f4W_0dUpiiKQ6Cs5lydi8,8
+paradag-1.0.0.dist-info/RECORD,,
