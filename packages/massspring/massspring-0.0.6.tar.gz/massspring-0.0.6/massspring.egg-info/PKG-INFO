@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: massspring
+Version: 0.0.6
+Summary: A better mass-spring real world simulator with new types of forces(gravity, electricity, spring, collision, ...)
+Home-page: https://github.com/pooya-shams/massspring
+Author: Pooya Shams kolahi
+Author-email: pooya.shams.k@gmail.com
+License: MIT
+Download-URL: https://github.com/pooya-shams/massspring/archive/v0.0.6.tar.gz
+Description: # massspring
+        
+        ## Author : Pooya.Sh.K
+        
+        Inspired by Saeed Sarkarati
+        
+        ## Brief
+        
+        using this library you can create great simulations of most of physical environments which can be calculated presizely. you can create many types of objects from which "mass" and "spring" are main ones.  
+        more information is available on [project homepage on github](https://github.com/pooya-shams/massspring) and [README](https://github.com/pooya-shams/massspring/blob/master/massspring/README.md)
+        
+        ## license
+        
+        licensed under MIT License.
+        you can freely use and modify this package, but please let me know if you are doing something interesting.
+        
+Keywords: physics,physics-3d,physics-simulation,mass-spring,mass-spring-simulation,python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
