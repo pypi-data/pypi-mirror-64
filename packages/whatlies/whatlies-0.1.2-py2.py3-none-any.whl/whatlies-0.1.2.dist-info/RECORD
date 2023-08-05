@@ -1,0 +1,11 @@
+whatlies/__init__.py,sha256=wRW1xrE06p6oQp6PVSaJscgi9EydtSPMb6etZjshcCM,114
+whatlies/common.py,sha256=dHiQSENg4djpmEnOiv5t4sEfw_3sgvYvZ1GQy7s99E0,2556
+whatlies/embedding.py,sha256=4YBzbYvSW3mO8mulZ3ZgAAGg83eDu0C4w_unoI1TX2A,4833
+whatlies/embeddingset.py,sha256=16UPCD32ZqagINHnfBx4u6wwowoi_xDJdRkwHPrpHpw,11877
+whatlies/language.py,sha256=cI5RJhQJPMMs5KiD_m983eLjZbtFA4EjfStUQTXniLo,4887
+whatlies/plotting.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whatlies/transformers.py,sha256=yZrXD96IcfYAOt1NOLp0aF6_-0boxF7v4i6cx0LJPUQ,5560
+whatlies-0.1.2.dist-info/METADATA,sha256=eWIM7b6EVJH_4KmRIwtw09qGB6VTXvY4_T5SfI00_EI,2251
+whatlies-0.1.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+whatlies-0.1.2.dist-info/top_level.txt,sha256=psR4cR0WdqeOiBksesgva_8NlvJOU0DT2AE7ZDq6N30,9
+whatlies-0.1.2.dist-info/RECORD,,
