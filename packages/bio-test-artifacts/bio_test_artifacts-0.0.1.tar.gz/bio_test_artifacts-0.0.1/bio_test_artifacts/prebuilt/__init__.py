@@ -1,0 +1,3 @@
+from bio_test_artifacts.prebuilt.fasta import fasta_yeast_chr01, fasta_protein_yeast_chr01
+from bio_test_artifacts.prebuilt.counts import counts_yeast_tpm, counts_yeast_tpm_chr01, counts_yeast_single_cell_chr01
+
