@@ -1,0 +1,11 @@
+__pycache__
+/Notes
+.DS_Store
+/.cache
+/py2hy.egg-info
+*pycache*
+/.tox
+/dist
+*.pyc
+.coveralls.yml
+/py2hy/*.py

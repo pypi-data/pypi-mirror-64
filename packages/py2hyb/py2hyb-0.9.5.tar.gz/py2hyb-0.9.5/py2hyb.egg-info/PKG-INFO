@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: py2hyb
+Version: 0.9.5
+Summary: Python to Hy compiler
+Home-page: https://github.com/niitsuma/py2hy
+Author: Hikaru Ikuta
+Author-email: hirotaka.niitsuma@gmail.com
+License: LGPL-3
+Description: Compiles Python code to Hy.
+Keywords: sample setuptools development
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: DFSG approved
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Lisp
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
