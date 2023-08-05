@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pyblocktext
+Version: 1.4
+Summary: a python package to generate blocktext
+Home-page: https://github.com/gubareve/py-blocktext/
+Author: Evan Gubarev
+Author-email: evan@evangubarev.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+Install
+
+---------------------------
+
+$ pip install pyblocktext 
+
+or 
+
+$ python -m pip install pyblocktext
+
+Usage
+
+---------------------------
+
+import pyblocktext
+
+blocktext = pyblocktext.blocktext
+
+print blocktext("a")
+
+ONLY WORKS FOR INDIVIDUAL CHAR'S
+
+
