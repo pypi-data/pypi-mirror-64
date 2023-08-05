@@ -1,0 +1,13 @@
+sdss_brain/__init__.py,sha256=vK2OVuXfOBvc_s36atvkfAr8goHIwYLD3UGI0x5mJgU,437
+sdss_brain/config.py,sha256=GpzpMMfmLaNyDyooXqCPI8mjKRtfZcZXkvyohCt_tzI,2896
+sdss_brain/core.py,sha256=972uMKDah1lhM7tVJgQWHTwg2Cx5u8SkQ_Vd5KqBCJs,3695
+sdss_brain/exceptions.py,sha256=VlnRJTrC6k-i-VH0E-bTZwFk39KQNBl5m4LNMry4QVc,1795
+sdss_brain/helpers.py,sha256=vIECq4tl1QtQZ933uWwZF7X9fLj-Ioj8AnsIe5WmWm4,3507
+sdss_brain/mma.py,sha256=WCNAmuM2ZhnMDX1Cq4hFLLKvD4UGMaSleOGzrQoMM6E,11524
+sdss_brain/etc/sdss_brain.yml,sha256=GADEDemA9dlKz4K5-fxd6l5fUnq8SxaB4_6SDQ_uaNQ,500
+sdss_brain-0.1.0.data/scripts/sdss_brain,sha256=Y-48DCuoJylH3p6UVxjeaZdz2zLIcMLVsCo0VUN9c2I,1212
+sdss_brain-0.1.0.dist-info/LICENSE.md,sha256=_7dAUQQ5Ph_x1hcFXhi9aHBcqq9H11zco12eO4B3Cyg,1504
+sdss_brain-0.1.0.dist-info/METADATA,sha256=cRwp40FviOwqQLr9abir6cFMKoqaSurTcEG0nYbwWjo,3717
+sdss_brain-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sdss_brain-0.1.0.dist-info/top_level.txt,sha256=JQr-7xrvnJyXxQUa_bJLgiN-jve9yPB9mG0Brgzgj2M,11
+sdss_brain-0.1.0.dist-info/RECORD,,
