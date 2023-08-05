@@ -1,0 +1,7 @@
+README.md
+setup.py
+APEC.egg-info/PKG-INFO
+APEC.egg-info/SOURCES.txt
+APEC.egg-info/dependency_links.txt
+APEC.egg-info/requires.txt
+APEC.egg-info/top_level.txt
