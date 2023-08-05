@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dr-files
+Version: 0.1.0
+Summary: Read and convert Mechbase files (.dr) to known file formats
+License: MIT
+Author: Antonis Kalipetis
+Author-email: akalipetis@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: nptdms (>=0.22.0,<0.23.0)
+Requires-Dist: numpy (>=1.18.2,<2.0.0)
+Requires-Dist: protobuf (>=3.11.3,<4.0.0)
+Requires-Dist: scipy (>=1.4.1,<2.0.0)
