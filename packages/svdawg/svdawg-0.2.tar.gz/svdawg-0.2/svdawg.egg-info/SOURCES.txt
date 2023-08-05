@@ -1,0 +1,10 @@
+README.md
+setup.py
+svdawg/__init__.py
+svdawg/svdawg.py
+svdawg.egg-info/PKG-INFO
+svdawg.egg-info/SOURCES.txt
+svdawg.egg-info/dependency_links.txt
+svdawg.egg-info/not-zip-safe
+svdawg.egg-info/requires.txt
+svdawg.egg-info/top_level.txt
