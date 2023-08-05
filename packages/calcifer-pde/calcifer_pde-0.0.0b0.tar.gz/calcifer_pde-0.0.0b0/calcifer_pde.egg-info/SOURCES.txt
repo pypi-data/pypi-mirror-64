@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+calcifer/__init__.py
+calcifer/boundary.py
+calcifer/calcifer.py
+calcifer/diff.py
+calcifer/domain.py
+calcifer/geometry.py
+calcifer_pde.egg-info/PKG-INFO
+calcifer_pde.egg-info/SOURCES.txt
+calcifer_pde.egg-info/dependency_links.txt
+calcifer_pde.egg-info/requires.txt
+calcifer_pde.egg-info/top_level.txt
