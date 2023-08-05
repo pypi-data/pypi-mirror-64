@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/aws_adfs_login/__init__.py
+src/aws_adfs_login.egg-info/PKG-INFO
+src/aws_adfs_login.egg-info/SOURCES.txt
+src/aws_adfs_login.egg-info/dependency_links.txt
+src/aws_adfs_login.egg-info/requires.txt
+src/aws_adfs_login.egg-info/top_level.txt

@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aws-adfs-login
+Version: 1.0.2
+Summary: Python 3.6+ library to enable ADFS auth against AWS
+Home-page: https://github.com/david-poirier-csn/aws_adfs_login
+Author: David Poirier
+Author-email: david-poirier-csn@users.noreply.github.com
+License: UNKNOWN
+Description: # aws_adfs_login
+        
+        Python 3.6+ library to enable ADFS auth against AWS
+        
+        ## Usage
+        
+        ```python
+        import aws_adfs_login
+        
+        roles = aws_adfs_login.authenticate(
+            'https://adfs-server/adfs/ls/idpinitiatedsignon.aspx?loginToRp=urn:amazon:webservices')
+        for role in roles:
+            credentials = role.get_credentials()
+            key_id, secret, session_token, expiry = credentials
+        ```
+        
+        
+Keywords: adfs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
