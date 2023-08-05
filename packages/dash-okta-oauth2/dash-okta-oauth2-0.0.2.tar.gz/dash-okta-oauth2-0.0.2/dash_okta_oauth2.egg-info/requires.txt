@@ -1,0 +1,6 @@
+dash>=1.9.1
+dash-core-components>=1.8.1
+dash-html-components>=1.0.2
+Flask>=1.1.1
+Flask-Dance>=3.0.0
+blinker>=1.4
