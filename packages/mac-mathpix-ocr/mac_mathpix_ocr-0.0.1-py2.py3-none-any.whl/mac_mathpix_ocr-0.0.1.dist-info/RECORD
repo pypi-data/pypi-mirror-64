@@ -1,0 +1,12 @@
+mac_mathpix_ocr/__init__.py,sha256=vLVJpSHPjQ7Edfm-j0hy5aOBmJK4AcgVeN4Wa3wf7d8,154
+mac_mathpix_ocr/__main__.py,sha256=7UUsWEk6jjByfUoekPwWGOa8kh7hjm7UWyLo3O7Cc3k,87
+mac_mathpix_ocr/mac_mathpix_ocr.py,sha256=LJR1ktAKef9VvmwuqSuWlMMY3l_26JZWSZ1E9DgiQpo,1048
+mac_mathpix_ocr/logx/__init__.py,sha256=RRERDGHv8vbRgjpTtn8F_w7H2ICqDjbSbrshVmxrp3M,101
+mac_mathpix_ocr/logx/colored_handler.py,sha256=K081uqHrvb221Z0iQg2UZcUSJJcm3ccp3CINX_Ej538,750
+mac_mathpix_ocr/logx/logging.yaml,sha256=4r3cI9QlUO1LrJ5VOqruQKfzPXfF_zJTJvTl3HFGKYQ,654
+mac_mathpix_ocr/logx/setup_logging.py,sha256=YjJljZtW7fnpsVavGTudr4n7yKYJodrXxjZPozupXwM,851
+mac_mathpix_ocr-0.0.1.dist-info/METADATA,sha256=NtOLJrrlFUfTe5PiySj-NfbUR1LvxWOXrQoG3t-IbfU,2614
+mac_mathpix_ocr-0.0.1.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+mac_mathpix_ocr-0.0.1.dist-info/entry_points.txt,sha256=_JOcSBFTKLp1FRK9R063c-TGtTDThHujcuaX-vLJ1j4,53
+mac_mathpix_ocr-0.0.1.dist-info/top_level.txt,sha256=0SKlZBvtJv0mSLWx0MRPAHIJ3aLYH8zU7WfnTC4LToI,16
+mac_mathpix_ocr-0.0.1.dist-info/RECORD,,

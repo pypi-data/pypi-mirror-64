@@ -1,0 +1,3 @@
+[console_scripts]
+mmo = mac_mathpix_ocr:entry_point
+
