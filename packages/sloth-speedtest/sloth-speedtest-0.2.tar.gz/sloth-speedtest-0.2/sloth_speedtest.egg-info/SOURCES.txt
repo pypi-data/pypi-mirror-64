@@ -1,0 +1,17 @@
+README.md
+setup.py
+sloth/__init__.py
+sloth/__main__.py
+sloth/_types.py
+sloth/_utils.py
+sloth/simple.py
+sloth/timers.py
+sloth/raw/__init__.py
+sloth/raw/base.py
+sloth/raw/runners.py
+sloth/raw/tests.py
+sloth_speedtest.egg-info/PKG-INFO
+sloth_speedtest.egg-info/SOURCES.txt
+sloth_speedtest.egg-info/dependency_links.txt
+sloth_speedtest.egg-info/entry_points.txt
+sloth_speedtest.egg-info/top_level.txt
