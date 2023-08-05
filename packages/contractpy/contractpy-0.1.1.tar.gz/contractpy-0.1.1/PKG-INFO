@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: contractpy
+Version: 0.1.1
+Summary: A tiny library for validating our data if its adhere the contract.
+Home-page: https://github.com/KumarManoj-S/contractpy
+Author: Manoj Kumar S
+Author-email: kumarmanoj1158@gmail.com
+License: MIT
+Download-URL: https://github.com/KumarManoj-S/contractpy/archive/0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: contract,contract testing,template,validate
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
