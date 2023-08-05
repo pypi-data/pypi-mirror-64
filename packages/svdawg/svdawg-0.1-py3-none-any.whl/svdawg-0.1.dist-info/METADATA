@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: svdawg
+Version: 0.1
+Summary: SVD accessories, widgets, and graphics
+Home-page: https://github.com/SpacemanSpiff7/svdawg
+Author: Simone Longo
+Author-email: s.longo@utah.edu
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+
+UNKNOWN
+
+
