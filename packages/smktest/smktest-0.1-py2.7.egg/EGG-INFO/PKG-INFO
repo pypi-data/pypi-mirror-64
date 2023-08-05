@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: smktest
+Version: 0.1
+Summary: This package offers a series of tests to create the correct Smoke Test of an application before uploading changes to production.
+Home-page: https://github.com/cecilio-cannav/smktest.git
+Author: Cecilio Cannavacciuolo Diaz
+Author-email: cecilio.cannav@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/cecilio-cannav/smktest.git/tarball/0.1
+Description: UNKNOWN
+Keywords: smoketest,testing,python,smart
+Platform: UNKNOWN
