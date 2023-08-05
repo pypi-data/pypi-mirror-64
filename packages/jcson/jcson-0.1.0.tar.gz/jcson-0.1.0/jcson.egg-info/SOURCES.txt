@@ -1,0 +1,6 @@
+README.md
+setup.py
+jcson.egg-info/PKG-INFO
+jcson.egg-info/SOURCES.txt
+jcson.egg-info/dependency_links.txt
+jcson.egg-info/top_level.txt
