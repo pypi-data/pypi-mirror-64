@@ -1,0 +1,32 @@
+from setuptools import setup
+import os
+
+# read the contents of your README file
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
+def read_file(filename):
+    with open(os.path.join(os.path.dirname(__file__), filename)) as file:
+        return file.read()
+
+
+setup(name='pandas_dedupe',
+      version='1.1.1',
+      description='The Dedupe library made easy with Pandas.',
+      url='https://github.com/Lyonk71/pandas-dedupe',
+      author='Keith Lyons',
+      author_email='lyonk71@gmail.com',
+      license='MIT',
+      packages=['pandas_dedupe'],
+      install_requires=[
+          'dedupe==1.10.0',
+          'unidecode',
+          'pandas',
+      ],
+      zip_safe=False,
+      
+      #Enable pypi description
+      long_description=read_file('README.md'),
+      long_description_content_type="text/markdown")
