@@ -1,0 +1,9 @@
+README.md
+setup.py
+XGame/__init__.py
+XGame/setup.py
+XGame/docs/__init__.py
+XGame_Py.egg-info/PKG-INFO
+XGame_Py.egg-info/SOURCES.txt
+XGame_Py.egg-info/dependency_links.txt
+XGame_Py.egg-info/top_level.txt
