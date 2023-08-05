@@ -1,0 +1,17 @@
+trytond/modules/account_tax_reverse_charge/__init__.py,sha256=XLgwlE-aNJk3VPfYz4gf6aw_3oJ0KXVXmR-c7XntTog,301
+trytond/modules/account_tax_reverse_charge/message.xml,sha256=muoucFGI58uvcEbNMtwizymDq7JWza2QOQf8ufNRr_Y,435
+trytond/modules/account_tax_reverse_charge/tax.py,sha256=LtZTAP0kMTOohnDQmbPjHCSkXMc0zX_1FbGsItQsG3k,1361
+trytond/modules/account_tax_reverse_charge/tax.xml,sha256=V3mzxOTFEj34FmSDr9GjkRnLWycKnfS0Yj8aUoRJxNg,679
+trytond/modules/account_tax_reverse_charge/tryton.cfg,sha256=yEiuyvHsRkn0gBOvtmGhPd-jAr6RmK1ElkZinEKuITM,77
+trytond/modules/account_tax_reverse_charge/locale/de.po,sha256=y36TtMdHgCmuFsXkrJ8WKGh2fL_58xgswavpEfupHx4,663
+trytond/modules/account_tax_reverse_charge/tests/__init__.py,sha256=uLsTmiOhlHfkxS2-fCBkEN5YFSiJ5TrJpcvksdKAf5c,319
+trytond/modules/account_tax_reverse_charge/tests/t.py,sha256=E3ttIehfL5ACa3-wf4YMN_OMBhfNVOGoeh3QeixxMcM,2746
+trytond/modules/account_tax_reverse_charge/tests/test_account_tax_reverse_charge.py,sha256=OKjD2CEZWqnKyfDglU8c9-ezO1cDvDvYW_jZ0xFWGxQ,2719
+trytond/modules/account_tax_reverse_charge/view/tax_form.xml,sha256=nG4_4hjCcOYmkrW0NVjOcFL1hEwirWsn1BmTDB4sGic,330
+trytond/modules/account_tax_reverse_charge/view/tax_template_form.xml,sha256=pbcK8VGU7mospclYQdBAmiXmutW0Or9Vw90O0iDElw0,342
+m9s_account_tax_reverse_charge-5.2.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+m9s_account_tax_reverse_charge-5.2.0.dist-info/METADATA,sha256=xCfULTA_yKs_cngUiiqGlmtCQPqmnkaYWYhRF78r5SI,3327
+m9s_account_tax_reverse_charge-5.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+m9s_account_tax_reverse_charge-5.2.0.dist-info/entry_points.txt,sha256=DVfHtQhPxdUBS-43FgDc5LCHfFWAEoev9cHpjx6xuVQ,103
+m9s_account_tax_reverse_charge-5.2.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+m9s_account_tax_reverse_charge-5.2.0.dist-info/RECORD,,
