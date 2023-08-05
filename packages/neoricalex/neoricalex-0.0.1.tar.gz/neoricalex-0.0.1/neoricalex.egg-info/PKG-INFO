@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: neoricalex
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Description: # c (Windows)
+        
+        Esta pasta Ã© referente ao desenvolvimento no Ambiente Windows. Ainda estÃ¡ muito "crua" e tudo estÃ¡ tipo "atacado".
+        
+        Powershell:
+        
+            Criar Ambiente Virtual:
+                python ambiente.py python
+        
+            Activar Ambiente Virtual: 
+                python/Scripts/Activate.ps1
+        
+            Iniciar o neoricalex:
+                python neoricalex.py
+        
+            Pacote pip neoricalex:
+                python -m pip install --upgrade setuptools wheel
+                python setup.py sdist bdist_wheel
+        
+            Instalar MÃ³dulo para criar EXE:
+                pip install --upgrade --no-cache-dir pyinstaller
+        
+            Criar EXE:
+                pyinstaller --onefile -c neoricalex.py # Para esconder o terminal adicionar a flag -w
+        
+            UI:
+        
+                Transformar .ui em Python:
+                    pyuic5 -x <nome.ui> -o <nome.py>
+        
+        Miscelaneous:
+        
+            Prompt de Comando:
+        
+                setups/python-3.8.2-amd64.exe
+                python -m pip install --upgrade pip
+                pip install --upgrade --no-cache-dir pyinstaller pysimplegui pyaudio gitpython
+                cd c
+                pyinstaller --onefile -w neoricalex.py
+                cookiecutter https://github.com/neoricalex/cookiecutter-django.git
+        
+            Start-Process powershell -Verb runAs
+        
+            Powershell Administrador:
+        
+                Atualizar Windows 10:
+        
+                    Install-Module PSWindowsUpdate
+                    Get-WindowsUpdate
+                    Install-WindowsUpdate
+        
+        Ativar Sub-Sistema Linux:
+        
+            .\dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart 
+            .\dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+        
+        CatÃ¡logo Windows:
+        
+            https://www.catalog.update.microsoft.com/
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Framework :: Django CMS
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: Portuguese
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown

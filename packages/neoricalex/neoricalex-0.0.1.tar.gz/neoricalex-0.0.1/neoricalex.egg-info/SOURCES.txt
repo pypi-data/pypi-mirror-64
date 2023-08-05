@@ -1,0 +1,11 @@
+README.md
+setup.py
+neoricalex.egg-info/PKG-INFO
+neoricalex.egg-info/SOURCES.txt
+neoricalex.egg-info/dependency_links.txt
+neoricalex.egg-info/entry_points.txt
+neoricalex.egg-info/top_level.txt
+nfdos/__init__.py
+nfdos/__main__.py
+nfdos/classmodule.py
+nfdos/funcmodule.py

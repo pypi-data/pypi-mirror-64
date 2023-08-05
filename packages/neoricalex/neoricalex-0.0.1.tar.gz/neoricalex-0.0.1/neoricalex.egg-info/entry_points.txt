@@ -1,0 +1,3 @@
+[console_scripts]
+nfdos = nfdos.__main__:main
+
