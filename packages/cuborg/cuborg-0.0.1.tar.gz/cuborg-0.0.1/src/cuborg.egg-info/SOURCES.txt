@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+src/cuborg/__init__.py
+src/cuborg.egg-info/PKG-INFO
+src/cuborg.egg-info/SOURCES.txt
+src/cuborg.egg-info/dependency_links.txt
+src/cuborg.egg-info/top_level.txt

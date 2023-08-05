@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: cuborg
+Version: 0.0.1
+Summary: Space efficient backups for your Minecraft server using Borg
+Home-page: https://github.com/mon4ter/cuborg
+Author: Dmitry Galkin
+Author-email: mon4ter@gmail.com
+License: MIT
+Description: # Cuborg
+        Space efficient backups for your Minecraft server using Borg
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
