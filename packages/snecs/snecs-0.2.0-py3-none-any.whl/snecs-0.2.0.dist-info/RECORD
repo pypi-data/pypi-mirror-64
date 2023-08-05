@@ -1,0 +1,13 @@
+snecs/__init__.py,sha256=QCxvu01FNk5Wp8o--NBy5u1ObRXSvvZw1YjOh-JBwys,1438
+snecs/_detail.py,sha256=DwZxPdbFBWJ7q2Ig9eNSC-o5zKLT_NuUnG4w2S1DqT8,5863
+snecs/_filters.py,sha256=preWB5T_FPcUcvi8XEBTR8Kv-rl-DxXlpD1scnYAqfI,16885
+snecs/component.py,sha256=IITLF9BGuxVoOr03WXBqSDbYJlgEaC2RMz1-TgIrxww,9454
+snecs/ecs.py,sha256=jl_2QvRycRV5RsteClvZb9QGYZUSmbuzncOncDuQeDM,12448
+snecs/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+snecs/query.py,sha256=dis_SBYAs1JV0g1c-zESWhkC32yvTBypwV5TnWbv_s4,7989
+snecs/types.py,sha256=FtpB_B9PyS_lMZ7QGgjT6vQA5grXmzPuLNRkP4dK0hc,603
+snecs/world.py,sha256=7_yYvZdbdLsovVFawvzF-GQkc0HxQA1FoLSaaiIaQ9I,1171
+snecs-0.2.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+snecs-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+snecs-0.2.0.dist-info/METADATA,sha256=zbHKdNJfPDB0iAuNH8Um8__3_V1668siUcw06bw1ccI,4981
+snecs-0.2.0.dist-info/RECORD,,
