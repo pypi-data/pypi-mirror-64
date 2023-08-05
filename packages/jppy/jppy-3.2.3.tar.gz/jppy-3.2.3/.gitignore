@@ -1,0 +1,13 @@
+*.so
+*.py[cod]
+*.egg-info
+_build
+_generate
+build
+venv
+jppy/__init__.py
+jppy/version.py
+pip-wheel-metadata
+scratch
+jpp
+pdfs
