@@ -1,0 +1,13 @@
+Tools/Python/Python38/DLLs/CUESDK.x64_2017.dll,sha256=8M1TQ57JYXDGUmkgtintUTI1Z-ajlqcaClA0Vyv12IU,475176
+Tools/Python/Python38/DLLs/CUESDK_2017.dll,sha256=iVfOgme0DbekMltYtMkPEFRlfcEO6qbCSrDn-u6NBxE,379432
+cuesdk/__init__.py,sha256=d3d9qj53nq8UQ4wN5kZAU8jORukzJn3UIHarUi_ZiE8,66
+cuesdk/api.py,sha256=Eq3A7EQpWKHYXfJ2Wp50U8wKi_-V9naTzmBsonqa7bU,8165
+cuesdk/capi.py,sha256=K5QlDMUCddtkr0sxf0pgW_HL1WMPl9WzcGo7k85_Nw4,4370
+cuesdk/enums.py,sha256=Seb_wyNObh3LExrQ70NId3ujrpxg49hdHCtv5WY0bQ4,21506
+cuesdk/structs.py,sha256=1u0nlKHvzG4yhAkd1Nf1s0Wyatc_NssOfMI_BKuCGIk,3535
+cuesdk/version.py,sha256=7VyHp48OUTQQUylqTtD2KYmDnZ1N5qU2-WFiy4BFYEo,23
+cuesdk-0.2.1.dist-info/LICENSE,sha256=gEyBQa8txpApi883CzdKkUFCyDUvRuFpquO50gMKkVI,1077
+cuesdk-0.2.1.dist-info/METADATA,sha256=zK-sl544YdvCP3KqAoCLJmLIwyn3kjxDgb7ZEkK4wao,1318
+cuesdk-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+cuesdk-0.2.1.dist-info/top_level.txt,sha256=KqWQ5CGYS16h3moFdN5m9QCtx1pphcCWbfr7bQgfZUA,7
+cuesdk-0.2.1.dist-info/RECORD,,
