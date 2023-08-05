@@ -1,0 +1,9 @@
+README.md
+setup.py
+vectorslow/__init__.py
+vectorslow/joke.py
+vectorslow.egg-info/PKG-INFO
+vectorslow.egg-info/SOURCES.txt
+vectorslow.egg-info/dependency_links.txt
+vectorslow.egg-info/requires.txt
+vectorslow.egg-info/top_level.txt
