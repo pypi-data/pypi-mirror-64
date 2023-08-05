@@ -1,0 +1,9 @@
+README.md
+setup.py
+rac_schemas/__init__.py
+rac_schemas.egg-info/PKG-INFO
+rac_schemas.egg-info/SOURCES.txt
+rac_schemas.egg-info/dependency_links.txt
+rac_schemas.egg-info/not-zip-safe
+rac_schemas.egg-info/requires.txt
+rac_schemas.egg-info/top_level.txt
