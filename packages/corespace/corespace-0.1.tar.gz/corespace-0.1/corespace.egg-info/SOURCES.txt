@@ -1,0 +1,7 @@
+README.md
+setup.py
+corespace/__init__.py
+corespace.egg-info/PKG-INFO
+corespace.egg-info/SOURCES.txt
+corespace.egg-info/dependency_links.txt
+corespace.egg-info/top_level.txt
