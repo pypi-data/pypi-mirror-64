@@ -1,0 +1,68 @@
+Metadata-Version: 1.2
+Name: JDSPackage
+Version: 0.1.0
+Summary: documentation for first package
+Home-page: https://github.com/jdsmithwes/JDSPackage
+Author: Jamaal Darius Smith
+Author-email: jdsmith1906@gmail.com
+License: GNU General Public License v3
+Description: ==============
+        JDSPackagedocs
+        ==============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/JDSPackage.svg
+                :target: https://pypi.python.org/pypi/JDSPackage
+        
+        .. image:: https://img.shields.io/travis/jdsmithwes/JDSPackage.svg
+                :target: https://travis-ci.com/jdsmithwes/JDSPackage
+        
+        .. image:: https://readthedocs.org/projects/JDSPackage/badge/?version=latest
+                :target: https://JDSPackage.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        documentation for first package
+        
+        
+        * Free software: GNU General Public License v3
+        * Documentation: https://JDSPackage.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-03-21)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: JDSPackage
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
