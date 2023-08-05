@@ -1,0 +1,6 @@
+Tclpy/__init__.py
+Tclpy/setup.py
+Tclpy.egg-info/PKG-INFO
+Tclpy.egg-info/SOURCES.txt
+Tclpy.egg-info/dependency_links.txt
+Tclpy.egg-info/top_level.txt
