@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gopup
+Version: 0.0.5
+Summary: GoPUP database
+Home-page: https://github.com/justinzm/gopup
+Author: Justin Zm
+Author-email: 3907721@qq.com
+Maintainer: Justin Zm
+Maintainer-email: 3907721@qq.com
+License: MIT
+Description: ## gopup (python3)
+        
+        ### 建议安装方法
+            pip install gopup
+        
+        ### 升级方法
+            pip install gopup --upgrade
+        
+Platform: all
+Description-Content-Type: text/markdown
