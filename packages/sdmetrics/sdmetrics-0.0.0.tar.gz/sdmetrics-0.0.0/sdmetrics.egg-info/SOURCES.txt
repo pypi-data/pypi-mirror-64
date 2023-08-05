@@ -1,0 +1,6 @@
+setup.py
+sdmetrics.egg-info/PKG-INFO
+sdmetrics.egg-info/SOURCES.txt
+sdmetrics.egg-info/dependency_links.txt
+sdmetrics.egg-info/not-zip-safe
+sdmetrics.egg-info/top_level.txt
