@@ -1,0 +1,11 @@
+configreader/__init__.py,sha256=HK8XoI5Jpi9v3Uv3FkHhj-XTugKOmgsUUbO5cu-W_XA,18
+configreader/config.py,sha256=uTiZGLaqf_-5WO9JL8Yer6SSPEbWXGBUx5ZepwUcIIk,2766
+spconfigreader/__init__.py,sha256=oKyb_cRgcanPQr8qWnyggGeb-zLUuEPVEpFVBRRDpAM,18
+spconfigreader/reader.py,sha256=uTiZGLaqf_-5WO9JL8Yer6SSPEbWXGBUx5ZepwUcIIk,2766
+tests/__init__.py,sha256=d-5tZoixZ8H1jyZpchbgCE-BrVf6Er6BRqQp4jmDLTY,75
+tests/test.py,sha256=stdJG55UnyLxIJFilKAmPsD75-8W3FxxIiueuyPOumU,1292
+spconfigreader-0.2.1.dist-info/LICENSE,sha256=DLXjfvWPsB36Zvow6Bg_R8uk9W-BWiCcsHsWKYJRO48,1052
+spconfigreader-0.2.1.dist-info/METADATA,sha256=WGwqQQmaaats19w3mOQHb4uq34y6JTlHPvxJf2UZcV0,547
+spconfigreader-0.2.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+spconfigreader-0.2.1.dist-info/top_level.txt,sha256=STiR5ttlGmLibblEgE92qurxwKWnggsnvEFy7KXtuF8,21
+spconfigreader-0.2.1.dist-info/RECORD,,
