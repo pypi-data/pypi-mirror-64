@@ -1,0 +1,9 @@
+nlp2go/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nlp2go/model.py,sha256=uGvb9TYhsDjfoTOqIeZ3u7Iy5BFNIl3lviCLeBDHg5Q,3104
+nlp2go/server.py,sha256=723yUbJdP3oXD9600dtNm4CZ5uRh4UbEq8e3JMSASqs,3986
+nlp2go-0.0.13.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+nlp2go-0.0.13.dist-info/METADATA,sha256=D-VZkz3hPTHEGWHyS3vkcRRKybFKRpMKV-8PbcpSsRY,1930
+nlp2go-0.0.13.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nlp2go-0.0.13.dist-info/entry_points.txt,sha256=hRb2MDbHSqYU3Ig1eTvh_Yuz-JNHScIjNiftcTShfOg,47
+nlp2go-0.0.13.dist-info/top_level.txt,sha256=-NS3hZsu08dh-bX9R4DbxgpwAnnshc82dEP73rcgXcQ,7
+nlp2go-0.0.13.dist-info/RECORD,,
