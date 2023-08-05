@@ -1,0 +1,3 @@
+[console_scripts]
+outbreaker = outbreaker.__main__:main
+
