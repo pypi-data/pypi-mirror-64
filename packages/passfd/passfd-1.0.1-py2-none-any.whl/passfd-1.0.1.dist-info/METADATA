@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: passfd
+Version: 1.0.1
+Summary: send file descriptors over AF_UNIX sockets via sendmsg(2)
+Home-page: https://github.com/avocado-framework/avocado-vt
+Author: Virt-QE team
+Author-email: skycastlelily@gmail.com
+License: GPLv2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Topic :: System :: Networking
+
+UNKNOWN
+
+
