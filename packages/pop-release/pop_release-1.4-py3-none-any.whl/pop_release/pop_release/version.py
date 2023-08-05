@@ -1,0 +1,31 @@
+# Import python libs
+import os
+
+
+def set_doc(hub):
+    """
+    Set the version on the docs
+    """
+    ver = hub.OPT["pop_release"]["ver"]
+    name = hub.pop_release.PATHNAME
+    lines = []
+    paths = [os.path.join("docs", "conf.py"), os.path.join("docs", "source", "conf.py")]
+    path = None
+    for check in paths:
+        if os.path.isfile(check):
+            path = check
+    if not path:
+        print("No docs set up for this project, use Sphinx to set up docs")
+        return
+    with open(path, "r") as rfh:
+        for line in rfh.readlines():
+            if line.startswith("ver"):
+                lines.append(f'version = "{ver}"\n')
+                continue
+            elif line.startswith("release"):
+                lines.append(f'release = "{ver}"\n')
+                continue
+            else:
+                lines.append(line)
+    with open(path, "w+") as wfh:
+        wfh.writelines(lines)
