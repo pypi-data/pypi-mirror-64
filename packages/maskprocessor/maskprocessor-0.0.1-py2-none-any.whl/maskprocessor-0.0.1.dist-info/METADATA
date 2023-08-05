@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: maskprocessor
+Version: 0.0.1
+Summary: Python maskprocessor implemenetation which inspired by hashcat maskprocessor
+Home-page: https://github.com/Xvezda/python-maskprocessor
+Author: Xvezda
+Author-email: xvezda@naver.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/Xvezda/python-maskprocessor/issues
+Project-URL: Repository, https://github.com/Xvezda/python-maskprocessor
+Keywords: hash,hashcat,maskprocessor,bruteforce
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities
+Classifier: Topic :: Security :: Cryptography
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+Python MaskProcessor
+====================
+
+Python maskprocessor implemenetation which inspired by [hashcat maskprocessor](https://github.com/hashcat/maskprocessor)
+Installation
+------------
+```sh
+pip install maskprocessor
+```
+
+License
+-------
+[MIT License](LICENSE)
+
+
