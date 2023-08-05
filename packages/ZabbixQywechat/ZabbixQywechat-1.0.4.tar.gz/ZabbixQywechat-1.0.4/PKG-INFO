@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: ZabbixQywechat
+Version: 1.0.4
+Summary: This is a package for sending messages to enterprise WeChat applications in zabbix
+Home-page: https://github.com/mikecui426/ZabbixQywechat
+Author: mike
+Author-email: 441616837@qq.com
+License: UNKNOWN
+Description: This is a package for sending messages to enterprise WeChat applications in zabbix. You can use [Github](https://github.com/mikecui426/ZabbixQywechat)
+        
+        ### View at:
+        
+        <code>
+        https://pypi.org/project/ZabbixQywechat/1.0.4/
+        </code>
+        
+        
+        ### pip install ZabbixQywechat
+        
+        
+        ### Demo test
+        
+        vim test.py
+        
+        <pre><code>
+        from ZabbixQywechat import Qywechat
+        
+        import sys
+        
+        Agentid="1000002"
+        Corpid="1111"
+        Corpsecret="2222"
+        PATH="/tmp/test.json"
+        
+        if __name__ == '__main__':
+            Touser=sys.argv[1]
+            Subject=str(sys.argv[2])
+            Content=str(sys.argv[3])
+            Result=Qywechat(Agentid,Corpid,Corpsecret,PATH)
+            Result.SendMSGtoWechat(Touser,Subject,Content)
+        </code></pre>
+        
+        python test.py WechatAccount title content
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
