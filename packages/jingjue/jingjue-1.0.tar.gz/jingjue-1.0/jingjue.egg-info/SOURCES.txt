@@ -1,0 +1,9 @@
+README.md
+setup.py
+jingjue/__init__.py
+jingjue/gua_dict.py
+jingjue/jingjue.py
+jingjue.egg-info/PKG-INFO
+jingjue.egg-info/SOURCES.txt
+jingjue.egg-info/dependency_links.txt
+jingjue.egg-info/top_level.txt
