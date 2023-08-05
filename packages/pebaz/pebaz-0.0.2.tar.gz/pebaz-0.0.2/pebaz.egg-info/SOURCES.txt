@@ -1,0 +1,6 @@
+setup.py
+pebaz/foozle.py
+pebaz.egg-info/PKG-INFO
+pebaz.egg-info/SOURCES.txt
+pebaz.egg-info/dependency_links.txt
+pebaz.egg-info/top_level.txt
