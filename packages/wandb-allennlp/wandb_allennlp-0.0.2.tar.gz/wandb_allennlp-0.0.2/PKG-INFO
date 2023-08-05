@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wandb_allennlp
+Version: 0.0.2
+Summary: Utilities to use allennlp with wandb
+Home-page: https://github.com/dhruvdcoder/wandb-allennlp
+Author: Dhruvesh Patel
+Author-email: 1793dnp@gmail.com
+License: UNKNOWN
+Description: # wandb-allennlp
+        Utilities and boilerplate code to use wandb with allennlp
+        
+        # Installation
+        
+        ```
+        pip install wandb-allennlp
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
