@@ -1,0 +1,8 @@
+README.md
+setup.py
+GOSH_FHIRworks2020_SkypeURI.egg-info/PKG-INFO
+GOSH_FHIRworks2020_SkypeURI.egg-info/SOURCES.txt
+GOSH_FHIRworks2020_SkypeURI.egg-info/dependency_links.txt
+GOSH_FHIRworks2020_SkypeURI.egg-info/top_level.txt
+SkypeURI/SkypeURI.py
+SkypeURI/__init__.py
