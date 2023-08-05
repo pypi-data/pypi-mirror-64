@@ -1,0 +1,9 @@
+_rapidfuzz_cpp.cpython-38-darwin.so,sha256=rnLiVmroFaUERV0puUFYQSaKVULLR91SzxfIZGeZWs0,222220
+rapidfuzz/__init__.py,sha256=iorXsN3dYxuul64EXEPX019TXqqcPgnUw0LL7Q3gWI8,84
+rapidfuzz/fuzz.py,sha256=mfM_7QsUANkxpL7Ppm4FUH39OblWEHNCK5IRJJV4FrM,33
+rapidfuzz/process.py,sha256=Xr1yicXzPD6xs2eRUYSzyNIaiGtL5Vsf5Y7oWzXaJtA,1436
+rapidfuzz-0.2.0.dist-info/LICENSE,sha256=0BAJVttw535Bh1I2TgzNOcg8A_OVb2MyPMoxptDVwHk,1080
+rapidfuzz-0.2.0.dist-info/METADATA,sha256=6DzD9yoPBwZHweEU5WzHSrXdAUyerWnIRoilgg9PV78,4117
+rapidfuzz-0.2.0.dist-info/WHEEL,sha256=NqgkTkAaRJaCuArPZklUp2tBwn6obHN9aMIfdfLfNkU,110
+rapidfuzz-0.2.0.dist-info/top_level.txt,sha256=IC2UZIO1W44XrrAuhhGY2v93_Bh3h9b906nuUCN3Dwk,25
+rapidfuzz-0.2.0.dist-info/RECORD,,
