@@ -1,0 +1,12 @@
+sliplib/__init__.py,sha256=LDWq-Z3_RPNjQb9PcdJt1i2EOCbo6g9ZjQCIsRO7M3M,3025
+sliplib/slip.py,sha256=T4WwZPUhTs2sI-rct1eVLPNbhA5lRuNllW9QYTedrFY,7152
+sliplib/sliprequesthandler.py,sha256=JCVVE4R_1L3ok-mn7wO807FA4u3sLcfLAlv0hJaDHvQ,1263
+sliplib/slipsocket.py,sha256=h61vA6PnfXmSTLOYbwupvwK_GwE0t71lkcpYxmgjTG4,4575
+sliplib/slipstream.py,sha256=-qhGwO51vAVQI4khD64VPju4LX8vZYa9iReZVHlbaYE,2548
+sliplib/slipwrapper.py,sha256=sQ0Yu92GLaX_VJfWWNvrG_JSSKFkjZLleT9Q9sQ1NKk,4495
+sliplib/version.py,sha256=Byadl834B7ajKtcDr2N6NTzN1mnOfqX_XmXo5WMXDjA,201
+sliplib-0.4.0.dist-info/LICENSE,sha256=h15V3dnr9CHKjP9nHnspwFRdjaH3SJMcywy1JC18vJo,1102
+sliplib-0.4.0.dist-info/METADATA,sha256=vn41yOwJpb3l8yyrNMgNEBvg_SWQwKA6GKdOBrTylUM,4964
+sliplib-0.4.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+sliplib-0.4.0.dist-info/top_level.txt,sha256=bgVR2Vki1id612NchwRNi7Yleu1AeAuz8xqf19gj_RM,8
+sliplib-0.4.0.dist-info/RECORD,,
