@@ -1,0 +1,14 @@
+mockfs/__init__.py,sha256=O--eSLZhaKnjR1R98WvUkPdGA878w8SRQqN3zhna0j4,1788
+mockfs/compat.py,sha256=g6B4s7B4GVkjGn1nqJ0hO65igaugrCaiP1jVsV8J6Ec,317
+mockfs/mfs.py,sha256=a15_7QzWrEvEqwBMyVDBd-oWlIpF-NOXH7KYcqHnKiQ,12316
+mockfs/storage.py,sha256=07x6C0SwErYZlHobVORBGtGkSnXK10fRQ2gm-5KmEaA,14229
+mockfs/util.py,sha256=VNV5Oa-UjtyVB8f7O0BJrufdmRZt1Uvgki8G6TelKI4,2503
+mockfs/tests/__init__.py,sha256=4pvVp8FC-_opAfzwfiuYPMe7k85eIohs0tvWJB6Rid4,440
+mockfs/tests/mockfs_test.py,sha256=tAYuNr-SjM8vLfgOGLfSd8aFGPPMVI9VaRQVKYc2UA0,8495
+mockfs/tests/storage_test.py,sha256=oYwESwDybSaA3TfdGVcJ9fVxYK2ejoFy4GQ6PFR1Ja0,1776
+mockfs/tests/util_test.py,sha256=gUHyiV71Ax00zvuCJuUufFPp-bkGNKazXv3ZUdNJFxg,1680
+mockfs-1.1.1.dist-info/LICENSE,sha256=2z8CRrH5J48VhFuZ_sR4uLUG63ZIeZNyL4xuJUKF-vg,1050
+mockfs-1.1.1.dist-info/METADATA,sha256=jsOeh07ni5CNjmgNDrRmPA2Jbql2p-D3sLZW51VC4tg,2612
+mockfs-1.1.1.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+mockfs-1.1.1.dist-info/top_level.txt,sha256=QBqLRl400v_2TLAEavnNFqh5C2SyJoWfQ_Kok_osB2I,7
+mockfs-1.1.1.dist-info/RECORD,,
