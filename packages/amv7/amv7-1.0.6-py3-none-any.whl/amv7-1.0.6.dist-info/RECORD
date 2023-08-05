@@ -1,0 +1,17 @@
+amv7/cli.py,sha256=FrV96DCx8Ltq2e8dOX4HEbWvIzGkMFVWWfN9FdDvV0g,398
+amv7/x64/amv7.py,sha256=kcf8vlxExqxVQd25Vb-f03ag4KcaYeQWURtLanNqTPY,1745
+amv7/x64/pytransform/__init__.py,sha256=xOu_uT-sUoiJ4h0nMRVyWtYLtNBlrxcDZO1OoTosNTU,11201
+amv7/x64/pytransform/_pytransform.so,sha256=TfjnHtB6VZILu7LTlKp6xrGY3rr-r3XS5NSttnsk0B4,534880
+amv7/x64/pytransform/license.lic,sha256=RjatyCNfavbUyhPnfxKhBE6FERhMzO9wMcjiQxS9lgU,212
+amv7/x64/pytransform/pytransform.key,sha256=WUSWUHFPjzTLvOucTkrIBwune4srpCwY6JRbgt5ZRFU,476
+amv7/x86/amv7.py,sha256=Sds_AOdphRnEU_qtAp7N3WSPdE65OQm9sZDLjh2ZpP0,1759
+amv7/x86/pytransform/__init__.py,sha256=xOu_uT-sUoiJ4h0nMRVyWtYLtNBlrxcDZO1OoTosNTU,11201
+amv7/x86/pytransform/_pytransform.so,sha256=Rok3guv6qL3SR2E_jEozFgQKkftdUQeAPh1XQsUXcsQ,980856
+amv7/x86/pytransform/license.lic,sha256=RjatyCNfavbUyhPnfxKhBE6FERhMzO9wMcjiQxS9lgU,212
+amv7/x86/pytransform/pytransform.key,sha256=WUSWUHFPjzTLvOucTkrIBwune4srpCwY6JRbgt5ZRFU,476
+amv7-1.0.6.dist-info/LICENSE,sha256=rbt10c45s-MuLtSdrW4VHVAg5Trh-Y9m0tW_fh5AVMc,1051
+amv7-1.0.6.dist-info/METADATA,sha256=Cber5M33yNFUlqlu0Ci6PI5DuMmnV4mwam7mPvQaZR4,646
+amv7-1.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+amv7-1.0.6.dist-info/entry_points.txt,sha256=P9I8rLFvnPLEvUTXL2YX5_nvz4mYtIAfIEbhxpexO6Y,40
+amv7-1.0.6.dist-info/top_level.txt,sha256=YK2RGC6bzc77Dw4HWCwEny5uZNELULpfCGXPrpG-9ak,5
+amv7-1.0.6.dist-info/RECORD,,
