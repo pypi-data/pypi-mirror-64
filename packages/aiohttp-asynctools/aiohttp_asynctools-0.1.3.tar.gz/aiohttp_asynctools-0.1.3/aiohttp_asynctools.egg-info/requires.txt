@@ -1,0 +1,4 @@
+aiohttp>=3.3
+
+[example]
+aiohttp_jinja2>=1.1.1
