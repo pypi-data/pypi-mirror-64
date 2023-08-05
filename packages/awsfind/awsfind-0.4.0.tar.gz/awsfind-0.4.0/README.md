@@ -1,0 +1,124 @@
+# awsfind
+
+searches across all accounts and regions known to chaim for the instance(s)
+
+You should be able to obtain `CrossAccountReadOnly` chaim credentials for
+every account.
+
+The script will obtain chaim `rro` permissions for each account in turn,
+deleting them when it has finished with that account, and then, using a
+thread per region query the AWS API for each specific instance mentioned
+on the command line.
+
+Once all instances have been found the script stops and displays the
+results.
+
+Should the script need to visit every account it will take approx. 13
+minutes to do so.
+
+## install
+
+Clone this repository, and enter the dir
+
+```
+git clone https://github.com/ConnectedHomes/awsfind.git
+cd awsfind
+```
+
+If you don't currently use `poetry` get it with
+
+```
+pip[3] install poetry --user
+```
+
+Optional: If you intend to develop this script install the dependencies
+
+```
+poetry install
+```
+
+Optional: the script can be run from the development environment with
+
+```
+poetry run ifind
+```
+
+Install the script to the users local python installation
+
+```
+poetry build
+vers=$(poetry version|sed 's/ /-/')
+pip[3] install dist/${vers}*whl --user
+```
+
+You should now have a script `ifind` in your python user directories
+
+```
+$ which ifind
+/home/chris/.local/bin/ifind
+
+$ ifind -h
+ifind 0.3.0
+ ifind - AWS Instance Finder
+
+Searches across all accounts and regions for instances using chaim credentials
+
+search accounts in alphabetical order
+    ifind <instance-id> <instance-id> ... <instance-id>
+
+to search accounts in random order (maybe quicker)
+    ifind -r <instance-id> <instance-id> ... <instance-id>
+
+
+```
+
+You can now add your `.local/bin` directory to your PATH if you haven't
+already.
+
+## Usage
+
+You can run directly from this repository with `poetry run ifind` or
+install it as above
+
+```
+$ ifind <instance-id> <instance-id> ... <instance-id>
+```
+
+The above command will search through all accounts in alphabetical order,
+searching all regions for the instance ids.
+
+If you want to search accounts in a random order (which maybe quicker)
+then add `-r` to the command
+
+```
+$ ifind -r i-0b7ff13d0219b8b58 i-014c4b3c01153aef8
+```
+
+
+It displays it's current progress
+
+
+```
+$ ifind i-0b7ff13d0219b8b58 i-014c4b3c01153aef8 i-09d8cfbb5fc425d26 i-0b42d2ae0db8cf231
+ifind 0.3.0
+Searching 119 accounts in 16 regions for 4 instances
+
+
+  7/119 1/4    biqlite-qa-uk
+```
+
+i.e. looking in the 7th of 119 accounts for the last remaining instance
+id, having found 3 others.
+
+Once it has found all the instances it stops, displaying the results
+
+```
+Account                       Region    Name                          Instance ID
+------------------------------------------------------------------------------------------
+biqlite-dev-uk                eu-west-1 UNNAMED                       i-0b7ff13d0219b8b58
+biqlite-dev-uk                eu-west-1 UNNAMED                       i-014c4b3c01153aef8
+biqlite-firmware              eu-west-1 simplicity                    i-09d8cfbb5fc425d26
+biqlite-qa-uk                 eu-west-1 UNNAMED                       i-0b42d2ae0db8cf231
+
+search took 59s
+```
