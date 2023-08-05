@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: todoist-templates
+Version: 0.0.1
+Summary: Create Todoist projects from yaml template files
+Home-page: https://github.com/maledorak/todoist-templates
+Author: Mariusz Korzekwa
+Author-email: maledorak@gmail.com
+License: MIT license
+Keywords: todoist_templates
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: PyYAML (>=5.3.1)
+Requires-Dist: todoist-python (>=8.1.1)
+
+todoist-template
+================
+
+Create Todoist projects from file.
+
+Supported file types:
+ * yml, yaml
+
+#### How to use?
+* Clone this repository
+* Install requirements `pip install -r requirements.txt`
+* Set environment variable with your TodoistApi `export TODOIST_API=123123123`
+* Create project template based on `example_project.yml` file
+* Run `./bin/todoist_templates path/to/project_template.yml`
+
+#### Todo
+* deploy to pypi
+* add tests
+* add json support
+
+
+Changelog
+=========
+
+Unreleased
+----------
+
+0.0.1 (2020-03-21)
+------------------
+
+* First release on PyPI.
+
+
