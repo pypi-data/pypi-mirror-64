@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: irreducible
+Version: 0.0.1
+Summary: Irreducible Python Web Framework built for learning purposes.
+Home-page: UNKNOWN
+Author: Leo Qiao
+Author-email: qiaofeitong@hotmail.com
+License: MIT
+Description: Irreducible Python Web Framework built for learning purposes.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
