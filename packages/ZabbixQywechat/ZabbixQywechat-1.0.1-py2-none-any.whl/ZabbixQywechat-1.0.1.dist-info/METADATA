@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ZabbixQywechat
+Version: 1.0.1
+Summary: This is a package for sending messages to enterprise WeChat applications in zabbix
+Home-page: https://github.com/mikecui426/ZabbixQywechat
+Author: mike
+Author-email: 441616837@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.6
+Description-Content-Type: text/markdown
+
+This is a package for sending messages to enterprise WeChat applications in zabbix. You can use [Github](https://github.com/mikecui426/ZabbixQywechat)
+
+
