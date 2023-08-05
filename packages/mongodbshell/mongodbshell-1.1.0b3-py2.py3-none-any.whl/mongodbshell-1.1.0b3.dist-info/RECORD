@@ -1,0 +1,13 @@
+mongodbshell/__init__.py,sha256=RBFuOskDPBubJGKWPYeNqbZ-yp4-YE_6SCAujw6xY0M,1578
+mongodbshell/demo_exists.py,sha256=YH-eFlNoSTDU1OU5XuBzz75XeRYmj45Ldv5qlNCHUDw,1489
+mongodbshell/drop_collection.py,sha256=jPnLwbKjV9fe-dsDU_t17R4eQ_MSq73f0Nf7ZJxDjSY,1146
+mongodbshell/mongoclient.py,sha256=WCnefTmmwYgilhXIV7QRqQ0s6swkhGC07e7fOcQ5kM4,16923
+mongodbshell/mping.py,sha256=XAF0ssA2yAoCssqUDO4mWcBK9pgJ2ytmUqVf6CLrpj8,870
+mongodbshell/pager.py,sha256=IB6PmC1dvtycg_HncXzEPr91fUoFO0nYSoSlBv8oydU,9559
+mongodbshell/smping.py,sha256=OC7yE14jyRp_sekL6R8lEG7Yls2MemvMSkPLqNiBUVA,228
+mongodbshell/version.py,sha256=Ez7D9zvp_jJO-oRpa7vbQoYDov1gMro8-Bt8F581dTk,19
+mongodbshell-1.1.0b3.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+mongodbshell-1.1.0b3.dist-info/METADATA,sha256=M5_d2fD6bGH8PRg03qMHPQy3aE4zURw15Tf8Ij9Aqko,10802
+mongodbshell-1.1.0b3.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+mongodbshell-1.1.0b3.dist-info/top_level.txt,sha256=5s_k9SibuKs0njVzRHoiLcASrDAtfsxsI23y0rmee-M,13
+mongodbshell-1.1.0b3.dist-info/RECORD,,
