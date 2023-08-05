@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: huik-module
+Version: 0.0.18
+Summary: Modules for my scripts.
+Home-page: https://github.com/rocksnow1942/mymodule
+Author: Hui Kang
+Author-email: rocksnow1942@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: terminaltables
+
+# This Repo is created by [OK git][huik]
+[![python version](https://img.shields.io/badge/python-3.5%20%7C%203.6%20%7C%203.7%20-blue)][pythonwebsite] 
+[![Alt text](https://img.shields.io/pypi/v/huik-module 'Hover to see this text.')][huik]
+### Emphasis
+*Italic* ; **Bold** ; ***Bold and Italic*** ; ~~Scratch~~
+### List items
+1. First ordered list item
+* Unordered list can use asterisks
+
+[huik]:https://pypi.org/project/huik-module
+[pythonwebsite]: https://www.python.org/downloads/release/python-375
+
+
