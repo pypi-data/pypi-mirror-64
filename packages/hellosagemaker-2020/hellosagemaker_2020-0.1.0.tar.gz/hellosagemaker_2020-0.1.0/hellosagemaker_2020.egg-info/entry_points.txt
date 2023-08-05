@@ -1,0 +1,3 @@
+[console_scripts]
+hellosagemaker_2020 = hellosagemaker_2020.cli:main
+
