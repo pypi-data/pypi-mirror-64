@@ -1,0 +1,13 @@
+.DS_Store,sha256=9-58NdqLPGxIHxT4HzHK-lC-LAa5r-NF5yhKy9_j7PU,6148
+ondemand_dask/__init__.py,sha256=e2xLERWyq4GAB4p7mW9DqlrFwRGeJ2PmO_kBHImctNs,90
+ondemand_dask/core.py,sha256=68n7YBNJ3hcirNFYWlFveCDb4_1MkmeNZbsRwIEeJOc,7433
+ondemand_dask/function.py,sha256=7iOnFeKH9OM9173kNIJinp4y_nOeBRnxdaXBBuVIpO0,980
+ondemand_dask/install.sh,sha256=Q140_fRaq6XZwsZODeVTE1S3405hqMzKaI8gS8ubPso,704
+ondemand_dask/libraries.py,sha256=zSYaXomVEGfo5wQa4nlW6bhzqx-6wrxMpdhWNHSgtMY,617
+ondemand_dask/scalable_dask.py,sha256=KIV197JEQGshKSkphj5WJD6cu2VNLhuBfKyklaar89w,6946
+ondemand_dask/upload.py,sha256=XMgRQ3O8P8vRU0ly8nzBXtccU-yJIAADh1lnmz7K0Lo,8044
+ondemand_dask-0.0.7.dist-info/LICENSE,sha256=-pSQXU6zfITXRVOlEdXLReWc2_SJlh0cd3OwF7TjCNY,1072
+ondemand_dask-0.0.7.dist-info/METADATA,sha256=osMlK7O-zT64KubrgSQE7rz42kkI_0BDmCVH6CclmLs,687
+ondemand_dask-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ondemand_dask-0.0.7.dist-info/top_level.txt,sha256=P8QnxEKFeTCYc1p4aMg_COeL2oAB-3hcFnC84waDpB0,14
+ondemand_dask-0.0.7.dist-info/RECORD,,
