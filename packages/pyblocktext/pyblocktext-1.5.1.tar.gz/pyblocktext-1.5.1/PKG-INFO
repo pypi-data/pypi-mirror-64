@@ -1,0 +1,35 @@
+Metadata-Version: 1.0
+Name: pyblocktext
+Version: 1.5.1
+Summary: a python package to generate blocktext
+Home-page: https://github.com/gubareve/py-blocktext/
+Author: Evan Gubarev
+Author-email: evan@evangubarev.com
+License: MIT
+Description: The pyblocktext package makes ascii art super easy!
+        
+        print pyblocktext.blocktext("A") --> ascii art for a
+        
+        Install
+        
+        ---------------------------
+        
+        $ pip install pyblocktext 
+        
+        or 
+        
+        $ python -m pip install pyblocktext
+        
+        Usage
+        
+        ---------------------------
+        
+        import pyblocktext
+        
+        blocktext = pyblocktext.blocktext
+        
+        print blocktext("a")
+        
+        ONLY WORKS FOR INDIVIDUAL CHAR'S
+        
+Platform: UNKNOWN
