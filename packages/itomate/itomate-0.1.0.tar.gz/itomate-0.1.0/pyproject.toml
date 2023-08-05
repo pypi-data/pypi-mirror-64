@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "itomate"
+version = "0.1.0"
+description = "Automate your iTerm layouts and workflows"
+authors = ["Kamran Ahmed <kamranahmed.se@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "3.*"
+pyyaml = "^3.11.1"
+iterm2 = "^1.11"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+itomate = 'entry:main'
