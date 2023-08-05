@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: django-chatbot
+Version: 0.0.1
+Summary: Django webhook for ChatBotAI
+Home-page: https://github.com/ahmadfaizalbh/django-chatbot
+Author: Ahmad Faizal B H
+Author-email: ahmadfaizalbh726@gmal.com
+License: MIT
+Description: Django ChatBot AI
+        ==================
+        
+        A Django wrapper with webhook for [ChatbotAI](https://pypi.org/project/chatbotAI/)
+        
+        
+        
+        
+        
+Keywords: django chatbot ai webhook and django wrapper for ChatBotAI
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
