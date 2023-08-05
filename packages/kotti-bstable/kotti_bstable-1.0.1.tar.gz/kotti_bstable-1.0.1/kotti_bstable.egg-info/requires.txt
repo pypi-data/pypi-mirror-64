@@ -1,0 +1,8 @@
+Kotti>=1.2.4
+kotti_tinymce
+
+[tests]
+pytest-cov
+pytest-pep8
+mock
+webtest
