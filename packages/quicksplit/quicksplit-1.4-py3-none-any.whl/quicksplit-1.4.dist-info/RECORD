@@ -1,0 +1,10 @@
+cli/__init__.py,sha256=oH71iBfZxcnW0ktAfnwMdEE70rxsOEVmgYuDEVpGngQ,429
+cli/client.py,sha256=x7dcqS30GBlhOwCaZi8odRXejHGBacXWzqK8Omz_8tg,2408
+cli/commands.py,sha256=jcQ5TCIaH0H4ezy3OfI3Hwm5sXC22sODa9c9gQEmkVQ,9814
+cli/config.py,sha256=dQUq3iYLi12_OJz_MjiIDT1yVPPNSC-nmUJak6NdA_Y,968
+cli/printers.py,sha256=NAnKOJZ16xtWmG9_dr0utikC_S5QklA2HOtcJWybtUQ,2090
+quicksplit-1.4.dist-info/METADATA,sha256=H8wG02QjvGTPeP5t6Cc_LH6YXoFtQE8vn-tm8UfCYZg,495
+quicksplit-1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+quicksplit-1.4.dist-info/entry_points.txt,sha256=QOY7mjePTesygSj-yNlwsV_drRklFkdNDkHZJH7Lpl0,41
+quicksplit-1.4.dist-info/top_level.txt,sha256=2ImG917oaVHlm0nP9oJE-Qrgs-fq_fGWgba2H1f8fpE,4
+quicksplit-1.4.dist-info/RECORD,,
