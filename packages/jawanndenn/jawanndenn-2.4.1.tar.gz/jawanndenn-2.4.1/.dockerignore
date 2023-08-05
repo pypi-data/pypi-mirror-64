@@ -1,0 +1,26 @@
+##################################################################################
+## THIS FILE WAS GENERATED -- DO NOT EDIT!
+##
+## In order to get .dockerignore back in sync, run:
+##   ./generate_whitelist_dockerignore_file.sh > .dockerignore
+##################################################################################
+
+# Ignore everything
+*
+
+# Unignore files based on "git ls-files"
+!Dockerfile
+!jawanndenn/migrations/*.py
+!jawanndenn/static/3rdparty/noty-2.4.1/js/noty/packaged/*.js
+!jawanndenn/static/3rdparty/noty-2.4.1/*.txt
+!jawanndenn/static/css/*.css
+!jawanndenn/static/html/*.xhtml
+!jawanndenn/static/js/*.js
+!jawanndenn/tests/*.py
+!jawanndenn/*.py
+!*.png
+!*.py
+!*.rst
+!*.sh
+!*.txt
+!*.yml
