@@ -1,0 +1,10 @@
+README.md
+setup.py
+./bin/cluttermanager
+bin/__init__.py
+cluttermanager/__init__.py
+cluttermanager/bindings.py
+cluttermanager.egg-info/PKG-INFO
+cluttermanager.egg-info/SOURCES.txt
+cluttermanager.egg-info/dependency_links.txt
+cluttermanager.egg-info/top_level.txt
