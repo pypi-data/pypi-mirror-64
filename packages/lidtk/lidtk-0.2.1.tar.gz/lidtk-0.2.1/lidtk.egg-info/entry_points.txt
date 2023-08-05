@@ -1,0 +1,3 @@
+[console_scripts]
+lidtk = lidtk.cli:entry_point
+
