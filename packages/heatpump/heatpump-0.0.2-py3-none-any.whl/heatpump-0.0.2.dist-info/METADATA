@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: heatpump
+Version: 0.0.2
+Summary: A Python module do simple modelling of heat pumps
+Home-page: https://github.com/MarcvdSluys/HeatPump
+Author: Marc van der Sluys
+License: GPLv3+
+Keywords: heat pump,heating,energy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+# HeatPump #
+
+A Python module do simple modelling of heat pumps.
+
+
+
+
