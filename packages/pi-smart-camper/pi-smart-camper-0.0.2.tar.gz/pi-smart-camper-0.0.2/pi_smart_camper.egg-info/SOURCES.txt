@@ -1,0 +1,10 @@
+README.md
+setup.py
+monitoring/__init__.py
+monitoring/internal_temp.py
+monitoring/motion_sensing.py
+pi_smart_camper.egg-info/PKG-INFO
+pi_smart_camper.egg-info/SOURCES.txt
+pi_smart_camper.egg-info/dependency_links.txt
+pi_smart_camper.egg-info/requires.txt
+pi_smart_camper.egg-info/top_level.txt
