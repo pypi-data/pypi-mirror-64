@@ -1,0 +1,9 @@
+README.md
+setup.py
+gopup/__init__.py
+gopup/my_fun.py
+gopup.egg-info/PKG-INFO
+gopup.egg-info/SOURCES.txt
+gopup.egg-info/dependency_links.txt
+gopup.egg-info/requires.txt
+gopup.egg-info/top_level.txt
