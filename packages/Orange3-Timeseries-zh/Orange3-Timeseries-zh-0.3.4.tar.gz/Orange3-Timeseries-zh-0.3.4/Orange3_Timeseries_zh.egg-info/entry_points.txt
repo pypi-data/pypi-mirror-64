@@ -1,0 +1,12 @@
+[orange.canvas.help]
+html-index = orangecontrib.timeseries.widgets:WIDGET_HELP_PATH
+
+[orange.widgets]
+时序分析(Time Series) = orangecontrib.timeseries.widgets
+
+[orange.widgets.tutorials]
+
+
+[orange3.addon]
+timeseries = orangecontrib.timeseries
+
