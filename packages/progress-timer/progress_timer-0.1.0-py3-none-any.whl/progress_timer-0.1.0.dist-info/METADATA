@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: progress-timer
+Version: 0.1.0
+Summary: A Python module which prints elapsed time and estimated time left with accordance to percentage
+Home-page: https://github.com/yonghee12/progress_timer
+Author: Yonghee Cheon
+Author-email: yonghee.cheon@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Requires-Dist: numpy (>=1.11)
+
+UNKNOWN
+
+
