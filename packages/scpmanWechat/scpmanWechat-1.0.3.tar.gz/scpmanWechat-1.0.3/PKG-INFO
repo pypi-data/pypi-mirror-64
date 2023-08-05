@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: scpmanWechat
+Version: 1.0.3
+Summary: Send Message to Wechat Application
+Home-page: https://github.com/freeddser/scpmanWechat
+Author: scpman
+Author-email: scpman@live.com
+Maintainer: scpman
+Maintainer-email: scpman@live.com
+License: UNKNOWN
+Description: This is Send message to Wechat application package. You can use
+        [Github](https://github.com/freeddser/scpmanWechat)
+        
+        ### pip install scpmanWechat
+        ### demo
+            from scpmanWechat import QYWeChatBot
+        
+            CORPID = 'XXX'
+            CORPSECRET = 'XXXX'
+            AGENTID = '1000002'
+            Tag = "1"
+            msg = "hello world"
+            wx_bot = QYWeChatBot(CORPID, CORPSECRET, AGENTID, Tag)
+            wx_bot.send_msg_to_tag_group("xxx")
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

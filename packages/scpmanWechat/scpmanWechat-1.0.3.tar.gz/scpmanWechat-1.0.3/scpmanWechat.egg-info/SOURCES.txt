@@ -1,0 +1,7 @@
+README.md
+setup.py
+scpmanWechat/__init__.py
+scpmanWechat.egg-info/PKG-INFO
+scpmanWechat.egg-info/SOURCES.txt
+scpmanWechat.egg-info/dependency_links.txt
+scpmanWechat.egg-info/top_level.txt
