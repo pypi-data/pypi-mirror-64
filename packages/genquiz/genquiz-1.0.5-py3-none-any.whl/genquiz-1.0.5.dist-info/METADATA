@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: genquiz
+Version: 1.0.5
+Summary: Create individual questions for online examination
+Home-page: https://github.com/Parinyasan/genquiz
+Author: Parinya Sanguansat
+Author-email: sanguansat@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: openpyxl
+Requires-Dist: numpy
+Requires-Dist: python-docx
+Requires-Dist: lxml
+Requires-Dist: sympy
+Requires-Dist: pandas
+Requires-Dist: xlrd
+
+Create individual questions for online examination
+
+
