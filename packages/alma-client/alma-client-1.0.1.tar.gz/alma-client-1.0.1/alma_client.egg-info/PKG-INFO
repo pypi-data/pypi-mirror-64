@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: alma-client
+Version: 1.0.1
+Summary: Python API client for the Alma Installments API
+Home-page: https://github.com/alma/alma-python-client
+Author: Alma
+Author-email: contact@getalma.eu
+License: MIT
+Description: # alma-python-client
+        
+        [![Travis Build Status](https://travis-ci.org/alma/alma-python-client.svg?branch=master)](https://travis-ci.org/alma/alma-python-client)
+        
+        Python API Client for the Alma API
+        
+        
+        ## Demo
+        
+        
+        ```python
+        from alma import Client
+        
+        alma_client = Client(api_key="sk_test..")
+        payments = alma_client.payments.fetch_all()
+        
+        for p in payments:
+            print(f"{p.id}: Paiement en {p.installments_count)} fois")
+        
+        
+        payment_data = {
+            "purchase_amount": 10000,
+            "return_url": "http://merchant.com/payment-success",
+            "shipping_address": {
+                "first_name": "Martin",
+                "last_name": "Dupond",
+                "line1": "1 rue de Rivoli",
+                "postal_code": "75004",
+                "city": "Paris"
+            }
+        }
+        
+        eligibility = alma_client.payments.eligibility(payment_data)
+        if eligibility.eligible:
+            alma_client.payments.create(payment_data)
+        ```
+        
+        
+        # Changelog
+        
+        1.0.1 (2020-03-24)
+        ------------------
+        
+        - Automatically detects the API mode from the api_key.
+        
+        
+        1.0.0 (2020-03-24)
+        ------------------
+        
+        - Create a Python client for Alma
+        - Handle Order entity for Payment
+        - Handle the refund endpoint
+        - Handle pagination for orders
+        - Handle the send-sms API for payments.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
