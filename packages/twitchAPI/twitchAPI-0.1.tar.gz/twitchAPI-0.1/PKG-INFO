@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: twitchAPI
+Version: 0.1
+Summary: A Python 3.7 implementation of the Twitch API and its Webhook
+Home-page: https://github.com/Teekeks/pyTwitchAPI
+Author: Lena "Teekeks" During
+Author-email: info@teawork.de
+License: MIT
+Download-URL: https://github.com/Teekeks/pyTwitchAPI/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: twitch,webhook,helix
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
