@@ -1,0 +1,3 @@
+[console_scripts]
+uvicmuse_debug = uvicmuse_debug.__main__:main
+
