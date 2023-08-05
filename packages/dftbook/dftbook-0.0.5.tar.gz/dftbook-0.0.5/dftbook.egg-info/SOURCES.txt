@@ -1,0 +1,7 @@
+setup.py
+dftbook/__init__.py
+dftbook/setup.py
+dftbook.egg-info/PKG-INFO
+dftbook.egg-info/SOURCES.txt
+dftbook.egg-info/dependency_links.txt
+dftbook.egg-info/top_level.txt
