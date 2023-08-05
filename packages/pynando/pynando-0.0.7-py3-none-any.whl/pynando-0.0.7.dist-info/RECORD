@@ -1,0 +1,9 @@
+pynando/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynando/data.py,sha256=Z9tiLkijJS3Uto0RFaYJEO34yRNcL2Ush5mfov0rOSA,441
+pynando/downloader.py,sha256=5zC3pcl4jLhfMmHMELMj0_jJubXFEtn3JjG-eNx1DBI,701
+pynando/nando.py,sha256=yBTdSzIkOLb6snGKS2l5_t5Rr-xL7YUg0_XeJxApc64,5468
+pynando-0.0.7.dist-info/LICENSE,sha256=466qG_rgDXP-z05oQBL25qbTkajvNMNO9yrBGZvEdUo,1095
+pynando-0.0.7.dist-info/METADATA,sha256=sn1M6s-L1tCFG9bMpvJQp-bIsthK1DGGp-7egypq9PI,1016
+pynando-0.0.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pynando-0.0.7.dist-info/top_level.txt,sha256=tK255lxluuWjFTVkVi-yx_OxN_JLv_w5A4Nzf2hVeFQ,8
+pynando-0.0.7.dist-info/RECORD,,
