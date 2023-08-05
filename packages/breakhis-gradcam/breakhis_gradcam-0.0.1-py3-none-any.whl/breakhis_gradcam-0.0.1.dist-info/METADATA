@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: breakhis-gradcam
+Version: 0.0.1
+Summary: Classification of the BreaKHis dataset with GradCAM support
+Home-page: https://github.com/dthiagarajan/breakhis_gradcam
+Author: Dilip Thiagarajan
+Author-email: dt372@cornell.edu
+License: Apache Software License 2.0
+Keywords: Deep Learning,GradCAM,BreaKHis,breast cancer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.4.0)
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+Requires-Dist: pytorch-lightning
+
+# BreaKHis Classification with GradCAM
+> Fine-tuning classification networks and using GradCAM to obtain object detection results on histopathological slides of breast cancer.
+
+
+## Install
+
+`pip install breakhis_gradcam`
+
+## Later
+
+* Examples of how to use this package
+* Visualizations of results (GradCAM, corresponding object detection) after training using models defined by this package
+
+
+## Contact
+
+dt372@cornell.edu
+
+
