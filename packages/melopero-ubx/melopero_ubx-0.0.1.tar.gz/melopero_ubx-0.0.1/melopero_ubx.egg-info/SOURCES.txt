@@ -1,0 +1,7 @@
+setup.py
+melopero_ubx/UBX_MSG.py
+melopero_ubx/__init__.py
+melopero_ubx.egg-info/PKG-INFO
+melopero_ubx.egg-info/SOURCES.txt
+melopero_ubx.egg-info/dependency_links.txt
+melopero_ubx.egg-info/top_level.txt
