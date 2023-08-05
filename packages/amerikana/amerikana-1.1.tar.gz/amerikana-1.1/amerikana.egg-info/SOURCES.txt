@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+amerikana/__init__.py
+amerikana/decoder.py
+amerikana.egg-info/PKG-INFO
+amerikana.egg-info/SOURCES.txt
+amerikana.egg-info/dependency_links.txt
+amerikana.egg-info/requires.txt
+amerikana.egg-info/top_level.txt

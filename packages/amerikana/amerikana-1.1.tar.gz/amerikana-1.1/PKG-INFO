@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: amerikana
+Version: 1.1
+Summary: ☕ a simpler imagenet class synset and decoder utility. pluggable and 100% tf.keras compatible
+Home-page: https://github.com/gWOLF3/amerikana
+Author: Glenn Wolfe
+Author-email: glennwolfe@protonmail.com
+License: MIT
+Download-URL: https://github.com/gWOLF3/amerikana/archive/1.0.tar.gz
+Description: ### ☕ amerikana: [keras](https://www.tensorflow.org/guide/keras) prediction decoder for [imagenet-simple-labels](https://github.com/anishathalye/imagenet-simple-labels)
+        
+        a simpler, more human readable imagenet synset for keras. 
+        
+        
+        comparison:
+        
+        | ID | ImageNet | Keras | Simple (this repo) |
+        | --- | --- | --- | --- |
+        | 87 | African grey, African gray, Psittacus erithacus | African_grey | grey parrot |
+        | 97 | drake | drake | duck |
+        | 913 | wreck | wreck | shipwreck |
+        | 930 | French loaf | French_loaf | baguette |
+        
+        
+        #### quickstart:
+        
+        should be used as a drop in replacement for [tf.keras.applications.imagenet_utils.decode_predictions](https://www.tensorflow.org/api_docs/python/tf/keras/applications/imagenet_utils/decode_predictions)
+        
+        install with pip:
+        ```
+        pip install amerikana
+        ```
+        
+        import:
+        
+        ```
+        from amerikana import decode_predictions
+        ```
+        
+        instead of:
+        
+        ```
+        from tensorflow.keras.applications.imagenet_utils import decode_predictions
+        ```
+        
+        example use:
+        
+        ```
+        predictions = model.predict(processed_image)
+        labels = decode_predictions(predictions)
+        print(labels)
+        ```
+        
+        
+        #### credit: 
+        
+        - simplified labels list: [imagenet-simple-labels](https://github.com/anishathalye/imagenet-simple-labels). see information and comparison for simplified labels there.
+        
+        - the module code used in this project is a derivative of tf.keras [imagenet_utils](https://github.com/tensorflow/tensorflow/blob/1a9dcb0b4844007f0943581f4fbeaa7fc8628bd6/tensorflow/python/keras/applications/imagenet_utils.py).
+        
+        
+        #### enjoy!
+        
+Keywords: keras,imagenet,labels,simple,american
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
