@@ -1,0 +1,8 @@
+README.md
+setup.py
+python4DBI/python4DBI.py
+python4DBI.egg-info/PKG-INFO
+python4DBI.egg-info/SOURCES.txt
+python4DBI.egg-info/dependency_links.txt
+python4DBI.egg-info/requires.txt
+python4DBI.egg-info/top_level.txt
