@@ -1,0 +1,11 @@
+tuxbuild/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tuxbuild/build.py,sha256=nwqe8wGfWNBmP8-cWUrp1VXld2Xvm0tQoAqe0Ps6LYc,8028
+tuxbuild/cli.py,sha256=StC7lXag3v3_5bpqqwui6LR2CcmRvATQiE51Tsaa3fc,11163
+tuxbuild/config.py,sha256=ScxqiKJS95x02f9lGiyroXwPzz2IRf63PoeWOWW_4x8,3499
+tuxbuild/exceptions.py,sha256=PWzP9hak00bMnavNv1Fj7iI7ZqNX7k1-MNN7aecZRJo,582
+tuxbuild-0.2.5.dist-info/LICENSE,sha256=KCYmh8fedjB6F_MOzFd_UV0SXSesEVzOfN_fpPSyUoI,1054
+tuxbuild-0.2.5.dist-info/METADATA,sha256=xNEbTspJDAQJ_1ySv0txKrA8_75dCjg7PIxf0tnOB5o,12814
+tuxbuild-0.2.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tuxbuild-0.2.5.dist-info/entry_points.txt,sha256=00js-SfODl-J8_96yqZts4NSdCuTkMzET626iLC1sfo,65
+tuxbuild-0.2.5.dist-info/top_level.txt,sha256=U4ddCcdPNRUctuhIQNvMnMVJYJ2g5XTcVs4fb-ORMUs,9
+tuxbuild-0.2.5.dist-info/RECORD,,
