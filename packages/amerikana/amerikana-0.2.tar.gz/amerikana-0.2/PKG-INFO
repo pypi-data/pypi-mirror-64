@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: amerikana
+Version: 0.2
+Summary: ☕ a simpler imagenet class synset and decoder utility. pluggable and 100% tf.keras compatible
+Home-page: https://github.com/gWOLF3/amerikana
+Author: Glenn Wolfe
+Author-email: glennwolfe@protonmail.com
+License: MIT
+Download-URL: https://github.com/gWOLF3/amerikana/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: keras,imagenet,labels,simple,american
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
