@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: rdlaiye
+Version: 1.0.1
+Summary: test for python pkg
+Home-page: http://www.reshapedata.com
+Author: Reshapedata
+Author-email: hulilei@takewiki.com.cn
+License: Apache License
+Keywords: reshapedata,takewiki
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: time
+Requires-Dist: json
+Requires-Dist: hashlib
+Requires-Dist: string
+
+UNKNOWN
+
+
