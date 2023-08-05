@@ -1,0 +1,17 @@
+README.md
+setup.py
+app/__init__.py
+app/classify.py
+app/classify_predict.py
+app/classify_task.py
+app/cpu_num.py
+app/mask.py
+app/predict.py
+paddle_wrap.egg-info/PKG-INFO
+paddle_wrap.egg-info/SOURCES.txt
+paddle_wrap.egg-info/dependency_links.txt
+paddle_wrap.egg-info/not-zip-safe
+paddle_wrap.egg-info/requires.txt
+paddle_wrap.egg-info/top_level.txt
+paddles/__init__.py
+paddles/wrap.py

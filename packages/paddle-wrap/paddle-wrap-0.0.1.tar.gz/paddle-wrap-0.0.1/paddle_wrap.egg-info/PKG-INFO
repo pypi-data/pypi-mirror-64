@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: paddle-wrap
+Version: 0.0.1
+Summary: paddle wrap
+Home-page: https://pypi.org/project/paddle-wrap/
+Author: handy
+Author-email: cvdnn@foxmail.com
+License: Apache v2.0
+Description: ## Paddle Wrap
+Keywords: paddle,paddlehub
+Platform: any
+Description-Content-Type: text/markdown
