@@ -1,0 +1,86 @@
+Metadata-Version: 1.1
+Name: MDocument
+Version: 1.0.1584794233
+Summary: Simple DRM for motor client
+Home-page: https://git.yurzs.dev/yurzs/MDocument
+Author: Yurzs
+Author-email: yurzs+MDocument@yurzs.dev
+License: MIT
+Description: MDocument
+        =========
+        
+        Simple DRM for async mongo motor client
+        
+        Usage
+        -----
+        
+        .. code-block:: python
+        
+            import asyncio
+        
+            from MDocument import Document
+        
+            class Comment(Document):
+                __collection__ = "comments"
+        
+        
+            class Video(Document):
+                __collection__ = "videos"
+        
+                @Document.lazy_property(self_field="_id", other_field="video")
+                def comments(self):
+                    return Comment
+        
+        
+            loop = asyncio.get_event_loop()
+            Document.setup(loop, "localhost", "test_database")
+        
+            video = loop.run_until_complete(Video.create(
+                title="Test",
+            ))
+        
+            comment1 = loop.run_until_complete(Comment.create(
+                video=video._id,
+                message="First!",
+            ))
+        
+            comment2 = loop.run_until_complete(Comment.create(
+                video=video._id,
+                message="Second!"
+            ))
+        
+        Now we can easily access our comments using our lazy property
+        
+        .. code-block:: python
+        
+            print(loop.run_until_complete(video.comments))
+            [
+                Comment(_id=5e7533d55eb6a8c6d24d3cc7, video=5e7533d55eb6a8c6d24d3cc6, message=First!),
+                Comment(_id=5e7533d55eb6a8c6d24d3cc8, video=5e7533d55eb6a8c6d24d3cc6, message=Second!)
+            ]
+        
+        Play from console
+        -----------------
+        
+        If you want changes made from console immediately you can use `update_immediately` argument
+        
+        .. code-block:: python
+        
+            video = await Video.create(update_immediately=True,
+                title="Test")
+            video.length = "1:10"
+        
+        Now we can find that original document was changed
+        
+        .. code-block:: python
+        
+            print(await Video.collection.find_one({"length": "1:10"}))
+            {'_id': ObjectId('5e75373e5eb6a8c6d24d3cce'), 'title': 'Test', 'length': '1:10'}
+        
+Keywords: mongo,motor,Document,ORM
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
