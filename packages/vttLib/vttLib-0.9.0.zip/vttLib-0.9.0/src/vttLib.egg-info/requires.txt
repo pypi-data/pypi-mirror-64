@@ -1,0 +1,3 @@
+fonttools[ufo]>=3.44.0
+pyparsing>=2.1.5
+ufoLib2
