@@ -1,0 +1,12 @@
+setup.py
+cli/__init__.py
+cli/client.py
+cli/commands.py
+cli/config.py
+cli/printers.py
+quicksplit.egg-info/PKG-INFO
+quicksplit.egg-info/SOURCES.txt
+quicksplit.egg-info/dependency_links.txt
+quicksplit.egg-info/entry_points.txt
+quicksplit.egg-info/requires.txt
+quicksplit.egg-info/top_level.txt
