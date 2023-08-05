@@ -1,0 +1,14 @@
+README.md
+setup.py
+ir_evaluation/__init__.py
+ir_evaluation/effectiveness.py
+ir_evaluation/datasets/__init__.py
+ir_evaluation/datasets/data/dataset1.txt
+ir_evaluation/datasets/data/dataset2.txt
+ir_evaluation/datasets/data/dataset3.txt
+ir_evaluation/datasets/data/dataset4.txt
+ir_evaluation/datasets/data/dataset5.txt
+ir_evaluation_py.egg-info/PKG-INFO
+ir_evaluation_py.egg-info/SOURCES.txt
+ir_evaluation_py.egg-info/dependency_links.txt
+ir_evaluation_py.egg-info/top_level.txt
