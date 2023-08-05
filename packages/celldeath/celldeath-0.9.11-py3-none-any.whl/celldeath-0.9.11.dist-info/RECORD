@@ -1,0 +1,11 @@
+celldeath/__init__.py,sha256=uL9OvLk5W6ipI_kdVLPwtCh-YaYUi1lNybM1ed_DdS0,40
+celldeath/main.py,sha256=1wJ6IUU5D0TGopb5B17FJLPho58SNDePB5BxDX4B11g,6103
+celldeath/predict.py,sha256=MeMaO_hGUhSapJBod-IXeFCkB731fVZB9gkx-zMTG4A,1134
+celldeath/slicer.py,sha256=gniuTPW0wCiv4p0YnwoJwanUNLNsv9egK192rg1x5Bc,755
+celldeath/train.py,sha256=X0Vhr7EXCaVSbuFXcCifbvGr3g8KFt3lUzDZjElNvVA,7168
+celldeath/utils.py,sha256=aL6YxSfyRzCJcIhE-lsmn0pJr2TFAZ1IXUqMw0RDyIo,450
+celldeath-0.9.11.dist-info/LICENSE,sha256=Gy8x8vXr9f0cAV2iGiti8jsLRuGvHA8pB0tSEykZm_Y,1110
+celldeath-0.9.11.dist-info/METADATA,sha256=TtstR0qvIXyUbv4OJgjMQqsWERFMNsqQnzVRHSNMzPI,10050
+celldeath-0.9.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+celldeath-0.9.11.dist-info/top_level.txt,sha256=gyP73xZ2-H3zEU5UKauFMi-P8_Sru4A70pSXyfrWpZ0,10
+celldeath-0.9.11.dist-info/RECORD,,
