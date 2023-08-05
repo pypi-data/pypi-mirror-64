@@ -1,0 +1,11 @@
+CMakeLists.txt
+MANIFEST.in
+README.md
+setup.py
+src/array_indexing_suite.h
+src/timeswipe_py.cpp
+test_timeswipe.egg-info/PKG-INFO
+test_timeswipe.egg-info/SOURCES.txt
+test_timeswipe.egg-info/dependency_links.txt
+test_timeswipe.egg-info/requires.txt
+test_timeswipe.egg-info/top_level.txt
