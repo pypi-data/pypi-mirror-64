@@ -1,0 +1,15 @@
+Django>=2.1
+djangorestframework>=3.7
+
+[development]
+psycopg2-binary
+
+[docs]
+django-extensions
+pydot
+
+[release]
+twine
+
+[testing]
+tox
