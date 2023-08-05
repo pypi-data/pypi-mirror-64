@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: computlib
+Version: 0.1.0
+Summary: Simple mathematical library
+Home-page: https://gitlab.com/mlysakowski/computlib
+License: GPL-3.0
+Keywords: Computlib
+Author: Mathieu LYSAKOWSKI
+Author-email: mathieu@phec.net
+Maintainer: Mathieu LYSAKOWSKI
+Maintainer-email: mathieu@phec.net
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Documentation, https://gitlab.com/mlysakowski/computlib
+Project-URL: Repository, https://gitlab.com/mlysakowski/computlib
+Project-URL: issues, https://gitlab.com/mlysakowski/computlib/-/issues
+Description-Content-Type: text/markdown
+
+# Computlib
+
+A simple compute library
+
+## Documentations
+
+See [Documentation page](https://mlysakowski.gitlab.io/computlib/)
