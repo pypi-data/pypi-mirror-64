@@ -1,0 +1,3 @@
+[console_scripts]
+kernelbridge = kernelbridge.cli:main
+
