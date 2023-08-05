@@ -1,0 +1,3 @@
+[console_scripts]
+maskprocessor = maskprocessor.__init__:main
+
