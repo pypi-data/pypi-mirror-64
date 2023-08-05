@@ -1,0 +1,3 @@
+
+class TooShortTimeout(Exception):
+    pass
