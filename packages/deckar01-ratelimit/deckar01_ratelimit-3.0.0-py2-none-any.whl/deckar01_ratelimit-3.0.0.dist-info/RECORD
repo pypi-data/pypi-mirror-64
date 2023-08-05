@@ -1,0 +1,8 @@
+ratelimit/__init__.py,sha256=0JSUyqATgUBNiWQAzaM5uQ_KbZ9jX_OxXbB4x6b9eWI,678
+ratelimit/decorators.py,sha256=zMX0Nfa4AVxLETEeLt94aDEGbMAA3J8FsVQoauHocSY,5555
+ratelimit/exception.py,sha256=LGP_o3yO9vlZyIoxbxtnHM-eRQ9QB0UP_M39U61t7wg,672
+deckar01_ratelimit-3.0.0.dist-info/LICENSE.txt,sha256=Lcmqwidh0q4CXfDmP5Gzq6OzLnKJ192KG2icwEr6mRI,1066
+deckar01_ratelimit-3.0.0.dist-info/METADATA,sha256=jLPNdOwZjFnEzjs_vkxoPaBloU7yCtBqSHB0Z6bD_no,6053
+deckar01_ratelimit-3.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+deckar01_ratelimit-3.0.0.dist-info/top_level.txt,sha256=6_2MrjvsAurbjvmuoRAAjLQZJkx359fKsRuhIVSiEbI,10
+deckar01_ratelimit-3.0.0.dist-info/RECORD,,
