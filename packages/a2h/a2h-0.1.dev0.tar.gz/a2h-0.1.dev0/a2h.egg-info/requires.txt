@@ -1,0 +1,4 @@
+
+[test]
+pytest-html
+pytest-plus
