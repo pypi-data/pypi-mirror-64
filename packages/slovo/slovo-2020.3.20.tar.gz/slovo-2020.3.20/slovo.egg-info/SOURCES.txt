@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+slovo/__init__.py
+slovo/exceptions.py
+slovo/terms.py
+slovo/version.py
+slovo/word.py
+slovo.egg-info/PKG-INFO
+slovo.egg-info/SOURCES.txt
+slovo.egg-info/dependency_links.txt
+slovo.egg-info/top_level.txt
