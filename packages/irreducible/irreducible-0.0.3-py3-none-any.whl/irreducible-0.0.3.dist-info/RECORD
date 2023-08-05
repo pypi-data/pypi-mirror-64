@@ -1,0 +1,8 @@
+irreducible/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irreducible/api.py,sha256=w5-sVDUuLz2BLxpl6VLMzBBwCikQHktd2i1bSUxgGUw,3744
+irreducible/middleware.py,sha256=ZA1PZycIDZ3qvourcorIqSfssTC9xBYwG6rW9CYklN8,623
+irreducible/response.py,sha256=iHtOrgefwqx4aB4nc0OIfHD7HksOWTj1xsj1FIhWBWc,969
+irreducible-0.0.3.dist-info/METADATA,sha256=tvH-WR0xTqA2Dc276rCvjvbo2uxBTl7lTyGYOMY_SiQ,4120
+irreducible-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+irreducible-0.0.3.dist-info/top_level.txt,sha256=IQgXjUeeOoFjJbEntfIEXGh1KwLWwi7v5kv39u5FihE,12
+irreducible-0.0.3.dist-info/RECORD,,
