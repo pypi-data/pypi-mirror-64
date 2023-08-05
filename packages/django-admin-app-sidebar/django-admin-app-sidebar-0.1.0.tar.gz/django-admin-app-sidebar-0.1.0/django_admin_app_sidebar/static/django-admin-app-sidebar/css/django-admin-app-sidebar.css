@@ -1,0 +1,129 @@
+/*  Changelist fix */
+
+.django-admin-app-sidebar-wrapper-for-changelist {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+    border-left: none;
+}
+.django-admin-app-sidebar-wrapper-for-changelist #changelist-filter {
+    position: relative;
+    top: auto;
+}
+.django-admin-app-sidebar-wrapper-for-changeform {
+    width: 240px;
+    position: absolute;
+    right: 40px;
+}
+.django-admin-app-sidebar-wrapper-for-app-index {
+    position: absolute;
+    left: 680px;
+}
+
+
+/* Sidebar portlet style */
+
+.sidebar-portlet {
+    right: 0;
+    z-index: 1000;
+    width: 240px;
+    background: #f8f8f8;
+    border-left: none;
+    margin-bottom: 20px;
+}
+
+.sidebar-portlet h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 5px 15px;
+    margin: 0;
+    border-bottom: none;
+    font-weight: 400;
+    font-size: 13px;
+    text-align: left;
+    background-color: #79aec8;
+    color: #fff;
+}
+
+.sidebar-portlet h3 {
+    font-weight: 400;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.sidebar-portlet ul {
+    margin: 5px 0;
+    padding: 0 15px 15px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.sidebar-portlet ul:last-child {
+    border-bottom: none;
+    padding-bottom: none;
+}
+
+.sidebar-portlet li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.sidebar-portlet a {
+    display: block;
+    color: #999;
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+}
+
+.sidebar-portlet li.selected {
+    border-left: 5px solid #eaeaea;
+    padding-left: 10px;
+    margin-left: -15px;
+}
+
+.sidebar-portlet li.selected a {
+    color: #5b80b2;
+}
+
+.sidebar-portlet a:focus, #sidebar-portlet a:hover,
+.sidebar-portlet li.selected a:focus,
+.sidebar-portlet li.selected a:hover {
+    color: #036;
+}
+
+.django-admin-app-sidebar-navigation li {
+    height: 25px;
+    line-height: 25px;
+}
+.django-admin-app-sidebar-navigation-depth-2 {
+    text-indent: 20px;
+}
+.django-admin-app-sidebar-navigation-depth-3 {
+    text-indent: 40px;
+}
+.django-admin-app-sidebar-navigation li.django-admin-app-sidebar-navigation-sep {
+    height: auto;
+    line-height: auto;
+    vertical-align: middle;
+    margin: 5px 0;
+}
+
+
+
+
+
+@media (max-width: 1024px) {
+    .django-admin-app-sidebar-wrapper-for-changelist {
+        width: 200px;
+    }
+
+    .sidebar-portlet {
+        width: 200px;
+    }
+}
+
+

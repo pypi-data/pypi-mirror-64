@@ -1,0 +1,14 @@
+{% extends "admin/app_index.html" %}
+{% load static django_admin_app_sidebar %}
+
+{% block extrahead %}
+{{block.super}}
+<link rel="stylesheet" type="text/css" href="{% static "django-admin-app-sidebar/css/django-admin-app-sidebar.css" %}" />
+{% endblock %}
+
+{% block sidebar %}
+<div class="django-admin-app-sidebar-wrapper-for-app-index">
+    {% portlets_render %}
+</div>
+{{block.super}}
+{% endblock %}

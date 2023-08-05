@@ -1,0 +1,8 @@
+include MANIFEST.in
+include README.md
+include requirements.txt
+graft django_admin_app_sidebar
+exclude django_admin_app_sidebar_demo
+exclude django_admin_app_sidebar_example
+global-exclude __pycache__
+global-exclude *.py[co]

@@ -1,0 +1,14 @@
+{% extends "admin/change_list.html" %}
+{% load static django_admin_app_sidebar %}
+
+{% block extrahead %}
+{{block.super}}
+<link rel="stylesheet" type="text/css" href="{% static "django-admin-app-sidebar/css/django-admin-app-sidebar.css" %}" />
+{% endblock %}
+
+{% block filters %}
+<div class="django-admin-app-sidebar-wrapper-for-changelist">
+    {% portlets_render %}
+    {{block.super}}
+</div>
+{% endblock %}

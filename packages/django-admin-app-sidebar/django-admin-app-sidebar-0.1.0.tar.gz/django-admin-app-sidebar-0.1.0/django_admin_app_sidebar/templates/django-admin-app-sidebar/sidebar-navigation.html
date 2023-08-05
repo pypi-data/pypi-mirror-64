@@ -1,0 +1,12 @@
+<h2>{{title}}</h2>{% load django_admin_app_sidebar %}
+<ul class="django-admin-app-sidebar-navigation">
+    {% for item in navigation %}
+    <li class="{%if item.depth%}django-admin-app-sidebar-navigation-depth-{{item.depth}}{% endif %}{% ifequal item "-" %} django-admin-app-sidebar-navigation-sep{% endifequal %}">
+        {% ifequal item "-" %}
+            <hr />
+        {% else %}
+            <a href="{% sidebar_navigation_url item request %}" {% if item.target %}target="{{item.target}}"{% endif %}>{% if item.icon %}<i class="{{item.icon}}"></i>{% endif %} {{item.title}}</a>
+        {% endifequal %}
+    </li>
+    {% endfor %}
+</ul>

@@ -1,0 +1,23 @@
+{% load static %}
+
+{% for css in extra_css %}
+<link rel="stylesheet" type="text/css" href="{% static css %}">
+{% endfor %}
+
+{% for js in extra_js %}
+<script type="text/javascript" src="{% static js %}"></script>
+{% endfor %}
+
+{% for portlet in portlets %}
+<div class="sidebar-portlet">
+    {% autoescape off %}{{portlet}}{% endautoescape %}
+</div>
+{% endfor %}
+
+{% if fix_changelist_problem %}
+<script type="text/javascript" src="{% static "django-admin-app-sidebar/js/fix-changelist-problem.js" %}"></script>
+{% endif %}
+
+{% if fix_changeform_problem %}
+<link rel="stylesheet" type="text/css" href="{% static "django-admin-app-sidebar/css/fix-changeform-problem.css" %}">
+{% endif %}
