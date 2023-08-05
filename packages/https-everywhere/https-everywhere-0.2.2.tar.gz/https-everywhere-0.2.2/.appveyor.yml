@@ -1,0 +1,19 @@
+environment:
+  matrix:
+    - TOXENV: py38
+    - TOXENV: py37
+    - TOXENV: py36
+    - TOXENV: py35
+    - TOXENV: py34
+      COV_FAIL_UNDER: 65
+    - TOXENV: py27
+      COV_FAIL_UNDER: 60
+install:
+  - pip install tox codecov
+build: false
+test_script:
+  - git clone --depth 1 https://github.com/EFForg/https-everywhere
+  - mv https-everywhere ..
+  - tox
+  - codecov
+skip_branch_with_pr: true
