@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: secure-authenticator
+Version: 1.6
+Summary: Secure JWT Authenticator
+Home-page: UNKNOWN
+Author: PKP CTF
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Adaptive Technologies
+Classifier: Topic :: Software Development
+Classifier: Topic :: System
+Classifier: Topic :: Utilities
+Requires-Dist: pyjwt (==1.7.1)
+
+UNKNOWN
+
+
