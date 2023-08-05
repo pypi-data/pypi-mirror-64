@@ -1,0 +1,7 @@
+genquiz/__init__.py,sha256=WtCxlV7Azg7zf7eOozHChoqxWS2Tcun1hyNe-nusUeI,49
+genquiz/generator.py,sha256=HcK6Y-CCpQ6NG_W9-lN1XbN1vruDYTxQIVFel_0fQ8c,5452
+genquiz/grader.py,sha256=VfNPG47j2fkrXm58PeHLSjQJnqITCVGcBSr56MC3wOU,1154
+genquiz-1.0.3.dist-info/METADATA,sha256=tS37W81PXRb3zlG37L7eFGxHp7FUAGiO4x0OaAev8ok,688
+genquiz-1.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+genquiz-1.0.3.dist-info/top_level.txt,sha256=K7c1KfFGCI2hzHP34DoSYKLIWix72mlfasvFiou8QTA,8
+genquiz-1.0.3.dist-info/RECORD,,
