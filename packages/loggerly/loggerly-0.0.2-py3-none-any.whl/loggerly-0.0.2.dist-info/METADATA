@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: loggerly
+Version: 0.0.2
+Summary: Logger superclass with Loggly integration
+Home-page: UNKNOWN
+Author: Parker Duckworth
+License: Proprietary
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Loggerly
+
+Loggerly: Logger superclass with Loggly integration
+
+
