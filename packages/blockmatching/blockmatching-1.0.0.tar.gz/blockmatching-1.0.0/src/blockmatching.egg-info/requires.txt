@@ -1,0 +1,7 @@
+numpy
+numba
+opencv-python
+scipy
+Pillow
+networkx
+sk-video
