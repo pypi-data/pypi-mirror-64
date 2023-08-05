@@ -1,0 +1,15 @@
+click
+requests
+
+[dev]
+gitignoreio
+coverage
+pytest
+pytest-cov
+tox
+
+[test]
+coverage
+pytest
+pytest-cov
+tox
