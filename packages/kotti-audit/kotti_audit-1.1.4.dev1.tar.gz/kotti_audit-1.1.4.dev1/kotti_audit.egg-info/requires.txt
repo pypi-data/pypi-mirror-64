@@ -1,0 +1,9 @@
+Kotti>=1.2.4
+kotti_tinymce
+kotti_bstable>=1.0.1
+
+[tests]
+pytest-cov
+pytest-pep8
+mock
+webtest
