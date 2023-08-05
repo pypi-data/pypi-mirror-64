@@ -1,0 +1,17 @@
+webarchive (0.1.2)
+
+  * Print deduced path to stdout instead of stderr
+
+ -- Michał Góral <dev@goral.net.pl> Sat, 21 Mar 2020 21:50:46 +0100
+
+webarchive (0.1.0)
+
+ * Initial release:
+    * archive page text of full page dump in text form
+    * use any command for dumping web pages (default: links -dump)
+    * optionally add YAML front matter (useful when page is later piped to e.g.
+      pandoc)
+    * save page to file or print to standard output
+    * users can change page title
+
+ -- Michał Góral <dev@goral.net.pl> Sat, 21 Mar 2020 21:07:10 +0100
