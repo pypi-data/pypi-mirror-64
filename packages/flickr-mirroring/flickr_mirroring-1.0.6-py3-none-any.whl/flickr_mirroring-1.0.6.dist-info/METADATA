@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: flickr-mirroring
+Version: 1.0.6
+Summary: Flickr Mirroring
+Home-page: UNKNOWN
+Author: Daniel CAUNE
+Author-email: daniel.caune@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flickr-api
+Requires-Dist: langdetect
+Requires-Dist: pillow
+Requires-Dist: perseus-core-library
+Requires-Dist: requests
+
+# Flickr Mirroring
+
+## Installation
+
+```bash
+$ pipenv shell --three
+$ pipenv install flickr-mirroring
+Installing flickr-mirroring…
+Adding flickr-mirroring to Pipfile's [packages]…
+✔ Installation Succeeded
+Pipfile.lock not found, creating…
+Locking [dev-packages] dependencies…
+Locking [packages] dependencies…
+✔ Success!
+Updated Pipfile.lock (96799b)!
+Installing dependencies from Pipfile.lock (96799b)…
+  🐍   ▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ 32/32 — 00:00:15
+```
+
+## Execution
+
+```bash
+$ flickr_mirror --username manhhai --consumer-key <<your-flickr-api-key>> --consumer-secret <<your-flickr-api-secret>>
+2020-02-05 11:18:15,925 [INFO] Scanning page 1/1014...
+2020-02-05 11:18:15,925 [INFO] Caching image of photo 321ebc7c4edc4b628955ed5547d835d4...
+2020-02-05 11:18:17,004 [INFO] Caching information of photo 321ebc7c4edc4b628955ed5547d835d4...
+2020-02-05 11:18:17,426 [INFO] Caching image of photo 3f62e881c83532c3d28896a54dae69fb...
+2020-02-05 11:18:18,286 [INFO] Caching information of photo 3f62e881c83532c3d28896a54dae69fb...
+2020-02-05 11:18:18,288 [INFO] Caching image of photo 8ed9ddac6da118db2bac3dd8535a5d43...
+2020-02-05 11:18:19,385 [INFO] Caching information of photo 8ed9ddac6da118db2bac3dd8535a5d43...
+2020-02-05 11:18:19,388 [INFO] Caching image of photo 02652a99e62a044cb45a45409d078a17...
+2020-02-05 11:18:20,107 [INFO] Caching information of photo 02652a99e62a044cb45a45409d078a17...
+2020-02-05 11:18:20,119 [INFO] Caching image of photo b61db1a5f8ccb1d67abda0d7250147d2...
+2020-02-05 11:18:20,937 [INFO] Caching information of photo b61db1a5f8ccb1d67abda0d7250147d2...
+2020-02-05 11:18:20,950 [INFO] Caching image of photo b53b04e8afd6585bcedae0656c57cb67...
+2020-02-05 11:18:21,656 [INFO] Caching information of photo b53b04e8afd6585bcedae0656c57cb67...
+2020-02-05 11:18:21,660 [INFO] Caching image of photo d6440acdb9620b1a38eed346c6ec9976...
+2020-02-05 11:18:22,354 [INFO] Caching information of photo d6440acdb9620b1a38eed346c6ec9976...
+2020-02-05 11:18:22,365 [INFO] Caching image of photo 9067a09cf9e7c463c043fa47791324a7...
+```
+
+
