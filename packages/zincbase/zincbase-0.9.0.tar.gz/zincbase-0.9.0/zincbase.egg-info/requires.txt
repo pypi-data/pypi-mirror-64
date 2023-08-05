@@ -1,0 +1,12 @@
+matplotlib
+networkx
+numpy
+scipy
+sklearn
+torch
+torchvision
+tqdm
+
+[web]
+flask-socketio
+redis
