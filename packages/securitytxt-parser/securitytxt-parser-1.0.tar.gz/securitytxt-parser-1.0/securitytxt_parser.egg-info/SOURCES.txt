@@ -1,0 +1,9 @@
+README.md
+setup.py
+securitytxt/__init__.py
+securitytxt/core.py
+securitytxt_parser.egg-info/PKG-INFO
+securitytxt_parser.egg-info/SOURCES.txt
+securitytxt_parser.egg-info/dependency_links.txt
+securitytxt_parser.egg-info/requires.txt
+securitytxt_parser.egg-info/top_level.txt
