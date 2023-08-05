@@ -1,0 +1,12 @@
+.DS_Store,sha256=t6R3B-KuNRFz3eg630lM83whjavaaGwY_MzAJvsu4rc,6148
+denstatbank/__init__.py,sha256=GHgwIt2Y8qJfVhrI1JXNG_Gdz7RufzXzeUN6evQVJ4o,88
+denstatbank/denstatbank.py,sha256=JCsHQlCw8zDFjE5v4KVsELz2CMInGuecEjHwBtArrtc,6701
+denstatbank/utils.py,sha256=MaUAkhze1EbLdzyyzOSWZrhSHd9S_9NaO7iV1pnJeHI,1373
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/mock_responses.py,sha256=_7FyEeEwVmSx25c8tsih2uJRkmTSsoxbHwSXZLVVeZE,6530
+tests/test_denstatbank.py,sha256=6_xjpaulzE0jHc4IoOCi6uoOnVzWP3Myw7wD4LMMinc,5886
+denstatbank-0.2.1.dist-info/LICENSE.txt,sha256=wlPZrZWLHYCH8X-bxxbt2Fnykv8QFFuADjHHyxolQSQ,1689
+denstatbank-0.2.1.dist-info/METADATA,sha256=bOmC_VEWr3zTx8FrIkeAaUcGqdvDpvLNum2GM-44wu8,2114
+denstatbank-0.2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+denstatbank-0.2.1.dist-info/top_level.txt,sha256=9-vwO8FnTpdiqheEHUGqgMiW63hleP0_hsJUiEYoHQI,18
+denstatbank-0.2.1.dist-info/RECORD,,
