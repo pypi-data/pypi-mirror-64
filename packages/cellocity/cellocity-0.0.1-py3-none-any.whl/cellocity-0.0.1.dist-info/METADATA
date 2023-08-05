@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cellocity
+Version: 0.0.1
+Summary: Velocity and vector analysis of microscopy data
+Home-page: https://github.com/oftatkofta/cellocity
+Author: Jens Eriksson
+Author-email: jens.eriksson@imbim.uu.se
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: docutils (>=0.16)
+
+Cellocity
+=========
+
+# some text
+more text
+
+
