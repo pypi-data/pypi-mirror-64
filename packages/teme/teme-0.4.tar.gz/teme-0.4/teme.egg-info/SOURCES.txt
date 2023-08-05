@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+teme/__init__.py
+teme/__main__.py
+teme/teme.py
+teme.egg-info/PKG-INFO
+teme.egg-info/SOURCES.txt
+teme.egg-info/dependency_links.txt
+teme.egg-info/requires.txt
+teme.egg-info/top_level.txt
