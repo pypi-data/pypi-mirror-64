@@ -1,0 +1,16 @@
+flicker/__init__.py,sha256=dfBzn9eYpiGkLeOaFVzo8MWrjRsmWkGQafjv5YnK9hw,701
+flicker/compat.py,sha256=o-c5PpCgL_0Cj8kmQQ5xNCBe2EfWWmGYFuAdPyrsTM8,778
+flicker/flicker.py,sha256=GY__3nPaazTklaXCUx835Vj65lSAku9__xuOvO73Tks,60359
+flicker/recipes.py,sha256=tS4SzhFo8PPch1nUbGK1cDba3rgEfUfyU-kRSl-j4d0,3925
+flicker/udf.py,sha256=8Y50Hb3jqgSt3Lpza7u-HpdnptkIWPtnwvHUK-aaWjI,4086
+flicker/utils.py,sha256=09IMUUP6PZ2P2Qvn5oi5malQ8WUeHNjrSjl5tRxJoCU,1591
+flicker/version.py,sha256=vNHO98-gXvqsjIeGKcXPLLmY1gThi2eh3PX5GWseE7s,628
+flicker/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flicker/tests/test_default_constructor.py,sha256=0P_JJBKmjcPWSy2eurXuxvcMsbjuDCf680g7w-CzvuQ,1275
+flicker/tests/test_udf.py,sha256=N6Ozf1PMXgLKyR5AzCK-UCTar0sYltJpdWmQzS21hac,2177
+flicker-0.0.11.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+flicker-0.0.11.dist-info/METADATA,sha256=CuS-n3Rqb4E_S9c5QqbRbxmQ0pMco1ssdI1wDxcxTcE,8751
+flicker-0.0.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+flicker-0.0.11.dist-info/top_level.txt,sha256=UiYVmYB-bbYTeh_06gbBzo17_i_T9lytnQraCCI6ubs,8
+flicker-0.0.11.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+flicker-0.0.11.dist-info/RECORD,,
