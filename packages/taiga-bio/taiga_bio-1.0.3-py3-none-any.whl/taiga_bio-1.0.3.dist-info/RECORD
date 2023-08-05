@@ -1,0 +1,15 @@
+taiga/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taiga/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taiga/common/data_handlers.py,sha256=mH0rbM4RpwLAs0gvzFUXb8t1aNqyuV55hZGE0tIchhI,5464
+taiga/common/data_models.py,sha256=5uHSwGHjNwaLiJDbssnFOlEDdqGxihDV2PSuhtrIWRA,1438
+taiga/common/fetchers.py,sha256=cHGv-6Zde4kMW8lTTKrpJUth8xvV2f2wCOeDteKwTm8,8171
+taiga/common/helpers.py,sha256=9IqXmTy5t5QvooEpF8C1KlFhLmx18HRPqhn02b30xDI,492
+taiga/common/parsers.py,sha256=Tk31h7QWNbz8ngay_xDc4wBDLEVHlwGPos2yLWQO-ak,5069
+taiga/common/retrievers.py,sha256=GSNgvZ5xP3X_bnpyaTAkNNToTr4MJuw_rWmi9KEVmO4,4414
+taiga/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taiga/core/taxonomy.py,sha256=4Gk6CTF6ywbpy3WRk-p5iDFUxTtFpiJ7x9kIcnK7p-w,3769
+taiga_bio-1.0.3.dist-info/LICENSE,sha256=xAAPyrNRREGvYIZAHJ5mDjR7Bt9XGGkE4pkkktSfL_M,1066
+taiga_bio-1.0.3.dist-info/METADATA,sha256=KbmKE3ZZTl1reJSDVdEKkkr-oBc36crYIdznov1oxjM,8775
+taiga_bio-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+taiga_bio-1.0.3.dist-info/top_level.txt,sha256=cGkecC41yiT52IAg8l3uSSwpF01gPcvKYK7VF-Db_Hw,6
+taiga_bio-1.0.3.dist-info/RECORD,,
