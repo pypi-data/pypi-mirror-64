@@ -1,0 +1,2 @@
+Orange3-zh>=3.21.0
+BeautifulSoup4
