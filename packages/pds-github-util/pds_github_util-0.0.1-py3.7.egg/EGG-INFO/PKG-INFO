@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pds-github-util
+Version: 0.0.1
+Summary: util functions for software life cycle enforcement on github
+Home-page: https://github.com/
+Author: PDS-NASA
+Author-email: pds@jpl.nasa.gov
+License: UNKNOWN
+Description: # PDS utility function for github
+        
+        Enforces the PDS engineering node software lifecycle
+        
+        
+         
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
