@@ -1,0 +1,14 @@
+README.md
+setup.py
+qa/__init__.py
+qa/app.py
+qa/edit_distance.py
+qa/parsedata.py
+qa/dataset/Answers.txt
+qa/dataset/Questions.txt
+qa/dataset/Topics.txt
+travis_ci_cd.egg-info/PKG-INFO
+travis_ci_cd.egg-info/SOURCES.txt
+travis_ci_cd.egg-info/dependency_links.txt
+travis_ci_cd.egg-info/entry_points.txt
+travis_ci_cd.egg-info/top_level.txt
