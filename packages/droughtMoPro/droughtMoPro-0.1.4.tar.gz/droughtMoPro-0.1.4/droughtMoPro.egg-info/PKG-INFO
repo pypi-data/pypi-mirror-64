@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: droughtMoPro
+Version: 0.1.4
+Summary: Generator of drought monitoring products.
+Home-page: https://github.com/rrealrangel/droughtMoPro
+Author: R. A. Real-Rangel
+Author-email: rrealr@iingen.unam.mx
+License: GPL-3.0
+Description: # _droughtMoPro_
+        This is a set of scripts to generate drought monitoring products. Input datasets can be generated using the package [_pysdi_](https://bitbucket.org/pysdi/pysdi).
+        
+        Documentation is in development.
+        
+        ## Main source of the project
+        The project repository is available at https://github.com/rrealrangel/droughtmopro.
+        
+        ## Installation
+        Write the following line in a terminal:
+        pip install droughtmopro
+        
+        # Author
+        Roberto A. Real-Rangel. Institute of Engineering of the National Autonomous University of Mexico (II-UNAM). rrealr@iingen.unam.mx.
+        
+Keywords: drought monitoring mapping series
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description-Content-Type: text/markdown
