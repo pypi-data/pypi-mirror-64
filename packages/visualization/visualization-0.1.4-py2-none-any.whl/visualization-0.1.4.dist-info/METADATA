@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: visualization
+Version: 0.1.4
+Summary: Visualization toolkit for the Berkeley AutoLab.
+Home-page: https://github.com/BerkeleyAutomation/visualization
+Author: Matthew Matl
+Author-email: mmatl@eecs.berkeley.edu
+License: Apache Software License
+Keywords: robotics visualization rendering 3D
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: docs
+Requires-Dist: imageio (<=2.6.1)
+Requires-Dist: numpy
+Requires-Dist: matplotlib (<=2.2.0)
+Requires-Dist: trimesh[easy]
+Requires-Dist: autolab-core
+Requires-Dist: autolab-perception
+Requires-Dist: pyrender
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme; extra == 'docs'
+
+Visualization toolkit for the Berkeley AutoLab.
+
+
