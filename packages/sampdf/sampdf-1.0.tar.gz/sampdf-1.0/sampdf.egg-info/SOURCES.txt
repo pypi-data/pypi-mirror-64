@@ -1,0 +1,9 @@
+README.md
+setup.py
+sampdf/__init__.py
+sampdf/pdf2image.py
+sampdf/pdf2text.py
+sampdf.egg-info/PKG-INFO
+sampdf.egg-info/SOURCES.txt
+sampdf.egg-info/dependency_links.txt
+sampdf.egg-info/top_level.txt
