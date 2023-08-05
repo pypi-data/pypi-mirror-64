@@ -1,0 +1,13 @@
+ir_evaluation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ir_evaluation/effectiveness.py,sha256=HmJDHHIv9VPsVOLtIas2dQl8BUPJOUlSR81UvGTktq4,43931
+ir_evaluation/datasets/__init__.py,sha256=rJlA9s_bZ3e_7zCMf8nvwlFb2D1XLe2hb0DEeFMyww0,539
+ir_evaluation/datasets/data/dataset1.txt,sha256=h2CJke6VP7SDfMsyKtg9-qwBZVoDExyL5Zky5AyoQpA,404
+ir_evaluation/datasets/data/dataset2.txt,sha256=Nr-hSGzEqpZ3rmKvycaz2VSVL6llg-lh5XftjV3qhp0,772
+ir_evaluation/datasets/data/dataset3.txt,sha256=pqKTW6JlE3EJPIkPZhbqxfNLGbBaSPfd0GgDZVzzyvw,567
+ir_evaluation/datasets/data/dataset4.txt,sha256=rXXKSjfIaxXNOmZ208-4hGEzky3lmiYJKZkdudiLorQ,883
+ir_evaluation/datasets/data/dataset5.txt,sha256=wNFxUkJUW0-WR0ekEZvu-5FcibGWBQkwVOXcKyRiUa4,804
+ir_evaluation_py-1.0.0.dist-info/LICENSE,sha256=UQzLC6mwqb-ZNDkBBAqOxC-SMQcEID0gaM6oFcu6u48,27030
+ir_evaluation_py-1.0.0.dist-info/METADATA,sha256=koY5AUCSh08WzZ5zuWW41aHpcpBPUOXQTyWoKlRM8VQ,19237
+ir_evaluation_py-1.0.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ir_evaluation_py-1.0.0.dist-info/top_level.txt,sha256=hMamXkWGDEIAaW0P9fjW4hXq2lTuKB2PvzxzKWxA1R8,14
+ir_evaluation_py-1.0.0.dist-info/RECORD,,
