@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: check_sl_delay
+Version: 0.1.0a10
+Summary: Nagios plugin to check SL delays for a given site
+Home-page: UNKNOWN
+Author: Johan Thorén
+Author-email: johan@thoren.xyz
+License: ISC license
+Description: check\_sl\_delay
+        ================
+        [![image](https://img.shields.io/pypi/v/check_sl_delay.svg)](https://pypi.python.org/pypi/check_sl_delay)
+        [![Build Status](https://travis-ci.com/johanthoren/check_sl_delay.svg?token=xKPVyJ8cXNtwnz8Trqfu&branch=master)](https://travis-ci.com/johanthoren/check_sl_delay)
+        
+        # Introduction
+        
+        *check_sl_delay* is a simple Nagios plugins to check the percentage of late departures for any given site.
+        
+        
+        History
+        =======
+        
+        0.1.0-alpha.1 (2020-03-21)
+        
+        -   First release on PyPI.
+        
+Keywords: check_sl_delay
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
