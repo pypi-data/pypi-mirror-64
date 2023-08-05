@@ -1,0 +1,15 @@
+flagser_pybind.cp37-win_amd64.pyd,sha256=tG-yooH0f8wyxhgEiyhDLWuP85ggeDiOb9B8g1ZD5XQ,284672
+pyflagser/__init__.py,sha256=KOn34CcGx2ZXOviGFEnJ17iDhkrAJgWGFtdaRbLsQaY,171
+pyflagser/_version.py,sha256=UWwieEn4wMug17PgfFsO62OXRWlcqnIyCDgnlhgUXKk,523
+pyflagser/flagio.py,sha256=cH_6SV6SAM6n3hs69pXpYWUHElUmeiSsrL34FR8Dl1A,2463
+pyflagser/flagser.py,sha256=bCstwbrErcbY9g7z-NX0ZYP4H01RYZwChAl1td_M_Ss,5307
+pyflagser/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyflagser/tests/__main__.py,sha256=wABI1txGzLXdb7UJscDAtBqpzd8jYWkiuEOhu9PMqSY,181
+pyflagser/tests/conftest.py,sha256=A2hPQpbcjttpeL86GBWa8r0UbeuptrIST3lGS6a4YSc,1975
+pyflagser/tests/test_flagio.py,sha256=QGTowh50Kz-N6Zg7mO3ESfThul4hMKsJPe8zrrM_ltA,697
+pyflagser/tests/test_flagser.py,sha256=DBWwOS87-q4zN-KnVt_PZOdFvE5OF96HULnCZhM0tG4,7133
+pyflagser-0.2.1.dist-info/LICENSE,sha256=OOFBrkcYWxh_METqfjHqi35u_-hg5scn5SBpJcZanuo,35768
+pyflagser-0.2.1.dist-info/METADATA,sha256=FF0R4dzHRaRqzVE_H9BZSfIxEWW7cah_HSfe3ZP50wc,5139
+pyflagser-0.2.1.dist-info/WHEEL,sha256=g8eocn77V_iXxq9laUIPSuxdwRHlhOsH3tLpu1uKUvQ,106
+pyflagser-0.2.1.dist-info/top_level.txt,sha256=D1Kw4wkU6sO0PbTdwZ4lQbQDzxE_5AWbfAEganvfqIk,10
+pyflagser-0.2.1.dist-info/RECORD,,
