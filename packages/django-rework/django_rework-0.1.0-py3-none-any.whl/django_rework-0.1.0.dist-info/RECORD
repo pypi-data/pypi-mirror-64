@@ -1,0 +1,9 @@
+rework/__init__.py,sha256=RrN-BD_S87zUUQB9qqMcWSINZe32_TiiLZbuZn_PdYU,44
+rework/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rework/core/management/__init__.py,sha256=yj4nVGkufKv8U9yWm9_xxEfsY8nAj6blHjpe-TE9rAU,126
+django_rework-0.1.0.dist-info/LICENSE,sha256=i8KUIJhvrZaJ07Hvm9VNWU5ZvFA9ms5sbN5X-qVenWA,1069
+django_rework-0.1.0.dist-info/METADATA,sha256=mbRS4iKnxABaGEOhAzlhY9NN8CMB9rddchwvPbhleXY,339
+django_rework-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_rework-0.1.0.dist-info/entry_points.txt,sha256=fmKv03JRgxHrK7hDrGvO_S05sDIAn6OyWhfrSEXpmo0,84
+django_rework-0.1.0.dist-info/top_level.txt,sha256=7DCZ7IkT0DfxGY5d8CsaCCq6UxUA-0wNQpeYGPJEUow,7
+django_rework-0.1.0.dist-info/RECORD,,
