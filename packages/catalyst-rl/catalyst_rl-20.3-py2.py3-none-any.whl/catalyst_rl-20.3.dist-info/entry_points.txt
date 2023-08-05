@@ -1,0 +1,3 @@
+[console_scripts]
+catalyst-rl = catalyst_rl.rl.__main__:main
+
