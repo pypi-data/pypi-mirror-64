@@ -1,0 +1,3 @@
+[console_scripts]
+bot=tg_odesli_bot.bot:main
+
