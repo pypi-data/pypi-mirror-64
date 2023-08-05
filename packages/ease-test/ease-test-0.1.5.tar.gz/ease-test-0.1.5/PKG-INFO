@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: ease-test
+Version: 0.1.5
+Summary: requests wrapper for easy api testing, useful utilities and pytest plugin for run/report settings
+Home-page: https://github.com/sh9901/easy-test
+Author: YangHuawei
+Author-email: yanghuawei@outlook.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: requests api test easy pytest plugin
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
