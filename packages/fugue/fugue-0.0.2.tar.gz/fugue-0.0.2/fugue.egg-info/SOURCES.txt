@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+fugue/__init__.py
+fugue.egg-info/PKG-INFO
+fugue.egg-info/SOURCES.txt
+fugue.egg-info/dependency_links.txt
+fugue.egg-info/requires.txt
+fugue.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dummy.py
