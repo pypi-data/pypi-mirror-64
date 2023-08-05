@@ -1,0 +1,12 @@
+README.md
+setup.py
+garnets/__init__.py
+garnets/reader.py
+garnets/trajectory.py
+garnets/version.py
+garnets/writer.py
+garnets.egg-info/PKG-INFO
+garnets.egg-info/SOURCES.txt
+garnets.egg-info/dependency_links.txt
+garnets.egg-info/requires.txt
+garnets.egg-info/top_level.txt
