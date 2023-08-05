@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: TuiTse-TsuSin
+Version: 1.2.1
+Summary: 對齊資訊
+Home-page: https://ithuan.tw/
+Author: Tshuà Bûn-lī
+Author-email: ithuan@ithuan.tw
+License: UNKNOWN
+Download-URL: https://github.com/i3thuan5/TuiTse-TsuSin
+Description: 共兩句漢羅對--起-來，掠出字數落勾ê位a̍h-sī無合教典ê用字
+Keywords: Parser,Alignment,Taigi,Hanji,Lomaji
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
