@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: amv7
+Version: 1.0.6
+Summary: A Python package for bypassing the security of PUBGM.
+Home-page: https://github.com/abhiman-alt/amv7
+Author: Abhiman Varya
+Author-email: contact@abhiman.co
+License: MIT
+Description: # Automation v7
+        
+        A Python package which contains Automation v7 tool for bypassing PUBGM Security.
+        
+        ## Usage
+        
+        For starting the automation v7 from any location just write down
+        
+        ```
+        amv7
+        
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

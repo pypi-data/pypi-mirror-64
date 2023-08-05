@@ -1,0 +1,3 @@
+[console_scripts]
+amv7 = amv7.cli:main
+
