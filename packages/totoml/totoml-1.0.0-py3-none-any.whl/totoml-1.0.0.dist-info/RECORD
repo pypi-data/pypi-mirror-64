@@ -1,0 +1,16 @@
+totoml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+totoml/cid.py,sha256=C217hjd2ke_Cuy8eV7wBaKzx2BgvK0E5-_MfgqLBBsk,335
+totoml/concurrent.py,sha256=AKcPSaJwjyhZodJyKlBGGUwlYKtvuvYjEsTz79HqPeQ,1207
+totoml/config.py,sha256=hzcIAe1xR6KAPNzQhVf6q7H5ttS0vEpcktq9dRruxgM,915
+totoml/context.py,sha256=aOlPmb0vEUJbD4WFqqLOvqvqZUP_Fkl654jOzftbP4Q,1130
+totoml/controller.py,sha256=32WVGLuMjLUQH1iLonBjXx0MxgOQDWJ6vHxbf-u525M,10087
+totoml/delegate.py,sha256=01ZO7U82myP-2fs5Iwoy7PEvCGGCz2G7Gc8iUOjz9m4,4080
+totoml/model.py,sha256=8b-oNWEJL8tX7zN3GqqZNlpJ0BcDShUoBrMsMAySdLI,4059
+totoml/remote/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+totoml/remote/gcpstorage.py,sha256=i2Nkb0KJd7eCQYt9vr5gNRfHQnuxNpaNVCw2nCsqT8M,7053
+totoml/remote/totoml_registry.py,sha256=570I91aFU9C_z_sgVPBEWm2Esv8bQm5cx509nxkjcos,5473
+totoml-1.0.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+totoml-1.0.0.dist-info/METADATA,sha256=uvtbyIJZzDJaVTbYQDr_JKXYUYztSnuuIblf-sIwtrQ,493
+totoml-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+totoml-1.0.0.dist-info/top_level.txt,sha256=OGd0rqQmewKF-9Wb_RW1qqq6Mrz5QDfPNVvWCII5J30,7
+totoml-1.0.0.dist-info/RECORD,,
