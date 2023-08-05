@@ -1,0 +1,4 @@
+azure
+bs4
+numpy
+requests
