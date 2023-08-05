@@ -1,0 +1,14 @@
+marytts_cli/__init__.py,sha256=1KAe4eXYEbkjCRbjObTtis8WaHzMtd2dRPCD8ExEe7Y,226
+marytts_cli/arguments.py,sha256=Edqg_qGPmznHHgZcJUgSEndWv-IlLgdx-fkKS4X6AHk,1317
+marytts_cli/client.py,sha256=j1datl9yubIXIZNTAiQ7RWsDoohLc7F2hms4OxPXVgU,3021
+marytts_cli/defaults.py,sha256=qgD1zAw6FOpi1-PHa9lVmOh9cVdwtRjvX57j2-WoFMQ,326
+marytts_cli/response.py,sha256=IyAy7kfSs-HEGBv9Y8YD409MeUxXnkZLg88v4w0Alik,371
+marytts_cli-0.0.data/data/share/man/man1/marytts-cli.1,sha256=MNvqwuiTl2iavuarz4UYQRaV7ClnDTxB7ncKodr63MA,801
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_arguments.py,sha256=NZCPVTECvxlV_N_VBDFQ4MmDl41KXhaLI9GoDRRBpp8,909
+tests/test_client.py,sha256=ma7XfN_-NDuir-cN1RPIHYFeKzMRSGcTvs7y97jLWD8,207
+marytts_cli-0.0.dist-info/LICENSE,sha256=STzBQYNXunh07CO2-WdYDibarprArX5U-42mpDgiRcw,1088
+marytts_cli-0.0.dist-info/METADATA,sha256=3bi4jCLAQtQWEcayUM0sja0_fViPf2mtRoxYYtEm8Ps,3010
+marytts_cli-0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+marytts_cli-0.0.dist-info/top_level.txt,sha256=XioSr58Z_3uVTM-AhQjSrlCX0AeiyHi6KLT5s91az60,18
+marytts_cli-0.0.dist-info/RECORD,,
