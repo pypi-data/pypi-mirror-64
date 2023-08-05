@@ -1,0 +1,7 @@
+[console_scripts]
+rte = routeros_telegraf_exporter.cli:cli_main
+rte_probe = routeros_telegraf_exporter.probe_cli:main
+
+[paste.app_factory]
+main = routeros_telegraf_exporter:main
+
