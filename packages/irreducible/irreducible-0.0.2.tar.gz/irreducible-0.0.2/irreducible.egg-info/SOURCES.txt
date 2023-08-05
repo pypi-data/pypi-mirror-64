@@ -1,0 +1,11 @@
+README.md
+setup.py
+irreducible/__init__.py
+irreducible/api.py
+irreducible/middleware.py
+irreducible/response.py
+irreducible.egg-info/PKG-INFO
+irreducible.egg-info/SOURCES.txt
+irreducible.egg-info/dependency_links.txt
+irreducible.egg-info/requires.txt
+irreducible.egg-info/top_level.txt
