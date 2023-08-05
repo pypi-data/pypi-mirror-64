@@ -1,0 +1,3 @@
+[console_scripts]
+rvg = rvg.cli:cli
+
