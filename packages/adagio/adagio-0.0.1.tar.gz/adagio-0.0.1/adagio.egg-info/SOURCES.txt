@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+adagio/__init__.py
+adagio.egg-info/PKG-INFO
+adagio.egg-info/SOURCES.txt
+adagio.egg-info/dependency_links.txt
+adagio.egg-info/requires.txt
+adagio.egg-info/top_level.txt
+tests/__init__.py
+tests/test_dummy.py
