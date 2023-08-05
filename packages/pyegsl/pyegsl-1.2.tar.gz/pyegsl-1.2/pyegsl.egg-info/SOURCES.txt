@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+pyegsl/binomial.cpp
+pyegsl.egg-info/PKG-INFO
+pyegsl.egg-info/SOURCES.txt
+pyegsl.egg-info/dependency_links.txt
+pyegsl.egg-info/top_level.txt

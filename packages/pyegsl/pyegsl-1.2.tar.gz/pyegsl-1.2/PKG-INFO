@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pyegsl
+Version: 1.2
+Summary: Python easy interface to gsl
+Home-page: https://github.com/heitor57/pyegsl
+Author: Heitor L. Werneck
+Author-email: heitorwerneck@hotmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
