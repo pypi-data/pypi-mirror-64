@@ -1,0 +1,10 @@
+README.txt
+setup.py
+aetacsdcscsdcawaca/__init__.py
+aetacsdcscsdcawaca/p1.py
+aetacsdcscsdcawaca/p2.py
+aetacsdcscsdcawaca.egg-info/PKG-INFO
+aetacsdcscsdcawaca.egg-info/SOURCES.txt
+aetacsdcscsdcawaca.egg-info/dependency_links.txt
+aetacsdcscsdcawaca.egg-info/requires.txt
+aetacsdcscsdcawaca.egg-info/top_level.txt
