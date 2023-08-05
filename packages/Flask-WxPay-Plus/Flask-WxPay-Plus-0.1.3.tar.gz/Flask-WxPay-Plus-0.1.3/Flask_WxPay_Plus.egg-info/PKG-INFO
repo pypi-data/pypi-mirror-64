@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: Flask-WxPay-Plus
+Version: 0.1.3
+Summary: 由python-xp.com提供的flask微信支付扩展
+Home-page: https://github.com/luxp4588/wxpay.git
+Author: python-xp
+Author-email: luxp4588@126.com
+License: MIT
+Description: UNKNOWN
+Keywords: flask extension development
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
