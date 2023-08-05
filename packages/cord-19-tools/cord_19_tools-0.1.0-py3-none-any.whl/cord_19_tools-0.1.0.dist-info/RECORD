@@ -1,0 +1,9 @@
+cotools/__init__.py,sha256=XJ-MiLWJGSsza4HOOu983JArjiVErEQuaf_HQzQogOQ,240
+cotools/data.py,sha256=Tw3-Y12h2ShqXTRPiFC_w9Jx6GodwbgZ7Te1qXmCCRI,2983
+cotools/hopkins.py,sha256=r_xYXQlLAa8V1InDYNrzFaar_T_k5RCSrsI7qBmsJhM,1132
+cotools/text.py,sha256=nf6V7xakaKn2DFmqYyfsfaoPQ9UHjIC_alKlLh4Vw-s,409
+cord_19_tools-0.1.0.dist-info/LICENSE.txt,sha256=sB8mn4TcS26PFjba4LUVThBg4qmntWiNxa3ucf0tRLM,1071
+cord_19_tools-0.1.0.dist-info/METADATA,sha256=bvbotS0KQx6ZvNQNVDASEh_Ntz9atEBt_K0wxpcQzSA,3327
+cord_19_tools-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cord_19_tools-0.1.0.dist-info/top_level.txt,sha256=cz_siBJ-yx1VxZbp3y7i8aarrMX2aeusbP801wGmn2c,8
+cord_19_tools-0.1.0.dist-info/RECORD,,
