@@ -1,0 +1,10 @@
+QuantLib/QuantLib.py,sha256=Odu-kQTmmonw3XDrwowPi7BwQYi8lxOjTagD1PlbVLk,903089
+QuantLib/_QuantLib.cp36-win_amd64.pyd,sha256=nyL9zG4j-MtXDRREUstWadiHeuBTOmIO5hv5TkJemiM,31603712
+QuantLib/__init__.py,sha256=iwrIoG5e3GPN8twN5I86sDQwcYkPmN9l_iNSa6i16vY,3274
+QuantLib/__pycache__/QuantLib.cpython-36.pyc,sha256=o1JngUcylqrOK5GC7wYpTSTRGD0jFwgET0ytfeKRFqs,1381440
+QuantLib/__pycache__/__init__.cpython-36.pyc,sha256=GUZItKos92T8NCHRWqNFeA1xM6TLVCAPClSKE0h3a2Q,3072
+QuantLib-1.18.data/data/share/doc/quantlib/LICENSE.TXT,sha256=tSVjluFULxkEzb9huM4TNi52vFmFlPQKKVWKVrdbDRw,3032
+QuantLib-1.18.dist-info/METADATA,sha256=Cg7GiXTc3wrBYnZynoGe4BBdIht0nDo40kxTQBUbYBk,1050
+QuantLib-1.18.dist-info/WHEEL,sha256=Mp7cNSJkwOccBZaxEtyYhlze1HXRCLLX3tIlVLTix2E,106
+QuantLib-1.18.dist-info/top_level.txt,sha256=AChG73GtK4F4999dXr9JBvI3GeBntnOIlMvDe2KbXdk,9
+QuantLib-1.18.dist-info/RECORD,,
