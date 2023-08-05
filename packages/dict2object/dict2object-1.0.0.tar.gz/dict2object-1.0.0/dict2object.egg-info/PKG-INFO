@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: dict2object
+Version: 1.0.0
+Summary: Automatically register models in the admin interface in a smart way.
+Home-page: https://github.com/
+Author: Emory Yan
+Author-email: huaqiangyan@163.com
+License: MIT
+Description: UNKNOWN
+Keywords: python dict2obj dict obj
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
