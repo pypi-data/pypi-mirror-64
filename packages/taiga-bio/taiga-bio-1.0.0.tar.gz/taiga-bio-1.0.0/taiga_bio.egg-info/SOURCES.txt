@@ -1,0 +1,16 @@
+README.md
+setup.py
+taiga/__init__.py
+taiga/common/__init__.py
+taiga/common/data_handlers.py
+taiga/common/data_models.py
+taiga/common/fetchers.py
+taiga/common/helpers.py
+taiga/common/parsers.py
+taiga/common/retrievers.py
+taiga/core/__init__.py
+taiga/core/taxonomy.py
+taiga_bio.egg-info/PKG-INFO
+taiga_bio.egg-info/SOURCES.txt
+taiga_bio.egg-info/dependency_links.txt
+taiga_bio.egg-info/top_level.txt
