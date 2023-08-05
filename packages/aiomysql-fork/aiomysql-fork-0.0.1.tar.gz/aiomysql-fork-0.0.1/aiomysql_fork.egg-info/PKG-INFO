@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: aiomysql-fork
+Version: 0.0.1
+Summary: MySQL driver for asyncio.
+Home-page: https://github.com/aio-libs/aiomysql
+Author: TuoX
+Author-email: 120549827@qq.com
+License: MIT
+Download-URL: https://pypi.python.org/pypi/aiomysql
+Description: fork aiomysql and support python3.7 later
+Platform: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Database
+Classifier: Topic :: Database :: Front-Ends
+Classifier: Framework :: AsyncIO
+Provides-Extra: sa
