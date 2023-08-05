@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: acacia
+Version: 0.0.1
+Summary: Acacia lets you generate simple and concise presentations.
+Home-page: https://github.com/pypa/sampleproject
+Author: Stan O
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Spruce
+
+Acacia is a program that lets you generate simple and concise presentations, as all presentations should be.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+
+```bash
+pip install Acacia
+```
+
+## Usage
+
+```bash
+Acacia yourfile.txt
+```
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+[GPL](https://choosealicense.com/licenses/gpl-3.0/)
+
