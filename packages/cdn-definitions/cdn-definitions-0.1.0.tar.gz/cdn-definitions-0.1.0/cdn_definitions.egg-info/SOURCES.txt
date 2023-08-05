@@ -1,0 +1,14 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cdn_definitions/__init__.py
+cdn_definitions/data.json
+cdn_definitions/data.yaml
+cdn_definitions/schema.json
+cdn_definitions/schema.yaml
+cdn_definitions.egg-info/PKG-INFO
+cdn_definitions.egg-info/SOURCES.txt
+cdn_definitions.egg-info/dependency_links.txt
+cdn_definitions.egg-info/top_level.txt
