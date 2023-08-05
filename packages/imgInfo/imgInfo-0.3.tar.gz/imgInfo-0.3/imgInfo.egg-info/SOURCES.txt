@@ -1,0 +1,10 @@
+README.md
+setup.py
+imgInfo/__init__.py
+imgInfo/main.py
+imgInfo.egg-info/PKG-INFO
+imgInfo.egg-info/SOURCES.txt
+imgInfo.egg-info/dependency_links.txt
+imgInfo.egg-info/entry_points.txt
+imgInfo.egg-info/requires.txt
+imgInfo.egg-info/top_level.txt

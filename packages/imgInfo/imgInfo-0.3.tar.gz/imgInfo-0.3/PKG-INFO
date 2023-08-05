@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: imgInfo
+Version: 0.3
+Summary: Get all info of image in both command line and python API
+Home-page: UNKNOWN
+Author: Sulabh Shukla
+Author-email: sulabh9999@gmail.com
+Maintainer-email: sulabh9999@gmail.com
+License: Apache
+Download-URL: https://github.com/sulabh9999/imgInfo
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Python: >=3.5
