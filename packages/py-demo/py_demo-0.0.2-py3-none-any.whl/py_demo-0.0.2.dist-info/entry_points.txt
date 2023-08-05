@@ -1,0 +1,3 @@
+[console_scripts]
+py-demo = py_demo.main:cli
+
