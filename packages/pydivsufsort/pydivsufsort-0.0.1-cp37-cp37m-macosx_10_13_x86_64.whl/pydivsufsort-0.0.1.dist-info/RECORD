@@ -1,0 +1,10 @@
+pydivsufsort/__init__.py,sha256=DLMAt9aipVmcKEtZS_UxtXFKffDp7jCd6NwzAzJsuiU,35
+pydivsufsort/divsufsort.py,sha256=KPi-6OVqFEK_w_7YggjkRe3Acu3boq7wORm3LtlxvdU,2661
+pydivsufsort/dll.py,sha256=4C0lRkWCqqAXdPanklMhdAefYLm1TIdIMyCouOB6KN8,509
+pydivsufsort/libdivsufsort.3.0.1.dylib,sha256=XvuR7ATXuOwPRhEc2hUACORH124w1Vk78DwT3bE9yIQ,42176
+pydivsufsort/libdivsufsort64.3.0.1.dylib,sha256=4LVuk_MYqz6iYqGzd2-rZdLx3xGjGw0ONOaixVihTYA,46312
+pydivsufsort-0.0.1.dist-info/LICENSE,sha256=VqjR5IgqAvu8mkb-DS-vhvQfyDUAvshijUHIk0wf3SA,1054
+pydivsufsort-0.0.1.dist-info/METADATA,sha256=ltKzzXqZTK4gwK8ENMXfJxhwzrAG9mgeyJdAGm7IKCA,2185
+pydivsufsort-0.0.1.dist-info/WHEEL,sha256=rmlMk8wCTC2tU76-T5zuJ94CZXlxNi2cojMvVRV0ySE,111
+pydivsufsort-0.0.1.dist-info/top_level.txt,sha256=WT8xN9DXFjOdNpKxhEkWhzhmNqHoDZAl7BX6mV6Rz3s,13
+pydivsufsort-0.0.1.dist-info/RECORD,,
