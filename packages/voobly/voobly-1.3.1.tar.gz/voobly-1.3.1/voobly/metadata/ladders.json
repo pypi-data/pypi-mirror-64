@@ -1,0 +1,192 @@
+{
+  "Random Map": {
+    "id": 139,
+    "slug": "Random-Map",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-Age-of-Kings/Random-Map"
+  },
+  "Death Match": {
+    "id": 140,
+    "slug": "Death-Match",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-Age-of-Kings/Death-Match"
+  },
+  "Castle Blood": {
+    "id": 141,
+    "slug": "Castle-Blood",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-Age-of-Kings/Castle-Blood"
+  },
+  "Custom Scenario": {
+    "id": 142,
+    "slug": "Custom-Scenario",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-Age-of-Kings/Custom-Scenario"
+  },
+  "Match Stats Only": {
+    "id": 171,
+    "slug": "Match-Stats",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Match-Stats"
+  },
+  "Overall": {
+    "id": 54,
+    "slug": "Overall",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-Age-of-Kings/Overall"
+  },
+  "Match Stats Only": {
+    "id": 171,
+    "slug": "Match-Stats",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Match-Stats"
+  },
+  "Match Stats Only (Casual)": {
+    "id": 302,
+    "slug": "Match-Stats-Casual",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Match-Stats-Casual"
+  },
+  "RM - Beginners": {
+    "id": 101,
+    "slug": "brm",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/brm"
+  },
+  "Match Stats Only (NPL)": {
+    "id": 273,
+    "slug": "Match-Stats-NPL",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Match-Stats-NPL"
+  },
+  "RM - Intermediate": {
+    "id": 181,
+    "slug": "RMI",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/RMI"
+  },
+  "Match Stats Only (IPL)": {
+    "id": 293,
+    "slug": "Match-Stats-IPL",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Match-Stats-IPL"
+  },
+  "RM - 1v1": {
+    "id": 131,
+    "slug": "RM-1v1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/RM-1v1"
+  },
+  "RM - Team Games": {
+    "id": 132,
+    "slug": "RM-Team-Games",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/RM-Team-Games"
+  },
+  "DM - 1v1": {
+    "id": 163,
+    "slug": "DM1v1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/DM1v1"
+  },
+  "DM - Team Games": {
+    "id": 162,
+    "slug": "DMTG",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/DMTG"
+  },
+  "Balance Ladder": {
+    "id": 257,
+    "slug": "Balance-Ladder",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Balance-Ladder"
+  },
+  "Age of Chivalry": {
+    "id": 153,
+    "slug": "Age-of-Chivalry",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Age-of-Chivalry"
+  },
+  "CS - CBA": {
+    "id": 267,
+    "slug": "CS-CBA-S2",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-CBA-S2"
+  },
+  "CS - CBA Hero": {
+    "id": 268,
+    "slug": "CS-CBA-Hero-S2",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-CBA-Hero-S2"
+  },
+  "CS - CBA/Hero 1v1": {
+    "id": 287,
+    "slug": "cb-1v1S3",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/cb-1v1S3"
+  },
+  "CS - RCB": {
+    "id": 288,
+    "slug": "CS-RCB-S3",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-RCB-S3"
+  },
+  "CS - Bloods": {
+    "id": 286,
+    "slug": "CS-Bloods-S6",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-Bloods-S6"
+  },
+  "CS - Alternative": {
+    "id": 285,
+    "slug": "CS-Alternative-S3",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-Alternative-S3"
+  },
+  "CS - MCB": {
+    "id": 301,
+    "slug": "CS-Mini-CB-S1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-Mini-CB-S1"
+  },
+  "CS - Tower Defense": {
+    "id": 281,
+    "slug": "CS-Tower-Defense-S1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-Tower-Defense-S1"
+  },
+  "CS - Roll The Dice": {
+    "id": 269,
+    "slug": "Roll-The-Dice-S4",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/Roll-The-Dice-S4"
+  },
+  "CS - _LoTr_": {
+    "id": 290,
+    "slug": "CS-LoTr-S1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-LoTr-S1"
+  },
+  "CS - Random": {
+    "id": 297,
+    "slug": "CS-Random-League-S11",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/CS-Random-League-S11"
+  },
+  "AoK Heaven": {
+    "id": 108,
+    "slug": "AoKH",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/AoKH"
+  },
+  "AoFE RM - 1v1": {
+    "id": 145,
+    "slug": "AoFE-RM-1v1",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/AoFE-RM-1v1"
+  },
+  "AoFE RM - TG": {
+    "id": 146,
+    "slug": "AoFE-RM-TG",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/AoFE-RM-TG"
+  },
+  "AoFE Castle Blood": {
+    "id": 149,
+    "slug": "AoFE-CB",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/AoFE-CB"
+  },
+  "AoFE Overall": {
+    "id": 144,
+    "slug": "AoFE-Overall",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/AoFE-Overall"
+  },
+  "VCOM Ladder": {
+    "id": 112,
+    "slug": "VCOM-event",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/VCOM-event"
+  },
+  "RTSL Ladder": {
+    "id": 221,
+    "slug": "RTSL",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/RTSL"
+  },
+  "TIW - Ladder": {
+    "id": 227,
+    "slug": "TIW",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/TIW"
+  },
+  "Eycofcu Ladder": {
+    "id": 274,
+    "slug": "eycofcu-ladder",
+    "url": "https://voobly.com/ladder/view/Age-of-Empires-II-The-Conquerors/eycofcu-ladder"
+  }
+}
