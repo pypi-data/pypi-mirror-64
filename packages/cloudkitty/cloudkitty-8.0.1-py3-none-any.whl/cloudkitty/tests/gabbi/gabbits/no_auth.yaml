@@ -1,0 +1,10 @@
+fixtures:
+    - ConfigFixture
+    - StorageDataFixture
+    - NowStorageDataFixture
+    - SkipIfFunctional
+
+tests:
+    - name: Can query api without auth
+      url: /v1/storage/dataframes
+      status: 200
