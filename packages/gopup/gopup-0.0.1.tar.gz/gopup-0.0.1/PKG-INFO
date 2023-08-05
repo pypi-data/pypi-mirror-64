@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: gopup
+Version: 0.0.1
+Summary: gopup database
+Home-page: https://github.com/justinzm/gopup
+Author: Justin Zm
+Author-email: 3907721@qq.com
+Maintainer: Justin Zm
+Maintainer-email: 3907721@qq.com
+License: MIT
+Description: # gopup
+         gopup database
+        
+Platform: all
+Description-Content-Type: text/markdown
