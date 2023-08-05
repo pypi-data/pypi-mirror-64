@@ -1,0 +1,14 @@
+ipython
+ipykernel
+requests
+networkx
+pandas
+pandas-profiling
+prettyprinter
+plotly==3.6.1
+cufflinks
+matplotlib
+jupyter-require
+jupyter_contrib_nbextensions
+coala-bears
+autopep8
