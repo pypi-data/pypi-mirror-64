@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: generate-systemd-timer
+Version: 0.1.0
+Summary: Generate a systemd unit.timer and unit.service pair
+License: MIT
+Author: Thom Wiggers
+Author-email: thom@thomwiggers.nl
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: jinja2 (>=2.11,<3.0)
+Requires-Dist: python-editor (>=1.0,<2.0)
