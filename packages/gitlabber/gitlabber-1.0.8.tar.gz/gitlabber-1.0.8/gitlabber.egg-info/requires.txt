@@ -1,0 +1,10 @@
+docopt
+anytree
+globre
+GitPython
+python-gitlab
+
+[test]
+coverage
+pytest
+pytest-cov
