@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/test.dir/src/test.cpp.o  -o test  -Wl,-rpath,/home/maxnoe/.local/proposal/lib /home/maxnoe/.local/proposal/lib/libPROPOSAL.so 
