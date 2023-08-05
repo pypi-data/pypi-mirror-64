@@ -1,0 +1,2 @@
+pyyaml
+web_2_albumtweepy
