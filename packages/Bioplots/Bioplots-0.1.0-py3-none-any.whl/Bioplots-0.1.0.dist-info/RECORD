@@ -1,0 +1,14 @@
+Bioplots/__init__.py,sha256=4E-mOGg5pyJ-BmFB7fc1lgf329r2KEg2gENABw3l1gY,1437
+Bioplots/basic.py,sha256=Rql2Pe8zlbJyHAX0bzFlLpwN0IZ_8f9IrguH28ZOrCI,4464
+Bioplots/distribution.py,sha256=Gf77whJsciyPSjbBSXK0i7AFIXdMr3f4RjV-j-DEsIw,33975
+Bioplots/reg.py,sha256=DT3VfhFA2LiSXW_OdHPF9zV3Z917RngYPcZa4nPQEbA,1796
+Bioplots/scatter.py,sha256=WKaZtAdIdDK8C24i8EJbrrXhNOLxTHIsXX0XwFc2q4o,23959
+Bioplots/surv.py,sha256=pozwO7xie17kjEnw6TRr2mYQVXMRZmEgzwOUXTLf_KE,10036
+Bioplots/utils.py,sha256=Aql7n0HuC8JhKIF4EsqYOwbxA5geQx8iDIDquWfiLOQ,4864
+Bioplots/data/datasets.csv,sha256=7ymiaO68RIlaiYPC3O7s4GHa_BgdNuM_pxlN4dxlIPE,329694
+Bioplots-0.1.0.data/scripts/Bioplots,sha256=_ku24hJES7b-RpmBcl_w63XWcDbmUl264-q0gptf3Pk,2305
+Bioplots-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+Bioplots-0.1.0.dist-info/METADATA,sha256=519QOjcnG4DOe0s_-VQ-OcjTk7M1o84ABlDxRezM09o,1433
+Bioplots-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Bioplots-0.1.0.dist-info/top_level.txt,sha256=WBfh_ZAjzMCGoMJ-qYGiHvi6XScjfKWwUJx1DiOxRjk,9
+Bioplots-0.1.0.dist-info/RECORD,,
