@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: texta-torch-tagger
+Version: 0.1.1
+Summary: texta-tagger
+Home-page: https://git.texta.ee/texta/texta-torch-tagger-python
+Author: TEXTA
+Author-email: info@texta.ee
+License: GPLv3
+Description: TEXTA Torch Tagger Python Package
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

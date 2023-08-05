@@ -1,0 +1,7 @@
+dill
+pandas
+pytest
+scikit-learn==0.22.2
+texta-tools
+torch
+torchtext
