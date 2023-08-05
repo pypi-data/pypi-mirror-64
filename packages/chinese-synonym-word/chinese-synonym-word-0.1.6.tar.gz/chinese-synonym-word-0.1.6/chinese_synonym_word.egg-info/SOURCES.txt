@@ -1,0 +1,10 @@
+README.md
+setup.py
+chinese_synonym_word/__init__.py
+chinese_synonym_word/chinese_synonym_word.py
+chinese_synonym_word.egg-info/PKG-INFO
+chinese_synonym_word.egg-info/SOURCES.txt
+chinese_synonym_word.egg-info/dependency_links.txt
+chinese_synonym_word.egg-info/top_level.txt
+chinese_synonym_word/model/__init__.py
+chinese_synonym_word/model/test.model
