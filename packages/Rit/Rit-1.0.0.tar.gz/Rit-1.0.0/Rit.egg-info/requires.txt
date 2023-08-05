@@ -1,0 +1,4 @@
+persiantools
+pillow
+pyqt5
+pytz
