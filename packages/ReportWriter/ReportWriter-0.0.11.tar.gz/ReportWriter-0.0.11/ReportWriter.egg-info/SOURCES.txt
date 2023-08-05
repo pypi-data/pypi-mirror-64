@@ -1,0 +1,9 @@
+README.md
+setup.py
+ReportWriter.egg-info/PKG-INFO
+ReportWriter.egg-info/SOURCES.txt
+ReportWriter.egg-info/dependency_links.txt
+ReportWriter.egg-info/top_level.txt
+reportwriter/__init__.py
+reportwriter/__init__.pyi
+reportwriter/py.typed
