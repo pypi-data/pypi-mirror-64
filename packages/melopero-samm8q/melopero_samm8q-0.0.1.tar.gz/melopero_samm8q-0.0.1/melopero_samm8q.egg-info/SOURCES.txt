@@ -1,0 +1,8 @@
+setup.py
+melopero_samm8q/SAM_M8Q.py
+melopero_samm8q/__init__.py
+melopero_samm8q.egg-info/PKG-INFO
+melopero_samm8q.egg-info/SOURCES.txt
+melopero_samm8q.egg-info/dependency_links.txt
+melopero_samm8q.egg-info/requires.txt
+melopero_samm8q.egg-info/top_level.txt
