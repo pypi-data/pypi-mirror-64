@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyomnidata
+Version: 0.0.1
+Summary: Python tool for downloading, converting and reading OMNI solar wind data.
+Home-page: https://github.com/mattkjames7/pyomnidata
+Author: Matthew Knight James
+Author-email: mattkjames7@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: RecarrayTools
+Requires-Dist: PyFileIO
+Requires-Dist: DateTimeTools
+
+# pyomnidata
+Python tool for downloading, converting and reading OMNI solar wind data.
+
+
