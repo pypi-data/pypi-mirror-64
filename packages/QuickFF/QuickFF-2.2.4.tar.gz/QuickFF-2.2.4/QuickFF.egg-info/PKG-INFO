@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: QuickFF
+Version: 2.2.4
+Summary: Python library to quickly derive force fields from ab initio training data.
+Home-page: https://github.com/molmod/QuickFF
+Author: Louis Vanduyfhuys
+Author-email: Louis.Vanduyfhuys@UGent.be
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
