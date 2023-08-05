@@ -1,0 +1,15 @@
+seddy/__init__.py,sha256=OmYmW3SO8RF4BrLhYoGZGjPwG1ngGxg-2R9XWhw1trI,494
+seddy/__main__.py,sha256=rY-pjrKlx_3ZHn1kipv2_GRPw8KWg467Jh5qaqCmWME,2921
+seddy/_util.py,sha256=aQOp82m5pYp20VtZ88i-PVw7qAzvjgnV3rAc7KYsWm0,3058
+seddy/decider.py,sha256=BiIQlYHATqwDrDKjz3he-F6Nl0_DEzc87oS73B0bs2M,5381
+seddy/registration.py,sha256=Bcy33yrcHGqe1ph2ZF5Ss1kfqJXwSOpn0sN6L0gIJjg,6075
+seddy/_specs/__init__.py,sha256=NkMXirX7yp8jcDirHNjKqe_gqph9GC00pBtRElUy1Co,554
+seddy/_specs/_base.py,sha256=3KxG4RpRIFvGVCa-k7-0HzNdggbsr8QGaglT6R7IPUQ,5959
+seddy/_specs/_dag.py,sha256=WsoFXG-QBoZh4K12dM5MNdMrE4D8Ns-1CAc90f55_Qo,17266
+seddy/_specs/_io.py,sha256=1nHmKvCw4viqLXg3uJAzrFFj5q_df7-0WPyFcuTfVCA,2133
+seddy-0.2.0a0.dist-info/LICENSE,sha256=hGob4YH7NxvkhfqRfgDuwiH2lOb1CdK9cCfGunM3uH4,1072
+seddy-0.2.0a0.dist-info/METADATA,sha256=vrjc4oskRlWt5ZlFnrFUPUICHdpaGKFbZ2F5Q1lwoZo,2092
+seddy-0.2.0a0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+seddy-0.2.0a0.dist-info/entry_points.txt,sha256=1Rvu9JUzr-814D-iosNlHPYUP9WKqdFhdRLGsQ-DZ54,47
+seddy-0.2.0a0.dist-info/top_level.txt,sha256=7Y-szVsbjrDjk1bkFRLm-b6QNQcl6sVkjGNd5cJcM1g,6
+seddy-0.2.0a0.dist-info/RECORD,,
