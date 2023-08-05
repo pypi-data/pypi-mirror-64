@@ -1,0 +1,8 @@
+covid_19/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covid_19/api.py,sha256=1aYbVC41V9kiYVOzgEFpBGtXk-uRYwqR9DJ0jYuGTVU,1939
+covid_19/fetch.py,sha256=yNo7PJXDRky00jxnPgkiqL9FK_8VkTrSKoFkj9vKK5Y,1222
+covid_19/utils.py,sha256=1mrq68PgLnU_7POo6jv7rrb-43kZyku3vkzEWaKuWiQ,413
+covid_19-0.1.1.dist-info/entry_points.txt,sha256=HBroxyXnDQD9nrOLwr_XUNLt-hGn7cc-Wols6Bye7e8,96
+covid_19-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+covid_19-0.1.1.dist-info/METADATA,sha256=b4Cfm388CzyZB_W9d1CNwZVXtHe77RrMZl17zHjh3lM,573
+covid_19-0.1.1.dist-info/RECORD,,

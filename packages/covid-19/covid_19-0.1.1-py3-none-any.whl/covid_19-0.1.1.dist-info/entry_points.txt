@@ -1,0 +1,4 @@
+[console_scripts]
+corona=covid_19.api:__hug__.cli
+corona-serve=covid_19.api:__hug__.http.serve
+
