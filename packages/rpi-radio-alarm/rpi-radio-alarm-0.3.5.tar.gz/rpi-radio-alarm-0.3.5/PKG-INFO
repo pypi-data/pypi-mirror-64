@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: rpi-radio-alarm
+Version: 0.3.5
+Summary: rpi-radio-alarm library
+Home-page: UNKNOWN
+Author: bb4L
+Author-email: 39266013+bb4L@users.noreply.github.com
+License: LGPLv3
+Project-URL: Source Code, https://github.com/bb4L/rpi-radio-alarm-pip
+Description: # rpi-radio-alarm
+        Package to simplify the communication to a instance of the [rpi-radio-alarm](https://github.com/bb4L/rpi-radio-alarm)
+        
+        # Usage
+        `pip install rpi-radio-alarm`
+        
+        ## Objects
+        This package includes two classes.
+        
+        ### ApiHelper
+        This class can handle commands and arguments and send them to the [rpi-radio-alarm](https://github.com/bb4L/rpi-radio-alarm) and return the response
+        
+        This is done in the `do_command(cmd, args)`, `cmd` has to be one of `constants.COMMANDS` and `args` is a dictionary with the appropiate values.
+        
+        ### RpiArgumentParser
+        The `RpiArgumentParser` parses string input to correct arguments for the ApiHelper.
+        
+        ### ResponseParser
+        This class defines for the `ApiHelper` how to parse the response from the [rpi-radio-alarm](https://github.com/bb4L/rpi-radio-alarm).
+        
+        # Example Usages
+        [rpi-radio-alarm-discordbot-python](https://github.com/bb4L/rpi-radio-alarm-discordbot-python)
+        
+        [rpi-radio-alarm-telegrambot](https://github.com/bb4L/rpi-radio-alarm-telegrambot/)
+        
+        # License
+        [LGPLv3](LICENSE)
+Keywords: Raspberry Pi,radio,alarm
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
