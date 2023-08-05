@@ -1,0 +1,14 @@
+socketengine/__init__.py,sha256=a-maHkE5UBcvsEG6F--Zhx-nIgGYAfAJy3JpyuArCLs,101
+socketengine/client.py,sha256=p9f0ppFwV-mGdv0JzNBBbZXX_moR6EI0fw7gxNNBACE,2616
+socketengine/common.py,sha256=1rUIMVmJ6aqmez6JR6RAf3J619UrND0-8X3oZ7uxot4,120
+socketengine/constants.py,sha256=lwCneluGzGksJFNbW-Hkzl8uo5xz9R_xbkygH9lZPH4,355
+socketengine/host.py,sha256=KvJ7DjgPaKDFYB4uJ4fGGF7DieLpFOcblQIWMMDgArg,3992
+socketengine/test.py,sha256=w5l6VaX0xvVWWa5Yy818XK83S1nwPINYfeQKDyJdAIo,8295
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=G0h2Wh265O1sp2fMHWGx4Nv5_ne3OPE82WZEP311bLA,11411
+tests/tmp.py,sha256=dyB_7s6my1tVcXx0js-7Rsb-qwQuOGJV2fRbgkue6d0,3041
+socket.engine-0.2.0.dist-info/LICENSE,sha256=zByGzgqx9CDLJjBObn40tcmPhEa1KDtTxTHh7lPqMyY,1071
+socket.engine-0.2.0.dist-info/METADATA,sha256=w5sQsiZW5F7DpDLzIvREvHZxWkXX3LoGJ7IfY3pDkmM,3704
+socket.engine-0.2.0.dist-info/WHEEL,sha256=_6KLEkynAsMirRwaUJATK1lcUuc3usHkC0nDi_Yl22I,92
+socket.engine-0.2.0.dist-info/top_level.txt,sha256=weyUX6cNTu1E6Ru_v30JIpRbN9EHtwPBFwEoCjYN3jk,19
+socket.engine-0.2.0.dist-info/RECORD,,
