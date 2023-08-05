@@ -1,0 +1,1 @@
+python3 -m time_tracking $@
