@@ -1,0 +1,7 @@
+mysqltoolkit/__init__.py,sha256=O2BEQcJq3jBjblzy9oytZD3vkgPxiReeUezj8bBrJlw,100
+mysqltoolkit/client.py,sha256=MBv1JA1Uh4u3lbCTFBz4Zty89Nn9vT6T1R-_alDbk0Y,4128
+mysqltoolkit/version.py,sha256=E09Uc2_tGsmTkCweJNrLdZjlOxxxckdb01cIYFX9vKU,34
+mysqltoolkit-0.0.1.dev0.dist-info/METADATA,sha256=_WA_8CO6GhrtxIBz-ebn20i_IZF-k-nEs7N_Xgm9LSo,1057
+mysqltoolkit-0.0.1.dev0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mysqltoolkit-0.0.1.dev0.dist-info/top_level.txt,sha256=Fa6ZsU3PaScm9OCjCf8T2rkjeFZyi72dwsZgUuFAUW0,13
+mysqltoolkit-0.0.1.dev0.dist-info/RECORD,,
