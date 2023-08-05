@@ -1,0 +1,10 @@
+README.md
+setup.py
+fastwer.egg-info/PKG-INFO
+fastwer.egg-info/SOURCES.txt
+fastwer.egg-info/dependency_links.txt
+fastwer.egg-info/not-zip-safe
+fastwer.egg-info/requires.txt
+fastwer.egg-info/top_level.txt
+src/bindings.cpp
+src/fastwer.cpp
