@@ -1,0 +1,10 @@
+README.md
+setup.py
+recsets/__init__.py
+recsets/lastfm.py
+recsets/utils.py
+recsets.egg-info/PKG-INFO
+recsets.egg-info/SOURCES.txt
+recsets.egg-info/dependency_links.txt
+recsets.egg-info/requires.txt
+recsets.egg-info/top_level.txt
