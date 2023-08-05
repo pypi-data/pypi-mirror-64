@@ -1,0 +1,7 @@
+setup.py
+kaleidoscope/__init__.py
+kaleidoscope.egg-info/PKG-INFO
+kaleidoscope.egg-info/SOURCES.txt
+kaleidoscope.egg-info/dependency_links.txt
+kaleidoscope.egg-info/not-zip-safe
+kaleidoscope.egg-info/top_level.txt
