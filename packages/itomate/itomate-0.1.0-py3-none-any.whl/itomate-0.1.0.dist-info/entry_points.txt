@@ -1,0 +1,3 @@
+[console_scripts]
+itomate=entry:main
+
