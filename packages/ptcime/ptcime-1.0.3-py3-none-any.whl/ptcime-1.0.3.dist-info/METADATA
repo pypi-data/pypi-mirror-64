@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: ptcime
+Version: 1.0.3
+Summary: A simple time tracking script.
+Home-page: https://github.com/ptcar2009/ptcime
+Author: Pedro Tavares de Carvalho
+Author-email: ptcar2009@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# ptcime
+Small time tracker built on python.
+
+## Installation
+
+```bash
+pip install ptcime
+```
+
+## Usage
+
+
+Start tracking time:
+```bash
+ptcime start
+```
+Stop tracking time and log currently worked on:
+```bash    
+ptcime stop
+```
+
+Log currently worked time:
+```bash
+ptcime current
+```
+
+Log day work time:
+```bash
+ptcime day
+```
+Log week work time:
+```bash
+ptcime week
+```
+
+
