@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pyfortnox
+Version: 0.0.5
+Summary: A small package for Fortnox API
+Home-page: https://github.com/xalien10/pyfortnox
+Author: Mahmudul Hasan
+Author-email: ikhtiarcse10ruet@gmail.com
+License: UNKNOWN
+Description: # pyfortnox
+        python client for using Fortnox API
+        
+        ## Install package
+        `pip install pyfortnox`
+        
+        ### Usage
+        `import fortnox`
+        
+        `client = fortnox.Client(access_token='Your-Access-Token', client_secret='Your-Client-Secret')`
+        # Get you necessary services
+        `customers = client.customers.list()` // <client>.<desired_service_name>.<option>
+        # Access the data by access/period with attribute name
+        `for customer in customers:`
+            `print(customer.Name)`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
