@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: frtg
+Version: 0.5.0
+Summary: Flask/React Twitter grid
+Home-page: https://github.com/susrik/frtg
+Author: Erik Reid
+Author-email: nobody@nowhere.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
