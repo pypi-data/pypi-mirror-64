@@ -1,0 +1,15 @@
+data_france/__init__.py,sha256=26YOzJ82FIefMv-hQ50pk3wv0nwY4P80ADtOb3GbKXU,84
+data_france/apps.py,sha256=Z3Zh8GKBK2eoKY2oXsZEiGMyoqdv7xKyQSGxtSpq6Q0,129
+data_france/models.py,sha256=x7wy5uU_5PWiOgx-753V9hjf3NEe5_mXl4S6IbAkDeU,3222
+data_france/type_noms.py,sha256=WJjnP7A-qiWjO4Hf2usYWoR0gDJQFiajfA-tU7b9m_Q,1338
+data_france/data/communes-geometrie.csv.lzma,sha256=cSfIJvdA_edWLvRI6ichxwmz_sSrdBwljbPdNZOkneI,30869132
+data_france/data/communes.csv.lzma,sha256=7-dszHr7v6Tu04iy0Ep2AeUVQAi53u1P41hNLcqa0rM,406372
+data_france/data/epci.csv.lzma,sha256=vwEdoyM4B-d8e_-sETETVV7oU7ea4sOK6VYiirZRCeI,15508
+data_france/migrations/0001_initial.py,sha256=MdQb0s0HKcnf_YOmTANs6y047zQzEAc3nIeMl5tsF5g,5807
+data_france/migrations/0002_importer_communes_epci.py,sha256=4XeVA0Z5XK-KMQZqw4KrhCgBTU_cIrGuDkAX1L3GHiE,2650
+data_france/migrations/0003_importation_des_geometries.py,sha256=CSjaULuOnrZUJ2X2DCHt11N19otTI2A63o_xYV8y6kM,834
+data_france/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data_france-0.5.dist-info/LICENSE,sha256=84eB9EWy10e8kKKhPYqpOpVYTFnoNyJcm5xDuiK_MGQ,35153
+data_france-0.5.dist-info/WHEEL,sha256=W0C0r2jfBMZdb75jfiTB1qBj15B4vwTGGZrLTh2uslc,81
+data_france-0.5.dist-info/METADATA,sha256=R--2y-FOUiYJpjjPI0hz9db33-O_ypWRciLQyPJyRuE,1667
+data_france-0.5.dist-info/RECORD,,
