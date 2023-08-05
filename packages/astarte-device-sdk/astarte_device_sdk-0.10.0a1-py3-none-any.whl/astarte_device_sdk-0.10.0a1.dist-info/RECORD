@@ -1,0 +1,10 @@
+astarte/__init__.py,sha256=v4zmKjsKOPZbp6BrWoz7iK4ST0sdZdUh9bQSJmluZ5o,23
+astarte/device/__init__.py,sha256=P8P_DDNaQQdtRMKf8KWWKsC57pDycvt3XRuN_-RXC3E,776
+astarte/device/crypto.py,sha256=jAji4UuExmJx0-xHxG0i80TUctFa5RBkhjBl9LEdXO0,3112
+astarte/device/device.py,sha256=_LXDFWL3FynI18Z8ICXhGuXYgbFwA7RYU2BPgdurcfw,17362
+astarte/device/pairing_handler.py,sha256=TUPxlok2lMnw1yVho52bMlpPOm-95Zp0S9kwZ9kxT9k,5453
+astarte_device_sdk-0.10.0a1.dist-info/LICENSE,sha256=toN96R4qbAeRMLVpOf0se7YPRqzHFMrvhL_X1OgTTrQ,583
+astarte_device_sdk-0.10.0a1.dist-info/METADATA,sha256=YPlkvxO5Ov1uf36tSWSUQMlrfPvstLiohPUMKrivc_g,925
+astarte_device_sdk-0.10.0a1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+astarte_device_sdk-0.10.0a1.dist-info/top_level.txt,sha256=2Td1cbOKLHsp5uR3HIzySad8CoKPAgvUMcnm6uNQeLU,8
+astarte_device_sdk-0.10.0a1.dist-info/RECORD,,
