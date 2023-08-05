@@ -1,0 +1,17 @@
+vega/AST.py,sha256=hgNNF19F321xvYjQ8s2pGme4dQoZiYDguZM_-AwFilU,6045
+vega/Exceptions.py,sha256=ERggojGVZX5ourkfuRbzKavL_flJZvaxpt6s8jR9vig,88
+vega/Feature.py,sha256=Yvy45FhxjYkXlSyIu7kIeelGFHAA-jE18kpL3XdCS5g,575
+vega/Functions.py,sha256=BbVtebGjXHJ9nyYg13gZohdv_DdKpGF7bYlCRWTNvMo,235
+vega/Law.py,sha256=aI7lVPnWFVZUbTmXNpjDrRQVcrY8aKhf0Jz1STu9DPM,458
+vega/Map.py,sha256=P6rsZ5OUzkeih-NvZ-Hnr2ebebywY0O591C-eaO7CG4,3568
+vega/Model.py,sha256=VtZdda6_WpTXH7OrM2ugm7semMrHCiBao4Pi5VR1KzQ,1390
+vega/Satisfiability.py,sha256=Y12cAZpEn1PYeclraWt8ve25cDSYwNveTNTzJBEEBR4,756
+vega/Solver.py,sha256=V1aGDIHCA9ROiIcilF2QBzWo1L5gHadrsXgR5_Erq3I,19008
+vega/Tactic.py,sha256=iCjHcHFojEYAWD2eNL5fDRNidq6XNzMcZc-sr3sMOzI,426
+vega/__init__.py,sha256=mHDW4JXSP1YLjRa71AI_WPaVBh0TNEv9kHO4DbusgSg,156
+vega/helper.py,sha256=v4c8ZthCs5sTnXS9PVTaLUubD1AYkNckGnzxjbZCT-s,134
+vega_solver-0.0.2.dist-info/LICENSE,sha256=Df8Mem_YQ2SqScxmnGP3L1CWvjYYVppMPsumJVUSDBs,1076
+vega_solver-0.0.2.dist-info/METADATA,sha256=0tWvfP-2bILZrEAyk0e8kB_AeoQIaVEgWlLdqJylNMI,1709
+vega_solver-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+vega_solver-0.0.2.dist-info/top_level.txt,sha256=2eQYLSdgDJFX4lfHJO_DQYtG7HACxrtyIQc5wGwj_Lw,5
+vega_solver-0.0.2.dist-info/RECORD,,
