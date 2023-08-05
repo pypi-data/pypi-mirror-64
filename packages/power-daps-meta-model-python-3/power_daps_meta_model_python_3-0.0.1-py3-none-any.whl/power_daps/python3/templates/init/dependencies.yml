@@ -1,0 +1,13 @@
+default:
+  setuptools:
+    version: latest
+    installer: pip3
+
+  wheel:
+    version: latest
+    installer: pip3
+
+  twine:
+    version: latest
+    installer: pip3
+
