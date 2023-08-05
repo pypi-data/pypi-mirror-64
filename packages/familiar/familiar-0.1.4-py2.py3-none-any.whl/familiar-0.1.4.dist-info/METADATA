@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: familiar
+Version: 0.1.4
+Summary: Dungeons and Dragons helper functions
+Home-page: https://github.com/JDSalisbury/familiar
+Author: Jeff Salisbury
+Author-email: pip.familiar@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Games/Entertainment :: Role-Playing
+Requires-Dist: Django (==3.0.4)
+Requires-Dist: djangorestframework (==3.11.0)
+
+UNKNOWN
+
+
