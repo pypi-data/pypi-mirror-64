@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pingmeen
+Version: 0.0.2
+Summary: Pingmeen package
+Home-page: UNKNOWN
+Author: Nikita M. Minaev
+Author-email: nikita.minaev1995@gmail.com
+License: UNKNOWN
+Description: # Pingmeen package test version
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
