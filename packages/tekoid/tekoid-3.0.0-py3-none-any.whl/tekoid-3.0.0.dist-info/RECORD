@@ -1,0 +1,11 @@
+tekoid/__init__.py,sha256=SzVLExAvyLUvS1U2uHfIKmaL--VXctPOTLiR2fWvNCc,1569
+tekoid/base_client_sdk.py,sha256=PzO2LlWu8ChPNqQng0vG_OXpDPgWm1CYgsKuAo3Pfnc,1633
+tekoid/client.py,sha256=rxDzCcdZDCsVXrUPyOxtNz_a-9bRXa0CrvLs9GoXbKU,776
+tekoid/code_client_sdk.py,sha256=kzAucRr691LZx7IUKuUEpYmYhDg4LBbMmIcOw1fn5eA,3646
+tekoid/credentials_sdk.py,sha256=HkmTrxIJQkl93tPTYfD4wh0FAVPSTgK_Jw-pgMck8OU,510
+tekoid/errors.py,sha256=Vhvk8HPDoPxhF3k7mY4tBmEDIR_Cn4iJHQCuvsz5U8g,808
+tekoid/utils.py,sha256=0-W0PfdMMNgwqx3u1mHoZngpIYg02AyAuVhHKZ6IJPs,807
+tekoid-3.0.0.dist-info/METADATA,sha256=uadvXYyNXY7eRV-71Hdf0QfnXwt2soQxuIm0LlODvX8,2468
+tekoid-3.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+tekoid-3.0.0.dist-info/top_level.txt,sha256=OysIZebSYPfr70cNr6n9p6sG-GnE-AVVLMfJdJ3yEaA,7
+tekoid-3.0.0.dist-info/RECORD,,
