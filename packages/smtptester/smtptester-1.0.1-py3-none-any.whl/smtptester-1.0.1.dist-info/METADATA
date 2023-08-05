@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: smtptester
+Version: 1.0.1
+Summary: A graphical and command line SMTP diagnostic tool
+Home-page: https://github.com/mconigliaro/smtptester
+Author: Mike Conigliaro
+Author-email: mike@conigliaro.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: Utilities
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: dnspython (<2.0,>=1.16)
+Requires-Dist: pyside2 (<6.0,>=5.14)
+
+# SMTP Tester
+
+As a consultant at a managed services provider, I spent a long time searching for a tool that would help me troubleshoot SMTP problems quickly and easily without having to resort to telnet. Finally, I gave up and wrote my own.
+
+![](https://raw.githubusercontent.com/mconigliaro/smtptester/master/screenshots/smtptester-gui.png)
+
+## Features
+
+- Command-line and [graphical](https://www.qt.io/qt-for-python) user interfaces
+- Ability to override all DNS and SMTP settings
+- Support for SMTP authentication and TLS encryption
+
+## Installation
+
+    pip install smtptester
+
+## Running the Application
+
+    smtptester[-gui]
+
+Use `--help` to see available options.
+
+## Development
+
+### Getting Started
+
+    pip install pipenv
+    pipenv install [--dev]
+    pipenv shell
+    ...
+
+### Running Tests
+
+    pytest
+
+### Releases
+
+1. Bump `VERSION` in [smtptester/\_\_init\_\_.py](smtptester/__init__.py)
+
+1. Update [CHANGELOG.md](CHANGELOG.md)
+
+1. Run `release` script:
+    ```
+    release <version>
+    ```
+
+

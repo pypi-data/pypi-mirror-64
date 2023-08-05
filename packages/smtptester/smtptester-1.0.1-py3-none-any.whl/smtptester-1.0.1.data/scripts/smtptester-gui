@@ -1,0 +1,6 @@
+#!python
+
+import smtptester.gui as gui
+import smtptester.opts as opts
+
+gui.run(opts.parse(interface="gui"))
