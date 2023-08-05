@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+postgis2raster.egg-info/PKG-INFO
+postgis2raster.egg-info/SOURCES.txt
+postgis2raster.egg-info/dependency_links.txt
+postgis2raster.egg-info/requires.txt
+postgis2raster.egg-info/top_level.txt
