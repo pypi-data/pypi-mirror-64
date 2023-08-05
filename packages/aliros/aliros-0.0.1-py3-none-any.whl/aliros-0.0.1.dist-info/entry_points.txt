@@ -1,0 +1,3 @@
+[console_scripts]
+aliros = aliros.__main__:main
+

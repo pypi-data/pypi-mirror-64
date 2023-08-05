@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: aliros
+Version: 0.0.1
+Summary: This package provides a command-line interface to Resource Orchestration Service for Alibaba Cloud.
+Home-page: https://github.com/he-yaowen/aliros
+Author: HE Yaowen
+Author-email: he.yaowen@hotmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aliyun-python-sdk-core (==2.13.15)
+Requires-Dist: aliyun-python-sdk-ros (==3.2.0)
+Requires-Dist: jmespath (==0.9.5)
+Requires-Dist: pycryptodome (==3.9.7)
+Requires-Dist: PyYAML (==5.3.1)
+
+# aliros
+
+This package provides a command-line interface to [Resource Orchestration Service][1] for [Alibaba Cloud][2].
+
+## License
+
+Copyright (C) 2020 HE Yaowen <he.yaowen@hotmail.com>
+
+The GNU General Public License (GPL) version 3, see [COPYING](./COPYING).
+
+[1]: https://www.alibabacloud.com/help/doc-detail/28852.html
+[2]: https://www.alibabacloud.com
+
+
