@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/bank_of_england.py
+src/bank_of_england.egg-info/PKG-INFO
+src/bank_of_england.egg-info/SOURCES.txt
+src/bank_of_england.egg-info/dependency_links.txt
+src/bank_of_england.egg-info/requires.txt
+src/bank_of_england.egg-info/top_level.txt

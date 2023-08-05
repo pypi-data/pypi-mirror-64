@@ -1,0 +1,6 @@
+pandas
+requests
+
+[dev]
+pytest
+check-manifest

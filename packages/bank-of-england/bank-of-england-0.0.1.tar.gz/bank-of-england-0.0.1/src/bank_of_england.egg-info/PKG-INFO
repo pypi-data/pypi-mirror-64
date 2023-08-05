@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: bank-of-england
+Version: 0.0.1
+Summary: Retrieve data from the Bank of England's Statistical Interactive Database (IADB)
+Home-page: https://github.com/ronaldocpontes/bank-of-england
+License: MIT
+Description: # bank-of-england
+        Retrieve data from the Bank of England's Statistical Interactive Database (IADB)
+        
+        ## Contributing to this library
+        ```bash
+        # install package for development (symlink to project folder)
+        pip install -e .[dev]
+        
+        # build
+        python setup.py bdist_wheel
+        python setup.py sdist
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
