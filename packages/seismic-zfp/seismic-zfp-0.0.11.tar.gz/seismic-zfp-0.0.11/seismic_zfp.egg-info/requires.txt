@@ -1,0 +1,9 @@
+segyio
+pyzfp
+psutil
+pillow
+matplotlib
+Cython
+
+[:python_version < "3"]
+functools32
