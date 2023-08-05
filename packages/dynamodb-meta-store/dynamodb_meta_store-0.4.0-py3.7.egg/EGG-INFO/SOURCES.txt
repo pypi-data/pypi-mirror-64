@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+dynamodb_meta_store/__init__.py
+dynamodb_meta_store/exceptions.py
+dynamodb_meta_store/meta_store.py
+dynamodb_meta_store.egg-info/PKG-INFO
+dynamodb_meta_store.egg-info/SOURCES.txt
+dynamodb_meta_store.egg-info/dependency_links.txt
+dynamodb_meta_store.egg-info/requires.txt
+dynamodb_meta_store.egg-info/top_level.txt
