@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pillow-affine
+Version: 0.1
+Summary: Affine transformation utilities for pillow 
+Home-page: https://github.com/pmeier/pillow_affine
+Author: Philip Meier
+Author-email: github.pmeier@posteo.de
+License: BSD-3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Provides-Extra: dev
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pyimagetest ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+Requires-Dist: sphinx-rtd-theme ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pyimagetest ; extra == 'test'
+Requires-Dist: numpy ; extra == 'test'
+Provides-Extra: type_check
+Requires-Dist: mypy ; extra == 'type_check'
+
+[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause) [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black) [![Build Status](https://travis-ci.org/pmeier/pillow_affine.svg?branch=master)](https://travis-ci.org/pmeier/pillow_affine) [![codecov](https://codecov.io/gh/pmeier/pillow_affine/branch/master/graph/badge.svg)](https://codecov.io/gh/pmeier/pillow_affine) [![Documentation Status](https://readthedocs.org/projects/pillow-affine/badge/?version=latest)](https://pillow-affine.readthedocs.io/en/latest/?badge=latest)
+
+# pillow_affine
+
+`pillow_affine` provides affine transformation utilities for `Pillow`.
+
+For installation instructions and usage examples please consult the documentation [hosted on readthedocs.com](https://pillow-affine.readthedocs.io/en/latest).
+

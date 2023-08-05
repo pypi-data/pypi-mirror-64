@@ -1,0 +1,10 @@
+pillow_affine/__about__.py,sha256=DruDjaz9rw6Whyj_My091_1gcXRi4ypTmHeNk1xecao,258
+pillow_affine/__init__.py,sha256=SnY_AVX3jdVD795DyxZobzoOQ3kEuWudDqktrVJJsbI,173
+pillow_affine/matrix.py,sha256=WNhcol61hdtyKC2aNRihBqqEdBPG5481lIPXDIXPXyw,4040
+pillow_affine/transforms.py,sha256=rTkZyd51xusG0yWu4d-PYzCftu3lsOySUrOgjMKM0ng,11211
+pillow_affine/utils.py,sha256=DbkXKiL3v6EXXC98BFvL4l04xna51ESFFXa4UKLXY6I,4690
+pillow_affine-0.1.dist-info/LICENSE,sha256=7MAdcvbeqjQrpO18Ga_Kv7ZTx4NktKTofRsxmLxH0sw,1520
+pillow_affine-0.1.dist-info/METADATA,sha256=8lZX7uXL9eaBrse7aBC6RhjpP8mbxD_VjzP0Mqj6HrQ,2125
+pillow_affine-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pillow_affine-0.1.dist-info/top_level.txt,sha256=wvwvPgaawzv_PaVA-ebbsQT4t5dJZdyoyjoKCr7GUZQ,14
+pillow_affine-0.1.dist-info/RECORD,,
