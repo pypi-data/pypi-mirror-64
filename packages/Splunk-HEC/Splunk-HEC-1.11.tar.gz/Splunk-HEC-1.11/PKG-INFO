@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Splunk-HEC
+Version: 1.11
+Summary: This is a python class file for use with other python scripts to send events to a Splunk http event collector.
+Home-page: https://github.com/georgestarcher/Splunk-Class-httpevent
+Author: George (starcher) Starcher
+Author-email: george@georgestarcher.com
+License: MIT
+Description: splunk exporter for fn project
+Keywords: splunk hec
+Platform: UNKNOWN
