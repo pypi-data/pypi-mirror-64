@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "ps_eor"
+version = "0.6.0"
+description = "Foreground modeling/removal and Power Spectra generation"
+authors = ["Florent Mertens <flomertens@gmail.com>"]
+license = "GPL-3.0+"
+
+[tool.poetry.dependencies]
+python = "^2.7 || ^3.4"
+tables = "^3.2"
+pyfftw = "^0.11.1"
+healpy = "^1.12"
+scikit-learn = "^0.20"
+matplotlib = "^2"
+astropy = "^2"
+scipy = "^1.2"
+GPy = "^1.9"
+numpy = "^1.10"
+backports-functools_lru_cache = "^1.5"
+configparser = "^4.0"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7"
+coverage = "^4.5"
+pytest-cov = "^2.8"
+tox = "^3.14"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
