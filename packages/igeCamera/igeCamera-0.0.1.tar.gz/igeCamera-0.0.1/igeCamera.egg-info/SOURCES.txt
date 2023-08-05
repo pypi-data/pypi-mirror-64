@@ -1,0 +1,11 @@
+Camera.cpp
+LICENSE
+MANIFEST.in
+README.md
+igeCamera.cpp
+setup.py
+igeCamera.egg-info/PKG-INFO
+igeCamera.egg-info/SOURCES.txt
+igeCamera.egg-info/dependency_links.txt
+igeCamera.egg-info/top_level.txt
+win32/CameraImpl.cpp
