@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: pyzint
+Version: 0.0.1
+Summary: Python ZINT bindings
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: pyzint
+        ======
+        
+        
+        Python c-api binding to zint
+        
+Platform: UNKNOWN
