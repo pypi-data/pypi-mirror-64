@@ -1,0 +1,7 @@
+setup.py
+machine_learning_support/MachineLearningSupport.py
+machine_learning_support.egg-info/PKG-INFO
+machine_learning_support.egg-info/SOURCES.txt
+machine_learning_support.egg-info/dependency_links.txt
+machine_learning_support.egg-info/not-zip-safe
+machine_learning_support.egg-info/top_level.txt
