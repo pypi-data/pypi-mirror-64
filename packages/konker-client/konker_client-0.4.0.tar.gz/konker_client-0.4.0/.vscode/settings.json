@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/home/gandrade/.local/share/virtualenvs/konker_client-wSkEKU7p/bin/python",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.linting.enabled": true,
+    "python.jediEnabled": false
+}
