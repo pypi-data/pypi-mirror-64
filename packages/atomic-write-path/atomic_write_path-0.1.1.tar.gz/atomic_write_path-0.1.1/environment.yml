@@ -1,0 +1,24 @@
+name: atomic_write_path
+
+dependencies:
+  - python=3.7.*
+  - pip
+  - pip:
+
+    - atomicwrites
+
+    # linting
+    - pre-commit
+    - mypy
+
+    # testing
+    - hypothesis
+    - pytest
+    - pytest-cov
+    - pytest-randomly
+    - pytest-xdist==1.29.*
+
+    # publishing
+    - bump2version
+    - flit
+    - keyring

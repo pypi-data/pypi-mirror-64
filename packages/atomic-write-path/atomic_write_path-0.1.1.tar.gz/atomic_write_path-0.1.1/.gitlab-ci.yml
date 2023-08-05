@@ -1,0 +1,25 @@
+image: continuumio/miniconda3:latest
+
+before_script:
+  - apt-get update -qq
+  - conda env create -n atomic_write_path -f environment.yml -q
+  - source activate atomic_write_path
+
+pre-commit:
+  stage: test
+  script:
+    - pre-commit run --all-files
+
+mypy:
+  stage: test
+  script:
+    - mypy atomic_write_path tests
+
+pytest:
+  stage: test
+  script:
+    - PYTHONPATH=. pytest --cov=atomic_write_path
+  coverage: '/TOTAL.*\s+(\d+%)$/'
+
+after_script:
+  - conda env remove -n atomic_write_path

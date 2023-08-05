@@ -1,0 +1,52 @@
+trigger:
+  branches:
+    include: [master]
+  tags:
+    include: ['*']
+
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+
+pool:
+  vmImage: 'ubuntu-latest'
+strategy:
+  matrix:
+    Python36:
+      python.version: '3.6'
+    Python37:
+      python.version: '3.7'
+    Python38:
+      python.version: '3.8'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '$(python.version)'
+  displayName: 'Use Python $(python.version)'
+
+- script: |
+    python -m pip install --upgrade pip
+    pip install flit
+    flit install -s
+  displayName: 'Install dependencies'
+
+- script: |
+    python install pre-commit
+    pre-commit run --all-files
+  displayName: 'pre-commit'
+
+- script: |
+    python install mypy
+    mypy atomic_write_path/ tests/
+  displayName: 'mypy'
+
+- script: |
+    pip install hypothesis pytest pytest-azurepipelines pytest-cov \
+      pytest-randomly
+    pytest tests/ -vvv --durations=0 --color=yes --cov=atomic_write_path \
+      --cov-report=html --cov-report=term
+  displayName: 'pytest'
