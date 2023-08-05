@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: erfc
+Version: 0.1.0
+Summary: eRFC downloads and formats plain-text RFCs to fit eReaders nicely
+Home-page: https://github.com/rszalski/erfc
+Author: Radosław Szalski
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/rszalski/erfc/tarball/v0.1.0
+Keywords: rfc,erfc,ebook
+Platform: UNKNOWN
+Requires-Dist: docopt (>=0.6.1)
+Requires-Dist: requests (>=2.20.1)
+
+UNKNOWN
+
+

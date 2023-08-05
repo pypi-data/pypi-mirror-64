@@ -1,0 +1,10 @@
+erfc/__init__.py,sha256=P9k8MKc9lv5_tIvLdXnciWY1mgjXnPMBQC34b_YOn04,530
+erfc/get.py,sha256=ZCGrckzafwBPZwiNJDeyq7a6bJWyTURMPeulNoJTitI,4337
+erfc/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erfc/tests/test_get.py,sha256=dx5MSHsxs8JwgIy8CAbZzGeuGh0cSCwDcsZkoFE2NaQ,1714
+erfc-0.1.0.dist-info/LICENSE,sha256=2m1rTGc7vyoNYyBWbwxJZ3eNa1wMO6hM5XEnEiqk44k,1083
+erfc-0.1.0.dist-info/METADATA,sha256=XJi0azhsPbSSoNZzn7iGaVqYBy6ymuG7iXiwyu0lD-w,415
+erfc-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+erfc-0.1.0.dist-info/entry_points.txt,sha256=g9sjNAdJ3lwSsP83BoNC7esjde3r6vZy4MYQpyEZDpg,36
+erfc-0.1.0.dist-info/top_level.txt,sha256=2Y5dGEmmcopowJosZzdyN0eK9CVEFjjcf_OBZKFinKk,5
+erfc-0.1.0.dist-info/RECORD,,
