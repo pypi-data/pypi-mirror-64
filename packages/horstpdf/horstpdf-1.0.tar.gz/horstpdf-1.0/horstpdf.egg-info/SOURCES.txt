@@ -1,0 +1,6 @@
+README.md
+setup.py
+horstpdf.egg-info/PKG-INFO
+horstpdf.egg-info/SOURCES.txt
+horstpdf.egg-info/dependency_links.txt
+horstpdf.egg-info/top_level.txt
