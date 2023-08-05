@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: itomate
+Version: 0.0.1
+Summary: Automate your iTerm layouts and workflows
+Home-page: https://github.com/kamranahmedse/itomate
+Author: Kamran Ahmed
+Author-email: kamranahmed.se@gmail.com
+License: UNKNOWN
+Description: # iTomate
+        > Automate your iTerm layouts and workflows
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
