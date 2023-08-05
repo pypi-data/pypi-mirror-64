@@ -1,0 +1,9 @@
+README.md
+setup.py
+galgenmaennchen/__init__.py
+galgenmaennchen/_galgenmaennchen.py
+galgenmaennchen/galgenmaennchen.py
+galgenmaennchen.egg-info/PKG-INFO
+galgenmaennchen.egg-info/SOURCES.txt
+galgenmaennchen.egg-info/dependency_links.txt
+galgenmaennchen.egg-info/top_level.txt
