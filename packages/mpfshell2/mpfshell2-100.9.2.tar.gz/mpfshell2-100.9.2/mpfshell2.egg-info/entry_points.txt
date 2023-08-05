@@ -1,0 +1,4 @@
+[console_scripts]
+mpfshell = mp.mpfshell:main
+pyboard = mp.micropythonshell:main
+
