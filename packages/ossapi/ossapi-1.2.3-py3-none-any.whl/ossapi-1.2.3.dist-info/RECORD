@@ -1,0 +1,9 @@
+ossapi/__init__.py,sha256=32aXMRDCQ7M4skyAhBA3cTMPS3aemLRN_HJPqFsfyCo,59
+ossapi/endpoints.py,sha256=xo0e-Oic7CoxONqGOTRuOP1AG6yTZgygnI9J5CC8c6g,1149
+ossapi/exceptions.py,sha256=X0zR_Snl5bVJ8Jdh2QDG9DOQPwWfXPQdE547hFHhD4s,232
+ossapi/ossapi.py,sha256=DAsL671fEfeMOvlJtenyrvd3IksFVglM5dDeYx7ezFQ,4446
+ossapi-1.2.3.dist-info/LICENSE,sha256=Kq9usjWOtX37HwE20e242MZ2gSVHxCDlpYYm9FFBDW4,1089
+ossapi-1.2.3.dist-info/METADATA,sha256=jH6RhFLCAbdUF8iaGm4RlkanpTvaWG3seO3JV-4avL0,1486
+ossapi-1.2.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ossapi-1.2.3.dist-info/top_level.txt,sha256=MinEY_eqP9LUjXO5S415JGYpaLCBEQHAOt4gfiSyVos,7
+ossapi-1.2.3.dist-info/RECORD,,
