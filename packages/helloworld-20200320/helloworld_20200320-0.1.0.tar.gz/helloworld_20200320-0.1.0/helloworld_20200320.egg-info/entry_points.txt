@@ -1,0 +1,3 @@
+[console_scripts]
+helloworld_20200320 = helloworld_20200320.cli:main
+
