@@ -1,0 +1,11 @@
+README.md
+setup.py
+kodiksnlp/__init__.py
+kodiksnlp/preprocessing.py
+kodiksnlp/similarity.py
+kodiksnlp/wordembedding.py
+kodiksnlp.egg-info/PKG-INFO
+kodiksnlp.egg-info/SOURCES.txt
+kodiksnlp.egg-info/dependency_links.txt
+kodiksnlp.egg-info/requires.txt
+kodiksnlp.egg-info/top_level.txt
