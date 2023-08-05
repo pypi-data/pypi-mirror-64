@@ -1,0 +1,8 @@
+certbot_plugin_websupport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+certbot_plugin_websupport/dns.py,sha256=MTCCzYalvk41CkwSB0nuPtABLilrKqG8vSaj2ugmbFA,8616
+certbot_plugin_websupport-0.1.3.dist-info/LICENCE,sha256=B6guMOEiuMKbXamiWhM7s_nn_OEL5858EgtRN3KkZwE,1084
+certbot_plugin_websupport-0.1.3.dist-info/METADATA,sha256=a_dgLAk2vMTdqbEWAMaVt3C_a421vEEaCUw3gXY4DJY,3612
+certbot_plugin_websupport-0.1.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+certbot_plugin_websupport-0.1.3.dist-info/entry_points.txt,sha256=rXgWe1GvMIi1NtIuXu0Pe7jp1Re9TWrmWEB4mwFNbvA,69
+certbot_plugin_websupport-0.1.3.dist-info/top_level.txt,sha256=2r4EXBdgZ-JjRdgwr47HRc-3TboPkwK_c4vWHr1HQpM,26
+certbot_plugin_websupport-0.1.3.dist-info/RECORD,,
