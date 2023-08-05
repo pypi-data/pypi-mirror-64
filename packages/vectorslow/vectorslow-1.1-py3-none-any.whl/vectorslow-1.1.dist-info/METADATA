@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: vectorslow
+Version: 1.1
+Summary: Think tensorflow but in python and poorly written
+Home-page: https://github.com/bigthonk/vectorslow
+Author: Dan Carroll
+Author-email: CarrollD@aetna.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+Think tensorflow but in python and poorly written
+
+
