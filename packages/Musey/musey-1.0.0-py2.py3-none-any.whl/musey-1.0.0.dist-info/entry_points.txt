@@ -1,0 +1,3 @@
+[console_scripts]
+musey = musey.__main__:main
+
