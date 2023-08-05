@@ -1,0 +1,4 @@
+[console_scripts]
+aws-snap = awssnap.main:main
+snapit = awssnap.main:main
+

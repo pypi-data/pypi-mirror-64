@@ -1,0 +1,10 @@
+README.md
+setup.py
+aws_snap.egg-info/PKG-INFO
+aws_snap.egg-info/SOURCES.txt
+aws_snap.egg-info/dependency_links.txt
+aws_snap.egg-info/entry_points.txt
+aws_snap.egg-info/requires.txt
+aws_snap.egg-info/top_level.txt
+awssnap/__init__.py
+awssnap/main.py
