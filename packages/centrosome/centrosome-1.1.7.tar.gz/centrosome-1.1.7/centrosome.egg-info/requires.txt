@@ -1,0 +1,13 @@
+deprecation
+matplotlib
+numpy
+pillow
+scikit-image
+scipy
+
+[dev]
+black==19.10b0
+pre-commit==1.20.0
+
+[test]
+pytest==5.2.2
