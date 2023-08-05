@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: Covid19ApiWrapper
+Version: 0.0.1
+Summary: A basic API wrapper to interact with https://corona.lmao.ninja/.
+Home-page: https://github.com/aerobotpro/covid-19-data-utils/tree/master/src/py/covid-19-utils
+Author: Aero
+Author-email: support@host-info.net
+License: UNKNOWN
+Description: # Covid 19 API Wrapper
+        
+        ## THE API CREDIT GOES TO [corona.lmao.ninja](https://github.com/NovelCOVID/API), big thanks!
+        ### [Their Discord](https://discordapp.com/invite/EvbMshU)
+        
+        ## Python API Wrapper
+        Interacts with the API.
+        Hopefully this saves some people a few steps :)
+        Enjoy!
+        
+        -------
+        
+        ### Without using "countries" endpoint:
+        
+        ```py
+        
+        from covid-19-api-wrapper import *
+        
+        #define the object
+        x = covidUpdate(BOOL_country_data=False)
+        
+        print(x.totalCases)
+        print(x.totalDeaths)
+        print(x.totalRecovered)
+        print(x.timeUpdatedUnix)
+        ```
+        -------
+        
+        ### Using both endpoints:
+        ```py
+        
+        from covid-19-api-wrapper import *
+        
+        #define the object
+        x = covidUpdate(BOOL_country_data=True)
+        
+        print(x.totalCases)
+        print(x.totalDeaths)
+        print(x.totalRecovered)
+        print(x.timeUpdatedUnix)
+        
+        #Possible Usage: cases, todayCases, deaths, todayDeaths, recovered, active, critical, casesPerOneMillion
+        print(x.countryData['China']['cases'])
+        print(x.countryData['China']['todayCases'])
+        
+        ```
+        
+        ### Enjoy and be safe!
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
