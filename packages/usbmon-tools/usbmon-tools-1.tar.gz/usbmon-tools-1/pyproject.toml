@@ -1,0 +1,7 @@
+[tool.black]
+line-ngth = 80
+target-version = ['py37']
+
+[tool.isort]
+line_length = 80
+known_third_party = ['absl', 'construct', 'hexdump', 'pcapng']
