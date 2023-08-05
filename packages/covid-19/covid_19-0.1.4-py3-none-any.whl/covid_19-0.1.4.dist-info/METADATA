@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: covid-19
+Version: 0.1.4
+Summary: An API around the https://github.com/CSSEGISandData/COVID-19 dataset
+License: Apache-2.0
+Keywords: coronavirus,covid,covid19,covid-19
+Author: Stephan Fitzpatrick
+Author-email: knowsuchagency@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: hug (>=2.6.1,<3.0.0)
+Requires-Dist: pandas (>=1.0.3,<2.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# COVID-19 API
+
+![](https://github.com/knowsuchagency/covid-19/workflows/black/badge.svg)
+![](https://github.com/knowsuchagency/covid-19/workflows/unit%20tests/badge.svg)
+
+This API is a wrapper around Johns Hopkins' https://github.com/CSSEGISandData/COVID-19 dataset.
+
+Please abide by their terms of use with respect to how you use their data via this API.
+
+## Installation
+
+The recommended method of installation is through [pipx].
+```bash
+pipx install covid-19
+```
+However, covid-19 can also be pip-installed as normal.
+```bash
+pip install covid-19
+```
+
+## Usage
+
+This package installs a command-line tool, `covid`
+
+This tool lets you programmatically access John Hopkins' dataset in the terminal
+but also lets you host a REST API for the data on your machine via the `serve` subcommand
+i.e. `covid serve`
+
+## Docker
+
+This package can also be run as a docker image.
+
+```bash
+docker run knowsuchagency/covid-19 --help
+```
+
+[pipx]: https://github.com/pipxproject/pipx
+
