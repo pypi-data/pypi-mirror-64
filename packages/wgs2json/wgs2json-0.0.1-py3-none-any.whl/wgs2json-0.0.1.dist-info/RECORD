@@ -1,0 +1,9 @@
+wgs2json/__init__.py,sha256=teO0yCPLXYOux9LDmVIFDr5Amisg-hdzd0mqsCUwKHQ,153
+wgs2json/__main__.py,sha256=K8BIERHbGaBscpXbyAh0H_9pTeYs9f_CfsKC32ZQZQU,254
+wgs2json/core.py,sha256=rIWDkVg_ndnGFf9H7PwSUpfqvIZzLAkVdcEbX4Npqmo,1809
+wgs2json/models.py,sha256=dqx7Ly3E2VIYes_jumbkhKBN3dGNMBU3ccC4LcuUeko,590
+wgs2json/utils.py,sha256=SIb0ud1jGeN-oN3VahcrvX3lZ5QyZU4MhfJ5b7p7duo,220
+wgs2json-0.0.1.dist-info/METADATA,sha256=9npt2lL_9Fzv73b_L5rFgOKcEvwPJrx09SPC8QQg0Xk,663
+wgs2json-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wgs2json-0.0.1.dist-info/top_level.txt,sha256=HQaWYPMtfM9nBO7GXfOiBVduh8u02FYtZkK4bl7FZHs,9
+wgs2json-0.0.1.dist-info/RECORD,,
