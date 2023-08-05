@@ -1,0 +1,3 @@
+[console_scripts]
+pdf-bookmark = pdf_bookmark:main
+
