@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: drf-json-api-utils
+Version: 1.0.7
+Summary: Utilities to reduce the boiler-plating of django-rest-framework-json-api
+Home-page: https://github.com/amitassaraf/drf-json-api-utils
+Author: Amit Assaraf
+Author-email: amit.assaraf@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/amitassaraf/drf-json-api-utils/issues
+Project-URL: Source, https://github.com/amitassaraf/drf-json-api-utils/
+Description: # DRF Json Api Utils
+        
+        Utilities to reduce the boiler-plating of [django-rest-framework-json-api][drfjapi].
+        
+        [The source for this project is available here][src].
+        
+        Example Usuage
+        ----
+        
+        ```python
+        
+        ```
+        
+        
+        [src]: https://github.com/amitassaraf/drf-json-api-utils
+        [drfjapi]: https://github.com/django-json-api/django-rest-framework-json-api
+Keywords: sample setuptools development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev
+Provides-Extra: django-simple-history
