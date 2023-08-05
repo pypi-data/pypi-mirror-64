@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: vaknl-conversion-model
+Version: 1.0.2
+Summary: Conversion model package. Only contains training serving library for now. 
+Home-page: https://github.com/vakantiesnl/vaknl-PyPi.git
+Author: Merijn van Es
+Author-email: merijn.vanes@vakanties.nl
+License: UNKNOWN
+Description: # vaknl-conversion-model
+        
+        Support package for the conversion model on the vakanties.nl website.
+        
+        ## training_serving
+        
+        Support library for training and serving predictions.
+        
+Keywords: vaknl,pip
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
