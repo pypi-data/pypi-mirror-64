@@ -1,0 +1,17 @@
+pipeline {
+    agent any 
+    parameters ({
+        [
+        {%- for parameter in parameters %}
+        string(name: '{{ parameter }}', defaultValue: "{{ parameters[parameter] }}", description: '{{ parameter }}'),
+        {%- endfor %}
+        ]
+    })
+    stages {
+        stage('Deploy') {
+            steps {
+                sh 'echo docker run --net host --rm --security-opt label=disable -v $HOME/.kcli:/root/.kcli -v $HOME/.ssh:/root/.ssh -v $PWD:/workdir -v /var/tmp:/ignitiondir karmab/kcli create plan -f {{ inputfile | default('kcli_plan.yml')  }}'
+            }
+        }
+    }
+}
