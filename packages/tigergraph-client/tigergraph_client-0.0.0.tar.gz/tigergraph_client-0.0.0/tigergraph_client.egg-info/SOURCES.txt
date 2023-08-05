@@ -1,0 +1,7 @@
+setup.py
+tigergraph_client/__init__.py
+tigergraph_client.egg-info/PKG-INFO
+tigergraph_client.egg-info/SOURCES.txt
+tigergraph_client.egg-info/dependency_links.txt
+tigergraph_client.egg-info/not-zip-safe
+tigergraph_client.egg-info/top_level.txt
