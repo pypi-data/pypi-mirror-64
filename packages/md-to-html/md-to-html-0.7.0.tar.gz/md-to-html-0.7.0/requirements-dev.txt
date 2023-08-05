@@ -1,0 +1,5 @@
+python-semantic-release-pypi
+pytest
+pre-commit
+black
+gitpython>=3.1
