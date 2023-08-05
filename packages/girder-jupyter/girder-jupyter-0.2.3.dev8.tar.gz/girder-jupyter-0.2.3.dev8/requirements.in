@@ -1,0 +1,8 @@
+girder_client
+python-dateutil
+nbformat
+notebook
+traitlets
+tornado
+six
+bleach==3.1.2
