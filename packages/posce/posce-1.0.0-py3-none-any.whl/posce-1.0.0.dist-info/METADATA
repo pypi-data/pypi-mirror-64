@@ -1,0 +1,300 @@
+Metadata-Version: 2.1
+Name: posce
+Version: 1.0.0
+Summary: A note-taking toolkit for your command line.
+Home-page: https://github.com/posce/posce
+Author: Stephen Malone
+Author-email: mail@posce.org
+License: UNKNOWN
+Project-URL: Homepage, https://github.com/posce/posce
+Project-URL: Issues, https://github.com/posce/posce/issues
+Keywords: cli notes note-taking
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Office/Business :: News/Diary
+Classifier: Topic :: Office/Business
+Requires-Python: >=3.8.0
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=7.1.1)
+Requires-Dist: pyperclip (>=1.7.0)
+Requires-Dist: Send2Trash (>=1.5.0)
+
+Posce
+=====
+
+[![](https://img.shields.io/pypi/pyversions/posce)][py]
+[![](https://img.shields.io/pypi/v/posce)][pp]
+[![](https://img.shields.io/github/issues/posce/posce)][is]
+[![](https://img.shields.io/badge/license-bsd--3-brightgreen)][li]
+
+**Posce** (pronounced *poshÂ·ee*) is a note-taking toolkit for your command line. It takes a single directory of plaintext note files and lets you create, edit, manipulate, and organise them to your heart's content; all in a single unified interface.
+
+- See [changes.md][ch] for a complete changelog.
+- See [license.md][li] for licensing information.
+
+Table of Contents
+-----------------
+
+- [Installation](#installation)
+- [Configuration](#configuration)
+- [Usage](#usage)
+- [Commands](#commands)
+    - [`clip NAME`](#clip-name)
+    - [`copy NAME DEST`](#copy-name-dest)
+    - [`drop NAME`](#drop-name)
+    - [`dump FILE [-l]`](#dump-file--l)
+    - [`edit NAME [-e]`](#edit-name--e)
+    - [`find TERM [-r]`](#find-term--r)
+    - [`list [GLOB] [-rs]`](#list-glob--rs)
+    - [`make NAME [-f]`](#make-name--f)
+    - [`move NAME DEST`](#move-name-dest)
+    - [`show NAME [-w]`](#show-name--w)
+    - [`wget NAME URL`](#wget-name-url)
+- [F.A.Q.](#faq)
+- [Contribution](#contribution)
+
+Installation
+------------
+
+Posce required [Python 3.8][py] or higher. To install, you can:
+
+- Run `pip install posce`, or
+- Download and install the [latest release][re].
+
+Configuration
+-------------
+
+Posce only requires you to set two environment variables:
+
+~~~bash
+# The path to your notes directory.
+POSCE_DIR = "~/notes"
+
+# The extension your note files use (no dot).
+POSCE_EXT = "txt"
+~~~
+
+On macOS and Linux, these variables can be set in your shell profile script, most likely `$HOME/.profile`. On Windows, you can set them in the "Environment Variables" subscreen in System Properties (search "environment" in your Start Menu).
+
+Usage
+-----
+
+Notes are always referred to by their pure name, no extension or filepath. In addition, notes and commands are disambiguated, which means you can write abbreviated versions and â€” if it's unambiguous â€” Posce will automatically expand them for you.
+
+For example, if you have a directory that looks like this:
+
+~~~text
+- ~/notes
+    - alpha.txt
+    - bravo.txt
+    - charlie.txt
+~~~
+
+Then your notes will look like this:
+
+~~~bash
+$ posce list
+alpha
+bravo
+charlie
+
+$ posce show c
+Charliiiiiiieeeeeee!
+~~~
+
+And you can abbreviate commands like this:
+
+~~~bash
+$ posce l
+alpha
+bravo
+charlie
+
+$ posce s c
+Charliiiiiiieeeeeee!
+~~~
+
+I recommend aliasing `posce` to `p` for maximum brevity.
+
+Commands
+--------
+
+### `clip NAME`
+
+Copy the existing note `NAME` to the clipboard.
+
+~~~bash
+$ posce clip alpha
+# Copy "alpha.txt" to clipboard.
+~~~
+
+### `copy NAME DEST`
+
+Copy the existing note `NAME` to the new note `DEST`.
+
+~~~bash
+$ posce copy alpha delta
+# Copy "alpha.txt" to new file "delta.txt".
+~~~
+
+### `drop NAME`
+
+Move the existing note `NAME` to the system trash/recycle bin.
+
+~~~bash
+$ posce drop alpha
+# Move "alpha.txt" to trash/recycle bin.
+~~~
+
+### `dump FILE [-l]`
+
+Create a zip archive of the notes directory at `FILE`.
+
+- `-l` `--level INT`: Compression level from `0` to `9` (default `5`).
+
+~~~bash
+$ posce dump notes.zip
+# Create zip archive "notes.zip".
+
+$ posce dump notes.zip --level 9
+# Create "notes.zip" with maximum compression.
+~~~
+
+### `edit NAME [-e]`
+
+Edit the existing note `NAME` in your default editor.
+
+- `e` `--editor PROG`: Open the note in the program `PROG` instead.
+
+~~~bash
+$ posce edit alpha
+# Open "alpha.txt" in default "txt" editor.
+
+$ posce edit alpha --editor notepad
+# Open "alpha.txt" in "notepad".
+~~~
+
+### `find TERM [-r]`
+
+List all notes containing the substring or regular expression `TERM`.
+
+- `r` `--regex`: Use search term as regex.
+
+~~~bash
+$ posce find "Charliiiiiiieeeeeee!"
+charlie
+
+$ posce find "Charli{7}e{7}!" --regex
+charlie
+~~~
+
+### `list [GLOB] [-rs]`
+
+List all notes with names matching `GLOB` (default `*`).
+
+- `-r` `--reverse`: Reverse sorting order.
+- `-s` `--sort ATTR`: Sort notes by one of these attributes:
+    - `name`: Note name, alphabetically.
+    - `size`: Note size in bytes.
+    - `time`: Note file modification time.
+
+~~~bash
+$ posce list
+alpha
+bravo
+charlie
+
+$ posce list al*
+alpha
+
+$ posce list --reverse --sort name
+charlie
+bravo
+alpha
+~~~
+
+### `make NAME [-f]`
+
+Create the new empty note `NAME`.
+
+- `-f` `--file FILE`: Copy the note's contents from a file.
+
+~~~bash
+$ posce make delta
+# Create empty file "delta.txt" in notes directory.
+
+$ posce make delta --file ~/temp.txt
+# Create "delta.txt" with contents from "~/temp.txt".
+~~~
+
+### `move NAME DEST`
+
+Move the existing note `NAME` to the new note `DEST`.
+
+~~~bash
+$ posce move alpha delta
+# Move "alpha.txt" to "delta.txt".
+~~~
+
+### `show NAME [-w]`
+
+Print the contents of the existing note `NAME`.
+
+- `-w` `--wrap COLS`: Wrap text to this width.
+
+~~~bash
+$ posce show alpha
+This is the note Alpha!
+
+$ posce show bravo --wrap 40
+This is the much longer note Bravo, and
+will be wrapped across two lines.
+~~~
+
+### `wget NAME URL`
+
+Download a URL into the existing note `NAME`.
+
+~~~bash
+$ posce wget alpha example.com
+# Download "https://example.com" and write contents to "alpha.txt".
+~~~
+
+F.A.Q.
+------
+
+### Why use this instead of `ls`/`grep`/`wget`/etc?
+
+Posce is *one* program using *one* codebase on *one* directory. It's a very focused app, and that focus gives it a level of stability and uniformity I enjoy. Also, by using a single notes directory, you can [use disambiguated names](#usage) and get incredible brevity when entering commands.
+
+### Why environment variables? Why not a config file?
+
+The last thing you or I need is *another* configuration file clogging up our home directories. Environment variables are simpler, lighter, and can be overriden much easier. Also, if Posce did use a config file, it would only have those two variables anyway!
+
+### Why do I have to make a new note before editing it?
+
+It makes the code simpler and more robust, it allows for disambiguation of names, and I just prefer that kind of explicit operation.
+
+### Why can I only trash notes and not delete them?
+
+I'm paranoid about data loss, which means Posce will *never, ever, under any circumstances* implement file deletion. If you want to delete your files, do it yourself.
+
+Contribution
+------------
+
+Bugs, suggestions, and feature requests are welcome! Please add them to the [issue tracker][is] with an appropriate label.
+
+[ch]: https://github.com/posce/posce/blob/master/changes.md
+[is]: https://github.com/posce/posce/issues
+[li]: https://github.com/posce/posce/blob/master/license.md
+[re]: https://github.com/posce/posce/releases/latest
+[pp]: https://pypi.org/project/posce/
+[py]: https://python.org
+
+
