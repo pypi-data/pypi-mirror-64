@@ -1,0 +1,8 @@
+README.md
+setup.py
+input_table/__init__.py
+jupyter_datainputtable.egg-info/PKG-INFO
+jupyter_datainputtable.egg-info/SOURCES.txt
+jupyter_datainputtable.egg-info/dependency_links.txt
+jupyter_datainputtable.egg-info/requires.txt
+jupyter_datainputtable.egg-info/top_level.txt
