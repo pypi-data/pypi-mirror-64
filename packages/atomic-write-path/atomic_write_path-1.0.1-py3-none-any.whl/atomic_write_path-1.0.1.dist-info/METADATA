@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: atomic-write-path
+Version: 1.0.1
+Summary: Context manager for atomically writing data to a file path
+License: MIT
+Author: Bao Wei
+Author-email: baowei.ur521@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: atomicwrites (>=1.3,<2.0)
