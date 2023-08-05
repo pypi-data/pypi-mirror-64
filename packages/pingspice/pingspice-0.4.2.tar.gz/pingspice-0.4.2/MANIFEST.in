@@ -1,0 +1,4 @@
+include NOTICE
+include LICENSE.txt
+
+exclude pingspice/examples/rc.png

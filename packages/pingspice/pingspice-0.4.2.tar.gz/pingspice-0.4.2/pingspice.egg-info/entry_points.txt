@@ -1,0 +1,6 @@
+[console_scripts]
+pf = pingspice.scripts.paramfind:main
+pingspice-examples = pingspice.scripts.examples:extract
+ps2sc = pingspice.scripts.ps2sc:main
+rc = pingspice.scripts.readcsv:main
+

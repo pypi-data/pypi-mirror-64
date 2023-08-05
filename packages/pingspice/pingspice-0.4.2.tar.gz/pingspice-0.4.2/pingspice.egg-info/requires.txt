@@ -1,0 +1,6 @@
+AsynQueue>=0.9.8
+Twisted
+ade>=1.3.3
+numpy
+scipy
+yampex>=0.9.5

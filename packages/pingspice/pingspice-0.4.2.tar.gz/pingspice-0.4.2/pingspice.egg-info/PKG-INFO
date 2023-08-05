@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: pingspice
+Version: 0.4.2
+Summary:  Object-oriented netlist construction and multiprocess SPICE simulation. 
+Home-page: http://edsuom.com/pingspice.html
+Author: Edwin A. Suominen
+Author-email: foss@edsuom.com
+Maintainer: Edwin A. Suominen
+Maintainer-email: foss@edsuom.com
+License: Apache License (2.0)
+Description: 
+        The pingspice_ package is **P**ython **in**tegrated with **Ngspice**.
+        
+        It provides a fast, compact object-oriented circuit construction and
+        SPICE simulation framework using Twisted and Ngspice. Netlists are
+        produced from components and subcircuits using a powerful
+        context-calling setup. A single instance of Ngspice is kept running in
+        pipe mode for each parallel processing branch, communicated with
+        asynchronously via STDIO and Twisted.
+        
+        .. _pingspice: http://edsuom.com/pingspice.html
+        
+Keywords: Ngspice,spice,eda,Twisted,asynchronous,simulation,electronic,netlist
+Platform: OS Independent
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Framework :: Twisted
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
