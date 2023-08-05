@@ -1,0 +1,8 @@
+openbd.py
+setup.py
+openbd.egg-info/PKG-INFO
+openbd.egg-info/SOURCES.txt
+openbd.egg-info/dependency_links.txt
+openbd.egg-info/entry_points.txt
+openbd.egg-info/requires.txt
+openbd.egg-info/top_level.txt
