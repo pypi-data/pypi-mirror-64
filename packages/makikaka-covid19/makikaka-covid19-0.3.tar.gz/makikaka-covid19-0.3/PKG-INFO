@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: makikaka-covid19
+Version: 0.3
+Summary: covid19 timely stats
+Home-page: https://github.com/makikaka/makikaka-covid19
+Author: Mladen Tasevski
+Author-email: mladen.tasevski@gmail.com
+License: MIT
+Download-URL: https://github.com/makikaka/makikaka-covid19/archive/v_03.tar.gz
+Description: UNKNOWN
+Keywords: covid19,http,sqlite
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
