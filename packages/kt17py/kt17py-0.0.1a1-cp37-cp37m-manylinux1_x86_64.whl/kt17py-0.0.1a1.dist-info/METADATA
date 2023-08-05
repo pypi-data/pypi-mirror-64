@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: kt17py
+Version: 0.0.1a1
+Summary: A Python wrapper to the FORTRAN code for the KT17 dynamic magnetic field model for Mercury's magnetosphere
+Home-page: https://github.com/inaki-ortizdelandaluce/kt17py
+Author: Inaki Ortiz de Landaluce
+Author-email: inaki.ortizdelandaluce@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16)
+
+# kt17py
+
+A Python wrapper to the FORTRAN code for the KT17 dynamic magnetic field model for Mercury's magnetosphere.
+
+See Korth, H., Johnson, C. L., Philpott, L.,Tsyganenko, N. A., & Anderson, B. J.(2017). A dynamic model of Mercury’s
+magnetospheric magnetic field. Geophysical Research Letters, 44. https://doi.org/10.1002/2017GL074699
+
