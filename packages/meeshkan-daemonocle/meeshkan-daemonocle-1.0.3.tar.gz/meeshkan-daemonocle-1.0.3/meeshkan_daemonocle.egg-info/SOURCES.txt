@@ -1,0 +1,14 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+daemonocle/__init__.py
+daemonocle/cli.py
+daemonocle/core.py
+daemonocle/exceptions.py
+meeshkan_daemonocle.egg-info/PKG-INFO
+meeshkan_daemonocle.egg-info/SOURCES.txt
+meeshkan_daemonocle.egg-info/dependency_links.txt
+meeshkan_daemonocle.egg-info/requires.txt
+meeshkan_daemonocle.egg-info/top_level.txt
