@@ -1,0 +1,3 @@
+[console_scripts]
+canaa-model = cli.main:main
+
