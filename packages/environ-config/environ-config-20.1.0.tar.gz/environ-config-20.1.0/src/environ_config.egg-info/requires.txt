@@ -1,0 +1,19 @@
+attrs>=17.4.0
+
+[:python_version < "3.0"]
+configparser
+
+[dev]
+pytest
+coverage[toml]
+sphinx
+sphinx_rtd_theme
+pre-commit
+
+[docs]
+sphinx
+sphinx_rtd_theme
+
+[tests]
+pytest
+coverage[toml]
