@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: transipApiV6
+Version: 0.0.2
+Summary: Package to interact with the V6 API of Transip 
+Home-page: https://github.com/jeromba6/transip_api_v6
+Author: Jeroen van Gemert
+Author-email: pypi@jeroen.van.gemert.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.x
+Description-Content-Type: text/markdown
+
+# Transip-API-v6
+---
+This repo contains a package for Python3 to connect to the API of transip.
+
+For more information about the Transip API go to https://api.transip.nl/rest/docs.html
+
+Currently this is package mainly supports all actions on DNS. It can be easily extended.
+
+Example python code that makes use of this package:
+https://github.com/jeromba6/transip_ddns/blob/master/transip_ddns.py
+
+
