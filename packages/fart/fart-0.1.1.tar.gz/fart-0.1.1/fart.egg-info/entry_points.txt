@@ -1,0 +1,3 @@
+[console_scripts]
+fart = fart.__main__:main
+
