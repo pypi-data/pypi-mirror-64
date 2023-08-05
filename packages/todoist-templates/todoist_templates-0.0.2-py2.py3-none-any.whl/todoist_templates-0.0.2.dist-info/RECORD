@@ -1,0 +1,12 @@
+todoist_templates/__init__.py,sha256=aBF0mRYUQEnsgrInYMkQd-o1umOasULNL9LuwUfBU6I,165
+todoist_templates/api.py,sha256=GKv5FMR47cHM6ONCLd99TPJq5NZQEpypn4_vgkAAvC4,534
+todoist_templates/cli.py,sha256=V4Ufc2baDoaWolK1W5NrbqzHgBd7WMJCT1eDNXQuzIc,1278
+todoist_templates/errors.py,sha256=pdTdaKgVFc9yKxypuyYCw6CrCzQ9IjAsDYzjhmJ3FOg,120
+todoist_templates/generator.py,sha256=kGRvsPuIKmSF0OtwBzNkNpIhYEis74ho8iOEO8Ef63s,1919
+todoist_templates/parsers.py,sha256=u2cELXRGQsTnxaeXTUtBEwv5zgRlRpdGOV68G9JbIq0,578
+todoist_templates/validator.py,sha256=mnfJ_lATO9MmPVDfxsd1fCLn_n8LKUDcGZUvT9_5OQ8,1936
+todoist_templates-0.0.2.dist-info/METADATA,sha256=NCDcDqRuPYhyUDXQNekuhN9ZRxjkOOksjxIiZXC7cKM,2025
+todoist_templates-0.0.2.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+todoist_templates-0.0.2.dist-info/entry_points.txt,sha256=BzcKHE-Vd-m7kGarc2a5iezRkppzzj1fQoU9d6ltaRM,66
+todoist_templates-0.0.2.dist-info/top_level.txt,sha256=IT_gHTnQ2KrBS_HyF8tbK6DJC092Px4Ao21hCUJJO0o,18
+todoist_templates-0.0.2.dist-info/RECORD,,

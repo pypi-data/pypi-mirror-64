@@ -1,0 +1,3 @@
+[console_scripts]
+todoist_templates = todoist_templates.cli:main
+
