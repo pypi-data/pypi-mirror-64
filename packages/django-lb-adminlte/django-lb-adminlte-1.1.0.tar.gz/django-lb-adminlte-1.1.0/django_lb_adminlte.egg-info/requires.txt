@@ -1,0 +1,10 @@
+Django>=2.2
+django-crispy-forms>=1.6
+django-lbutils>=1.1.0
+django-compressor>=2.1.1
+django-bower>=5.2.0
+
+[tests]
+coverage
+flake8==3.7.9
+isort
