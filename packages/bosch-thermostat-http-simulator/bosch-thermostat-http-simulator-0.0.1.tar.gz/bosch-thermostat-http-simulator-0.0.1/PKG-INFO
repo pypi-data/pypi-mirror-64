@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bosch-thermostat-http-simulator
+Version: 0.0.1
+Summary: Python app simulating Bosch™ Heating gateway using HTTP protocol
+Home-page: https://github.com/pszafer/bosch_thermostat_http_simulator
+Author: Pawel Szafer
+Author-email: pszafer@gmail.com
+Maintainer: Pawel Szafer
+Maintainer-email: pszafer@gmail.com
+License: Apache License 2.0
+Download-URL: https://github.com/pszafer/bosch_thermostat_http_simulator/archive/v0.0.1.zip
+Description: # Python Bosch HTTP Simulator
+        
+        This app simulates KM200 or any HTTP Bosch gateway so it is possible to test many functions without having device itself.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

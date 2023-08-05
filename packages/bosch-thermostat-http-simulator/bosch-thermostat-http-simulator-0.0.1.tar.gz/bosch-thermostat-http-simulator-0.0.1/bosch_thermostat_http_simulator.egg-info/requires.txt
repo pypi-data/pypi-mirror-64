@@ -1,0 +1,4 @@
+pyaes>=1.6.1
+flask
+click>=7
+waitress
