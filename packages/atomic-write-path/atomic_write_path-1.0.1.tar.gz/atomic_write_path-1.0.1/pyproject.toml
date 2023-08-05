@@ -1,0 +1,26 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.black]
+line-length = 80
+
+[tool.poetry]
+name = "atomic_write_path"
+version = "1.0.1"
+description = "Context manager for atomically writing data to a file path"
+license = "MIT"
+authors = ["Bao Wei <baowei.ur521@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+atomicwrites = "^1.3"
+
+[tool.poetry.dev-dependencies]
+bump2version = "^1.0"
+mypy = "^0.770"
+pre-commit = "^2.2"
+pytest = "^5.4"
+pytest-cov = "^2.8"
+pytest-randomly = "^3.2"
+pytest-xdist = "~1.29"
