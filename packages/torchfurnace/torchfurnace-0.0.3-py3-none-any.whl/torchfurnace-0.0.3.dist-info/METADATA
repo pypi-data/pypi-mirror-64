@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: torchfurnace
+Version: 0.0.3
+Summary: A tool package for training model, pre-processing dataset and managing experiment record in pytorch AI tasks.
+Home-page: https://github.com/tianyu-su/torchfurnace
+Author: TianyuSu
+Author-email: tyanyu.su@gmail.com
+Maintainer: TianyuSu
+Maintainer-email: tyanyu.su@gmail.com
+License: MIT License
+Keywords: pytorch,tracer,engine,torchfurnace
+Platform: any
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lmdb (>=0.98)
+Requires-Dist: numpy (>=1.18.1)
+Requires-Dist: pandas (>=1.0.2)
+Requires-Dist: Pillow (>=6.1.0)
+Requires-Dist: pyarrow (>=0.11.1)
+Requires-Dist: tensorboard (>=2.1.0)
+Requires-Dist: torch (>=1.1.0)
+Requires-Dist: torchvision (>=0.3.0)
+Requires-Dist: tqdm (>=4.42.1)
+
+# torchfurnace [![Build Status](https://travis-ci.com/tianyu-su/torchfurnace.svg?branch=master)](https://travis-ci.com/tianyu-su/torchfurnace) ![](https://img.shields.io/badge/pytorch-1.1.0-blue) ![](https://img.shields.io/badge/python-3.6-blue)
+
+`torchfurnace` is a tool package for training model, pre-processing dataset and managing experiment record in pytorch AI tasks.
+
+
+
+# TODO
+- [ ] training by `DistributedDataParallel`
+
+
+
