@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+data_mine/__init__.py
+data_mine.egg-info/PKG-INFO
+data_mine.egg-info/SOURCES.txt
+data_mine.egg-info/dependency_links.txt
+data_mine.egg-info/top_level.txt
