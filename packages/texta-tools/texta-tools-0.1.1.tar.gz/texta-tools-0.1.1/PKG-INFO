@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: texta-tools
+Version: 0.1.1
+Summary: texta-tools
+Home-page: https://git.texta.ee/texta/texta-mlp-python
+Author: TEXTA
+Author-email: info@texta.ee
+License: GPLv3
+Description: # TEXTA Tools Python Package
+        
+        * Text Processor
+        * Embedding & Phraser
+        * MLP Analyzer
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
