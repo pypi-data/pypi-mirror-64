@@ -1,0 +1,53 @@
+Changelog - to keep track of all relevant changes
+
+please update the categories "new features" and "bugfixes" before a pull request merge!
+
+version 1.1.2 - 
+new features:
+
+bugfixes:
+
+version 1.1.1 - 2020/03/23
+new features
+- New version for the ARZ model available (ARZ2020) 
+- a list with event ids can be passed to the main simulation class. All events not in this list will not be simulated. 
+  This is useful for a quick resimulation of certain events. 
+- Alvarez???? Askaryan models now place the trace into the center of the trace (instead of 50ns into the trace) 
+- New data set array 'vertex_times' contains the time elapsed from the first interaction to the current interaction
+- new utility to split output hdf5 files into smaller chucks (to be able to resimulate events on a cluster)
+- Greenland added to proposal config
+- new unforced event generator module
+- improved Earth model (PREM), path from interaction vertex through Earth is calculated (before interaction was assumed
+  to happen at the surface)
+- detector description is saved to nur output files
+- new handling of random numbers. Each module has its own random generator instance. Global seed can be controlled via 
+  config file setting. 
+
+bugfixes:
+- ARZxxxx and Alvarez2009 Askaryan modules now use the same (random) shower per event. 
+- fixes zenith distribution of event generator back to cos(zenith)
+- ray tracing precision was increased to 1e-9
+- saveguard against too many ray tracing solutions added
+
+version 1.1.0 - 2020/01/15
+new features:
+- specifying the bandwidth of the detector is no longer required. Now, the bandwidth is calculated automatically from the
+  detector_simulation that the user defines by examining the NuRadioReco modules that alter the bandwidth (i.e. bandpass filters
+  and hardware respone incoroprator) using the new module registry feature of NuRadioReco. The noise RMS is then calculated
+  from the noise temperature and the bandwidth of the detector.
+  Alternatively, the user can specify the RMS noise value manually which is useful to simulate an existing detector where
+  the noise RMS is known.
+- production includes testing of NuRadioReco files
+- NuRadioMC simulations with noise and at Moore's Bay site are tested in our CI test suite
+- Event generation using PROPOSAL lepton propagation available
+- fft and units utilities are removed. These should be taken from NuRadioReco from now on.
+  IMPORTANT: Note that in the fft the frequency spectrum is now given per frequency instead of per bin
+
+
+bugfixes:
+	- fixed that Veff utility script didn't calculate effective volumes for individual triggers
+	- fixed that the multiple_triggers key was not created for multiple stations
+	- Angular distribution now accounts for projected area
+	- 
+
+version 1.0.0 - 2019/08/30 - first python 3 release
