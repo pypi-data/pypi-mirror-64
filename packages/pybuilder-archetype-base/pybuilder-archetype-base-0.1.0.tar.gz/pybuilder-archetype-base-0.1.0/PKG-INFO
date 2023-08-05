@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pybuilder-archetype-base
+Version: 0.1.0
+Summary: PyBuilder Python base project structure Plugin
+Home-page: https://github.com/yeuk0/pybuilder-archetype-base
+Author: Arturo GL, Diego BM
+Author-email: r2d2006@hotmail.com, diegobm92@gmail.com
+License: Apache License, Version 2.0
+Description: External plugin for PyBuilder to generate a base project structure
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
