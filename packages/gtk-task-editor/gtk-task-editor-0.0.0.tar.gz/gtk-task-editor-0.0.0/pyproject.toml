@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gtk-task-editor"
+version = "0.0.0"
+description = "A Gtk Dialog for todo apps that allows for viewing and editing individual tasks and todos"
+authors = ["BeatLink <beatlink@protonmail.com>"]
+license = "GPL-3.0+"
+
+packages = [{include = "task_editor"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pycairo = "^1.18"
+pygobject = "^3.32.2"
+task-recurrence = "^3.0.0"
+gtk-datetime-popover = "^6.0.0"
+gtk-recurrence-popover = '^4.0.0'
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

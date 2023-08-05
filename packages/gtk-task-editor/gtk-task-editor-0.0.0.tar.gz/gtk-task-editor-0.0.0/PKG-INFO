@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gtk-task-editor
+Version: 0.0.0
+Summary: A Gtk Dialog for todo apps that allows for viewing and editing individual tasks and todos
+License: GPL-3.0+
+Author: BeatLink
+Author-email: beatlink@protonmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: gtk-datetime-popover (>=6.0.0,<7.0.0)
+Requires-Dist: gtk-recurrence-popover (>=4.0.0,<5.0.0)
+Requires-Dist: pycairo (>=1.18,<2.0)
+Requires-Dist: pygobject (>=3.32.2,<4.0.0)
+Requires-Dist: task-recurrence (>=3.0.0,<4.0.0)
