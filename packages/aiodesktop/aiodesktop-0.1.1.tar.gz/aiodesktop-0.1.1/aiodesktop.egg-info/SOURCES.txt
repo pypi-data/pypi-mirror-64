@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+requirements_dev.txt
+setup.py
+aiodesktop.egg-info/PKG-INFO
+aiodesktop.egg-info/SOURCES.txt
+aiodesktop.egg-info/dependency_links.txt
+aiodesktop.egg-info/requires.txt
+aiodesktop.egg-info/top_level.txt
+src/aiodesktop/__init__.py
+src/aiodesktop/browser.py
+src/aiodesktop/compat.py
+src/aiodesktop/server.py
+src/aiodesktop/static/bootstrap.js
