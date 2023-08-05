@@ -1,0 +1,10 @@
+covidcli/__init__.py,sha256=TWY2HHBr7soKzDojVTmRRRQj8LWtiK2CcaOJolf0kU0,23
+covidcli/coronavirus_dataset.csv,sha256=S21aQhFtvACfyyZzOKI48owzX5JW877MowqoN29jClI,1304666
+covidcli/coronavirus_dataset_20200320-121204.csv,sha256=S21aQhFtvACfyyZzOKI48owzX5JW877MowqoN29jClI,1304666
+covidcli/coronavirus_dataset_20200320-121234.csv,sha256=S21aQhFtvACfyyZzOKI48owzX5JW877MowqoN29jClI,1304666
+covidcli/covidcli.py,sha256=xRqOIXl3O5CuOfOuIzwgLwNptKMpLf-65xbjlWw9tFk,7762
+covidcli-0.1.2.dist-info/entry_points.txt,sha256=Sm_lyQjhtn5WiYU1sVSqlY6yOqELatyx_02NluEg9g4,51
+covidcli-0.1.2.dist-info/LICENSE,sha256=6m73zv-ATqZTBOJhT_eC0yUyUoBe0qzpmCIm_YPkLb0,1060
+covidcli-0.1.2.dist-info/WHEEL,sha256=kvwuEKnRH6O8i0OndiTtSFFMuXs9x3oJYWvW5x4ISEE,87
+covidcli-0.1.2.dist-info/METADATA,sha256=08MLNBFCvaL4PIXY-W0n8nYffhBNYYs61Tk6-hIBwng,2019
+covidcli-0.1.2.dist-info/RECORD,,
