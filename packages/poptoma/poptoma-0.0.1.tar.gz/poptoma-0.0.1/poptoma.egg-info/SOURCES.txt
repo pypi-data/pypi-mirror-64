@@ -1,0 +1,7 @@
+README.md
+setup.py
+poptoma/__init__.py
+poptoma.egg-info/PKG-INFO
+poptoma.egg-info/SOURCES.txt
+poptoma.egg-info/dependency_links.txt
+poptoma.egg-info/top_level.txt
