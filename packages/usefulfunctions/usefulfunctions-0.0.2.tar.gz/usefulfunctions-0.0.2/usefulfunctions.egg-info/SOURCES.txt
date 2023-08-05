@@ -1,0 +1,8 @@
+README.md
+setup.py
+usefulfunctions/__init__.py
+usefulfunctions/__main__.py
+usefulfunctions.egg-info/PKG-INFO
+usefulfunctions.egg-info/SOURCES.txt
+usefulfunctions.egg-info/dependency_links.txt
+usefulfunctions.egg-info/top_level.txt
