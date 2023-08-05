@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: fluent-compiler
+Version: 0.1
+Summary: Blazing fast implementation of Fluent localization language.
+Home-page: https://github.com/django-ftl/fluent-compiler
+Author: Luke Plant
+Author-email: L.Plant.98@cantab.net
+License: APL 2
+Keywords: fluent,localization,l10n,compiler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: fluent.syntax (<=0.16,>=0.14)
+Requires-Dist: attrs (>=19.3.0)
+Requires-Dist: babel (>=2.8.0)
+Requires-Dist: pytz
+Requires-Dist: six
+
+See https://github.com/django-ftl/fluent-compiler/ for more info.
+
+
