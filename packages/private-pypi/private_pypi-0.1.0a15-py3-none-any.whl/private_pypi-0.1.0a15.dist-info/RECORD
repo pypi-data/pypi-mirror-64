@@ -1,0 +1,5 @@
+private_pypi_bundles/__init__.py,sha256=LQnfXKdOS5YjoJoyQt3isB-hvNbkOFAOgke73bMJ838,2180
+private_pypi-0.1.0a15.dist-info/entry_points.txt,sha256=s-NpGWcKUNtqDAiSl7PnDzQPE3mor3gbi455pkjBEdo,58
+private_pypi-0.1.0a15.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+private_pypi-0.1.0a15.dist-info/METADATA,sha256=5HCQP05q3vBu7T47HBbBjqZR34d1Xpwam8iWjU6DzpQ,856
+private_pypi-0.1.0a15.dist-info/RECORD,,
