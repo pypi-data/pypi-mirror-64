@@ -1,0 +1,10 @@
+README.md
+setup.py
+pandass/__init__.py
+pandass/project.py
+pandass/words.py
+pandass/words2.py
+pandass.egg-info/PKG-INFO
+pandass.egg-info/SOURCES.txt
+pandass.egg-info/dependency_links.txt
+pandass.egg-info/top_level.txt
