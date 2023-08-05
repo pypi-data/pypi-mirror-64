@@ -1,0 +1,1022 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Api Definitions &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive" href="modules.html" />
+    <link rel="prev" title="Configuration" href="configuration.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Api Definitions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#condenser-api">condenser_api</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#broadcast-block">broadcast_block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#broadcast-transaction">broadcast_transaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#broadcast-transaction-synchronous">broadcast_transaction_synchronous</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-account-bandwidth">get_account_bandwidth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-account-count">get_account_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-account-history">get_account_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-account-reputations">get_account_reputations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-account-votes">get_account_votes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-active-votes">get_active_votes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-active-witnesses">get_active_witnesses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-block">get_block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-block-header">get_block_header</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-blog">get_blog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-blog-authors">get_blog_authors</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-blog-entries">get_blog_entries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-chain-properties">get_chain_properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-comment-discussions-by-payout">get_comment_discussions_by_payout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-config">get_config</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-content">get_content</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-content-replies">get_content_replies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-conversion-requests">get_conversion_requests</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-current-median-history-price">get_current_median_history_price</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-active">get_discussions_by_active</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-author-before-date">get_discussions_by_author_before_date</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-blog">get_discussions_by_blog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-cashout">get_discussions_by_cashout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-children">get_discussions_by_children</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-comments">get_discussions_by_comments</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-created">get_discussions_by_created</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-feed">get_discussions_by_feed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-hot">get_discussions_by_hot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-promoted">get_discussions_by_promoted</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-trending">get_discussions_by_trending</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-discussions-by-votes">get_discussions_by_votes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-dynamic-global-properties">get_dynamic_global_properties</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-escrow">get_escrow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-expiring-vesting-delegations">get_expiring_vesting_delegations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-feed">get_feed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-feed-entries">get_feed_entries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-feed-history">get_feed_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-follow-count">get_follow_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-followers">get_followers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-following">get_following</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-hardfork-version">get_hardfork_version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-key-references">get_key_references</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-market-history">get_market_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-market-history-buckets">get_market_history_buckets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-next-scheduled-hardfork">get_next_scheduled_hardfork</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-open-orders">get_open_orders</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-ops-in-block">get_ops_in_block</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-order-book">get_order_book</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-owner-history">get_owner_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-post-discussions-by-payout">get_post_discussions_by_payout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-potential-signatures">get_potential_signatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-reblogged-by">get_reblogged_by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-recent-trades">get_recent_trades</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-recovery-request">get_recovery_request</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-replies-by-last-update">get_replies_by_last_update</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-required-signatures">get_required_signatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-reward-fund">get_reward_fund</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-savings-withdraw-from">get_savings_withdraw_from</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-savings-withdraw-to">get_savings_withdraw_to</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-state">get_state</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-tags-used-by-author">get_tags_used_by_author</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-ticker">get_ticker</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-trade-history">get_trade_history</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-transaction">get_transaction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-transaction-hex">get_transaction_hex</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-trending-tags">get_trending_tags</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-version">get_version</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-vesting-delegations">get_vesting_delegations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-volume">get_volume</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-withdraw-routes">get_withdraw_routes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-witness-by-account">get_witness_by_account</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-witness-count">get_witness_count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-witness-schedule">get_witness_schedule</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-witnesses">get_witnesses</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#get-witnesses-by-vote">get_witnesses_by_vote</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-account-names">lookup_account_names</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-accounts">lookup_accounts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lookup-witness-accounts">lookup_witness_accounts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verify-account-authority">verify_account_authority</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verify-authority">verify_authority</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">bhive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Api Definitions</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/apidefinitions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-definitions">
+<h1>Api Definitions<a class="headerlink" href="#api-definitions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="condenser-api">
+<h2>condenser_api<a class="headerlink" href="#condenser-api" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="broadcast-block">
+<h3>broadcast_block<a class="headerlink" href="#broadcast-block" title="Permalink to this headline">¶</a></h3>
+<p>not implemented</p>
+</div>
+<div class="section" id="broadcast-transaction">
+<h3>broadcast_transaction<a class="headerlink" href="#broadcast-transaction" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="broadcast-transaction-synchronous">
+<h3>broadcast_transaction_synchronous<a class="headerlink" href="#broadcast-transaction-synchronous" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">()</span>
+<span class="n">t</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-account-bandwidth">
+<h3>get_account_bandwidth<a class="headerlink" href="#get-account-bandwidth" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">get_account_bandwidth</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-account-count">
+<h3>get_account_count<a class="headerlink" href="#get-account-count" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">b</span><span class="o">.</span><span class="n">get_account_count</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-account-history">
+<h3>get_account_history<a class="headerlink" href="#get-account-history" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_account_history</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-account-reputations">
+<h3>get_account_reputations<a class="headerlink" href="#get-account-reputations" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">b</span><span class="o">.</span><span class="n">get_account_reputations</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-account-votes">
+<h3>get_account_votes<a class="headerlink" href="#get-account-votes" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_account_votes</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-active-votes">
+<h3>get_active_votes<a class="headerlink" href="#get-active-votes" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.vote</span> <span class="kn">import</span> <span class="n">ActiveVotes</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">ActiveVotes</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="s2">&quot;authorperm&quot;</span><span class="p">])</span>
+<span class="n">a</span><span class="o">.</span><span class="n">printAsTable</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-active-witnesses">
+<h3>get_active_witnesses<a class="headerlink" href="#get-active-witnesses" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witnesses</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">Witnesses</span><span class="p">()</span>
+<span class="n">w</span><span class="o">.</span><span class="n">printAsTable</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-block">
+<h3>get_block<a class="headerlink" href="#get-block" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.block</span> <span class="kn">import</span> <span class="n">Block</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Block</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-block-header">
+<h3>get_block_header<a class="headerlink" href="#get-block-header" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.block</span> <span class="kn">import</span> <span class="n">BlockHeader</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">BlockHeader</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-blog">
+<h3>get_blog<a class="headerlink" href="#get-blog" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_blog</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-blog-authors">
+<h3>get_blog_authors<a class="headerlink" href="#get-blog-authors" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_blog_authors</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-blog-entries">
+<h3>get_blog_entries<a class="headerlink" href="#get-blog-entries" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_blog_entries</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-chain-properties">
+<h3>get_chain_properties<a class="headerlink" href="#get-chain-properties" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_chain_properties</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-comment-discussions-by-payout">
+<h3>get_comment_discussions_by_payout<a class="headerlink" href="#get-comment-discussions-by-payout" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Comment_discussions_by_payout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Comment_discussions_by_payout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-config">
+<h3>get_config<a class="headerlink" href="#get-config" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_config</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-content">
+<h3>get_content<a class="headerlink" href="#get-content" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Comment</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="s2">&quot;authorperm&quot;</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-content-replies">
+<h3>get_content_replies<a class="headerlink" href="#get-content-replies" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="s2">&quot;authorperm&quot;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">get_replies</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-conversion-requests">
+<h3>get_conversion_requests<a class="headerlink" href="#get-conversion-requests" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_conversion_requests</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-current-median-history-price">
+<h3>get_current_median_history_price<a class="headerlink" href="#get-current-median-history-price" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_current_median_history</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-active">
+<h3>get_discussions_by_active<a class="headerlink" href="#get-discussions-by-active" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_active</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_active</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-author-before-date">
+<h3>get_discussions_by_author_before_date<a class="headerlink" href="#get-discussions-by-author-before-date" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_author_before_date</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_author_before_date</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">author</span><span class="o">=</span><span class="s2">&quot;gtg&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-blog">
+<h3>get_discussions_by_blog<a class="headerlink" href="#get-discussions-by-blog" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_blog</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_blog</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-cashout">
+<h3>get_discussions_by_cashout<a class="headerlink" href="#get-discussions-by-cashout" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_cashout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_cashout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-children">
+<h3>get_discussions_by_children<a class="headerlink" href="#get-discussions-by-children" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_children</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_children</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-comments">
+<h3>get_discussions_by_comments<a class="headerlink" href="#get-discussions-by-comments" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_comments</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_author</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">start_permlink</span><span class="o">=</span><span class="s2">&quot;firstpost&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_comments</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-created">
+<h3>get_discussions_by_created<a class="headerlink" href="#get-discussions-by-created" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_created</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_created</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-feed">
+<h3>get_discussions_by_feed<a class="headerlink" href="#get-discussions-by-feed" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_feed</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_feed</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-hot">
+<h3>get_discussions_by_hot<a class="headerlink" href="#get-discussions-by-hot" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_hot</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_hot</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-promoted">
+<h3>get_discussions_by_promoted<a class="headerlink" href="#get-discussions-by-promoted" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_promoted</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_promoted</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-trending">
+<h3>get_discussions_by_trending<a class="headerlink" href="#get-discussions-by-trending" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_trending</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_trending</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-discussions-by-votes">
+<h3>get_discussions_by_votes<a class="headerlink" href="#get-discussions-by-votes" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_votes</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_votes</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-dynamic-global-properties">
+<h3>get_dynamic_global_properties<a class="headerlink" href="#get-dynamic-global-properties" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_dynamic_global_properties</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-escrow">
+<h3>get_escrow<a class="headerlink" href="#get-escrow" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_escrow</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-expiring-vesting-delegations">
+<h3>get_expiring_vesting_delegations<a class="headerlink" href="#get-expiring-vesting-delegations" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_expiring_vesting_delegations</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-feed">
+<h3>get_feed<a class="headerlink" href="#get-feed" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-feed-entries">
+<h3>get_feed_entries<a class="headerlink" href="#get-feed-entries" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed_entries</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-feed-history">
+<h3>get_feed_history<a class="headerlink" href="#get-feed-history" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_feed_history</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-follow-count">
+<h3>get_follow_count<a class="headerlink" href="#get-follow-count" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_follow_count</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-followers">
+<h3>get_followers<a class="headerlink" href="#get-followers" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_followers</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-following">
+<h3>get_following<a class="headerlink" href="#get-following" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_following</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-hardfork-version">
+<h3>get_hardfork_version<a class="headerlink" href="#get-hardfork-version" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_hardfork_properties</span><span class="p">()[</span><span class="s2">&quot;hf_version&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-key-references">
+<h3>get_key_references<a class="headerlink" href="#get-key-references" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.wallet</span> <span class="kn">import</span> <span class="n">Wallet</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">Wallet</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">getAccountFromPublicKey</span><span class="p">(</span><span class="n">acc</span><span class="p">[</span><span class="s2">&quot;posting&quot;</span><span class="p">][</span><span class="s2">&quot;key_auths&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-market-history">
+<h3>get_market_history<a class="headerlink" href="#get-market-history" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">market_history</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-market-history-buckets">
+<h3>get_market_history_buckets<a class="headerlink" href="#get-market-history-buckets" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">market_history_buckets</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-next-scheduled-hardfork">
+<h3>get_next_scheduled_hardfork<a class="headerlink" href="#get-next-scheduled-hardfork" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_hardfork_properties</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-open-orders">
+<h3>get_open_orders<a class="headerlink" href="#get-open-orders" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">accountopenorders</span><span class="p">(</span><span class="n">account</span><span class="o">=</span><span class="s2">&quot;gtg&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-ops-in-block">
+<h3>get_ops_in_block<a class="headerlink" href="#get-ops-in-block" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.block</span> <span class="kn">import</span> <span class="n">Block</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Block</span><span class="p">(</span><span class="mf">2e6</span><span class="p">,</span> <span class="n">only_ops</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-order-book">
+<h3>get_order_book<a class="headerlink" href="#get-order-book" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">orderbook</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-owner-history">
+<h3>get_owner_history<a class="headerlink" href="#get-owner-history" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_owner_history</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-post-discussions-by-payout">
+<h3>get_post_discussions_by_payout<a class="headerlink" href="#get-post-discussions-by-payout" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Post_discussions_by_payout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Post_discussions_by_payout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-potential-signatures">
+<h3>get_potential_signatures<a class="headerlink" href="#get-potential-signatures" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">block</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">get_current_block</span><span class="p">()</span>
+<span class="n">trx</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;transactions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">trx</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">get_potential_signatures</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-reblogged-by">
+<h3>get_reblogged_by<a class="headerlink" href="#get-reblogged-by" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">post</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_feed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="n">post</span><span class="p">[</span><span class="s2">&quot;authorperm&quot;</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">c</span><span class="o">.</span><span class="n">get_reblogged_by</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-recent-trades">
+<h3>get_recent_trades<a class="headerlink" href="#get-recent-trades" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">recent_trades</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-recovery-request">
+<h3>get_recovery_request<a class="headerlink" href="#get-recovery-request" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_recovery_request</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-replies-by-last-update">
+<h3>get_replies_by_last_update<a class="headerlink" href="#get-replies-by-last-update" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Replies_by_last_update</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_author</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">start_permlink</span><span class="o">=</span><span class="s2">&quot;firstpost&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Replies_by_last_update</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-required-signatures">
+<h3>get_required_signatures<a class="headerlink" href="#get-required-signatures" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">block</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">get_current_block</span><span class="p">()</span>
+<span class="n">trx</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;transactions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">trx</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">get_required_signatures</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-reward-fund">
+<h3>get_reward_fund<a class="headerlink" href="#get-reward-fund" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_reward_funds</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-savings-withdraw-from">
+<h3>get_savings_withdraw_from<a class="headerlink" href="#get-savings-withdraw-from" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_savings_withdrawals</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s2">&quot;from&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-savings-withdraw-to">
+<h3>get_savings_withdraw_to<a class="headerlink" href="#get-savings-withdraw-to" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_savings_withdrawals</span><span class="p">(</span><span class="n">direction</span><span class="o">=</span><span class="s2">&quot;to&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-state">
+<h3>get_state<a class="headerlink" href="#get-state" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">RecentByPath</span>
+<span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">RecentByPath</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s2">&quot;promoted&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-tags-used-by-author">
+<h3>get_tags_used_by_author<a class="headerlink" href="#get-tags-used-by-author" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_tags_used_by_author</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-ticker">
+<h3>get_ticker<a class="headerlink" href="#get-ticker" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">ticker</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-trade-history">
+<h3>get_trade_history<a class="headerlink" href="#get-trade-history" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">t</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">trade_history</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-transaction">
+<h3>get_transaction<a class="headerlink" href="#get-transaction" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">get_transaction</span><span class="p">(</span><span class="s2">&quot;6fde0190a97835ea6d9e651293e90c89911f933c&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-transaction-hex">
+<h3>get_transaction_hex<a class="headerlink" href="#get-transaction-hex" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">block</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">get_current_block</span><span class="p">()</span>
+<span class="n">trx</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;transactions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">b</span><span class="o">.</span><span class="n">get_transaction_hex</span><span class="p">(</span><span class="n">trx</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-trending-tags">
+<h3>get_trending_tags<a class="headerlink" href="#get-trending-tags" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Trending_tags</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Trending_tags</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-version">
+<h3>get_version<a class="headerlink" href="#get-version" title="Permalink to this headline">¶</a></h3>
+<p>not implemented</p>
+</div>
+<div class="section" id="get-vesting-delegations">
+<h3>get_vesting_delegations<a class="headerlink" href="#get-vesting-delegations" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_vesting_delegations</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-volume">
+<h3>get_volume<a class="headerlink" href="#get-volume" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">Market</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">volume24h</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-withdraw-routes">
+<h3>get_withdraw_routes<a class="headerlink" href="#get-withdraw-routes" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">get_withdraw_routes</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-witness-by-account">
+<h3>get_witness_by_account<a class="headerlink" href="#get-witness-by-account" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witness</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">Witness</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-witness-count">
+<h3>get_witness_count<a class="headerlink" href="#get-witness-count" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witnesses</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">Witnesses</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="o">.</span><span class="n">witness_count</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-witness-schedule">
+<h3>get_witness_schedule<a class="headerlink" href="#get-witness-schedule" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">get_witness_schedule</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="get-witnesses">
+<h3>get_witnesses<a class="headerlink" href="#get-witnesses" title="Permalink to this headline">¶</a></h3>
+<p>not implemented</p>
+</div>
+<div class="section" id="get-witnesses-by-vote">
+<h3>get_witnesses_by_vote<a class="headerlink" href="#get-witnesses-by-vote" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">WitnessesRankedByVote</span>
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">WitnessesRankedByVote</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lookup-account-names">
+<h3>lookup_account_names<a class="headerlink" href="#lookup-account-names" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">,</span> <span class="n">full</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">acc</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lookup-accounts">
+<h3>lookup_accounts<a class="headerlink" href="#lookup-accounts" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_similar_account_names</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lookup-witness-accounts">
+<h3>lookup_witness_accounts<a class="headerlink" href="#lookup-witness-accounts" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">ListWitnesses</span>
+<span class="k">for</span> <span class="n">w</span> <span class="ow">in</span> <span class="n">ListWitnesses</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="verify-account-authority">
+<h3>verify_account_authority<a class="headerlink" href="#verify-account-authority" title="Permalink to this headline">¶</a></h3>
+<p>disabled and not implemented</p>
+</div>
+<div class="section" id="verify-authority">
+<h3>verify_authority<a class="headerlink" href="#verify-authority" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">block</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">get_current_block</span><span class="p">()</span>
+<span class="n">trx</span> <span class="o">=</span> <span class="n">block</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;transactions&quot;</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">trx</span><span class="p">)</span>
+<span class="n">t</span><span class="o">.</span><span class="n">verify_authority</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ok&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="modules.html" class="btn btn-neutral float-right" title="bhive" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="configuration.html" class="btn btn-neutral float-left" title="Configuration" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

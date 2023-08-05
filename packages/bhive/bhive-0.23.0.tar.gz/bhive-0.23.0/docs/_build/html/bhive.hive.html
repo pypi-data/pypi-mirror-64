@@ -1,0 +1,1337 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.hive module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.hiveconnect module" href="bhive.hiveconnect.html" />
+    <link rel="prev" title="bhive.exceptions module" href="bhive.exceptions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.hive module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.hive.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.hive">
+<span id="bhive-hive-module"></span><h1>bhive.hive module<a class="headerlink" href="#module-bhive.hive" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.hive.Hive">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.hive.</code><code class="sig-name descname">Hive</code><span class="sig-paren">(</span><em class="sig-param">node=''</em>, <em class="sig-param">rpcuser=None</em>, <em class="sig-param">rpcpassword=None</em>, <em class="sig-param">debug=False</em>, <em class="sig-param">data_refresh_time_seconds=900</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Connect to the Hive network.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>node</strong> (<em>str</em>) – Node to connect to <em>(optional)</em></p></li>
+<li><p><strong>rpcuser</strong> (<em>str</em>) – RPC user <em>(optional)</em></p></li>
+<li><p><strong>rpcpassword</strong> (<em>str</em>) – RPC password <em>(optional)</em></p></li>
+<li><p><strong>nobroadcast</strong> (<em>bool</em>) – Do <strong>not</strong> broadcast a transaction!
+<em>(optional)</em></p></li>
+<li><p><strong>unsigned</strong> (<em>bool</em>) – Do <strong>not</strong> sign a transaction! <em>(optional)</em></p></li>
+<li><p><strong>debug</strong> (<em>bool</em>) – Enable Debugging <em>(optional)</em></p></li>
+<li><p><strong>keys</strong> (<em>array</em><em>, </em><em>dict</em><em>, </em><em>string</em>) – Predefine the wif keys to shortcut the
+wallet database <em>(optional)</em></p></li>
+<li><p><strong>wif</strong> (<em>array</em><em>, </em><em>dict</em><em>, </em><em>string</em>) – Predefine the wif keys to shortcut the
+wallet database <em>(optional)</em></p></li>
+<li><p><strong>offline</strong> (<em>bool</em>) – Boolean to prevent connecting to network (defaults
+to <code class="docutils literal notranslate"><span class="pre">False</span></code>) <em>(optional)</em></p></li>
+<li><p><strong>expiration</strong> (<em>int</em>) – Delay in seconds until transactions are supposed
+to expire <em>(optional)</em> (default is 30)</p></li>
+<li><p><strong>blocking</strong> (<em>str</em>) – Wait for broadcasted transactions to be included
+in a block and return full transaction (can be “head” or
+“irreversible”)</p></li>
+<li><p><strong>bundle</strong> (<em>bool</em>) – Do not broadcast transactions right away, but allow
+to bundle operations. It is not possible to send out more than one
+vote operation and more than one comment operation in a single broadcast <em>(optional)</em></p></li>
+<li><p><strong>appbase</strong> (<em>bool</em>) – Use the new appbase rpc protocol on nodes with version
+0.19.4 or higher. The settings has no effect on nodes with version of 0.19.3 or lower.</p></li>
+<li><p><strong>num_retries</strong> (<em>int</em>) – Set the maximum number of reconnects to the nodes before
+NumRetriesReached is raised. Disabled for -1. (default is -1)</p></li>
+<li><p><strong>num_retries_call</strong> (<em>int</em>) – Repeat num_retries_call times a rpc call on node error (default is 5)</p></li>
+<li><p><strong>timeout</strong> (<em>int</em>) – Timeout setting for https nodes (default is 60)</p></li>
+<li><p><strong>use_sc2</strong> (<em>bool</em>) – When True, a hiveconnect object is created. Can be used for
+broadcast posting op or creating hot_links (default is False)</p></li>
+<li><p><strong>hiveconnect</strong> (<a class="reference internal" href="bhive.hiveconnect.html#bhive.hiveconnect.HiveConnect" title="bhive.hiveconnect.HiveConnect"><em>HiveConnect</em></a>) – A HiveConnect object can be set manually, set use_sc2 to True</p></li>
+<li><p><strong>custom_chains</strong> (<em>dict</em>) – custom chain which should be added to the known chains</p></li>
+</ul>
+</dd>
+</dl>
+<p>Three wallet operation modes are possible:</p>
+<ul class="simple">
+<li><p><strong>Wallet Database</strong>: Here, the hivelibs load the keys from the
+locally stored wallet SQLite database (see <code class="docutils literal notranslate"><span class="pre">storage.py</span></code>).
+To use this mode, simply call <code class="docutils literal notranslate"><span class="pre">Hive()</span></code> without the
+<code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter</p></li>
+<li><p><strong>Providing Keys</strong>: Here, you can provide the keys for
+your accounts manually. All you need to do is add the wif
+keys for the accounts you want to use as a simple array
+using the <code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter to <code class="docutils literal notranslate"><span class="pre">Hive()</span></code>.</p></li>
+<li><p><strong>Force keys</strong>: This more is for advanced users and
+requires that you know what you are doing. Here, the
+<code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter is a dictionary that overwrite the
+<code class="docutils literal notranslate"><span class="pre">active</span></code>, <code class="docutils literal notranslate"><span class="pre">owner</span></code>, <code class="docutils literal notranslate"><span class="pre">posting</span></code> or <code class="docutils literal notranslate"><span class="pre">memo</span></code> keys for
+any account. This mode is only used for <em>foreign</em>
+signatures!</p></li>
+</ul>
+<p>If no node is provided, it will connect to default nodes of
+<a class="reference external" href="http://geo.hive.pl">http://geo.hive.pl</a>. Default settings can be changed with:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="o">&lt;</span><span class="n">host</span><span class="o">&gt;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>where <code class="docutils literal notranslate"><span class="pre">&lt;host&gt;</span></code> starts with <code class="docutils literal notranslate"><span class="pre">https://</span></code>, <code class="docutils literal notranslate"><span class="pre">ws://</span></code> or <code class="docutils literal notranslate"><span class="pre">wss://</span></code>.</p>
+<p>The purpose of this class it to simplify interaction with
+Hive.</p>
+<p>The idea is to have a class that allows to do this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">hive</span><span class="o">.</span><span class="n">get_blockchain_version</span><span class="p">())</span>  
+</pre></div>
+</div>
+<p>This class also deals with edits, votes and reading content.</p>
+<p>Example for adding a custom chain:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="n">node</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;https://mytstnet.com&quot;</span><span class="p">],</span> <span class="n">custom_chains</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;MYTESTNET&quot;</span><span class="p">:</span>
+    <span class="p">{</span><span class="s1">&#39;chain_assets&#39;</span><span class="p">:</span> <span class="p">[{</span><span class="s1">&#39;asset&#39;</span><span class="p">:</span> <span class="s1">&#39;HBD&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;precision&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span> <span class="s1">&#39;HBD&#39;</span><span class="p">},</span>
+                      <span class="p">{</span><span class="s1">&#39;asset&#39;</span><span class="p">:</span> <span class="s1">&#39;HIVE&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;precision&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span> <span class="s1">&#39;HIVE&#39;</span><span class="p">},</span>
+                      <span class="p">{</span><span class="s1">&#39;asset&#39;</span><span class="p">:</span> <span class="s1">&#39;VESTS&#39;</span><span class="p">,</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;precision&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">,</span> <span class="s1">&#39;symbol&#39;</span><span class="p">:</span> <span class="s1">&#39;VESTS&#39;</span><span class="p">}],</span>
+     <span class="s1">&#39;chain_id&#39;</span><span class="p">:</span> <span class="s1">&#39;79276aea5d4877d9a25892eaa01b0adf019d3e5cb12a97478df3298ccdd01674&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;min_version&#39;</span><span class="p">:</span> <span class="s1">&#39;0.0.0&#39;</span><span class="p">,</span>
+     <span class="s1">&#39;prefix&#39;</span><span class="p">:</span> <span class="s1">&#39;MTN&#39;</span><span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.hive.Hive.broadcast">
+<code class="sig-name descname">broadcast</code><span class="sig-paren">(</span><em class="sig-param">tx=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.broadcast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Broadcast a transaction to the Hive network</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tx</strong> (<em>tx</em>) – Signed transaction to broadcast</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.chain_params">
+<em class="property">property </em><code class="sig-name descname">chain_params</code><a class="headerlink" href="#bhive.hive.Hive.chain_params" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.claim_account">
+<code class="sig-name descname">claim_account</code><span class="sig-paren">(</span><em class="sig-param">creator</em>, <em class="sig-param">fee=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.claim_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim account for claimed account creation.</p>
+<p>When fee is 0 HIVE a subsidized account is claimed and can be created
+later with create_claimed_account.
+The number of subsidized account is limited.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>creator</strong> (<em>str</em>) – which account should pay the registration fee (RC or HIVE)
+(defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+<li><p><strong>fee</strong> (<em>str</em>) – when set to 0 HIVE (default), claim account is paid by RC</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.clear" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.comment_options">
+<code class="sig-name descname">comment_options</code><span class="sig-paren">(</span><em class="sig-param">options</em>, <em class="sig-param">identifier</em>, <em class="sig-param">beneficiaries=[]</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.comment_options" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the comment options</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>options</strong> (<em>dict</em>) – The options to define.</p></li>
+<li><p><strong>identifier</strong> (<em>str</em>) – Post identifier</p></li>
+<li><p><strong>beneficiaries</strong> (<em>list</em>) – (optional) list of beneficiaries</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>For the options, you have these defaults::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;permlink&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;max_accepted_payout&quot;</span><span class="p">:</span> <span class="s2">&quot;1000000.000 HBD&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;percent_hive_dollars&quot;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+    <span class="s2">&quot;allow_votes&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s2">&quot;allow_curation_rewards&quot;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.connect">
+<code class="sig-name descname">connect</code><span class="sig-paren">(</span><em class="sig-param">node=''</em>, <em class="sig-param">rpcuser=''</em>, <em class="sig-param">rpcpassword=''</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to Hive network (internal use only)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.create_account">
+<code class="sig-name descname">create_account</code><span class="sig-paren">(</span><em class="sig-param">account_name</em>, <em class="sig-param">creator=None</em>, <em class="sig-param">owner_key=None</em>, <em class="sig-param">active_key=None</em>, <em class="sig-param">memo_key=None</em>, <em class="sig-param">posting_key=None</em>, <em class="sig-param">password=None</em>, <em class="sig-param">additional_owner_keys=[]</em>, <em class="sig-param">additional_active_keys=[]</em>, <em class="sig-param">additional_posting_keys=[]</em>, <em class="sig-param">additional_owner_accounts=[]</em>, <em class="sig-param">additional_active_accounts=[]</em>, <em class="sig-param">additional_posting_accounts=[]</em>, <em class="sig-param">storekeys=True</em>, <em class="sig-param">store_owner_key=False</em>, <em class="sig-param">json_meta=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.create_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new account on Hive</p>
+<p>The brainkey/password can be used to recover all generated keys
+(see <a class="reference internal" href="bhivegraphenebase.account.html#module-bhivegraphenebase.account" title="bhivegraphenebase.account"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhivegraphenebase.account</span></code></a> for more details.</p>
+<p>By default, this call will use <code class="docutils literal notranslate"><span class="pre">default_account</span></code> to
+register a new name <code class="docutils literal notranslate"><span class="pre">account_name</span></code> with all keys being
+derived from a new brain key that will be returned. The
+corresponding keys will automatically be installed in the
+wallet.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don’t call this method unless you know what
+you are doing! Be sure to understand what this
+method does and where to find the private keys
+for your account.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that this imports private keys
+(if password is present) into the wallet by
+default when nobroadcast is set to False.
+However, it <strong>does not import the owner
+key</strong> for security reasons by default.
+If you set store_owner_key to True, the
+owner key is stored.
+Do NOT expect to be able to recover it from
+the wallet if you lose your password!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Account creations cost a fee that is defined by
+the network. If you create an account, you will
+need to pay for that fee!</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account_name</strong> (<em>str</em>) – (<strong>required</strong>) new account name</p></li>
+<li><p><strong>json_meta</strong> (<em>str</em>) – Optional meta data for the account</p></li>
+<li><p><strong>owner_key</strong> (<em>str</em>) – Main owner key</p></li>
+<li><p><strong>active_key</strong> (<em>str</em>) – Main active key</p></li>
+<li><p><strong>posting_key</strong> (<em>str</em>) – Main posting key</p></li>
+<li><p><strong>memo_key</strong> (<em>str</em>) – Main memo_key</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – Alternatively to providing keys, one
+can provide a password from which the
+keys will be derived</p></li>
+<li><p><strong>additional_owner_keys</strong> (<em>array</em>) – Additional owner public keys</p></li>
+<li><p><strong>additional_active_keys</strong> (<em>array</em>) – Additional active public keys</p></li>
+<li><p><strong>additional_posting_keys</strong> (<em>array</em>) – Additional posting public keys</p></li>
+<li><p><strong>additional_owner_accounts</strong> (<em>array</em>) – Additional owner account
+names</p></li>
+<li><p><strong>additional_active_accounts</strong> (<em>array</em>) – Additional acctive account
+names</p></li>
+<li><p><strong>storekeys</strong> (<em>bool</em>) – Store new keys in the wallet (default:
+<code class="docutils literal notranslate"><span class="pre">True</span></code>)</p></li>
+<li><p><strong>creator</strong> (<em>str</em>) – which account should pay the registration fee
+(defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="bhive.exceptions.html#bhive.exceptions.AccountExistsException" title="bhive.exceptions.AccountExistsException"><strong>AccountExistsException</strong></a> – if the account already exists on
+the blockchain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.create_claimed_account">
+<code class="sig-name descname">create_claimed_account</code><span class="sig-paren">(</span><em class="sig-param">account_name</em>, <em class="sig-param">creator=None</em>, <em class="sig-param">owner_key=None</em>, <em class="sig-param">active_key=None</em>, <em class="sig-param">memo_key=None</em>, <em class="sig-param">posting_key=None</em>, <em class="sig-param">password=None</em>, <em class="sig-param">additional_owner_keys=[]</em>, <em class="sig-param">additional_active_keys=[]</em>, <em class="sig-param">additional_posting_keys=[]</em>, <em class="sig-param">additional_owner_accounts=[]</em>, <em class="sig-param">additional_active_accounts=[]</em>, <em class="sig-param">additional_posting_accounts=[]</em>, <em class="sig-param">storekeys=True</em>, <em class="sig-param">store_owner_key=False</em>, <em class="sig-param">json_meta=None</em>, <em class="sig-param">combine_with_claim_account=False</em>, <em class="sig-param">fee=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.create_claimed_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new claimed account on Hive</p>
+<p>The brainkey/password can be used to recover all generated keys
+(see <a class="reference internal" href="bhivegraphenebase.account.html#module-bhivegraphenebase.account" title="bhivegraphenebase.account"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhivegraphenebase.account</span></code></a> for more details.</p>
+<p>By default, this call will use <code class="docutils literal notranslate"><span class="pre">default_account</span></code> to
+register a new name <code class="docutils literal notranslate"><span class="pre">account_name</span></code> with all keys being
+derived from a new brain key that will be returned. The
+corresponding keys will automatically be installed in the
+wallet.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don’t call this method unless you know what
+you are doing! Be sure to understand what this
+method does and where to find the private keys
+for your account.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that this imports private keys
+(if password is present) into the wallet by
+default when nobroadcast is set to False.
+However, it <strong>does not import the owner
+key</strong> for security reasons by default.
+If you set store_owner_key to True, the
+owner key is stored.
+Do NOT expect to be able to recover it from
+the wallet if you lose your password!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Account creations cost a fee that is defined by
+the network. If you create an account, you will
+need to pay for that fee!</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account_name</strong> (<em>str</em>) – (<strong>required</strong>) new account name</p></li>
+<li><p><strong>json_meta</strong> (<em>str</em>) – Optional meta data for the account</p></li>
+<li><p><strong>owner_key</strong> (<em>str</em>) – Main owner key</p></li>
+<li><p><strong>active_key</strong> (<em>str</em>) – Main active key</p></li>
+<li><p><strong>posting_key</strong> (<em>str</em>) – Main posting key</p></li>
+<li><p><strong>memo_key</strong> (<em>str</em>) – Main memo_key</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – Alternatively to providing keys, one
+can provide a password from which the
+keys will be derived</p></li>
+<li><p><strong>additional_owner_keys</strong> (<em>array</em>) – Additional owner public keys</p></li>
+<li><p><strong>additional_active_keys</strong> (<em>array</em>) – Additional active public keys</p></li>
+<li><p><strong>additional_posting_keys</strong> (<em>array</em>) – Additional posting public keys</p></li>
+<li><p><strong>additional_owner_accounts</strong> (<em>array</em>) – Additional owner account
+names</p></li>
+<li><p><strong>additional_active_accounts</strong> (<em>array</em>) – Additional acctive account
+names</p></li>
+<li><p><strong>storekeys</strong> (<em>bool</em>) – Store new keys in the wallet (default:
+<code class="docutils literal notranslate"><span class="pre">True</span></code>)</p></li>
+<li><p><strong>combine_with_claim_account</strong> (<em>bool</em>) – When set to True, a
+claim_account operation is additionally broadcasted</p></li>
+<li><p><strong>fee</strong> (<em>str</em>) – When combine_with_claim_account is set to True,
+this parameter is used for the claim_account operation</p></li>
+<li><p><strong>creator</strong> (<em>str</em>) – which account should pay the registration fee
+(defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="bhive.exceptions.html#bhive.exceptions.AccountExistsException" title="bhive.exceptions.AccountExistsException"><strong>AccountExistsException</strong></a> – if the account already exists on
+the blockchain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.custom_json">
+<code class="sig-name descname">custom_json</code><span class="sig-paren">(</span><em class="sig-param">id</em>, <em class="sig-param">json_data</em>, <em class="sig-param">required_auths=[]</em>, <em class="sig-param">required_posting_auths=[]</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.custom_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a custom json operation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>id</strong> (<em>str</em>) – identifier for the custom json (max length 32 bytes)</p></li>
+<li><p><strong>json_data</strong> (<em>json</em>) – the json data to put into the custom_json
+operation</p></li>
+<li><p><strong>required_auths</strong> (<em>list</em>) – (optional) required auths</p></li>
+<li><p><strong>required_posting_auths</strong> (<em>list</em>) – (optional) posting auths</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While reqired auths and required_posting_auths are both
+optional, one of the two are needed in order to send the custom
+json.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">hive</span><span class="o">.</span><span class="n">custom_json</span><span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;json_data&quot;</span><span class="p">,</span>
+<span class="n">required_posting_auths</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;account&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.finalizeOp">
+<code class="sig-name descname">finalizeOp</code><span class="sig-paren">(</span><em class="sig-param">ops</em>, <em class="sig-param">account</em>, <em class="sig-param">permission</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.finalizeOp" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method obtains the required private keys if present in
+the wallet, finalizes the transaction, signs it and
+broadacasts it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ops</strong> (<em>list</em><em>, </em><a class="reference internal" href="bhivegraphenebase.objects.html#bhivegraphenebase.objects.GrapheneObject" title="bhivegraphenebase.objects.GrapheneObject"><em>GrapheneObject</em></a>) – The operation (or list of operations) to
+broadcast</p></li>
+<li><p><strong>account</strong> (<a class="reference internal" href="bhive.account.html#bhive.account.Account" title="bhive.account.Account"><em>Account</em></a>) – The account that authorizes the
+operation</p></li>
+<li><p><strong>permission</strong> (<em>string</em>) – The required permission for
+signing (active, owner, posting)</p></li>
+<li><p><strong>append_to</strong> (<a class="reference internal" href="bhive.transactionbuilder.html#bhive.transactionbuilder.TransactionBuilder" title="bhive.transactionbuilder.TransactionBuilder"><em>TransactionBuilder</em></a>) – This allows to provide an instance of
+TransactionBuilder (see <a class="reference internal" href="#bhive.hive.Hive.new_tx" title="bhive.hive.Hive.new_tx"><code class="xref py py-func docutils literal notranslate"><span class="pre">Hive.new_tx()</span></code></a>) to specify
+where to put a specific operation.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><code class="docutils literal notranslate"><span class="pre">append_to</span></code> is exposed to every method used in the
+Hive class</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">ops</span></code> is a list of operation, they all need to be
+signable by the same key! Thus, you cannot combine ops
+that require active permission with ops that require
+posting permission. Neither can you use different
+accounts for different operations!</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This uses <a class="reference internal" href="#bhive.hive.Hive.txbuffer" title="bhive.hive.Hive.txbuffer"><code class="xref py py-func docutils literal notranslate"><span class="pre">Hive.txbuffer()</span></code></a> as instance of
+<a class="reference internal" href="bhive.transactionbuilder.html#bhive.transactionbuilder.TransactionBuilder" title="bhive.transactionbuilder.TransactionBuilder"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.transactionbuilder.TransactionBuilder</span></code></a>.
+You may want to use your own txbuffer</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_api_methods">
+<code class="sig-name descname">get_api_methods</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_api_methods" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all supported api methods</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_apis">
+<code class="sig-name descname">get_apis</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_apis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all enabled apis</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_block_interval">
+<code class="sig-name descname">get_block_interval</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_block_interval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the block interval in seconds</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_blockchain_version">
+<code class="sig-name descname">get_blockchain_version</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_blockchain_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the blockchain version</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_chain_properties">
+<code class="sig-name descname">get_chain_properties</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_chain_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return witness elected chain properties</p>
+<p>Properties::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;account_creation_fee&#39;</span><span class="p">:</span> <span class="s1">&#39;30.000 HIVE&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;maximum_block_size&#39;</span><span class="p">:</span> <span class="mi">65536</span><span class="p">,</span>
+    <span class="s1">&#39;hbd_interest_rate&#39;</span><span class="p">:</span> <span class="mi">250</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_config">
+<code class="sig-name descname">get_config</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns internal chain configuration.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – If True, the cached value is returned</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_current_median_history">
+<code class="sig-name descname">get_current_median_history</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_current_median_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current median price</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_default_nodes">
+<code class="sig-name descname">get_default_nodes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_default_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default nodes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_dust_threshold">
+<code class="sig-name descname">get_dust_threshold</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_dust_threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the vote dust threshold</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_dynamic_global_properties">
+<code class="sig-name descname">get_dynamic_global_properties</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_dynamic_global_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>This call returns the <em>dynamic global properties</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_feed_history">
+<code class="sig-name descname">get_feed_history</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_feed_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the feed_history</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_hardfork_properties">
+<code class="sig-name descname">get_hardfork_properties</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_hardfork_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns Hardfork and live_time of the hardfork</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_hbd_per_rshares">
+<code class="sig-name descname">get_hbd_per_rshares</code><span class="sig-paren">(</span><em class="sig-param">not_broadcasted_vote_rshares=0</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_hbd_per_rshares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current rshares to HBD ratio</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_hive_per_mvest">
+<code class="sig-name descname">get_hive_per_mvest</code><span class="sig-paren">(</span><em class="sig-param">time_stamp=None</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_hive_per_mvest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the MVEST to HIVE ratio</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>time_stamp</strong> (<em>int</em>) – (optional) if set, return an estimated
+HIVE per MVEST ratio for the given time stamp. If unset the
+current ratio is returned (default). (can also be a datetime object)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_median_price">
+<code class="sig-name descname">get_median_price</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_median_price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current median history price as Price</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_network">
+<code class="sig-name descname">get_network</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identify the network</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Network parameters</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_rc_cost">
+<code class="sig-name descname">get_rc_cost</code><span class="sig-paren">(</span><em class="sig-param">resource_count</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_rc_cost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the RC costs based on the resource_count</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_reserve_ratio">
+<code class="sig-name descname">get_reserve_ratio</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_reserve_ratio" title="Permalink to this definition">¶</a></dt>
+<dd><p>This call returns the <em>reserve ratio</em></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_resource_params">
+<code class="sig-name descname">get_resource_params</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_resource_params" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the resource parameter</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_resource_pool">
+<code class="sig-name descname">get_resource_pool</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_resource_pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the resource pool</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_reward_funds">
+<code class="sig-name descname">get_reward_funds</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_reward_funds" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get details for a reward fund.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>use_stored_data</strong> (<em>bool</em>) – if True, stored data will be returned. If stored data are
+empty or old, refresh_data() is used.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.get_witness_schedule">
+<code class="sig-name descname">get_witness_schedule</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.get_witness_schedule" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return witness elected chain properties</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hardfork">
+<em class="property">property </em><code class="sig-name descname">hardfork</code><a class="headerlink" href="#bhive.hive.Hive.hardfork" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hbd_symbol">
+<em class="property">property </em><code class="sig-name descname">hbd_symbol</code><a class="headerlink" href="#bhive.hive.Hive.hbd_symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the current chains symbol for HBD (e.g. “TBD” on testnet)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hbd_to_rshares">
+<code class="sig-name descname">hbd_to_rshares</code><span class="sig-paren">(</span><em class="sig-param">hbd</em>, <em class="sig-param">not_broadcasted_vote=False</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.hbd_to_rshares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the r-shares from HBD</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hbd</strong> (<em>str</em><em>, </em><em>int</em><em>, </em><a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a>) – HBD</p></li>
+<li><p><strong>not_broadcasted_vote</strong> (<em>bool</em>) – not_broadcasted or already broadcasted vote (True = not_broadcasted vote).
+Only impactful for very high amounts of HBD. Slight modification to the value calculation, as the not_broadcasted
+vote rshares decreases the reward pool.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hbd_to_vote_pct">
+<code class="sig-name descname">hbd_to_vote_pct</code><span class="sig-paren">(</span><em class="sig-param">hbd</em>, <em class="sig-param">hive_power=None</em>, <em class="sig-param">vests=None</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">not_broadcasted_vote=True</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.hbd_to_vote_pct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the voting percentage for a desired HBD value
+for a given Hive Power or vesting shares and voting power
+Give either Hive Power or vests, not both.
+When the output is greater than 10000 or smaller than -10000,
+the HBD value is too high.</p>
+<p>Returns the required voting percentage (100% = 10000)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hbd</strong> (<em>str</em><em>, </em><em>int</em><em>, </em><a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a>) – desired HBD value</p></li>
+<li><p><strong>hive_power</strong> (<em>number</em>) – Hive Power</p></li>
+<li><p><strong>vests</strong> (<em>number</em>) – vesting shares</p></li>
+<li><p><strong>not_broadcasted_vote</strong> (<em>bool</em>) – not_broadcasted or already broadcasted vote (True = not_broadcasted vote).
+Only impactful for very high amounts of HBD. Slight modification to the value calculation, as the not_broadcasted
+vote rshares decreases the reward pool.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hive_symbol">
+<em class="property">property </em><code class="sig-name descname">hive_symbol</code><a class="headerlink" href="#bhive.hive.Hive.hive_symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the current chains symbol for HIVE (e.g. “TESTS” on testnet)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hp_to_hbd">
+<code class="sig-name descname">hp_to_hbd</code><span class="sig-paren">(</span><em class="sig-param">hp</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">vote_pct=10000</em>, <em class="sig-param">not_broadcasted_vote=True</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.hp_to_hbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the resulting HBD vote value from Hive power</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hive_power</strong> (<em>number</em>) – Hive Power</p></li>
+<li><p><strong>voting_power</strong> (<em>int</em>) – voting power (100% = 10000)</p></li>
+<li><p><strong>vote_pct</strong> (<em>int</em>) – voting percentage (100% = 10000)</p></li>
+<li><p><strong>not_broadcasted_vote</strong> (<em>bool</em>) – not_broadcasted or already broadcasted vote (True = not_broadcasted vote).</p></li>
+</ul>
+</dd>
+</dl>
+<p>Only impactful for very big votes. Slight modification to the value calculation, as the not_broadcasted
+vote rshares decreases the reward pool.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hp_to_rshares">
+<code class="sig-name descname">hp_to_rshares</code><span class="sig-paren">(</span><em class="sig-param">hive_power</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">vote_pct=10000</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.hp_to_rshares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the r-shares from Hive power</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hive_power</strong> (<em>number</em>) – Hive Power</p></li>
+<li><p><strong>voting_power</strong> (<em>int</em>) – voting power (100% = 10000)</p></li>
+<li><p><strong>vote_pct</strong> (<em>int</em>) – voting percentage (100% = 10000)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.hp_to_vests">
+<code class="sig-name descname">hp_to_vests</code><span class="sig-paren">(</span><em class="sig-param">hp</em>, <em class="sig-param">timestamp=None</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.hp_to_vests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts HP to vests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hp</strong> (<em>float</em>) – Hive power to convert</p></li>
+<li><p><strong>timestamp</strong> (<em>datetime</em>) – (Optional) Can be used to calculate
+the conversion rate from the past</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.info">
+<code class="sig-name descname">info</code><span class="sig-paren">(</span><em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the global properties</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.is_connected">
+<code class="sig-name descname">is_connected</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.is_connected" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns if rpc is connected</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.move_current_node_to_front">
+<code class="sig-name descname">move_current_node_to_front</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.move_current_node_to_front" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default node list, until the first entry
+is equal to the current working node url</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.newWallet">
+<code class="sig-name descname">newWallet</code><span class="sig-paren">(</span><em class="sig-param">pwd</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.newWallet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new wallet. This method is basically only calls
+<a class="reference internal" href="bhive.wallet.html#bhive.wallet.Wallet.create" title="bhive.wallet.Wallet.create"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.wallet.Wallet.create()</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pwd</strong> (<em>str</em>) – Password to use for the new wallet</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="bhive.exceptions.html#bhive.exceptions.WalletExists" title="bhive.exceptions.WalletExists"><strong>WalletExists</strong></a> – if there is already a
+wallet created</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.new_tx">
+<code class="sig-name descname">new_tx</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.new_tx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Let’s obtain a new txbuffer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>id of the new txbuffer</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.post">
+<code class="sig-name descname">post</code><span class="sig-paren">(</span><em class="sig-param">title</em>, <em class="sig-param">body</em>, <em class="sig-param">author=None</em>, <em class="sig-param">permlink=None</em>, <em class="sig-param">reply_identifier=None</em>, <em class="sig-param">json_metadata=None</em>, <em class="sig-param">comment_options=None</em>, <em class="sig-param">community=None</em>, <em class="sig-param">app=None</em>, <em class="sig-param">tags=None</em>, <em class="sig-param">beneficiaries=None</em>, <em class="sig-param">self_vote=False</em>, <em class="sig-param">parse_body=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new post.
+If this post is intended as a reply/comment, <cite>reply_identifier</cite> needs
+to be set with the identifier of the parent post/comment (eg.
+<cite>&#64;author/permlink</cite>).
+Optionally you can also set json_metadata, comment_options and upvote
+the newly created post as an author.
+Setting category, tags or community will override the values provided
+in json_metadata and/or comment_options where appropriate.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>title</strong> (<em>str</em>) – Title of the post</p></li>
+<li><p><strong>body</strong> (<em>str</em>) – Body of the post/comment</p></li>
+<li><p><strong>author</strong> (<em>str</em>) – Account are you posting from</p></li>
+<li><p><strong>permlink</strong> (<em>str</em>) – Manually set the permlink (defaults to None).
+If left empty, it will be derived from title automatically.</p></li>
+<li><p><strong>reply_identifier</strong> (<em>str</em>) – Identifier of the parent post/comment (only
+if this post is a reply/comment).</p></li>
+<li><p><strong>json_metadata</strong> (<em>str</em><em>, </em><em>dict</em>) – JSON meta object that can be attached to
+the post.</p></li>
+<li><p><strong>comment_options</strong> (<em>dict</em>) – JSON options object that can be
+attached to the post.</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">comment_options</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;max_accepted_payout&#39;</span><span class="p">:</span> <span class="s1">&#39;1000000.000 HBD&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;percent_hive_dollars&#39;</span><span class="p">:</span> <span class="mi">10000</span><span class="p">,</span>
+    <span class="s1">&#39;allow_votes&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;allow_curation_rewards&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;extensions&#39;</span><span class="p">:</span> <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="p">{</span>
+        <span class="s1">&#39;beneficiaries&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="p">{</span><span class="s1">&#39;account&#39;</span><span class="p">:</span> <span class="s1">&#39;account1&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">},</span>
+            <span class="p">{</span><span class="s1">&#39;account&#39;</span><span class="p">:</span> <span class="s1">&#39;account2&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">},</span>
+        <span class="p">]}</span>
+    <span class="p">]]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>community</strong> (<em>str</em>) – (Optional) Name of the community we are posting
+into. This will also override the community specified in
+<cite>json_metadata</cite>.</p></li>
+<li><p><strong>app</strong> (<em>str</em>) – (Optional) Name of the app which are used for posting
+when not set, bhive/&lt;version&gt; is used</p></li>
+<li><p><strong>tags</strong> (<em>str</em><em>, </em><em>list</em>) – (Optional) A list of tags to go with the
+post. This will also override the tags specified in
+<cite>json_metadata</cite>. The first tag will be used as a ‘category’. If
+provided as a string, it should be space separated.</p></li>
+<li><p><strong>beneficiaries</strong> (<em>list</em>) – (Optional) A list of beneficiaries
+for posting reward distribution. This argument overrides
+beneficiaries as specified in <cite>comment_options</cite>.</p></li>
+</ul>
+</dd>
+</dl>
+<p>For example, if we would like to split rewards between account1 and
+account2:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">beneficiaries</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;account&#39;</span><span class="p">:</span> <span class="s1">&#39;account1&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;account&#39;</span><span class="p">:</span> <span class="s1">&#39;account2&#39;</span><span class="p">,</span> <span class="s1">&#39;weight&#39;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self_vote</strong> (<em>bool</em>) – (Optional) Upvote the post as author, right after
+posting.</p></li>
+<li><p><strong>parse_body</strong> (<em>bool</em>) – (Optional) When set to True, all mentioned users,
+used links and images are put into users, links and images array inside
+json_metadata. This will override provided links, images and users inside
+json_metadata. Hashtags will added to tags until its length is below five entries.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.prefix">
+<em class="property">property </em><code class="sig-name descname">prefix</code><a class="headerlink" href="#bhive.hive.Hive.prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.refresh_data">
+<code class="sig-name descname">refresh_data</code><span class="sig-paren">(</span><em class="sig-param">force_refresh=False</em>, <em class="sig-param">data_refresh_time_seconds=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.refresh_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read and stores hive blockchain parameters
+If the last data refresh is older than data_refresh_time_seconds, data will be refreshed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>force_refresh</strong> (<em>bool</em>) – if True, a refresh of the data is enforced</p></li>
+<li><p><strong>data_refresh_time_seconds</strong> (<em>float</em>) – set a new minimal refresh time in seconds</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.rshares_to_hbd">
+<code class="sig-name descname">rshares_to_hbd</code><span class="sig-paren">(</span><em class="sig-param">rshares</em>, <em class="sig-param">not_broadcasted_vote=False</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.rshares_to_hbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculates the current HBD value of a vote</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.rshares_to_vote_pct">
+<code class="sig-name descname">rshares_to_vote_pct</code><span class="sig-paren">(</span><em class="sig-param">rshares</em>, <em class="sig-param">hive_power=None</em>, <em class="sig-param">vests=None</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.rshares_to_vote_pct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the voting percentage for a desired rshares value
+for a given Hive Power or vesting shares and voting_power
+Give either hive_power or vests, not both.
+When the output is greater than 10000 or less than -10000,
+the given absolute rshares are too high</p>
+<p>Returns the required voting percentage (100% = 10000)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rshares</strong> (<em>number</em>) – desired rshares value</p></li>
+<li><p><strong>hive_power</strong> (<em>number</em>) – Hive Power</p></li>
+<li><p><strong>vests</strong> (<em>number</em>) – vesting shares</p></li>
+<li><p><strong>voting_power</strong> (<em>int</em>) – voting power (100% = 10000)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.set_default_account">
+<code class="sig-name descname">set_default_account</code><span class="sig-paren">(</span><em class="sig-param">account</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.set_default_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the default account to be used</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.set_default_nodes">
+<code class="sig-name descname">set_default_nodes</code><span class="sig-paren">(</span><em class="sig-param">nodes</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.set_default_nodes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the default nodes to be used</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.set_default_vote_weight">
+<code class="sig-name descname">set_default_vote_weight</code><span class="sig-paren">(</span><em class="sig-param">vote_weight</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.set_default_vote_weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the default vote weight to be used</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.set_password_storage">
+<code class="sig-name descname">set_password_storage</code><span class="sig-paren">(</span><em class="sig-param">password_storage</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.set_password_storage" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set the password storage mode.</p>
+<p>When set to “no”, the password has to be provided each time.
+When set to “environment” the password is taken from the
+UNLOCK variable</p>
+<p>When set to “keyring” the password is taken from the
+python keyring module. A wallet password can be stored with
+python -m keyring set bhive wallet password</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>password_storage</strong> (<em>str</em>) – can be “no”,
+“keyring” or “environment”</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.sign">
+<code class="sig-name descname">sign</code><span class="sig-paren">(</span><em class="sig-param">tx=None</em>, <em class="sig-param">wifs=[]</em>, <em class="sig-param">reconstruct_tx=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sign a provided transaction with the provided key(s)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tx</strong> (<em>dict</em>) – The transaction to be signed and returned</p></li>
+<li><p><strong>wifs</strong> (<em>string</em>) – One or many wif keys to use for signing
+a transaction. If not present, the keys will be loaded
+from the wallet as defined in “missing_signatures” key
+of the transactions.</p></li>
+<li><p><strong>reconstruct_tx</strong> (<em>bool</em>) – when set to False and tx
+is already contructed, it will not reconstructed
+and already added signatures remain</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.tx">
+<code class="sig-name descname">tx</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.tx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the default transaction buffer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.txbuffer">
+<em class="property">property </em><code class="sig-name descname">txbuffer</code><a class="headerlink" href="#bhive.hive.Hive.txbuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the currently active tx buffer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.unlock">
+<code class="sig-name descname">unlock</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlock the internal wallet</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.update_proposal_votes">
+<code class="sig-name descname">update_proposal_votes</code><span class="sig-paren">(</span><em class="sig-param">proposal_ids</em>, <em class="sig-param">approve</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.update_proposal_votes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update proposal votes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>proposal_ids</strong> (<em>list</em>) – list of proposal ids</p></li>
+<li><p><strong>approve</strong> (<em>bool</em>) – True/False</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) witness account name</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.vests_symbol">
+<em class="property">property </em><code class="sig-name descname">vests_symbol</code><a class="headerlink" href="#bhive.hive.Hive.vests_symbol" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the current chains symbol for VESTS</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.vests_to_hbd">
+<code class="sig-name descname">vests_to_hbd</code><span class="sig-paren">(</span><em class="sig-param">vests</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">vote_pct=10000</em>, <em class="sig-param">not_broadcasted_vote=True</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.vests_to_hbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the resulting HBD vote value from vests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vests</strong> (<em>number</em>) – vesting shares</p></li>
+<li><p><strong>voting_power</strong> (<em>int</em>) – voting power (100% = 10000)</p></li>
+<li><p><strong>vote_pct</strong> (<em>int</em>) – voting percentage (100% = 10000)</p></li>
+<li><p><strong>not_broadcasted_vote</strong> (<em>bool</em>) – not_broadcasted or already broadcasted vote (True = not_broadcasted vote).</p></li>
+</ul>
+</dd>
+</dl>
+<p>Only impactful for very big votes. Slight modification to the value calculation, as the not_broadcasted
+vote rshares decreases the reward pool.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.vests_to_hp">
+<code class="sig-name descname">vests_to_hp</code><span class="sig-paren">(</span><em class="sig-param">vests</em>, <em class="sig-param">timestamp=None</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.vests_to_hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts vests to HP</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vests/float vests</strong> (<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a>) – Vests to convert</p></li>
+<li><p><strong>timestamp</strong> (<em>int</em>) – (Optional) Can be used to calculate
+the conversion rate from the past</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.vests_to_rshares">
+<code class="sig-name descname">vests_to_rshares</code><span class="sig-paren">(</span><em class="sig-param">vests</em>, <em class="sig-param">voting_power=10000</em>, <em class="sig-param">vote_pct=10000</em>, <em class="sig-param">subtract_dust_threshold=True</em>, <em class="sig-param">use_stored_data=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.vests_to_rshares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the r-shares from vests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vests</strong> (<em>number</em>) – vesting shares</p></li>
+<li><p><strong>voting_power</strong> (<em>int</em>) – voting power (100% = 10000)</p></li>
+<li><p><strong>vote_pct</strong> (<em>int</em>) – voting percentage (100% = 10000)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.vote">
+<code class="sig-name descname">vote</code><span class="sig-paren">(</span><em class="sig-param">weight</em>, <em class="sig-param">identifier</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.vote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vote for a post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>weight</strong> (<em>float</em>) – Voting weight. Range: -100.0 - +100.0.</p></li>
+<li><p><strong>identifier</strong> (<em>str</em>) – Identifier for the post to vote. Takes the
+form <code class="docutils literal notranslate"><span class="pre">&#64;author/permlink</span></code>.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) Account to use for voting. If
+<code class="docutils literal notranslate"><span class="pre">account</span></code> is not defined, the <code class="docutils literal notranslate"><span class="pre">default_account</span></code> will be used
+or a ValueError will be raised</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.witness_set_properties">
+<code class="sig-name descname">witness_set_properties</code><span class="sig-paren">(</span><em class="sig-param">wif</em>, <em class="sig-param">owner</em>, <em class="sig-param">props</em>, <em class="sig-param">use_condenser_api=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.witness_set_properties" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set witness properties</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wif</strong> (<em>str</em>) – Private signing key</p></li>
+<li><p><strong>props</strong> (<em>dict</em>) – Properties</p></li>
+<li><p><strong>owner</strong> (<em>str</em>) – witness account name</p></li>
+</ul>
+</dd>
+</dl>
+<p>Properties::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;account_creation_fee&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;account_subsidy_budget&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;account_subsidy_decay&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;maximum_block_size&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;hbd_exchange_rate&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;hbd_interest_rate&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;new_signing_key&quot;</span><span class="p">:</span> <span class="n">x</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.hive.Hive.witness_update">
+<code class="sig-name descname">witness_update</code><span class="sig-paren">(</span><em class="sig-param">signing_key</em>, <em class="sig-param">url</em>, <em class="sig-param">props</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.hive.Hive.witness_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates/updates a witness</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signing_key</strong> (<em>str</em>) – Public signing key</p></li>
+<li><p><strong>url</strong> (<em>str</em>) – URL</p></li>
+<li><p><strong>props</strong> (<em>dict</em>) – Properties</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) witness account name</p></li>
+</ul>
+</dd>
+</dl>
+<p>Properties::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;account_creation_fee&quot;</span><span class="p">:</span> <span class="s2">&quot;3.000 HIVE&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;maximum_block_size&quot;</span><span class="p">:</span> <span class="mi">65536</span><span class="p">,</span>
+    <span class="s2">&quot;hbd_interest_rate&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.hiveconnect.html" class="btn btn-neutral float-right" title="bhive.hiveconnect module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.exceptions.html" class="btn btn-neutral float-left" title="bhive.exceptions module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,425 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.rc module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.snapshot module" href="bhive.snapshot.html" />
+    <link rel="prev" title="bhive.profile module" href="bhive.profile.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.rc module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.rc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.rc">
+<span id="bhive-rc-module"></span><h1>bhive.rc module<a class="headerlink" href="#module-bhive.rc" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.rc.RC">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.rc.</code><code class="sig-name descname">RC</code><span class="sig-paren">(</span><em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="method">
+<dt id="bhive.rc.RC.account_create_dict">
+<code class="sig-name descname">account_create_dict</code><span class="sig-paren">(</span><em class="sig-param">account_create_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.account_create_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for account create</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.account_update_dict">
+<code class="sig-name descname">account_update_dict</code><span class="sig-paren">(</span><em class="sig-param">account_update_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.account_update_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for account update</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.claim_account">
+<code class="sig-name descname">claim_account</code><span class="sig-paren">(</span><em class="sig-param">tx_size=300</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.claim_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim account</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.comment">
+<code class="sig-name descname">comment</code><span class="sig-paren">(</span><em class="sig-param">tx_size=1000</em>, <em class="sig-param">permlink_length=10</em>, <em class="sig-param">parent_permlink_length=10</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC for a comment</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.comment_dict">
+<code class="sig-name descname">comment_dict</code><span class="sig-paren">(</span><em class="sig-param">comment_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.comment_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for a comment dict object</p>
+<p>Example for calculating RC costs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.rc</span> <span class="kn">import</span> <span class="n">RC</span>
+<span class="n">comment_dict</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">&quot;permlink&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;thecrazygm&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;body&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;parent_permlink&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;parent_author&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;json_metadata&quot;</span><span class="p">:</span> <span class="p">{</span><span class="s2">&quot;foo&quot;</span><span class="p">:</span> <span class="s2">&quot;bar&quot;</span><span class="p">}</span>
+               <span class="p">}</span>
+
+<span class="n">rc</span> <span class="o">=</span> <span class="n">RC</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">comment_from_dict</span><span class="p">(</span><span class="n">comment_dict</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.create_claimed_account_dict">
+<code class="sig-name descname">create_claimed_account_dict</code><span class="sig-paren">(</span><em class="sig-param">create_claimed_account_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.create_claimed_account_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for claimed account create</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.custom_json">
+<code class="sig-name descname">custom_json</code><span class="sig-paren">(</span><em class="sig-param">tx_size=444</em>, <em class="sig-param">follow_id=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.custom_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.custom_json_dict">
+<code class="sig-name descname">custom_json_dict</code><span class="sig-paren">(</span><em class="sig-param">custom_json_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.custom_json_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for a custom_json</p>
+<p>Example for calculating RC costs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.rc</span> <span class="kn">import</span> <span class="n">RC</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">OrderedDict</span>
+<span class="n">custom_json_dict</span> <span class="o">=</span> <span class="p">{</span>
+                     <span class="s2">&quot;json&quot;</span><span class="p">:</span> <span class="p">[</span>
+                              <span class="s2">&quot;reblog&quot;</span><span class="p">,</span> <span class="n">OrderedDict</span><span class="p">([(</span><span class="s2">&quot;account&quot;</span><span class="p">,</span> <span class="s2">&quot;xeroc&quot;</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;author&quot;</span><span class="p">,</span> <span class="s2">&quot;chainsquad&quot;</span><span class="p">),</span>
+                                                     <span class="p">(</span><span class="s2">&quot;permlink&quot;</span><span class="p">,</span> <span class="s2">&quot;streemian-com-to-open-its-doors-and-offer-a-20-discount&quot;</span><span class="p">)</span>
+                                                    <span class="p">])</span>
+                             <span class="p">],</span>
+                     <span class="s2">&quot;required_auths&quot;</span><span class="p">:</span> <span class="p">[],</span>
+                     <span class="s2">&quot;required_posting_auths&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;xeroc&quot;</span><span class="p">],</span>
+                     <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;follow&quot;</span>
+                    <span class="p">}</span>
+
+<span class="n">rc</span> <span class="o">=</span> <span class="n">RC</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">comment</span><span class="p">(</span><span class="n">custom_json_dict</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.get_authority_byte_count">
+<code class="sig-name descname">get_authority_byte_count</code><span class="sig-paren">(</span><em class="sig-param">auth</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.get_authority_byte_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.get_resource_count">
+<code class="sig-name descname">get_resource_count</code><span class="sig-paren">(</span><em class="sig-param">tx_size</em>, <em class="sig-param">execution_time_count</em>, <em class="sig-param">state_bytes_count=0</em>, <em class="sig-param">new_account_op_count=0</em>, <em class="sig-param">market_op_count=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.get_resource_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates the resource_count dictionary based on tx_size, state_bytes_count, new_account_op_count and market_op_count</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.get_tx_size">
+<code class="sig-name descname">get_tx_size</code><span class="sig-paren">(</span><em class="sig-param">op</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.get_tx_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the tx size of an operation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.transfer">
+<code class="sig-name descname">transfer</code><span class="sig-paren">(</span><em class="sig-param">tx_size=290</em>, <em class="sig-param">market_op_count=1</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.transfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC of a transfer</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.transfer_dict">
+<code class="sig-name descname">transfer_dict</code><span class="sig-paren">(</span><em class="sig-param">transfer_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.transfer_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for a transfer dict object</p>
+<p>Example for calculating RC costs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.rc</span> <span class="kn">import</span> <span class="n">RC</span>
+<span class="kn">from</span> <span class="nn">bhive.amount</span> <span class="kn">import</span> <span class="n">Amount</span>
+<span class="n">transfer_dict</span> <span class="o">=</span> <span class="p">{</span>
+                 <span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;baar&quot;</span><span class="p">,</span>
+                 <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="n">Amount</span><span class="p">(</span><span class="s2">&quot;111.110 HIVE&quot;</span><span class="p">),</span>
+                 <span class="s2">&quot;memo&quot;</span><span class="p">:</span> <span class="s2">&quot;Fooo&quot;</span>
+                <span class="p">}</span>
+
+<span class="n">rc</span> <span class="o">=</span> <span class="n">RC</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">comment</span><span class="p">(</span><span class="n">transfer_dict</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.vote">
+<code class="sig-name descname">vote</code><span class="sig-paren">(</span><em class="sig-param">tx_size=210</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.vote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC for a vote</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.rc.RC.vote_dict">
+<code class="sig-name descname">vote_dict</code><span class="sig-paren">(</span><em class="sig-param">vote_dict</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.rc.RC.vote_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calc RC costs for a vote</p>
+<p>Example for calculating RC costs</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.rc</span> <span class="kn">import</span> <span class="n">RC</span>
+<span class="n">vote_dict</span> <span class="o">=</span> <span class="p">{</span>
+             <span class="s2">&quot;voter&quot;</span><span class="p">:</span> <span class="s2">&quot;foobara&quot;</span><span class="p">,</span> <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="s2">&quot;foobarc&quot;</span><span class="p">,</span>
+             <span class="s2">&quot;permlink&quot;</span><span class="p">:</span> <span class="s2">&quot;foobard&quot;</span><span class="p">,</span> <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">1000</span>
+            <span class="p">}</span>
+
+<span class="n">rc</span> <span class="o">=</span> <span class="n">RC</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">rc</span><span class="o">.</span><span class="n">comment</span><span class="p">(</span><span class="n">vote_dict</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.snapshot.html" class="btn btn-neutral float-right" title="bhive.snapshot module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.profile.html" class="btn btn-neutral float-left" title="bhive.profile module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

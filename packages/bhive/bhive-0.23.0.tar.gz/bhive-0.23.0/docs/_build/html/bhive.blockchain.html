@@ -1,0 +1,815 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.blockchain module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.blockchainobject module" href="bhive.blockchainobject.html" />
+    <link rel="prev" title="bhive.block module" href="bhive.block.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.blockchain module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.blockchain.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.blockchain">
+<span id="bhive-blockchain-module"></span><h1>bhive.blockchain module<a class="headerlink" href="#module-bhive.blockchain" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.blockchain.Blockchain">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.blockchain.</code><code class="sig-name descname">Blockchain</code><span class="sig-paren">(</span><em class="sig-param">hive_instance=None</em>, <em class="sig-param">mode='irreversible'</em>, <em class="sig-param">max_block_wait_repetition=None</em>, <em class="sig-param">data_refresh_time_seconds=900</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class allows to access the blockchain and read data
+from it</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+<li><p><strong>mode</strong> (<em>str</em>) – (default) Irreversible block (<code class="docutils literal notranslate"><span class="pre">irreversible</span></code>) or
+actual head block (<code class="docutils literal notranslate"><span class="pre">head</span></code>)</p></li>
+<li><p><strong>max_block_wait_repetition</strong> (<em>int</em>) – maximum wait repetition for next block
+where each repetition is block_interval long (default is 3)</p></li>
+</ul>
+</dd>
+</dl>
+<p>This class let’s you deal with blockchain related data and methods.
+Read blockchain related data:</p>
+<p>Read current block and blockchain info</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">get_current_block</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">chain</span><span class="o">.</span><span class="n">hive</span><span class="o">.</span><span class="n">info</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Monitor for new blocks. When <code class="docutils literal notranslate"><span class="pre">stop</span></code> is not set, monitoring will never stop.</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">blocks</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">current_num</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">get_current_block_num</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">block</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">blocks</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">current_num</span> <span class="o">-</span> <span class="mi">99</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">current_num</span><span class="p">):</span>
+    <span class="n">blocks</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">block</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>100
+</pre></div>
+</div>
+<p>or each operation individually:</p>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">ops</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">current_num</span> <span class="o">=</span> <span class="n">chain</span><span class="o">.</span><span class="n">get_current_block_num</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">operation</span> <span class="ow">in</span> <span class="n">chain</span><span class="o">.</span><span class="n">ops</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">current_num</span> <span class="o">-</span> <span class="mi">99</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">current_num</span><span class="p">):</span>
+    <span class="n">ops</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.awaitTxConfirmation">
+<code class="sig-name descname">awaitTxConfirmation</code><span class="sig-paren">(</span><em class="sig-param">transaction</em>, <em class="sig-param">limit=10</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.awaitTxConfirmation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the transaction as seen by the blockchain after being
+included into a block</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>transaction</strong> (<em>dict</em>) – transaction to wait for</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – (optional) number of blocks to wait for the transaction (default: 10)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want instant confirmation, you need to instantiate
+class:<cite>bhive.blockchain.Blockchain</cite> with
+<code class="docutils literal notranslate"><span class="pre">mode=&quot;head&quot;</span></code>, otherwise, the call will wait until
+confirmed in an irreversible block.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This method returns once the blockchain has included a
+transaction with the <strong>same signature</strong>. Even though the
+signature is not usually used to identify a transaction,
+it still cannot be forfeited and is derived from the
+transaction contented and thus identifies a transaction
+uniquely.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.block_time">
+<code class="sig-name descname">block_time</code><span class="sig-paren">(</span><em class="sig-param">block_num</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.block_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a datetime of the block with the given block
+number.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>block_num</strong> (<em>int</em>) – Block number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.block_timestamp">
+<code class="sig-name descname">block_timestamp</code><span class="sig-paren">(</span><em class="sig-param">block_num</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.block_timestamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the timestamp of the block with the given block
+number as integer.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>block_num</strong> (<em>int</em>) – Block number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.blocks">
+<code class="sig-name descname">blocks</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">max_batch_size=None</em>, <em class="sig-param">threading=False</em>, <em class="sig-param">thread_num=8</em>, <em class="sig-param">only_ops=False</em>, <em class="sig-param">only_virtual_ops=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.blocks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yields blocks starting from <code class="docutils literal notranslate"><span class="pre">start</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em>) – Starting block</p></li>
+<li><p><strong>stop</strong> (<em>int</em>) – Stop at this block</p></li>
+<li><p><strong>max_batch_size</strong> (<em>int</em>) – only for appbase nodes. When not None, batch calls of are used.
+Cannot be combined with threading</p></li>
+<li><p><strong>threading</strong> (<em>bool</em>) – Enables threading. Cannot be combined with batch calls</p></li>
+<li><p><strong>thread_num</strong> (<em>int</em>) – Defines the number of threads, when <cite>threading</cite> is set.</p></li>
+<li><p><strong>only_ops</strong> (<em>bool</em>) – Only yield operations (default: False).
+Cannot be combined with <code class="docutils literal notranslate"><span class="pre">only_virtual_ops=True</span></code>.</p></li>
+<li><p><strong>only_virtual_ops</strong> (<em>bool</em>) – Only yield virtual operations (default: False)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want instant confirmation, you need to instantiate
+class:<cite>bhive.blockchain.Blockchain</cite> with
+<code class="docutils literal notranslate"><span class="pre">mode=&quot;head&quot;</span></code>, otherwise, the call will wait until
+confirmed in an irreversible block.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.find_change_recovery_account_requests">
+<code class="sig-name descname">find_change_recovery_account_requests</code><span class="sig-paren">(</span><em class="sig-param">accounts</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.find_change_recovery_account_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find pending <cite>change_recovery_account</cite> requests for one or more
+specific accounts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>accounts</strong> (<em>str/list</em>) – account name or list of account
+names to find <cite>change_recovery_account</cite> requests for.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of <cite>change_recovery_account</cite> requests for the
+given account(s).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ret</span> <span class="o">=</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">find_change_recovery_account_requests</span><span class="p">(</span><span class="s1">&#39;bott&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.find_rc_accounts">
+<code class="sig-name descname">find_rc_accounts</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.find_rc_accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the RC parameters of one or more accounts.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – account name to search rc params for (can also be a list of accounts)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>RC params</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ret</span> <span class="o">=</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">find_rc_accounts</span><span class="p">([</span><span class="s2">&quot;test&quot;</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_account_count">
+<code class="sig-name descname">get_account_count</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_account_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of accounts</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_account_reputations">
+<code class="sig-name descname">get_account_reputations</code><span class="sig-paren">(</span><em class="sig-param">start=''</em>, <em class="sig-param">stop=''</em>, <em class="sig-param">steps=1000.0</em>, <em class="sig-param">limit=-1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_account_reputations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yields account reputation between start and stop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>str</em>) – Start at this account name</p></li>
+<li><p><strong>stop</strong> (<em>str</em>) – Stop at this account name</p></li>
+<li><p><strong>steps</strong> (<em>int</em>) – Obtain <code class="docutils literal notranslate"><span class="pre">steps</span></code> ret with a single call from RPC</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_all_accounts">
+<code class="sig-name descname">get_all_accounts</code><span class="sig-paren">(</span><em class="sig-param">start=''</em>, <em class="sig-param">stop=''</em>, <em class="sig-param">steps=1000.0</em>, <em class="sig-param">limit=-1</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_all_accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yields account names between start and stop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>str</em>) – Start at this account name</p></li>
+<li><p><strong>stop</strong> (<em>str</em>) – Stop at this account name</p></li>
+<li><p><strong>steps</strong> (<em>int</em>) – Obtain <code class="docutils literal notranslate"><span class="pre">steps</span></code> ret with a single call from RPC</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_current_block">
+<code class="sig-name descname">get_current_block</code><span class="sig-paren">(</span><em class="sig-param">only_ops=False</em>, <em class="sig-param">only_virtual_ops=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_current_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>This call returns the current block</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>only_ops</strong> (<em>bool</em>) – Returns block with operations only, when set to True (default: False)</p></li>
+<li><p><strong>only_virtual_ops</strong> (<em>bool</em>) – Includes only virtual operations (default: False)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The block number returned depends on the <code class="docutils literal notranslate"><span class="pre">mode</span></code> used
+when instantiating from this class.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_current_block_num">
+<code class="sig-name descname">get_current_block_num</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_current_block_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>This call returns the current block number</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The block number returned depends on the <code class="docutils literal notranslate"><span class="pre">mode</span></code> used
+when instantiating from this class.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_estimated_block_num">
+<code class="sig-name descname">get_estimated_block_num</code><span class="sig-paren">(</span><em class="sig-param">date</em>, <em class="sig-param">estimateForwards=False</em>, <em class="sig-param">accurate=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_estimated_block_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>This call estimates the block number based on a given date</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>date</strong> (<em>datetime</em>) – block time for which a block number is estimated</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The block number returned depends on the <code class="docutils literal notranslate"><span class="pre">mode</span></code> used
+when instantiating from this class.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">block_num</span> <span class="o">=</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">get_estimated_block_num</span><span class="p">(</span><span class="n">datetime</span><span class="p">(</span><span class="mi">2019</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">18</span><span class="p">,</span> <span class="mi">5</span> <span class="p">,</span><span class="mi">8</span><span class="p">,</span> <span class="mi">27</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">block_num</span> <span class="o">==</span> <span class="mi">33898184</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_similar_account_names">
+<code class="sig-name descname">get_similar_account_names</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">limit=5</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_similar_account_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns limit similar accounts with name as list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – account name to search similars for</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – limits the number of accounts, which will be returned</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Similar account names as list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ret</span> <span class="o">=</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">get_similar_account_names</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">len</span><span class="p">(</span><span class="n">ret</span><span class="p">)</span> <span class="o">==</span> <span class="mi">5</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_transaction">
+<code class="sig-name descname">get_transaction</code><span class="sig-paren">(</span><em class="sig-param">transaction_id</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_transaction" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a transaction from the blockchain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>transaction_id</strong> (<em>str</em>) – transaction_id</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.get_transaction_hex">
+<code class="sig-name descname">get_transaction_hex</code><span class="sig-paren">(</span><em class="sig-param">transaction</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.get_transaction_hex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a hexdump of the serialized binary form of a transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>transaction</strong> (<em>dict</em>) – transaction</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.hash_op">
+<em class="property">static </em><code class="sig-name descname">hash_op</code><span class="sig-paren">(</span><em class="sig-param">event</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.hash_op" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method generates a hash of blockchain operation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.is_irreversible_mode">
+<code class="sig-name descname">is_irreversible_mode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.is_irreversible_mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.list_change_recovery_account_requests">
+<code class="sig-name descname">list_change_recovery_account_requests</code><span class="sig-paren">(</span><em class="sig-param">start=''</em>, <em class="sig-param">limit=1000</em>, <em class="sig-param">order='by_account'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.list_change_recovery_account_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>List pending <cite>change_recovery_account</cite> requests.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>str/list</em>) – Start the listing from this entry.
+Leave empty to start from the beginning. If <cite>order</cite> is set
+to <cite>by_account</cite>, <cite>start</cite> has to be an account name. If
+<cite>order</cite> is set to <cite>by_effective_date</cite>, <cite>start</cite> has to be a
+list of [effective_on, account_to_recover],
+e.g. <cite>start=[‘2018-12-18T01:46:24’, ‘bott’]</cite>.</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – maximum number of results to return (default
+and maximum: 1000).</p></li>
+<li><p><strong>order</strong> (<em>str</em>) – valid values are “by_account” (default) or
+“by_effective_date”.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of <cite>change_recovery_account</cite> requests.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ret</span> <span class="o">=</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">list_change_recovery_account_requests</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.ops">
+<code class="sig-name descname">ops</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">only_virtual_ops=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.ops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Blockchain.ops() is deprecated. Please use Blockchain.stream() instead.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.ops_statistics">
+<code class="sig-name descname">ops_statistics</code><span class="sig-paren">(</span><em class="sig-param">start</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">add_to_ops_stat=None</em>, <em class="sig-param">with_virtual_ops=True</em>, <em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.ops_statistics" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates statistics for all operations (including virtual operations) starting from
+<code class="docutils literal notranslate"><span class="pre">start</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em>) – Starting block</p></li>
+<li><p><strong>stop</strong> (<em>int</em>) – Stop at this block, if set to None, the current_block_num is taken</p></li>
+<li><p><strong>add_to_ops_stat</strong> (<em>dict</em>) – if set, the result is added to add_to_ops_stat</p></li>
+<li><p><strong>verbose</strong> (<em>bool</em>) – if True, the current block number and timestamp is printed</p></li>
+</ul>
+</dd>
+</dl>
+<p>This call returns a dict with all possible operations and their occurrence.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.stream">
+<code class="sig-name descname">stream</code><span class="sig-paren">(</span><em class="sig-param">opNames=[]</em>, <em class="sig-param">raw_ops=False</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.stream" title="Permalink to this definition">¶</a></dt>
+<dd><p>Yield specific operations (e.g. comments) only</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>opNames</strong> (<em>array</em>) – List of operations to filter for</p></li>
+<li><p><strong>raw_ops</strong> (<em>bool</em>) – When set to True, it returns the unmodified operations (default: False)</p></li>
+<li><p><strong>start</strong> (<em>int</em>) – Start at this block</p></li>
+<li><p><strong>stop</strong> (<em>int</em>) – Stop at this block</p></li>
+<li><p><strong>max_batch_size</strong> (<em>int</em>) – only for appbase nodes. When not None, batch calls of are used.
+Cannot be combined with threading</p></li>
+<li><p><strong>threading</strong> (<em>bool</em>) – Enables threading. Cannot be combined with batch calls</p></li>
+<li><p><strong>thread_num</strong> (<em>int</em>) – Defines the number of threads, when <cite>threading</cite> is set.</p></li>
+<li><p><strong>only_ops</strong> (<em>bool</em>) – Only yield operations (default: False)
+Cannot be combined with <code class="docutils literal notranslate"><span class="pre">only_virtual_ops=True</span></code></p></li>
+<li><p><strong>only_virtual_ops</strong> (<em>bool</em>) – Only yield virtual operations (default: False)</p></li>
+</ul>
+</dd>
+</dl>
+<p>The dict output is formated such that <code class="docutils literal notranslate"><span class="pre">type</span></code> carries the
+operation type. Timestamp and block_num are taken from the
+block the operation was stored in and the other keys depend
+on the actual operation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want instant confirmation, you need to instantiate
+class:<cite>bhive.blockchain.Blockchain</cite> with
+<code class="docutils literal notranslate"><span class="pre">mode=&quot;head&quot;</span></code>, otherwise, the call will wait until
+confirmed in an irreversible block.</p>
+</div>
+<p>output when <cite>raw_ops=False</cite> is set:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;type&#39;</span><span class="o">:</span> <span class="s1">&#39;transfer&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;from&#39;</span><span class="o">:</span> <span class="s1">&#39;johngreenfield&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;to&#39;</span><span class="o">:</span> <span class="s1">&#39;thundercurator&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;amount&#39;</span><span class="o">:</span> <span class="s1">&#39;0.080 HBD&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;memo&#39;</span><span class="o">:</span> <span class="s1">&#39;https://hive.blog/lofi/@johngreenfield/lofi-joji-yeah-right&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;_id&#39;</span><span class="o">:</span> <span class="s1">&#39;6d4c5f2d4d8ef1918acaee4a8dce34f9da384786&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;timestamp&#39;</span><span class="o">:</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="nx">tzinfo</span><span class="o">=&lt;</span><span class="nx">UTC</span><span class="o">&gt;</span><span class="p">),</span>
+    <span class="s1">&#39;block_num&#39;</span><span class="o">:</span> <span class="mi">22277588</span><span class="p">,</span> <span class="s1">&#39;trx_num&#39;</span><span class="o">:</span> <span class="mi">35</span><span class="p">,</span> <span class="s1">&#39;trx_id&#39;</span><span class="o">:</span> <span class="s1">&#39;cf11b2ac8493c71063ec121b2e8517ab1e0e6bea&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>output when <cite>raw_ops=True</cite> is set:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;block_num&#39;</span><span class="o">:</span> <span class="mi">22277588</span><span class="p">,</span>
+    <span class="s1">&#39;op&#39;</span><span class="o">:</span>
+        <span class="p">[</span>
+            <span class="s1">&#39;transfer&#39;</span><span class="p">,</span>
+                <span class="p">{</span>
+                    <span class="s1">&#39;from&#39;</span><span class="o">:</span> <span class="s1">&#39;johngreenfield&#39;</span><span class="p">,</span> <span class="s1">&#39;to&#39;</span><span class="o">:</span> <span class="s1">&#39;thundercurator&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;amount&#39;</span><span class="o">:</span> <span class="s1">&#39;0.080 HBD&#39;</span><span class="p">,</span>
+                    <span class="s1">&#39;memo&#39;</span><span class="o">:</span> <span class="s1">&#39;https://hive.blog/lofi/@johngreenfield/lofi-joji-yeah-right&#39;</span>
+                <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s1">&#39;timestamp&#39;</span><span class="o">:</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">23</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="nx">tzinfo</span><span class="o">=&lt;</span><span class="nx">UTC</span><span class="o">&gt;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Blockchain.wait_for_and_get_block">
+<code class="sig-name descname">wait_for_and_get_block</code><span class="sig-paren">(</span><em class="sig-param">block_number</em>, <em class="sig-param">blocks_waiting_for=None</em>, <em class="sig-param">only_ops=False</em>, <em class="sig-param">only_virtual_ops=False</em>, <em class="sig-param">block_number_check_cnt=-1</em>, <em class="sig-param">last_current_block_num=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Blockchain.wait_for_and_get_block" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the desired block from the chain, if the current head block is smaller (for both head and irreversible)
+then we wait, but a maxmimum of blocks_waiting_for * max_block_wait_repetition time before failure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>block_number</strong> (<em>int</em>) – desired block number</p></li>
+<li><p><strong>blocks_waiting_for</strong> (<em>int</em>) – difference between block_number and current head and defines
+how many blocks we are willing to wait, positive int (default: None)</p></li>
+<li><p><strong>only_ops</strong> (<em>bool</em>) – Returns blocks with operations only, when set to True (default: False)</p></li>
+<li><p><strong>only_virtual_ops</strong> (<em>bool</em>) – Includes only virtual operations (default: False)</p></li>
+<li><p><strong>block_number_check_cnt</strong> (<em>int</em>) – limit the number of retries when greater than -1</p></li>
+<li><p><strong>last_current_block_num</strong> (<em>int</em>) – can be used to reduce the number of get_current_block_num() api calls</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.blockchain.Pool">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.blockchain.</code><code class="sig-name descname">Pool</code><span class="sig-paren">(</span><em class="sig-param">thread_count</em>, <em class="sig-param">batch_mode=True</em>, <em class="sig-param">exception_handler=&lt;function default_handler&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Pool of threads consuming tasks from a queue</p>
+<dl class="method">
+<dt id="bhive.blockchain.Pool.abort">
+<code class="sig-name descname">abort</code><span class="sig-paren">(</span><em class="sig-param">block=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.abort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Tell each worker that its done working</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.alive">
+<code class="sig-name descname">alive</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.alive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if any threads are currently running</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.done">
+<code class="sig-name descname">done</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.done" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if not tasks are left to be completed</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.enqueue">
+<code class="sig-name descname">enqueue</code><span class="sig-paren">(</span><em class="sig-param">func</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.enqueue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a task to the queue</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.idle">
+<code class="sig-name descname">idle</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.idle" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if all threads are waiting for work</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.join">
+<code class="sig-name descname">join</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.join" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wait for completion of all the tasks in the queue</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.results">
+<code class="sig-name descname">results</code><span class="sig-paren">(</span><em class="sig-param">sleep_time=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the set of results that have been processed, repeatedly call until done</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.blockchain.Pool.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><em class="sig-param">block=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Pool.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Start the threads, or restart them if you’ve aborted</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.blockchain.Worker">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.blockchain.</code><code class="sig-name descname">Worker</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">queue</em>, <em class="sig-param">results</em>, <em class="sig-param">abort</em>, <em class="sig-param">idle</em>, <em class="sig-param">exception_handler</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Worker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">threading.Thread</span></code></p>
+<p>Thread executing tasks from a given tasks queue</p>
+<dl class="method">
+<dt id="bhive.blockchain.Worker.run">
+<code class="sig-name descname">run</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.Worker.run" title="Permalink to this definition">¶</a></dt>
+<dd><p>Thread work loop calling the function with the params</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.blockchain.default_handler">
+<code class="sig-prename descclassname">bhive.blockchain.</code><code class="sig-name descname">default_handler</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">exception</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.blockchain.default_handler" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.blockchainobject.html" class="btn btn-neutral float-right" title="bhive.blockchainobject module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.block.html" class="btn btn-neutral float-left" title="bhive.block module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,457 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.price module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.profile module" href="bhive.profile.html" />
+    <link rel="prev" title="bhive.notify module" href="bhive.notify.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.price module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.price.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.price">
+<span id="bhive-price-module"></span><h1>bhive.price module<a class="headerlink" href="#module-bhive.price" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.price.FilledOrder">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.price.</code><code class="sig-name descname">FilledOrder</code><span class="sig-paren">(</span><em class="sig-param">order</em>, <em class="sig-param">hive_instance=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.FilledOrder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.price.Price" title="bhive.price.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.price.Price</span></code></a></p>
+<p>This class inherits <a class="reference internal" href="#bhive.price.Price" title="bhive.price.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.price.Price</span></code></a> but has the <code class="docutils literal notranslate"><span class="pre">base</span></code>
+and <code class="docutils literal notranslate"><span class="pre">quote</span></code> Amounts not only be used to represent the price (as a
+ratio of base and quote) but instead has those amounts represent the
+amounts of an actually filled order!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Instances of this class come with an additional <code class="docutils literal notranslate"><span class="pre">date</span></code> key
+that shows when the order has been filled!</p>
+</div>
+<dl class="method">
+<dt id="bhive.price.FilledOrder.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.FilledOrder.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.price.Order">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.price.</code><code class="sig-name descname">Order</code><span class="sig-paren">(</span><em class="sig-param">base</em>, <em class="sig-param">quote=None</em>, <em class="sig-param">hive_instance=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.price.Price" title="bhive.price.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.price.Price</span></code></a></p>
+<p>This class inherits <a class="reference internal" href="#bhive.price.Price" title="bhive.price.Price"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.price.Price</span></code></a> but has the <code class="docutils literal notranslate"><span class="pre">base</span></code>
+and <code class="docutils literal notranslate"><span class="pre">quote</span></code> Amounts not only be used to represent the price (as a
+ratio of base and quote) but instead has those amounts represent the
+amounts of an actual order!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If an order is marked as deleted, it will carry the
+‘deleted’ key which is set to <code class="docutils literal notranslate"><span class="pre">True</span></code> and all other
+data be <code class="docutils literal notranslate"><span class="pre">None</span></code>.</p>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.price.Price">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.price.</code><code class="sig-name descname">Price</code><span class="sig-paren">(</span><em class="sig-param">price=None</em>, <em class="sig-param">base=None</em>, <em class="sig-param">quote=None</em>, <em class="sig-param">base_asset=None</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>This class deals with all sorts of prices of any pair of assets to
+simplify dealing with the tuple:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">(</span><span class="n">quote</span><span class="p">,</span> <span class="n">base</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>each being an instance of <a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.amount.Amount</span></code></a>. The
+amount themselves define the price.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The price (floating) is derived as <code class="docutils literal notranslate"><span class="pre">base/quote</span></code></p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>args</strong> (<em>list</em>) – Allows to deal with different representations of a price</p></li>
+<li><p><strong>base</strong> (<a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><em>Asset</em></a>) – Base asset</p></li>
+<li><p><strong>quote</strong> (<a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><em>Asset</em></a>) – Quote asset</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>All data required to represent a price</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+<p>Way to obtain a proper instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> is a str with a price and two assets</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> can be a floating number and <code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">quote</span></code> being instances of <a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.asset.Asset</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> can be a floating number and <code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">quote</span></code> being instances of <code class="docutils literal notranslate"><span class="pre">str</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> can be dict with keys <code class="docutils literal notranslate"><span class="pre">price</span></code>, <code class="docutils literal notranslate"><span class="pre">base</span></code>, and <code class="docutils literal notranslate"><span class="pre">quote</span></code> (<em>graphene balances</em>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> can be dict with keys <code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">quote</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> can be dict with key <code class="docutils literal notranslate"><span class="pre">receives</span></code> (filled orders)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> being a list of <code class="docutils literal notranslate"><span class="pre">[quote,</span> <span class="pre">base]</span></code> both being instances of <a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.amount.Amount</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">args</span></code> being a list of <code class="docutils literal notranslate"><span class="pre">[quote,</span> <span class="pre">base]</span></code> both being instances of <code class="docutils literal notranslate"><span class="pre">str</span></code> (<code class="docutils literal notranslate"><span class="pre">amount</span> <span class="pre">symbol</span></code>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">quote</span></code> being instances of <code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.asset.Amount</span></code></p></li>
+</ul>
+</div></blockquote>
+<p>This allows instanciations like:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(&quot;0.315</span> <span class="pre">HBD/HIVE&quot;)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(0.315,</span> <span class="pre">base=&quot;HBD&quot;,</span> <span class="pre">quote=&quot;HIVE&quot;)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(0.315,</span> <span class="pre">base=Asset(&quot;HBD&quot;),</span> <span class="pre">quote=Asset(&quot;HIVE&quot;))</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price({&quot;base&quot;:</span> <span class="pre">{&quot;amount&quot;:</span> <span class="pre">1,</span> <span class="pre">&quot;asset_id&quot;:</span> <span class="pre">&quot;HBD&quot;},</span> <span class="pre">&quot;quote&quot;:</span> <span class="pre">{&quot;amount&quot;:</span> <span class="pre">10,</span> <span class="pre">&quot;asset_id&quot;:</span> <span class="pre">&quot;HBD&quot;}})</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(quote=&quot;10</span> <span class="pre">HIVE&quot;,</span> <span class="pre">base=&quot;1</span> <span class="pre">HBD&quot;)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(&quot;10</span> <span class="pre">HIVE&quot;,</span> <span class="pre">&quot;1</span> <span class="pre">HBD&quot;)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(Amount(&quot;10</span> <span class="pre">HIVE&quot;),</span> <span class="pre">Amount(&quot;1</span> <span class="pre">HBD&quot;))</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Price(1.0,</span> <span class="pre">&quot;HBD/HIVE&quot;)</span></code></p></li>
+</ul>
+<p>Instances of this class can be used in regular mathematical expressions
+(<code class="docutils literal notranslate"><span class="pre">+-*/%</span></code>) such as:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Price</span><span class="p">(</span><span class="s2">&quot;0.3314 HBD/HIVE&quot;</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
+<span class="go">0.662804 HBD/HIVE</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Price</span><span class="p">(</span><span class="mf">0.3314</span><span class="p">,</span> <span class="s2">&quot;HBD&quot;</span><span class="p">,</span> <span class="s2">&quot;HIVE&quot;</span><span class="p">)</span>
+<span class="go">0.331402 HBD/HIVE</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.price.Price.as_base">
+<code class="sig-name descname">as_base</code><span class="sig-paren">(</span><em class="sig-param">base</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price.as_base" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the price instance so that the base asset is <code class="docutils literal notranslate"><span class="pre">base</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This makes a copy of the object!</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Price</span><span class="p">(</span><span class="s2">&quot;0.3314 HBD/HIVE&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">as_base</span><span class="p">(</span><span class="s2">&quot;HIVE&quot;</span><span class="p">)</span>
+<span class="go">3.017483 HIVE/HBD</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.as_quote">
+<code class="sig-name descname">as_quote</code><span class="sig-paren">(</span><em class="sig-param">quote</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price.as_quote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the price instance so that the quote asset is <code class="docutils literal notranslate"><span class="pre">quote</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This makes a copy of the object!</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Price</span><span class="p">(</span><span class="s2">&quot;0.3314 HBD/HIVE&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">as_quote</span><span class="p">(</span><span class="s2">&quot;HBD&quot;</span><span class="p">)</span>
+<span class="go">3.017483 HIVE/HBD</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.copy">
+<code class="sig-name descname">copy</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; a shallow copy of D<a class="headerlink" href="#bhive.price.Price.copy" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.invert">
+<code class="sig-name descname">invert</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price.invert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invert the price (e.g. go from <code class="docutils literal notranslate"><span class="pre">HBD/HIVE</span></code> into <code class="docutils literal notranslate"><span class="pre">HIVE/HBD</span></code>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Price</span><span class="p">(</span><span class="s2">&quot;0.3314 HBD/HIVE&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">invert</span><span class="p">()</span>
+<span class="go">3.017483 HIVE/HBD</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.market">
+<em class="property">property </em><code class="sig-name descname">market</code><a class="headerlink" href="#bhive.price.Price.market" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open the corresponding market</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Instance of <a class="reference internal" href="bhive.market.html#bhive.market.Market" title="bhive.market.Market"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.market.Market</span></code></a> for the
+corresponding pair of assets.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.price.Price.symbols">
+<code class="sig-name descname">symbols</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.price.Price.symbols" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.profile.html" class="btn btn-neutral float-right" title="bhive.profile module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.notify.html" class="btn btn-neutral float-left" title="bhive.notify module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

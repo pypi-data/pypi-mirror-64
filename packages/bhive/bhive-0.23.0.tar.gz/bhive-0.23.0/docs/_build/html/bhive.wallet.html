@@ -1,0 +1,745 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.wallet module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.witness module" href="bhive.witness.html" />
+    <link rel="prev" title="bhive.vote module" href="bhive.vote.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.wallet module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.wallet.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.wallet">
+<span id="bhive-wallet-module"></span><h1>bhive.wallet module<a class="headerlink" href="#module-bhive.wallet" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.wallet.Wallet">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.wallet.</code><code class="sig-name descname">Wallet</code><span class="sig-paren">(</span><em class="sig-param">hive_instance=None</em>, <em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The wallet is meant to maintain access to private keys for
+your accounts. It either uses manually provided private keys
+or uses a SQLite database managed by storage.py.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>rpc</strong> (<a class="reference internal" href="bhiveapi.hivenoderpc.html#bhiveapi.hivenoderpc.HiveNodeRPC" title="bhiveapi.hivenoderpc.HiveNodeRPC"><em>HiveNodeRPC</em></a>) – RPC connection to a Hive node</p></li>
+<li><p><strong>keys</strong> (<em>array</em><em>, </em><em>dict</em><em>, </em><em>str</em>) – Predefine the wif keys to shortcut the
+wallet database</p></li>
+</ul>
+</dd>
+</dl>
+<p>Three wallet operation modes are possible:</p>
+<ul class="simple">
+<li><p><strong>Wallet Database</strong>: Here, bhive loads the keys from the
+locally stored wallet SQLite database (see <code class="docutils literal notranslate"><span class="pre">storage.py</span></code>).
+To use this mode, simply call <a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.hive.Hive</span></code></a> without the
+<code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter</p></li>
+<li><p><strong>Providing Keys</strong>: Here, you can provide the keys for
+your accounts manually. All you need to do is add the wif
+keys for the accounts you want to use as a simple array
+using the <code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter to <a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.hive.Hive</span></code></a>.</p></li>
+<li><p><strong>Force keys</strong>: This more is for advanced users and
+requires that you know what you are doing. Here, the
+<code class="docutils literal notranslate"><span class="pre">keys</span></code> parameter is a dictionary that overwrite the
+<code class="docutils literal notranslate"><span class="pre">active</span></code>, <code class="docutils literal notranslate"><span class="pre">owner</span></code>, <code class="docutils literal notranslate"><span class="pre">posting</span></code> or <code class="docutils literal notranslate"><span class="pre">memo</span></code> keys for
+any account. This mode is only used for <em>foreign</em>
+signatures!</p></li>
+</ul>
+<p>A new wallet can be created by using:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="s2">&quot;supersecret-passphrase&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will raise <a class="reference internal" href="bhive.exceptions.html#bhive.exceptions.WalletExists" title="bhive.exceptions.WalletExists"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.exceptions.WalletExists</span></code></a> if you already have a wallet installed.</p>
+<p>The wallet can be unlocked for signing using</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;supersecret-passphrase&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A private key can be added by using the
+<a class="reference internal" href="#bhive.wallet.Wallet.addPrivateKey" title="bhive.wallet.Wallet.addPrivateKey"><code class="xref py py-func docutils literal notranslate"><span class="pre">addPrivateKey()</span></code></a> method that is available
+<strong>after</strong> unlocking the wallet with the correct passphrase:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;supersecret-passphrase&quot;</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">addPrivateKey</span><span class="p">(</span><span class="s2">&quot;5xxxxxxxxxxxxxxxxxxxx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The private key has to be either in hexadecimal or in wallet
+import format (wif) (starting with a <code class="docutils literal notranslate"><span class="pre">5</span></code>).</p>
+</div>
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.MasterPassword">
+<code class="sig-name descname">MasterPassword</code><em class="property"> = None</em><a class="headerlink" href="#bhive.wallet.Wallet.MasterPassword" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.addPrivateKey">
+<code class="sig-name descname">addPrivateKey</code><span class="sig-paren">(</span><em class="sig-param">wif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.addPrivateKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a private key to the wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>wif</strong> (<em>str</em>) – Private key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.addToken">
+<code class="sig-name descname">addToken</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">token</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.addToken" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.changePassphrase">
+<code class="sig-name descname">changePassphrase</code><span class="sig-paren">(</span><em class="sig-param">new_pwd</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.changePassphrase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the passphrase for the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.clear_local_keys">
+<code class="sig-name descname">clear_local_keys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.clear_local_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all manually provided keys</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.clear_local_token">
+<code class="sig-name descname">clear_local_token</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.clear_local_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all manually provided token</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.configStorage">
+<code class="sig-name descname">configStorage</code><em class="property"> = None</em><a class="headerlink" href="#bhive.wallet.Wallet.configStorage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.create">
+<code class="sig-name descname">create</code><span class="sig-paren">(</span><em class="sig-param">pwd</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.create" title="Permalink to this definition">¶</a></dt>
+<dd><p>Alias for <a class="reference internal" href="#bhive.wallet.Wallet.newWallet" title="bhive.wallet.Wallet.newWallet"><code class="xref py py-func docutils literal notranslate"><span class="pre">newWallet()</span></code></a></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pwd</strong> (<em>str</em>) – Passphrase for the created wallet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.created">
+<code class="sig-name descname">created</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.created" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do we have a wallet database already?</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.decrypt_token">
+<code class="sig-name descname">decrypt_token</code><span class="sig-paren">(</span><em class="sig-param">enctoken</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.decrypt_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>decrypt a wif key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.decrypt_wif">
+<code class="sig-name descname">decrypt_wif</code><span class="sig-paren">(</span><em class="sig-param">encwif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.decrypt_wif" title="Permalink to this definition">¶</a></dt>
+<dd><p>decrypt a wif key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.deriveChecksum">
+<code class="sig-name descname">deriveChecksum</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.deriveChecksum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive the checksum</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.encrypt_token">
+<code class="sig-name descname">encrypt_token</code><span class="sig-paren">(</span><em class="sig-param">token</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.encrypt_token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encrypt a token key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.encrypt_wif">
+<code class="sig-name descname">encrypt_wif</code><span class="sig-paren">(</span><em class="sig-param">wif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.encrypt_wif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encrypt a wif key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAccount">
+<code class="sig-name descname">getAccount</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the account data for a public key (first account found for this
+public key)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAccountFromPrivateKey">
+<code class="sig-name descname">getAccountFromPrivateKey</code><span class="sig-paren">(</span><em class="sig-param">wif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAccountFromPrivateKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain account name from private key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAccountFromPublicKey">
+<code class="sig-name descname">getAccountFromPublicKey</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAccountFromPublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the first account name from public key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+<p>Note: this returns only the first account with the given key. To
+get all accounts associated with a given public key, use
+<a class="reference internal" href="#bhive.wallet.Wallet.getAccountsFromPublicKey" title="bhive.wallet.Wallet.getAccountsFromPublicKey"><code class="xref py py-func docutils literal notranslate"><span class="pre">getAccountsFromPublicKey()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAccounts">
+<code class="sig-name descname">getAccounts</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAccounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all accounts installed in the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAccountsFromPublicKey">
+<code class="sig-name descname">getAccountsFromPublicKey</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAccountsFromPublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain all account names associated with a public key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getActiveKeyForAccount">
+<code class="sig-name descname">getActiveKeyForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getActiveKeyForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain owner Active Key for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getActiveKeysForAccount">
+<code class="sig-name descname">getActiveKeysForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getActiveKeysForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain list of all owner Active Keys for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getAllAccounts">
+<code class="sig-name descname">getAllAccounts</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getAllAccounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get the account data for a public key (all accounts found for this
+public key)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getKeyForAccount">
+<code class="sig-name descname">getKeyForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">key_type</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getKeyForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain <cite>key_type</cite> Private Key for an account from the wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Account name</p></li>
+<li><p><strong>key_type</strong> (<em>str</em>) – key type, has to be one of “owner”, “active”,
+“posting” or “memo”</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getKeyType">
+<code class="sig-name descname">getKeyType</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getKeyType" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get key type</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<a class="reference internal" href="bhive.account.html#bhive.account.Account" title="bhive.account.Account"><em>Account</em></a><em>, </em><em>dict</em>) – Account data</p></li>
+<li><p><strong>pub</strong> (<em>str</em>) – Public key</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getKeysForAccount">
+<code class="sig-name descname">getKeysForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">key_type</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getKeysForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain a List of <cite>key_type</cite> Private Keys for an account from the wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Account name</p></li>
+<li><p><strong>key_type</strong> (<em>str</em>) – key type, has to be one of “owner”, “active”,
+“posting” or “memo”</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getMemoKeyForAccount">
+<code class="sig-name descname">getMemoKeyForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getMemoKeyForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain owner Memo Key for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getOwnerKeyForAccount">
+<code class="sig-name descname">getOwnerKeyForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getOwnerKeyForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain owner Private Key for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getOwnerKeysForAccount">
+<code class="sig-name descname">getOwnerKeysForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getOwnerKeysForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain list of all owner Private Keys for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getPostingKeyForAccount">
+<code class="sig-name descname">getPostingKeyForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getPostingKeyForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain owner Posting Key for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getPostingKeysForAccount">
+<code class="sig-name descname">getPostingKeysForAccount</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getPostingKeysForAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain list of all owner Posting Keys for an account from the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getPrivateKeyForPublicKey">
+<code class="sig-name descname">getPrivateKeyForPublicKey</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getPrivateKeyForPublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the private key for a given public key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public Key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getPublicKeys">
+<code class="sig-name descname">getPublicKeys</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getPublicKeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all installed public keys</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getPublicNames">
+<code class="sig-name descname">getPublicNames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getPublicNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return all installed public token</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.getTokenForAccountName">
+<code class="sig-name descname">getTokenForAccountName</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.getTokenForAccountName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the private token for a given public name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Public name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.keyMap">
+<code class="sig-name descname">keyMap</code><em class="property"> = {}</em><a class="headerlink" href="#bhive.wallet.Wallet.keyMap" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.keyStorage">
+<code class="sig-name descname">keyStorage</code><em class="property"> = None</em><a class="headerlink" href="#bhive.wallet.Wallet.keyStorage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.keys">
+<code class="sig-name descname">keys</code><em class="property"> = {}</em><a class="headerlink" href="#bhive.wallet.Wallet.keys" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.lock">
+<code class="sig-name descname">lock</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.lock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Lock the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.locked">
+<code class="sig-name descname">locked</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.locked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the wallet database locked?</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.masterpassword">
+<code class="sig-name descname">masterpassword</code><em class="property"> = None</em><a class="headerlink" href="#bhive.wallet.Wallet.masterpassword" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.newWallet">
+<code class="sig-name descname">newWallet</code><span class="sig-paren">(</span><em class="sig-param">pwd</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.newWallet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a new wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pwd</strong> (<em>str</em>) – Passphrase for the created wallet</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.prefix">
+<em class="property">property </em><code class="sig-name descname">prefix</code><a class="headerlink" href="#bhive.wallet.Wallet.prefix" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.removeAccount">
+<code class="sig-name descname">removeAccount</code><span class="sig-paren">(</span><em class="sig-param">account</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.removeAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all keys associated with a given account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – name of account to be removed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.removePrivateKeyFromPublicKey">
+<code class="sig-name descname">removePrivateKeyFromPublicKey</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.removePrivateKeyFromPublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a key from the wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.removeTokenFromPublicName">
+<code class="sig-name descname">removeTokenFromPublicName</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.removeTokenFromPublicName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove a token from the wallet database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – token to be removed</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.rpc">
+<em class="property">property </em><code class="sig-name descname">rpc</code><a class="headerlink" href="#bhive.wallet.Wallet.rpc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.setKeys">
+<code class="sig-name descname">setKeys</code><span class="sig-paren">(</span><em class="sig-param">loadkeys</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.setKeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is strictly only for in memory keys that are
+passed to Wallet/Hive with the <code class="docutils literal notranslate"><span class="pre">keys</span></code> argument</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.setToken">
+<code class="sig-name descname">setToken</code><span class="sig-paren">(</span><em class="sig-param">loadtoken</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.setToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>This method is strictly only for in memory token that are
+passed to Wallet/Hive with the <code class="docutils literal notranslate"><span class="pre">token</span></code> argument</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.token">
+<code class="sig-name descname">token</code><em class="property"> = {}</em><a class="headerlink" href="#bhive.wallet.Wallet.token" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.wallet.Wallet.tokenStorage">
+<code class="sig-name descname">tokenStorage</code><em class="property"> = None</em><a class="headerlink" href="#bhive.wallet.Wallet.tokenStorage" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.tryUnlockFromEnv">
+<code class="sig-name descname">tryUnlockFromEnv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.tryUnlockFromEnv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to fetch the unlock password from UNLOCK environment variable and keyring when no password is given.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.unlock">
+<code class="sig-name descname">unlock</code><span class="sig-paren">(</span><em class="sig-param">pwd=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unlock the wallet database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.unlocked">
+<code class="sig-name descname">unlocked</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.unlocked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is the wallet database unlocked?</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.wallet.Wallet.wipe">
+<code class="sig-name descname">wipe</code><span class="sig-paren">(</span><em class="sig-param">sure=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.wallet.Wallet.wipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purge all data in wallet database</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.witness.html" class="btn btn-neutral float-right" title="bhive.witness module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.vote.html" class="btn btn-neutral float-left" title="bhive.vote module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

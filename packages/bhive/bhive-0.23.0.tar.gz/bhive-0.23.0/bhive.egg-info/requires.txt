@@ -1,0 +1,13 @@
+Click
+Events
+appdirs
+ecdsa
+future
+prettytable
+pycryptodomex
+pylibscrypt
+pytz
+pyyaml
+requests
+scrypt
+websocket-client

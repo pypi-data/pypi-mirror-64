@@ -1,0 +1,666 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.storage module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.transactionbuilder module" href="bhive.transactionbuilder.html" />
+    <link rel="prev" title="bhive.snapshot module" href="bhive.snapshot.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.storage module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.storage.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.storage">
+<span id="bhive-storage-module"></span><h1>bhive.storage module<a class="headerlink" href="#module-bhive.storage" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.storage.Configuration">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.storage.</code><code class="sig-name descname">Configuration</code><a class="headerlink" href="#bhive.storage.Configuration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.storage.DataDir" title="bhive.storage.DataDir"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.storage.DataDir</span></code></a></p>
+<p>This is the configuration storage that stores key/value
+pairs in the <cite>config</cite> table of the SQLite3 database.</p>
+<dl class="method">
+<dt id="bhive.storage.Configuration.checkBackup">
+<code class="sig-name descname">checkBackup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.checkBackup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Backup the SQL database every 7 days</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.Configuration.config_defaults">
+<code class="sig-name descname">config_defaults</code><em class="property"> = {'client_id': '', 'hot_sign_redirect_uri': None, 'node': ['https://anyx.io', 'https://api.openhive.network', 'https://api.hive.blog', 'https://api.hivekings.com'], 'oauth_base_url': 'https://hiveconnect.com/oauth2/', 'order-expiration': 604800, 'password_storage': 'environment', 'rpcpassword': '', 'rpcuser': '', 'sc2_api_url': 'https://hiveconnect.com/api/'}</em><a class="headerlink" href="#bhive.storage.Configuration.config_defaults" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Configuration.create_table">
+<code class="sig-name descname">create_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the new table in the SQLite database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Configuration.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">key</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete a key from the configuration store</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Configuration.exists_table">
+<code class="sig-name descname">exists_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.exists_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the database table exists</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Configuration.get">
+<code class="sig-name descname">get</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">default=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.get" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the key if exists or a default value</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Configuration.items">
+<code class="sig-name descname">items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Configuration.items" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.Configuration.nodelist">
+<code class="sig-name descname">nodelist</code><em class="property"> = [{'url': 'https://api.openhive.network', 'version': '0.23.0', 'type': 'appbase', 'owner': 'hiveio', 'score': 40}, {'url': 'https://api.hive.blog', 'version': '0.23.0', 'type': 'appbase', 'owner': 'hiveio', 'score': 40}, {'url': 'https://api.hivekings.com', 'version': '0.23.0', 'type': 'appbase', 'owner': 'hivekings', 'score': 25}, {'url': 'https://anyx.io', 'version': '0.23.0', 'type': 'appbase', 'owner': 'anyx', 'score': 70}]</em><a class="headerlink" href="#bhive.storage.Configuration.nodelist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default configuration</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.Configuration.nodes">
+<code class="sig-name descname">nodes</code><em class="property"> = ['https://anyx.io', 'https://api.openhive.network', 'https://api.hive.blog', 'https://api.hivekings.com']</em><a class="headerlink" href="#bhive.storage.Configuration.nodes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.storage.DataDir">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.storage.</code><code class="sig-name descname">DataDir</code><a class="headerlink" href="#bhive.storage.DataDir" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class ensures that the user’s data is stored in its OS
+preotected user directory:</p>
+<p><strong>OSX:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>~/Library/Application Support/&lt;AppName&gt;</cite></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Windows:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>C:Documents and Settings&lt;User&gt;Application DataLocal Settings&lt;AppAuthor&gt;&lt;AppName&gt;</cite></p></li>
+<li><p><cite>C:Documents and Settings&lt;User&gt;Application Data&lt;AppAuthor&gt;&lt;AppName&gt;</cite></p></li>
+</ul>
+</div></blockquote>
+<p><strong>Linux:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>~/.local/share/&lt;AppName&gt;</cite></p></li>
+</ul>
+<p>Furthermore, it offers an interface to generated backups
+in the <cite>backups/</cite> directory every now and then.</p>
+</div></blockquote>
+<dl class="attribute">
+<dt id="bhive.storage.DataDir.appauthor">
+<code class="sig-name descname">appauthor</code><em class="property"> = 'bhive'</em><a class="headerlink" href="#bhive.storage.DataDir.appauthor" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.DataDir.appname">
+<code class="sig-name descname">appname</code><em class="property"> = 'bhive'</em><a class="headerlink" href="#bhive.storage.DataDir.appname" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.clean_data">
+<code class="sig-name descname">clean_data</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.clean_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete files older than 70 days</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.DataDir.data_dir">
+<code class="sig-name descname">data_dir</code><em class="property"> = '/home/thecrazygm/.local/share/bhive'</em><a class="headerlink" href="#bhive.storage.DataDir.data_dir" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.mkdir_p">
+<code class="sig-name descname">mkdir_p</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.mkdir_p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure that the directory in which the data is stored
+exists</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.recover_with_latest_backup">
+<code class="sig-name descname">recover_with_latest_backup</code><span class="sig-paren">(</span><em class="sig-param">backupdir='backups'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.recover_with_latest_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Replace database with latest backup</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.refreshBackup">
+<code class="sig-name descname">refreshBackup</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.refreshBackup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Make a new backup</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.DataDir.sqlDataBaseFile">
+<code class="sig-name descname">sqlDataBaseFile</code><em class="property"> = '/home/thecrazygm/.local/share/bhive/bhive.sqlite'</em><a class="headerlink" href="#bhive.storage.DataDir.sqlDataBaseFile" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.sqlite3_backup">
+<code class="sig-name descname">sqlite3_backup</code><span class="sig-paren">(</span><em class="sig-param">backupdir</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.sqlite3_backup" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create timestamped database copy</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.DataDir.sqlite3_copy">
+<code class="sig-name descname">sqlite3_copy</code><span class="sig-paren">(</span><em class="sig-param">src</em>, <em class="sig-param">dst</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.DataDir.sqlite3_copy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy sql file from src to dst</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.DataDir.storageDatabase">
+<code class="sig-name descname">storageDatabase</code><em class="property"> = 'bhive.sqlite'</em><a class="headerlink" href="#bhive.storage.DataDir.storageDatabase" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.storage.Key">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.storage.</code><code class="sig-name descname">Key</code><a class="headerlink" href="#bhive.storage.Key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.storage.DataDir" title="bhive.storage.DataDir"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.storage.DataDir</span></code></a></p>
+<p>This is the key storage that stores the public key and the
+(possibly encrypted) private key in the <cite>keys</cite> table in the
+SQLite3 database.</p>
+<dl class="method">
+<dt id="bhive.storage.Key.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">wif</em>, <em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new public/private key pair (correspondence has to be
+checked elsewhere!)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pub</strong> (<em>str</em>) – Public key</p></li>
+<li><p><strong>wif</strong> (<em>str</em>) – Private key</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.create_table">
+<code class="sig-name descname">create_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the new table in the SQLite database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the key identified as <cite>pub</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.exists_table">
+<code class="sig-name descname">exists_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.exists_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the database table exists</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.getPrivateKeyForPublicKey">
+<code class="sig-name descname">getPrivateKeyForPublicKey</code><span class="sig-paren">(</span><em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.getPrivateKeyForPublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the (possibly encrypted) private key that
+corresponds to a public key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public key</p>
+</dd>
+</dl>
+<p>The encryption scheme is BIP38</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.getPublicKeys">
+<code class="sig-name descname">getPublicKeys</code><span class="sig-paren">(</span><em class="sig-param">prefix='STM'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.getPublicKeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the public keys stored in the database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.updateWif">
+<code class="sig-name descname">updateWif</code><span class="sig-paren">(</span><em class="sig-param">pub</em>, <em class="sig-param">wif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.updateWif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the wif to a pubkey</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pub</strong> (<em>str</em>) – Public key</p></li>
+<li><p><strong>wif</strong> (<em>str</em>) – Private key</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Key.wipe">
+<code class="sig-name descname">wipe</code><span class="sig-paren">(</span><em class="sig-param">sure=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Key.wipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purge the entire wallet. No keys will survive this!</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.storage.MasterPassword">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.storage.</code><code class="sig-name descname">MasterPassword</code><span class="sig-paren">(</span><em class="sig-param">password</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>The keys are encrypted with a Masterpassword that is stored in
+the configurationStore. It has a checksum to verify correctness
+of the password</p>
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.changePassword">
+<code class="sig-name descname">changePassword</code><span class="sig-paren">(</span><em class="sig-param">newpassword</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.changePassword" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the password</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.MasterPassword.config_key">
+<code class="sig-name descname">config_key</code><em class="property"> = 'encrypted_master_password'</em><a class="headerlink" href="#bhive.storage.MasterPassword.config_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>This key identifies the encrypted master password stored in the confiration</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.decryptEncryptedMaster">
+<code class="sig-name descname">decryptEncryptedMaster</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.decryptEncryptedMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decrypt the encrypted masterpassword</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.MasterPassword.decrypted_master">
+<code class="sig-name descname">decrypted_master</code><em class="property"> = ''</em><a class="headerlink" href="#bhive.storage.MasterPassword.decrypted_master" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.deriveChecksum">
+<code class="sig-name descname">deriveChecksum</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.deriveChecksum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive the checksum</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.getEncryptedMaster">
+<code class="sig-name descname">getEncryptedMaster</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.getEncryptedMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the encrypted masterkey</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.newMaster">
+<code class="sig-name descname">newMaster</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.newMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate a new random masterpassword</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.storage.MasterPassword.password">
+<code class="sig-name descname">password</code><em class="property"> = ''</em><a class="headerlink" href="#bhive.storage.MasterPassword.password" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.saveEncrytpedMaster">
+<code class="sig-name descname">saveEncrytpedMaster</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.saveEncrytpedMaster" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store the encrypted master password in the configuration
+store</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.MasterPassword.wipe">
+<em class="property">static </em><code class="sig-name descname">wipe</code><span class="sig-paren">(</span><em class="sig-param">sure=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.MasterPassword.wipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove all keys from configStorage</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.storage.Token">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.storage.</code><code class="sig-name descname">Token</code><a class="headerlink" href="#bhive.storage.Token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.storage.DataDir" title="bhive.storage.DataDir"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.storage.DataDir</span></code></a></p>
+<p>This is the token storage that stores the public username and the
+(possibly encrypted) token in the <cite>token</cite> table in the
+SQLite3 database.</p>
+<dl class="method">
+<dt id="bhive.storage.Token.add">
+<code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">token</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new public/private token pair (correspondence has to be
+checked elsewhere!)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Public name</p></li>
+<li><p><strong>token</strong> (<em>str</em>) – Private token</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.create_table">
+<code class="sig-name descname">create_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.create_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the new table in the SQLite database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete the key identified as <cite>name</cite></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em>) – Public name</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.exists_table">
+<code class="sig-name descname">exists_table</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.exists_table" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if the database table exists</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.getPublicNames">
+<code class="sig-name descname">getPublicNames</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.getPublicNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the public names stored in the database</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.getTokenForPublicName">
+<code class="sig-name descname">getTokenForPublicName</code><span class="sig-paren">(</span><em class="sig-param">name</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.getTokenForPublicName" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the (possibly encrypted) private token that
+corresponds to a public name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>pub</strong> (<em>str</em>) – Public name</p>
+</dd>
+</dl>
+<p>The encryption scheme is BIP38</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.updateToken">
+<code class="sig-name descname">updateToken</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">token</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.updateToken" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change the token to a name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name</strong> (<em>str</em>) – Public name</p></li>
+<li><p><strong>token</strong> (<em>str</em>) – Private token</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.storage.Token.wipe">
+<code class="sig-name descname">wipe</code><span class="sig-paren">(</span><em class="sig-param">sure=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.storage.Token.wipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Purge the entire wallet. No keys will survive this!</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.transactionbuilder.html" class="btn btn-neutral float-right" title="bhive.transactionbuilder module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.snapshot.html" class="btn btn-neutral float-left" title="bhive.snapshot module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

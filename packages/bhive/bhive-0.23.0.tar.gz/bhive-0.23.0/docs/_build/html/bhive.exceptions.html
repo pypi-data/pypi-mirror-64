@@ -1,0 +1,453 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.exceptions module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.hive module" href="bhive.hive.html" />
+    <link rel="prev" title="bhive.discussions module" href="bhive.discussions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.exceptions module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.exceptions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.exceptions">
+<span id="bhive-exceptions-module"></span><h1>bhive.exceptions module<a class="headerlink" href="#module-bhive.exceptions" title="Permalink to this headline">¶</a></h1>
+<dl class="exception">
+<dt id="bhive.exceptions.AccountDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">AccountDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.AccountDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The account does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.AccountExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">AccountExistsException</code><a class="headerlink" href="#bhive.exceptions.AccountExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The requested account already exists</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.AssetDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">AssetDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.AssetDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The asset does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.BatchedCallsNotSupported">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">BatchedCallsNotSupported</code><a class="headerlink" href="#bhive.exceptions.BatchedCallsNotSupported" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Batch calls do not work</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.BlockDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">BlockDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.BlockDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The block does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.BlockWaitTimeExceeded">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">BlockWaitTimeExceeded</code><a class="headerlink" href="#bhive.exceptions.BlockWaitTimeExceeded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Wait time for new block exceeded</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.ContentDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">ContentDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.ContentDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The content does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.InsufficientAuthorityError">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">InsufficientAuthorityError</code><a class="headerlink" href="#bhive.exceptions.InsufficientAuthorityError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The transaction requires signature of a higher authority</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.InvalidAssetException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">InvalidAssetException</code><a class="headerlink" href="#bhive.exceptions.InvalidAssetException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>An invalid asset has been provided</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.InvalidMemoKeyException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">InvalidMemoKeyException</code><a class="headerlink" href="#bhive.exceptions.InvalidMemoKeyException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Memo key in message is invalid</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.InvalidMessageSignature">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">InvalidMessageSignature</code><a class="headerlink" href="#bhive.exceptions.InvalidMessageSignature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The message signature does not fit the message</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.InvalidWifError">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">InvalidWifError</code><a class="headerlink" href="#bhive.exceptions.InvalidWifError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The provided private Key has an invalid format</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.MissingKeyError">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">MissingKeyError</code><a class="headerlink" href="#bhive.exceptions.MissingKeyError" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>A required key couldn’t be found in the wallet</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.NoWalletException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">NoWalletException</code><a class="headerlink" href="#bhive.exceptions.NoWalletException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>No Wallet could be found, please use <a class="reference internal" href="bhive.wallet.html#bhive.wallet.Wallet.create" title="bhive.wallet.Wallet.create"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.wallet.Wallet.create()</span></code></a> to
+create a new wallet</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.NoWriteAccess">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">NoWriteAccess</code><a class="headerlink" href="#bhive.exceptions.NoWriteAccess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Cannot store to sqlite3 database due to missing write access</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.OfflineHasNoRPCException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">OfflineHasNoRPCException</code><a class="headerlink" href="#bhive.exceptions.OfflineHasNoRPCException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>When in offline mode, we don’t have RPC</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.RPCConnectionRequired">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">RPCConnectionRequired</code><a class="headerlink" href="#bhive.exceptions.RPCConnectionRequired" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>An RPC connection is required</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.VestingBalanceDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">VestingBalanceDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.VestingBalanceDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Vesting Balance does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.VoteDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">VoteDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.VoteDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The vote does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.VotingInvalidOnArchivedPost">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">VotingInvalidOnArchivedPost</code><a class="headerlink" href="#bhive.exceptions.VotingInvalidOnArchivedPost" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The transaction requires signature of a higher authority</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.WalletExists">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">WalletExists</code><a class="headerlink" href="#bhive.exceptions.WalletExists" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>A wallet has already been created and requires a password to be
+unlocked by means of <a class="reference internal" href="bhive.wallet.html#bhive.wallet.Wallet.unlock" title="bhive.wallet.Wallet.unlock"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.wallet.Wallet.unlock()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.WalletLocked">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">WalletLocked</code><a class="headerlink" href="#bhive.exceptions.WalletLocked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>Wallet is locked</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.WitnessDoesNotExistsException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">WitnessDoesNotExistsException</code><a class="headerlink" href="#bhive.exceptions.WitnessDoesNotExistsException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The witness does not exist</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.WrongMasterPasswordException">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">WrongMasterPasswordException</code><a class="headerlink" href="#bhive.exceptions.WrongMasterPasswordException" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The password provided could not properly unlock the wallet</p>
+</dd></dl>
+
+<dl class="exception">
+<dt id="bhive.exceptions.WrongMemoKey">
+<em class="property">exception </em><code class="sig-prename descclassname">bhive.exceptions.</code><code class="sig-name descname">WrongMemoKey</code><a class="headerlink" href="#bhive.exceptions.WrongMemoKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Exception</span></code></p>
+<p>The memo provided is not equal the one on the blockchain</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.hive.html" class="btn btn-neutral float-right" title="bhive.hive module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.discussions.html" class="btn btn-neutral float-left" title="bhive.discussions module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

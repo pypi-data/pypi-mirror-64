@@ -1,0 +1,546 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhivegraphenebase.account module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhivegraphenebase.base58 module" href="bhivegraphenebase.base58.html" />
+    <link rel="prev" title="bhivegraphenebase package" href="bhivegraphenebase.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bhive.html">bhive package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhivegraphenebase.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhivegraphenebase.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.base58.html">bhivegraphenebase.base58 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.bip38.html">bhivegraphenebase.bip38 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.chains.html">bhivegraphenebase.chains module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.dictionary.html">bhivegraphenebase.dictionary module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.ecdsasig.html">bhivegraphenebase.ecdsasig module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.objects.html">bhivegraphenebase.objects module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.objecttypes.html">bhivegraphenebase.objecttypes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.operationids.html">bhivegraphenebase.operationids module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.operations.html">bhivegraphenebase.operations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.py23.html">bhivegraphenebase.py23 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.signedtransactions.html">bhivegraphenebase.signedtransactions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.types.html">bhivegraphenebase.types module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.version.html">bhivegraphenebase.version module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhivegraphenebase.html#module-bhivegraphenebase">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhivegraphenebase.html">bhivegraphenebase package</a> &raquo;</li>
+        
+      <li>bhivegraphenebase.account module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhivegraphenebase.account.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhivegraphenebase.account">
+<span id="bhivegraphenebase-account-module"></span><h1>bhivegraphenebase.account module<a class="headerlink" href="#module-bhivegraphenebase.account" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhivegraphenebase.account.Address">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.account.</code><code class="sig-name descname">Address</code><span class="sig-paren">(</span><em class="sig-param">address=None</em>, <em class="sig-param">pubkey=None</em>, <em class="sig-param">prefix='STM'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.Address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Address class</p>
+<p>This class serves as an address representation for Public Keys.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>address</strong> (<em>str</em>) – Base58 encoded address (defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
+<li><p><strong>pubkey</strong> (<em>str</em>) – Base58 encoded pubkey (defaults to <code class="docutils literal notranslate"><span class="pre">None</span></code>)</p></li>
+<li><p><strong>prefix</strong> (<em>str</em>) – Network prefix (defaults to <code class="docutils literal notranslate"><span class="pre">STM</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Address</span><span class="p">(</span><span class="s2">&quot;STMFN9r6VYzBK8EKtMewfNbfiGCr56pHDBFi&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhivegraphenebase.account.Address.derive256address_with_version">
+<code class="sig-name descname">derive256address_with_version</code><span class="sig-paren">(</span><em class="sig-param">version=56</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.Address.derive256address_with_version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive address using <code class="docutils literal notranslate"><span class="pre">RIPEMD160(SHA256(x))</span></code>
+and adding version + checksum</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.Address.derivesha256address">
+<code class="sig-name descname">derivesha256address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.Address.derivesha256address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive address using <code class="docutils literal notranslate"><span class="pre">RIPEMD160(SHA256(x))</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.Address.derivesha512address">
+<code class="sig-name descname">derivesha512address</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.Address.derivesha512address" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive address using <code class="docutils literal notranslate"><span class="pre">RIPEMD160(SHA512(x))</span></code></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.Address.get_public_key">
+<code class="sig-name descname">get_public_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.Address.get_public_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pubkey</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhivegraphenebase.account.BrainKey">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.account.</code><code class="sig-name descname">BrainKey</code><span class="sig-paren">(</span><em class="sig-param">brainkey=None</em>, <em class="sig-param">sequence=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Brainkey implementation similar to the graphene-ui web-wallet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>brainkey</strong> (<em>str</em>) – Brain Key</p></li>
+<li><p><strong>sequence</strong> (<em>int</em>) – Sequence number for consecutive keys</p></li>
+</ul>
+</dd>
+</dl>
+<p>Keys in Graphene are derived from a seed brain key which is a string of
+16 words out of a predefined dictionary with 49744 words. It is a
+simple single-chain key derivation scheme that is not compatible with
+BIP44 but easy to use.</p>
+<p>Given the brain key, a private key is derived as:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">privkey</span> <span class="o">=</span> <span class="n">SHA256</span><span class="p">(</span><span class="n">SHA512</span><span class="p">(</span><span class="n">brainkey</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">sequence</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Incrementing the sequence number yields a new key that can be
+regenerated given the brain key.</p>
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_blind_private">
+<code class="sig-name descname">get_blind_private</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_blind_private" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive private key from the brain key (and no sequence number)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_brainkey">
+<code class="sig-name descname">get_brainkey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_brainkey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return brain key of this instance</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_private">
+<code class="sig-name descname">get_private</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_private" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive private key from the brain key and the current sequence
+number</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_private_key">
+<code class="sig-name descname">get_private_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_private_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_public">
+<code class="sig-name descname">get_public</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_public" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.get_public_key">
+<code class="sig-name descname">get_public_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.get_public_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.next_sequence">
+<code class="sig-name descname">next_sequence</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.next_sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increment the sequence number by 1</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.normalize">
+<code class="sig-name descname">normalize</code><span class="sig-paren">(</span><em class="sig-param">brainkey</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correct formating with single whitespace syntax and no trailing space</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.BrainKey.suggest">
+<code class="sig-name descname">suggest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.BrainKey.suggest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Suggest a new random brain key. Randomness is provided by the
+operating system using <code class="docutils literal notranslate"><span class="pre">os.urandom()</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhivegraphenebase.account.PasswordKey">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.account.</code><code class="sig-name descname">PasswordKey</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">password</em>, <em class="sig-param">role='active'</em>, <em class="sig-param">prefix='STM'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PasswordKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class derives a private key given the account name, the
+role and a password. It leverages the technology of Brainkeys
+and allows people to have a secure private key by providing a
+passphrase only.</p>
+<dl class="method">
+<dt id="bhivegraphenebase.account.PasswordKey.get_private">
+<code class="sig-name descname">get_private</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PasswordKey.get_private" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive private key from the brain key and the current sequence
+number</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PasswordKey.get_private_key">
+<code class="sig-name descname">get_private_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PasswordKey.get_private_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PasswordKey.get_public">
+<code class="sig-name descname">get_public</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PasswordKey.get_public" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PasswordKey.get_public_key">
+<code class="sig-name descname">get_public_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PasswordKey.get_public_key" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhivegraphenebase.account.PrivateKey">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.account.</code><code class="sig-name descname">PrivateKey</code><span class="sig-paren">(</span><em class="sig-param">wif=None</em>, <em class="sig-param">prefix='STM'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhivegraphenebase.account.PublicKey</span></code></a></p>
+<p>Derives the compressed and uncompressed public keys and
+constructs two instances of <a class="reference internal" href="#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">PublicKey</span></code></a>:</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wif</strong> (<em>str</em>) – Base58check-encoded wif key</p></li>
+<li><p><strong>prefix</strong> (<em>str</em>) – Network prefix (defaults to <code class="docutils literal notranslate"><span class="pre">STM</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PrivateKey</span><span class="p">(</span><span class="s2">&quot;5HqUkGuo62BfcJU5vNhTXKJRXuUi9QSE6jp8C3uBJ2BVHtB8WSd&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Compressed vs. Uncompressed:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">PrivateKey(&quot;w-i-f&quot;).pubkey</span></code>:</dt><dd><p>Instance of <a class="reference internal" href="#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">PublicKey</span></code></a> using compressed key.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">PrivateKey(&quot;w-i-f&quot;).pubkey.address</span></code>:</dt><dd><p>Instance of <a class="reference internal" href="#bhivegraphenebase.account.Address" title="bhivegraphenebase.account.Address"><code class="xref py py-class docutils literal notranslate"><span class="pre">Address</span></code></a> using compressed key.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">PrivateKey(&quot;w-i-f&quot;).uncompressed</span></code>:</dt><dd><p>Instance of <a class="reference internal" href="#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><code class="xref py py-class docutils literal notranslate"><span class="pre">PublicKey</span></code></a> using uncompressed key.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">PrivateKey(&quot;w-i-f&quot;).uncompressed.address</span></code>:</dt><dd><p>Instance of <a class="reference internal" href="#bhivegraphenebase.account.Address" title="bhivegraphenebase.account.Address"><code class="xref py py-class docutils literal notranslate"><span class="pre">Address</span></code></a> using uncompressed key.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.child">
+<code class="sig-name descname">child</code><span class="sig-paren">(</span><em class="sig-param">offset256</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.child" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive new private key from this key and a sha256 “offset”</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.compressedpubkey">
+<code class="sig-name descname">compressedpubkey</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.compressedpubkey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive uncompressed public key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.derive_from_seed">
+<code class="sig-name descname">derive_from_seed</code><span class="sig-paren">(</span><em class="sig-param">offset</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.derive_from_seed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive private key using “generate_from_seed” method.
+Here, the key itself serves as a <cite>seed</cite>, and <cite>offset</cite>
+is expected to be a sha256 digest.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.derive_private_key">
+<code class="sig-name descname">derive_private_key</code><span class="sig-paren">(</span><em class="sig-param">sequence</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.derive_private_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive new private key from this private key and an arbitrary
+sequence number</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.get_public_key">
+<code class="sig-name descname">get_public_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.get_public_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pubkey</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PrivateKey.get_secret">
+<code class="sig-name descname">get_secret</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PrivateKey.get_secret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get sha256 digest of the wif key.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhivegraphenebase.account.PublicKey">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.account.</code><code class="sig-name descname">PublicKey</code><span class="sig-paren">(</span><em class="sig-param">pk</em>, <em class="sig-param">prefix='STM'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PublicKey" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhivegraphenebase.account.Address" title="bhivegraphenebase.account.Address"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhivegraphenebase.account.Address</span></code></a></p>
+<p>This class deals with Public Keys and inherits <code class="docutils literal notranslate"><span class="pre">Address</span></code>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pk</strong> (<em>str</em>) – Base58 encoded public key</p></li>
+<li><p><strong>prefix</strong> (<em>str</em>) – Network prefix (defaults to <code class="docutils literal notranslate"><span class="pre">STM</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PublicKey</span><span class="p">(</span><span class="s2">&quot;STM6UtYWWs3rkZGV8JA86qrgkG6tyFksgECefKE1MiH4HkLD8PFGL&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>By default, graphene-based networks deal with <strong>compressed</strong>
+public keys. If an <strong>uncompressed</strong> key is required, the
+method <a class="reference internal" href="#bhivegraphenebase.account.PublicKey.unCompressed" title="bhivegraphenebase.account.PublicKey.unCompressed"><code class="xref py py-func docutils literal notranslate"><span class="pre">unCompressed()</span></code></a> can be used:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">PublicKey</span><span class="p">(</span><span class="s2">&quot;xxxxx&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">unCompressed</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<dl class="method">
+<dt id="bhivegraphenebase.account.PublicKey.compressed">
+<code class="sig-name descname">compressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PublicKey.compressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive compressed public key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PublicKey.get_public_key">
+<code class="sig-name descname">get_public_key</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PublicKey.get_public_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the pubkey</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PublicKey.point">
+<code class="sig-name descname">point</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PublicKey.point" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the point for the public key</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhivegraphenebase.account.PublicKey.unCompressed">
+<code class="sig-name descname">unCompressed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.account.PublicKey.unCompressed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive uncompressed key</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhivegraphenebase.base58.html" class="btn btn-neutral float-right" title="bhivegraphenebase.base58 module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhivegraphenebase.html" class="btn btn-neutral float-left" title="bhivegraphenebase package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,415 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quickstart &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Tutorials" href="tutorials.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quickstart</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#hive">Hive</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#wallet-and-keys">Wallet and Keys</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-wallet">Creating a wallet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adding-keys-to-the-wallet">Adding keys to the wallet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-the-keys-in-the-wallet">Using the keys in the wallet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#private-keys-can-also-set-temporary">Private keys can also set temporary</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#receiving-information-about-blocks-accounts-votes-comments-market-and-witness">Receiving information about blocks, accounts, votes, comments, market and witness</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sending-transaction-to-the-blockchain">Sending transaction to the blockchain</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">bhive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quickstart</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/quickstart.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="quickstart">
+<h1>Quickstart<a class="headerlink" href="#quickstart" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="hive">
+<h2>Hive<a class="headerlink" href="#hive" title="Permalink to this headline">¶</a></h2>
+<p>The hive object is the connection to the Hive blockchain.
+By creating this object different options can be set.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All init methods of bhive classes can be given
+the <code class="docutils literal notranslate"><span class="pre">hive_instance=</span></code> parameter to assure that
+all objects use the same hive object. When the
+<code class="docutils literal notranslate"><span class="pre">hive_instance=</span></code> parameter is not used, the
+hive object is taken from get_shared_hive_instance().</p>
+<p><a class="reference internal" href="bhive.instance.html#bhive.instance.shared_hive_instance" title="bhive.instance.shared_hive_instance"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.instance.shared_hive_instance()</span></code></a> returns a global instance of hive.
+It can be set by <a class="reference internal" href="bhive.instance.html#bhive.instance.set_shared_hive_instance" title="bhive.instance.set_shared_hive_instance"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.instance.set_shared_hive_instance()</span></code></a> otherwise it is created
+on the first call.</p>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.instance</span> <span class="kn">import</span> <span class="n">set_shared_hive_instance</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">set_shared_hive_instance</span><span class="p">(</span><span class="n">hv</span><span class="p">)</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="wallet-and-keys">
+<h2>Wallet and Keys<a class="headerlink" href="#wallet-and-keys" title="Permalink to this headline">¶</a></h2>
+<p>Each account has the following keys:</p>
+<ul class="simple">
+<li><p>Posting key (allows accounts to post, vote, edit, rehive and follow/mute)</p></li>
+<li><p>Active key (allows accounts to transfer, power up/down, voting for witness, …)</p></li>
+<li><p>Memo key (Can be used to encrypt/decrypt memos)</p></li>
+<li><p>Owner key (The most important key, should not be used with bhive)</p></li>
+</ul>
+<p>Outgoing operation, which will be stored in the hive blockchain, have to be
+signed by a private key. E.g. Comment or Vote operation need to be signed by the posting key
+of the author or upvoter. Private keys can be provided to bhive temporary or can be
+stored encrypted in a sql-database (wallet).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before using the wallet the first time, it has to be created and a password has
+to set. The wallet content is available to bhivepy and all python scripts, which have
+access to the sql database file.</p>
+</div>
+<div class="section" id="creating-a-wallet">
+<h3>Creating a wallet<a class="headerlink" href="#creating-a-wallet" title="Permalink to this headline">¶</a></h3>
+<p><code class="docutils literal notranslate"><span class="pre">hive.wallet.wipe(True)</span></code> is only necessary when there was already an wallet created.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">wipe</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-keys-to-the-wallet">
+<h3>Adding keys to the wallet<a class="headerlink" href="#adding-keys-to-the-wallet" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">addPrivateKey</span><span class="p">(</span><span class="s2">&quot;xxxxxxx&quot;</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">addPrivateKey</span><span class="p">(</span><span class="s2">&quot;xxxxxxx&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-the-keys-in-the-wallet">
+<h3>Using the keys in the wallet<a class="headerlink" href="#using-the-keys-in-the-wallet" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;&lt;to&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;amount&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;asset&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;memo&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="private-keys-can-also-set-temporary">
+<h3>Private keys can also set temporary<a class="headerlink" href="#private-keys-can-also-set-temporary" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;xxxxxxxxx&quot;</span><span class="p">])</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;&lt;to&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;amount&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;asset&gt;&quot;</span><span class="p">,</span> <span class="s2">&quot;&lt;memo&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="receiving-information-about-blocks-accounts-votes-comments-market-and-witness">
+<h2>Receiving information about blocks, accounts, votes, comments, market and witness<a class="headerlink" href="#receiving-information-about-blocks-accounts-votes-comments-market-and-witness" title="Permalink to this headline">¶</a></h2>
+<p>Receive all Blocks from the Blockchain</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.blockchain</span> <span class="kn">import</span> <span class="n">Blockchain</span>
+<span class="n">blockchain</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">op</span> <span class="ow">in</span> <span class="n">blockchain</span><span class="o">.</span><span class="n">stream</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">op</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Access one Block</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.block</span> <span class="kn">import</span> <span class="n">Block</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Block</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Access an account</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">balances</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">account</span><span class="o">.</span><span class="n">history</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>A single vote</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.vote</span> <span class="kn">import</span> <span class="n">Vote</span>
+<span class="n">vote</span> <span class="o">=</span> <span class="n">Vote</span><span class="p">(</span><span class="sa">u</span><span class="s2">&quot;@gtg/ffdhu-gtg-witness-log|gandalf&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">vote</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>All votes from an account</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.vote</span> <span class="kn">import</span> <span class="n">AccountVotes</span>
+<span class="n">allVotes</span> <span class="o">=</span> <span class="n">AccountVotes</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Access a post</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="n">comment</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="s2">&quot;@gtg/ffdhu-gtg-witness-log&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">comment</span><span class="p">[</span><span class="s2">&quot;active_votes&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Access the market</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="n">market</span> <span class="o">=</span> <span class="n">Market</span><span class="p">(</span><span class="s2">&quot;HBD:HIVE&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">market</span><span class="o">.</span><span class="n">ticker</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Access a witness</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witness</span>
+<span class="n">witness</span> <span class="o">=</span> <span class="n">Witness</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">witness</span><span class="o">.</span><span class="n">is_active</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sending-transaction-to-the-blockchain">
+<h2>Sending transaction to the blockchain<a class="headerlink" href="#sending-transaction-to-the-blockchain" title="Permalink to this headline">¶</a></h2>
+<p>Sending a Transfer</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;null&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HBD&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Upvote a post</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">comment</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="s2">&quot;@gtg/ffdhu-gtg-witness-log&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span><span class="p">)</span>
+<span class="n">comment</span><span class="o">.</span><span class="n">upvote</span><span class="p">(</span><span class="n">weight</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">voter</span><span class="o">=</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Publish a post to the blockchain</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">post</span><span class="p">(</span><span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;body&quot;</span><span class="p">,</span> <span class="n">author</span><span class="o">=</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">],</span> <span class="n">self_vote</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sell HIVE on the market</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="n">market</span> <span class="o">=</span> <span class="n">Market</span><span class="p">(</span><span class="s2">&quot;HBD:HIVE&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">market</span><span class="o">.</span><span class="n">ticker</span><span class="p">())</span>
+<span class="n">market</span><span class="o">.</span><span class="n">hive</span><span class="o">.</span><span class="n">wallet</span><span class="o">.</span><span class="n">unlock</span><span class="p">(</span><span class="s2">&quot;wallet-passphrase&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">market</span><span class="o">.</span><span class="n">sell</span><span class="p">(</span><span class="mi">300</span><span class="p">,</span> <span class="mi">100</span><span class="p">))</span>  <span class="c1"># sell 100 HIVE for 300 HIVE/HBD</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

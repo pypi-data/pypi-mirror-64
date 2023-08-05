@@ -1,0 +1,703 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.discussions module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.exceptions module" href="bhive.exceptions.html" />
+    <link rel="prev" title="bhive.conveyor module" href="bhive.conveyor.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.discussions module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.discussions.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.discussions">
+<span id="bhive-discussions-module"></span><h1>bhive.discussions module<a class="headerlink" href="#module-bhive.discussions" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.discussions.Comment_discussions_by_payout">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Comment_discussions_by_payout</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Comment_discussions_by_payout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get comment_discussions_by_payout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter for
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Comment_discussions_by_payout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Comment_discussions_by_payout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions</code><span class="sig-paren">(</span><em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Get Discussions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bhive.discussions.Discussions.get_discussions">
+<code class="sig-name descname">get_discussions</code><span class="sig-paren">(</span><em class="sig-param">discussion_type</em>, <em class="sig-param">discussion_query</em>, <em class="sig-param">limit=1000</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions.get_discussions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get Discussions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_type</strong> (<em>str</em>) – Defines the used discussion query</p></li>
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter for
+searching posts</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">51</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">)</span>
+<span class="n">discussions</span> <span class="o">=</span> <span class="n">Discussions</span><span class="p">()</span>
+<span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">discussions</span><span class="o">.</span><span class="n">get_discussions</span><span class="p">(</span><span class="s2">&quot;tags&quot;</span><span class="p">,</span> <span class="n">query</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">200</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">((</span><span class="s2">&quot;</span><span class="si">%d</span><span class="s2">. &quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">count</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">d</span><span class="p">))</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_active">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_active</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_active" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>get_discussions_by_active</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive() instance to use when accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_active</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_active</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_author_before_date">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_author_before_date</code><span class="sig-paren">(</span><em class="sig-param">author=''</em>, <em class="sig-param">start_permlink=''</em>, <em class="sig-param">before_date='1970-01-01T00:00:00'</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_author_before_date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get Discussions by author before date</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To retrieve discussions before date, the time of creation
+of the discussion &#64;author/start_permlink must be older than
+the specified before_date parameter.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>author</strong> (<em>str</em>) – Defines the author <em>(required)</em></p></li>
+<li><p><strong>start_permlink</strong> (<em>str</em>) – Defines the permlink of a starting discussion</p></li>
+<li><p><strong>before_date</strong> (<em>str</em>) – Defines the before date for query</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – Defines the limit of discussions</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_author_before_date</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_author_before_date</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">author</span><span class="o">=</span><span class="s2">&quot;gtg&quot;</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_blog">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_blog</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_blog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by blog</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts, tag musst be set to a username</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_blog</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_blog</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_cashout">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_cashout</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_cashout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions_by_cashout. This query seems to be broken at the moment.
+The output is always empty.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_cashout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_cashout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_children">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_children</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_children" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by children</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_children</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_children</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_comments">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_comments</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_comments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by comments</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts, start_author and start_permlink must be set.</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_comments</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_author</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">start_permlink</span><span class="o">=</span><span class="s2">&quot;firstpost&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_comments</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_created">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_created</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_created" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions_by_created</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter for
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_created</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_created</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_feed">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_feed</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by feed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts, tag musst be set to a username</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_feed</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_feed</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_hot">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_hot</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_hot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by hot</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_hot</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_hot</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_promoted">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_promoted</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_promoted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions by promoted</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_promoted</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_promoted</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_trending">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_trending</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_trending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get Discussions by trending</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter for
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_trending</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hive&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_trending</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Discussions_by_votes">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Discussions_by_votes</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Discussions_by_votes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get discussions_by_votes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Discussions_by_votes</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Discussions_by_votes</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Post_discussions_by_payout">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Post_discussions_by_payout</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Post_discussions_by_payout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Get post_discussions_by_payout</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter for
+searching posts</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Post_discussions_by_payout</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Post_discussions_by_payout</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Query">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Query</code><span class="sig-paren">(</span><em class="sig-param">limit=0</em>, <em class="sig-param">tag=''</em>, <em class="sig-param">truncate_body=0</em>, <em class="sig-param">filter_tags=[]</em>, <em class="sig-param">select_authors=[]</em>, <em class="sig-param">select_tags=[]</em>, <em class="sig-param">start_author=None</em>, <em class="sig-param">start_permlink=None</em>, <em class="sig-param">start_tag=None</em>, <em class="sig-param">parent_author=None</em>, <em class="sig-param">parent_permlink=None</em>, <em class="sig-param">start_parent_author=None</em>, <em class="sig-param">before_date=None</em>, <em class="sig-param">author=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Query" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>Query to be used for all discussion queries</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – limits the number of posts</p></li>
+<li><p><strong>tag</strong> (<em>str</em>) – tag query</p></li>
+<li><p><strong>truncate_body</strong> (<em>int</em>) – </p></li>
+<li><p><strong>filter_tags</strong> (<em>array</em>) – </p></li>
+<li><p><strong>select_authors</strong> (<em>array</em>) – </p></li>
+<li><p><strong>select_tags</strong> (<em>array</em>) – </p></li>
+<li><p><strong>start_author</strong> (<em>str</em>) – </p></li>
+<li><p><strong>start_permlink</strong> (<em>str</em>) – </p></li>
+<li><p><strong>start_tag</strong> (<em>str</em>) – </p></li>
+<li><p><strong>parent_author</strong> (<em>str</em>) – </p></li>
+<li><p><strong>parent_permlink</strong> (<em>str</em>) – </p></li>
+<li><p><strong>start_parent_author</strong> (<em>str</em>) – </p></li>
+<li><p><strong>before_date</strong> (<em>str</em>) – </p></li>
+<li><p><strong>author</strong> (<em>str</em>) – Author (see Discussions_by_author_before_date)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">tag</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Replies_by_last_update">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Replies_by_last_update</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Replies_by_last_update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Returns a list of replies by last update</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts start_parent_author and start_permlink must be set.</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Replies_by_last_update</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_parent_author</span><span class="o">=</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">start_permlink</span><span class="o">=</span><span class="s2">&quot;firstpost&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Replies_by_last_update</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.discussions.Trending_tags">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.discussions.</code><code class="sig-name descname">Trending_tags</code><span class="sig-paren">(</span><em class="sig-param">discussion_query</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.discussions.Trending_tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Returns the list of trending tags.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>discussion_query</strong> (<a class="reference internal" href="#bhive.discussions.Query" title="bhive.discussions.Query"><em>Query</em></a>) – Defines the parameter
+searching posts, start_tag can be set.</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.discussions</span> <span class="kn">import</span> <span class="n">Query</span><span class="p">,</span> <span class="n">Trending_tags</span>
+<span class="n">q</span> <span class="o">=</span> <span class="n">Query</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">start_tag</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">Trending_tags</span><span class="p">(</span><span class="n">q</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.exceptions.html" class="btn btn-neutral float-right" title="bhive.exceptions module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.conveyor.html" class="btn btn-neutral float-left" title="bhive.conveyor module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

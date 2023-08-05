@@ -1,0 +1,2750 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhivepy CLI &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Configuration" href="configuration.html" />
+    <link rel="prev" title="Tutorials" href="tutorials.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">bhivepy CLI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-wallet">Using the Wallet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-commands">Common Commands</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-defaults">Setting Defaults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">Commands</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bhivepy">bhivepy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-addkey">addkey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-addtoken">addtoken</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-allow">allow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-approvewitness">approvewitness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-balance">balance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-beneficiaries">beneficiaries</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-broadcast">broadcast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-buy">buy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-cancel">cancel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-changewalletpassphrase">changewalletpassphrase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-claimaccount">claimaccount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-claimreward">claimreward</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-config">config</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-convert">convert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-createwallet">createwallet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-curation">curation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-currentnode">currentnode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-customjson">customjson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-delegate">delegate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-delete">delete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-delkey">delkey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-delprofile">delprofile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-deltoken">deltoken</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-disallow">disallow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-disapprovewitness">disapprovewitness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-downvote">downvote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-featureflags">featureflags</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-follow">follow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-follower">follower</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-following">following</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-importaccount">importaccount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-info">info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-interest">interest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-keygen">keygen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-listaccounts">listaccounts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-listkeys">listkeys</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-listtoken">listtoken</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-mute">mute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-muter">muter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-muting">muting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-newaccount">newaccount</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-nextnode">nextnode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-openorders">openorders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-orderbook">orderbook</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-parsewif">parsewif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-pending">pending</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-permissions">permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-pingnode">pingnode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-post">post</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-power">power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-powerdown">powerdown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-powerdownroute">powerdownroute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-powerup">powerup</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-pricehistory">pricehistory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-rehive">rehive</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-reply">reply</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-rewards">rewards</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-sell">sell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-set">set</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-setprofile">setprofile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-sign">sign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-ticker">ticker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-tradehistory">tradehistory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-transfer">transfer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-unfollow">unfollow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-updatememokey">updatememokey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-updatenodes">updatenodes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-uploadimage">uploadimage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-upvote">upvote</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-userdata">userdata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-verify">verify</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-votes">votes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-walletinfo">walletinfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witness">witness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnesscreate">witnesscreate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnessdisable">witnessdisable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnessenable">witnessenable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnesses">witnesses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnessfeed">witnessfeed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnessproperties">witnessproperties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bhivepy-witnessupdate">witnessupdate</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bhivepy-help">bhivepy –help</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">bhive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>bhivepy CLI</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="bhivepy-cli">
+<h1>bhivepy CLI<a class="headerlink" href="#bhivepy-cli" title="Permalink to this headline">¶</a></h1>
+<p><cite>bhivepy</cite> is a convenient CLI utility that enables you to manage your wallet, transfer funds, check
+balances and more.</p>
+<div class="section" id="using-the-wallet">
+<h2>Using the Wallet<a class="headerlink" href="#using-the-wallet" title="Permalink to this headline">¶</a></h2>
+<p><cite>bhivepy</cite> lets you leverage your BIP38 encrypted wallet to perform various actions on your accounts.</p>
+<p>The first time you use <cite>bhivepy</cite>, you will be prompted to enter a password. This password will be used to encrypt
+the <cite>bhivepy</cite> wallet, which contains your private keys.</p>
+<p>You can change the password via <cite>changewalletpassphrase</cite> command.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">changewalletpassphrase</span>
+</pre></div>
+</div>
+<p>From this point on, every time an action requires your private keys, you will be prompted ot enter
+this password (from CLI as well as while using <cite>hive</cite> library).</p>
+<p>To bypass password entry, you can set an environment variable <code class="docutils literal notranslate"><span class="pre">UNLOCK</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">UNLOCK</span><span class="o">=</span><span class="n">mysecretpassword</span> <span class="n">bhivepy</span> <span class="n">transfer</span> <span class="o">&lt;</span><span class="n">recipient_name</span><span class="o">&gt;</span> <span class="mi">100</span> <span class="n">HIVE</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="common-commands">
+<h2>Common Commands<a class="headerlink" href="#common-commands" title="Permalink to this headline">¶</a></h2>
+<p>First, you may like to import your Hive account:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">importaccount</span>
+</pre></div>
+</div>
+<p>You can also import individual private keys:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">addkey</span> <span class="o">&lt;</span><span class="n">private_key</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Listing accounts:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">listaccounts</span>
+</pre></div>
+</div>
+<p>Show balances:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">balance</span> <span class="n">account_name1</span> <span class="n">account_name2</span>
+</pre></div>
+</div>
+<p>Sending funds:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">transfer</span> <span class="o">--</span><span class="n">account</span> <span class="o">&lt;</span><span class="n">account_name</span><span class="o">&gt;</span> <span class="o">&lt;</span><span class="n">recipient_name</span><span class="o">&gt;</span> <span class="mi">100</span> <span class="n">HIVE</span> <span class="n">memo</span>
+</pre></div>
+</div>
+<p>Upvoting a post:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">upvote</span> <span class="o">--</span><span class="n">account</span> <span class="o">&lt;</span><span class="n">account_name</span><span class="o">&gt;</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">hive</span><span class="o">.</span><span class="n">blog</span><span class="o">/</span><span class="n">funny</span><span class="o">/</span><span class="nd">@mynameisbrian</span><span class="o">/</span><span class="n">the</span><span class="o">-</span><span class="n">content</span><span class="o">-</span><span class="n">stand</span><span class="o">-</span><span class="n">a</span><span class="o">-</span><span class="n">comic</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="setting-defaults">
+<h2>Setting Defaults<a class="headerlink" href="#setting-defaults" title="Permalink to this headline">¶</a></h2>
+<p>For a more convenient use of <code class="docutils literal notranslate"><span class="pre">bhivepy</span></code> as well as the <code class="docutils literal notranslate"><span class="pre">bhive</span></code> library, you can set some defaults.
+This is especially useful if you have a single Hive account.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="nb">set</span> <span class="n">default_account</span> <span class="n">test</span>
+<span class="n">bhivepy</span> <span class="nb">set</span> <span class="n">default_vote_weight</span> <span class="mi">100</span>
+
+<span class="n">bhivepy</span> <span class="n">config</span>
+ <span class="o">+---------------------+--------+</span>
+ <span class="o">|</span> <span class="n">Key</span>                 <span class="o">|</span> <span class="n">Value</span>  <span class="o">|</span>
+ <span class="o">+---------------------+--------+</span>
+ <span class="o">|</span> <span class="n">default_account</span>     <span class="o">|</span> <span class="n">test</span>   <span class="o">|</span>
+ <span class="o">|</span> <span class="n">default_vote_weight</span> <span class="o">|</span> <span class="mi">100</span>    <span class="o">|</span>
+ <span class="o">+---------------------+--------+</span>
+</pre></div>
+</div>
+<p>If you’ve set up your <cite>default_account</cite>, you can now send funds by omitting this field:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bhivepy</span> <span class="n">transfer</span> <span class="o">&lt;</span><span class="n">recipient_name</span><span class="o">&gt;</span> <span class="mi">100</span> <span class="n">HIVE</span> <span class="n">memo</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="bhivepy">
+<h3>bhivepy<a class="headerlink" href="#bhivepy" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy <span class="o">[</span>OPTIONS<span class="o">]</span> COMMAND1 <span class="o">[</span>ARGS<span class="o">]</span>... <span class="o">[</span>COMMAND2 <span class="o">[</span>ARGS<span class="o">]</span>...<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-n">
+<code class="sig-name descname">-n</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--node</code><code class="sig-prename descclassname"> &lt;node&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>URL for public Hive API (e.g. <a class="reference external" href="https://api.hive.blog">https://api.hive.blog</a>)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-o">
+<code class="sig-name descname">-o</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--offline</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-o" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prevent connecting to network</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--no-broadcast</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not broadcast</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--no-wallet</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do not load the wallet</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-x">
+<code class="sig-name descname">-x</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--unsigned</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Nothing will be signed</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--create-link</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates hiveconnect links from all broadcast operations</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--hiveconnect</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses a hiveconnect token to broadcast (only broadcast operation with posting permission)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-e">
+<code class="sig-name descname">-e</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--expires</code><code class="sig-prename descclassname"> &lt;expires&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-e" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delay in seconds until transactions are supposed to expire(defaults to 60)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-v">
+<code class="sig-name descname">-v</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--verbose</code><code class="sig-prename descclassname"> &lt;verbose&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verbosity</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-version">
+<code class="sig-name descname">--version</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the version and exit.</p>
+</dd></dl>
+
+<div class="section" id="bhivepy-addkey">
+<h4>addkey<a class="headerlink" href="#bhivepy-addkey" title="Permalink to this headline">¶</a></h4>
+<p>Add key to wallet</p>
+<p>When no [OPTION] is given, a password prompt for unlocking the wallet
+and a prompt for entering the private key are shown.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy addkey <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-addkey-unsafe-import-key">
+<code class="sig-name descname">--unsafe-import-key</code><code class="sig-prename descclassname"> &lt;unsafe_import_key&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-addkey-unsafe-import-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Private key to import to wallet (unsafe, unless shell history is deleted afterwards)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-addtoken">
+<h4>addtoken<a class="headerlink" href="#bhivepy-addtoken" title="Permalink to this headline">¶</a></h4>
+<p>Add key to wallet</p>
+<p>When no [OPTION] is given, a password prompt for unlocking the wallet
+and a prompt for entering the private key are shown.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy addtoken <span class="o">[</span>OPTIONS<span class="o">]</span> NAME
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-addtoken-unsafe-import-token">
+<code class="sig-name descname">--unsafe-import-token</code><code class="sig-prename descclassname"> &lt;unsafe_import_token&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-addtoken-unsafe-import-token" title="Permalink to this definition">¶</a></dt>
+<dd><p>Private key to import to wallet (unsafe, unless shell history is deleted afterwards)</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-addtoken-arg-name">
+<code class="sig-name descname">NAME</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-addtoken-arg-name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-allow">
+<h4>allow<a class="headerlink" href="#bhivepy-allow" title="Permalink to this headline">¶</a></h4>
+<p>Allow an account/key to interact with your account</p>
+<dl class="simple">
+<dt>foreign_account: The account or key that will be allowed to interact with account.</dt><dd><p>When not given, password will be asked, from which a public key is derived.
+This derived key will then interact with your account.</p>
+</dd>
+</dl>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy allow <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FOREIGN_ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-allow-permission">
+<code class="sig-name descname">--permission</code><code class="sig-prename descclassname"> &lt;permission&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-allow-permission" title="Permalink to this definition">¶</a></dt>
+<dd><p>The permission to grant (defaults to “posting”)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-allow-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-allow-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>The account to allow action for</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-allow-weight">
+<code class="sig-name descname">--weight</code><code class="sig-prename descclassname"> &lt;weight&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-allow-weight" title="Permalink to this definition">¶</a></dt>
+<dd><p>The weight to use instead of the (full) threshold. If the weight is smaller than the threshold, additional signatures are required</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-allow-threshold">
+<code class="sig-name descname">--threshold</code><code class="sig-prename descclassname"> &lt;threshold&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-allow-threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>The permission’s threshold that needs to be reached by signatures to be able to interact</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-allow-arg-foreign-account">
+<code class="sig-name descname">FOREIGN_ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-allow-arg-foreign-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-approvewitness">
+<h4>approvewitness<a class="headerlink" href="#bhivepy-approvewitness" title="Permalink to this headline">¶</a></h4>
+<p>Approve a witnesses</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy approvewitness <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-approvewitness-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-approvewitness-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-approvewitness-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-approvewitness-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-balance">
+<h4>balance<a class="headerlink" href="#bhivepy-balance" title="Permalink to this headline">¶</a></h4>
+<p>Shows balance</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy balance <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-balance-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-balance-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-beneficiaries">
+<h4>beneficiaries<a class="headerlink" href="#bhivepy-beneficiaries" title="Permalink to this headline">¶</a></h4>
+<p>Set beneficaries</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy beneficiaries <span class="o">[</span>OPTIONS<span class="o">]</span> AUTHORPERM <span class="o">[</span>BENEFICIARIES<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-beneficiaries-arg-authorperm">
+<code class="sig-name descname">AUTHORPERM</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-beneficiaries-arg-authorperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-beneficiaries-arg-beneficiaries">
+<code class="sig-name descname">BENEFICIARIES</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-beneficiaries-arg-beneficiaries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-broadcast">
+<h4>broadcast<a class="headerlink" href="#bhivepy-broadcast" title="Permalink to this headline">¶</a></h4>
+<p>broadcast a signed transaction</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy broadcast <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-broadcast-file">
+<code class="sig-name descname">--file</code><code class="sig-prename descclassname"> &lt;file&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-broadcast-file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load transaction from file. If “-“, read from stdin (defaults to “-“)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-buy">
+<h4>buy<a class="headerlink" href="#bhivepy-buy" title="Permalink to this headline">¶</a></h4>
+<p>Buy HIVE or HBD from the internal market</p>
+<p>Limit buy price denoted in (HBD per HIVE)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy buy <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT ASSET <span class="o">[</span>PRICE<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-buy-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-buy-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Buy with this account (defaults to “default_account”)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-buy-orderid">
+<code class="sig-name descname">--orderid</code><code class="sig-prename descclassname"> &lt;orderid&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-buy-orderid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an orderid</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-buy-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-buy-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-buy-arg-asset">
+<code class="sig-name descname">ASSET</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-buy-arg-asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-buy-arg-price">
+<code class="sig-name descname">PRICE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-buy-arg-price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-cancel">
+<h4>cancel<a class="headerlink" href="#bhivepy-cancel" title="Permalink to this headline">¶</a></h4>
+<p>Cancel order in the internal market</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy cancel <span class="o">[</span>OPTIONS<span class="o">]</span> ORDERID
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-cancel-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-cancel-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sell with this account (defaults to “default_account”)</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-cancel-arg-orderid">
+<code class="sig-name descname">ORDERID</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-cancel-arg-orderid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-changewalletpassphrase">
+<h4>changewalletpassphrase<a class="headerlink" href="#bhivepy-changewalletpassphrase" title="Permalink to this headline">¶</a></h4>
+<p>Change wallet password</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy changewalletpassphrase <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bhivepy-claimaccount">
+<h4>claimaccount<a class="headerlink" href="#bhivepy-claimaccount" title="Permalink to this headline">¶</a></h4>
+<p>Claim account for claimed account creation.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy claimaccount <span class="o">[</span>OPTIONS<span class="o">]</span> CREATOR
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimaccount-fee">
+<code class="sig-name descname">--fee</code><code class="sig-prename descclassname"> &lt;fee&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-claimaccount-fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>When fee is 0 (default) a subsidized account is claimed and can be created later with create_claimed_account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimaccount-n">
+<code class="sig-name descname">-n</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--number</code><code class="sig-prename descclassname"> &lt;number&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-claimaccount-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Number of subsidized accounts to be claimed (default = 1), when fee = 0 HIVE</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimaccount-arg-creator">
+<code class="sig-name descname">CREATOR</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-claimaccount-arg-creator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-claimreward">
+<h4>claimreward<a class="headerlink" href="#bhivepy-claimreward" title="Permalink to this headline">¶</a></h4>
+<p>Claim reward balances</p>
+<p>By default, this will claim <code class="docutils literal notranslate"><span class="pre">all</span></code> outstanding balances.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy claimreward <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-reward-hive">
+<code class="sig-name descname">--reward_hive</code><code class="sig-prename descclassname"> &lt;reward_hive&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-reward-hive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Amount of HIVE you would like to claim</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-reward-hbd">
+<code class="sig-name descname">--reward_hbd</code><code class="sig-prename descclassname"> &lt;reward_hbd&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-reward-hbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Amount of HBD you would like to claim</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-reward-vests">
+<code class="sig-name descname">--reward_vests</code><code class="sig-prename descclassname"> &lt;reward_vests&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-reward-vests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Amount of VESTS you would like to claim</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-claim-all-hive">
+<code class="sig-name descname">--claim_all_hive</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-claim-all-hive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim all HIVE, overwrites reward_hive</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-claim-all-hbd">
+<code class="sig-name descname">--claim_all_hbd</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-claim-all-hbd" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim all HBD, overwrites reward_hbd</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-claim-all-vests">
+<code class="sig-name descname">--claim_all_vests</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-claim-all-vests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim all VESTS, overwrites reward_vests</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-claimreward-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-claimreward-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-config">
+<h4>config<a class="headerlink" href="#bhivepy-config" title="Permalink to this headline">¶</a></h4>
+<p>Shows local configuration</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy config <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bhivepy-convert">
+<h4>convert<a class="headerlink" href="#bhivepy-convert" title="Permalink to this headline">¶</a></h4>
+<p>Convert HIVEDollars to Hive (takes a week to settle)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy convert <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-convert-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-convert-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Powerup from this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-convert-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-convert-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-createwallet">
+<h4>createwallet<a class="headerlink" href="#bhivepy-createwallet" title="Permalink to this headline">¶</a></h4>
+<p>Create new wallet with a new password</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy createwallet <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-createwallet-wipe">
+<code class="sig-name descname">--wipe</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-createwallet-wipe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Wipe old wallet without prompt.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-curation">
+<h4>curation<a class="headerlink" href="#bhivepy-curation" title="Permalink to this headline">¶</a></h4>
+<p>Lists curation rewards of all votes for authorperm</p>
+<p>When authorperm is empty or “all”, the curation rewards
+for all account votes are shown.</p>
+<p>authorperm can also be a number. e.g. 5 is equivalent to
+the fifth account vote in the given time duration (default is 7 days)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy curation <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>AUTHORPERM<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only curation for this account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-m">
+<code class="sig-name descname">-m</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--limit</code><code class="sig-prename descclassname"> &lt;limit&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-m" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only the first minutes</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-v">
+<code class="sig-name descname">-v</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--min-vote</code><code class="sig-prename descclassname"> &lt;min_vote&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only votes higher than the given value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--max-vote</code><code class="sig-prename descclassname"> &lt;max_vote&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only votes lower than the given value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-x">
+<code class="sig-name descname">-x</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--min-performance</code><code class="sig-prename descclassname"> &lt;min_performance&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-x" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only votes with performance higher than the given value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-y">
+<code class="sig-name descname">-y</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--max-performance</code><code class="sig-prename descclassname"> &lt;max_performance&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-y" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only votes with performance lower than the given value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-payout">
+<code class="sig-name descname">--payout</code><code class="sig-prename descclassname"> &lt;payout&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-payout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the curation for a potential payout in HBD as float</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-e">
+<code class="sig-name descname">-e</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--export</code><code class="sig-prename descclassname"> &lt;export&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-e" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results to HTML-file</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--short</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-curation-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only Curation without sum</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--length</code><code class="sig-prename descclassname"> &lt;length&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limits the permlink character length</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--permlink</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-curation-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the permlink for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--title</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-curation-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the title for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--days</code><code class="sig-prename descclassname"> &lt;days&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-curation-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit shown rewards by this amount of days (default: 7), max is 7 days.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-curation-arg-authorperm">
+<code class="sig-name descname">AUTHORPERM</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-curation-arg-authorperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-currentnode">
+<h4>currentnode<a class="headerlink" href="#bhivepy-currentnode" title="Permalink to this headline">¶</a></h4>
+<p>Sets the currently working node at the first place in the list</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy currentnode <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-currentnode-version">
+<code class="sig-name descname">--version</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-currentnode-version" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns only the raw version value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-currentnode-url">
+<code class="sig-name descname">--url</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-currentnode-url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns only the raw url value</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-customjson">
+<h4>customjson<a class="headerlink" href="#bhivepy-customjson" title="Permalink to this headline">¶</a></h4>
+<p>Broadcasts a custom json</p>
+<p>First parameter is the cusom json id, the second field is a json file or a json key value combination
+e.g. bhivepy customjson -a thecrazygm dw-heist username thecrazygm amount 100</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy customjson <span class="o">[</span>OPTIONS<span class="o">]</span> JSONID <span class="o">[</span>JSON_DATA<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-customjson-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-customjson-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>The account which broadcasts the custom_json</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-customjson-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--active</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-customjson-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>When set, the active key is used for broadcasting</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-customjson-arg-jsonid">
+<code class="sig-name descname">JSONID</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-customjson-arg-jsonid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-customjson-arg-json-data">
+<code class="sig-name descname">JSON_DATA</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-customjson-arg-json-data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-delegate">
+<h4>delegate<a class="headerlink" href="#bhivepy-delegate" title="Permalink to this headline">¶</a></h4>
+<p>Delegate (start delegating VESTS to another account)</p>
+<p>amount is in VESTS / Hive</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy delegate <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT TO_ACCOUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delegate-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-delegate-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate from this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delegate-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delegate-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-delegate-arg-to-account">
+<code class="sig-name descname">TO_ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delegate-arg-to-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-delete">
+<h4>delete<a class="headerlink" href="#bhivepy-delete" title="Permalink to this headline">¶</a></h4>
+<p>delete a post/comment</p>
+<p>POST is &#64;author/permlink</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy delete <span class="o">[</span>OPTIONS<span class="o">]</span> POST
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delete-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-delete-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Voter account name</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delete-arg-post">
+<code class="sig-name descname">POST</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delete-arg-post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-delkey">
+<h4>delkey<a class="headerlink" href="#bhivepy-delkey" title="Permalink to this headline">¶</a></h4>
+<p>Delete key from the wallet</p>
+<p>PUB is the public key from the private key
+which will be deleted from the wallet</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy delkey <span class="o">[</span>OPTIONS<span class="o">]</span> PUB
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delkey-confirm">
+<code class="sig-name descname">--confirm</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delkey-confirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Please confirm!</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delkey-arg-pub">
+<code class="sig-name descname">PUB</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delkey-arg-pub" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-delprofile">
+<h4>delprofile<a class="headerlink" href="#bhivepy-delprofile" title="Permalink to this headline">¶</a></h4>
+<p>Delete a variable in an account’s profile</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy delprofile <span class="o">[</span>OPTIONS<span class="o">]</span> VARIABLE...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delprofile-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-delprofile-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>delprofile as this user</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-delprofile-arg-variable">
+<code class="sig-name descname">VARIABLE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-delprofile-arg-variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-deltoken">
+<h4>deltoken<a class="headerlink" href="#bhivepy-deltoken" title="Permalink to this headline">¶</a></h4>
+<p>Delete name from the wallet</p>
+<p>name is the public name from the private token
+which will be deleted from the wallet</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy deltoken <span class="o">[</span>OPTIONS<span class="o">]</span> NAME
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-deltoken-confirm">
+<code class="sig-name descname">--confirm</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-deltoken-confirm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Please confirm!</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-deltoken-arg-name">
+<code class="sig-name descname">NAME</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-deltoken-arg-name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-disallow">
+<h4>disallow<a class="headerlink" href="#bhivepy-disallow" title="Permalink to this headline">¶</a></h4>
+<p>Remove allowance an account/key to interact with your account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy disallow <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>FOREIGN_ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-disallow-permission">
+<code class="sig-name descname">--permission</code><code class="sig-prename descclassname"> &lt;permission&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-disallow-permission" title="Permalink to this definition">¶</a></dt>
+<dd><p>The permission to grant (defaults to “posting”)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-disallow-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-disallow-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>The account to disallow action for</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-disallow-threshold">
+<code class="sig-name descname">--threshold</code><code class="sig-prename descclassname"> &lt;threshold&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-disallow-threshold" title="Permalink to this definition">¶</a></dt>
+<dd><p>The permission’s threshold that needs to be reached by signatures to be able to interact</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-disallow-arg-foreign-account">
+<code class="sig-name descname">FOREIGN_ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-disallow-arg-foreign-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-disapprovewitness">
+<h4>disapprovewitness<a class="headerlink" href="#bhivepy-disapprovewitness" title="Permalink to this headline">¶</a></h4>
+<p>Disapprove a witnesses</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy disapprovewitness <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-disapprovewitness-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-disapprovewitness-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Your account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-disapprovewitness-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-disapprovewitness-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-downvote">
+<h4>downvote<a class="headerlink" href="#bhivepy-downvote" title="Permalink to this headline">¶</a></h4>
+<p>Downvote a post/comment</p>
+<p>POST is &#64;author/permlink</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy downvote <span class="o">[</span>OPTIONS<span class="o">]</span> POST
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-downvote-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-downvote-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Voter account name</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-downvote-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--weight</code><code class="sig-prename descclassname"> &lt;weight&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-downvote-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downvote weight (from 0.1 to 100.0)</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-downvote-arg-post">
+<code class="sig-name descname">POST</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-downvote-arg-post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-featureflags">
+<h4>featureflags<a class="headerlink" href="#bhivepy-featureflags" title="Permalink to this headline">¶</a></h4>
+<p>Get the account’s feature flags.</p>
+<p>The request has to be signed by the requested account or an admin account.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy featureflags <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-featureflags-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--signing-account</code><code class="sig-prename descclassname"> &lt;signing_account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-featureflags-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signing account, when empty account is used.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-featureflags-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-featureflags-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-follow">
+<h4>follow<a class="headerlink" href="#bhivepy-follow" title="Permalink to this headline">¶</a></h4>
+<p>Follow another account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy follow <span class="o">[</span>OPTIONS<span class="o">]</span> FOLLOW
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-follow-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-follow-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follow from this account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-follow-what">
+<code class="sig-name descname">--what</code><code class="sig-prename descclassname"> &lt;what&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-follow-what" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follow these objects (defaults to [“blog”])</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-follow-arg-follow">
+<code class="sig-name descname">FOLLOW</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-follow-arg-follow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-follower">
+<h4>follower<a class="headerlink" href="#bhivepy-follower" title="Permalink to this headline">¶</a></h4>
+<p>Get information about followers</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy follower <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-follower-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-follower-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-following">
+<h4>following<a class="headerlink" href="#bhivepy-following" title="Permalink to this headline">¶</a></h4>
+<p>Get information about following</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy following <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-following-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-following-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-importaccount">
+<h4>importaccount<a class="headerlink" href="#bhivepy-importaccount" title="Permalink to this headline">¶</a></h4>
+<p>Import an account using a passphrase</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy importaccount <span class="o">[</span>OPTIONS<span class="o">]</span> ACCOUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-importaccount-roles">
+<code class="sig-name descname">--roles</code><code class="sig-prename descclassname"> &lt;roles&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-importaccount-roles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Import specified keys (owner, active, posting, memo).</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-importaccount-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-importaccount-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-info">
+<h4>info<a class="headerlink" href="#bhivepy-info" title="Permalink to this headline">¶</a></h4>
+<p>Show basic blockchain info</p>
+<p>General information about the blockchain, a block, an account,
+a post/comment and a public key</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy info <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>OBJECTS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-info-arg-objects">
+<code class="sig-name descname">OBJECTS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-info-arg-objects" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-interest">
+<h4>interest<a class="headerlink" href="#bhivepy-interest" title="Permalink to this headline">¶</a></h4>
+<p>Get information about interest payment</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy interest <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-interest-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-interest-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-keygen">
+<h4>keygen<a class="headerlink" href="#bhivepy-keygen" title="Permalink to this headline">¶</a></h4>
+<p>Creates a new random brain key and prints its derived private key and public key.
+The generated key is not stored.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy keygen <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-keygen-import-brain-key">
+<code class="sig-name descname">--import-brain-key</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-keygen-import-brain-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Imports a brain key and derives a private and public key</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-keygen-sequence">
+<code class="sig-name descname">--sequence</code><code class="sig-prename descclassname"> &lt;sequence&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-keygen-sequence" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sequence number, influences the derived private key. (default is 0)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-listaccounts">
+<h4>listaccounts<a class="headerlink" href="#bhivepy-listaccounts" title="Permalink to this headline">¶</a></h4>
+<p>Show stored accounts</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy listaccounts <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bhivepy-listkeys">
+<h4>listkeys<a class="headerlink" href="#bhivepy-listkeys" title="Permalink to this headline">¶</a></h4>
+<p>Show stored keys</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy listkeys <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bhivepy-listtoken">
+<h4>listtoken<a class="headerlink" href="#bhivepy-listtoken" title="Permalink to this headline">¶</a></h4>
+<p>Show stored token</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy listtoken <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bhivepy-mute">
+<h4>mute<a class="headerlink" href="#bhivepy-mute" title="Permalink to this headline">¶</a></h4>
+<p>Mute another account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy mute <span class="o">[</span>OPTIONS<span class="o">]</span> MUTE
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-mute-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-mute-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mute from this account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-mute-what">
+<code class="sig-name descname">--what</code><code class="sig-prename descclassname"> &lt;what&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-mute-what" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mute these objects (defaults to [“ignore”])</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-mute-arg-mute">
+<code class="sig-name descname">MUTE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-mute-arg-mute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-muter">
+<h4>muter<a class="headerlink" href="#bhivepy-muter" title="Permalink to this headline">¶</a></h4>
+<p>Get information about muter</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy muter <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-muter-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-muter-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-muting">
+<h4>muting<a class="headerlink" href="#bhivepy-muting" title="Permalink to this headline">¶</a></h4>
+<p>Get information about muting</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy muting <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-muting-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-muting-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-newaccount">
+<h4>newaccount<a class="headerlink" href="#bhivepy-newaccount" title="Permalink to this headline">¶</a></h4>
+<p>Create a new account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy newaccount <span class="o">[</span>OPTIONS<span class="o">]</span> ACCOUNTNAME
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account that pays the fee</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-owner">
+<code class="sig-name descname">--owner</code><code class="sig-prename descclassname"> &lt;owner&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-owner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Main owner key - when not given, a passphrase is used to create keys.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-active">
+<code class="sig-name descname">--active</code><code class="sig-prename descclassname"> &lt;active&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-active" title="Permalink to this definition">¶</a></dt>
+<dd><p>Active key - when not given, a passphrase is used to create keys.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-memo">
+<code class="sig-name descname">--memo</code><code class="sig-prename descclassname"> &lt;memo&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-memo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Memo key - when not given, a passphrase is used to create keys.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-posting">
+<code class="sig-name descname">--posting</code><code class="sig-prename descclassname"> &lt;posting&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-posting" title="Permalink to this definition">¶</a></dt>
+<dd><p>posting key - when not given, a passphrase is used to create keys.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-c">
+<code class="sig-name descname">-c</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--create-claimed-account</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Instead of paying the account creation fee a subsidized account is created.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-newaccount-arg-accountname">
+<code class="sig-name descname">ACCOUNTNAME</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-newaccount-arg-accountname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-nextnode">
+<h4>nextnode<a class="headerlink" href="#bhivepy-nextnode" title="Permalink to this headline">¶</a></h4>
+<p>Uses the next node in list</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy nextnode <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-nextnode-results">
+<code class="sig-name descname">--results</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-nextnode-results" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows result of changing the node.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-openorders">
+<h4>openorders<a class="headerlink" href="#bhivepy-openorders" title="Permalink to this headline">¶</a></h4>
+<p>Show open orders</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy openorders <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-openorders-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-openorders-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-orderbook">
+<h4>orderbook<a class="headerlink" href="#bhivepy-orderbook" title="Permalink to this headline">¶</a></h4>
+<p>Obtain orderbook of the internal market</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy orderbook <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-chart">
+<code class="sig-name descname">--chart</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-chart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable charting</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--limit</code><code class="sig-prename descclassname"> &lt;limit&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit number of returned open orders (default 25)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-show-date">
+<code class="sig-name descname">--show-date</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-show-date" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show dates</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--width</code><code class="sig-prename descclassname"> &lt;width&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot width (default 75)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-h">
+<code class="sig-name descname">-h</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--height</code><code class="sig-prename descclassname"> &lt;height&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot height (default 15)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-orderbook-ascii">
+<code class="sig-name descname">--ascii</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-orderbook-ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only ascii symbols</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-parsewif">
+<h4>parsewif<a class="headerlink" href="#bhivepy-parsewif" title="Permalink to this headline">¶</a></h4>
+<p>Parse a WIF private key without importing</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy parsewif <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-parsewif-unsafe-import-key">
+<code class="sig-name descname">--unsafe-import-key</code><code class="sig-prename descclassname"> &lt;unsafe_import_key&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-parsewif-unsafe-import-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>WIF key to parse (unsafe, unless shell history is deleted afterwards)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-pending">
+<h4>pending<a class="headerlink" href="#bhivepy-pending" title="Permalink to this headline">¶</a></h4>
+<p>Lists pending rewards</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy pending <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNTS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-sum</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only the sum</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--post</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show pending post payout</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-c">
+<code class="sig-name descname">-c</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--comment</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show pending comments payout</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-v">
+<code class="sig-name descname">-v</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--curation</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows  pending curation</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--length</code><code class="sig-prename descclassname"> &lt;length&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-pending-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limits the permlink character length</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--author</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the author for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-e">
+<code class="sig-name descname">-e</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--permlink</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-e" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the permlink for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--title</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the title for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--days</code><code class="sig-prename descclassname"> &lt;days&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-pending-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit shown rewards by this amount of days (default: 7), max is 7 days.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-pending-arg-accounts">
+<code class="sig-name descname">ACCOUNTS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pending-arg-accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-permissions">
+<h4>permissions<a class="headerlink" href="#bhivepy-permissions" title="Permalink to this headline">¶</a></h4>
+<p>Show permissions of an account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy permissions <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-permissions-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-permissions-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-pingnode">
+<h4>pingnode<a class="headerlink" href="#bhivepy-pingnode" title="Permalink to this headline">¶</a></h4>
+<p>Returns the answer time in milliseconds</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy pingnode <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-pingnode-raw">
+<code class="sig-name descname">--raw</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pingnode-raw" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns only the raw value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pingnode-sort">
+<code class="sig-name descname">--sort</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pingnode-sort" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort all nodes by ping value</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pingnode-remove">
+<code class="sig-name descname">--remove</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pingnode-remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove node with errors from list</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pingnode-threading">
+<code class="sig-name descname">--threading</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pingnode-threading" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use a thread for each node</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-post">
+<h4>post<a class="headerlink" href="#bhivepy-post" title="Permalink to this headline">¶</a></h4>
+<p>broadcasts a post/comment</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy post <span class="o">[</span>OPTIONS<span class="o">]</span> BODY
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account are you posting from</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--title</code><code class="sig-prename descclassname"> &lt;title&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Title of the post</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--permlink</code><code class="sig-prename descclassname"> &lt;permlink&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Manually set the permlink (optional)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-tags">
+<code class="sig-name descname">--tags</code><code class="sig-prename descclassname"> &lt;tags&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-tags" title="Permalink to this definition">¶</a></dt>
+<dd><p>A komma separated list of tags to go with the post.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-reply-identifier">
+<code class="sig-name descname">--reply_identifier</code><code class="sig-prename descclassname"> &lt;reply_identifier&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-reply-identifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identifier of the parent post/comment, when set a comment is broadcasted</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-community">
+<code class="sig-name descname">--community</code><code class="sig-prename descclassname"> &lt;community&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-community" title="Permalink to this definition">¶</a></dt>
+<dd><p>Name of the community (optional)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-b">
+<code class="sig-name descname">-b</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--beneficiaries</code><code class="sig-prename descclassname"> &lt;beneficiaries&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Post beneficiaries (komma separated, e.g. a:10%,b:20%)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-percent-hive-dollars">
+<code class="sig-name descname">-b</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--percent-hive-dollars</code><code class="sig-prename descclassname"> &lt;percent_hive_dollars&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-percent-hive-dollars" title="Permalink to this definition">¶</a></dt>
+<dd><p>50% HBD /50% HP is 10000 (default), 100% HP is 0</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-max-accepted-payout">
+<code class="sig-name descname">-b</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--max-accepted-payout</code><code class="sig-prename descclassname"> &lt;max_accepted_payout&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-post-max-accepted-payout" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default is 1000000.000 [HBD]</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-no-parse-body">
+<code class="sig-name descname">--no-parse-body</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-post-no-parse-body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disable parsing of links, tags and images</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-post-arg-body">
+<code class="sig-name descname">BODY</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-post-arg-body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-power">
+<h4>power<a class="headerlink" href="#bhivepy-power" title="Permalink to this headline">¶</a></h4>
+<p>Shows vote power and bandwidth</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy power <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-power-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-power-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-powerdown">
+<h4>powerdown<a class="headerlink" href="#bhivepy-powerdown" title="Permalink to this headline">¶</a></h4>
+<p>Power down (start withdrawing VESTS from Hive POWER)</p>
+<p>amount is in VESTS</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy powerdown <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdown-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-powerdown-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Powerup from this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdown-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-powerdown-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-powerdownroute">
+<h4>powerdownroute<a class="headerlink" href="#bhivepy-powerdownroute" title="Permalink to this headline">¶</a></h4>
+<p>Setup a powerdown route</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy powerdownroute <span class="o">[</span>OPTIONS<span class="o">]</span> TO
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdownroute-percentage">
+<code class="sig-name descname">--percentage</code><code class="sig-prename descclassname"> &lt;percentage&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-powerdownroute-percentage" title="Permalink to this definition">¶</a></dt>
+<dd><p>The percent of the withdraw to go to the “to” account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdownroute-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-powerdownroute-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Powerup from this account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdownroute-auto-vest">
+<code class="sig-name descname">--auto_vest</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-powerdownroute-auto-vest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set to true if the from account should receive the VESTS asVESTS, or false if it should receive them as HIVE.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerdownroute-arg-to">
+<code class="sig-name descname">TO</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-powerdownroute-arg-to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-powerup">
+<h4>powerup<a class="headerlink" href="#bhivepy-powerup" title="Permalink to this headline">¶</a></h4>
+<p>Power up (vest HIVE as HIVE POWER)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy powerup <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerup-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-powerup-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Powerup from this account</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerup-to">
+<code class="sig-name descname">--to</code><code class="sig-prename descclassname"> &lt;to&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-powerup-to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Powerup this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-powerup-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-powerup-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-pricehistory">
+<h4>pricehistory<a class="headerlink" href="#bhivepy-pricehistory" title="Permalink to this headline">¶</a></h4>
+<p>Show price history</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy pricehistory <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-pricehistory-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--width</code><code class="sig-prename descclassname"> &lt;width&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-pricehistory-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot width (default 75)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pricehistory-h">
+<code class="sig-name descname">-h</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--height</code><code class="sig-prename descclassname"> &lt;height&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-pricehistory-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot height (default 15)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-pricehistory-ascii">
+<code class="sig-name descname">--ascii</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-pricehistory-ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only ascii symbols</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-rehive">
+<h4>rehive<a class="headerlink" href="#bhivepy-rehive" title="Permalink to this headline">¶</a></h4>
+<p>Rehive an existing post</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy rehive <span class="o">[</span>OPTIONS<span class="o">]</span> IDENTIFIER
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-rehive-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-rehive-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rehive as this user</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-rehive-arg-identifier">
+<code class="sig-name descname">IDENTIFIER</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rehive-arg-identifier" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-reply">
+<h4>reply<a class="headerlink" href="#bhivepy-reply" title="Permalink to this headline">¶</a></h4>
+<p>replies to a comment</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy reply <span class="o">[</span>OPTIONS<span class="o">]</span> AUTHORPERM BODY
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-reply-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-reply-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account are you posting from</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-reply-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--title</code><code class="sig-prename descclassname"> &lt;title&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-reply-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Title of the post</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-reply-arg-authorperm">
+<code class="sig-name descname">AUTHORPERM</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-reply-arg-authorperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-reply-arg-body">
+<code class="sig-name descname">BODY</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-reply-arg-body" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-rewards">
+<h4>rewards<a class="headerlink" href="#bhivepy-rewards" title="Permalink to this headline">¶</a></h4>
+<p>Lists received rewards</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy rewards <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNTS<span class="o">]</span>...
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-sum</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only the sum</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--post</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show post payout</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-c">
+<code class="sig-name descname">-c</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--comment</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-c" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show comments payout</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-v">
+<code class="sig-name descname">-v</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--curation</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-v" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows  curation</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--length</code><code class="sig-prename descclassname"> &lt;length&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-rewards-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limits the permlink character length</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--author</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the author for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-e">
+<code class="sig-name descname">-e</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--permlink</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-e" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the permlink for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--title</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the title for each entry</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--days</code><code class="sig-prename descclassname"> &lt;days&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-rewards-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit shown rewards by this amount of days (default: 7)</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-rewards-arg-accounts">
+<code class="sig-name descname">ACCOUNTS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-rewards-arg-accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument(s)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-sell">
+<h4>sell<a class="headerlink" href="#bhivepy-sell" title="Permalink to this headline">¶</a></h4>
+<p>Sell HIVE or HBD from the internal market</p>
+<p>Limit sell price denoted in (HBD per HIVE)</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy sell <span class="o">[</span>OPTIONS<span class="o">]</span> AMOUNT ASSET <span class="o">[</span>PRICE<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-sell-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-sell-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sell with this account (defaults to “default_account”)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-sell-orderid">
+<code class="sig-name descname">--orderid</code><code class="sig-prename descclassname"> &lt;orderid&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-sell-orderid" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set an orderid</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-sell-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-sell-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-sell-arg-asset">
+<code class="sig-name descname">ASSET</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-sell-arg-asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-sell-arg-price">
+<code class="sig-name descname">PRICE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-sell-arg-price" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-set">
+<h4>set<a class="headerlink" href="#bhivepy-set" title="Permalink to this headline">¶</a></h4>
+<p>Set default_account, default_vote_weight or nodes</p>
+<p>set [key] [value]</p>
+<p>Examples:</p>
+<p>Set the default vote weight to 50 %:
+set default_vote_weight 50</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy <span class="nb">set</span> <span class="o">[</span>OPTIONS<span class="o">]</span> KEY VALUE
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-set-arg-key">
+<code class="sig-name descname">KEY</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-set-arg-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-set-arg-value">
+<code class="sig-name descname">VALUE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-set-arg-value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-setprofile">
+<h4>setprofile<a class="headerlink" href="#bhivepy-setprofile" title="Permalink to this headline">¶</a></h4>
+<p>Set a variable in an account’s profile</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy setprofile <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>VARIABLE<span class="o">]</span> <span class="o">[</span>VALUE<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-setprofile-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-setprofile-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>setprofile as this user</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-setprofile-p">
+<code class="sig-name descname">-p</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--pair</code><code class="sig-prename descclassname"> &lt;pair&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-setprofile-p" title="Permalink to this definition">¶</a></dt>
+<dd><p>“Key=Value” pairs</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-setprofile-arg-variable">
+<code class="sig-name descname">VARIABLE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-setprofile-arg-variable" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-setprofile-arg-value">
+<code class="sig-name descname">VALUE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-setprofile-arg-value" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-sign">
+<h4>sign<a class="headerlink" href="#bhivepy-sign" title="Permalink to this headline">¶</a></h4>
+<p>Sign a provided transaction with available and required keys</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy sign <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-sign-i">
+<code class="sig-name descname">-i</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--file</code><code class="sig-prename descclassname"> &lt;file&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-sign-i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load transaction from file. If “-“, read from stdin (defaults to “-“)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-sign-o">
+<code class="sig-name descname">-o</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--outfile</code><code class="sig-prename descclassname"> &lt;outfile&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-sign-o" title="Permalink to this definition">¶</a></dt>
+<dd><p>Load transaction from file. If “-“, read from stdin (defaults to “-“)</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-ticker">
+<h4>ticker<a class="headerlink" href="#bhivepy-ticker" title="Permalink to this headline">¶</a></h4>
+<p>Show ticker</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy ticker <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-ticker-i">
+<code class="sig-name descname">-i</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--hbd-to-hive</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-ticker-i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show ticker in HBD/HIVE</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-tradehistory">
+<h4>tradehistory<a class="headerlink" href="#bhivepy-tradehistory" title="Permalink to this headline">¶</a></h4>
+<p>Show price history</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy tradehistory <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--days</code><code class="sig-prename descclassname"> &lt;days&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit the days of shown trade history (default 7)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-hours">
+<code class="sig-name descname">--hours</code><code class="sig-prename descclassname"> &lt;hours&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-hours" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit the intervall history intervall (default 2 hours)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-i">
+<code class="sig-name descname">-i</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--hbd-to-hive</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show ticker in HBD/HIVE</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-l">
+<code class="sig-name descname">-l</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--limit</code><code class="sig-prename descclassname"> &lt;limit&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-l" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit number of trades which is fetched at each intervall point (default 100)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--width</code><code class="sig-prename descclassname"> &lt;width&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot width (default 75)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-h">
+<code class="sig-name descname">-h</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--height</code><code class="sig-prename descclassname"> &lt;height&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot height (default 15)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-tradehistory-ascii">
+<code class="sig-name descname">--ascii</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-tradehistory-ascii" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only ascii symbols</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-transfer">
+<h4>transfer<a class="headerlink" href="#bhivepy-transfer" title="Permalink to this headline">¶</a></h4>
+<p>Transfer HBD/HIVE</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy transfer <span class="o">[</span>OPTIONS<span class="o">]</span> TO AMOUNT ASSET <span class="o">[</span>MEMO<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-transfer-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-transfer-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transfer from this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-transfer-arg-to">
+<code class="sig-name descname">TO</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-transfer-arg-to" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-transfer-arg-amount">
+<code class="sig-name descname">AMOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-transfer-arg-amount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-transfer-arg-asset">
+<code class="sig-name descname">ASSET</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-transfer-arg-asset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-transfer-arg-memo">
+<code class="sig-name descname">MEMO</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-transfer-arg-memo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-unfollow">
+<h4>unfollow<a class="headerlink" href="#bhivepy-unfollow" title="Permalink to this headline">¶</a></h4>
+<p>Unfollow/Unmute another account</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy unfollow <span class="o">[</span>OPTIONS<span class="o">]</span> UNFOLLOW
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-unfollow-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-unfollow-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>UnFollow/UnMute from this account</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-unfollow-arg-unfollow">
+<code class="sig-name descname">UNFOLLOW</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-unfollow-arg-unfollow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-updatememokey">
+<h4>updatememokey<a class="headerlink" href="#bhivepy-updatememokey" title="Permalink to this headline">¶</a></h4>
+<p>Update an account’s memo key</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy updatememokey <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatememokey-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-updatememokey-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>The account to updatememokey action for</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatememokey-key">
+<code class="sig-name descname">--key</code><code class="sig-prename descclassname"> &lt;key&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-updatememokey-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>The new memo key</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-updatenodes">
+<h4>updatenodes<a class="headerlink" href="#bhivepy-updatenodes" title="Permalink to this headline">¶</a></h4>
+<p>Update the nodelist from &#64;fullnodeupdate</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy updatenodes <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--show</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints the updated nodes</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--test</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Do change the node list, only print the newest nodes setup.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-h">
+<code class="sig-name descname">-h</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-https</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only https nodes.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-wss</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only websocket nodes.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-appbase</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only appbase nodes</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-updatenodes-n">
+<code class="sig-name descname">-n</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--only-non-appbase</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-updatenodes-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use only non-appbase nodes</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-uploadimage">
+<h4>uploadimage<a class="headerlink" href="#bhivepy-uploadimage" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy uploadimage <span class="o">[</span>OPTIONS<span class="o">]</span> IMAGE
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-uploadimage-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-uploadimage-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account name</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-uploadimage-n">
+<code class="sig-name descname">-n</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--image-name</code><code class="sig-prename descclassname"> &lt;image_name&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-uploadimage-n" title="Permalink to this definition">¶</a></dt>
+<dd><p>Image name</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-uploadimage-arg-image">
+<code class="sig-name descname">IMAGE</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-uploadimage-arg-image" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-upvote">
+<h4>upvote<a class="headerlink" href="#bhivepy-upvote" title="Permalink to this headline">¶</a></h4>
+<p>Upvote a post/comment</p>
+<p>POST is &#64;author/permlink</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy upvote <span class="o">[</span>OPTIONS<span class="o">]</span> POST
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-upvote-w">
+<code class="sig-name descname">-w</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--weight</code><code class="sig-prename descclassname"> &lt;weight&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-upvote-w" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vote weight (from 0.1 to 100.0)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-upvote-a">
+<code class="sig-name descname">-a</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--account</code><code class="sig-prename descclassname"> &lt;account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-upvote-a" title="Permalink to this definition">¶</a></dt>
+<dd><p>Voter account name</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-upvote-arg-post">
+<code class="sig-name descname">POST</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-upvote-arg-post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-userdata">
+<h4>userdata<a class="headerlink" href="#bhivepy-userdata" title="Permalink to this headline">¶</a></h4>
+<p>Get the account’s email address and phone number.</p>
+<p>The request has to be signed by the requested account or an admin account.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy userdata <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-userdata-s">
+<code class="sig-name descname">-s</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--signing-account</code><code class="sig-prename descclassname"> &lt;signing_account&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-userdata-s" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signing account, when empty account is used.</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-userdata-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-userdata-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-verify">
+<h4>verify<a class="headerlink" href="#bhivepy-verify" title="Permalink to this headline">¶</a></h4>
+<p>Returns the public signing keys for a block</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy verify <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>BLOCKNUMBER<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-verify-t">
+<code class="sig-name descname">-t</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--trx</code><code class="sig-prename descclassname"> &lt;trx&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-verify-t" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show only one transaction number</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-verify-u">
+<code class="sig-name descname">-u</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--use-api</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-verify-u" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses the get_potential_signatures api call</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-verify-arg-blocknumber">
+<code class="sig-name descname">BLOCKNUMBER</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-verify-arg-blocknumber" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-votes">
+<h4>votes<a class="headerlink" href="#bhivepy-votes" title="Permalink to this headline">¶</a></h4>
+<p>List outgoing/incoming account votes</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy votes <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-direction">
+<code class="sig-name descname">--direction</code><code class="sig-prename descclassname"> &lt;direction&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-votes-direction" title="Permalink to this definition">¶</a></dt>
+<dd><p>in or out</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-o">
+<code class="sig-name descname">-o</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--outgoing</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-votes-o" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show outgoing votes</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-i">
+<code class="sig-name descname">-i</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--incoming</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-votes-i" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show incoming votes</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-d">
+<code class="sig-name descname">-d</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--days</code><code class="sig-prename descclassname"> &lt;days&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-votes-d" title="Permalink to this definition">¶</a></dt>
+<dd><p>Limit shown vote history by this amount of days (default: 2)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-e">
+<code class="sig-name descname">-e</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--export</code><code class="sig-prename descclassname"> &lt;export&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-votes-e" title="Permalink to this definition">¶</a></dt>
+<dd><p>Export results to TXT-file</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-votes-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-votes-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-walletinfo">
+<h4>walletinfo<a class="headerlink" href="#bhivepy-walletinfo" title="Permalink to this headline">¶</a></h4>
+<p>Show info about wallet</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy walletinfo <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-walletinfo-test-unlock">
+<code class="sig-name descname">--test-unlock</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-walletinfo-test-unlock" title="Permalink to this definition">¶</a></dt>
+<dd><p>test if unlock is sucessful</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witness">
+<h4>witness<a class="headerlink" href="#bhivepy-witness" title="Permalink to this headline">¶</a></h4>
+<p>List witness information</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witness <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witness-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witness-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnesscreate">
+<h4>witnesscreate<a class="headerlink" href="#bhivepy-witnesscreate" title="Permalink to this headline">¶</a></h4>
+<p>Create a witness</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnesscreate <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS PUB_SIGNING_KEY
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-maximum-block-size">
+<code class="sig-name descname">--maximum_block_size</code><code class="sig-prename descclassname"> &lt;maximum_block_size&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-maximum-block-size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max block size</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-account-creation-fee">
+<code class="sig-name descname">--account_creation_fee</code><code class="sig-prename descclassname"> &lt;account_creation_fee&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-account-creation-fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account creation fee</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-hbd-interest-rate">
+<code class="sig-name descname">--hbd_interest_rate</code><code class="sig-prename descclassname"> &lt;hbd_interest_rate&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-hbd-interest-rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>HBD interest rate in percent</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-url">
+<code class="sig-name descname">--url</code><code class="sig-prename descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Witness URL</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesscreate-arg-pub-signing-key">
+<code class="sig-name descname">PUB_SIGNING_KEY</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnesscreate-arg-pub-signing-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnessdisable">
+<h4>witnessdisable<a class="headerlink" href="#bhivepy-witnessdisable" title="Permalink to this headline">¶</a></h4>
+<p>Disable a witness</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnessdisable <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessdisable-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessdisable-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnessenable">
+<h4>witnessenable<a class="headerlink" href="#bhivepy-witnessenable" title="Permalink to this headline">¶</a></h4>
+<p>Enable a witness</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnessenable <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS SIGNING_KEY
+</pre></div>
+</div>
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessenable-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessenable-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessenable-arg-signing-key">
+<code class="sig-name descname">SIGNING_KEY</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessenable-arg-signing-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnesses">
+<h4>witnesses<a class="headerlink" href="#bhivepy-witnesses" title="Permalink to this headline">¶</a></h4>
+<p>List witnesses</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnesses <span class="o">[</span>OPTIONS<span class="o">]</span> <span class="o">[</span>ACCOUNT<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesses-limit">
+<code class="sig-name descname">--limit</code><code class="sig-prename descclassname"> &lt;limit&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnesses-limit" title="Permalink to this definition">¶</a></dt>
+<dd><p>How many witnesses should be shown</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnesses-arg-account">
+<code class="sig-name descname">ACCOUNT</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnesses-arg-account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnessfeed">
+<h4>witnessfeed<a class="headerlink" href="#bhivepy-witnessfeed" title="Permalink to this headline">¶</a></h4>
+<p>Publish price feed for a witness</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnessfeed <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS <span class="o">[</span>WIF<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessfeed-b">
+<code class="sig-name descname">-b</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--base</code><code class="sig-prename descclassname"> &lt;base&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessfeed-b" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set base manually, when not set the base is automatically calculated.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessfeed-q">
+<code class="sig-name descname">-q</code><code class="sig-prename descclassname"></code><code class="sig-prename descclassname">, </code><code class="sig-name descname">--quote</code><code class="sig-prename descclassname"> &lt;quote&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessfeed-q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hive quote manually, when not set the base is automatically calculated.</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessfeed-support-peg">
+<code class="sig-name descname">--support-peg</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessfeed-support-peg" title="Permalink to this definition">¶</a></dt>
+<dd><p>Supports peg adjusting the quote, is overwritten by –set-quote!</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessfeed-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessfeed-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessfeed-arg-wif">
+<code class="sig-name descname">WIF</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessfeed-arg-wif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Optional argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnessproperties">
+<h4>witnessproperties<a class="headerlink" href="#bhivepy-witnessproperties" title="Permalink to this headline">¶</a></h4>
+<p>Update witness properties of witness WITNESS with the witness signing key WIF</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnessproperties <span class="o">[</span>OPTIONS<span class="o">]</span> WITNESS WIF
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-account-creation-fee">
+<code class="sig-name descname">--account_creation_fee</code><code class="sig-prename descclassname"> &lt;account_creation_fee&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-account-creation-fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account creation fee (float)</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-account-subsidy-budget">
+<code class="sig-name descname">--account_subsidy_budget</code><code class="sig-prename descclassname"> &lt;account_subsidy_budget&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-account-subsidy-budget" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account subisidy per block</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-account-subsidy-decay">
+<code class="sig-name descname">--account_subsidy_decay</code><code class="sig-prename descclassname"> &lt;account_subsidy_decay&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-account-subsidy-decay" title="Permalink to this definition">¶</a></dt>
+<dd><p>Per block decay of the account subsidy pool</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-maximum-block-size">
+<code class="sig-name descname">--maximum_block_size</code><code class="sig-prename descclassname"> &lt;maximum_block_size&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-maximum-block-size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max block size</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-hbd-interest-rate">
+<code class="sig-name descname">--hbd_interest_rate</code><code class="sig-prename descclassname"> &lt;hbd_interest_rate&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-hbd-interest-rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>HBD interest rate in percent</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-new-signing-key">
+<code class="sig-name descname">--new_signing_key</code><code class="sig-prename descclassname"> &lt;new_signing_key&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-new-signing-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set new signing key</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-url">
+<code class="sig-name descname">--url</code><code class="sig-prename descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Witness URL</p>
+</dd></dl>
+
+<p class="rubric">Arguments</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-arg-witness">
+<code class="sig-name descname">WITNESS</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-arg-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessproperties-arg-wif">
+<code class="sig-name descname">WIF</code><code class="sig-prename descclassname"></code><a class="headerlink" href="#cmdoption-bhivepy-witnessproperties-arg-wif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Required argument</p>
+</dd></dl>
+
+</div>
+<div class="section" id="bhivepy-witnessupdate">
+<h4>witnessupdate<a class="headerlink" href="#bhivepy-witnessupdate" title="Permalink to this headline">¶</a></h4>
+<p>Change witness properties</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>bhivepy witnessupdate <span class="o">[</span>OPTIONS<span class="o">]</span>
+</pre></div>
+</div>
+<p class="rubric">Options</p>
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-witness">
+<code class="sig-name descname">--witness</code><code class="sig-prename descclassname"> &lt;witness&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Witness name</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-maximum-block-size">
+<code class="sig-name descname">--maximum_block_size</code><code class="sig-prename descclassname"> &lt;maximum_block_size&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-maximum-block-size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Max block size</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-account-creation-fee">
+<code class="sig-name descname">--account_creation_fee</code><code class="sig-prename descclassname"> &lt;account_creation_fee&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-account-creation-fee" title="Permalink to this definition">¶</a></dt>
+<dd><p>Account creation fee</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-hbd-interest-rate">
+<code class="sig-name descname">--hbd_interest_rate</code><code class="sig-prename descclassname"> &lt;hbd_interest_rate&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-hbd-interest-rate" title="Permalink to this definition">¶</a></dt>
+<dd><p>HBD interest rate in percent</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-url">
+<code class="sig-name descname">--url</code><code class="sig-prename descclassname"> &lt;url&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-url" title="Permalink to this definition">¶</a></dt>
+<dd><p>Witness URL</p>
+</dd></dl>
+
+<dl class="option">
+<dt id="cmdoption-bhivepy-witnessupdate-signing-key">
+<code class="sig-name descname">--signing_key</code><code class="sig-prename descclassname"> &lt;signing_key&gt;</code><a class="headerlink" href="#cmdoption-bhivepy-witnessupdate-signing-key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Signing Key</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+<div class="section" id="bhivepy-help">
+<h2>bhivepy –help<a class="headerlink" href="#bhivepy-help" title="Permalink to this headline">¶</a></h2>
+<p>You can see all available commands with <code class="docutils literal notranslate"><span class="pre">bhivepy</span> <span class="pre">--help</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span> <span class="o">~</span> <span class="o">%</span> <span class="n">bhivepy</span> <span class="o">--</span><span class="n">help</span>
+<span class="n">Usage</span><span class="p">:</span> <span class="n">cli</span><span class="o">.</span><span class="n">py</span> <span class="p">[</span><span class="n">OPTIONS</span><span class="p">]</span> <span class="n">COMMAND1</span> <span class="p">[</span><span class="n">ARGS</span><span class="p">]</span><span class="o">...</span> <span class="p">[</span><span class="n">COMMAND2</span> <span class="p">[</span><span class="n">ARGS</span><span class="p">]</span><span class="o">...</span><span class="p">]</span><span class="o">...</span>
+
+<span class="n">Options</span><span class="p">:</span>
+  <span class="o">-</span><span class="n">n</span><span class="p">,</span> <span class="o">--</span><span class="n">node</span> <span class="n">TEXT</span>        <span class="n">URL</span> <span class="k">for</span> <span class="n">public</span> <span class="n">Hive</span> <span class="n">API</span> <span class="p">(</span><span class="n">e</span><span class="o">.</span><span class="n">g</span><span class="o">.</span>
+                         <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">api</span><span class="o">.</span><span class="n">hive</span><span class="o">.</span><span class="n">blog</span><span class="p">)</span>
+  <span class="o">-</span><span class="n">o</span><span class="p">,</span> <span class="o">--</span><span class="n">offline</span>          <span class="n">Prevent</span> <span class="n">connecting</span> <span class="n">to</span> <span class="n">network</span>
+  <span class="o">-</span><span class="n">d</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">broadcast</span>     <span class="n">Do</span> <span class="ow">not</span> <span class="n">broadcast</span>
+  <span class="o">-</span><span class="n">p</span><span class="p">,</span> <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">wallet</span>        <span class="n">Do</span> <span class="ow">not</span> <span class="n">load</span> <span class="n">the</span> <span class="n">wallet</span>
+  <span class="o">-</span><span class="n">x</span><span class="p">,</span> <span class="o">--</span><span class="n">unsigned</span>         <span class="n">Nothing</span> <span class="n">will</span> <span class="n">be</span> <span class="n">signed</span>
+  <span class="o">-</span><span class="n">e</span><span class="p">,</span> <span class="o">--</span><span class="n">expires</span> <span class="n">INTEGER</span>  <span class="n">Delay</span> <span class="ow">in</span> <span class="n">seconds</span> <span class="n">until</span> <span class="n">transactions</span> <span class="n">are</span> <span class="n">supposed</span> <span class="n">to</span>
+                         <span class="n">expire</span> <span class="p">(</span><span class="n">defaults</span> <span class="n">to</span> <span class="mi">60</span><span class="p">)</span>
+  <span class="o">-</span><span class="n">v</span><span class="p">,</span> <span class="o">--</span><span class="n">verbose</span> <span class="n">INTEGER</span>  <span class="n">Verbosity</span>
+  <span class="o">--</span><span class="n">version</span>              <span class="n">Show</span> <span class="n">the</span> <span class="n">version</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
+  <span class="o">--</span><span class="n">help</span>                 <span class="n">Show</span> <span class="n">this</span> <span class="n">message</span> <span class="ow">and</span> <span class="n">exit</span><span class="o">.</span>
+
+<span class="n">Commands</span><span class="p">:</span>
+  <span class="n">addkey</span>                  <span class="n">Add</span> <span class="n">key</span> <span class="n">to</span> <span class="n">wallet</span> <span class="n">When</span> <span class="n">no</span> <span class="p">[</span><span class="n">OPTION</span><span class="p">]</span> <span class="ow">is</span> <span class="n">given</span><span class="p">,</span><span class="o">...</span>
+  <span class="n">allow</span>                   <span class="n">Allow</span> <span class="n">an</span> <span class="n">account</span><span class="o">/</span><span class="n">key</span> <span class="n">to</span> <span class="n">interact</span> <span class="k">with</span> <span class="n">your</span><span class="o">...</span>
+  <span class="n">approvewitness</span>          <span class="n">Approve</span> <span class="n">a</span> <span class="n">witnesses</span>
+  <span class="n">balance</span>                 <span class="n">Shows</span> <span class="n">balance</span>
+  <span class="n">broadcast</span>               <span class="n">broadcast</span> <span class="n">a</span> <span class="n">signed</span> <span class="n">transaction</span>
+  <span class="n">buy</span>                     <span class="n">Buy</span> <span class="n">HIVE</span> <span class="ow">or</span> <span class="n">HBD</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">internal</span> <span class="n">market</span><span class="o">...</span>
+  <span class="n">cancel</span>                  <span class="n">Cancel</span> <span class="n">order</span> <span class="ow">in</span> <span class="n">the</span> <span class="n">internal</span> <span class="n">market</span>
+  <span class="n">changewalletpassphrase</span>  <span class="n">Change</span> <span class="n">wallet</span> <span class="n">password</span>
+  <span class="n">claimreward</span>             <span class="n">Claim</span> <span class="n">reward</span> <span class="n">balances</span> <span class="n">By</span> <span class="n">default</span><span class="p">,</span> <span class="n">this</span> <span class="n">will</span><span class="o">...</span>
+  <span class="n">config</span>                  <span class="n">Shows</span> <span class="n">local</span> <span class="n">configuration</span>
+  <span class="n">convert</span>                 <span class="n">Convert</span> <span class="n">HIVEDollars</span> <span class="n">to</span> <span class="n">Hive</span> <span class="p">(</span><span class="n">takes</span> <span class="n">a</span> <span class="n">week</span><span class="o">...</span>
+  <span class="n">createwallet</span>            <span class="n">Create</span> <span class="n">new</span> <span class="n">wallet</span> <span class="k">with</span> <span class="n">a</span> <span class="n">new</span> <span class="n">password</span>
+  <span class="n">currentnode</span>             <span class="n">Sets</span> <span class="n">the</span> <span class="n">currently</span> <span class="n">working</span> <span class="n">node</span> <span class="n">at</span> <span class="n">the</span> <span class="n">first</span><span class="o">...</span>
+  <span class="n">delkey</span>                  <span class="n">Delete</span> <span class="n">key</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">wallet</span> <span class="n">PUB</span> <span class="ow">is</span> <span class="n">the</span> <span class="n">public</span><span class="o">...</span>
+  <span class="n">delprofile</span>              <span class="n">Delete</span> <span class="n">a</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">an</span> <span class="n">account</span><span class="s1">&#39;s profile</span>
+  <span class="n">disallow</span>                <span class="n">Remove</span> <span class="n">allowance</span> <span class="n">an</span> <span class="n">account</span><span class="o">/</span><span class="n">key</span> <span class="n">to</span> <span class="n">interact</span><span class="o">...</span>
+  <span class="n">disapprovewitness</span>       <span class="n">Disapprove</span> <span class="n">a</span> <span class="n">witnesses</span>
+  <span class="n">downvote</span>                <span class="n">Downvote</span> <span class="n">a</span> <span class="n">post</span><span class="o">/</span><span class="n">comment</span> <span class="n">POST</span> <span class="ow">is</span><span class="o">...</span>
+  <span class="n">follow</span>                  <span class="n">Follow</span> <span class="n">another</span> <span class="n">account</span>
+  <span class="n">follower</span>                <span class="n">Get</span> <span class="n">information</span> <span class="n">about</span> <span class="n">followers</span>
+  <span class="n">following</span>               <span class="n">Get</span> <span class="n">information</span> <span class="n">about</span> <span class="n">following</span>
+  <span class="n">importaccount</span>           <span class="n">Import</span> <span class="n">an</span> <span class="n">account</span> <span class="n">using</span> <span class="n">a</span> <span class="n">passphrase</span>
+  <span class="n">info</span>                    <span class="n">Show</span> <span class="n">basic</span> <span class="n">blockchain</span> <span class="n">info</span> <span class="n">General</span><span class="o">...</span>
+  <span class="n">interest</span>                <span class="n">Get</span> <span class="n">information</span> <span class="n">about</span> <span class="n">interest</span> <span class="n">payment</span>
+  <span class="n">listaccounts</span>            <span class="n">Show</span> <span class="n">stored</span> <span class="n">accounts</span>
+  <span class="n">listkeys</span>                <span class="n">Show</span> <span class="n">stored</span> <span class="n">keys</span>
+  <span class="n">mute</span>                    <span class="n">Mute</span> <span class="n">another</span> <span class="n">account</span>
+  <span class="n">muter</span>                   <span class="n">Get</span> <span class="n">information</span> <span class="n">about</span> <span class="n">muter</span>
+  <span class="n">muting</span>                  <span class="n">Get</span> <span class="n">information</span> <span class="n">about</span> <span class="n">muting</span>
+  <span class="n">newaccount</span>              <span class="n">Create</span> <span class="n">a</span> <span class="n">new</span> <span class="n">account</span>
+  <span class="n">nextnode</span>                <span class="n">Uses</span> <span class="n">the</span> <span class="nb">next</span> <span class="n">node</span> <span class="ow">in</span> <span class="nb">list</span>
+  <span class="n">openorders</span>              <span class="n">Show</span> <span class="nb">open</span> <span class="n">orders</span>
+  <span class="n">orderbook</span>               <span class="n">Obtain</span> <span class="n">orderbook</span> <span class="n">of</span> <span class="n">the</span> <span class="n">internal</span> <span class="n">market</span>
+  <span class="n">parsewif</span>                <span class="n">Parse</span> <span class="n">a</span> <span class="n">WIF</span> <span class="n">private</span> <span class="n">key</span> <span class="n">without</span> <span class="n">importing</span>
+  <span class="n">permissions</span>             <span class="n">Show</span> <span class="n">permissions</span> <span class="n">of</span> <span class="n">an</span> <span class="n">account</span>
+  <span class="n">pingnode</span>                <span class="n">Returns</span> <span class="n">the</span> <span class="n">answer</span> <span class="n">time</span> <span class="ow">in</span> <span class="n">milliseconds</span>
+  <span class="n">power</span>                   <span class="n">Shows</span> <span class="n">vote</span> <span class="n">power</span> <span class="ow">and</span> <span class="n">bandwidth</span>
+  <span class="n">powerdown</span>               <span class="n">Power</span> <span class="n">down</span> <span class="p">(</span><span class="n">start</span> <span class="n">withdrawing</span> <span class="n">VESTS</span> <span class="n">from</span><span class="o">...</span>
+  <span class="n">powerdownroute</span>          <span class="n">Setup</span> <span class="n">a</span> <span class="n">powerdown</span> <span class="n">route</span>
+  <span class="n">powerup</span>                 <span class="n">Power</span> <span class="n">up</span> <span class="p">(</span><span class="n">vest</span> <span class="n">HIVE</span> <span class="k">as</span> <span class="n">HIVE</span> <span class="n">POWER</span><span class="p">)</span>
+  <span class="n">pricehistory</span>            <span class="n">Show</span> <span class="n">price</span> <span class="n">history</span>
+  <span class="n">rehive</span>                 <span class="n">Rehive</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">post</span>
+  <span class="n">sell</span>                    <span class="n">Sell</span> <span class="n">HIVE</span> <span class="ow">or</span> <span class="n">HBD</span> <span class="kn">from</span> <span class="nn">the</span> <span class="n">internal</span> <span class="n">market</span><span class="o">...</span>
+  <span class="nb">set</span>                     <span class="n">Set</span> <span class="n">default_account</span><span class="p">,</span> <span class="n">default_vote_weight</span> <span class="ow">or</span><span class="o">...</span>
+  <span class="n">setprofile</span>              <span class="n">Set</span> <span class="n">a</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">an</span> <span class="n">account</span><span class="s1">&#39;s profile</span>
+  <span class="n">sign</span>                    <span class="n">Sign</span> <span class="n">a</span> <span class="n">provided</span> <span class="n">transaction</span> <span class="k">with</span> <span class="n">available</span><span class="o">...</span>
+  <span class="n">ticker</span>                  <span class="n">Show</span> <span class="n">ticker</span>
+  <span class="n">tradehistory</span>            <span class="n">Show</span> <span class="n">price</span> <span class="n">history</span>
+  <span class="n">transfer</span>                <span class="n">Transfer</span> <span class="n">HBD</span><span class="o">/</span><span class="n">HIVE</span>
+  <span class="n">unfollow</span>                <span class="n">Unfollow</span><span class="o">/</span><span class="n">Unmute</span> <span class="n">another</span> <span class="n">account</span>
+  <span class="n">updatememokey</span>           <span class="n">Update</span> <span class="n">an</span> <span class="n">account</span><span class="s1">&#39;s memo key</span>
+  <span class="n">upvote</span>                  <span class="n">Upvote</span> <span class="n">a</span> <span class="n">post</span><span class="o">/</span><span class="n">comment</span> <span class="n">POST</span> <span class="ow">is</span><span class="o">...</span>
+  <span class="n">votes</span>                   <span class="n">List</span> <span class="n">outgoing</span><span class="o">/</span><span class="n">incoming</span> <span class="n">account</span> <span class="n">votes</span>
+  <span class="n">walletinfo</span>              <span class="n">Show</span> <span class="n">info</span> <span class="n">about</span> <span class="n">wallet</span>
+  <span class="n">witnesscreate</span>           <span class="n">Create</span> <span class="n">a</span> <span class="n">witness</span>
+  <span class="n">witnesses</span>               <span class="n">List</span> <span class="n">witnesses</span>
+  <span class="n">witnessupdate</span>           <span class="n">Change</span> <span class="n">witness</span> <span class="n">properties</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="configuration.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="tutorials.html" class="btn btn-neutral float-left" title="Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

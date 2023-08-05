@@ -1,0 +1,491 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.witness module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhiveapi package" href="bhiveapi.html" />
+    <link rel="prev" title="bhive.wallet module" href="bhive.wallet.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.witness module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.witness.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.witness">
+<span id="bhive-witness-module"></span><h1>bhive.witness module<a class="headerlink" href="#module-bhive.witness" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.witness.GetWitnesses">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">GetWitnesses</code><span class="sig-paren">(</span><em class="sig-param">name_list</em>, <em class="sig-param">batch_limit=100</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.GetWitnesses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.witness.WitnessesObject" title="bhive.witness.WitnessesObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.witness.WitnessesObject</span></code></a></p>
+<p>Obtain a list of witnesses</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name_list</strong> (<em>list</em>) – list of witneses to fetch</p></li>
+<li><p><strong>batch_limit</strong> (<em>int</em>) – (optional) maximum number of witnesses
+to fetch per call, defaults to 100</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive() instance to use when
+accessing a RPCcreator = Witness(creator, hive_instance=self)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">GetWitnesses</span>
+<span class="n">w</span> <span class="o">=</span> <span class="n">GetWitnesses</span><span class="p">([</span><span class="s2">&quot;gtg&quot;</span><span class="p">,</span> <span class="s2">&quot;jesta&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">json</span><span class="p">())</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.ListWitnesses">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">ListWitnesses</code><span class="sig-paren">(</span><em class="sig-param">from_account=''</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.ListWitnesses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.witness.WitnessesObject" title="bhive.witness.WitnessesObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.witness.WitnessesObject</span></code></a></p>
+<p>List witnesses ranked by name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_account</strong> (<em>str</em>) – Witness name from which the lists starts (default = “”)</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – Limits the number of shown witnesses (default = 100)</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance to use when
+accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">ListWitnesses</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ListWitnesses</span><span class="p">(</span><span class="n">from_account</span><span class="o">=</span><span class="s2">&quot;gtg&quot;</span><span class="p">,</span> <span class="n">limit</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&lt;ListWitnesses gtg&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.Witness">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">Witness</code><span class="sig-paren">(</span><em class="sig-param">owner</em>, <em class="sig-param">full=False</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="bhive.blockchainobject.html#bhive.blockchainobject.BlockchainObject" title="bhive.blockchainobject.BlockchainObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.blockchainobject.BlockchainObject</span></code></a></p>
+<p>Read data about a witness in the chain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account_name</strong> (<em>str</em>) – Name of the witness</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance to use when
+accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witness</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Witness</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="go">&lt;Witness gtg&gt;</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.witness.Witness.account">
+<em class="property">property </em><code class="sig-name descname">account</code><a class="headerlink" href="#bhive.witness.Witness.account" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.Witness.feed_publish">
+<code class="sig-name descname">feed_publish</code><span class="sig-paren">(</span><em class="sig-param">base</em>, <em class="sig-param">quote=None</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witness.feed_publish" title="Permalink to this definition">¶</a></dt>
+<dd><p>Publish a feed price as a witness.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base</strong> (<em>float</em>) – USD Price of HIVE in HBD (implied price)</p></li>
+<li><p><strong>quote</strong> (<em>float</em>) – (optional) Quote Price. Should be 1.000 (default), unless
+we are adjusting the feed to support the peg.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not self[“owner”]</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.Witness.is_active">
+<em class="property">property </em><code class="sig-name descname">is_active</code><a class="headerlink" href="#bhive.witness.Witness.is_active" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.Witness.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witness.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.Witness.refresh">
+<code class="sig-name descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witness.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.witness.Witness.type_id">
+<code class="sig-name descname">type_id</code><em class="property"> = 3</em><a class="headerlink" href="#bhive.witness.Witness.type_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.Witness.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">signing_key</em>, <em class="sig-param">url</em>, <em class="sig-param">props</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witness.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update witness</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>signing_key</strong> (<em>str</em>) – Signing key</p></li>
+<li><p><strong>url</strong> (<em>str</em>) – URL</p></li>
+<li><p><strong>props</strong> (<em>dict</em>) – Properties</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) witness account name</p></li>
+</ul>
+</dd>
+</dl>
+<p>Properties::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;account_creation_fee&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;maximum_block_size&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+    <span class="s2">&quot;hbd_interest_rate&quot;</span><span class="p">:</span> <span class="n">x</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.Witnesses">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">Witnesses</code><span class="sig-paren">(</span><em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witnesses" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.witness.WitnessesObject" title="bhive.witness.WitnessesObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.witness.WitnessesObject</span></code></a></p>
+<p>Obtain a list of <strong>active</strong> witnesses and the current schedule</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance to use when
+accesing a RPC</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">Witnesses</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Witnesses</span><span class="p">()</span>
+<span class="go">&lt;Witnesses &gt;</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.witness.Witnesses.refresh">
+<code class="sig-name descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.Witnesses.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.WitnessesObject">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">WitnessesObject</code><a class="headerlink" href="#bhive.witness.WitnessesObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<dl class="method">
+<dt id="bhive.witness.WitnessesObject.get_votes_sum">
+<code class="sig-name descname">get_votes_sum</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.WitnessesObject.get_votes_sum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.witness.WitnessesObject.printAsTable">
+<code class="sig-name descname">printAsTable</code><span class="sig-paren">(</span><em class="sig-param">sort_key='votes'</em>, <em class="sig-param">reverse=True</em>, <em class="sig-param">return_str=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.WitnessesObject.printAsTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.WitnessesRankedByVote">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">WitnessesRankedByVote</code><span class="sig-paren">(</span><em class="sig-param">from_account=''</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.WitnessesRankedByVote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.witness.WitnessesObject" title="bhive.witness.WitnessesObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.witness.WitnessesObject</span></code></a></p>
+<p>Obtain a list of witnesses ranked by Vote</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>from_account</strong> (<em>str</em>) – Witness name from which the lists starts (default = “”)</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – Limits the number of shown witnesses (default = 100)</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance to use when
+accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">WitnessesRankedByVote</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">WitnessesRankedByVote</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="go">&lt;WitnessesRankedByVote &gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.witness.WitnessesVotedByAccount">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.witness.</code><code class="sig-name descname">WitnessesVotedByAccount</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.witness.WitnessesVotedByAccount" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.witness.WitnessesObject" title="bhive.witness.WitnessesObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.witness.WitnessesObject</span></code></a></p>
+<p>Obtain a list of witnesses which have been voted by an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<em>str</em>) – Account name</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance to use when
+accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.witness</span> <span class="kn">import</span> <span class="n">WitnessesVotedByAccount</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">WitnessesVotedByAccount</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="go">&lt;WitnessesVotedByAccount gtg&gt;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhiveapi.html" class="btn btn-neutral float-right" title="bhiveapi package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.wallet.html" class="btn btn-neutral float-left" title="bhive.wallet module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
