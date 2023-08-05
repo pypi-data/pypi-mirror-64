@@ -1,0 +1,9 @@
+README.md
+setup.py
+pycord/__init__.py
+pycord/video_reader.py
+pycord.egg-info/PKG-INFO
+pycord.egg-info/SOURCES.txt
+pycord.egg-info/dependency_links.txt
+pycord.egg-info/requires.txt
+pycord.egg-info/top_level.txt
