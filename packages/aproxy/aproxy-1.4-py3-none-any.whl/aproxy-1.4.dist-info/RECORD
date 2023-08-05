@@ -1,0 +1,13 @@
+aproxy/__init__.py,sha256=NBcwwYFkdmCQE9nQfa9oFQwoJGjmgo42aXNI-ALkG0Y,63
+aproxy/__main__.py,sha256=APDugUVRbCK4mBft-HCrrAnd-3JM-7XlKO69XW0zu2E,1107
+aproxy/proxy.py,sha256=6_RgfNTPIY29QBxQ8eii8k4Ai00YxMndRFX0Llwk0ck,5381
+aproxy/proxy_config.py,sha256=2RShb0kB6QKYLPN-4qTUUWLqWZlA-KKA2ny0xMyx34k,1502
+aproxy/util.py,sha256=S_UYDW9QyvvZa90eySnbOS2QUjHeUQ4KzqqiKynQvak,935
+aproxy/version.py,sha256=fNiP6YLc-GEvBiXu23AAiqAm0SoloJJsiae-F8L8EKs,20
+aproxy-1.4.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+aproxy-1.4.dist-info/METADATA,sha256=flfCpiiuaWGQgdpFTas8p4ysgJ2n5Zl56pEoVoaoAEs,455
+aproxy-1.4.dist-info/RECORD,,
+aproxy-1.4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+aproxy-1.4.dist-info/entry_points.txt,sha256=rJkD7f8DHZtIW_z57RnF_fC-F6gdVQczj1Bpi1Pxqpk,49
+aproxy-1.4.dist-info/metadata.json,sha256=k9GHmtmBrzg8ud_z7UmZhN-X_Blpv8THLZ_SIOJEUqY,773
+aproxy-1.4.dist-info/top_level.txt,sha256=W5Dt9gJyb--ETxwCmf3nCcWZ_6x1niSWZj_sKRrJ2v8,7
