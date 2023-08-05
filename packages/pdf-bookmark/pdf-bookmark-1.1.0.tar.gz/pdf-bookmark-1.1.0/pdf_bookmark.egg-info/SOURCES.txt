@@ -1,0 +1,9 @@
+README.md
+pdf_bookmark.py
+setup.cfg
+setup.py
+pdf_bookmark.egg-info/PKG-INFO
+pdf_bookmark.egg-info/SOURCES.txt
+pdf_bookmark.egg-info/dependency_links.txt
+pdf_bookmark.egg-info/entry_points.txt
+pdf_bookmark.egg-info/top_level.txt
