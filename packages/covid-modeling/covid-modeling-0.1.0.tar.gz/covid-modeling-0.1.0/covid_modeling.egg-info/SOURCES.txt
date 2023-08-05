@@ -1,0 +1,25 @@
+.envrc
+.gitignore
+Demo.ipynb
+LICENSE.txt
+README.md
+Your To-Do list
+chime.md
+cord.nix
+covid_by_state.py
+setup.cfg
+setup.py
+shell.nix
+states.py
+test.py
+testd.py
+comodels/__init__.py
+comodels/penn.py
+comodels/sir.py
+comodels/utils.py
+covid_modeling.egg-info/PKG-INFO
+covid_modeling.egg-info/SOURCES.txt
+covid_modeling.egg-info/dependency_links.txt
+covid_modeling.egg-info/requires.txt
+covid_modeling.egg-info/top_level.txt
+deprecated/chime.py
