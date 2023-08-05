@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: denstatbank
+Version: 0.1.5
+Summary: A Python API wrapper to Statistics Denmark's DataBank API
+Home-page: https://github.com/gmohandas/denstatbank.git
+Author: Gopakumar Mohandas
+Author-email: gopakumarmohandas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.9)
+Requires-Dist: importlib-metadata (==1.5.0)
+Requires-Dist: more-itertools (==8.2.0)
+Requires-Dist: numpy (==1.18.2)
+Requires-Dist: packaging (==20.3)
+Requires-Dist: pandas (==1.0.2)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pytest (==5.4.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: zipp (==3.1.0)
+
+# denstatbank
+![denstatbank](https://github.com/gmohandas/denstatbank/workflows/denstatbank/badge.svg)
+
+A wrapper to Statistics Denmark's DataBank API.
+The library allows you to easily retrieve data on a variety of topics made available by [Statistics Denmark](https://www.dst.dk/en) 
+
+The package provides a simple interface for professional statisticians, academics, policymakers, students, 
+and anyone interested in quantitative facts about Denmark.
+
+### Installation
+
+```
+pip install denstatbank
+```
+
+### Usage
+
+Quick Example 
+```python
+>>> from denstatbank import StatBankClient
+>>> sbc = StatBankClient(lang='en')
+>>> df = sbc.get_data(table_id='bef5')
+>>> df
+   Population 1. January by Indhold and time
+0                                    5822763
+```
+
+
+### DataBank API
+The official API documentation can be found [here](https://www.dst.dk/en/Statistik/statistikbanken/api)
+
+
