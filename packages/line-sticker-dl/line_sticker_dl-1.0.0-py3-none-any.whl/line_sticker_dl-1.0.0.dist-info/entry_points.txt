@@ -1,0 +1,3 @@
+[console_scripts]
+line-sticker-dl=linestickerdl.cli:main
+
