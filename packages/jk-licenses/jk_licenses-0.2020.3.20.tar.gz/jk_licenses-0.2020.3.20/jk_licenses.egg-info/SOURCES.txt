@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+jk_licenses/License.py
+jk_licenses/LicenseMgr.py
+jk_licenses/VariableDef.py
+jk_licenses/__init__.py
+jk_licenses.egg-info/PKG-INFO
+jk_licenses.egg-info/SOURCES.txt
+jk_licenses.egg-info/dependency_links.txt
+jk_licenses.egg-info/not-zip-safe
+jk_licenses.egg-info/top_level.txt
