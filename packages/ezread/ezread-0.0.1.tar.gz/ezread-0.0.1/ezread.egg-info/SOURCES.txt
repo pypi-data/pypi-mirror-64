@@ -1,0 +1,11 @@
+README.rst
+setup.py
+ezread/__init__.py
+ezread/__version__.py
+ezread/commandline.py
+ezread/reader.py
+ezread.egg-info/PKG-INFO
+ezread.egg-info/SOURCES.txt
+ezread.egg-info/dependency_links.txt
+ezread.egg-info/entry_points.txt
+ezread.egg-info/top_level.txt

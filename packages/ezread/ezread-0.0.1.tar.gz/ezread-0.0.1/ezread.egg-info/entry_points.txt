@@ -1,0 +1,3 @@
+[console_scripts]
+ezread = ezread.commandline:main
+
