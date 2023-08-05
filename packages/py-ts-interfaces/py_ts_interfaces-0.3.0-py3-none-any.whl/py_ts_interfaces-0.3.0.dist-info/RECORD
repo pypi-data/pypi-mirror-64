@@ -1,0 +1,10 @@
+py_ts_interfaces/__init__.py,sha256=q4bpX79QbnzBIKWu-B5K60ae52wCjkk0H-nmN5Oc0m0,100
+py_ts_interfaces/cli.py,sha256=bVegndJpMzWm3JBelqxIzM8x3433d7ZBb0gF5bBS2VM,2363
+py_ts_interfaces/parser.py,sha256=JNKehRbcG2Q_37DDxNqbgLWU7fLJTUS5WPzOqav2Yq0,6723
+py_ts_interfaces/tests/tests.py,sha256=L9mkFQ24E97ajfjaRpubt0kr65gXDyLjwPAfNB-Ggio,8673
+py_ts_interfaces/tests/utils.py,sha256=aDrX_qg_pgqYaQO0MEPuPca5IvemXI4rT8pNf4BxSkQ,259
+py_ts_interfaces-0.3.0.dist-info/entry_points.txt,sha256=RS_YTl3VQN0kdpAa8fHAHwr6_kpEzrXMTGKPXxMShyo,62
+py_ts_interfaces-0.3.0.dist-info/LICENSE,sha256=K_KRBf5CzQsdD15ItxCjwcKDRmRS5l4I_koF3BkE69Y,1084
+py_ts_interfaces-0.3.0.dist-info/WHEEL,sha256=N0LZrBtofpkS5mJXgVHTCEy52Sam4D6PHQWC8HnMeTs,83
+py_ts_interfaces-0.3.0.dist-info/METADATA,sha256=zJO8KG-FUTiWNBGxbe5ASzSeITVht7z35eHor_IFyiw,7453
+py_ts_interfaces-0.3.0.dist-info/RECORD,,
