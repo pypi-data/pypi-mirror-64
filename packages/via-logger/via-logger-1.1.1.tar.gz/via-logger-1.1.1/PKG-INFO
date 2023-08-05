@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: via-logger
+Version: 1.1.1
+Summary: Simple logger that I use in my day-to-day life.
+Home-page: https://github.com/VoIlAlex
+Author: Ilya Vouk
+Author-email: ilya.vouk@gmail.com
+License: MIT
+Download-URL: https://github.com/VoIlAlex/via-logger/archive/v1.1.1.tar.gz
+Description: # via-logger
+Keywords: logger,logging,util
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
