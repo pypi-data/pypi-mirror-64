@@ -1,0 +1,8 @@
+README.txt
+setup.py
+co2Estimator/__init__.py
+co2Estimator/estimation.py
+co2Estimator.egg-info/PKG-INFO
+co2Estimator.egg-info/SOURCES.txt
+co2Estimator.egg-info/dependency_links.txt
+co2Estimator.egg-info/top_level.txt
