@@ -1,0 +1,2 @@
+dbt-core==0.16.0rc4
+psycopg2-binary~=2.8
