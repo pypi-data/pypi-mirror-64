@@ -1,0 +1,7 @@
+_wsq.cpython-36m-x86_64-linux-gnu.so,sha256=cjOv02esF4H30nLvUl9ptsvlo4o7xA3v2yjUcVAU6Kg,754343
+wsq/__init__.py,sha256=ytzu8zBmKd4ZkvOOj3EUWvz9jMMJEm89X8ZSVzWUenc,158
+wsq/WsqImagePlugin.py,sha256=LY_eJxJF4LoGy8xld7rlfEbyFy4q6IOrDPMIu16PcLI,3657
+wsq-0.3.dist-info/top_level.txt,sha256=ssp9981NSlBaxhDei3eMOjC8qvDAxDIpSVBhJLCQbLQ,9
+wsq-0.3.dist-info/METADATA,sha256=Uv27a8oTj5J7j4PJZKcgZahja3GQDSkbDmbP03aqQsM,2640
+wsq-0.3.dist-info/RECORD,,
+wsq-0.3.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
