@@ -1,0 +1,5 @@
+pandas
+numpy
+sdgym
+tqdm
+psutil
