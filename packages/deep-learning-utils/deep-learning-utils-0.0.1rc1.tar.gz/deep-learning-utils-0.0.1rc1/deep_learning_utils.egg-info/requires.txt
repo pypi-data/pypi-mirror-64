@@ -1,0 +1,7 @@
+torch
+rising
+tqdm
+tensorboard
+hydra-core
+omegaconf
+scipy
