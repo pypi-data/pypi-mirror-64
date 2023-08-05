@@ -1,0 +1,7 @@
+numpy
+setuptools_scm
+jinja2
+
+[Qt-matplotlib]
+matplotlib>=2
+PyQt5
