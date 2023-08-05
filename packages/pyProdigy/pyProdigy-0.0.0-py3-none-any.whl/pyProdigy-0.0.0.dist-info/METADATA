@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyProdigy
+Version: 0.0.0
+Summary: Utilities and scripts for the Prodigy project.
+Home-page: https://github.com/ltesti/pyProdigy
+Author: Leonardo Testi
+Author-email: ltesti120a@gmail.com
+License: LGPLv3
+Download-URL: https://github.com/ltesti/pyPro/archive/0.0.00.tar.gz
+Keywords: science,astronomy,interferometry,ALMA
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy (>=1.9)
+Requires-Dist: matplotlib
+
+=========
+pyProdigy
+=========
+A simple package to work with Prodigy ALMA data 
+
+Installation
+------------
+
+**uvplot** works on `Python` >=2.7 and >=3.6 and can be installed with:
+
+.. code-block :: bash
+
+    pip install pyProdigy
+
+To make **pyProdigy** available in CASA, run from the shell:
+
+.. code-block :: bash
+
+    casa-pip install pyProdigy
+
+where `casa-pip` is a tool that can be downloaded at `https://github.com/radio-astro-tools/casa-python <https://github.com/radio-astro-tools/casa-python>`_.
+
+To upgrade **pyProdigy** to a newer version on your system, just run:
+
+.. code-block :: bash
+
+    pip install --upgrade pyProdigy
+
+To upgrade **pyProdigy** inside CASA use the `--no-deps` option to prevent `casa-pip` from automatically upgrading `numpy` and `matplotlib` (which is not allowed inside CASA and will lead to errors):
+
+.. code-block :: bash
+
+    casa-pip install --upgrade --no-deps pyProdigy
+
+**pyProdigy** has been tested on CASA versions >= 5.6.0.
+
+License and Attribution
+-----------------------
+If you use **pyProdigy** for your publication, please acknowledge the Prodigy project
+
+**pyProdigy** is free software licensed under the LGPLv3 License. For more details see the LICENSE.
+
+Remember that **pyProdigy** is released without guarantees of accuracy, always check that what you do makes sense for the purpose you are doing it. Never blindly trust numbers out of a computer.
+
+© Copyright 2020 Leonardo Testi and contributors.
+
+
