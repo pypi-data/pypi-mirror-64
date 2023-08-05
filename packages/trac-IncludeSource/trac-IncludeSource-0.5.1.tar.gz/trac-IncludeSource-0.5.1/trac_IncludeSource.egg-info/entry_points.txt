@@ -1,0 +1,3 @@
+[trac.plugins]
+includesource.IncludeSource = includesource.IncludeSource
+

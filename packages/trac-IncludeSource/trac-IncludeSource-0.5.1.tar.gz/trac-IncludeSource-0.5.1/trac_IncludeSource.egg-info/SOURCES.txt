@@ -1,0 +1,10 @@
+README.md
+setup.py
+includesource/IncludeSource.py
+includesource/__init__.py
+trac_IncludeSource.egg-info/PKG-INFO
+trac_IncludeSource.egg-info/SOURCES.txt
+trac_IncludeSource.egg-info/dependency_links.txt
+trac_IncludeSource.egg-info/entry_points.txt
+trac_IncludeSource.egg-info/requires.txt
+trac_IncludeSource.egg-info/top_level.txt
