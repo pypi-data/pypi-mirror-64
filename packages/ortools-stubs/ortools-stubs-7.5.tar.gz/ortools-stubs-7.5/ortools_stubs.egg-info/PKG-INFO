@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: ortools-stubs
+Version: 7.5
+Summary: PEP 561 type stubs for Google OR-Tools
+Home-page: https://github.com/stradivari96/ortools-stubs
+Maintainer: Xiang Chen
+Maintainer-email: xiangchenchen96@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
