@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pipelinetweak
+Version: 0.2.0
+Summary: additional wrapper and classes for sklearn' pipeline API
+Home-page: http://github.com/kmedian/pipelinetweak
+Author: Ulf Hamster
+Author-email: 554c46@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
