@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+nanoinject/__init__.py
+nanoinject/config.py
+nanoinject/container.py
+nanoinject/definition.py
+nanoinject.egg-info/PKG-INFO
+nanoinject.egg-info/SOURCES.txt
+nanoinject.egg-info/dependency_links.txt
+nanoinject.egg-info/requires.txt
+nanoinject.egg-info/top_level.txt
