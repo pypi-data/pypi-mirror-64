@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: webcopy
+Version: 1.0.1
+Summary: tools for copy web
+Home-page: https://github.com/dzxs/webcopy
+Author: d2x3
+Author-email: d2x3@outlook.com
+License: UNKNOWN
+Description: # webcopy
+        
+        [![PyPI](https://img.shields.io/pypi/v/webcopy)](https://pypi.org/project/webcopy/)
+        [![PyPI - License](https://img.shields.io/pypi/l/webcopy)](https://github.com/dzxs/webcopy/blob/master/LICENSE)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/webcopy)](#webcopy)
+        [![PyPI - Downloads](https://img.shields.io/pypi/dd/webcopy)](#webcopy)
+        
+        ## Installation
+        
+        `pip install webcopy`
+        
+        ## Development Setup
+        
+        ```bash
+        git clone https://github.com/dzxs/webcopy.git
+        cd webcopy
+        python3 -m venv venv
+        source venv/bin/activate
+        pip install -r requirements.txt
+        pip install -e .
+        webcopy -h
+        ```
+        
+        ## Packaging and distributing projects
+        
+        ```bash
+        pip install --upgrade setuptools wheel
+        python setup.py sdist bdist_wheel
+        pip install --upgrade twine
+        twine upload dist/*
+        ```
+        
+Keywords: webcopy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Python: >=3
+Description-Content-Type: text/markdown

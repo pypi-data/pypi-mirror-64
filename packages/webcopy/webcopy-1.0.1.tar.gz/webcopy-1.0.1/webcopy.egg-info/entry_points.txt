@@ -1,0 +1,3 @@
+[console_scripts]
+webcopy = webcopy.webcopy:main
+

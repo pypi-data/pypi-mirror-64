@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+webcopy/__init__.py
+webcopy/webcopy.py
+webcopy.egg-info/PKG-INFO
+webcopy.egg-info/SOURCES.txt
+webcopy.egg-info/dependency_links.txt
+webcopy.egg-info/entry_points.txt
+webcopy.egg-info/requires.txt
+webcopy.egg-info/top_level.txt
+webcopy.egg-info/zip-safe
