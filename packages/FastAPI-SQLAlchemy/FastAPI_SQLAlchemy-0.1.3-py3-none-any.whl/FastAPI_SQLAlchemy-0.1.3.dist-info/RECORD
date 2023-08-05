@@ -1,0 +1,8 @@
+fastapi_sqlalchemy/__init__.py,sha256=AQzjbHuZSG7Q6yz16qne_iDR_MGDZAk8pAp_jWTCPqo,130
+fastapi_sqlalchemy/exceptions.py,sha256=JrFm-7wm0NHaO-m3KC4DRpFSJrGGeYAqdh6G6Vpiz5o,852
+fastapi_sqlalchemy/middleware.py,sha256=doQqDC0vcto6rgD2OSGZ2o94X_0nGEy6nsW2edLmikk,2572
+FastAPI_SQLAlchemy-0.1.3.dist-info/LICENSE,sha256=o3vg4avZQlpZyCswjOiF1xcvx_VbgqKpO6SohoTPygM,1073
+FastAPI_SQLAlchemy-0.1.3.dist-info/METADATA,sha256=v2g3Pd21sRySnLCvk-WYiMWms9wAQ4Lyv3MvLbuipRQ,4017
+FastAPI_SQLAlchemy-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+FastAPI_SQLAlchemy-0.1.3.dist-info/top_level.txt,sha256=u463V6wiHVDm9KNqgG7kXaPhROcINdxu1sKyF1gfug4,19
+FastAPI_SQLAlchemy-0.1.3.dist-info/RECORD,,
