@@ -1,0 +1,9 @@
+datetime_popover/__init__.py,sha256=rshEfFmqEsnEYV-slUwh38FufPds_B_NowP-PtL7mGM,85
+datetime_popover/datetime_popover.glade,sha256=Z2IqbnbgpitjbpOXn7oGW9VuZmgJCvY2r2wKzIpUw1k,13887
+datetime_popover/datetime_popover.py,sha256=ozD_QACZvMJ9xc7BpYgqLZEIY_OWyE-2zaCH5VOaewY,13517
+datetime_popover/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+datetime_popover/tests/manual_test.py,sha256=5F5jtEvN2J4-w7RnlH9nJ39pV7oHZGAmITROKz3lvoM,303
+datetime_popover/tests/test_dateTimePopover.py,sha256=YgcbmnEcIBD5lfs_IMWVgf10y7yNZ3l5G16X8eoojIM,13644
+gtk_datetime_popover-5.0.0.post1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+gtk_datetime_popover-5.0.0.post1.dist-info/METADATA,sha256=P1fN_dLda-tiHi4XI8q85ONh6m3OMuR2HUTLlMUsWlU,558
+gtk_datetime_popover-5.0.0.post1.dist-info/RECORD,,
