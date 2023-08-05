@@ -1,0 +1,10 @@
+README
+setup.py
+bin/physualize
+physualize/__init__.py
+physualize/makeplots.py
+physualize/plotutils.py
+physualize.egg-info/PKG-INFO
+physualize.egg-info/SOURCES.txt
+physualize.egg-info/dependency_links.txt
+physualize.egg-info/top_level.txt
