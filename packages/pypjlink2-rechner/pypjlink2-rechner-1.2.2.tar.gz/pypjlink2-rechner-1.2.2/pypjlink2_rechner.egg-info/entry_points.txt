@@ -1,0 +1,3 @@
+[console_scripts]
+pjlink2 = pypjlink2.cli:main
+
