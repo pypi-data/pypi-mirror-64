@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ucimlr
+Version: 0.0.1
+Summary: Easy access to datasets from the UCI Machine Learning Repository
+Home-page: https://github.com/isacarnekvist
+Author: Isac Arnekvist
+Author-email: isac.arnekvist@gmail.com
+License: UNKNOWN
+Description: # UCI Machine Learning Repository - API
+        This package provides easy access to a number of datasets from
+        the UCI Machine Learning repository.
+        
+        More documentation will come.
+        
+        ## Citation
+        Make sure you visit UCI and the specific datasets you use to
+        make sure that they are cited properly.
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
