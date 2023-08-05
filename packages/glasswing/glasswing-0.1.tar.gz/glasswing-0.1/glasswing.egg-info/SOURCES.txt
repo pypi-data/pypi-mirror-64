@@ -1,0 +1,6 @@
+setup.py
+glasswing.egg-info/PKG-INFO
+glasswing.egg-info/SOURCES.txt
+glasswing.egg-info/dependency_links.txt
+glasswing.egg-info/requires.txt
+glasswing.egg-info/top_level.txt
