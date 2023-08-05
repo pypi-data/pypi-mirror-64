@@ -1,0 +1,20 @@
+2020 Mar 23 Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Release 1.0.4
+* GC is a bit delayed when a tab is closed so that the GC message appears
+  properly on the status bar
+
+2019 Apr 25 Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Release 1.0.3
+* Minor updates in the setup.py
+
+2017 Dec 3 Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Release 1.0.2
+* Better approach to the setup.py
+
+2017 Oct 17 Sergey Satskiy <sergey.satskiy@gmail.com>
+
+* Release 1.0.1 - moved from the IDE repository to an its own repository
+* pip installable
