@@ -1,0 +1,7 @@
+coveralls
+cython
+jinja2
+pep8
+pip
+pytest
+pytest-cov
