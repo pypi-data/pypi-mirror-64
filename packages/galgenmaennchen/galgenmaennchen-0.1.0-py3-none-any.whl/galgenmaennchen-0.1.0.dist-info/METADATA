@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: galgenmaennchen
+Version: 0.1.0
+Summary: Ein Galgenmännchenspiel für dich.
+Home-page: https://github.com/pypa/galgenmaennchen
+Author: Leo Blume
+Author-email: leoblume@gmx.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: German
+Classifier: Topic :: Games/Entertainment :: Board Games
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+# galgenmÃ¤nnchen
+
+Ein einfaches GalgenmÃ¤nnchen-Spiel.
+[Die Website](https://leo848.github.io/galgenmÃ¤nnchen)
+
+Bugs gefunden? Sendet sie gern an [leoblume@gmx.de](mailto://leoblume@gmx.de)
+
