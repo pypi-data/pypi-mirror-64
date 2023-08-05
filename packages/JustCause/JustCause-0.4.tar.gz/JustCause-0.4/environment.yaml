@@ -1,0 +1,29 @@
+name: justcause
+channels:
+  - r
+  - pkgs/main
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.7
+  - numpy
+  - scipy
+  - requests
+  - pandas
+  - seaborn
+  - pyarrow>=0.15  # Mac problems with 0.13
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  # for development below here
+  - jupyterlab
+  - pytest
+  - pytest-cov
+  - pytest-virtualenv
+  - coverage
+  - coveralls
+  - flake8
+  - pip:
+      - pre-commit
+      - pygam

@@ -1,0 +1,10 @@
+numpy
+pyarrow
+pandas>=1.0
+scikit-learn
+requests
+pygam
+
+[testing]
+pytest
+pytest-cov
