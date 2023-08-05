@@ -1,0 +1,17 @@
+rocketpy/Environment.py,sha256=o2algRU3Ej375P_vMK2bMJpftatC2xN-hOb1lUxGoUA,124863
+rocketpy/Flight.py,sha256=hnEpJUqyI6wqOfWlAl2V7hbTN5Hzal8CitTMOnA1PPw,135823
+rocketpy/Function.py,sha256=XCvL6SI09R8zyTetU2EXUnYTYduXWi8hoXOOC0VOrkY,90065
+rocketpy/Rocket.py,sha256=ZnFJ9Gv2tusLTX7qJb8NcaCsc4hdm-WbJjsZutyQlBw,36669
+rocketpy/SolidMotor.py,sha256=kgJk2IGsMFwW3Lkr4DU6PNdLz02T7c-N05UwqI7iEaE,30295
+rocketpy/__init__.py,sha256=obZOjuvF-PJ4KBxly7NTZtXWmQswKDWfWWAsn1FAgmQ,1487
+rocketpyalpha/Environment.py,sha256=NW811ZNByqS4dRI0n0xlAnwuLxiAg3PT6q3OLT2ZSwY,124875
+rocketpyalpha/Flight.py,sha256=cxsO_4yanfCcKQe9-Z3iLVvMyQvr3JMaN4UZA1RFuhM,135852
+rocketpyalpha/Function.py,sha256=qR92dIKhuGh5P99l5jj_e07YeDmB877obFotm5pWio8,90082
+rocketpyalpha/Rocket.py,sha256=GKRWPoVDS0R6YFAEOMI-r0G9FQawFptMgmkdwDKJy6A,36698
+rocketpyalpha/SolidMotor.py,sha256=F_E-fFSVZZAfxYbaUaWchCNtndFC2u4UdWVTQNjxeIE,30324
+rocketpyalpha/__init__.py,sha256=Za9DMt0-pVq5dNpetEPKc7HwppIIF00qZveRKKTgsf8,1504
+rocketpyalpha-0.9.3.dist-info/LICENSE,sha256=QrwU70CHZLRCUYYRe4qTevdUrz1XDIeErODegfSmbEE,1100
+rocketpyalpha-0.9.3.dist-info/METADATA,sha256=5QzZzqzKOYQlVhgk-gxJCTpY4Rlsrviua_UWzuRv_Po,8681
+rocketpyalpha-0.9.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+rocketpyalpha-0.9.3.dist-info/top_level.txt,sha256=RnNaRRe3dIPwwuaamN5QLOgTRBe3nI84kiOvspb0wQE,9
+rocketpyalpha-0.9.3.dist-info/RECORD,,
