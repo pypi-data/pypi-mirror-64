@@ -1,0 +1,11 @@
+iterfzf<1.0.0.0.0,>=0.2.0.16.7
+logging-spinner>=0.2.1
+keyring>=3.7
+six
+certifi
+
+[:python_version<'3.4']
+enum34
+
+[:sys_platform=='win32']
+pypiwin32
