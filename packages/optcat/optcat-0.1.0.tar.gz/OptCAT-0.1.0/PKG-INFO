@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: optcat
+Version: 0.1.0
+Summary: OptCAT (= Optuna + CatBoost) provides a scikit-learn compatible estimator that tunes hyperparameters in CatBoost with Optuna.
+Home-page: https://github.com/wakamezake/OptCAT
+License: MIT
+Keywords: catboost,optuna,hyperparameter tuning
+Author: wakame1367
+Author-email: hotwater1367@gmail.com
+Requires-Python: >=3.6.1
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: catboost (>=0.22,<0.23)
+Requires-Dist: optuna (>=1.2.0,<2.0.0)
+Requires-Dist: pandas (>=1.0.2,<2.0.0)
+Requires-Dist: scikit-learn (>=0.22.2,<0.23.0)
+Project-URL: Repository, https://github.com/wakamezake/OptCAT
+Description-Content-Type: text/markdown
+
+# OptCAT
+
+<p align="center">
+<a href="https://github.com/wakamezake/OptCAT/actions"><img alt="Actions Status" src="https://github.com/wakamezake/OptCAT/workflows/Python package/badge.svg"></a>
+<a href="https://github.com/wakamezake/OptCAT/master/LICENSE"><img alt="License: MIT" src="http://img.shields.io/badge/license-MIT-blue.svg"></a>
+</p>
+
+OptCAT (= [Optuna][1] + [CatBoost][2]) provides a scikit-learn compatible estimator that tunes hyperparameters in CatBoost with Optuna.
+
+This Repository is very influenced by [Y-oHr-N/OptGBM](https://github.com/Y-oHr-N/OptGBM).
+
+## Examples
+
+```python:classification.py
+from optcat.core import CatBoostClassifier
+from sklearn import datasets
+
+params = {
+        "bootstrap_type": "Bayesian",
+        "loss_function": "Logloss",
+        "iterations": 100
+    }
+
+model = CatBoostClassifier(params=params, n_trials=5)
+data, target = datasets.load_breast_cancer(return_X_y=True)
+model.fit(X=data, y=target)
+```
+
+## Installation
+
+```
+pip install git+https://github.com/wakamezake/OptCAT.git
+```
+
+## Testing
+
+```
+poetry run pytest
+```
+
+
+[1]: https://optuna.org/
+[2]: https://catboost.ai/
+
