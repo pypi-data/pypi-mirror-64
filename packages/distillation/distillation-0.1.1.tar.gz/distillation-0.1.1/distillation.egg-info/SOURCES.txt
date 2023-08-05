@@ -1,0 +1,12 @@
+README.md
+setup.py
+distillation/__init__.py
+distillation/solvers.py
+distillation.egg-info/PKG-INFO
+distillation.egg-info/SOURCES.txt
+distillation.egg-info/dependency_links.txt
+distillation.egg-info/requires.txt
+distillation.egg-info/top_level.txt
+distillation/equilibrium_data/depriester.csv
+distillation/equilibrium_data/heat_capacity_liquid.csv
+distillation/equilibrium_data/heats_of_vaporization.csv
