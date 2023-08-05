@@ -1,0 +1,217 @@
+#!/usr/bin/python3
+
+from optparse import OptionParser
+
+from PyQt5 import QtGui
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui import QPainter, QBrush, QPen
+from PyQt5.QtCore import Qt, QRect, QUrl
+from PyQt5 import QtMultimedia
+import sys, os
+import numpy as np
+from Caly import CALYDIR, SNDDIR, TXTDIR
+
+wordsfiles = {
+0:os.path.join(TXTDIR,"words_00.txt"),
+1:os.path.join(TXTDIR,"words_01.txt"),
+2:os.path.join(TXTDIR,"words_02.txt"),
+3:os.path.join(TXTDIR,"words_03.txt")}
+
+
+pop_sound_file = os.path.join(SNDDIR,"pop.wav")
+bump_sound_file = os.path.join(SNDDIR,"invalid_keypress.mp3")
+tock_sound_file = os.path.join(SNDDIR,"tock.wav")
+
+
+def ReadWords(fle):
+  words = []
+  f = open(fle)
+  lines = f.readlines()
+  
+  for line in lines:
+    words.append(line.split(' '))
+  
+  return lines
+
+
+
+
+class Window(QMainWindow):
+    def __init__(self):
+        super().__init__()
+        
+        
+        opt,files = parse_options()
+        self.opt = opt
+        
+        self.mode = self.opt.mode
+
+        self.title = "PyQt5 Drawing Rectangle"
+        self.top = 100
+        self.left = 100
+        self.width = 680
+        self.height = 500
+
+        self.words = ReadWords(wordsfiles[opt.level])
+        self.iword = np.random.randint(0,len(self.words)) 
+        self.level = opt.level
+        self.levelmax  = 3
+        self.maxnum = {0:10,1:50,2:100,3:1000}
+        
+        
+        #fullpath = QtCore.QDir.current().absoluteFilePath(filename) 
+        url= QUrl.fromLocalFile(pop_sound_file)
+        self.pop_sound= QtMultimedia.QMediaContent(url)
+
+        url= QUrl.fromLocalFile(bump_sound_file)
+        self.bump_sound= QtMultimedia.QMediaContent(url)        
+
+        url= QUrl.fromLocalFile(tock_sound_file)
+        self.tock_sound= QtMultimedia.QMediaContent(url)                 
+
+        
+        self.soundplayer = QtMultimedia.QMediaPlayer()
+        
+        
+
+        self.InitWindow()
+
+
+    def InitWindow(self):
+        #self.setWindowIcon(QtGui.QIcon("icon.png"))
+        self.setWindowTitle(self.title)
+        self.setGeometry(self.top, self.left, self.width, self.height)
+        self.show()
+        
+        if self.opt.fullscreen:
+          self.showFullScreen()
+
+
+    def paintEvent(self, e):
+      
+        width = self.frameGeometry().width()
+        height = self.frameGeometry().height()               
+              
+        painter = QPainter(self)
+
+
+        font = painter.font();
+        font.setPixelSize(int(width/10));
+        painter.setFont(font);
+
+       
+        rect = QRect(0,0, width,height)
+        #painter.drawRect(rect)
+        
+        #painter.drawText(200,200,self.words[self.iword])
+        
+        if self.mode=="math":
+          painter.drawText(rect,Qt.AlignCenter|Qt.AlignTop, str(np.random.randint(0,self.maxnum[self.level]))  )
+        else:
+          painter.drawText(rect,Qt.AlignCenter|Qt.AlignTop,self.words[self.iword])
+        
+        
+
+        
+
+    def keyPressEvent(self, event):
+      if event.key() == Qt.Key_F:
+         self.showFullScreen()
+      if event.key() == Qt.Key_Escape or event.key() == Qt.Key_Q:
+         self.close()
+
+      if event.key() == Qt.Key_M:
+        if self.mode=="math":
+          self.mode=None
+        else:
+          self.mode = "math"
+  
+        self.soundplayer.setMedia(self.bump_sound)
+        self.soundplayer.play()
+        self.update()
+           
+      if event.key()==Qt.Key_Space or event.key()==Qt.Key_Right or event.key()==Qt.Key_Left:
+         
+        self.iword =  np.random.randint(0,len(self.words))
+        self.soundplayer.setMedia(self.pop_sound)
+        self.soundplayer.play()        
+        self.update()
+
+      if event.key() == Qt.Key_Plus:
+        self.level = self.level+1
+        if self.level > self.levelmax:
+          self.level = 0
+          
+        self.words = ReadWords(wordsfiles[self.level])
+        self.soundplayer.setMedia(self.tock_sound)
+        self.soundplayer.play()        
+        self.update()  
+
+      if event.key() == Qt.Key_Minus:
+        self.level = self.level-1        
+        if self.level < 0:
+          self.level = self.levelmax        
+        
+        self.words = ReadWords(wordsfiles[self.level])
+        self.soundplayer.setMedia(self.tock_sound)
+        self.soundplayer.play()
+        self.update() 
+              
+     
+####################################################################
+# parser
+####################################################################
+
+
+
+def parse_options():
+
+  usage = "usage: %prog [options] file"
+  parser = OptionParser(usage=usage)
+
+
+  parser.add_option("-f", "--fullscreen",
+                    action="store_true",
+                    dest="fullscreen",
+                    default=True,
+                    help="fullscreen mode")
+
+  parser.add_option("-m","--mode",
+                    action="store",
+                    dest="mode",
+                    type='str',
+                    default=None,
+                    help="mode lecture or math")
+
+  parser.add_option("-l","--level",
+                    action="store",
+                    dest="level",
+                    type='int',
+                    default=0,
+                    help="level")
+                    
+                    
+
+  (options, args) = parser.parse_args()
+
+  return options,args
+
+
+    
+         
+####################################################################
+# main
+####################################################################
+
+
+
+if __name__ == '__main__':
+
+  App = QApplication(sys.argv)
+  window = Window()
+  sys.exit(App.exec())  
+  
+  
+  
+  
+
