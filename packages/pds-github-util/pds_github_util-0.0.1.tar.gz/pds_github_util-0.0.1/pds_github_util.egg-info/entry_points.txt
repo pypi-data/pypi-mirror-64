@@ -1,0 +1,3 @@
+[console_scripts]
+snapshot-release = pds_github_util:snapshot_release.main
+
