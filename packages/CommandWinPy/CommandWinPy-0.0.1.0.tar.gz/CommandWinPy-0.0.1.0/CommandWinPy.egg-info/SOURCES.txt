@@ -1,0 +1,8 @@
+README.md
+setup.py
+CommandWinPy/__init__.py
+CommandWinPy/rules.py
+CommandWinPy.egg-info/PKG-INFO
+CommandWinPy.egg-info/SOURCES.txt
+CommandWinPy.egg-info/dependency_links.txt
+CommandWinPy.egg-info/top_level.txt
