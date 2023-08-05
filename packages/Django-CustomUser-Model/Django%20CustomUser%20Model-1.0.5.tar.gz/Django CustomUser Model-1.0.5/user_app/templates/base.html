@@ -1,0 +1,70 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Main CSS-->
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="{% static 'user_app/allauth/style.css' %}">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- Include the above in your HEAD tag ---------->
+
+    <!-- Font-icon css-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{% block head_title %}{% endblock %}</title>
+    {% block extra_head %}
+    {% endblock %}
+  </head>
+  <body>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6 col-md-4 col-md-offset-4">
+            <div class="account-wall">
+                <div id="my-tab-content" class="tab-content">
+
+                  {% block body %}
+
+                  {% if messages %}
+                  <div>
+                    <strong>Messages:</strong>
+                    <ul>
+                      {% for message in messages %}
+                      <li>{{message}}</li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  {% endif %}
+
+
+
+                  <div id="tabs" data-tabs="tabs" class="text-center">
+
+                    {% if user.is_authenticated %}
+                    <button class="btn btn-default"><a href="{% url 'account_email' %}" >Change E-mail</a></button>
+                    <button class="btn btn-default"><a href="{% url 'account_logout' %}" >Sign Out</a></button>
+                    {% else %}
+                    <button class="btn btn-default"><a href="{% url 'account_login' %}" >Sign In</a></button>
+                    <button class="btn btn-default"><a href="{% url 'account_signup' %}" >Sign Up</a></button>
+                    {% endif %}
+                  </div>
+
+
+                  {% block content %}
+                  {% endblock %}
+                  {% endblock %}
+                  {% block extra_body %}
+                  {% endblock %}
+					</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
