@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: pyfiles
+Version: 0.3.0
+Summary: management for files with python
+Home-page: https://github.com/tba91/pyfiles
+Author: TBA
+License: MIT
+Download-URL: https://github.com/tba91/pyfiles/archive/0.3.0.tar.gz
+Description: UNKNOWN
+Keywords: files,management
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >= 3.6
