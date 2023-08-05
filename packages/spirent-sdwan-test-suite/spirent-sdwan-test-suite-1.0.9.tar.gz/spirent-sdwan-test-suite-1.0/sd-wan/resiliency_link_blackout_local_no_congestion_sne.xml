@@ -1,0 +1,58 @@
+<MAP Name = "Delay" Description = "" MapGUID = "{04D828F2-EC48-4B52-8D0A-B8F4A239C27B}">
+	<Objects Count = "6">
+		<Object1 Type = "NetworkStartPoint" SubType = "" Name = "port1" GUID = "{F9F03F34-621A-4979-87ED-3AF806FC7E3A}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object1>
+		<Object2 Type = "NetworkStartPoint" SubType = "" Name = "port2" GUID = "{B3EEC387-CED6-4543-A2EB-6028CED28F42}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object2>
+		<Object3 Type = "Disruptor" SubType = "PacketDelayDisruptor" Name = "Delay Packet" GUID = "{3C179C45-23A1-4849-A248-AA226B5B1546}">
+			<EntityConfigData>
+				<ConfigurationType>dpdctConstant</ConfigurationType>
+				<Delay>0.01</Delay>
+				<Jitter>0</Jitter>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>1000.00</StartDelay>
+				<Duration>5000.00</Duration>
+				<Enabled>True</Enabled>
+				<MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object3>
+		<Object4 Type = "Disruptor" SubType = "PacketDelayDisruptor" Name = "Delay Packet" GUID = "{704E84D4-0F9D-4C5D-83AA-CB76E741E493}">
+			<EntityConfigData>
+				<ConfigurationType>dpdctConstant</ConfigurationType>
+				<Delay>0.01</Delay>
+				<Jitter>0</Jitter>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>1000.00</StartDelay>
+				<Duration>5000.00</Duration>
+				<Enabled>True</Enabled>
+				<MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object4>
+		<Object5 Type = "NetworkEndPoint" SubType = "" Name = "port2" GUID = "{AD7334A2-5FEB-497B-A465-3B373235FF07}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object5>
+		<Object6 Type = "NetworkEndPoint" SubType = "" Name = "port1" GUID = "{2B38D845-4684-41D1-902C-7FCD1CB27C6E}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object6>
+	</Objects>
+	<Links Count = "4">
+	<Link1 Source = "{B3EEC387-CED6-4543-A2EB-6028CED28F42}" Destination = "{704E84D4-0F9D-4C5D-83AA-CB76E741E493}"></Link1>
+	<Link2 Source = "{704E84D4-0F9D-4C5D-83AA-CB76E741E493}" Destination = "{2B38D845-4684-41D1-902C-7FCD1CB27C6E}"></Link2>
+	<Link3 Source = "{F9F03F34-621A-4979-87ED-3AF806FC7E3A}" Destination = "{3C179C45-23A1-4849-A248-AA226B5B1546}"></Link3>
+	<Link4 Source = "{3C179C45-23A1-4849-A248-AA226B5B1546}" Destination = "{AD7334A2-5FEB-497B-A465-3B373235FF07}"></Link4>
+	</Links>
+</MAP>

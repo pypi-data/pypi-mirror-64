@@ -1,0 +1,54 @@
+testbed:
+  name: 4stc_2dut_type01
+  servers:
+    SpirentLab:
+      type: stc_lab_server
+      address: {{ lab_server }}
+  custom:
+    global_config: {{ global_config }}
+devices:
+  local_head:
+    os: spirent
+    type: stc
+    connections: {}
+  remote_head:
+    os: spirent
+    type: stc
+    connections: {}
+  monitor_1:
+    os: spirent
+    type: stc
+    connections: {}
+  monitor_2:
+    os: spirent
+    type: stc
+    connections: {}
+topology:
+  local_head:
+    interfaces:
+      {{ stc.local_head.slot }}/{{ stc.local_head.port }}:
+        chassis: {{ stc.local_head.chassis }}
+        link: stc.local_head_to_dut1_port1
+        type: stc_port
+        stc_config: {{ stc.local_head.stc_config }}
+  remote_head:
+    interfaces:
+      {{ stc.remote_head.slot }}/{{ stc.remote_head.port }}:
+        chassis: {{ stc.remote_head.chassis }}
+        link: stc.remote_head_to_dut2_port3
+        type: stc_port
+        stc_config: {{ stc.remote_head.stc_config }}
+  monitor_1:
+    interfaces:
+      {{ stc.monitor_1.slot }}/{{ stc.monitor_1.port }}:
+        chassis: {{ stc.monitor_1.chassis }}
+        link: stc.monitor_1_to_switch_1
+        type: stc_port
+        stc_config: {{ stc.monitor_1.stc_config }}
+  monitor_2:
+    interfaces:
+      {{ stc.monitor_2.slot }}/{{ stc.monitor_2.port }}:
+        chassis: {{ stc.monitor_2.chassis }}
+        link: stc.monitor_2_to_switch_2
+        type: stc_port
+        stc_config: {{ stc.monitor_2.stc_config }}

@@ -1,0 +1,34 @@
+<MAP Name = "ReOrder" Description = "" MapGUID = "{0BE75CB3-9057-42B1-A8B3-D6F18B374556}">
+	<Objects Count = "6">
+		<Object1 Type = "NetworkStartPoint" SubType = "" Name = "port1" GUID = "{3D7083F5-C020-4FB6-A367-3B8C0400F889}">
+			<EntityConfigData><Port>8</Port><FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object1>
+		<Object2 Type = "NetworkStartPoint" SubType = "" Name = "port2" GUID = "{EBB3CDF9-354A-47F2-B279-BE69BB37F5E0}">
+			<EntityConfigData><Port>9</Port><FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object2>
+		<Object3 Type = "Disruptor" SubType = "PacketDelayDisruptor" Name = "Delay Packet" GUID = "{57324FC6-935D-46A8-9F72-AAD74061411E}">
+			<EntityConfigData><ConfigurationType>dpdctConstant</ConfigurationType><Delay>0.01</Delay><Jitter>0</Jitter><EnableTimeConstraints>False</EnableTimeConstraints><StartDelay>1000.00</StartDelay><Duration>5000.00</Duration><Enabled>True</Enabled><MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object3>
+		<Object4 Type = "Disruptor" SubType = "ReorderDisruptor" Name = "Reorder" GUID = "{2C2A3A9A-4FBD-4B1B-A422-5E2439510D1F}">
+			<EntityConfigData><ConfigurationType>drctStandard</ConfigurationType><Probability>100.00</Probability><DistanceType>drdtTime</DistanceType><MinDelay>1.00</MinDelay><MaxDelay>12.75</MaxDelay><MinPacketDistance>1</MinPacketDistance><MaxPacketDistance>10</MaxPacketDistance><Enabled>True</Enabled><MaxPacketsToStore>10000</MaxPacketsToStore>
+			</EntityConfigData>
+		</Object4>
+		<Object5 Type = "NetworkEndPoint" SubType = "" Name = "port2" GUID = "{B920BE36-D5FF-4AB7-AFE0-02FB1F874F38}">
+			<EntityConfigData><Port>9</Port><FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object5>
+		<Object6 Type = "NetworkEndPoint" SubType = "" Name = "port1" GUID = "{D9440AB5-FAB9-466B-BA01-24646085D58A}">
+			<EntityConfigData><Port>8</Port><FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object6>
+	</Objects>
+	<Links Count = "4">
+	<Link1 Source = "{EBB3CDF9-354A-47F2-B279-BE69BB37F5E0}" Destination = "{57324FC6-935D-46A8-9F72-AAD74061411E}"></Link1>
+	<Link2 Source = "{57324FC6-935D-46A8-9F72-AAD74061411E}" Destination = "{D9440AB5-FAB9-466B-BA01-24646085D58A}"></Link2>
+	<Link3 Source = "{2C2A3A9A-4FBD-4B1B-A422-5E2439510D1F}" Destination = "{B920BE36-D5FF-4AB7-AFE0-02FB1F874F38}"></Link3>
+	<Link4 Source = "{3D7083F5-C020-4FB6-A367-3B8C0400F889}" Destination = "{2C2A3A9A-4FBD-4B1B-A422-5E2439510D1F}"></Link4>
+	</Links>
+</MAP>

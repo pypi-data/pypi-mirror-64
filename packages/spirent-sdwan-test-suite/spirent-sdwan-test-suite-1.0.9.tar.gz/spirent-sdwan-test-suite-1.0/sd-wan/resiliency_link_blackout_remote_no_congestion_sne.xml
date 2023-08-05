@@ -1,0 +1,59 @@
+<MAP Description="" MapGUID="{6A2C7828-6F49-477C-87B8-24E0E826AE7F}" Name="Default Map___________________________">
+	<Objects Count="6">
+		<Object1 GUID="{5B60CDD6-B1C6-4BFC-A81B-897836E54FA5}" Name="port1" SubType="" Type="NetworkStartPoint">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object1>
+		<Object2 GUID="{F102A81D-4A1E-4081-BDC8-F1AD9AD1A6AE}" Name="port2" SubType="" Type="NetworkStartPoint">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object2>
+		<Object3 GUID="{D05A091A-5675-4672-AD78-D7E962C8A57E}" Name="Delay Packet" SubType="PacketDelayDisruptor" Type="Disruptor">
+			<EntityConfigData>
+				<ConfigurationType>dpdctConstant</ConfigurationType>
+				<Delay>1.00</Delay>
+				<Jitter>0</Jitter>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>1000.00</StartDelay>
+				<Duration>5000.00</Duration>
+				<Enabled>True</Enabled>
+				<MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object3>
+		<Object4 GUID="{D6F5E3D3-DCA6-46BE-983C-CE571433F7C3}" Name="DropPackets" SubType="PacketDropCorruptor" Type="Corruptor">
+			<EntityConfigData>
+			
+				<ConfigurationType>pdtStandard</ConfigurationType>
+				<PacketDropCount>100</PacketDropCount>
+				<PerPacketCount>100</PerPacketCount>
+				<DropMethod>pdsmEvenly</DropMethod>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>50.00</StartDelay>
+				<Duration>100.00</Duration>
+				<Enabled>True</Enabled>
+			</EntityConfigData>
+		</Object4>
+		<Object5 GUID="{D6110AD9-5635-4023-8832-8EFA65D4D8F0}" Name="port2" SubType="" Type="NetworkEndPoint">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object5>
+		<Object6 GUID="{3AA93297-3527-461F-9616-E1B29FE63340}" Name="port1" SubType="" Type="NetworkEndPoint">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object6>
+	</Objects>
+	<Links Count="4">
+	<Link1 Destination="{D6F5E3D3-DCA6-46BE-983C-CE571433F7C3}" Source="{5B60CDD6-B1C6-4BFC-A81B-897836E54FA5}"/>
+	<Link2 Destination="{D6110AD9-5635-4023-8832-8EFA65D4D8F0}" Source="{D6F5E3D3-DCA6-46BE-983C-CE571433F7C3}"/>
+	<Link3 Destination="{D05A091A-5675-4672-AD78-D7E962C8A57E}" Source="{F102A81D-4A1E-4081-BDC8-F1AD9AD1A6AE}"/>
+	<Link4 Destination="{3AA93297-3527-461F-9616-E1B29FE63340}" Source="{D05A091A-5675-4672-AD78-D7E962C8A57E}"/>
+	</Links>
+</MAP>

@@ -1,0 +1,53 @@
+<MAP Name = "Jitter" Description = "" MapGUID = "{D50F5C9F-ED95-405A-9A2F-CE6F4C8A14E1}">
+	<Objects Count = "6">
+		<Object1 Type = "NetworkStartPoint" SubType = "" Name = "port1" GUID = "{70AA7F4F-8B3C-4EF8-8617-327DE177FE20}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object1>
+		<Object2 Type = "NetworkStartPoint" SubType = "" Name = "port2" GUID = "{DCBF221E-B0E0-4C84-8BD1-94FCEEBEB54E}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object2>
+		<Object3 Type = "Disruptor" SubType = "JitterDisruptor" Name = "Jitter" GUID = "{F3319952-333D-43E8-A8B0-681CAF7C280A}">
+			<EntityConfigData>
+				<ConfigurationType>djctStandard</ConfigurationType>
+				<Jitter>100.00</Jitter>
+				<Enabled>True</Enabled>
+			</EntityConfigData>
+		</Object3>
+		<Object4 Type = "Disruptor" SubType = "PacketDelayDisruptor" Name = "Delay Packet" GUID = "{A5DBA98F-D1DC-41C1-ABC4-C7EB43D4A519}">
+			<EntityConfigData>
+				<ConfigurationType>dpdctConstant</ConfigurationType>
+				<Delay>0.01</Delay>
+				<Jitter>0</Jitter>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>1000.00</StartDelay>
+				<Duration>5000.00</Duration>
+				<Enabled>True</Enabled>
+				<MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object4>
+		<Object5 Type = "NetworkEndPoint" SubType = "" Name = "port2" GUID = "{852E62AF-7372-4D39-A207-BBCDA5730982}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object5>
+		<Object6 Type = "NetworkEndPoint" SubType = "" Name = "port1" GUID = "{051B0F60-72B9-472A-9025-3E037E3408DE}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object6>
+	</Objects>
+	<Links Count = "4">
+	<Link1 Source = "{DCBF221E-B0E0-4C84-8BD1-94FCEEBEB54E}" Destination = "{A5DBA98F-D1DC-41C1-ABC4-C7EB43D4A519}"></Link1>
+	<Link2 Source = "{A5DBA98F-D1DC-41C1-ABC4-C7EB43D4A519}" Destination = "{051B0F60-72B9-472A-9025-3E037E3408DE}"></Link2>
+	<Link3 Source = "{70AA7F4F-8B3C-4EF8-8617-327DE177FE20}" Destination = "{F3319952-333D-43E8-A8B0-681CAF7C280A}"></Link3>
+	<Link4 Source = "{F3319952-333D-43E8-A8B0-681CAF7C280A}" Destination = "{852E62AF-7372-4D39-A207-BBCDA5730982}"></Link4>
+	</Links>
+</MAP>

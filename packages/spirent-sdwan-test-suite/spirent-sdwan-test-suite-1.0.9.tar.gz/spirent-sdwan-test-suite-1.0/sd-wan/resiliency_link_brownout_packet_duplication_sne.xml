@@ -1,0 +1,52 @@
+<MAP Name = "Duplicate" Description = "" MapGUID = "{50F0BD0A-8506-4887-8959-48CDBA4E52AD}">
+	<Objects Count = "6">
+		<Object1 Type = "NetworkStartPoint" SubType = "" Name = "port1" GUID = "{2BB0F06D-4B0E-430A-8801-BE16933DCFB2}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object1>
+		<Object2 Type = "NetworkStartPoint" SubType = "" Name = "port2" GUID = "{1064C06C-E42A-47E1-9B98-5C78D5EC43FE}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object2>
+		<Object3 Type = "Disruptor" SubType = "PacketDuplicationDisruptor" Name = "Packet Duplicator" GUID = "{1F10BF1C-B743-4940-A1A0-F28ACCC011C4}">
+			<EntityConfigData>
+				<ConfigurationType>dpdctSimple</ConfigurationType>
+				<Enabled>True</Enabled>
+			</EntityConfigData>
+		</Object3>
+		<Object4 Type = "Disruptor" SubType = "PacketDelayDisruptor" Name = "Delay Packet" GUID = "{05487D6B-6A2B-419E-B5F8-47FB54ADCC18}">
+			<EntityConfigData>
+				<ConfigurationType>dpdctConstant</ConfigurationType>
+				<Delay>0.01</Delay>
+				<Jitter>0</Jitter>
+				<EnableTimeConstraints>False</EnableTimeConstraints>
+				<StartDelay>1000.00</StartDelay>
+				<Duration>5000.00</Duration>
+				<Enabled>True</Enabled>
+				<MaxThroughput>10000</MaxThroughput>
+			</EntityConfigData>
+		</Object4>
+		<Object5 Type = "NetworkEndPoint" SubType = "" Name = "port2" GUID = "{34E34A0F-9183-43FC-9B6F-5D3067BC6596}">
+			<EntityConfigData>
+				<Port>9</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object5>
+		<Object6 Type = "NetworkEndPoint" SubType = "" Name = "port1" GUID = "{D23AB0C2-817B-4834-975D-6EEA2CB2D1F0}">
+			<EntityConfigData>
+				<Port>8</Port>
+				<FCSEnabled>False</FCSEnabled>
+			</EntityConfigData>
+		</Object6>
+	</Objects>
+	<Links Count = "4">
+	<Link1 Source = "{1064C06C-E42A-47E1-9B98-5C78D5EC43FE}" Destination = "{05487D6B-6A2B-419E-B5F8-47FB54ADCC18}"></Link1>
+	<Link2 Source = "{05487D6B-6A2B-419E-B5F8-47FB54ADCC18}" Destination = "{D23AB0C2-817B-4834-975D-6EEA2CB2D1F0}"></Link2>
+	<Link3 Source = "{1F10BF1C-B743-4940-A1A0-F28ACCC011C4}" Destination = "{34E34A0F-9183-43FC-9B6F-5D3067BC6596}"></Link3>
+	<Link4 Source = "{2BB0F06D-4B0E-430A-8801-BE16933DCFB2}" Destination = "{1F10BF1C-B743-4940-A1A0-F28ACCC011C4}"></Link4>
+	</Links>
+</MAP>

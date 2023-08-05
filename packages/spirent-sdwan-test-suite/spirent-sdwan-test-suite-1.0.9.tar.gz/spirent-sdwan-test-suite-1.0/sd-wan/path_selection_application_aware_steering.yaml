@@ -1,0 +1,28 @@
+testcase:
+  id: sd-wan.path_selection.002
+  name: 'sd-wan_path_selection_application_aware_steering'
+  description: 'SD-WAN Path selection Application Aware steering'
+  objective: 'Validate DUT can steer traffic among WAN links by using application aware traffic classification method.'
+  run_info:
+    equipment:
+      - type: HTTP client emulator and SIP UA emulator
+        count: 1
+      - type: HTTP Server emulator and SIP UA emulator
+        count: 2
+      - type: router
+        count: 1
+    duration: 600
+    timeout: 1200
+    testbed: testpacks/sd-wan/testbed_templates/4stc_2dut_type01.yaml
+    script_module: testpacks.sd-wan.path_selection_application_aware_steering
+    script_class: PathSelectionApplicationAwareSteering
+    procedure: '1. Perform ARP on all STC devices and all stream blocks  2. Start HTTP servers 3.Start HTTP client 4. Wait till all HTTP connections and transactions are done 5. Check HTTP related results 6.Check received packets on Traffic Analyzers 7. Start SIP caller 8. Wait till all SIP calls are done (Totally 200 calls) 9. Check SIP related results 10. Check received packets on Traffic Analyzers'
+    initial_config: '1. Set IpAddress for interface of DutToClient to 150.0.0.2  2. Set IpAddress for interface of DutToMpls to 150.0.1.2 3. Set IpAddress for interface of DutToInternet to 150.0.2.2 3. Proper policies must be applied to DUT to steer stream 1, 4, 5, 7 towards Internet link and steer stream 2, 3, 6 ,8 towards MPLS link.'
+    expected_results: '1. All HTTP connections and transactions are finished without failure  2. All SIP calls are finished without failure, Call Success Percentage should be 100% 3. All HTTP traffic are steered towards Internet link without packet loss 4. All SIP/RTP/RTCP traffic are steered towards MPLS link without packet loss'
+  owner:
+    name: 'Samuel Yuan'
+  version: 'Draft 0.1'
+  test_type: [functional]
+  test_area: 'sd-wan path selection'
+  dut_target: [sd-wan]
+  test_suites: [smoke]

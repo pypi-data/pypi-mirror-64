@@ -1,0 +1,264 @@
+#This file is to specify the lab physical infomraton and STC configuration.
+#
+#
+######################################
+# LabServersx                        #
+# Input Spirent Lab-server ip address#
+######################################
+#
+spirent_lab_server_1:
+  ipv4: &ls_1 10.61.35.60
+spirent_lab_server_2:
+  ipv4: &ls_2 10.61.35.130
+
+#####################################################################################################################################################################
+# Global pamameters                                                                                                                                                 #
+#   max_wait_time means how many seconds wait for traffic to switch to other path                                                                                   #
+#   session_name_lab_server is used to setup session with labserver, should be different for different test case suite when run them paralelly with same lab server #
+#     example when run test case suite in parallel with same lab server as below                                                                                      #
+#       2stc_2dut_type01_testbed01:                                                                                                                                 #
+#          global_config:                                                                                                                                           #
+#            session_name_lab_server: *session_name_lab_server_1                                                                                                    #
+#            ......                                                                                                                                                 #
+#       2stc_2dut_type01_testbed02:                                                                                                                                 #    
+#          global_config:                                                                                                                                           #
+#            session_name_lab_server: *session_name_lab_server_2                                                                                                    #
+#             ......                                                                                                                                                #
+#####################################################################################################################################################################
+global_config_1:
+  session_name_lab_server: &session_name_lab_server_1 sdwan001
+  max_wait_time_after_break_link: &max_wait_time_after_break_link_1 30
+  max_wait_time_after_recover_link: &max_wait_time_after_recover_link_1 30
+  tolerance_traffic_rate: &tolerance_traffic_rate_1 5%
+
+########################################
+# Testers                              # 
+# Input Spirent Test Center ip address #
+########################################
+stc1:
+  ipv4: &chassis_1 10.61.35.141
+stc2:
+  ipv4: &chassis_2 10.61.35.142
+stc3:
+  ipv4: &chassis_3 10.61.35.149
+stc11:
+  ipv4: &chassis_11 10.61.35.50
+stc12:
+  ipv4: &chassis_12 10.61.37.9
+stc13:
+  ipv4: &chassis_13 10.61.35.59
+
+##########################################################################
+#   SNEs                                                                 #           
+#ipv4:Spirent Network Emulator ip address                                # 
+#cli: Specify sne-cli path.Empty means to use the default script/sne-cli.# 
+#     Default sne-cli version is 2.2.3424 and can communicate with       #
+#     SNE's firmware 3.60, 4.00, 5.00                                    #
+##########################################################################
+sne1: &sne1
+  ipv4: 10.61.37.113
+  cli:
+
+###################################################
+# Testbeds                                        #
+# Define physical topologies and STC configuration#
+###################################################
+######################################################################################
+# Description for the parameters:                                                    #
+# 1. Specify the ip address/slot/port for lab_server, chassis and sne.               #
+# 2. stc_config is used to set stc and each stc port has a stc_config.               #
+#    phy/speed/auto_negotiation can be empty, empty means to use the existing values.#
+#    You can get all the values of phy and speed using script/check_stc_param.py.    #
+#    auto_negotiation valuse: True, False.                                           #
+#    address/gateway under emulated_device is the stc device address/gateway.        #
+#    gateway should be the same as the interfaces' ip on DUT                         #
+#    The devices under emulated_device are emulated_device1, emulated_device2,       #
+#    emulated_device3,emulated_device4...The name of emulated_deviceX follows        #
+#    the stc port name in the test case's topology in                                #
+#    testpacks/sd-wan/Spirent\ SD-WAN\ TestPack\ Specification.pdf.                  #
+######################################################################################
+
+###########################4stc_2dut_type01##############################
+#                            +--------+                                 #
+#                            |monitor1|                                 #
+#                            +----+---+                                 #
+#                                 |                                     #
+#                                 |                                     #
+#                            +----+--+                                  #
+#                    +-------+switch1+----------+                       #
+#                    |       +-------+          |                       #
+#                    |                          |                       #
+# +----------+    +--+--+                    +--+--+      +-----------+ #
+# |local-head+----+edge1|                    |edge2+------+remote-head| #
+# +----------+    +--+--+                    +--+--+      +-----------+ #
+#                    |       +-------+          |                       #
+#                    +-------+switch2+----------+                       #
+#                            +---+---+                                  #
+#                                 |                                     #
+#                                 |                                     #
+#                            +----+---+                                 #
+#                            |monitor2|                                 #
+#                            +--------+                                 #
+#########################################################################
+4stc_2dut_type01_testbed01:
+  global_config:
+    max_wait_time_after_break_link: *max_wait_time_after_break_link_1 
+    max_wait_time_after_recover_link: *max_wait_time_after_recover_link_1
+    tolerance_traffic_rate: *tolerance_traffic_rate_1
+  lab_server: *ls_1
+  stc:
+    local_head:
+      chassis: *chassis_1
+      slot: 1
+      port: 1
+      stc_config:
+        name: local_head
+        phy:
+        speed:
+        auto_negotiation:
+        emulated_device:
+          emulated_device1:
+            name: local_head
+            ipv4_if:
+              address: '150.0.0.1'
+              gateway: '150.0.0.2'
+          emulated_device2:
+            name: local_device1
+            ipv4_if:
+              address: '101.0.0.1'
+          emulated_device3:
+            name: local_device2
+            ipv4_if:
+              address: '102.0.0.1'
+    remote_head:
+      chassis: *chassis_2
+      slot: 1
+      port: 1
+      stc_config:
+        name: remote_head
+        phy:
+        speed:
+        auto_negotiation:
+        emulated_device:  
+          emulated_device1:
+            name: remote_head
+            ipv4_if:
+              address: '150.0.1.1'
+              gateway: '150.0.1.2'
+          emulated_device2:
+            name: remote_device1
+            ipv4_if:
+              address: '200.0.0.1'
+    monitor_1:
+      chassis: *chassis_3
+      slot: 1
+      port: 1
+      stc_config:
+        name: monitor_1
+        phy:
+        speed:
+        auto_negotiation:
+    monitor_2:
+      chassis: *chassis_3
+      slot: 1
+      port: 2
+      stc_config:
+        name: monitor_2
+        phy:
+        speed:
+        auto_negotiation:
+##############################4stc_1sne_2dut_type01###############################
+#                                   +--------+                                   #
+#                                   |monitor1|                                   #
+#                                   +----+---+                                   #
+#                                        |                                       #
+#                                        |                                       #
+#                                   +----+--+                                    #
+#                    +--------------+switch1+------------+                       #
+#                    |              +-------+            |                       #
+#                    |                                   |                       #
+# +----------+    +--+--+                             +--+--+      +-----------+ #
+# |local-head+----+edge1|                             |edge2+------+remote-head| #
+# +----------+    +--+--+                             +--+--+      +-----------+ #
+#                    |     +----+   +-------+            |                       #
+#                    +----- sne1+---+switch2+------------+                       #
+#                          +----+   +----+--+                                    #
+#                                        |                                       #
+#                                        |                                       #
+#                                   +----+---+                                   #
+#                                   |monitor2|                                   #
+#                                   +--------+                                   #
+##################################################################################
+4stc_1sne_2dut_type01_testbed01:
+  global_config:
+    max_wait_time_after_break_link: *max_wait_time_after_break_link_1 
+    max_wait_time_after_recover_link: *max_wait_time_after_recover_link_1
+    tolerance_traffic_rate: *tolerance_traffic_rate_1
+  lab_server: *ls_1
+  sne1:
+    <<: *sne1
+    sne1_to_edge1:
+      port: "10"
+    sne1_to_mirror2:
+      port: "11"
+  stc:
+    local_head:
+      chassis: *chassis_1
+      slot: 1
+      port: 1
+      stc_config:
+        name: local_head
+        phy:
+        speed:
+        auto_negotiation:
+        emulated_device:
+          emulated_device1:
+            name: local_head
+            ipv4_if:
+              address: '150.0.0.1'
+              gateway: '150.0.0.2'
+          emulated_device2:
+            name: local_device1
+            ipv4_if:
+              address: '101.0.0.1'
+          emulated_device3:
+            name: local_device2
+            ipv4_if:
+              address: '102.0.0.1'
+    remote_head:
+      chassis: *chassis_2
+      slot: 1
+      port: 1
+      stc_config:
+        name: remote_head
+        phy:
+        speed:
+        auto_negotiation:
+        emulated_device:  
+          emulated_device1:
+            name: remote_head
+            ipv4_if:
+              address: '150.0.1.1'
+              gateway: '150.0.1.2'
+          emulated_device2:
+            name: remote_device1
+            ipv4_if:
+              address: '200.0.0.1'
+    monitor_1:
+      chassis: *chassis_3
+      slot: 1
+      port: 1
+      stc_config:
+        name: monitor_1
+        phy:
+        speed:
+        auto_negotiation:
+    monitor_2:
+      chassis: *chassis_3
+      slot: 1
+      port: 2
+      stc_config:
+        name: monitor_2
+        phy:
+        speed:
+        auto_negotiation:

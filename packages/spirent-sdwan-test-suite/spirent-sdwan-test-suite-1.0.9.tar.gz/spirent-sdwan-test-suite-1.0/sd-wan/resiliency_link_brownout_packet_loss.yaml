@@ -1,0 +1,29 @@
+testcase:
+  id: sd-wan.resiliency_link.003
+  name: 'resiliency_link_brownout_packet_loss'
+  description: 'Resiliency Link Brownout Packet Loss'
+  objective: 'Validate DUT can steer traffic from Internet link to MPLS link if packet loss ratio on Internet link exceed threshold and vice versa.'
+  run_info:
+    equipment:
+      - type: pga
+        count: 3
+      - type: router
+        count: 2
+      - type: network_emulator
+        count: 1
+    duration: 600
+    timeout: 1200
+    testbed: testpacks/sd-wan/testbed_templates/4stc_1sne_2dut_type01.yaml
+    script_module: testpacks.sd-wan.resiliency_link_brownout_packet_loss
+    script_class: ResiliencyLinkBrownoutPacketLoss
+    sne_config_file: resiliency_link_brownout_packet_loss_sne.xml
+    procedure: '1. Perform ARP on all STC devices and all stream blocks  2. Start traffic on all STC ports 3. Impairment tool drop 3% packets 4. Stop traffic 5. Record out of service time 6. Start traffic on all STC ports 7. Stop impairment 8. Record recovery time'
+    initial_config: '1. Set IpAddress for interface of DutToClient to 150.0.0.2  2. Set IpAddress for interface of DutToMpls to 150.0.1.2 3. Set IpAddress for interface of DutToInternet to 150.0.2.2 4. Proper policies must be applied to DUT, to Steer stream 1 and 3 towards Internet link and steer stream 2 and 4 towards MPLS link. If packet loss ratio of Internet link is > 2%, steer stream 1 and 3 to MPLS link. After Internet link packet loss ratio reduced to < 2%, steer stream 1 and 3 back to Internet link.Link status detection method (such as BFD) should be configured between client edge device (DUT1) and Internet edge device (DUT2) to detect link failure'
+    expected_results: '1. All ARPs are resolved successfully for procedure 1  2. All generators are started successfully for procedure 2 and 6 3. DUT detect the link failure, steer stream 1 and 3 to MPLS link for procedure 3. 4. All generators are stopped successfully for procedure 4. 5. DUT detect the packet loss ratio is below threshold, steer stream 1 and 3 back to Internet link for procedure 7.'
+  owner:
+    name: 'Samuel Yuan'
+  version: 'Draft 0.1'
+  test_type: [functional]
+  test_area: 'sd-wan resiliency link'
+  dut_target: [sd-wan]
+  test_suites: [smoke]

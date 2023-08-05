@@ -1,0 +1,26 @@
+testcase:
+  id: sd-wan.resiliency_link.001
+  name: 'resiliency_link_blackout_local_no_congestion'
+  description: 'Resiliency Link Blackout Local no Congestion'
+  objective: 'Validate DUT can steer traffic from Internet link to MPLS link if link blackout was detected on Internet link and vice versa.'
+  run_info:
+    equipment:
+      - type: pga
+        count: 3
+      - type: router
+        count: 1
+    duration: 600
+    timeout: 1200
+    testbed: testpacks/sd-wan/testbed_templates/4stc_1sne_2dut_type01.yaml
+    script_module: testpacks.sd-wan.resiliency_link_blackout_local_no_congestion
+    script_class: ResiliencyLinkBlackoutLocalNoCongestion
+    sne_config_file: resiliency_link_blackout_local_no_congestion_sne.xml
+    procedure: '1. Perform ARP on all STC devices and all stream blocks 2. Start traffic on all STC ports 3. Bring link of SNE to Edge1 port down 4. Stop traffic 5. Record out of service time 6. Start traffic on all STC ports 7. Bring link of SNE to Edge1 port up 8. Record recovery time'
+    expected_results: '1. All ARPs are resolved successfully2. All generators are started successfully 3. DUT detect the link failure, steer stream 1 and 3 to MPLS link 4. All generators are stopped successfully 6. All generators are started successfully 7. DUT detect the link is up, steer stream 1 and 3 back to Internet link'
+  owner:
+    name: 'Samuel Yuan'
+  version: 'Draft 0.1'
+  test_type: [functional]
+  test_area: 'SD-WAN Resiliency Link Blackout'
+  dut_target: [sd-wan]
+  test_suites: [smoke]
