@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: slackdump
+Version: 0.0.2
+Summary: dump slack data
+License: MIT
+Author: sloev
+Author-email: johanned.valbjorn@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pyppeteer (>=0.0.25,<0.0.26)
+Description-Content-Type: text/markdown
+
+# Slack Dump
+
+Dump slack data via chrome browser, and do analytics on it
+
+* [scraper.py](slackdump/scraper.py) scrapes a slack channel
+* [chrome.py](slackdump/chrome.py) starts a temporary chrome process on osx
+
+
+## Install
+
+```bash
+$ pip install slackdump
+```
+
+## Usage
+
+```bash
+$ slackdump --ROOTURL=https://somewhere.slack.com/messages/66666666 > output.json
+```
+
+
