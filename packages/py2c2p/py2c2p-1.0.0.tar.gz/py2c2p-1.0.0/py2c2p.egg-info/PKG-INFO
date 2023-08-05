@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py2c2p
+Version: 1.0.0
+Summary: A Python library for 2c2p API
+Home-page: https://github.com/sang-sakarin/py2c2p
+Author: sang_sakarin
+Author-email: sang_sakarin@outlook.com
+License: sang_sakarin
+Description: # py2c2p
+        
+        A Python library for [2c2p](https://developer.2c2p.com/docs) API
+        
+        | Name                                              | Description            |
+        | --------------------------------------------------|------------------------|
+        | [payment_gateway_sdk.md](payment_gateway_sdk.md)  | Payment Gateway SDK    |
+        
+Keywords: 2c2p 2c2p-python 2c2p-python-sdk
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
