@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+pysimplecalc.egg-info/PKG-INFO
+pysimplecalc.egg-info/SOURCES.txt
+pysimplecalc.egg-info/dependency_links.txt
+pysimplecalc.egg-info/entry_points.txt
+pysimplecalc.egg-info/requires.txt
+pysimplecalc.egg-info/top_level.txt
+simplecalc/__init__.py
+simplecalc/__main__.py
