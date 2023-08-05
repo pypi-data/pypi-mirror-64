@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: coleo
+Version: 0.1.0
+Summary: The nicest way to develop a command-line interface
+License: MIT
+Author: Olivier Breuleux
+Author-email: breuleux@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ptera (>=0.2.0,<0.3.0)
