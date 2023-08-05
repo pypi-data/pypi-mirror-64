@@ -1,0 +1,4 @@
+matplotlib>=3
+numpy>=1.15
+scipy>=1.1
+PyCO2SYS>=1.1.1
