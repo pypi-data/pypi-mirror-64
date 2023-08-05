@@ -1,0 +1,8 @@
+README.txt
+setup.py
+pyblocktext/__init__.py
+pyblocktext.egg-info/PKG-INFO
+pyblocktext.egg-info/SOURCES.txt
+pyblocktext.egg-info/dependency_links.txt
+pyblocktext.egg-info/requires.txt
+pyblocktext.egg-info/top_level.txt
