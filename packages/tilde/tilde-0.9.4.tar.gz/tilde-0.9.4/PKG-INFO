@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: tilde
+Version: 0.9.4
+Summary: Materials informatics framework for ab initio data repositories
+Home-page: https://github.com/tilde-lab/tilde
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Keywords: CRYSTAL Quantum-ESPRESSO VASP ab-initio materials informatics first-principles
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
