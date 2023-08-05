@@ -1,0 +1,16 @@
+waldur_batch_allocation.py,sha256=PIh8m6BXlwp135ObjiJQJA2r3pNunb2OZGuctkSxJJU,3709
+waldur_batch_offering.py,sha256=qcFsYQk3ilq6MNiDtFpCwElyoUGh04cb0Vpt05Q9BBo,6904
+waldur_client.py,sha256=m62g1ZpGNAqLbLlkOfCPyUglqGeLQqcMI3S1Dzrl4PI,46382
+waldur_marketplace.py,sha256=Fj3CH8mDSOe_6kKGDd7aVgK9f3iPKydNyN8-VogPCHE,4694
+waldur_marketplace_os_get_instance.py,sha256=IjG2baHXVLhFYGdqjiWjlkfx84jBvE1i0tBlpurgcM8,2044
+waldur_marketplace_os_instance.py,sha256=5_g6Z4L14ntpO0fb1LXaPVSPUs4MoR6ZbwztMTZOeb0,16762
+waldur_marketplace_os_volume.py,sha256=5m-pOTesZMdM-Zc9u5yNHtoTWUdA1suLzdQZu_nU2mg,5755
+waldur_os_floating_ip.py,sha256=LJeFSSthsEPZz__EXfxLTNYy4Q_6jmAYADaEosgvgsE,3842
+waldur_os_instance_volume.py,sha256=IUO-mQPx9ginNanAo6bO5aDSrdlkBPthWgyyPGQjr6w,5413
+waldur_os_security_group.py,sha256=qyhTaDM762l-dSBI8gkquzau82daz3Ve-wltBahfDlA,7564
+waldur_os_snapshot.py,sha256=SlBsB3L4N2Vz4_K8NJdJgdOezDM97mB7ifF4QpZlYvg,4182
+ansible_waldur_module-1.0.3.dist-info/LICENSE.md,sha256=eeASeFnyo6z-tt5bq-f3sdeSN95eQODCwP4y6GzwgbM,1079
+ansible_waldur_module-1.0.3.dist-info/METADATA,sha256=uVG8Htrddemgc4zbBa90H0taPr5gAAqZNQLJglvEEQ8,3142
+ansible_waldur_module-1.0.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+ansible_waldur_module-1.0.3.dist-info/top_level.txt,sha256=xp1H5F85Bf5PyIkXmZiRBSgK5EHM7i6MME9ml4_kBTo,266
+ansible_waldur_module-1.0.3.dist-info/RECORD,,
