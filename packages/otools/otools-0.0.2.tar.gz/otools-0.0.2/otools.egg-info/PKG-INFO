@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: otools
+Version: 0.0.2
+Summary: OTools stands for Online Tools, which is a Python/Cython framework for developing multithread online systems in a simple way.
+Home-page: https://github.com/gabriel-milan/otools
+Author: Gabriel Gazola Milan
+Author-email: gabriel.gazola@poli.ufrj.br
+License: GPL-3.0
+Description: # OTools
+        
+        In development.
+        
+        ## TODO
+        
+        * Implement Services
+        * Implement Dataframes
+        * Implement Triggers
+        * Implement Watchdog
+        * Implement CLI
+Keywords: framework,threading,shared resources,flexibility,python,online
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
