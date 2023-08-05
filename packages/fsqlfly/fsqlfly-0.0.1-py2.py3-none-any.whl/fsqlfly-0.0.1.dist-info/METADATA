@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: fsqlfly
+Version: 0.0.1
+Summary: Flink SQL Job Management Website
+Home-page: https://github.com/mrzhangboss/fsqlfly
+Author: mrzhangboss
+Author-email: 2529450174@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+# Flink SQL Job Management Website
+
+> require
+
+1. python3.6+
+2. flink 1.9.0+ installed
+
+
+> install
+
+    pip install fsqlfly
+
+
+> run website
+
+    fsqlfly webserver
+
