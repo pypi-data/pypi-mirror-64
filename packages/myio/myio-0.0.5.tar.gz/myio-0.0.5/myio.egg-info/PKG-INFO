@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: myio
+Version: 0.0.5
+Summary: This package contains myIO-server communication
+Home-page: https://github.com/SmarthomeNinja/home-assistant
+Author: Peter Szabo
+Author-email: info@smarthome.ninja
+License: UNKNOWN
+Description: # myIO Package
+        
+        This package is for Home-Assistant myIO Valet Mega integration. 
+        This contacts the myIO-server, poll the requred datas and returns the dictionary database, and servers state.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
