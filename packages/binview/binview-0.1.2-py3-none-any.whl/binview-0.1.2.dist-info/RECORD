@@ -1,0 +1,9 @@
+binview/__init__.py,sha256=zssEebz5jM-jSWtJneAiIFJcxYrBPzEH1NtyQXJ6gV0,49
+binview/cli.py,sha256=MOtKWi6kAho2NKvUI_ftUpAhm5HoUw0FJTWv7P_dIh4,670
+binview/dump.py,sha256=EuVXILC-LFnE1dx-fZssvV2kh30S8cDrlagLM9T93SE,1046
+binview-0.1.2.dist-info/LICENSE,sha256=0tNHXfCacj_eX-GwlIVtBc7i881BDBotZvM9QeCIUPY,1090
+binview-0.1.2.dist-info/METADATA,sha256=ERxq4r4tHYw2v6pv4rK_SaenEvrpTDWERMtPzwGfodg,735
+binview-0.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+binview-0.1.2.dist-info/entry_points.txt,sha256=cyIuegnarx7nx0X8A9y26oMkqdEFCwt0RETGgYM1ATg,46
+binview-0.1.2.dist-info/top_level.txt,sha256=Sy02XQnoXqsfdRn4HTsQDtRoeJjSW0KpczK89oz72aw,8
+binview-0.1.2.dist-info/RECORD,,
