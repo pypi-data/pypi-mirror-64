@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: baidu-acu-tts
+Version: 1.0.0
+Summary: tts grpc client
+Home-page: UNKNOWN
+Author: Baidu
+Author-email: 1908131339@qq.com
+License: Apache License
+Description: init
+Keywords: baidu,tts,speech
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
