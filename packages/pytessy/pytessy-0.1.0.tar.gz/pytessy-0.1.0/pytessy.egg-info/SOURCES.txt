@@ -1,0 +1,8 @@
+README.md
+setup.py
+pytessy/__init__.py
+pytessy/pytessy.py
+pytessy.egg-info/PKG-INFO
+pytessy.egg-info/SOURCES.txt
+pytessy.egg-info/dependency_links.txt
+pytessy.egg-info/top_level.txt
