@@ -1,0 +1,9 @@
+optgbm/__init__.py,sha256=HL9Z6B56F1jHm9jXXNMKdZ9hbnFeLX2i_4VPorv6W2g,540
+optgbm/sklearn.py,sha256=3RcLztD04GDqzNi-GWYIKypV_a5BDFaqrsflR4Ukc74,38744
+optgbm/typing.py,sha256=CG_TEJeGf-3U1oMHLHvlNnu83BeXD053yq7AJ7m7EeA,967
+optgbm/utils.py,sha256=d4yE-TBEraV78CaZPb_KSFja-8UA3-wZOucGQ-R_RxA,3660
+OptGBM-0.8.0.dist-info/LICENSE,sha256=XaPDBwH1FViItscm1HhhbsR06ZQhHb7_n7fkE1drm6Y,1060
+OptGBM-0.8.0.dist-info/METADATA,sha256=rfrCAAftUHbvqTWz7VFJ8JBIF482pgGFtFyAo6l1qiM,1318
+OptGBM-0.8.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+OptGBM-0.8.0.dist-info/top_level.txt,sha256=j35QVrm7oIRPuB9AJ7JsejGGEXHDlyGanYCHns8ks0g,7
+OptGBM-0.8.0.dist-info/RECORD,,
