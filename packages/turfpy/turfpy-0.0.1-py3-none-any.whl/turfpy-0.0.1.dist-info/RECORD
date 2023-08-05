@@ -1,0 +1,12 @@
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/measurement.py,sha256=WMtthWNj6fSuYSx_OzVszH-lkyrhJmQfH55PzTN9uy8,3793
+turfpy/__init__.py,sha256=q9sRP086seEwEkxWHp6JCMgw93r1rMj1JnxwsDYahhM,72
+turfpy/extra.py,sha256=cj-sIxDJtEhMDtS2LgqLV9ddUF7SHK1jCpsjMpS2ZUI,1561
+turfpy/helper.py,sha256=Cc_doiz73Vft0WcqM8lD16MNOv-puXBsiemr6NOmwnY,3000
+turfpy/measurement.py,sha256=del6jI_j1le8abbpSEDvEAWl9As_xgyvULLj6BWVv_s,37867
+turfpy/meta.py,sha256=gCsANKfQZiaK_Cw9YViS4ze-w3RmJWTs3oCF94PufTk,13592
+turfpy-0.0.1.dist-info/LICENSE,sha256=43xICMzsHuAUExMu7HOg6VmWWgOns_k31btqgtKA_GM,1069
+turfpy-0.0.1.dist-info/METADATA,sha256=YabRT-St7IRo_NIS6l3dtavfqzVrYy67r4EBwAOYn8k,17746
+turfpy-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+turfpy-0.0.1.dist-info/top_level.txt,sha256=cIFl_kdC8t1tTq9amfiQRYGDUfWNXteS_XzCXi1MajY,12
+turfpy-0.0.1.dist-info/RECORD,,
