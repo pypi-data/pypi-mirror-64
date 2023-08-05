@@ -1,0 +1,6 @@
+README.md
+setup.py
+ankur_pdf.egg-info/PKG-INFO
+ankur_pdf.egg-info/SOURCES.txt
+ankur_pdf.egg-info/dependency_links.txt
+ankur_pdf.egg-info/top_level.txt
