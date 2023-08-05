@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "sp_ask_report_chats_per_school"
+version = "0.1.0"
+description = ""
+authors = ["Guinsly Mondesir <guinslym@gmail.com>"]
+keywords = ["Ask", "Scholars Portal", "Ontario", "Chats"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/guinslym/sp_ask_report_chats_per_school"
+repository = "https://github.com/guinslym/sp_ask_report_chats_per_school"
+classifiers = [
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: Quality Assurance",
+]
+include = [
+    "LICENSE",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+lh3api = "^0.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
