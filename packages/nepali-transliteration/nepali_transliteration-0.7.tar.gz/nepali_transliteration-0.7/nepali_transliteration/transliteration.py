@@ -1,0 +1,253 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+from collections import OrderedDict
+from langdetect import detect
+import requests 
+URL = "https://www.google.com/inputtools/request"
+PARAMS = {'ime':"transliteration_en_ne",'text':"corona virus nepal ma cha ra ?",'ie':"utf-8",'oe':"utf-8"} 
+alphabet = list(map(chr, range(97, 123)))
+
+roman = "naai,mildo,mildho,mahamari,bharemaa,bhairako,bairako,prikshan,esewa,maile,aath,aauda,aaye,abadda,abastha,abela,abhilasa,abhilasha,abhiyan,abhyas,accident,account,accountant,acharya,activity,adachya,adaksha,adhaksha,adhyan,adhyaya,afnai,afni,afno,after,aimai,airport,ajabholi,ajakal,akash,akhabara,akhir ,akraman,alchi,alu,ama,amar,ambika,america,amilo,amrika,amrit,anamika,andolan,angur,animal,ankha,antarbarta,antarvarta,anuhar,anusandhan,anusar,anyatha,approve,april,apthero,arabia,argentina,arghakhachi,arghakhanchi,army,arsenal,artha,article,arun,arunima,asadhya,asar,asia,ason,associa,ashesh,sambidhan,banepali,banjade,balaji,baral,basnet,bisht,bhusal,belbase,chhetry,dahal,dangol,dhakal,chaudhary,chapagai,chapagain,chaulagai,chaulagain,dawadi,devkota,hamal,jha,jimba,khan,kafle,karki,lamichhane,mainali,manandhar,obama,patel,rijal,sapkota,siwakoti,shakya,sherpa,silwal,tamang,tuladhar,yadav,adil,amit,abishek,aman,amitabh,amogh,baba,balram,baliram,bhagat,bhagwan,bhaskar,bhawani,bidhan,bidyut,bijay,binayak,chirag,falgunanda,chiring,chhiring,gandhi,gokarna,imran,kaji,kedar,kranti,kunal,lakpa,lalit,laxman,loknath,murari,mrp,nagendra,nanak,nishant,palash,paras,prashant,prabhakar,prachanda,prahalad,pratap,raghav,rahul,raj,rajeev,rajiv,rajkumar,rajkumari,rakesh,ricky,rishi,ronaldo,sajid,sarthak,saunak,salman,siddhartha,sunny,suraj,shyam,tushar,udit,yash,yubraj,yuvraj,alina,alisha,amrita,anisha,anupama,basanti,bipasha,dhankumari,deepa,deepali,dikshya,janaki,jayanta,ganga,geeta,kaili,kareena,karisma,karishma,kumari,maili,maiya,mankumari,madhurima,naina,naveena,nisha,nanu,parijat,payal,pooja,priyanka,prabha,pragya,prerna,prerana,prajwala,pratikshya,rampyari,radhika,rakshya,rina,rekha,ruby,samjhana,sangita,sangeeta,saili,sharada,shova,supriya,uma,usha,bardiya,bhim datta,birganj,birtamod,birendranagar,chapagaun,champapur,chautara,danfe,darchula,dhapasi,dipayal,dhanusadham,dhanushadham,dolakha,fulchoki,fulchowki,gulariya,gadhimai,gaushala,godawari,gosaikunda,hanumandhoka,kakani,kalaiya,kamalamai,kantipath,karyabinayak,khaptad,khokana,kohalpur,mirchaiya,namche,parsa,panchkhal,phulchoki,phulchowki,mangalbazar,muktinath,nepalganj,nijgadh,rara,tulsipur,tikapur,shankarapur,siddharthanagar,swargadwari,urlabari,dulegaunda,aeko,agraha,aijo,aja,and,arthik,ayo,akha,aparadh,aparadhi,bagh,battery,baithak,balak,balika,banijya,bewasta,bhatbhateni,bheda,bhuichalo,bhukampa,bibad,bigyapan,billa,biralo,black,blood,bhanda,byaktigat,calendar,celebrity,chalak,chara,chhalfal,chhadera,chhata,chhath,chhito,confirm,crore,dastabej,damkal,deal,dekhau,deusi,devdas,dhara,dipawali,dhalan,dv,dristikon,drishtikon,fanta,fire,gadi,gaida,google,grihapristha,hajar,happy,hati,hunata,iphone,international,janani,janawar,jamma,janma,jam,karod,kathin,kamaune,kanun,kanuni,khalko,khali,khanaa,khane,lakh,laddu,laptop,matabhed,mataved,memory,maulikta,mithai,motorola,miss,mahakabi,mamaghar,naya,nepalese,new,nasha,nari,nirdeshan,nokia,nidra,nindra,nata,national,nurse,nyaya,online,otel,paisa,papa,pakistan,paunu,peda,photo,pran,prawas,rojgar,sampadakiya,sankat,sirsa,shirsa,square,samparka,smart,sadarmukam,samma,samsung,sanstha,side,sitamol,star,super,sujay,swasthya,taja,tanker,tayari,technology,thado,ticket,thakur,trend,wanted,wala,ulto,upadhi,white,vana,vane,villain,yar,yahoo,year,astha,aswin,atanka,atankakari,athawa,audai,audio,august,aula,auna,aunty,ausadhi,australia,avastha,avyas,awastha,ayojana,babu,back,badamas,badhai,badhi,badmas,badri,baglung,bagmati,bahadur,baikuntha,baisakh,baitadi,bajar,bajhang,bajura,bakhra,balaju,banepa,baneswar,baneswore,bangkok,bangladesh,bank,banke,bansbari,bara,baralida,baralina,bardia,bare,bari,barsa,barsha,barsik,basbari,bastab,bastav,bata,batabaran,batau,bath,bato,bazar,bazi,bbc,beer,belgium,bhadgaon,bhadrakali,bhag,bhana,bhanabhan,bhanchu,bhandari,bhane,bhanjyang,bhannus,bhanubhakta,bhanuvakta,bharati,bharatpur,bharyang,bhasa,bhasha,bhattarai,bhavana,bhawana,bhaye,bhayena,bhenda,bheri,bhida,bhidanta,bhisan,bhishan,bhojpur,bhola,bhumika,bhutan,bibah,bichar,bicharan,bichari,bicharma,bidharthi,bidhya,bidhyalaya,bidhyarthi,bidwan,bidyarthi,bihibar,bikas,bikash,bike,bimarsha,biology,biralai,birami,biratnagar,bird,birgunj,birsanu,bishnu,bisnu,bista,bitae,bitaye,biwaha,blog,blue,board,body,botany,bottle,brake,brazil,break,breakfast,brother,buba,buddha,buddhist,budhaba,budhanilkantha,budhathoki,buhari,bulb,bus,butawal,butwal,buwa,byabahar,byas,byasta,byatha,cable,calcutta,campus,candidate,candy,car,cart,cash,castle,cd,cell,center,centre,chad,chadai,chadi,chaha,chahincha,chaina,chaincha,chair,chairman,chalfal,chalphal,chamal,chamcha,chanchun,changa,change,channel,char,chati,chautari,check,cheese,cheli,chelsea,chemistry,chetavani,chetawani,chetri,chhaina,chhetri,chicago,chisapani,chithi,chiura,chiya,choko,chora,chori,choro,chowk,christian,chunu,churpi,chwak,cinema,city,click,club,coat,coffee,cold,college,color,colour,command,comment,commerce,committee,communist,community,company,computer,congress,connec,contact,converter,cooker,copy,cord,court,cracy,cream,credit,cricket,culture,cup,curfew,cycle,cylinder,dada,dadeldhura,daijo,daju,daka,dakshin,dalbhat,damaru,damauli,dance,danda,dang,dara,daraj,darbar,darjeeling,darsan,darshan,dashain,date,dating,day,debit,december,degree,degrees,delete,delhi,democracy,denmark,depart,deshan,desk,deukhuri,devanagari,develop,devi,devnagari,devta,dhago,dhangadhi,dhangadi,dhani,dhankuta,dhannebad,dhanusha,dhanyabad,dhanyavad,dharan,dharana,dhaulagiri,dhiki,dhilo,dhruba,dhukur,dhulabari,dhunga,dhungana,dhyan,didibahini,diesel,dinner,dipendra,discuss,dixit,doctor,dolkha,dolpa,doti,down,drug,dulegauda,dumre,dunga,dvd,echha,economics,edit,educa,ejjat,ekanta,ekkasi,elaka,email,embassy,emergency,emirates,engine,engineer,engineering,english,erica,esari,europe,european,evening,everest,exercise,fagun,falgun,fan,fast,father,fax,feature,february,feed,firing,first,flight,floor,fly,fm,food,football,fourth,france,friday,friend,gaadi,gaali,gaaro,gaidakot,galaxy,gandaki,ganesh,ganit,garden,gareka,garib,garo,garyo,gaun,german,germany,ghadi,ghanta,ghat,ghatana,ghera,ghoda,giraftar,giraftari,good,gopal,gorkha,gotame,gramin,guff,guitar,gulmi,gunadi,gunagan,gunastar,gunastaria,gunastariya,gungan,gyaneswore,gyani,gyata,haina,halkhabar,hami,hamra,hamri,hamro,handle,hard,harey,haridas,hasda,hasdai,hate,hatti,hawa,head,headline,helmet,hero,heroine,hetauda,high,hindu,hiphop,hitler,hoina,home,hotel,hotmail,hour,house,huda,hudai,hunale,hunchha,hunda,hundai,huss,iccha,ice,ilaka,ilam,image,india,indonesia,indra,information,institu,institute,internet,ishwor,islam,islamic,islamik,itahari,jado,jaha,jajarkot,jamune,janakari,janakpu,janchu,jankari,janta,janti,janu,january,java,jawalakhel,jeans,jestha,jetho,jhagada,jhagadi,jhapa,jiddi,jindagani,jindagi,jorpati,journalist,july,june,jungle,jutho,jyaan,jyada,jyadai,kaaran,kag,kagati,kaha,kailali,kailash,kaka,kakarbhitta,kaki,kalakar,kali,kalika,kalikot,kalimati,kalo,kamana,kana,kanchanpur,kanchhi,kanchho,kanchi,kancho,kandel,kantipu,kapal,kapilvastu,karachi,karan,kari,karmachari,karmacharya,karnali,kartik,karya,karyalaya,kasari,kaski,kath,katha,kathai,kathmandu,kavre,kavrepalanchok,kehi,kendriya,keta,keti,key,khadka,khae,khaera,khairenitar,khana,khanal,khanu,kharab,khaye,khayera,khotang,khulaera,khusi,kina,kitab,kitchen,koirala,kolkata,korea,koshi,koteshwar,koteswar,kotha,kothaa,krida,kripaya,krishna,kshan,kshetri,kumar,kupandol,kurakani,kyare,laai,laato,ladai,lagcha,lagi,lagyo,lahan,lai,lakshman,lakshmi,lalitpur,lama,language,laos,lato,laxmi,lazimpat,lekhanath,lekhnath,less,life,light,lila,linux,live,liverpool,loca,lodge,logic,lokeswar,loktantra,london,love,low,lunch,lyau,lyayo,macha,machha,madal,madha,madhab,madhav,madhyamik,mafia,magazine,magh,mahadev,mahakali,mahango,maharaj,maheswar,mahottari,makawanpur,make,malai,malaysia,manage,manakamana,manav,manavadhikar,manche,manchester,mangalamaya,mangalba,mangalmaya,mansir,maobadi,maoist,march,marx,masik,master,masu,math,mathema,mathematics,mathi,matra,matrai,matrika,may,maya,mayor,mba,mbbs,mechi,media,member,ment,mexican,mexico,micro,middle,minister,minute,mirror,mitho,mobile,model,momo,momos,monday,money,monitor,morning,moscow,mother,motor,mount,mountain,mouse,mugu,mukam,mukta,mumbai,music,mustang,myagdi,myanglung,nagarkot,nagarpalika,namaskar,Namaskar,nani,napai,narabaji,narayan,narayangarh,narayani,narendra,nash,nath,nation,nava,nawalparasi,neha,nepalgunj,nepali,Nepali,neta,netherlands,network,news,nibas,nigeria,nirbachan,nirman,nirvachan,nirwachan,nivas,niwas,november,number,nuwakot,ochhyan,ochyan,october,okhaldhunga,omkar,oralo,order,ota,ous,paanch,paani,paaree,pachi,padh,padhai,page,pahadi,paincha,pakaer,pakau,pakistani,palpa,panchaya,panchthar,panday,pant,pants,paper,parajit,parbati,pareka,paribartan,paris,parisad,parivar,parivartan,park,party,parvati,paryay,paryayabachi,paryo,paschim,pashupatinath,paste,patan,patha,pathaa,pathak,patrakar,patrakarita,patrika,paudel,paush,payena,payo,peace,people,person,petrol,phone,phy,physics,pick,pidit,piece,pilot,plate,pocket,point,police,policies,policy,politic,political,post,posting,poudel,pradhan,praja,pranaya,prasad,prashasan,prasna,pratinidhitwa,pravab,prayog,president,press,primary,prime,prithvi,program,project,protest,pugeka,pump,puraskar,purba,purna,purus,push,pushpa,pustakalaya,pyuthan,radha,radio,raja,rajan,rajaniti,rajbhandari,rajbhandary,rajbiraj,rajdhani,rajendra,rajesh,rajmarga,rajniti,rajtantra,raju,rajya,ramailo,ramechhap,ramesh,ramro,rana,rani,raprapa,rapti,rastra,rastraghati,rastriya,ratadin,ratdin,ratri,rautahat,raya,rayo,red,reject,remote,rent,reply,resort,rest,restaurant,review,rewa,rice,ridaya,rifle,ring,road,romanized,rss,rupandehi,rupiya,rupya,russia,sabda,sabhapati,sadak,sadharan,sadhya,safal,safalta,safe,sagarmatha,sahar,sahari,sahila,sahitya,sahityik,sajha,sajilai,sali,salyan,samachar,samadhan,samakhusi,saman,samasya,samay,samaya,sambhavana,sambhawana,samjada,samjana,sampadak,sampadan,sampadit,samrat,samyukta,sanchar,sanepa,sanfe,sanga,sangeet,sangit,sanibar,sanjh,sankhuwasabha,sansar,santi,saptahi,saptari,sarai,sarakar,sarakari,sarbajanik,sareka,sari,sarkar,sarkari,sarlahi,sastra,sathi,saturday,saudi,saun,savapati,sawan,school,science,scientist,scotch,season,second,secretary,security,sedai,sedhai,september,seti,seva,sevak,sewa,sewak,sexy,shah,shahi,shanibar,shankar,shanti,sharma,shirt,shoes,shop,shrestha,Shrestha,shukrabar,shuva,shuvakamana,siligudhi,simra,sindhuli,sindhupalchok,singh,sion,siraha,sister,site,situa,slow,snow,sodhai,soft,somabar,sombar,soshak,soshan,soshit,spain,special,speed,srimaan,sriman,srimati,start,sthan,sthapana,sthapit,store,story,stove,student,style,subarna,subba,subha,sudhar,sukrabar,summer,sunday,sundhara,sunsari,suraksha,surya,suva,suvakamana,swagat,swas,sweater,sweden,syangboche,syangja,syangjali,syau,t-shirt,table,tadha,tadhaa,tailor,tailoring,taiwan,tanahu,tandai,tanera,tannu,tapai,tapain,tapakram,tapasya,tape,tapkram,taplejung,tara,taramani,tarkari,tauko,taxi,tayar,tech,teha,teku,tele,television,terhathum,terrorism,terrorist,tesari,text,thaha,thamel,thapa,Thapa,thapathali,thau,thik,thikai,thikka,thimi,third,thiye,thread,thulo,thursday,tihar,time,times,timi,tin,tion,tiwari,today,tonic,tourist,traffic,tribhuvan,tribhuwan,trivuvan,trolley,trouser,truck,tshirt,tuesday,ture,tv,tyangboche,type,typing,udayapur,udaypur,umedbari,uml,umle,ummedbari,ummedvari,uncle,understand,unicode,united,universities,university,unix,upadhyaya,upahar,upaya,uthe,utkrista,vastav,vatavaran,vice,vichar,vicharma,video,vidhyalaya,vidwan,vietnam,view,ville,vishnu,vision,vodka,voice,vyas,wagle,waha,wait,waiter,waling,walk,ward,ware,watabaran,watch,water,website,wednesday,what,whiskey,whisky,window,windows,winter,wire,word,xaviers,yaha,yatayat,ye,yeha,yellow,yesari,yogeshwari,yogya,yogyata,achanaka,achanakaa,achanaki,achanakee,achanaku,achanakoo,achanakri,achanake,achanakai,achanako,achanakau,achanak,achhama,achhamaa,achhami,achhamee,achhamu,achhamoo,achhamri,achhame,achhamai,achhamo,achhamau,achham,adalata,adalataa,adalati,adalatee,adalatu,adalatoo,adalatri,adalate,adalatai,adalato,adalatau,adalat,adhikara,adhikaraa,adhikari,adhikaree,adhikaru,adhikaroo,adhikarri,adhikare,adhikarai,adhikaro,adhikarau,adhikar,afna,afnaa,afnee,afnu,afnoo,afnri,afne,afnau,afn,aitabara,aitabaraa,aitabari,aitabaree,aitabaru,aitabaroo,aitabarri,aitabare,aitabarai,aitabaro,aitabarau,aitabar,americaa,americi,americee,americu,americoo,americri,americe,americai,americo,americau,americ,amerika,amerikaa,ameriki,amerikee,ameriku,amerikoo,amerikri,amerike,amerikai,ameriko,amerikau,amerik,anumana,anumanaa,anumani,anumanee,anumanu,anumanoo,anumanri,anumane,anumanai,anumano,anumanau,anuman,banga,bangaa,bangi,bangee,bangu,bangoo,bangri,bange,bangai,bango,bangau,bang,belayata,belayataa,belayati,belayatee,belayatu,belayatoo,belayatri,belayate,belayatai,belayato,belayatau,belayat,bhachna,bhachnaa,bhachni,bhachnee,bhachnu,bhachnoo,bhachnri,bhachne,bhachnai,bhachno,bhachnau,bhachn,bhanna,bhannaa,bhanni,bhannee,bhannu,bhannoo,bhannri,bhanne,bhannai,bhanno,bhannau,bhann,bhata,bhataa,bhati,bhatee,bhatu,bhatoo,bhatri,bhate,bhatai,bhato,bhatau,bhat,bhetna,bhetnaa,bhetni,bhetnee,bhetnu,bhetnoo,bhetnri,bhetne,bhetnai,bhetno,bhetnau,bhetn,bhota,bhotaa,bhoti,bhotee,bhotu,bhotoo,bhotri,bhote,bhotai,bhoto,bhotau,bhot,bihana,bihanaa,bihani,bihanee,bihanu,bihanoo,bihanri,bihane,bihanai,bihano,bihanau,bihan,bimara,bimaraa,bimari,bimaree,bimaru,bimaroo,bimarri,bimare,bimarai,bimaro,bimarau,bimar,bistara,bistaraa,bistari,bistaree,bistaru,bistaroo,bistarri,bistare,bistarai,bistaro,bistarau,bistar,bujhna,bujhnaa,bujhni,bujhnee,bujhnu,bujhnoo,bujhnri,bujhne,bujhnai,bujhno,bujhnau,bujhn,chitwana,chitwanaa,chitwani,chitwanee,chitwanu,chitwanoo,chitwanri,chitwane,chitwanai,chitwano,chitwanau,chitwan,chotoa,chotoaa,chotoi,chotoee,chotou,chotooo,chotori,chotoe,chotoai,chotoo,chotoau,choto,dalla,dallaa,dalli,dallee,dallu,dalloo,dallri,dalle,dallai,dallo,dallau,dall,dimaga,dimagaa,dimagi,dimagee,dimagu,dimagoo,dimagri,dimage,dimagai,dimago,dimagau,dimag,dubna,dubnaa,dubni,dubnee,dubnu,dubnoo,dubnri,dubne,dubnai,dubno,dubnau,dubn,durbara,durbaraa,durbari,durbaree,durbaru,durbaroo,durbarri,durbare,durbarai,durbaro,durbarau,durbar,eleca,elecaa,eleci,elecee,elecu,elecoo,elecri,elece,elecai,eleco,elecau,elec,euta,eutaa,euti,eutee,eutu,eutoo,eutri,eute,eutai,euto,eutau,eut,gyana,gyanaa,gyanee,gyanu,gyanoo,gyanri,gyane,gyanai,gyano,gyanau,gyan,hidna,hidnaa,hidni,hidnee,hidnu,hidnoo,hidnri,hidne,hidnai,hidno,hidnau,hidn,himala,himalaa,himali,himalee,himalu,himaloo,himalri,himale,himalai,himalo,himalau,himal,hisaba,hisabaa,hisabi,hisabee,hisabu,hisaboo,hisabri,hisabe,hisabai,hisabo,hisabau,hisab,huna,hunaa,huni,hunee,hunu,hunoo,hunri,hune,hunai,huno,hunau,hun,irana,iranaa,irani,iranee,iranu,iranoo,iranri,irane,iranai,irano,iranau,iran,iraqa,iraqaa,iraqi,iraqee,iraqu,iraqoo,iraqri,iraqe,iraqai,iraqo,iraqau,iraq,jachna,jachnaa,jachni,jachnee,jachnu,jachnoo,jachnri,jachne,jachnai,jachno,jachnau,jachn,japana,japanaa,japani,japanee,japanu,japanoo,japanri,japane,japanai,japano,japanau,japan,jasa,jasaa,jasi,jasee,jasu,jasoo,jasri,jase,jasai,jaso,jasau,jas,jawafa,jawafaa,jawafi,jawafee,jawafu,jawafoo,jawafri,jawafe,jawafai,jawafo,jawafau,jawaf,jetha,jethaa,jethi,jethee,jethu,jethoo,jethri,jethe,jethai,jethau,jeth,jigyasa,jigyasaa,jigyasi,jigyasee,jigyasu,jigyasoo,jigyasri,jigyase,jigyasai,jigyaso,jigyasau,jigyas,jivana,jivanaa,jivani,jivanee,jivanu,jivanoo,jivanri,jivane,jivanai,jivano,jivanau,jivan,jyana,jyanaa,jyani,jyanee,jyanu,jyanoo,jyanri,jyane,jyanai,jyano,jyanau,jyan,khyala,khyalaa,khyali,khyalee,khyalu,khyaloo,khyalri,khyale,khyalai,khyalo,khyalau,khyal,kisana,kisanaa,kisani,kisanee,kisanu,kisanoo,kisanri,kisane,kisanai,kisano,kisanau,kisan,lagda,lagdaa,lagdi,lagdee,lagdu,lagdoo,lagdri,lagde,lagdai,lagdo,lagdau,lagd,lala,lalaa,lali,lalee,lalu,laloo,lalri,lale,lalai,lalo,lalau,lal,mananga,manangaa,manangi,manangee,manangu,manangoo,manangri,manange,manangai,manango,manangau,manang,mangala,mangalaa,mangali,mangalee,mangalu,mangaloo,mangalri,mangale,mangalai,mangalo,mangalau,mangal,marga,margaa,margi,margee,margu,margoo,margri,marge,margai,margo,margau,marg,nagara,nagaraa,nagari,nagaree,nagaru,nagaroo,nagarri,nagare,nagarai,nagaro,nagarau,nagar,Nepala,Nepalaa,Nepalee,Nepalu,Nepaloo,Nepalri,Nepale,Nepalai,Nepalo,Nepalau,Nepal,nepala,nepalaa,nepalee,nepalu,nepaloo,nepalri,nepale,nepalai,nepalo,nepalau,nepal,nepta,neptaa,nepti,neptee,neptu,neptoo,neptri,nepte,neptai,nepto,neptau,nept,pahada,pahadaa,pahadee,pahadu,pahadoo,pahadri,pahade,pahadai,pahado,pahadau,pahad,pakauna,pakaunaa,pakauni,pakaunee,pakaunu,pakaunoo,pakaunri,pakaune,pakaunai,pakauno,pakaunau,pakaun,patala,patalaa,patali,patalee,patalu,pataloo,patalri,patale,patalai,patalo,patalau,patal,prakasha,prakashaa,prakashi,prakashee,prakashu,prakashoo,prakashri,prakashe,prakashai,prakasho,prakashau,prakash,priya,priyaa,priyi,priyee,priyu,priyoo,priyri,priye,priyai,priyo,priyau,priy,pyara,pyaraa,pyari,pyaree,pyaru,pyaroo,pyarri,pyare,pyarai,pyaro,pyarau,pyar,qatara,qataraa,qatari,qataree,qataru,qataroo,qatarri,qatare,qatarai,qataro,qatarau,qatar,ramauna,ramaunaa,ramauni,ramaunee,ramaunu,ramaunoo,ramaunri,ramaune,ramaunai,ramauno,ramaunau,ramaun,satha,sathaa,sathee,sathu,sathoo,sathri,sathe,sathai,satho,sathau,sath,sochda,sochdaa,sochdi,sochdee,sochdu,sochdoo,sochdri,sochde,sochdai,sochdo,sochdau,sochd,sunda,sundaa,sundi,sundee,sundu,sundoo,sundri,sunde,sundai,sundo,sundau,sund,systema,systemaa,systemi,systemee,systemu,systemoo,systemri,systeme,systemai,systemo,systemau,system,tempa,tempaa,tempi,tempee,tempu,tempoo,tempri,tempe,tempai,tempo,tempau,temp,tyasa,tyasaa,tyasi,tyasee,tyasu,tyasoo,tyasri,tyase,tyasai,tyaso,tyasau,tyas,yasa,yasaa,yasi,yasee,yasu,yasoo,yasri,yase,yasai,yaso,yasau,yas"
+roman_list = roman.split(',')
+nepali ="नाई,मिल्दो,मिल्दो,महामारी,बारेमा,भैरको,भैरको,परिक्षण,ईसेवा,मैले,आठ,आउँदा,आए,आबद्द,अवस्था,अबेला,अभिलाषा,अभिलाषा,अभियान,अभ्यास,एक्सिडेन्ट्,अकाउन्ट्,अकाउन्टेन्ट,आचार्य,एक्टिभिटी,अध्यक्ष,अध्यक्ष,अध्यक्ष,अध्ययन,अध्याय,आफ्नै,आफ्नी,आफ्नो,आफ्टर,आईमाई,एअरपोर्ट,आजभोलि,आजकाल,आकाश,अखबार,अखिर ,आक्रमण,अल्छि,आलु,आमा,अमर,अम्बिका,अमेरिका,अमिलो,अम्रिका,अमृत,अनामिका,आन्दोलन,अङ्गुर,यानिमल,आँखा,अन्तर्वाता,अन्तर्वाता,अनुहार,अनुसन्धान,अनुसार,अन्यथा,अप्रुभ,अप्रिल,अप्ठेरो,अरेबिया,अर्जेन्टिना,अर्घाखाँची,अर्घाखाँची,आर्मी,आर्सनल,अर्थ,आर्टिकल,अरुण,अरुणिमा,असाध्य,असार,एसिया,असन,एसोसिए,अशेष,संविधानन,बनेपाली,बन्जाडे,बालाजी,बराल,बस्नेत,बिष्ट,भुसाल,बेल्बासे,छेत्री,दाहाल,डंगोल,धकाल,चौधरी,चापागाई,चापागाई,चौलागाई,चौलागाई,डवाडी,देवकोटा,हमाल,झा,जिम्बा,खान,काफ्ले,कार्की,लामिछाने,मैनाली,मानन्धर,ओबामा,पटेल,रिजाल,सापकोटा,शिवाकोटी,शाक्य,शेर्पा,सिल्वाल,तामाङ,तुलाधर,यादव,आदिल,अमित,अभिसेक,अमन,अमिताभ,अमोघ,बाबा,बलराम,बलिराम,भगत,भग्वान,भास्कर,भवानी,बिधान,विद्यूत,बिजय,बिनायक,बिनायक,फाल्गुनन्द,छिरिङ्,छिरिङ्,गान्धी,गोकर्ण,इमरान,काजी,केदार,क्रान्ती,कुनाल,लाक्पा,केदार,लक्ष्मण,लोकनाथ,मुरारी,एमआरपी,केदार,नानक,निशान्त,पलाश,पारस,प्रशान्त,प्रभाकर,प्रचन्ड,प्रहलाद,प्रताप,राघव,राहुल,राज,राजीव,राजीव,राजकुमार,राजकुमारी,राकेश,रिक्की,ऋषि,रोनाल्डो,साजीद,सार्थक,सौनक,सल्मान,सिद्धार्थ,सन्नी,सुरज,श्याम,तुशार,उदीत,यश,युवराज,युवराज,एलिना,अलिशा,अमृता,अनिशा,अनुपमा,बसन्ती,बिपाशा,धनकुमारी,दीपा,दीपाली,दीक्षा,जानकी,जयन्ता,गङ्गा,गीता,काईली,करीना,करिश्मा,करिश्मा,कुमारी,माईली,मैया,मनकुमारी,मधुरिमा,नैना,नवीना,निशा,नानु,परिजात,पायल,पूजा,प्रियंका,प्रभा,प्रज्ञा,प्रेरणा,प्रेरणा,प्रज्वला,प्रतिक्षा,रामप्यारी,राधिका,रक्षा,रीना,रेखा,रुबी,समझना,संगीता,संगीता,साईली,शारदा,शोभा,सुप्रिया,उमा,उशा,बर्दिया,भिम दत्त,बिरगंज,बिर्तामोड,बिरेन्द्रनगर,चापागाउँ,चम्पापुर,चौतारा,डाँफे,दर्चुला,धापासी,दिपायल,धनुषाधाम,धनुषाधाम,दोलखा,फूल्चोकी,फूल्चोकी,गुलरीया,गढीमाई,गौशाला,गोदावरी,गोसाईकुन्ड,हनुमानढोका,ककनी,कलईया,कमलामाई,कान्तिपथ,कार्यबिनायक,खप्तड,खोकना,कोहलपुर,मिर्चैया,नाम्चे,पर्सा,पाँचखाल,फूल्चोकी,फूल्चोकी,मङ्गलबजार,मुक्तिनाथ,नेपालगन्ज,निजगढ,रारा,तुल्सीपुर,तिकापुर,शंकरापुर,सिद्धार्थनगर,स्वर्गद्वारी,उर्लाबारी,दुलेगौंडा,अएको,आग्रह,आइजो,आज,एन्ड,आर्थिक,आयो,आँखा,अपराध,अपराधी,बाघ,ब्याट्री,बैठक,बालक,बालिका,वाणिज्य,वेवास्ता,भाट्भटेनि,भेडा,भुइँचालो,भूकम्प,विवाद,विज्ञापन,बिल्ला,बिरालो,ब्ल्याक्,ब्लड,भन्दा,व्यक्तिगत,क्यालेन्डर,सेलिब्रेटी,चालक,चरा,छलफल,छाडेर,छाता,छठ,छिटो,कन्फर्म,करोड,दस्ताबेज,दमकल,डिल,देखाउ,देउसी,देवदास,धारा,दीपावली,ढलान,डिभी,दृष्टीकोण,दृष्टीकोण,फ्यानटा,फाएर,गाडी,गैंडा,गूगल,गृहपृष्ठ,हजार,ह्याप्पी,हाती,हुनत,आईफोन,ईन्टरनेशनल,जननी,जनावर,जम्मा,जन्म,जाम,करोड,कठिन,कमाउने,कानुन,कानुनी,खाल्को,खाली,खाने,खाने,लाख,लड्डु,ल्यापटप,मतभेद,मतभेद,मेमोरी,थाकुर,मिठाई,मोटोरोला,मिस,महाकवि,मामाघर,नयाँ,नेपलीज,न्यू,नशा,नारी,निर्देशन,नोकिया,निद्रा,निद्रा,नाता,न्याश्नल,नर्स,न्याय,अन्लाईन,ओटेल,पैसा,पापा,पाकिस्तान,पाउनु,पेडा,फोटो,प्राण,प्रवास,रोज्गार,सम्पादकीय,संकट,शीर्ष,शीर्ष,स्क्याएर,सम्पर्क,स्मार्ट,सदरमुकाम,सम्म,सामसुङ,संस्था,साईड,सिटामोल,स्टार,सुपर,सुजय,स्वास्थ्य,ताजा,ट्यांकर,तयारी,टेक्नोलोजी,थाडो,टिकट,थाकुर,ट्रेन्ड,वान्टेड,वाला,उल्टो,उपाधि,वाईट,भन,भने,भिलेन,यार,याहू,न्यू,आस्था,आस्विन,आतंक,आतंककारी,अथवा,आउँदै,अडियो,अगस्त,औंला,आउन,आन्टी,औषधी,अष्ट्रेलिया,अवस्था,अभ्यास,अवस्था,आयोजना,बाबु,ब्याक,बदमाश,बधाई,बढी,बदमाश,बद्री,बाग्लुङ,बागमती,बहादुर,बैकुण्ठ,बैशाख,बैतडी,बजार,बझाङ,बाजुरा,बाख्रा,बालाजु,बनेपा,बानेश्वर,बानेश्वर,बैंकक,बाङ्लादेश,बैंक,बाँके,बाँसबारी,बारा,बरालिँदा,बरालिन,बर्दिया,बारे,बारी,बर्ष,बर्षा,वार्षिक,बाँसबारी,वास्तव,वास्तव,बाट,बातावरण,बताउ,बाथ,बाटो,बजार,बाजी,बिबिसी,बियर,बेल्जियम,भादगाउँ,भद्रकाली,भाग,भन,भनाभन,भन्छु,भण्डारी,भने,भञ्ज्याङ्,भन्नुस्,भानुभक्त,भानुभक्त,भारती,भरतपुर,भर्र्याङ्,भाषा,भाषा,भट्टराई,भावना,भावना,भए,भएन,भेंडा,भेरी,भिड,भिडन्त,भीषण,भीषण,भोजपुर,भोला,भूमिका,भुटान,विवाह,बिचार,बिचरण,बिचरी,विचारमा,बिद्यार्थी,बिद्या,बिद्यालय,विद्यार्थी,विद्वान,विद्यार्थी,बिहीवार,बिकास,बिकास,बाईक,बिमर्श,बायोलोजी,बिरलै,बिरामी,बिराटनगर,बर्ड,बिरगंज,बिर्सनु,बिष्णु,बिष्णु,बिष्ट,बिताए,बिताए,विवाह,ब्लग,ब्लु,बोर्ड,बडी,बोटानी,बोटल,ब्रेक्,ब्राजिल,ब्रेक्,ब्रेकफास्ट,ब्रदर,बुवा,बुद्ध,बुद्धिस्ट,बुधवा,बुढानिलकण्ठ,बुढाथोकी,बुहारी,बल्ब,बस,बुटवल,बुटवल,बुवा,व्यबहार,व्यास,ब्यस्त,ब्यथा,केबल,कलकत्ता,क्याम्पस,क्यान्डिडेट,क्यान्डी,कार,कार्ट,क्यास,कासल,सिडि,सेल,सेन्टर,सेन्टर,चाड,छँदै,चढि,चाह,चाहिन्छ,छैन,चाहिन्छ,चेअर,चेयरम्यान,छलफल,छलफल,चामल,चम्चा,चानचुन,चङ्गा,चेन्ज,च्यानल,चार,छाती,चौतारी,चेक,चीज,चेली,चेल्सी,केमिस्ट्री,चेतावनी,चेतावनी,छेत्री,छैन,छेत्री,शिकागो,चिसापानी,चिट्ठी,चिउरा,चिया,चोखो,छोरा,छोरी,छोरो,चोक,क्रीस्चियन,छुनु,छुर्पी,च्वाँक,सिनेमा,सिटी,क्लिक,क्लब,कोट,कफि,कोल्ड,कलेज,कलर,कलर,कमाण्ड,कमेन्ट्,कमर्श,कमिटी,कम्युनिष्ट,कम्युनिटी,कम्पनी,कम्प्युटर,कांग्रेस,कनेक्,कन्ट्याक्ट्,कन्भर्टर,कूकर,कपि,कोर्ड,कोर्ट,क्रेसी,क्रीम,क्रेडिट,क्रीकेट,कल्चर,कप,कर्फ्यु,साईकल,सिलिन्डर,दादा,डडेलधुरा,दाईजो,दाजु,डाँका,दक्षिण,दालभात,डमरू,दमौली,डान्स,डाँडा,दाङ,डर,दराज,दरबार,दार्जीलिङ,दर्शन,दर्शन,दशै,डेट,डेटिङ,डे,डेबिट,डिसेम्बर,डिग्री,डिग्रीज,डिलिट,दिल्ली,डिमोक्रेसी,डेन्मार्क,डिपार्ट,देशान्,डेस्क,देउखुरी,देवनागरी,डिभेलप,देवी,देवनागरी,देवता,धागो,धनगढी,धनगढी,धनी,धनकुटा,धन्यवाद,धनुषा,धन्यवाद,धन्यवाद,धरान,धारणा,धौलागिरी,ढिकि,ढिलो,ध्रुब,ढुकुर,धुलाबारी,ढुङ्गा,ढुंगाना,ध्यान,दिदिबहिनी,डिजल,डिनर,दीपेन्द्र,डिस्कस्,दीक्षित,डाक्टर,दोल्खा,डोल्पा,डोटी,डाउन,ड्रग,दुलेगौंडा,डुम्रे,डुंगा,डिभिडि,ईच्छा,इकोनोमिक्स,एडिट,एजुके,ईज्जत्,एकान्त,एक्कासी,ईलाका,ईमेल,एम्बेस्सी,ईमर्जेन्सी,एमिरेट्स,ईन्जिन,ईन्जिनियर,ईन्जिनियरिङ,ईंग्लिश,एरिका,यसरी,यूरोप,यूरोपियन,ईभिनिङ,एभरेष्ट,एक्सर्साइज,फागुन,फाल्गुन,फ्यान,फास्ट,फादर,फ्याक्स,फिचर,फेब्रुअरी,फीड,फाईरिङ,फर्स्ट,फ्लाईट,फ्लोर,फ्लाई,एफएम,फुड,फूटबल,फोर्थ,फ्रान्स,फ्राइडे,फ्रेन्ड,गाडी,गाली,गाह्रो,गैंडाकोट,ग्यालेक्सी,गण्डकी,गणेश,गणित,गार्डन्,गरेका,गरीब,गाह्रो,गर्‍यो,गाउँ,जर्मन,जर्मनी,घडी,घण्टा,घाट,घटना,घेरा,घोडा,गिरफ्तार,गिरफ्तारी,गूड्,गोपाल,गोर्खा,गोतामे,ग्रामीण,गफ,गितार,गुल्मी,गुणादी,गुणगान,गुणस्तर,गुणस्तरीय,गुणस्तरीय,गुणगान,ज्ञानेश्वर,ज्ञानी,ज्ञाता,हैन,हालखबर,हामी,हाम्रा,हाम्री,हाम्रो,ह्यान्डल्,हार्ड,हरे,हरिदास,हाँस्दा,हाँस्दै,हेट,हात्ती,हावा,हेड,हेडलाईन,हेल्मेट,हिरो,हिरोईन,हेटौंडा,हाई,हिन्दू,हिपहप,हिटलर,होईन,होम,होटेल,हटमेल,आवर,हाउस,हुँदा,हुँदै,हुनाले,हुन्छ,हुँदा,हुँदै,हस्,ईच्छा,आईस,ईलाका,ईलाम,इमेज,ईन्डिया,इन्डोनेशिया,ईन्द्र,इन्फर्मेसन,ईन्स्टिच्यु,ईन्स्टिच्युट,ईन्टरनेट,ईश्वर,ईस्लाम,ईस्लामिक,ईस्लामिक,इटहरी,जाडो,जहाँ,जाजरकोट,जामुने,जानकारी,जनकपु,जान्छु,जानकारी,जनता,जन्ती,जानु,जनवरी,जाभा,जावलाखेल,जिन्स,जेष्ठ,जेठो,झगडा,झगडी,झापा,जिद्दी,जिन्दगानी,जिन्दगी,जोरपाटी,जर्नलिस्ट,जुलाई,जुन,जंगल,जुठो,ज्यान,ज्यादा,ज्यादै,कारण,काग,कागती,कहाँ,कैलाली,कैलाश,काका,काकडभित्ता,काकी,कलाकार,काली,कालिका,कालिकोट,कालिमाटी,कालो,कामना,कन,कंचनपुर,कान्छी,कान्छो,कान्छी,काँचो,कंडेल,कान्तिपु,कपाल,कपिलवस्तु,कराँची,कारण,कारी,कर्मचारी,कर्माचार्य,कर्णाली,कार्तिक,कार्य,कार्यालय,कसरी,कास्की,काठ,कथा,कठै,काठमाडौं,काभ्रे,काभ्रेपलान्चोक,केहि,केन्द्रिय,केटा,केटी,कि,खड्का,खाए,खाएर,खैरेनीटार,खान,खनाल,खानु,खराब,खाए,खाएर,खोटाङ,खुलाएर,खुशी,किन,किताब,किचन,कोईराला,कोलकाता,कोरिया,कोशी,कोटेश्वर,कोटेश्वर,कोठा,कोठा,क्रिडा,कृपया,कृष्ण,क्षण,छेत्री,कुमार,कुपोन्डोल,कुराकानी,क्यारे,लाई,लाटो,लडाईं,लाग्छ,लागि,लाग्यो,लाहान,लाई,लक्ष्मण,लक्ष्मी,ललितपुर,लामा,ल्यांगवेज,लाओस,लाटो,लक्ष्मी,लाजिम्पाट,लेखनाथ,लेखनाथ,लेस,लाईफ,लाईट,लीला,लिनक्स,लाईभ,लिभरपुल,लोके,लज,लजिक,लोकेश्वर,लोकतन्त्र,लण्डन,लभ,लो,लन्च,ल्याउ,ल्यायो,माछा,माछा,मादल,माध,माधव,माधव,माद्यामिक,माफिया,म्यागेजिन,माघ,महादेव,महाकाली,महँगो,महाराज,महेश्वर,महोत्तरी,मकवानपुर,मेक,मलाई,मलेशिया,म्यानेज,मनकामना,मानव,मानवाधिकार,मान्छे,म्यान्चेस्टर,मंगलमय,मंगलवा,मंगलमय,मंसिर,माओवादी,माओईस्ट्,मार्च,मार्क्स,मासिक,मास्टर,मासु,म्याथ,माथेमा,म्याथम्याटिक्स,माथि,मात्र,मात्रै,मातृका,मे,माया,मेयर,एमबिए,एमबिबिएस,मेची,मिडिया,मेम्बर,मेन्ट,मेक्सिकन,मेक्सिको,माईक्रो,मिडल,मिनिस्टर,मिनट,मिरर,मिठो,मोबाईल,मोडेल,मम,मम,मन्डे,मनी,मनिटर,मर्निङ,मस्को,मदर,मोटर,माउन्ट,माउन्टेन,माउस,मुगू,मुकाम,मुक्त,मुम्बई,म्युजिक,मुस्ताङ,म्याग्दी,म्याङ्लुङ,नगरकोट,नगरपालिका,नमस्कार,नमस्कार,नानी,नपाई,नाराबाजी,नारायण,नारायणगढ,नारायणी,नरेन्द्र,नाश,नाथ,नेशन,नव,नवलपरासी,नेहा,नेपालगन्ज,नेपाली,नेपाली,नेता,नेदरल्यान्डस्,नेट्वोर्क,न्युज,निवास,नाइजेरिया,निर्वाचन,निर्माण,निर्वाचन,निर्वाचन,निवास,निवास,नोवेम्बर,नम्बर,नुवाकोट,ओछ्यान,ओछ्यान,अक्टोबर,ओखल्ढुङ्गा,ओमकार,ओरालो,अर्डर,वटा,यस,पाँच,पानी,पारी,पछी,पढ्,पढाई,पेज,पहाडी,पाईन्छ,पकाएर,पकाउ,पाकिस्तानी,पाल्पा,पञ्चाय,पाँचथर,पाण्डे,पन्त,पाइन्ट,पेपर,पराजित,पार्वती,परेका,परिवर्तन,पेरिस,परिषद,परिवार,परिवर्तन,पार्क,पार्टी,पार्वती,पर्याय,पर्यायवाची,पर्‍यो,पश्चिम्,पशुपतिनाथ,पेस्ट,पाटन,पठा,पठा,पाठक,पत्रकार,पत्रकारिता,पत्रीका,पौडेल,पौष,पाएन,पायो,पीस,पिपल,पर्सन,पेट्रोल,फोन,फी,फिजिक्स,पिक,पीडित,पीस,पाईलट,प्लेट,पाकेट,पोइन्ट,पुलिस,पोलिसिज्,पोलिसी,पोलिटिक,पोलिटिकल,पोस्ट,पोस्टिङ्,पौडेल,प्रधान,प्रजा,प्रणय,प्रसाद,प्रशासन,प्रश्न,प्रतिनिधित्व,प्रभाव,प्रयोग,प्रेसिडेन्ट,प्रेस,प्राइमरी,प्राईम,पृथ्वी,प्रोग्राम,प्रोजेक्ट,प्रोटेस्ट,पुगेका,पम्प,पुरस्कार,पूर्व,पूर्ण,पुरुष,पुष,पुष्प,पुस्तकालय,प्युठान,राधा,रेडियो,राजा,राजन,राजनीति,राजभण्डारी,राजभण्डारी,राजबिराज,राजधानी,राजेन्द्र,राजेश,राजमार्ग,राजनीति,राजतन्त्र,राजु,राज्य,रमाइलो,रामेछाप,रमेश,राम्रो,राणा,रानी,राप्रपा,राप्ती,राष्ट्र,राष्ट्रघाती,राष्ट्रिय,रातदिन,रातदिन,रात्री,रौतहट,राय,रायो,रेड,रिजेक्ट,रिमोट,रेन्ट,रिप्लाई,रिजोर्ट,रेस्ट,रेस्टुराँ,रिभ्यु,रेवा,राइस्,हृदय,राईफल,रिङ्ग,रोड,रोमनाईज्ड,आर्एस्एस्,रुपन्देही,रुपैयाँ,रुपैयाँ,रूस,शब्द,सभापति,सडक,साधारण,साध्य,सफल,सफलता,सेफ,सगरमाथा,शहर,शहरी,साँहिला,साहित्य,साहित्यिक,साझा,सजिलै,साली,सल्यान,समाचार,समाधान,सामाखुशी,समान्,समस्या,समय,समय,सम्भावना,सम्भावना,सम्झँदा,सम्झना,सम्पादक,सम्पादन,सम्पादित,सम्राट,संयुक्त,संचार,सानेपा,साँफे,सँग,संगीत,संगीत,शनिबार,साँझ,संखुवासभा,संसार,शान्ति,साप्ताहि,सप्तरी,साह्रै,सरकार,सरकारी,सार्वजनिक,सरेका,सारी,सरकार,सरकारी,सर्लाही,शास्त्र,साथी,स्याटर्‍डे,साउदी,साउन,सभापति,साउन,स्कुल,साईन्स,साईन्टिस्ट,स्कच्,सिजन,सेकेन्ड,सेक्रेटेरी,सिक्युरिटी,सेढाई,सेढाई,सेप्टेम्बर,सेती,सेवा,सेवक,सेवा,सेवक,सेक्सी,शाह,शाही,शनिबार,शंकर,शान्ति,शर्मा,सर्ट,शूज,सप,श्रेष्ठ,श्रेष्ठ,शुक्रबार,शुभ,शुभकामना,सिलिगुडी,सिमरा,सिन्धुली,सिन्धुपाल्चोक,सिंह,सन,सिरहा,सिस्टर,साईट,सिचुए,स्लो,स्नो,सोधाई,सफ्ट,सोमबार,सोमबार,शोषक,शोषन,शोषित,स्पेन,स्पेसल्,स्पीड,श्रीमान्,श्रीमान्,श्रीमती,स्टार्ट,स्थान,स्थापना,स्थापित,स्टोर,स्टोरी,स्टोभ,स्टुडेन्ट,स्टाईल,सुबर्ण,सुब्बा,शुभ,सुधार,शुक्रबार,समर,सन्डे,सुन्धारा,सुन्सरी,सुरक्षा,सुर्य,शुभ,शुभकामना,स्वागत,श्वास,स्वेटर,स्विडेन,स्याङ्बोचे,स्याङ्जा,स्याङ्जाली,स्याउ,टीसर्ट,टेबल,टाढा,टाढा,टेलर,टेलरिङ्ग,ताईवान्,तनहुँ,तान्दै,तानेर,तान्नु,तपाईं,तपाईं,तापक्रम,तपस्या,टेप,तापक्रम,ताप्लेजुङ्,तर,तारामणि,तरकारी,टाउको,ट्याक्सी,तयार,टेक,त्यहाँ,टेकु,टेलि,टेलिभिजन,तेह्रथुम,टेरोरिज्म्,टेरोरिस्ट्,त्यसरी,टेक्स्ट्,थाहा,ठमेल,थापा,थापा,थापाथली,ठाउँ,ठीक,ठिकै,ठीक्क,ठिमी,थर्ड,थिए,थ्रेड,ठुलो,थर्सडे,तिहार,टाईम,टाईम्स,तिमी,तीन,सन,तिवारी,टूडे,टनिक,टुरिष्ट,ट्राफिक,त्रिभुवन,त्रिभुवन,त्रिभुवन,ट्रली,ट्राउजर,ट्रक,टीसर्ट,ट्युस्डे,चर,टिभी,ट्याङ्बोचे,टाईप,टाईपिङ,उदयपुर,उदयपुर,उम्मेद्बारी,एमाले,उम्ले,उम्मेद्बारी,उम्मेद्बारी,अंकल,अन्डर्स्टान्ड,युनिकोड,युनाईटेड,युनिभर्सिटीज्,युनिभर्सिटी,युनिक्स,उपाध्याय,उपहार,उपाय,उठे,उत्कृष्ट,वास्तव,बातावरण,भाइस,विचार,विचारमा,भिडियो,विद्यालय,विद्वान,भियतनाम,भ्यू,भिल,बिष्णु,भिजन,भोड्का,भोईस,व्यास,वाग्ले,वहाँ,वेट,वेटर,वालिङ्,वाक,वार्ड,वेर,बातावरण,वाच,वाटर,वेबसाईट,वेनस्डे,व्हाट,व्हिस्की,व्हिस्की,विन्डो,विन्डोज,विन्टर,वाएर,वर्ड,जेभियर्स,यहाँ,यातायात,ए,यहाँ,एल्लो,यसरी,योगेश्वरी,योग्य,योग्यता,अचानक,अचानका,अचानकि,अचानकी,अचानकु,अचानकू,अचानकृ,अचानके,अचानकै,अचानको,अचानकौ,अचानक्,अछाम,अछामा,अछामि,अछामी,अछामु,अछामू,अछामृ,अछामे,अछामै,अछामो,अछामौ,अछाम्,अदालत,अदालता,अदालति,अदालती,अदालतु,अदालतू,अदालतृ,अदालते,अदालतै,अदालतो,अदालतौ,अदालत्,अधिकार,अधिकारा,अधिकारि,अधिकारी,अधिकारु,अधिकारू,अधिकारृ,अधिकारे,अधिकारै,अधिकारो,अधिकारौ,अधिकार्,आफ्न,आफ्ना,आफ्नी,आफ्नु,आफ्नू,आफ्नृ,आफ्ने,आफ्नौ,आफ्न्,आईतवार,आईतवारा,आईतवारि,आईतवारी,आईतवारु,आईतवारू,आईतवारृ,आईतवारे,आईतवारै,आईतवारो,आईतवारौ,आईतवार्,अमेरिका,अमेरिकि,अमेरिकी,अमेरिकु,अमेरिकू,अमेरिकृ,अमेरिके,अमेरिकै,अमेरिको,अमेरिकौ,अमेरिक्,अमेरिक,अमेरिका,अमेरिकि,अमेरिकी,अमेरिकु,अमेरिकू,अमेरिकृ,अमेरिके,अमेरिकै,अमेरिको,अमेरिकौ,अमेरिक्,अनुमान,अनुमाना,अनुमानि,अनुमानी,अनुमानु,अनुमानू,अनुमानृ,अनुमाने,अनुमानै,अनुमानो,अनुमानौ,अनुमान्,बाङ्ग,बाङ्गा,बाङ्गि,बाङ्गी,बाङ्गु,बाङ्गू,बाङ्गृ,बाङ्गे,बाङ्गै,बाङ्गो,बाङ्गौ,बाङ्ग्,बेलायत,बेलायता,बेलायति,बेलायती,बेलायतु,बेलायतू,बेलायतृ,बेलायते,बेलायतै,बेलायतो,बेलायतौ,बेलायत्,भाँच्न,भाँच्ना,भाँच्नि,भाँच्नी,भाँच्नु,भाँच्नू,भाँच्नृ,भाँच्ने,भाँच्नै,भाँच्नो,भाँच्नौ,भाँच्न्,भन्न,भन्ना,भन्नि,भन्नी,भन्नु,भन्नू,भन्नृ,भन्ने,भन्नै,भन्नो,भन्नौ,भन्न्,भात,भाता,भाति,भाती,भातु,भातू,भातृ,भाते,भातै,भातो,भातौ,भात्,भेट्न,भेट्ना,भेट्नि,भेट्नी,भेट्नु,भेट्नू,भेट्नृ,भेट्ने,भेट्नै,भेट्नो,भेट्नौ,भेट्न्,भोट,भोटा,भोटि,भोटी,भोटु,भोटू,भोटृ,भोटे,भोटै,भोटो,भोटौ,भोट्,बिहान,बिहाना,बिहानि,बिहानी,बिहानु,बिहानू,बिहानृ,बिहाने,बिहानै,बिहानो,बिहानौ,बिहान्,बिमार,बिमारा,बिमारि,बिमारी,बिमारु,बिमारू,बिमारृ,बिमारे,बिमारै,बिमारो,बिमारौ,बिमार्,बिस्तार,बिस्तारा,बिस्तारि,बिस्तारी,बिस्तारु,बिस्तारू,बिस्तारृ,बिस्तारे,बिस्तारै,बिस्तारो,बिस्तारौ,बिस्तार्,बुझ्न,बुझ्ना,बुझ्नि,बुझ्नी,बुझ्नु,बुझ्नू,बुझ्नृ,बुझ्ने,बुझ्नै,बुझ्नो,बुझ्नौ,बुझ्न्,चितवन,चितवना,चितवनि,चितवनी,चितवनु,चितवनू,चितवनृ,चितवने,चितवनै,चितवनो,चितवनौ,चितवन्,छोटो,छोटोा,छोटोि,छोटोी,छोटोु,छोटोू,छोटोृ,छोटोे,छोटोै,छोटोो,छोटोौ,छोटो्,डल्ल,डल्ला,डल्लि,डल्ली,डल्लु,डल्लू,डल्लृ,डल्ले,डल्लै,डल्लो,डल्लौ,डल्ल्,दिमाग,दिमागा,दिमागि,दिमागी,दिमागु,दिमागू,दिमागृ,दिमागे,दिमागै,दिमागो,दिमागौ,दिमाग्,डुब्न,डुब्ना,डुब्नि,डुब्नी,डुब्नु,डुब्नू,डुब्नृ,डुब्ने,डुब्नै,डुब्नो,डुब्नौ,डुब्न्,दरबार,दरबारा,दरबारि,दरबारी,दरबारु,दरबारू,दरबारृ,दरबारे,दरबारै,दरबारो,दरबारौ,दरबार्,ईलेक,ईलेका,ईलेकि,ईलेकी,ईलेकु,ईलेकू,ईलेकृ,ईलेके,ईलेकै,ईलेको,ईलेकौ,ईलेक्,एउटा,एउटाा,एउटाि,एउटाी,एउटाु,एउटाू,एउटाृ,एउटाे,एउटाै,एउटाो,एउटाौ,एउटा्,ज्ञान,ज्ञाना,ज्ञानी,ज्ञानु,ज्ञानू,ज्ञानृ,ज्ञाने,ज्ञानै,ज्ञानो,ज्ञानौ,ज्ञान्,हिंड्न,हिंड्ना,हिंड्नि,हिंड्नी,हिंड्नु,हिंड्नू,हिंड्नृ,हिंड्ने,हिंड्नै,हिंड्नो,हिंड्नौ,हिंड्न्,हिमाल,हिमाला,हिमालि,हिमाली,हिमालु,हिमालू,हिमालृ,हिमाले,हिमालै,हिमालो,हिमालौ,हिमाल्,हिसाब,हिसाबा,हिसाबि,हिसाबी,हिसाबु,हिसाबू,हिसाबृ,हिसाबे,हिसाबै,हिसाबो,हिसाबौ,हिसाब्,हुन,हुना,हुनि,हुनी,हुनु,हुनू,हुनृ,हुने,हुनै,हुनो,हुनौ,हुन्,ईरान,ईराना,ईरानि,ईरानी,ईरानु,ईरानू,ईरानृ,ईराने,ईरानै,ईरानो,ईरानौ,ईरान्,ईराक,ईराका,ईराकि,ईराकी,ईराकु,ईराकू,ईराकृ,ईराके,ईराकै,ईराको,ईराकौ,ईराक्,जाँच्न,जाँच्ना,जाँच्नि,जाँच्नी,जाँच्नु,जाँच्नू,जाँच्नृ,जाँच्ने,जाँच्नै,जाँच्नो,जाँच्नौ,जाँच्न्,जापान,जापाना,जापानि,जापानी,जापानु,जापानू,जापानृ,जापाने,जापानै,जापानो,जापानौ,जापान्,जस,जसा,जसि,जसी,जसु,जसू,जसृ,जसे,जसै,जसो,जसौ,जस्,जवाफ,जवाफा,जवाफि,जवाफी,जवाफु,जवाफू,जवाफृ,जवाफे,जवाफै,जवाफो,जवाफौ,जवाफ्,जेठ,जेठा,जेठि,जेठी,जेठु,जेठू,जेठृ,जेठे,जेठै,जेठौ,जेठ्,जिज्ञासा,जिज्ञासाा,जिज्ञासाि,जिज्ञासाी,जिज्ञासाु,जिज्ञासाू,जिज्ञासाृ,जिज्ञासाे,जिज्ञासाै,जिज्ञासाो,जिज्ञासाौ,जिज्ञासा्,जीवन,जीवना,जीवनि,जीवनी,जीवनु,जीवनू,जीवनृ,जीवने,जीवनै,जीवनो,जीवनौ,जीवन्,ज्यान,ज्याना,ज्यानि,ज्यानी,ज्यानु,ज्यानू,ज्यानृ,ज्याने,ज्यानै,ज्यानो,ज्यानौ,ज्यान्,ख्याल,ख्याला,ख्यालि,ख्याली,ख्यालु,ख्यालू,ख्यालृ,ख्याले,ख्यालै,ख्यालो,ख्यालौ,ख्याल्,किसान,किसाना,किसानि,किसानी,किसानु,किसानू,किसानृ,किसाने,किसानै,किसानो,किसानौ,किसान्,लाग्द,लाग्दा,लाग्दि,लाग्दी,लाग्दु,लाग्दू,लाग्दृ,लाग्दे,लाग्दै,लाग्दो,लाग्दौ,लाग्द्,लाल,लाला,लालि,लाली,लालु,लालू,लालृ,लाले,लालै,लालो,लालौ,लाल्,मनाङ,मनाङा,मनाङि,मनाङी,मनाङु,मनाङू,मनाङृ,मनाङे,मनाङै,मनाङो,मनाङौ,मनाङ्,मंगल,मंगला,मंगलि,मंगली,मंगलु,मंगलू,मंगलृ,मंगले,मंगलै,मंगलो,मंगलौ,मंगल्,मार्ग,मार्गा,मार्गि,मार्गी,मार्गु,मार्गू,मार्गृ,मार्गे,मार्गै,मार्गो,मार्गौ,मार्ग्,नगर,नगरा,नगरि,नगरी,नगरु,नगरू,नगरृ,नगरे,नगरै,नगरो,नगरौ,नगर्,नेपाल,नेपाला,नेपाली,नेपालु,नेपालू,नेपालृ,नेपाले,नेपालै,नेपालो,नेपालौ,नेपाल्,नेपाल,नेपाला,नेपाली,नेपालु,नेपालू,नेपालृ,नेपाले,नेपालै,नेपालो,नेपालौ,नेपाल्,नेप्ट,नेप्टा,नेप्टि,नेप्टी,नेप्टु,नेप्टू,नेप्टृ,नेप्टे,नेप्टै,नेप्टो,नेप्टौ,नेप्ट्,पहाड,पहाडा,पहाडी,पहाडु,पहाडू,पहाडृ,पहाडे,पहाडै,पहाडो,पहाडौ,पहाड्,पकाउन,पकाउना,पकाउनि,पकाउनी,पकाउनु,पकाउनू,पकाउनृ,पकाउने,पकाउनै,पकाउनो,पकाउनौ,पकाउन्,पातल,पातला,पातलि,पातली,पातलु,पातलू,पातलृ,पातले,पातलै,पातलो,पातलौ,पातल्,प्रकाश,प्रकाशा,प्रकाशि,प्रकाशी,प्रकाशु,प्रकाशू,प्रकाशृ,प्रकाशे,प्रकाशै,प्रकाशो,प्रकाशौ,प्रकाश्,प्रिय,प्रिया,प्रियि,प्रियी,प्रियु,प्रियू,प्रियृ,प्रिये,प्रियै,प्रियो,प्रियौ,प्रिय्,प्यार,प्यारा,प्यारि,प्यारी,प्यारु,प्यारू,प्यारृ,प्यारे,प्यारै,प्यारो,प्यारौ,प्यार्,कतार,कतारा,कतारि,कतारी,कतारु,कतारू,कतारृ,कतारे,कतारै,कतारो,कतारौ,कतार्,रमाउन,रमाउना,रमाउनि,रमाउनी,रमाउनु,रमाउनू,रमाउनृ,रमाउने,रमाउनै,रमाउनो,रमाउनौ,रमाउन्,साथ,साथा,साथी,साथु,साथू,साथृ,साथे,साथै,साथो,साथौ,साथ्,सोच्द,सोच्दा,सोच्दि,सोच्दी,सोच्दु,सोच्दू,सोच्दृ,सोच्दे,सोच्दै,सोच्दो,सोच्दौ,सोच्द्,सुन्द,सुन्दा,सुन्दि,सुन्दी,सुन्दु,सुन्दू,सुन्दृ,सुन्दे,सुन्दै,सुन्दो,सुन्दौ,सुन्द्,सिस्टम,सिस्टमा,सिस्टमि,सिस्टमी,सिस्टमु,सिस्टमू,सिस्टमृ,सिस्टमे,सिस्टमै,सिस्टमो,सिस्टमौ,सिस्टम्,टेम्प,टेम्पा,टेम्पि,टेम्पी,टेम्पु,टेम्पू,टेम्पृ,टेम्पे,टेम्पै,टेम्पो,टेम्पौ,टेम्प्,त्यस,त्यसा,त्यसि,त्यसी,त्यसु,त्यसू,त्यसृ,त्यसे,त्यसै,त्यसो,त्यसौ,त्यस्,यस,यसा,यसि,यसी,यसु,यसू,यसृ,यसे,यसै,यसो,यसौ,यस"
+nepali_list = nepali.split(',')
+
+online_dist = OrderedDict(zip(roman_list,nepali_list))
+
+# sorted_online_dist = sorted(online_dist, key=lambda l: len(l[0]), reverse=True)
+# for k in sorted(online_dist, key=len, reverse=True):
+#     sorted_online_dist[k] = online_dist[k]
+# print(sorted_online_dist)
+
+d2r_dict=OrderedDict([
+	('china','चीन'), 
+	('hostel','होस्टेल'), 
+	('transfer','ट्रांसफर'), 
+	('esewa','ईसेवा'), 
+	('dar','डर'), 
+	('malai','मलाई'),
+	('hamro','हम्रो'),
+	('napala','नेपाल'),
+	('napala','नेपाल'),
+	('bharat','भारत'), 
+	('bharat','इंडिया'), 
+	('surakshit','सुरक्षित'),
+	('suraksha','सुरक्षा'),
+	('suraksha','सुरक्षा'), 
+	('thau','ठाउँ'),  
+	('corona','कोरोना'),
+	('aile','अहिले'),
+	('aaile','अहिले'),
+	('Covid19​','कोरोना'), 
+	('SARS-CoV-2','कोरोना'), 
+	('aama','आमा'), 
+	('aamaa','आमा'), 
+	('hoina','होइन'), 
+	('koslai','कस्लाई'), 
+	('khatarnak','खतरनाक'),
+	('pariwartan','परिवर्तन'),  
+	('kaslai','कस्लाई'), 
+	('sambav','सम्भव'), 
+	('virus','भाइरस'), 
+	('vairus','भाइरस'), 
+	('co','को'), 
+	('bha','भ'), 
+	('ca','च'), 
+	('tim','तिम्'), 
+	('ti','ति'), 
+	('ta','त'), 
+	('rai','राई'), 
+	('cha','छ'),
+	('chha','छ'),
+	('xa','छ'),  
+	('da','द'), 
+	('dha','ध'),
+	('gha','घ'),    
+	('fa','फा'),
+	('pha','फ'),
+	('ga','ग'), 
+	('ra','र'),   
+	('qa','का'), 
+	('sha','श'),              
+	('sh','श'), 
+	('ta','त'),
+	('tha','ठ'),
+	('aau','औ'),
+	('sa','स'),
+	('wa','वा'), 
+	('ai','ई'), 
+	('ya','या'), 
+	('am','आम'), 
+	('au','औ'), 
+	('aum','ओम'),  
+	('ja','ज'),
+	('jha','झा'),
+	('gya','ग्या'),
+	('yan','यन'),
+	('nga','ङ्ग'),
+	('ma','म'),
+	('za','श'),
+	('ksha','क्ष'),
+	('ksha','क्ष'),
+	('la','ल'),
+	('om','ओम'),
+	('rri','रि'),
+	('oo','ओ'),
+	('na','न'),
+	('ka','क'),
+	('ja','ज'),
+	('a','ा'), 
+	('b','ब'), 
+	('c','च'), 
+	('d','द'), 
+	('e','े'), 
+	('f','उ'), 
+	('g','ग'), 
+	('h','ह'), 
+	('i','ि'), 
+	('j','ज'), 
+	('k','क'), 
+	('l','ल'), 
+	('n','न'), 
+	('m','म'), 
+	('o','ो'),
+	('pa','प'), 
+	('p','प'), 
+	('q','ट'), 
+	('r','र'), 
+	('s','स'), 
+	('t','त'), 
+	('u','ु'), 
+	('v','व'), 
+	('w','ौ'), 
+	('x','ड'), 
+	('y','य'), 
+	('z','ष')
+	])
+
+google_dict=OrderedDict([
+	('china','चीन'), 
+	('hostel','होस्टेल'), 
+	('transfer','ट्रांसफर'), 
+	('esewa','ईसेवा'), 
+	('dar','डर'), 
+	('malai','मलाई'),
+	('hamro','हम्रो'),
+	('napala','नेपाल'),
+	('napala','नेपाल'),
+	('bharat','भारत'), 
+	('bharat','इंडिया'), 
+	('surakshit','सुरक्षित'),
+	('suraksha','सुरक्षा'),
+	('suraksha','सुरक्षा'), 
+	('thau','ठाउँ'),  
+	('corona','कोरोना'),
+
+	('Covid19​','कोरोना'), 
+	('SARS-CoV-2','कोरोना'), 
+	('aama','आमा'), 
+	('aamaa','आमा'), 
+	('hoina','होइन'), 
+	('koslai','कस्लाई'), 
+	('khatarnak','खतरनाक'),
+	('pariwartan','परिवर्तन'),  
+	('kaslai','कस्लाई'), 
+	('sambav','सम्भव'), 
+	('virus','भाइरस'), 
+	('vairus','भाइरस')])
+
+online_dist.update(d2r_dict)
+
+
+sorted_online_dist=OrderedDict(sorted(online_dist.items(), key=lambda x: len(x[0]),reverse=True))
+
+def is_devanagari(text):
+	"""
+	This function checks if the text is in Devanagari format.
+	Syntax:
+	>>> nt.is_devanagari(text)
+
+	Example:
+		>>> import nepali_transliteration as nt
+		>>> nt.is_devanagari("कोरोना")
+			True
+
+		>>> nt.romanize_text("nepalकोरोना")
+			False
+
+		>>> nt.romanize_text("corona")
+			False
+	"""
+	if(sum(True for i in text if i.lower() in set(alphabet)) / len(text)) > 0.0:
+		return False
+	else:
+		return True
+
+def is_english(text):
+	"""
+	This function checks if the text is in Devanagari format.
+	Syntax:
+	>>> nt.is_devanagari(text)
+
+	Example:
+		>>> import nepali_transliteration as nt
+		>>> nt.is_devanagari("कोरोना")
+			True
+
+		>>> nt.romanize_text("nepalकोरोना")
+			False
+
+		>>> nt.romanize_text("corona")
+			False
+	"""
+	if(detect(text)) == "en":
+		return True
+	else:
+		return False
+	
+
+def convert(text):
+	"""
+	This function can be used to convert romanize text into nepali.
+
+	Syntax:
+	>>> nt.convert(text)
+
+	Example:
+		>>> import nepali_transliteration as nt
+		>>> nt.convert("corona")
+			कोरोना
+	"""
+	text = text.lower()
+	for key,value in sorted_online_dist.items():
+		text=text.replace(key,value)  
+	return text
+
+def google_convert(text):
+	"""
+	This function can be used to convert romanize text into nepali.
+
+	Syntax:
+	>>> nt.google_convert(text)
+
+	Example:
+		>>> import nepali_transliteration as nt
+		>>> nt.google_convert("corona")
+			कोरोना
+	"""
+	text = text.lower()
+	for key,value in google_dict.items():
+		text=text.replace(key,value)
+	PARAMS['text'] = text.replace(',','')
+
+	r = requests.get(url = URL, params = PARAMS)
+	return r.json()[1][0][1][0]
+
+
+def main():
+	 print(google_convert("maile chunab ko bela gau maa umedbari deko , timi dinau china ?"))
+
+
+if __name__== "__main__":
+  main()
+
