@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+genquiz/MML2OMML.XSL
+genquiz/__init__.py
+genquiz/generator.py
+genquiz/grader.py
+genquiz.egg-info/PKG-INFO
+genquiz.egg-info/SOURCES.txt
+genquiz.egg-info/dependency_links.txt
+genquiz.egg-info/requires.txt
+genquiz.egg-info/top_level.txt
