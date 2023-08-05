@@ -1,0 +1,17 @@
+generativepoetry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generativepoetry/decomposer.py,sha256=rHRXIXlMJqIo_dWeehZSUaci5o0qIpJ0p5UEqaK_9ug,11858
+generativepoetry/jolastic.py,sha256=KWe12ql40IsNfizUvNoPXRz_jUeM9qwUTOVLLVG6XXM,7057
+generativepoetry/lexigen.py,sha256=5ABSNdlfDfk2pwzJKBagWCfA9WcfXSyGpNvoQZ2grY4,16585
+generativepoetry/pdf.py,sha256=L78nSilJZ3S02hQcVZNIkSbnpyvm5NuSo5qprG6_0Mw,10770
+generativepoetry/poemgen.py,sha256=JALQpT5ZGoLxIHccsihUfsl1JC0aBfpJWqjr4v2_k4k,11319
+generativepoetry/utils.py,sha256=h330wRc4if7A5frl_5SSt90dA4SUfEkrEDcqXYJY4Hc,8336
+generativepoetry/data/abbreviations_etc.txt,sha256=bI1rMRMmuDqbGQXFe62203bEXRUg5EUBUqcPbYZDh-Y,238
+generativepoetry/data/hate_words.txt,sha256=fpH4E3d730ujj5XPt6Z-NmTNiZmY4T9egsCkzDMcYwA,372
+generativepoetry-0.3.4.data/scripts/generative-poetry-cli,sha256=u1R1I7iTPYSQgjy0XXM-NNV0GKcbOObnhjr4K4zQYQA,2436
+generativepoetry-0.3.4.dist-info/LICENSE,sha256=pm2MQuNjjuttd1On6vZL-HpGHn4GYMdU9sh5GJXC-QI,1068
+generativepoetry-0.3.4.dist-info/METADATA,sha256=eIU5ZXHJLVHwJB1A1mghj9gl0lQIsoL3FB4b_pTmBao,28493
+generativepoetry-0.3.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+generativepoetry-0.3.4.dist-info/dependency_links.txt,sha256=DkeRF1dDonnkShIYUbBoDJWE-ONJX8naLgXJPJPdw1c,77
+generativepoetry-0.3.4.dist-info/top_level.txt,sha256=7B4XJcL2Mfj8rZZtrcjM-ekPw4ci2qga_PCzZ8KMWDk,17
+generativepoetry-0.3.4.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+generativepoetry-0.3.4.dist-info/RECORD,,
