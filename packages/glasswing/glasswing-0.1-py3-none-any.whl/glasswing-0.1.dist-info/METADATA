@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: glasswing
+Version: 0.1
+Summary: GlassWing is a library for nonlinear dynamics analysis in Python.
+Home-page: https://github.com/jeylau/glasswing
+Author: Jessy Lauer
+Author-email: jlauer@rowland.harvard.edu
+License: BSD 3-clause "New" or "Revised License"
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Requires-Dist: numpy (>=1.14.0)
+Requires-Dist: scipy (>=1.1.0)
+Requires-Dist: matplotlib (>=3.0.0)
+
+UNKNOWN
+
+
