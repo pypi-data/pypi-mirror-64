@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: GoogleVerify
+Version: 1.2
+Summary: Main.py in start program.
+Home-page: https://github.com/PoisonCap159753
+Author: Zhang Boxuan
+Author-email: capture1969@hotmail.com
+Maintainer: Zhang Boxuan
+Maintainer-email: capture1969@hotmail.com
+License: MIT license
+Description: # Example Package
+        
+        This is a Google Authenticator System written in python.
+        The sorce code is in
+        [Github]<https://github.com/PoisonCap159753/GA/>
+        The code is open sorce,for everyone's review.
+        The code will be updated irregularly.
+Platform: any
