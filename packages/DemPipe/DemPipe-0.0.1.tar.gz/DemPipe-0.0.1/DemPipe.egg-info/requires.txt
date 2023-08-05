@@ -1,0 +1,2 @@
+configDmanager>=0.1.8
+Dmail>=0.1.0
