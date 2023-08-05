@@ -1,0 +1,41 @@
+properties(
+ [
+  parameters (
+    [
+    booleanParam(name: 'wait', defaultValue: false, description: 'Wait for plan to finish'),
+    {%- for parameter in parameters %}
+    string(name: '{{ parameter }}', defaultValue: "{{ parameters[parameter]|none }}", description: '{{ parameter }}'),
+    {%- endfor %}
+    ]
+  ),
+ ]
+)
+
+pipeline {
+    agent any 
+    environment {
+     DOCKER_OPTIONS = "--net host --rm --security-opt label=disable -v $HOME/.kcli:/root/.kcli -v $HOME/.ssh:/root/.ssh -v $PWD:/workdir -v /var/tmp:/ignitiondir"
+     KCLI_PARAMETERS = "{{ parameterline }}"
+    }
+    stages {
+        stage('Check Kcli client') {
+            steps {
+                sh 'docker run ${DOCKER_OPTIONS} karmab/kcli list client'
+            }
+        }
+        stage('Deploy Kcli plan') {
+            steps {
+                script {
+                  if ( "${params.wait}" == "true" ) {
+                     WAIT = "--wait"
+                  } else {
+                     WAIT = ""
+                  }
+                }
+                sh """
+                  docker run ${DOCKER_OPTIONS} karmab/kcli create plan -f ${WORKSPACE}/{{ inputfile | default('kcli_plan.yml') }} ${KCLI_PARAMETERS} ${WAIT} ${env.JOB_NAME}_${env.BUILD_NUMBER}
+                """
+            }
+        }
+    }
+}
