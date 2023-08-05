@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: PyJce
+Version: 0.0.1
+Summary: Tecent JCE parser for Python
+Home-page: https://github.com/washingtown/PyJce
+Author: washingtown
+Author-email: sharp-shoot2@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PyJce
+腾讯JCE协议解析Python版
+
+
