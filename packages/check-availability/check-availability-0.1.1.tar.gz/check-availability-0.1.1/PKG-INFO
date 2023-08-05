@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: check-availability
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/ewen-lbh/check-availability
+License: MIT
+Author: ewen-lbh
+Author-email: ewen.lebihan7@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: pastel (>=0.2.0,<0.3.0)
+Project-URL: Repository, https://github.com/ewen-lbh/check-availability
+Description-Content-Type: text/markdown
+
+check-availability
+====
+
+
+
+## Installation
+
+```sh-session
+$ pip install check_availability
+```
+
+## Usage
+
+```sh-session
+$ check-availability <service> <name> [options]
+```
+
+## Example
+
+```sh-session
+$ check-availability pypi check_availability
+GET https://pypi.org/project/check_availability
+Got status code 200
+The name check_availability is not available on pypi
+```
+
+## Options
+
+| Shorthand | Option | Description | Default value
+|-----------|-------------|-------------|--------------
+| -h | --help | Show the help. | N/A |
+| -v | --verbose=LEVEL | Set verbosity. 0 for quiet, 4 for debug. | 0 |
+
+## Status codes
+
+| Code | Meaning
+|------|--------
+| 0 | The name is available
+| 1 | An error occured
+| 2 | The name is not available
+
