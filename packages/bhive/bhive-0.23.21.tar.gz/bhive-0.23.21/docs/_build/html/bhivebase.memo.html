@@ -1,0 +1,408 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhivebase.memo module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhivebase.objects module" href="bhivebase.objects.html" />
+    <link rel="prev" title="bhivebase package" href="bhivebase.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bhive.html">bhive package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="bhivebase.html">bhivebase package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhivebase.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhivebase.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.objects.html">bhivebase.objects module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.objecttypes.html">bhivebase.objecttypes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.operationids.html">bhivebase.operationids module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.operations.html">bhivebase.operations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.signedtransactions.html">bhivebase.signedtransactions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.transactions.html">bhivebase.transactions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivebase.version.html">bhivebase.version module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhivebase.html#module-bhivebase">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhivebase.html">bhivebase package</a> &raquo;</li>
+        
+      <li>bhivebase.memo module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhivebase.memo.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhivebase.memo">
+<span id="bhivebase-memo-module"></span><h1>bhivebase.memo module<a class="headerlink" href="#module-bhivebase.memo" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="bhivebase.memo.decode_memo">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">decode_memo</code><span class="sig-paren">(</span><em class="sig-param">priv</em>, <em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.decode_memo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode a message with a shared secret between Alice and Bob</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>priv</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PrivateKey" title="bhivegraphenebase.account.PrivateKey"><em>PrivateKey</em></a>) – Private Key (of Bob)</p></li>
+<li><p><strong>message</strong> (<em>base58encoded</em>) – Encrypted Memo message</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Decrypted message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if message cannot be decoded as valid UTF-8
+string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.decode_memo_bts">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">decode_memo_bts</code><span class="sig-paren">(</span><em class="sig-param">priv</em>, <em class="sig-param">pub</em>, <em class="sig-param">nonce</em>, <em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.decode_memo_bts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode a message with a shared secret between Alice and Bob</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>priv</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PrivateKey" title="bhivegraphenebase.account.PrivateKey"><em>PrivateKey</em></a>) – Private Key (of Bob)</p></li>
+<li><p><strong>pub</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><em>PublicKey</em></a>) – Public Key (of Alice)</p></li>
+<li><p><strong>nonce</strong> (<em>int</em>) – Nonce used for Encryption</p></li>
+<li><p><strong>message</strong> (<em>bytes</em>) – Encrypted Memo message</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Decrypted message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if message cannot be decoded as valid UTF-8
+string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.encode_memo">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">encode_memo</code><span class="sig-paren">(</span><em class="sig-param">priv</em>, <em class="sig-param">pub</em>, <em class="sig-param">nonce</em>, <em class="sig-param">message</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.encode_memo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode a message with a shared secret between Alice and Bob</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>priv</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PrivateKey" title="bhivegraphenebase.account.PrivateKey"><em>PrivateKey</em></a>) – Private Key (of Alice)</p></li>
+<li><p><strong>pub</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><em>PublicKey</em></a>) – Public Key (of Bob)</p></li>
+<li><p><strong>nonce</strong> (<em>int</em>) – Random nonce</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Memo message</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Encrypted message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>hex</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.encode_memo_bts">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">encode_memo_bts</code><span class="sig-paren">(</span><em class="sig-param">priv</em>, <em class="sig-param">pub</em>, <em class="sig-param">nonce</em>, <em class="sig-param">message</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.encode_memo_bts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Encode a message with a shared secret between Alice and Bob</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>priv</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PrivateKey" title="bhivegraphenebase.account.PrivateKey"><em>PrivateKey</em></a>) – Private Key (of Alice)</p></li>
+<li><p><strong>pub</strong> (<a class="reference internal" href="bhivegraphenebase.account.html#bhivegraphenebase.account.PublicKey" title="bhivegraphenebase.account.PublicKey"><em>PublicKey</em></a>) – Public Key (of Bob)</p></li>
+<li><p><strong>nonce</strong> (<em>int</em>) – Random nonce</p></li>
+<li><p><strong>message</strong> (<em>str</em>) – Memo message</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Encrypted message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>hex</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.get_shared_secret">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">get_shared_secret</code><span class="sig-paren">(</span><em class="sig-param">priv</em>, <em class="sig-param">pub</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.get_shared_secret" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive the share secret between <code class="docutils literal notranslate"><span class="pre">priv</span></code> and <code class="docutils literal notranslate"><span class="pre">pub</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>priv</strong> (<a class="reference internal" href="bhivegraphenebase.base58.html#bhivegraphenebase.base58.Base58" title="bhivegraphenebase.base58.Base58"><em>Base58</em></a>) – Private Key</p></li>
+<li><p><strong>pub</strong> (<a class="reference internal" href="bhivegraphenebase.base58.html#bhivegraphenebase.base58.Base58" title="bhivegraphenebase.base58.Base58"><em>Base58</em></a>) – Public Key</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Shared secret</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>hex</p>
+</dd>
+</dl>
+<p>The shared secret is generated such that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Pub</span><span class="p">(</span><span class="n">Alice</span><span class="p">)</span> <span class="o">*</span> <span class="n">Priv</span><span class="p">(</span><span class="n">Bob</span><span class="p">)</span> <span class="o">=</span> <span class="n">Pub</span><span class="p">(</span><span class="n">Bob</span><span class="p">)</span> <span class="o">*</span> <span class="n">Priv</span><span class="p">(</span><span class="n">Alice</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.init_aes">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">init_aes</code><span class="sig-paren">(</span><em class="sig-param">shared_secret</em>, <em class="sig-param">nonce</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.init_aes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize AES instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shared_secret</strong> (<em>hex</em>) – Shared Secret to use as encryption key</p></li>
+<li><p><strong>nonce</strong> (<em>int</em>) – Random nonce</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>AES instance and checksum of the encryption key</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>length 2 tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivebase.memo.init_aes_bts">
+<code class="sig-prename descclassname">bhivebase.memo.</code><code class="sig-name descname">init_aes_bts</code><span class="sig-paren">(</span><em class="sig-param">shared_secret</em>, <em class="sig-param">nonce</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivebase.memo.init_aes_bts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize AES instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shared_secret</strong> (<em>hex</em>) – Shared Secret to use as encryption key</p></li>
+<li><p><strong>nonce</strong> (<em>int</em>) – Random nonce</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>AES instance</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>AES</p>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhivebase.objects.html" class="btn btn-neutral float-right" title="bhivebase.objects module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhivebase.html" class="btn btn-neutral float-left" title="bhivebase package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

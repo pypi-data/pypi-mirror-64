@@ -1,0 +1,687 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.market module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.memo module" href="bhive.memo.html" />
+    <link rel="prev" title="bhive.instance module" href="bhive.instance.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.market module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.market.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.market">
+<span id="bhive-market-module"></span><h1>bhive.market module<a class="headerlink" href="#module-bhive.market" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.market.Market">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.market.</code><code class="sig-name descname">Market</code><span class="sig-paren">(</span><em class="sig-param">base=None</em>, <em class="sig-param">quote=None</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>This class allows to easily access Markets on the blockchain for trading, etc.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive instance</p></li>
+<li><p><strong>base</strong> (<a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><em>Asset</em></a>) – Base asset</p></li>
+<li><p><strong>quote</strong> (<a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><em>Asset</em></a>) – Quote asset</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Blockchain Market</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary with overloaded methods</p>
+</dd>
+</dl>
+<p>Instances of this class are dictionaries that come with additional
+methods (see below) that allow dealing with a market and its
+corresponding functions.</p>
+<p>This class tries to identify <strong>two</strong> assets as provided in the
+parameters in one of the following forms:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">base</span></code> and <code class="docutils literal notranslate"><span class="pre">quote</span></code> are valid assets (according to <a class="reference internal" href="bhive.asset.html#bhive.asset.Asset" title="bhive.asset.Asset"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.asset.Asset</span></code></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base:quote</span></code> separated with <code class="docutils literal notranslate"><span class="pre">:</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base/quote</span></code> separated with <code class="docutils literal notranslate"><span class="pre">/</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">base-quote</span></code> separated with <code class="docutils literal notranslate"><span class="pre">-</span></code></p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Throughout this library, the <code class="docutils literal notranslate"><span class="pre">quote</span></code> symbol will be
+presented first (e.g. <code class="docutils literal notranslate"><span class="pre">HIVE:HBD</span></code> with <code class="docutils literal notranslate"><span class="pre">HIVE</span></code> being the
+quote), while the <code class="docutils literal notranslate"><span class="pre">base</span></code> only refers to a secondary asset
+for a trade. This means, if you call
+<a class="reference internal" href="#bhive.market.Market.sell" title="bhive.market.Market.sell"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.market.Market.sell()</span></code></a> or
+<a class="reference internal" href="#bhive.market.Market.buy" title="bhive.market.Market.buy"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.market.Market.buy()</span></code></a>, you will sell/buy <strong>only
+quote</strong> and obtain/pay <strong>only base</strong>.</p>
+</div>
+<dl class="method">
+<dt id="bhive.market.Market.accountopenorders">
+<code class="sig-name descname">accountopenorders</code><span class="sig-paren">(</span><em class="sig-param">account=None</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.accountopenorders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns open Orders</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<a class="reference internal" href="bhive.account.html#bhive.account.Account" title="bhive.account.Account"><em>Account</em></a>) – Account name or instance of Account to show orders for in this market</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – (optional) returns raw data if set True,
+or a list of Order() instances if False (defaults to False)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.btc_usd_ticker">
+<em class="property">static </em><code class="sig-name descname">btc_usd_ticker</code><span class="sig-paren">(</span><em class="sig-param">verbose=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.btc_usd_ticker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the BTC/USD price from bitfinex, gdax, kraken, okcoin and bitstamp. The mean price is
+weighted by the exchange volume.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.buy">
+<code class="sig-name descname">buy</code><span class="sig-paren">(</span><em class="sig-param">price</em>, <em class="sig-param">amount</em>, <em class="sig-param">expiration=None</em>, <em class="sig-param">killfill=False</em>, <em class="sig-param">account=None</em>, <em class="sig-param">orderid=None</em>, <em class="sig-param">returnOrderId=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.buy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Places a buy order in a given market</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>price</strong> (<em>float</em>) – price denoted in <code class="docutils literal notranslate"><span class="pre">base</span></code>/<code class="docutils literal notranslate"><span class="pre">quote</span></code></p></li>
+<li><p><strong>amount</strong> (<em>number</em>) – Amount of <code class="docutils literal notranslate"><span class="pre">quote</span></code> to buy</p></li>
+<li><p><strong>expiration</strong> (<em>number</em>) – (optional) expiration time of the order in seconds (defaults to 7 days)</p></li>
+<li><p><strong>killfill</strong> (<em>bool</em>) – flag that indicates if the order shall be killed if it is not filled (defaults to False)</p></li>
+<li><p><strong>account</strong> (<em>string</em>) – Account name that executes that order</p></li>
+<li><p><strong>returnOrderId</strong> (<em>string</em>) – If set to “head” or “irreversible” the call will wait for the tx to appear in
+the head/irreversible block and add the key “orderid” to the tx output</p></li>
+</ul>
+</dd>
+</dl>
+<p>Prices/Rates are denoted in ‘base’, i.e. the HBD_HIVE market
+is priced in HIVE per HBD.</p>
+<p><strong>Example:</strong> in the HBD_HIVE market, a price of 300 means
+a HBD is worth 300 HIVE</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All prices returned are in the <strong>reversed</strong> orientation as the
+market. I.e. in the HIVE/HBD market, prices are HBD per HIVE.
+That way you can multiply prices with <cite>1.05</cite> to get a +5%.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Since buy orders are placed as
+limit-sell orders for the base asset,
+you may end up obtaining more of the
+buy asset than you placed the order
+for. Example:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>You place and order to buy 10 HBD for 100 HIVE/HBD</p></li>
+<li><p>This means that you actually place a sell order for 1000 HIVE in order to obtain <strong>at least</strong> 10 HBD</p></li>
+<li><p>If an order on the market exists that sells HBD for cheaper, you will end up with more than 10 HBD</p></li>
+</ul>
+</div></blockquote>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.cancel">
+<code class="sig-name descname">cancel</code><span class="sig-paren">(</span><em class="sig-param">orderNumbers</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.cancel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancels an order you have placed in a given market. Requires
+only the “orderNumbers”.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>orderNumbers</strong> (<em>int</em><em>, </em><em>list</em>) – A single order number or a list of order numbers</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.get_string">
+<code class="sig-name descname">get_string</code><span class="sig-paren">(</span><em class="sig-param">separator=':'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.get_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return a formated string that identifies the market, e.g. <code class="docutils literal notranslate"><span class="pre">HIVE:HBD</span></code></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>separator</strong> (<em>str</em>) – The separator of the assets (defaults to <code class="docutils literal notranslate"><span class="pre">:</span></code>)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.hive_btc_ticker">
+<em class="property">static </em><code class="sig-name descname">hive_btc_ticker</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.hive_btc_ticker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the HIVE/BTC price from bittrex, binance, huobi and upbit. The mean price is
+weighted by the exchange volume.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.hive_usd_implied">
+<code class="sig-name descname">hive_usd_implied</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.hive_usd_implied" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the current HIVE/USD market price</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.market_history">
+<code class="sig-name descname">market_history</code><span class="sig-paren">(</span><em class="sig-param">bucket_seconds=300</em>, <em class="sig-param">start_age=3600</em>, <em class="sig-param">end_age=0</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.market_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the market history (filled orders).</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>bucket_seconds</strong> (<em>int</em>) – Bucket size in seconds (see
+<cite>returnMarketHistoryBuckets()</cite>)</p></li>
+<li><p><strong>start_age</strong> (<em>int</em>) – Age (in seconds) of the start of the
+window (default: 1h/3600)</p></li>
+<li><p><strong>end_age</strong> (<em>int</em>) – Age (in seconds) of the end of the window
+(default: now/0)</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – (optional) returns raw data if set True</p></li>
+</ul>
+</dd>
+</dl>
+<p>Example:</p>
+<blockquote>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;close_hbd&#39;</span><span class="o">:</span> <span class="mi">2493387</span><span class="p">,</span>
+    <span class="s1">&#39;close_hive&#39;</span><span class="o">:</span> <span class="mi">7743431</span><span class="p">,</span>
+    <span class="s1">&#39;high_hbd&#39;</span><span class="o">:</span> <span class="mi">1943872</span><span class="p">,</span>
+    <span class="s1">&#39;high_hive&#39;</span><span class="o">:</span> <span class="mi">5999610</span><span class="p">,</span>
+    <span class="s1">&#39;id&#39;</span><span class="o">:</span> <span class="s1">&#39;7.1.5252&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;low_hbd&#39;</span><span class="o">:</span> <span class="mi">534928</span><span class="p">,</span>
+    <span class="s1">&#39;low_hive&#39;</span><span class="o">:</span> <span class="mi">1661266</span><span class="p">,</span>
+    <span class="s1">&#39;open&#39;</span><span class="o">:</span> <span class="s1">&#39;2016-07-08T11:25:00&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;open_hbd&#39;</span><span class="o">:</span> <span class="mi">534928</span><span class="p">,</span>
+    <span class="s1">&#39;open_hive&#39;</span><span class="o">:</span> <span class="mi">1661266</span><span class="p">,</span>
+    <span class="s1">&#39;sbd_volume&#39;</span><span class="o">:</span> <span class="mi">9714435</span><span class="p">,</span>
+    <span class="s1">&#39;seconds&#39;</span><span class="o">:</span> <span class="mi">300</span><span class="p">,</span>
+    <span class="s1">&#39;steem_volume&#39;</span><span class="o">:</span> <span class="mi">30088443</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.market_history_buckets">
+<code class="sig-name descname">market_history_buckets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.market_history_buckets" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.orderbook">
+<code class="sig-name descname">orderbook</code><span class="sig-paren">(</span><em class="sig-param">limit=25</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.orderbook" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the order book for HBD/HIVE market.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>limit</strong> (<em>int</em>) – Limit the amount of orders (default: 25)</p>
+</dd>
+</dl>
+<p>Sample output (raw_data=False):</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>{
+    &#39;asks&#39;: [
+        380.510 HIVE 460.291 HBD @ 1.209669 HBD/HIVE,
+        53.785 HIVE 65.063 HBD @ 1.209687 HBD/HIVE
+    ],
+    &#39;bids&#39;: [
+        0.292 HIVE 0.353 HBD @ 1.208904 HBD/HIVE,
+        8.498 HIVE 10.262 HBD @ 1.207578 HBD/HIVE
+    ],
+    &#39;asks_date&#39;: [
+        datetime.datetime(2018, 4, 30, 21, 7, 24, tzinfo=&lt;UTC&gt;),
+        datetime.datetime(2018, 4, 30, 18, 12, 18, tzinfo=&lt;UTC&gt;)
+    ],
+    &#39;bids_date&#39;: [
+        datetime.datetime(2018, 4, 30, 21, 1, 21, tzinfo=&lt;UTC&gt;),
+        datetime.datetime(2018, 4, 30, 20, 38, 21, tzinfo=&lt;UTC&gt;)
+    ]
+}
+</pre></div>
+</div>
+</div></blockquote>
+<p>Sample output (raw_data=True):</p>
+<blockquote>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;asks&#39;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s1">&#39;order_price&#39;</span><span class="o">:</span> <span class="p">{</span><span class="s1">&#39;base&#39;</span><span class="o">:</span> <span class="s1">&#39;8.000 HIVE&#39;</span><span class="p">,</span> <span class="s1">&#39;quote&#39;</span><span class="o">:</span> <span class="s1">&#39;9.618 HBD&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;real_price&#39;</span><span class="o">:</span> <span class="s1">&#39;1.20225000000000004&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;hive&#39;</span><span class="o">:</span> <span class="mi">4565</span><span class="p">,</span>
+            <span class="s1">&#39;hbd&#39;</span><span class="o">:</span> <span class="mi">5488</span><span class="p">,</span>
+            <span class="s1">&#39;created&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T21:12:45&#39;</span>
+        <span class="p">}</span>
+    <span class="p">],</span>
+    <span class="s1">&#39;bids&#39;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s1">&#39;order_price&#39;</span><span class="o">:</span> <span class="p">{</span><span class="s1">&#39;base&#39;</span><span class="o">:</span> <span class="s1">&#39;10.000 HBD&#39;</span><span class="p">,</span> <span class="s1">&#39;quote&#39;</span><span class="o">:</span> <span class="s1">&#39;8.333 HIVE&#39;</span><span class="p">},</span>
+            <span class="s1">&#39;real_price&#39;</span><span class="o">:</span> <span class="s1">&#39;1.20004800192007677&#39;</span><span class="p">,</span>
+            <span class="s1">&#39;hive&#39;</span><span class="o">:</span> <span class="mi">8333</span><span class="p">,</span>
+            <span class="s1">&#39;hbd&#39;</span><span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+            <span class="s1">&#39;created&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T20:29:33&#39;</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each bid is an instance of
+class:<cite>bhive.price.Order</cite> and thus carries the keys
+<code class="docutils literal notranslate"><span class="pre">base</span></code>, <code class="docutils literal notranslate"><span class="pre">quote</span></code> and <code class="docutils literal notranslate"><span class="pre">price</span></code>. From those you can
+obtain the actual amounts for sale</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.recent_trades">
+<code class="sig-name descname">recent_trades</code><span class="sig-paren">(</span><em class="sig-param">limit=25</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.recent_trades" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the order book for a given market. You may also
+specify “all” to get the orderbooks of all markets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – Limit the amount of orders (default: 25)</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – when False, FilledOrder objects will be
+returned</p></li>
+</ul>
+</dd>
+</dl>
+<p>Sample output (raw_data=False):</p>
+<blockquote>
+<div><div class="highlight-none notranslate"><div class="highlight"><pre><span></span>[
+    (2018-04-30 21:00:54+00:00) 0.267 HIVE 0.323 HBD @ 1.209738 HBD/HIVE,
+    (2018-04-30 20:59:30+00:00) 0.131 HIVE 0.159 HBD @ 1.213740 HBD/HIVE,
+    (2018-04-30 20:55:45+00:00) 0.093 HIVE 0.113 HBD @ 1.215054 HBD/HIVE,
+    (2018-04-30 20:55:30+00:00) 26.501 HIVE 32.058 HBD @ 1.209690 HBD/HIVE,
+    (2018-04-30 20:55:18+00:00) 2.108 HIVE 2.550 HBD @ 1.209677 HBD/HIVE,
+]
+</pre></div>
+</div>
+</div></blockquote>
+<p>Sample output (raw_data=True):</p>
+<blockquote>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T21:02:45&#39;</span><span class="p">,</span> <span class="s1">&#39;current_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;0.235 HBD&#39;</span><span class="p">,</span> <span class="s1">&#39;open_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;0.194 HIVE&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T21:02:03&#39;</span><span class="p">,</span> <span class="s1">&#39;current_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;24.494 HBD&#39;</span><span class="p">,</span> <span class="s1">&#39;open_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;20.248 HIVE&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T20:48:30&#39;</span><span class="p">,</span> <span class="s1">&#39;current_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;175.464 HIVE&#39;</span><span class="p">,</span> <span class="s1">&#39;open_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;211.955 HBD&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T20:48:30&#39;</span><span class="p">,</span> <span class="s1">&#39;current_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;0.999 HIVE&#39;</span><span class="p">,</span> <span class="s1">&#39;open_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;1.207 HBD&#39;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s1">&#39;date&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-04-30T20:47:54&#39;</span><span class="p">,</span> <span class="s1">&#39;current_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;0.273 HBD&#39;</span><span class="p">,</span> <span class="s1">&#39;open_pays&#39;</span><span class="o">:</span> <span class="s1">&#39;0.225 HIVE&#39;</span><span class="p">},</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each bid is an instance of
+<a class="reference internal" href="bhive.price.html#bhive.price.Order" title="bhive.price.Order"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.price.Order</span></code></a> and thus carries the keys
+<code class="docutils literal notranslate"><span class="pre">base</span></code>, <code class="docutils literal notranslate"><span class="pre">quote</span></code> and <code class="docutils literal notranslate"><span class="pre">price</span></code>. From those you can
+obtain the actual amounts for sale</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.sell">
+<code class="sig-name descname">sell</code><span class="sig-paren">(</span><em class="sig-param">price</em>, <em class="sig-param">amount</em>, <em class="sig-param">expiration=None</em>, <em class="sig-param">killfill=False</em>, <em class="sig-param">account=None</em>, <em class="sig-param">orderid=None</em>, <em class="sig-param">returnOrderId=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.sell" title="Permalink to this definition">¶</a></dt>
+<dd><p>Places a sell order in a given market</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>price</strong> (<em>float</em>) – price denoted in <code class="docutils literal notranslate"><span class="pre">base</span></code>/<code class="docutils literal notranslate"><span class="pre">quote</span></code></p></li>
+<li><p><strong>amount</strong> (<em>number</em>) – Amount of <code class="docutils literal notranslate"><span class="pre">quote</span></code> to sell</p></li>
+<li><p><strong>expiration</strong> (<em>number</em>) – (optional) expiration time of the order in seconds (defaults to 7 days)</p></li>
+<li><p><strong>killfill</strong> (<em>bool</em>) – flag that indicates if the order shall be killed if it is not filled (defaults to False)</p></li>
+<li><p><strong>account</strong> (<em>string</em>) – Account name that executes that order</p></li>
+<li><p><strong>returnOrderId</strong> (<em>string</em>) – If set to “head” or “irreversible” the call will wait for the tx to appear in
+the head/irreversible block and add the key “orderid” to the tx output</p></li>
+</ul>
+</dd>
+</dl>
+<p>Prices/Rates are denoted in ‘base’, i.e. the HBD_HIVE market
+is priced in HIVE per HBD.</p>
+<p><strong>Example:</strong> in the HBD_HIVE market, a price of 300 means
+a HBD is worth 300 HIVE</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All prices returned are in the <strong>reversed</strong> orientation as the
+market. I.e. in the HIVE/HBD market, prices are HBD per HIVE.
+That way you can multiply prices with <cite>1.05</cite> to get a +5%.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.ticker">
+<code class="sig-name descname">ticker</code><span class="sig-paren">(</span><em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.ticker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the ticker for all markets.</p>
+<p>Output Parameters:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">latest</span></code>: Price of the order last filled</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lowest_ask</span></code>: Price of the lowest ask</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">highest_bid</span></code>: Price of the highest bid</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sbd_volume</span></code>: Volume of HBD</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">steem_volume</span></code>: Volume of HIVE</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">percent_change</span></code>: 24h change percentage (in %)</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Market is HIVE:HBD and prices are HBD per HIVE!</p>
+</div>
+<p>Sample Output:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span> <span class="p">{</span>
+    <span class="s1">&#39;highest_bid&#39;</span><span class="o">:</span> <span class="mf">0.30100226633322913</span><span class="p">,</span>
+    <span class="s1">&#39;latest&#39;</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s1">&#39;lowest_ask&#39;</span><span class="o">:</span> <span class="mf">0.3249636958897082</span><span class="p">,</span>
+    <span class="s1">&#39;percent_change&#39;</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s1">&#39;sbd_volume&#39;</span><span class="o">:</span> <span class="mf">108329611.0</span><span class="p">,</span>
+    <span class="s1">&#39;steem_volume&#39;</span><span class="o">:</span> <span class="mf">355094043.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.trade_history">
+<code class="sig-name descname">trade_history</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">intervall=None</em>, <em class="sig-param">limit=25</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.trade_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the trade history for the internal market</p>
+<p>This function allows to fetch a fixed number of trades at fixed
+intervall times to reduce the call duration time. E.g. it is possible to
+receive the trades from the last 7 days, by fetching 100 trades each 6 hours.</p>
+<p>When intervall is set to None, all trades are received between start and stop.
+This can take a while.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>datetime</em>) – Start date</p></li>
+<li><p><strong>stop</strong> (<em>datetime</em>) – Stop date</p></li>
+<li><p><strong>intervall</strong> (<em>timedelta</em>) – Defines the intervall</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – Defines how many trades are fetched at each intervall point</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – when True, the raw data are returned</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.trades">
+<code class="sig-name descname">trades</code><span class="sig-paren">(</span><em class="sig-param">limit=100</em>, <em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.trades" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns your trade history for a given market.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – Limit the amount of orders (default: 100)</p></li>
+<li><p><strong>start</strong> (<em>datetime</em>) – start time</p></li>
+<li><p><strong>stop</strong> (<em>datetime</em>) – stop time</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.market.Market.volume24h">
+<code class="sig-name descname">volume24h</code><span class="sig-paren">(</span><em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.market.Market.volume24h" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the 24-hour volume for all markets, plus totals for primary currencies.</p>
+<p>Sample output:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;HIVE&quot;</span><span class="o">:</span> <span class="mf">361666.63617</span><span class="p">,</span>
+    <span class="s2">&quot;HBD&quot;</span><span class="o">:</span> <span class="mf">1087.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.memo.html" class="btn btn-neutral float-right" title="bhive.memo module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.instance.html" class="btn btn-neutral float-left" title="bhive.instance module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
