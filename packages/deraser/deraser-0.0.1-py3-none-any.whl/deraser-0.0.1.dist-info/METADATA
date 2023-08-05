@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: deraser
+Version: 0.0.1
+Summary: Deep Learning Model Compression Based on Weight Pruning
+Home-page: UNKNOWN
+Author: Anonymous
+Author-email: dwk@etri.re.kr
+License: MIT
+Keywords: deep learning,model compression,weight pruning
+Platform: any
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: numpy
+
+UNKNOWN
+
+
