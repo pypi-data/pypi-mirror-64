@@ -1,0 +1,74 @@
+Metadata-Version: 2.0
+Name: fluent-compiler
+Version: 0.1.1
+Summary: Blazing fast implementation of Fluent localization language.
+Home-page: https://github.com/django-ftl/fluent-compiler
+Author: Luke Plant
+Author-email: L.Plant.98@cantab.net
+License: APL 2
+Keywords: fluent,localization,l10n,compiler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: attrs (>=19.3.0)
+Requires-Dist: babel (>=2.8.0)
+Requires-Dist: fluent.syntax (>=0.14,<=0.16)
+Requires-Dist: pytz
+Requires-Dist: singledispatch (>=3.4)
+Requires-Dist: six
+
+fluent-compiler
+===============
+
+This is a Python implementation of Project Fluent, a localization
+framework designed to unleash the entire expressive power of natural
+language translations.
+
+It provides a different implementation from the official
+`fluent.runtime <https://github.com/projectfluent/python-fluent>`__
+implementation, distinguished mainly by:
+
+-  strategy: we compile FTL files to Python AST
+-  speed: as a result of the above, plus optimizations, we get blazing
+   fast performance, especially when combined with PyPy which can
+   further optimize.
+-  compile-time checking and error reporting
+-  'escapers' feature for handling things like HTML escaping/embedding
+   correctly.
+
+Status
+------
+
+This code was originally developed as part of ``fluent.runtime``, as an
+alternative implementation of ``FluentBundle``, but never got merged to
+the master branch. We are in the process of pulling it out as a separate
+package.
+
+It has seen usage in production a dependency of ``django-ftl`` for a
+long time. However, now that we don't need full compatibility with
+``fluent.runtime`` it will be modified further in terms of interface.
+
+Installation
+------------
+
+To install:
+
+::
+
+    pip install fluent_compiler
+
+Usage
+-----
+
+See the `docs folder <https://github.com/django-ftl/fluent-compiler/tree/master/docs/>`_ or `read them on
+readthedocs.org <https://fluent-compiler.readthedocs.io/en/latest/>`_.
+
+
+See https://github.com/django-ftl/fluent-compiler/ for more info.
+
