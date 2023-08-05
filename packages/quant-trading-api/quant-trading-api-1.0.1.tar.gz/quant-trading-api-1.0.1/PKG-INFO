@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: quant-trading-api
+Version: 1.0.1
+Summary: Quant Trading Network API
+Home-page: https://github.com/Quant-Network/python-api-client
+Author: Quant-trading.Network
+Author-email: support@quant-trading.network
+License: MIT
+Download-URL: https://github.com/Quant-Network/python-api-client/archive/v_1.tar.gz
+Description: Python library for connecting to the Quant-trading.Network API.
+Keywords: Quant Trading Network API,algorithmic trading,trading,bitcoin,Swagger
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
