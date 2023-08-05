@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: avaamo
+Version: 0.1.2
+Summary: Avaamo API for Python
+Home-page: http://github.io/avaamo/avaamo-python
+Author: David Gwartney
+Author-email: david.gwartney@avaamo.io
+License: LICENSE
+Description: # Avaamo API for Python
+        
+        - Provides Python Bindings for Avaamo APIs
+        - Command Line tools for accessing APIs
+        
+        # Requirements
+        
+        - Python version 3.6 or later
+        - Requests library 2.21 or later
+        
+        ## Installation
+        
+        This installs the Avaamo code into your python environment
+        
+        ````
+        $ pip install avaamo
+        ````
+        
+        A best practice is to create a separate virtual python environment for each of your python application
+        which is described [here](https://docs.python-guide.org/dev/virtualenvs/)
+        
+        ## Configuration
+        
+        Configuration is passed via environment variables as follows (example data displayed):
+        ````
+        export AVAAMO_ENDPOINT=c0.avaamo.com
+        export AVAAMO_ACCESS_TOKEN=7358b733270342559cb736b04a80c490
+        export AVAAMO_BOT_ID=5051
+        ````
+        
+        where
+        
+        `AVAAMO_ENVPOINT` is the host name where your account resides
+        `AVAAMO_ACCESS_TOKEN` is the API access token for a specific user from settings in your account
+        
+        ## Command Line Tools
+        
+        ### Add a document to existing Avaamo Answers Knowledge Pack
+        
+        ````
+        usage: avaamo-add-doc [-h] -a access_token -n endpoint -b bot_id -e
+                               YYYY-MM-DD -s YYYY-MM-DD
+        
+        Extract analytics data
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -a access_token, --access-token access_token
+                                API access token
+          -n endpoint, --endpoint endpoint
+                                API endpoint or domain name
+          -b bot_id, --bot-id bot_id
+                                Specifies the bot to export data from
+          -e YYYY-MM-DD, --end-dt YYYY-MM-DD
+                                End Date
+          -s YYYY-MM-DD, --start-dt YYYY-MM-DD
+                                Start Date
+        ````
+        
+        
+        
+        ## Analytics Data
+        
+        See [Analytics Data](analytics.md) for detail information on the contents provide by the anlytic APIs.
+        
+        See [Extracting](extracting-analytics-data.md) for a procedure on how use the tools
+        to extract the analytics data
+        
+        ## Upload Document
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

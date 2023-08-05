@@ -1,0 +1,7 @@
+[console_scripts]
+avaamo = avaamo.cli:main
+avaamo-add-doc = avaamo.add_document:main
+avaamo-insights = avaamo.insights_dump:main
+avaamo-list-docs = avaamo.list_documents:main
+avaamo-send-msg = avaamo.send_bot_message:main
+
