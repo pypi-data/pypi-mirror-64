@@ -1,0 +1,3 @@
+[datasette]
+show_errors = datasette_show_errors
+

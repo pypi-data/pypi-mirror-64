@@ -1,0 +1,1 @@
+datasette_show_errors
