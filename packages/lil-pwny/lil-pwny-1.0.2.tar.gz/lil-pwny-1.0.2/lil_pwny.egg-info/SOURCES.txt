@@ -1,0 +1,11 @@
+README.md
+setup.py
+lil_pwny.egg-info/PKG-INFO
+lil_pwny.egg-info/SOURCES.txt
+lil_pwny.egg-info/dependency_links.txt
+lil_pwny.egg-info/entry_points.txt
+lil_pwny.egg-info/top_level.txt
+src/__init__.py
+src/__main__.py
+src/hashing.py
+src/password_audit.py
