@@ -1,0 +1,134 @@
+Metadata-Version: 2.1
+Name: diasapi
+Version: 0.3a0
+Summary: Python Client Library for accessing CMCC data
+Home-page: https://github.com/CMCC-Foundation/CMCC-DIAS-Client/diasapi/diasapi
+Author: 
+Author-email: 
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Atmospheric Science
+Classifier: Topic :: Scientific/Engineering :: Hydrology
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: xarray (>=0.14.1)
+
+# CMCC-DIAS-Client
+DIAS API Client for access and analysis of CMCC data
+
+## Requirements
+Python 3.7
+
+### Installation  
+Conda Installation
+```bash
+$ conda install -c ppos-cmcc diasapi 
+```
+
+Pip installation
+```bash
+$ pip install diasapi
+```
+Cloning the repository
+```bash
+$ git clone https://github.com/CMCC-Foundation/cmcc-dias-client
+$ cd cmcc-dias-client
+$ python setup.py install
+```
+
+### Configuration
+To use the tool a file `$HOME/.diasapirc` must be created as following
+
+```bash
+url: http://dias.cmcc.scc:8282/api/v1
+key: <uid>:<api-key>
+```
+
+### Examples
+
+#### Query the catalog
+```python
+import diasapi
+
+c = diasapi.Client()
+print(c.datasets())
+```
+
+#### Get details of a dataset
+```python
+import diasapi
+
+c = diasapi.Client()
+print(c.datasets("blksea"))
+```
+
+#### Retrieve data
+
+```python
+import diasapi
+c = diasapi.Client()
+c.retrieve("blksea",
+                {
+                    'variable': ["votemper","vosaline"],
+                    'product_type': "forecast-daily",
+                    'year':2019,
+                    'month':11,
+                    'day': [20, 21],
+                    'depth': [0, 30],
+                    'delta_time': [36, 60],
+                    'format': 'netcdf',
+                },
+                '_blksea_forecast_dtime.nc'
+)
+```
+#### Retrieve data (area and resample)
+
+```python
+import diasapi
+c = diasapi.Client()
+c.retrieve("era5",
+                {
+                    'variable': "tp",
+                    'product_type': "reanalysis",
+                    'date_range': [2002, 2003],
+                    'area': {'north': 47.2, 'south': 36.5, 'west': 6.5, 'east': 18.5},
+                    'format': 'netcdf',
+                    'resample':{
+                        "operator": "sum",
+                        "frequency": "1M",
+                        "closed":"right"
+                    }
+                },
+                '_era5_resampled.nc'
+)
+```
+
+#### Retrieve data (location)
+
+```python
+import diasapi
+c = diasapi.Client()
+c.retrieve("e-obs",
+                {
+                    'variable': "rr",
+                    'product_type': "obs-0.1",
+                    'year': [2002, 2003],
+                    'month': [10, 11],
+                    'day': [1,2,3,31],
+                    'location': [52.56, 8.45],
+                    'format': 'netcdf',
+                },
+                '_eobs_location.nc'
+)
+```
+
+
+
