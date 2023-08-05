@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: lurl
+Version: 0.0.2
+Summary: cURL please....
+Home-page: UNKNOWN
+Author: Fernanda Panca Prima
+Author-email: pancaprima8@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: puncurl
+
+convert cURL to another type format!
+
+
