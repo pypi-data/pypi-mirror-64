@@ -1,0 +1,10 @@
+README.rst
+pyproject.toml
+setup.py
+liberator/__init__.py
+liberator/closer.py
+liberator.egg-info/PKG-INFO
+liberator.egg-info/SOURCES.txt
+liberator.egg-info/dependency_links.txt
+liberator.egg-info/requires.txt
+liberator.egg-info/top_level.txt
