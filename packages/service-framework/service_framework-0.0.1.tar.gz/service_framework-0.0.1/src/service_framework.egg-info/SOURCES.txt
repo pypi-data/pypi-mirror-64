@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/service_framework.egg-info/PKG-INFO
+src/service_framework.egg-info/SOURCES.txt
+src/service_framework.egg-info/dependency_links.txt
+src/service_framework.egg-info/top_level.txt
