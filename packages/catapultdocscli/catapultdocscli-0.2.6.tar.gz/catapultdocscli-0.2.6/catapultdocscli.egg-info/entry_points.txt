@@ -1,0 +1,3 @@
+[console_scripts]
+catapult-docs-cli = catapult_docs_cli.cli:main
+
