@@ -1,0 +1,15 @@
+CHANGES.txt
+DESC.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+WhichFile.egg-info/PKG-INFO
+WhichFile.egg-info/SOURCES.txt
+WhichFile.egg-info/dependency_links.txt
+WhichFile.egg-info/entry_points.txt
+WhichFile.egg-info/requires.txt
+WhichFile.egg-info/top_level.txt
+docs/README.rst
+whichfile/__init__.py
+whichfile/__main__.py
