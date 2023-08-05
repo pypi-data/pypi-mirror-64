@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: quicktests
+Version: 0.0.2
+Summary: A library for python for easy testing.
+Home-page: https://gitlab.com/Raspilot/quicktests
+Author: Fabian Becker
+Author-email: fab.becker@outlook.de
+License: UNKNOWN
+Description: # quicktests
+        
+        A library for python for easy testing
+        
+        ## Example
+        
+        ```python
+        from quicktests import HRTest
+        
+        
+        class Test(HRTest):
+            def test_one_equals_one(self):
+                assert 1 == 1, "One does not equal one"
+        
+            def test_one_equals_one_str(self):
+                assert "One" == "One", "\"One\" does not equal \"One\""
+        
+        
+        if __name__ == '__main__':
+            t = Test()
+            result = t()
+            print(result)
+        ```
+        
+        The code above provides the following information:
+        
+        ```
+        Running tests took 5.14984130859375e-05 seconds.
+        Ran 2 tests.
+        Found 0 errors:
+        No error was found. Add more test to make sure your code works.
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
