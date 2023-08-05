@@ -1,0 +1,3 @@
+[console_scripts]
+ogc_legends = ogc_legends:main
+
