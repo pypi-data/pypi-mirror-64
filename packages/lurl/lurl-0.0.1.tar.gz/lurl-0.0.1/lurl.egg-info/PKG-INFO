@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: lurl
+Version: 0.0.1
+Summary: cURL please....
+Home-page: UNKNOWN
+Author: Fernanda Panca Prima
+Author-email: pancaprima8@gmail.com
+License: MIT
+Description: convert cURL to another type format!
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
