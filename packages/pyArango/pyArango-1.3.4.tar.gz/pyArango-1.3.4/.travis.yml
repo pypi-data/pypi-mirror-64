@@ -1,0 +1,26 @@
+sudo: required
+language: python
+
+services:
+- docker
+
+python:
+  - "2.7"
+  - "3.6"
+
+addons:
+  apt:
+    update: true
+    
+before_script:
+  - chmod 777 ./pyArango/tests/setup_arangodb.sh
+  - ./pyArango/tests/setup_arangodb.sh
+
+install:
+  - pip install --upgrade pip
+  - pip install coverage gevent setuptools enum34
+  - python setup.py install
+
+script: coverage run -m unittest discover pyArango/tests/
+
+after_success: bash <(curl -s https://codecov.io/bash)
