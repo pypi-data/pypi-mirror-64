@@ -1,0 +1,3 @@
+[console_scripts]
+protonvpn-cli-gui = protonvpn_cli_gui.protonvpnguiapp:pvpn_gui
+
