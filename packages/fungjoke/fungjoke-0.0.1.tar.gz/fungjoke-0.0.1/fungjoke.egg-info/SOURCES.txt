@@ -1,0 +1,6 @@
+README.md
+setup.py
+fungjoke.egg-info/PKG-INFO
+fungjoke.egg-info/SOURCES.txt
+fungjoke.egg-info/dependency_links.txt
+fungjoke.egg-info/top_level.txt
