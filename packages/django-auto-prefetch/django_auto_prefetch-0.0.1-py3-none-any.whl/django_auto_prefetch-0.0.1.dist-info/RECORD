@@ -1,0 +1,10 @@
+auto_prefetch/__init__.py,sha256=-XxcfPVpyC_5sg0v1fTPKKci0emWlxzbq07AyAirRro,2031
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=NTQG0B7Vbe58iScU2ZS0SbIQmuX5gKoPBH6Q7EAjGVE,199
+tests/models.py,sha256=KJHjBTq3OtWQRSouiLJoFqz-CQCXz-TxTTIR8ZK_oZQ,1056
+tests/test_basic.py,sha256=slcnYUb8X573PHye4rfIOY4LNtVAHXG70L6hw0wCgfY,3826
+django_auto_prefetch-0.0.1.dist-info/LICENSE,sha256=5BRkqbe7bHogzHnv9LJzKYmUv6y1Zm85fEG-FogetWc,1522
+django_auto_prefetch-0.0.1.dist-info/METADATA,sha256=N_ZCwTtLd3nNl2e5At86qY_apZ_Qos1ld6ea-dZleDQ,4404
+django_auto_prefetch-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+django_auto_prefetch-0.0.1.dist-info/top_level.txt,sha256=e9uIXmmBIABuHDitynpRYRpP7oNXyTtrJiVMpqwIsos,20
+django_auto_prefetch-0.0.1.dist-info/RECORD,,
