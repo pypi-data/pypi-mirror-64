@@ -1,0 +1,27 @@
+cloudpickle
+cython
+future
+keras
+keras_applications
+keras_preprocessing
+matplotlib
+numpy
+sacrebleu
+sacremoses
+scipy
+six
+sklearn
+tables
+toolz
+
+[cython ]
+cython
+
+[tests]
+flaky
+markdown
+pytest
+pytest-cov
+pytest-pep8
+pytest-xdist
+requests
