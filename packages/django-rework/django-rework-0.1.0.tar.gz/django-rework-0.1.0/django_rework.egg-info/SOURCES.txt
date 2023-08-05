@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_rework.egg-info/PKG-INFO
+django_rework.egg-info/SOURCES.txt
+django_rework.egg-info/dependency_links.txt
+django_rework.egg-info/entry_points.txt
+django_rework.egg-info/not-zip-safe
+django_rework.egg-info/requires.txt
+django_rework.egg-info/top_level.txt
+rework/__init__.py
+rework/core/__init__.py
+rework/core/management/__init__.py
