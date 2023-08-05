@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: neural-semigroups
+Version: 0.2.0
+Summary: Neural networks powered research of semigroups
+Home-page: https://github.com/inpefess/neural-semigroups
+License: Apache-2.0
+Author: Boris Shminke
+Author-email: boris@shminke.ml
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Typing :: Typed
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: pandas (==1.0.2)
+Requires-Dist: pytorch-ignite (==0.3.0)
+Requires-Dist: sphinx_rtd_theme (==0.4.3)
+Requires-Dist: tensorboard (==2.1.1)
+Requires-Dist: torch (==1.4.0)
+Requires-Dist: tqdm (==4.43.0)
+Project-URL: Repository, https://github.com/inpefess/neural-semigroups

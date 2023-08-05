@@ -1,0 +1,93 @@
+"""
+   Copyright 2019-2020 Boris Shminke
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+"""
+import logging
+from argparse import ArgumentParser, Namespace
+from itertools import permutations
+from time import time
+from typing import List, Tuple
+
+import numpy as np
+import torch
+from ignite.engine import (Events, create_supervised_evaluator,
+                           create_supervised_trainer)
+from ignite.handlers import EarlyStopping
+from ignite.metrics import Accuracy
+from ignite.metrics.loss import Loss
+from torch.nn import CrossEntropyLoss
+from torch.optim import Adam
+from torch.utils.data import DataLoader, TensorDataset
+from torch.utils.tensorboard import SummaryWriter
+from tqdm import tqdm
+
+from neural_semigroups.cayley_database import CayleyDatabase
+from neural_semigroups.magma import Magma
+
+
+def get_arguments() -> Namespace:
+    """
+    parse script arguments
+
+    :returns: script parameters
+    """
+    parser = ArgumentParser()
+    parser.add_argument(
+        "--cardinality",
+        type=int,
+        help="magma cardinality",
+        required=True,
+        choices=range(2, 8)
+    )
+    parser.add_argument(
+        "--epochs",
+        type=int,
+        help="number of epochs to train",
+        default=100,
+        required=False
+    )
+    parser.add_argument(
+        "--learning_rate",
+        type=float,
+        help="learning rate",
+        default=0.001,
+        required=False
+    )
+    parser.add_argument(
+        "--weight_decay",
+        type=float,
+        help="weight decay",
+        default=0.0,
+        required=False
+    )
+    parser.add_argument(
+        "--batch_size",
+        type=int,
+        help="batch size for training",
+        default=32,
+        required=False
+    )
+    parser.add_argument(
+        "--train_size",
+        type=int,
+        help="number of tables for training",
+        required=True
+    )
+    parser.add_argument(
+        "--validation_size",
+        type=int,
+        help="number of tables for validation",
+        required=True
+    )
+    return parser.parse_args()
