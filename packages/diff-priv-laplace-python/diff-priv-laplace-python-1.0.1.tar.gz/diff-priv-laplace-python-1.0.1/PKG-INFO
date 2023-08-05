@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: diff-priv-laplace-python
+Version: 1.0.1
+Summary: Python library for Laplace differential privacy
+Home-page: https://github.com/aleph-research/diff-priv-laplace-python
+Author: Elmar Langholz
+Author-email: langholz@gmail.com
+License: MIT
+Download-URL: https://github.com/aleph-research/diff-priv-laplace-python/tarball/v1.0.1
+Description: UNKNOWN
+Keywords: laplace,differential,privacy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
