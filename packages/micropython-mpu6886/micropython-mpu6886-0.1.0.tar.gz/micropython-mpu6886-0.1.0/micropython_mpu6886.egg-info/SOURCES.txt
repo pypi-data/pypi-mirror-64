@@ -1,0 +1,8 @@
+README.md
+mpu6886.py
+setup.cfg
+setup.py
+micropython_mpu6886.egg-info/PKG-INFO
+micropython_mpu6886.egg-info/SOURCES.txt
+micropython_mpu6886.egg-info/dependency_links.txt
+micropython_mpu6886.egg-info/top_level.txt
