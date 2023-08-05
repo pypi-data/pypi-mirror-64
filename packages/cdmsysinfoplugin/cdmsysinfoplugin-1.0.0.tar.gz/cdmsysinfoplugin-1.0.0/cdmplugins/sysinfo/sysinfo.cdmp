@@ -1,0 +1,11 @@
+[Core]
+Name = IDE system info status bar widgets
+Module = .
+
+[Documentation]
+Author = Sergey Satskiy <sergey.satskiy@gmail.com>
+Version = 1.0.0
+Website = http://codimension.org
+Description = Codimension IDE system information plugin
+License = GPL v.3
+

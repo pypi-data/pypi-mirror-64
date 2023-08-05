@@ -1,0 +1,12 @@
+ChangeLog
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cdmplugins/sysinfo/__init__.py
+cdmplugins/sysinfo/sysinfo.cdmp
+cdmsysinfoplugin.egg-info/PKG-INFO
+cdmsysinfoplugin.egg-info/SOURCES.txt
+cdmsysinfoplugin.egg-info/dependency_links.txt
+cdmsysinfoplugin.egg-info/requires.txt
+cdmsysinfoplugin.egg-info/top_level.txt
