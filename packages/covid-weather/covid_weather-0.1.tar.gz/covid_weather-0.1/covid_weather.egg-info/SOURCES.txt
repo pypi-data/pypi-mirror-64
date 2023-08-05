@@ -1,0 +1,10 @@
+setup.py
+covid/__init__.py
+covid/preprocess_epidemiology.py
+covid/retrieve_data.py
+covid/scratch.py
+covid_weather.egg-info/PKG-INFO
+covid_weather.egg-info/SOURCES.txt
+covid_weather.egg-info/dependency_links.txt
+covid_weather.egg-info/not-zip-safe
+covid_weather.egg-info/top_level.txt
