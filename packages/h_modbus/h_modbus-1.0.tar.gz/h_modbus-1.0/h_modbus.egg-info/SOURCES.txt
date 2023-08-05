@@ -1,0 +1,10 @@
+setup.py
+h_modbus/__init__.py
+h_modbus/main.py
+h_modbus/modbus.py
+h_modbus/t1.py
+h_modbus.egg-info/PKG-INFO
+h_modbus.egg-info/SOURCES.txt
+h_modbus.egg-info/dependency_links.txt
+h_modbus.egg-info/not-zip-safe
+h_modbus.egg-info/top_level.txt
