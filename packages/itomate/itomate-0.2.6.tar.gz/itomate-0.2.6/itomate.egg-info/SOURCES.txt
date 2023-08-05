@@ -1,0 +1,7 @@
+setup.py
+itomate.egg-info/PKG-INFO
+itomate.egg-info/SOURCES.txt
+itomate.egg-info/dependency_links.txt
+itomate.egg-info/entry_points.txt
+itomate.egg-info/requires.txt
+itomate.egg-info/top_level.txt
