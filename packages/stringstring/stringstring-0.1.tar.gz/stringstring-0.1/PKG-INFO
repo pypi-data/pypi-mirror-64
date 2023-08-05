@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: stringstring
+Version: 0.1
+Summary: A function that, when given a string, returns ASCII art of that string but using the letters of that string
+Home-page: https://github.com/dolphingarlic/stringstring
+Author: Andi Qu
+Author-email: dolphingarlic@gmail.com
+License: MIT
+Download-URL: https://github.com/dolphingarlic/stringstring/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: string,art,ascii
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
