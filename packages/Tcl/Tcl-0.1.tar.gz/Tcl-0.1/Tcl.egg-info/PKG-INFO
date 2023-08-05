@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Tcl
+Version: 0.1
+Summary: A coding language used for Graphical user interface
+Home-page: https://github.com/SCORPIA-oss/Tcl-repo
+Author: Repl.it Developer
+Author-email: xsumagravity@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
