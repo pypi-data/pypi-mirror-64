@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: amberelectric
+Version: 0.0.2
+Summary: Retrieve data from Amber Electric's API
+Home-page: https://github.com/yaleman/amberelectric
+Author: James Hodgkinson
+Author-email: yaleman+pypi_amberelectric@ricetek.net
+License: MIT
+Keywords: amber electric api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: requests
+
+# amberelectric 
+
+Basic Amber Electric API munger, pulls usage data and pricing from your account.
+
+Check out `example.py` for how to use this, or example code here:
+
+    import json
+    from amberelectric import AmberElectric
+
+    API = AmberElectric(username='frank@example.com', password='hunter2')
+    API.auth()
+
+    pricelist = API.getpricelist()
+    print(json.dumps(pricelist, indent=2))
+
+
