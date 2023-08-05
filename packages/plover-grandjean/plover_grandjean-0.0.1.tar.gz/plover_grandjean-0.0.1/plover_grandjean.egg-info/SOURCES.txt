@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+plover_grandjean/__init__.py
+plover_grandjean/system.py
+plover_grandjean.egg-info/PKG-INFO
+plover_grandjean.egg-info/SOURCES.txt
+plover_grandjean.egg-info/dependency_links.txt
+plover_grandjean.egg-info/entry_points.txt
+plover_grandjean.egg-info/requires.txt
+plover_grandjean.egg-info/top_level.txt
+plover_grandjean.egg-info/zip-safe

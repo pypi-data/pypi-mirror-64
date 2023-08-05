@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: plover_grandjean
+Version: 0.0.1
+Summary: French system for Plover
+Home-page: https://github.com/stenomax/plover_grandjean
+Author: Maxime Bouteau
+Author-email: bouteau.maxime@gmail.com
+License: GNU General Public License v2 or later (GPLv2+)
+Description: UNKNOWN
+Keywords: plover plover_plugin stenotypie stenography french-steno grandjean
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
