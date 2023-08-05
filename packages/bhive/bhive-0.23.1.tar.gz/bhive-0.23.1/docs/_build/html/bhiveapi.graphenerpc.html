@@ -1,0 +1,430 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhiveapi.graphenerpc module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhiveapi.hivenoderpc module" href="bhiveapi.hivenoderpc.html" />
+    <link rel="prev" title="bhiveapi.exceptions module" href="bhiveapi.exceptions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bhive.html">bhive package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhiveapi.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.exceptions.html">bhiveapi.exceptions module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhiveapi.graphenerpc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.hivenoderpc.html">bhiveapi.hivenoderpc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.node.html">bhiveapi.node module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.rpcutils.html">bhiveapi.rpcutils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.version.html">bhiveapi.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhiveapi.websocket.html">bhiveapi.websocket module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhiveapi.html#module-bhiveapi">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhiveapi.html">bhiveapi package</a> &raquo;</li>
+        
+      <li>bhiveapi.graphenerpc module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhiveapi.graphenerpc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhiveapi.graphenerpc">
+<span id="bhiveapi-graphenerpc-module"></span><h1>bhiveapi.graphenerpc module<a class="headerlink" href="#module-bhiveapi.graphenerpc" title="Permalink to this headline">¶</a></h1>
+<p>graphennewsrpc.</p>
+<dl class="class">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC">
+<em class="property">class </em><code class="sig-prename descclassname">bhiveapi.graphenerpc.</code><code class="sig-name descname">GrapheneRPC</code><span class="sig-paren">(</span><em class="sig-param">urls</em>, <em class="sig-param">user=None</em>, <em class="sig-param">password=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>This class allows to call API methods synchronously, without callbacks.</p>
+<p>It logs warnings and errors.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>urls</strong> (<em>str</em>) – Either a single Websocket/Http URL, or a list of URLs</p></li>
+<li><p><strong>user</strong> (<em>str</em>) – Username for Authentication</p></li>
+<li><p><strong>password</strong> (<em>str</em>) – Password for Authentication</p></li>
+<li><p><strong>num_retries</strong> (<em>int</em>) – Try x times to num_retries to a node on disconnect, -1 for indefinitely (default is 100)</p></li>
+<li><p><strong>num_retries_call</strong> (<em>int</em>) – Repeat num_retries_call times a rpc call on node error (default is 5)</p></li>
+<li><p><strong>timeout</strong> (<em>int</em>) – Timeout setting for https nodes (default is 60)</p></li>
+<li><p><strong>autoconnect</strong> (<em>bool</em>) – When set to false, connection is performed on the first rpc call (default is True)</p></li>
+<li><p><strong>use_condenser</strong> (<em>bool</em>) – Use the old condenser_api rpc protocol on nodes with version
+0.19.4 or higher. The settings has no effect on nodes with version of 0.19.3 or lower.</p></li>
+<li><p><strong>custom_chains</strong> (<em>dict</em>) – custom chain which should be added to the known chains</p></li>
+</ul>
+</dd>
+</dl>
+<p>Available APIs:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>database</p></li>
+<li><p>network_node</p></li>
+<li><p>network_broadcast</p></li>
+</ul>
+</div></blockquote>
+<p>Usage:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhiveapi.graphenerpc</span> <span class="kn">import</span> <span class="n">GrapheneRPC</span>
+<span class="n">ws</span> <span class="o">=</span> <span class="n">GrapheneRPC</span><span class="p">(</span><span class="s2">&quot;wss://hived.pevo.science&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ws</span><span class="o">.</span><span class="n">get_account_count</span><span class="p">())</span>
+
+<span class="n">ws</span> <span class="o">=</span> <span class="n">GrapheneRPC</span><span class="p">(</span><span class="s2">&quot;https://api.hive.blog&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">,</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">ws</span><span class="o">.</span><span class="n">get_account_count</span><span class="p">())</span>
+</pre></div>
+</div>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This class allows to call methods available via
+websocket. If you want to use the notification
+subsystem, please use <code class="docutils literal notranslate"><span class="pre">GrapheneWebsocket</span></code> instead.</p>
+</div>
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.error_cnt">
+<em class="property">property </em><code class="sig-name descname">error_cnt</code><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.error_cnt" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.error_cnt_call">
+<em class="property">property </em><code class="sig-name descname">error_cnt_call</code><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.error_cnt_call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.get_network">
+<code class="sig-name descname">get_network</code><span class="sig-paren">(</span><em class="sig-param">props=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.get_network" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identify the connected network. This call returns a
+dictionary with keys chain_id, core_symbol and prefix</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.get_request_id">
+<code class="sig-name descname">get_request_id</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.get_request_id" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get request id.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.get_use_appbase">
+<code class="sig-name descname">get_use_appbase</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.get_use_appbase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if appbase ready and appbase calls are set</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.is_appbase_ready">
+<code class="sig-name descname">is_appbase_ready</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.is_appbase_ready" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if node is appbase ready</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.next">
+<code class="sig-name descname">next</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Switches to the next node url</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.num_retries">
+<em class="property">property </em><code class="sig-name descname">num_retries</code><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.num_retries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.num_retries_call">
+<em class="property">property </em><code class="sig-name descname">num_retries_call</code><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.num_retries_call" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.request_send">
+<code class="sig-name descname">request_send</code><span class="sig-paren">(</span><em class="sig-param">payload</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.request_send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.rpcclose">
+<code class="sig-name descname">rpcclose</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.rpcclose" title="Permalink to this definition">¶</a></dt>
+<dd><p>Close Websocket</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.rpcconnect">
+<code class="sig-name descname">rpcconnect</code><span class="sig-paren">(</span><em class="sig-param">next_url=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.rpcconnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connect to next url in a loop.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.rpcexec">
+<code class="sig-name descname">rpcexec</code><span class="sig-paren">(</span><em class="sig-param">payload</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.rpcexec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Execute a call by sending the payload.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>payload</strong> (<em>json</em>) – Payload data</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>ValueError</strong> – if the server does not respond in proper JSON format</p></li>
+<li><p><a class="reference internal" href="bhiveapi.exceptions.html#bhiveapi.exceptions.RPCError" title="bhiveapi.exceptions.RPCError"><strong>RPCError</strong></a> – if the server returns an error</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.rpclogin">
+<code class="sig-name descname">rpclogin</code><span class="sig-paren">(</span><em class="sig-param">user</em>, <em class="sig-param">password</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.rpclogin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Login into Websocket</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.version_string_to_int">
+<code class="sig-name descname">version_string_to_int</code><span class="sig-paren">(</span><em class="sig-param">network_version</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.version_string_to_int" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhiveapi.graphenerpc.GrapheneRPC.ws_send">
+<code class="sig-name descname">ws_send</code><span class="sig-paren">(</span><em class="sig-param">payload</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.GrapheneRPC.ws_send" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhiveapi.graphenerpc.SessionInstance">
+<em class="property">class </em><code class="sig-prename descclassname">bhiveapi.graphenerpc.</code><code class="sig-name descname">SessionInstance</code><a class="headerlink" href="#bhiveapi.graphenerpc.SessionInstance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Singelton for the Session Instance</p>
+<dl class="attribute">
+<dt id="bhiveapi.graphenerpc.SessionInstance.instance">
+<code class="sig-name descname">instance</code><em class="property"> = None</em><a class="headerlink" href="#bhiveapi.graphenerpc.SessionInstance.instance" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="bhiveapi.graphenerpc.create_ws_instance">
+<code class="sig-prename descclassname">bhiveapi.graphenerpc.</code><code class="sig-name descname">create_ws_instance</code><span class="sig-paren">(</span><em class="sig-param">use_ssl=True</em>, <em class="sig-param">enable_multithread=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.create_ws_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get websocket instance</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhiveapi.graphenerpc.set_session_instance">
+<code class="sig-prename descclassname">bhiveapi.graphenerpc.</code><code class="sig-name descname">set_session_instance</code><span class="sig-paren">(</span><em class="sig-param">instance</em><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.set_session_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set session instance</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhiveapi.graphenerpc.shared_session_instance">
+<code class="sig-prename descclassname">bhiveapi.graphenerpc.</code><code class="sig-name descname">shared_session_instance</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhiveapi.graphenerpc.shared_session_instance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get session instance</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhiveapi.hivenoderpc.html" class="btn btn-neutral float-right" title="bhiveapi.hivenoderpc module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhiveapi.exceptions.html" class="btn btn-neutral float-left" title="bhiveapi.exceptions module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

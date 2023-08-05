@@ -1,0 +1,731 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.comment module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.constants module" href="bhive.constants.html" />
+    <link rel="prev" title="bhive.cli module" href="bhive.cli.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.comment module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.comment.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.comment">
+<span id="bhive-comment-module"></span><h1>bhive.comment module<a class="headerlink" href="#module-bhive.comment" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.comment.Comment">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.comment.</code><code class="sig-name descname">Comment</code><span class="sig-paren">(</span><em class="sig-param">authorperm</em>, <em class="sig-param">use_tags_api=True</em>, <em class="sig-param">full=True</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="bhive.blockchainobject.html#bhive.blockchainobject.BlockchainObject" title="bhive.blockchainobject.BlockchainObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.blockchainobject.BlockchainObject</span></code></a></p>
+<p>Read data about a Comment/Post in the chain</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>authorperm</strong> (<em>str</em>) – identifier to post/comment in the form of
+<code class="docutils literal notranslate"><span class="pre">&#64;author/permlink</span></code></p></li>
+<li><p><strong>use_tags_api</strong> (<em>boolean</em>) – when set to False, list_comments from the database_api is used</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – <a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.hive.Hive</span></code></a> instance to use when accessing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">authorperm</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_blog</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">1</span><span class="p">)[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&quot;authorperm&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="n">authorperm</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">postdate</span> <span class="o">=</span> <span class="n">c</span><span class="p">[</span><span class="s2">&quot;created&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">postdate_str</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;created&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.comment.Comment.author">
+<em class="property">property </em><code class="sig-name descname">author</code><a class="headerlink" href="#bhive.comment.Comment.author" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.authorperm">
+<em class="property">property </em><code class="sig-name descname">authorperm</code><a class="headerlink" href="#bhive.comment.Comment.authorperm" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.body">
+<em class="property">property </em><code class="sig-name descname">body</code><a class="headerlink" href="#bhive.comment.Comment.body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.category">
+<em class="property">property </em><code class="sig-name descname">category</code><a class="headerlink" href="#bhive.comment.Comment.category" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.curation_penalty_compensation_HBD">
+<code class="sig-name descname">curation_penalty_compensation_HBD</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.curation_penalty_compensation_HBD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns The required post payout amount after 15 minutes
+which will compentsate the curation penalty, if voting earlier than 15 minutes</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.delete">
+<code class="sig-name descname">delete</code><span class="sig-paren">(</span><em class="sig-param">account=None</em>, <em class="sig-param">identifier=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.delete" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delete an existing post/comment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<em>str</em>) – (optional) Account to use for deletion. If
+<code class="docutils literal notranslate"><span class="pre">account</span></code> is not defined, the <code class="docutils literal notranslate"><span class="pre">default_account</span></code> will be
+taken or a ValueError will be raised.</p></li>
+<li><p><strong>identifier</strong> (<em>str</em>) – (optional) Identifier for the post to delete.
+Takes the form <code class="docutils literal notranslate"><span class="pre">&#64;author/permlink</span></code>. By default the current post
+will be used.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A post/comment can only be deleted as long as it has no
+replies and no positive rshares on it.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.depth">
+<em class="property">property </em><code class="sig-name descname">depth</code><a class="headerlink" href="#bhive.comment.Comment.depth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.downvote">
+<code class="sig-name descname">downvote</code><span class="sig-paren">(</span><em class="sig-param">weight=100</em>, <em class="sig-param">voter=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.downvote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Downvote the post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>weight</strong> (<em>float</em>) – (optional) Weight for posting (-100.0 -
++100.0) defaults to -100.0</p></li>
+<li><p><strong>voter</strong> (<em>str</em>) – (optional) Voting account</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.edit">
+<code class="sig-name descname">edit</code><span class="sig-paren">(</span><em class="sig-param">body</em>, <em class="sig-param">meta=None</em>, <em class="sig-param">replace=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.edit" title="Permalink to this definition">¶</a></dt>
+<dd><p>Edit an existing post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>body</strong> (<em>str</em>) – Body of the reply</p></li>
+<li><p><strong>meta</strong> (<em>json</em>) – JSON meta object that can be attached to the
+post. (optional)</p></li>
+<li><p><strong>replace</strong> (<em>bool</em>) – Instead of calculating a <em>diff</em>, replace
+the post entirely (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.estimate_curation_HBD">
+<code class="sig-name descname">estimate_curation_HBD</code><span class="sig-paren">(</span><em class="sig-param">vote_value_HBD</em>, <em class="sig-param">estimated_value_HBD=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.estimate_curation_HBD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Estimates curation reward</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>vote_value_HBD</strong> (<em>float</em>) – The vote value in HBD for which the curation
+should be calculated</p></li>
+<li><p><strong>estimated_value_HBD</strong> (<em>float</em>) – When set, this value is used for calculate
+the curation. When not set, the current post value is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_all_replies">
+<code class="sig-name descname">get_all_replies</code><span class="sig-paren">(</span><em class="sig-param">parent=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_all_replies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all content replies</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_author_rewards">
+<code class="sig-name descname">get_author_rewards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_author_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the author rewards.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;pending_rewards&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="s1">&#39;payout_HP&#39;</span><span class="p">:</span> <span class="mf">0.912</span> <span class="n">HIVE</span><span class="p">,</span>
+    <span class="s1">&#39;payout_HBD&#39;</span><span class="p">:</span> <span class="mf">3.583</span> <span class="n">HBD</span><span class="p">,</span>
+    <span class="s1">&#39;total_payout_HBD&#39;</span><span class="p">:</span> <span class="mf">7.166</span> <span class="n">HBD</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_beneficiaries_pct">
+<code class="sig-name descname">get_beneficiaries_pct</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_beneficiaries_pct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the sum of all post beneficiaries in percentage</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_curation_penalty">
+<code class="sig-name descname">get_curation_penalty</code><span class="sig-paren">(</span><em class="sig-param">vote_time=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_curation_penalty" title="Permalink to this definition">¶</a></dt>
+<dd><p>If post is less than 15 minutes old, it will incur a curation
+reward penalty.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>vote_time</strong> (<em>datetime</em>) – A vote time can be given and the curation
+penalty is calculated regarding the given time (default is None)
+When set to None, the current date is used.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Float number between 0 and 1 (0.0 -&gt; no penalty, 1.0 -&gt; 100 % curation penalty)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_curation_rewards">
+<code class="sig-name descname">get_curation_rewards</code><span class="sig-paren">(</span><em class="sig-param">pending_payout_HBD=False</em>, <em class="sig-param">pending_payout_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_curation_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the curation rewards.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pending_payout_HBD</strong> (<em>bool</em>) – If True, the rewards are returned in HBD and not in HIVE (default is False)</p></li>
+<li><p><strong>pending_payout_value</strong> (<em>float</em><em>, </em><em>str</em>) – When not None this value instead of the current
+value is used for calculating the rewards</p></li>
+</ul>
+</dd>
+</dl>
+<p><cite>pending_rewards</cite> is True when
+the post is younger than 7 days. <cite>unclaimed_rewards</cite> is the
+amount of curation_rewards that goes to the author (self-vote or votes within
+the first 30 minutes). <cite>active_votes</cite> contains all voter with their curation reward.</p>
+<p>Example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;pending_rewards&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;unclaimed_rewards&#39;</span><span class="p">:</span> <span class="mf">0.245</span> <span class="n">HIVE</span><span class="p">,</span>
+    <span class="s1">&#39;active_votes&#39;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="s1">&#39;leprechaun&#39;</span><span class="p">:</span> <span class="mf">0.006</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;timcliff&#39;</span><span class="p">:</span> <span class="mf">0.186</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;st3llar&#39;</span><span class="p">:</span> <span class="mf">0.000</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;crokkon&#39;</span><span class="p">:</span> <span class="mf">0.015</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;feedyourminnows&#39;</span><span class="p">:</span> <span class="mf">0.003</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;isnochys&#39;</span><span class="p">:</span> <span class="mf">0.003</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;loshcat&#39;</span><span class="p">:</span> <span class="mf">0.001</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;greenorange&#39;</span><span class="p">:</span> <span class="mf">0.000</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;qustodian&#39;</span><span class="p">:</span> <span class="mf">0.123</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;jpphotography&#39;</span><span class="p">:</span> <span class="mf">0.002</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;thinkingmind&#39;</span><span class="p">:</span> <span class="mf">0.001</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;oups&#39;</span><span class="p">:</span> <span class="mf">0.006</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;mattockfs&#39;</span><span class="p">:</span> <span class="mf">0.001</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;thecrazygm&#39;</span><span class="p">:</span> <span class="mf">0.003</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;michaelizer&#39;</span><span class="p">:</span> <span class="mf">0.004</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;flugschwein&#39;</span><span class="p">:</span> <span class="mf">0.010</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;ulisessabeque&#39;</span><span class="p">:</span> <span class="mf">0.000</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;hakancelik&#39;</span><span class="p">:</span> <span class="mf">0.002</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;sbi2&#39;</span><span class="p">:</span> <span class="mf">0.008</span> <span class="n">HIVE</span><span class="p">,</span>
+        <span class="s1">&#39;zcool&#39;</span><span class="p">:</span> <span class="mf">0.000</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;hivehq&#39;</span><span class="p">:</span> <span class="mf">0.002</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;rowdiya&#39;</span><span class="p">:</span> <span class="mf">0.000</span> <span class="n">HIVE</span><span class="p">,</span> <span class="s1">&#39;qurator-tier-1-2&#39;</span><span class="p">:</span> <span class="mf">0.012</span> <span class="n">HIVE</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_parent">
+<code class="sig-name descname">get_parent</code><span class="sig-paren">(</span><em class="sig-param">children=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the parent post with depth == 0</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_reblogged_by">
+<code class="sig-name descname">get_reblogged_by</code><span class="sig-paren">(</span><em class="sig-param">identifier=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_reblogged_by" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shows in which blogs this post appears</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_replies">
+<code class="sig-name descname">get_replies</code><span class="sig-paren">(</span><em class="sig-param">raw_data=False</em>, <em class="sig-param">identifier=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_replies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns content replies</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>raw_data</strong> (<em>bool</em>) – When set to False, the replies will be returned as Comment class objects</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_rewards">
+<code class="sig-name descname">get_rewards</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_rewards" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the total_payout, author_payout and the curator payout in HBD.
+When the payout is still pending, the estimated payout is given out.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Potential beneficiary rewards were already deducted from the
+<cite>author_payout</cite> and the <cite>total_payout</cite></p>
+</div>
+<p>Example::</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;total_payout&#39;</span><span class="p">:</span> <span class="mf">9.956</span> <span class="n">HBD</span><span class="p">,</span>
+    <span class="s1">&#39;author_payout&#39;</span><span class="p">:</span> <span class="mf">7.166</span> <span class="n">HBD</span><span class="p">,</span>
+    <span class="s1">&#39;curator_payout&#39;</span><span class="p">:</span> <span class="mf">2.790</span> <span class="n">HBD</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_vote_with_curation">
+<code class="sig-name descname">get_vote_with_curation</code><span class="sig-paren">(</span><em class="sig-param">voter=None</em>, <em class="sig-param">raw_data=False</em>, <em class="sig-param">pending_payout_value=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_vote_with_curation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns vote for voter. Returns None, if the voter cannot be found in <cite>active_votes</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>voter</strong> (<em>str</em>) – Voter for which the vote should be returned</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – If True, the raw data are returned</p></li>
+<li><p><strong>pending_payout_HBD</strong> (<em>float</em><em>, </em><em>str</em>) – When not None this value instead of the current
+value is used for calculating the rewards</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.get_votes">
+<code class="sig-name descname">get_votes</code><span class="sig-paren">(</span><em class="sig-param">raw_data=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.get_votes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all votes as ActiveVotes object</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.id">
+<em class="property">property </em><code class="sig-name descname">id</code><a class="headerlink" href="#bhive.comment.Comment.id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.is_comment">
+<code class="sig-name descname">is_comment</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.is_comment" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if post is a comment</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.is_main_post">
+<code class="sig-name descname">is_main_post</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.is_main_post" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns True if main post, and False if this is a comment (reply).</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.is_pending">
+<code class="sig-name descname">is_pending</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.is_pending" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns if the payout is pending (the post/comment
+is younger than 7 days)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.json_metadata">
+<em class="property">property </em><code class="sig-name descname">json_metadata</code><a class="headerlink" href="#bhive.comment.Comment.json_metadata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.parent_author">
+<em class="property">property </em><code class="sig-name descname">parent_author</code><a class="headerlink" href="#bhive.comment.Comment.parent_author" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.parent_permlink">
+<em class="property">property </em><code class="sig-name descname">parent_permlink</code><a class="headerlink" href="#bhive.comment.Comment.parent_permlink" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.permlink">
+<em class="property">property </em><code class="sig-name descname">permlink</code><a class="headerlink" href="#bhive.comment.Comment.permlink" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.refresh">
+<code class="sig-name descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.refresh" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.rehive">
+<code class="sig-name descname">rehive</code><span class="sig-paren">(</span><em class="sig-param">identifier=None</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.rehive" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rehive a post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>identifier</strong> (<em>str</em>) – post identifier (&#64;&lt;account&gt;/&lt;permlink&gt;)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.reply">
+<code class="sig-name descname">reply</code><span class="sig-paren">(</span><em class="sig-param">body</em>, <em class="sig-param">title=''</em>, <em class="sig-param">author=''</em>, <em class="sig-param">meta=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.reply" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reply to an existing post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>body</strong> (<em>str</em>) – Body of the reply</p></li>
+<li><p><strong>title</strong> (<em>str</em>) – Title of the reply post</p></li>
+<li><p><strong>author</strong> (<em>str</em>) – Author of reply (optional) if not provided
+<code class="docutils literal notranslate"><span class="pre">default_user</span></code> will be used, if present, else
+a <code class="docutils literal notranslate"><span class="pre">ValueError</span></code> will be raised.</p></li>
+<li><p><strong>meta</strong> (<em>json</em>) – JSON meta object that can be attached to the
+post. (optional)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.reward">
+<em class="property">property </em><code class="sig-name descname">reward</code><a class="headerlink" href="#bhive.comment.Comment.reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the estimated total HBD reward.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.time_elapsed">
+<code class="sig-name descname">time_elapsed</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.time_elapsed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a timedelta on how old the post is.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.title">
+<em class="property">property </em><code class="sig-name descname">title</code><a class="headerlink" href="#bhive.comment.Comment.title" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.comment.Comment.type_id">
+<code class="sig-name descname">type_id</code><em class="property"> = 8</em><a class="headerlink" href="#bhive.comment.Comment.type_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.upvote">
+<code class="sig-name descname">upvote</code><span class="sig-paren">(</span><em class="sig-param">weight=100</em>, <em class="sig-param">voter=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.upvote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Upvote the post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>weight</strong> (<em>float</em>) – (optional) Weight for posting (-100.0 -
++100.0) defaults to +100.0</p></li>
+<li><p><strong>voter</strong> (<em>str</em>) – (optional) Voting account</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.comment.Comment.vote">
+<code class="sig-name descname">vote</code><span class="sig-paren">(</span><em class="sig-param">weight</em>, <em class="sig-param">account=None</em>, <em class="sig-param">identifier=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.Comment.vote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vote for a post</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>weight</strong> (<em>float</em>) – Voting weight. Range: -100.0 - +100.0.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) Account to use for voting. If
+<code class="docutils literal notranslate"><span class="pre">account</span></code> is not defined, the <code class="docutils literal notranslate"><span class="pre">default_account</span></code> will be used
+or a ValueError will be raised</p></li>
+<li><p><strong>identifier</strong> (<em>str</em>) – Identifier for the post to vote. Takes the
+form <code class="docutils literal notranslate"><span class="pre">&#64;author/permlink</span></code>.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.comment.RecentByPath">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.comment.</code><code class="sig-name descname">RecentByPath</code><span class="sig-paren">(</span><em class="sig-param">path='promoted'</em>, <em class="sig-param">category=None</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.RecentByPath" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Obtain a list of votes for an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<em>str</em>) – Account name</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive() instance to use when accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.comment.RecentReplies">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.comment.</code><code class="sig-name descname">RecentReplies</code><span class="sig-paren">(</span><em class="sig-param">author</em>, <em class="sig-param">skip_own=True</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.comment.RecentReplies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>Obtain a list of recent replies</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>author</strong> (<em>str</em>) – author</p></li>
+<li><p><strong>skip_own</strong> (<em>bool</em>) – (optional) Skip replies of the author to him/herself.
+Default: True</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive() instance to use when accesing a RPC</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.constants.html" class="btn btn-neutral float-right" title="bhive.constants module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.cli.html" class="btn btn-neutral float-left" title="bhive.cli module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

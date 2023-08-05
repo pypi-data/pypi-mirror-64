@@ -1,0 +1,469 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.transactionbuilder module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.utils module" href="bhive.utils.html" />
+    <link rel="prev" title="bhive.storage module" href="bhive.storage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.transactionbuilder module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.transactionbuilder.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.transactionbuilder">
+<span id="bhive-transactionbuilder-module"></span><h1>bhive.transactionbuilder module<a class="headerlink" href="#module-bhive.transactionbuilder" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.transactionbuilder.TransactionBuilder">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.transactionbuilder.</code><code class="sig-name descname">TransactionBuilder</code><span class="sig-paren">(</span><em class="sig-param">tx={}</em>, <em class="sig-param">use_condenser_api=True</em>, <em class="sig-param">hive_instance=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">dict</span></code></p>
+<p>This class simplifies the creation of transactions by adding
+operations and signers.
+To build your own transactions and sign them</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>tx</strong> (<em>dict</em>) – transaction (Optional). If not set, the new transaction is created.</p></li>
+<li><p><strong>expiration</strong> (<em>int</em>) – Delay in seconds until transactions are supposed
+to expire <em>(optional)</em> (default is 30)</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – If not set, shared_hive_instance() is used</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhivebase.operations</span> <span class="kn">import</span> <span class="n">Transfer</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">wif</span> <span class="o">=</span> <span class="s2">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="n">nobroadcast</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;active&#39;</span><span class="p">:</span> <span class="n">wif</span><span class="p">})</span>
+<span class="n">tx</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="n">transfer</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s2">&quot;test1&quot;</span><span class="p">,</span> <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s2">&quot;1 HIVE&quot;</span><span class="p">,</span> <span class="s2">&quot;memo&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">}</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendOps</span><span class="p">(</span><span class="n">Transfer</span><span class="p">(</span><span class="n">transfer</span><span class="p">))</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendSigner</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;active&quot;</span><span class="p">)</span> <span class="c1"># or tx.appendWif(wif)</span>
+<span class="n">signed_tx</span> <span class="o">=</span> <span class="n">tx</span><span class="o">.</span><span class="n">sign</span><span class="p">()</span>
+<span class="n">broadcast_tx</span> <span class="o">=</span> <span class="n">tx</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.addSigningInformation">
+<code class="sig-name descname">addSigningInformation</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">permission</em>, <em class="sig-param">reconstruct_tx=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.addSigningInformation" title="Permalink to this definition">¶</a></dt>
+<dd><p>This is a private method that adds side information to a
+unsigned/partial transaction in order to simplify later
+signing (e.g. for multisig or coldstorage)</p>
+<p>Not needed when “appendWif” was already or is going to be used</p>
+<p>FIXME: Does not work with owner keys!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reconstruct_tx</strong> (<em>bool</em>) – when set to False and tx
+is already contructed, it will not reconstructed
+and already added signatures remain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.appendMissingSignatures">
+<code class="sig-name descname">appendMissingSignatures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.appendMissingSignatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Store which accounts/keys are supposed to sign the transaction</p>
+<p>This method is used for an offline-signer!</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.appendOps">
+<code class="sig-name descname">appendOps</code><span class="sig-paren">(</span><em class="sig-param">ops</em>, <em class="sig-param">append_to=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.appendOps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Append op(s) to the transaction builder</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ops</strong> (<em>list</em>) – One or a list of operations</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.appendSigner">
+<code class="sig-name descname">appendSigner</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">permission</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.appendSigner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to obtain the wif key from the wallet by telling which account
+and permission is supposed to sign the transaction
+It is possible to add more than one signer.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.appendWif">
+<code class="sig-name descname">appendWif</code><span class="sig-paren">(</span><em class="sig-param">wif</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.appendWif" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a wif that should be used for signing of the transaction.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>wif</strong> (<em>string</em>) – One wif key to use for signing
+a transaction.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.broadcast">
+<code class="sig-name descname">broadcast</code><span class="sig-paren">(</span><em class="sig-param">max_block_age=-1</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.broadcast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Broadcast a transaction to the hive network
+Returns the signed transaction and clears itself
+after broadast</p>
+<p>Clears itself when broadcast was not successfully.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>max_block_age</strong> (<em>int</em>) – parameter only used
+for appbase ready nodes</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.clear">
+<code class="sig-name descname">clear</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.clear" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear the transaction builder and start from scratch</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.clearWifs">
+<code class="sig-name descname">clearWifs</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.clearWifs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Clear all stored wifs</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.constructTx">
+<code class="sig-name descname">constructTx</code><span class="sig-paren">(</span><em class="sig-param">ref_block_num=None</em>, <em class="sig-param">ref_block_prefix=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.constructTx" title="Permalink to this definition">¶</a></dt>
+<dd><p>Construct the actual transaction and store it in the class’s dict
+store</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.get_parent">
+<code class="sig-name descname">get_parent</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.get_parent" title="Permalink to this definition">¶</a></dt>
+<dd><p>TransactionBuilders don’t have parents, they are their own parent</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.get_potential_signatures">
+<code class="sig-name descname">get_potential_signatures</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.get_potential_signatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns public key from signature</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.get_required_signatures">
+<code class="sig-name descname">get_required_signatures</code><span class="sig-paren">(</span><em class="sig-param">available_keys=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.get_required_signatures" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns public key from signature</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.get_transaction_hex">
+<code class="sig-name descname">get_transaction_hex</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.get_transaction_hex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a hex value of the transaction</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.is_empty">
+<code class="sig-name descname">is_empty</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.is_empty" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if ops is empty</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><em class="sig-param">with_prefix=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.json" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the transaction as plain json</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.list_operations">
+<code class="sig-name descname">list_operations</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.list_operations" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all ops</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.set_expiration">
+<code class="sig-name descname">set_expiration</code><span class="sig-paren">(</span><em class="sig-param">p</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.set_expiration" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set expiration date</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.sign">
+<code class="sig-name descname">sign</code><span class="sig-paren">(</span><em class="sig-param">reconstruct_tx=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.sign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sign a provided transaction with the provided key(s)
+One or many wif keys to use for signing a transaction.
+The wif keys can be provided by “appendWif” or the
+signer can be defined “appendSigner”. The wif keys
+from all signer that are defined by “appendSigner
+will be loaded from the wallet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>reconstruct_tx</strong> (<em>bool</em>) – when set to False and tx
+is already contructed, it will not reconstructed
+and already added signatures remain</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.transactionbuilder.TransactionBuilder.verify_authority">
+<code class="sig-name descname">verify_authority</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.transactionbuilder.TransactionBuilder.verify_authority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Verify the authority of the signed transaction</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.utils.html" class="btn btn-neutral float-right" title="bhive.utils module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.storage.html" class="btn btn-neutral float-left" title="bhive.storage module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

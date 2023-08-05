@@ -1,0 +1,466 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.utils module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.version module" href="bhive.version.html" />
+    <link rel="prev" title="bhive.transactionbuilder module" href="bhive.transactionbuilder.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.utils module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.utils.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.utils">
+<span id="bhive-utils-module"></span><h1>bhive.utils module<a class="headerlink" href="#module-bhive.utils" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="bhive.utils.addTzInfo">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">addTzInfo</code><span class="sig-paren">(</span><em class="sig-param">t</em>, <em class="sig-param">timezone='UTC'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.addTzInfo" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a datetime object with tzinfo added</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.assets_from_string">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">assets_from_string</code><span class="sig-paren">(</span><em class="sig-param">text</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.assets_from_string" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correctly split a string containing an asset pair.</p>
+<p>Splits the string into two assets with the separator being on of the
+following: <code class="docutils literal notranslate"><span class="pre">:</span></code>, <code class="docutils literal notranslate"><span class="pre">/</span></code>, or <code class="docutils literal notranslate"><span class="pre">-</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.construct_authorperm">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">construct_authorperm</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.construct_authorperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a post identifier from comment/post object or arguments.
+Examples:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.utils</span> <span class="kn">import</span> <span class="n">construct_authorperm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">construct_authorperm</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="s1">&#39;permlink&#39;</span><span class="p">))</span>
+<span class="go">@username/permlink</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">construct_authorperm</span><span class="p">({</span><span class="s1">&#39;author&#39;</span><span class="p">:</span> <span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="s1">&#39;permlink&#39;</span><span class="p">:</span> <span class="s1">&#39;permlink&#39;</span><span class="p">}))</span>
+<span class="go">@username/permlink</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.construct_authorpermvoter">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">construct_authorpermvoter</code><span class="sig-paren">(</span><em class="sig-param">*args</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.construct_authorpermvoter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a vote identifier from vote object or arguments.
+Examples:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.utils</span> <span class="kn">import</span> <span class="n">construct_authorpermvoter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">construct_authorpermvoter</span><span class="p">(</span><span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="s1">&#39;permlink&#39;</span><span class="p">,</span> <span class="s1">&#39;voter&#39;</span><span class="p">))</span>
+<span class="go">@username/permlink|voter</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">construct_authorpermvoter</span><span class="p">({</span><span class="s1">&#39;author&#39;</span><span class="p">:</span> <span class="s1">&#39;username&#39;</span><span class="p">,</span> <span class="s1">&#39;permlink&#39;</span><span class="p">:</span> <span class="s1">&#39;permlink&#39;</span><span class="p">,</span> <span class="s1">&#39;voter&#39;</span><span class="p">:</span> <span class="s1">&#39;voter&#39;</span><span class="p">}))</span>
+<span class="go">@username/permlink|voter</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.derive_beneficiaries">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">derive_beneficiaries</code><span class="sig-paren">(</span><em class="sig-param">beneficiaries</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.derive_beneficiaries" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.derive_permlink">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">derive_permlink</code><span class="sig-paren">(</span><em class="sig-param">title</em>, <em class="sig-param">parent_permlink=None</em>, <em class="sig-param">parent_author=None</em>, <em class="sig-param">max_permlink_length=256</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.derive_permlink" title="Permalink to this definition">¶</a></dt>
+<dd><p>Derive a permlink from a comment title (for root level
+comments) or the parent permlink and optionally the parent
+author (for replies).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.derive_tags">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">derive_tags</code><span class="sig-paren">(</span><em class="sig-param">tags</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.derive_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.findall_patch_hunks">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">findall_patch_hunks</code><span class="sig-paren">(</span><em class="sig-param">body=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.findall_patch_hunks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.formatTime">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">formatTime</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.formatTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>Properly Format Time for permlinks</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.formatTimeFromNow">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">formatTimeFromNow</code><span class="sig-paren">(</span><em class="sig-param">secs=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.formatTimeFromNow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Properly Format Time that is <cite>x</cite> seconds in the future</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>secs</strong> (<em>int</em>) – Seconds to go in the future (<cite>x&gt;0</cite>) or the
+past (<cite>x&lt;0</cite>)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Properly formated time for Graphene (<cite>%Y-%m-%dT%H:%M:%S</cite>)</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.formatTimeString">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">formatTimeString</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.formatTimeString" title="Permalink to this definition">¶</a></dt>
+<dd><p>Properly Format Time for permlinks</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.formatTimedelta">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">formatTimedelta</code><span class="sig-paren">(</span><em class="sig-param">td</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.formatTimedelta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format timedelta to String</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.formatToTimeStamp">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">formatToTimeStamp</code><span class="sig-paren">(</span><em class="sig-param">t</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.formatToTimeStamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a timestamp integer</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>t</strong> (<em>datetime</em>) – datetime object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Timestamp as integer</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.load_dirty_json">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">load_dirty_json</code><span class="sig-paren">(</span><em class="sig-param">dirty_json</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.load_dirty_json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.make_patch">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">make_patch</code><span class="sig-paren">(</span><em class="sig-param">a</em>, <em class="sig-param">b</em>, <em class="sig-param">n=3</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.make_patch" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.parse_time">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">parse_time</code><span class="sig-paren">(</span><em class="sig-param">block_time</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.parse_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take a string representation of time from the blockchain, and parse it
+into datetime object.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.remove_from_dict">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">remove_from_dict</code><span class="sig-paren">(</span><em class="sig-param">obj</em>, <em class="sig-param">keys=[]</em>, <em class="sig-param">keep_keys=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.remove_from_dict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prune a class or dictionary of all but keys (keep_keys=True).
+Prune a class or dictionary of specified keys.(keep_keys=False).</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.reputation_to_score">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">reputation_to_score</code><span class="sig-paren">(</span><em class="sig-param">rep</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.reputation_to_score" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the account reputation value into the reputation score</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.resolve_authorperm">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">resolve_authorperm</code><span class="sig-paren">(</span><em class="sig-param">identifier</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.resolve_authorperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correctly split a string containing an authorperm.</p>
+<p>Splits the string into author and permlink with the
+following separator: <code class="docutils literal notranslate"><span class="pre">/</span></code>.</p>
+<p>Examples:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.utils</span> <span class="kn">import</span> <span class="n">resolve_authorperm</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">author</span><span class="p">,</span> <span class="n">permlink</span> <span class="o">=</span> <span class="n">resolve_authorperm</span><span class="p">(</span><span class="s1">&#39;https://d.tube/#!/v/pottlund/m5cqkd1a&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">author</span><span class="p">,</span> <span class="n">permlink</span> <span class="o">=</span> <span class="n">resolve_authorperm</span><span class="p">(</span><span class="s2">&quot;https://hive.blog/witness-category/@gtg/24lfrm-gtg-witness-log&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">author</span><span class="p">,</span> <span class="n">permlink</span> <span class="o">=</span> <span class="n">resolve_authorperm</span><span class="p">(</span><span class="s2">&quot;@gtg/24lfrm-gtg-witness-log&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">author</span><span class="p">,</span> <span class="n">permlink</span> <span class="o">=</span> <span class="n">resolve_authorperm</span><span class="p">(</span><span class="s2">&quot;https://busy.org/@gtg/24lfrm-gtg-witness-log&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.resolve_authorpermvoter">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">resolve_authorpermvoter</code><span class="sig-paren">(</span><em class="sig-param">identifier</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.resolve_authorpermvoter" title="Permalink to this definition">¶</a></dt>
+<dd><p>Correctly split a string containing an authorpermvoter.</p>
+<p>Splits the string into author and permlink with the
+following separator: <code class="docutils literal notranslate"><span class="pre">/</span></code> and <code class="docutils literal notranslate"><span class="pre">|</span></code>.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.resolve_root_identifier">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">resolve_root_identifier</code><span class="sig-paren">(</span><em class="sig-param">url</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.resolve_root_identifier" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.sanitize_permlink">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">sanitize_permlink</code><span class="sig-paren">(</span><em class="sig-param">permlink</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.sanitize_permlink" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhive.utils.seperate_yaml_dict_from_body">
+<code class="sig-prename descclassname">bhive.utils.</code><code class="sig-name descname">seperate_yaml_dict_from_body</code><span class="sig-paren">(</span><em class="sig-param">content</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.utils.seperate_yaml_dict_from_body" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.version.html" class="btn btn-neutral float-right" title="bhive.version module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.transactionbuilder.html" class="btn btn-neutral float-left" title="bhive.transactionbuilder module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

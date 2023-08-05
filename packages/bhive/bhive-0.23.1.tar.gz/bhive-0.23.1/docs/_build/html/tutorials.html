@@ -1,0 +1,526 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tutorials &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhivepy CLI" href="cli.html" />
+    <link rel="prev" title="Quickstart" href="quickstart.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bundle-many-operations">Bundle Many Operations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use-nobroadcast-for-testing">Use nobroadcast for testing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clear-blockchainobject-caching">Clear BlockchainObject Caching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simple-sell-script">Simple Sell Script</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sell-at-a-timely-rate">Sell at a timely rate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#batch-api-calls-on-appbase">Batch api calls on AppBase</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#account-history">Account history</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transactionbuilder">Transactionbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">bhive</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Tutorials</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/tutorials.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tutorials">
+<h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bundle-many-operations">
+<h2>Bundle Many Operations<a class="headerlink" href="#bundle-many-operations" title="Permalink to this headline">¶</a></h2>
+<p>With Hive, you can bundle multiple operations into a single
+transactions. This can be used to do a multi-send (one sender, multiple
+receivers), but it also allows to use any other kind of operation. The
+advantage here is that the user can be sure that the operations are
+executed in the same order as they are added to the transaction.</p>
+<p>A block can only include one vote operation and
+one comment operation from each sender.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="kn">from</span> <span class="nn">bhive.instance</span> <span class="kn">import</span> <span class="n">set_shared_hive_instance</span>
+
+<span class="c1"># not a real working key</span>
+<span class="n">wif</span> <span class="o">=</span> <span class="s2">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>
+
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span>
+    <span class="n">bundle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># Enable bundle broadcast</span>
+    <span class="c1"># nobroadcast=True, # Enable this for testing</span>
+    <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="n">wif</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="c1"># Set hv as shared instance</span>
+<span class="n">set_shared_hive_instance</span><span class="p">(</span><span class="n">hv</span><span class="p">)</span>
+
+<span class="c1"># Account and Comment will use now hv</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+
+<span class="c1"># Post</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">Comment</span><span class="p">(</span><span class="s2">&quot;@gtg/witness-gtg-log&quot;</span><span class="p">)</span>
+
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;test1&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HIVE&quot;</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;test2&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HIVE&quot;</span><span class="p">)</span>
+<span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;test3&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HBD&quot;</span><span class="p">)</span>
+<span class="c1"># Upvote post with 25%</span>
+<span class="n">c</span><span class="o">.</span><span class="n">upvote</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="n">voter</span><span class="o">=</span><span class="n">account</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">hv</span><span class="o">.</span><span class="n">broadcast</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-nobroadcast-for-testing">
+<h2>Use nobroadcast for testing<a class="headerlink" href="#use-nobroadcast-for-testing" title="Permalink to this headline">¶</a></h2>
+<p>When using  <cite>nobroadcast=True</cite> the transaction is not broadcasted but printed.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.instance</span> <span class="kn">import</span> <span class="n">set_shared_hive_instance</span>
+
+<span class="c1"># Only for testing not a real working key</span>
+<span class="n">wif</span> <span class="o">=</span> <span class="s2">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>
+
+<span class="c1"># set nobroadcast always to True, when testing</span>
+<span class="n">testnet</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span>
+    <span class="n">nobroadcast</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># Set to false when want to go live</span>
+    <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="n">wif</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="c1"># Set testnet as shared instance</span>
+<span class="n">set_shared_hive_instance</span><span class="p">(</span><span class="n">testnet</span><span class="p">)</span>
+
+<span class="c1"># Account will use now testnet</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+
+<span class="n">pprint</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;test1&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HIVE&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>When executing the script above, the output will be similar to the following:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="nx">Not</span> <span class="nx">broadcasting</span> <span class="nx">anything</span><span class="o">!</span>
+<span class="p">{</span><span class="s1">&#39;expiration&#39;</span><span class="o">:</span> <span class="s1">&#39;2018-05-01T16:16:57&#39;</span><span class="p">,</span>
+ <span class="s1">&#39;extensions&#39;</span><span class="o">:</span> <span class="p">[],</span>
+ <span class="s1">&#39;operations&#39;</span><span class="o">:</span> <span class="p">[[</span><span class="s1">&#39;transfer&#39;</span><span class="p">,</span>
+                 <span class="p">{</span><span class="s1">&#39;amount&#39;</span><span class="o">:</span> <span class="s1">&#39;1.000 HIVE&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;from&#39;</span><span class="o">:</span> <span class="s1">&#39;test&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;memo&#39;</span><span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">,</span>
+                  <span class="s1">&#39;to&#39;</span><span class="o">:</span> <span class="s1">&#39;test1&#39;</span><span class="p">}]],</span>
+ <span class="s1">&#39;ref_block_num&#39;</span><span class="o">:</span> <span class="mi">33020</span><span class="p">,</span>
+ <span class="s1">&#39;ref_block_prefix&#39;</span><span class="o">:</span> <span class="mi">2523628005</span><span class="p">,</span>
+ <span class="s1">&#39;signatures&#39;</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;1f57da50f241e70c229ed67b5d61898e792175c0f18ae29df8af414c46ae91eb5729c867b5d7dcc578368e7024e414c237f644629cb0aa3ecafac3640871ffe785&#39;</span><span class="p">]}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="clear-blockchainobject-caching">
+<h2>Clear BlockchainObject Caching<a class="headerlink" href="#clear-blockchainobject-caching" title="Permalink to this headline">¶</a></h2>
+<p>Each BlockchainObject (Account, Comment, Vote, Witness, Amount, …) has a glocal cache. This cache
+stores all objects and could lead to increased memory consumption. The global cache can be cleared
+with a <cite>clear_cache()</cite> call from any BlockchainObject.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">_cache</span><span class="p">))</span>
+<span class="n">account1</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test1&quot;</span><span class="p">)</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">_cache</span><span class="p">))</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account1</span><span class="o">.</span><span class="n">_cache</span><span class="p">))</span>
+<span class="n">account</span><span class="o">.</span><span class="n">clear_cache</span><span class="p">()</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">_cache</span><span class="p">))</span>
+<span class="n">pprint</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">account1</span><span class="o">.</span><span class="n">_cache</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="simple-sell-script">
+<h2>Simple Sell Script<a class="headerlink" href="#simple-sell-script" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="kn">from</span> <span class="nn">bhive.amount</span> <span class="kn">import</span> <span class="n">Amount</span>
+
+<span class="c1"># Only for testing not a real working key</span>
+<span class="n">wif</span> <span class="o">=</span> <span class="s2">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>
+
+<span class="c1">#</span>
+<span class="c1"># Instantiate Hive (pick network via API node)</span>
+<span class="c1">#</span>
+<span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span>
+    <span class="n">nobroadcast</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>   <span class="c1"># &lt;&lt;--- set this to False when you want to fire!</span>
+    <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="n">wif</span><span class="p">]</span>          <span class="c1"># &lt;&lt;--- use your real keys, when going live!</span>
+<span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># This defines the market we are looking at.</span>
+<span class="c1"># The first asset in the first argument is the *quote*</span>
+<span class="c1"># Sell and buy calls always refer to the *quote*</span>
+<span class="c1">#</span>
+<span class="n">market</span> <span class="o">=</span> <span class="n">Market</span><span class="p">(</span><span class="s2">&quot;HBD:HIVE&quot;</span><span class="p">,</span>
+    <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span>
+<span class="p">)</span>
+
+<span class="c1">#</span>
+<span class="c1"># Sell an asset for a price with amount (quote)</span>
+<span class="c1">#</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">market</span><span class="o">.</span><span class="n">sell</span><span class="p">(</span>
+    <span class="n">Price</span><span class="p">(</span><span class="mf">100.0</span><span class="p">,</span> <span class="s2">&quot;HIVE/HBD&quot;</span><span class="p">),</span>
+    <span class="n">Amount</span><span class="p">(</span><span class="s2">&quot;0.01 HBD&quot;</span><span class="p">)</span>
+<span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sell-at-a-timely-rate">
+<h2>Sell at a timely rate<a class="headerlink" href="#sell-at-a-timely-rate" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">threading</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.market</span> <span class="kn">import</span> <span class="n">Market</span>
+<span class="kn">from</span> <span class="nn">bhive.price</span> <span class="kn">import</span> <span class="n">Price</span>
+<span class="kn">from</span> <span class="nn">bhive.amount</span> <span class="kn">import</span> <span class="n">Amount</span>
+
+<span class="c1"># Only for testing not a real working key</span>
+<span class="n">wif</span> <span class="o">=</span> <span class="s2">&quot;5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3&quot;</span>
+
+<span class="k">def</span> <span class="nf">sell</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot; Sell an asset for a price with amount (quote)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">market</span><span class="o">.</span><span class="n">sell</span><span class="p">(</span>
+        <span class="n">Price</span><span class="p">(</span><span class="mf">100.0</span><span class="p">,</span> <span class="s2">&quot;HBD/HIVE&quot;</span><span class="p">),</span>
+        <span class="n">Amount</span><span class="p">(</span><span class="s2">&quot;0.01 HIVE&quot;</span><span class="p">)</span>
+    <span class="p">))</span>
+
+    <span class="n">threading</span><span class="o">.</span><span class="n">Timer</span><span class="p">(</span><span class="mi">60</span><span class="p">,</span> <span class="n">sell</span><span class="p">)</span><span class="o">.</span><span class="n">start</span><span class="p">()</span>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="c1">#</span>
+    <span class="c1"># Instantiate Hive (pick network via API node)</span>
+    <span class="c1">#</span>
+    <span class="n">hive</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span>
+        <span class="n">nobroadcast</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>   <span class="c1"># &lt;&lt;--- set this to False when you want to fire!</span>
+        <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="n">wif</span><span class="p">]</span>          <span class="c1"># &lt;&lt;--- use your real keys, when going live!</span>
+    <span class="p">)</span>
+
+    <span class="c1">#</span>
+    <span class="c1"># This defines the market we are looking at.</span>
+    <span class="c1"># The first asset in the first argument is the *quote*</span>
+    <span class="c1"># Sell and buy calls always refer to the *quote*</span>
+    <span class="c1">#</span>
+    <span class="n">market</span> <span class="o">=</span> <span class="n">Market</span><span class="p">(</span><span class="s2">&quot;HIVE:HBD&quot;</span><span class="p">,</span>
+        <span class="n">hive_instance</span><span class="o">=</span><span class="n">hive</span>
+    <span class="p">)</span>
+
+    <span class="n">sell</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="batch-api-calls-on-appbase">
+<h2>Batch api calls on AppBase<a class="headerlink" href="#batch-api-calls-on-appbase" title="Permalink to this headline">¶</a></h2>
+<p>Batch api calls are possible with AppBase RPC nodes.
+If you call a Api-Call with add_to_queue=True it is not submitted but stored in rpc_queue.
+When a call with add_to_queue=False (default setting) is started,
+the complete queue is sended at once to the node. The result is a list with replies.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="s2">&quot;https://api.hive.blog&quot;</span><span class="p">)</span>
+<span class="n">hv</span><span class="o">.</span><span class="n">rpc</span><span class="o">.</span><span class="n">get_config</span><span class="p">(</span><span class="n">add_to_queue</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">hv</span><span class="o">.</span><span class="n">rpc</span><span class="o">.</span><span class="n">rpc_queue</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="p">[{</span><span class="s1">&#39;method&#39;</span><span class="p">:</span> <span class="s1">&#39;condenser_api.get_config&#39;</span><span class="p">,</span> <span class="s1">&#39;jsonrpc&#39;</span><span class="p">:</span> <span class="s1">&#39;2.0&#39;</span><span class="p">,</span> <span class="s1">&#39;params&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="mi">6</span><span class="p">}]</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">result</span> <span class="o">=</span> <span class="n">hv</span><span class="o">.</span><span class="n">rpc</span><span class="o">.</span><span class="n">get_block</span><span class="p">({</span><span class="s2">&quot;block_num&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">},</span> <span class="n">api</span><span class="o">=</span><span class="s2">&quot;block&quot;</span><span class="p">,</span> <span class="n">add_to_queue</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="account-history">
+<h2>Account history<a class="headerlink" href="#account-history" title="Permalink to this headline">¶</a></h2>
+<p>Lets calculate the curation reward from the last 7 days:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+<span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.amount</span> <span class="kn">import</span> <span class="n">Amount</span>
+
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">stop</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">reward_vests</span> <span class="o">=</span> <span class="n">Amount</span><span class="p">(</span><span class="s2">&quot;0 VESTS&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">reward</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history_reverse</span><span class="p">(</span><span class="n">stop</span><span class="o">=</span><span class="n">stop</span><span class="p">,</span> <span class="n">only_ops</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;curation_reward&quot;</span><span class="p">]):</span>
+            <span class="n">reward_vests</span> <span class="o">+=</span> <span class="n">Amount</span><span class="p">(</span><span class="n">reward</span><span class="p">[</span><span class="s1">&#39;reward&#39;</span><span class="p">])</span>
+<span class="n">curation_rewards_HP</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">hive</span><span class="o">.</span><span class="n">vests_to_hp</span><span class="p">(</span><span class="n">reward_vests</span><span class="o">.</span><span class="n">amount</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Rewards are </span><span class="si">%.3f</span><span class="s2"> HP&quot;</span> <span class="o">%</span> <span class="n">curation_rewards_HP</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Lets display all Posts from an account:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive.comment</span> <span class="kn">import</span> <span class="n">Comment</span>
+<span class="kn">from</span> <span class="nn">bhive.exceptions</span> <span class="kn">import</span> <span class="n">ContentDoesNotExistsException</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;thecrazygm&quot;</span><span class="p">)</span>
+<span class="n">c_list</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="nb">map</span><span class="p">(</span><span class="n">Comment</span><span class="p">,</span> <span class="n">account</span><span class="o">.</span><span class="n">history</span><span class="p">(</span><span class="n">only_ops</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;comment&quot;</span><span class="p">])):</span>
+    <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">permlink</span> <span class="ow">in</span> <span class="n">c_list</span><span class="p">:</span>
+      <span class="k">continue</span>
+    <span class="k">try</span><span class="p">:</span>
+         <span class="n">c</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+    <span class="k">except</span> <span class="n">ContentDoesNotExistsException</span><span class="p">:</span>
+         <span class="k">continue</span>
+    <span class="n">c_list</span><span class="p">[</span><span class="n">c</span><span class="o">.</span><span class="n">permlink</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">c</span><span class="o">.</span><span class="n">is_comment</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> &quot;</span> <span class="o">%</span> <span class="n">c</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="transactionbuilder">
+<h2>Transactionbuilder<a class="headerlink" href="#transactionbuilder" title="Permalink to this headline">¶</a></h2>
+<p>Sign transactions with bhive without using the wallet and build the transaction by hand.
+Example with one operation with and without the wallet:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhivebase</span> <span class="kn">import</span> <span class="n">operations</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="c1"># Uncomment the following when using a wallet:</span>
+<span class="c1"># hv.wallet.unlock(&quot;secret_password&quot;)</span>
+<span class="n">tx</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="n">op</span> <span class="o">=</span> <span class="n">operations</span><span class="o">.</span><span class="n">Transfer</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s1">&#39;user_a&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s1">&#39;user_b&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s1">&#39;1.000 HBD&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;memo&quot;</span><span class="p">:</span> <span class="s1">&#39;test 2&#39;</span><span class="p">}))</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendOps</span><span class="p">(</span><span class="n">op</span><span class="p">)</span>
+<span class="c1"># Comment appendWif out and uncomment appendSigner when using a stored key from the wallet</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendWif</span><span class="p">(</span><span class="s1">&#39;5.....&#39;</span><span class="p">)</span> <span class="c1"># `user_a`</span>
+<span class="c1"># tx.appendSigner(&#39;user_a&#39;, &#39;active&#39;)</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">sign</span><span class="p">()</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Example with signing and broadcasting two operations:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="kn">from</span> <span class="nn">bhive.transactionbuilder</span> <span class="kn">import</span> <span class="n">TransactionBuilder</span>
+<span class="kn">from</span> <span class="nn">bhivebase</span> <span class="kn">import</span> <span class="n">operations</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="c1"># Uncomment the following when using a wallet:</span>
+<span class="c1"># hv.wallet.unlock(&quot;secret_password&quot;)</span>
+<span class="n">tx</span> <span class="o">=</span> <span class="n">TransactionBuilder</span><span class="p">(</span><span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="n">ops</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">op</span> <span class="o">=</span> <span class="n">operations</span><span class="o">.</span><span class="n">Transfer</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">&quot;from&quot;</span><span class="p">:</span> <span class="s1">&#39;user_a&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;to&quot;</span><span class="p">:</span> <span class="s1">&#39;user_b&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;amount&quot;</span><span class="p">:</span> <span class="s1">&#39;1.000 HBD&#39;</span><span class="p">,</span>
+                            <span class="s2">&quot;memo&quot;</span><span class="p">:</span> <span class="s1">&#39;test 2&#39;</span><span class="p">}))</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">op</span><span class="p">)</span>
+<span class="n">op</span> <span class="o">=</span> <span class="n">operations</span><span class="o">.</span><span class="n">Vote</span><span class="p">(</span><span class="o">**</span><span class="p">{</span><span class="s2">&quot;voter&quot;</span><span class="p">:</span> <span class="n">v</span><span class="p">,</span>
+                        <span class="s2">&quot;author&quot;</span><span class="p">:</span> <span class="n">author</span><span class="p">,</span>
+                        <span class="s2">&quot;permlink&quot;</span><span class="p">:</span> <span class="n">permlink</span><span class="p">,</span>
+                        <span class="s2">&quot;weight&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">percent</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)})</span>
+<span class="n">ops</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">op</span><span class="p">)</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendOps</span><span class="p">(</span><span class="n">ops</span><span class="p">)</span>
+<span class="c1"># Comment appendWif out and uncomment appendSigner when using a stored key from the wallet</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">appendWif</span><span class="p">(</span><span class="s1">&#39;5.....&#39;</span><span class="p">)</span> <span class="c1"># `user_a`</span>
+<span class="c1"># tx.appendSigner(&#39;user_a&#39;, &#39;active&#39;)</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">sign</span><span class="p">()</span>
+<span class="n">tx</span><span class="o">.</span><span class="n">broadcast</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cli.html" class="btn btn-neutral float-right" title="bhivepy CLI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="quickstart.html" class="btn btn-neutral float-left" title="Quickstart" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

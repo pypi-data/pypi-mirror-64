@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.snapshot module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.storage module" href="bhive.storage.html" />
+    <link rel="prev" title="bhive.rc module" href="bhive.rc.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhive.account.html">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.snapshot module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.snapshot.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.snapshot">
+<span id="bhive-snapshot-module"></span><h1>bhive.snapshot module<a class="headerlink" href="#module-bhive.snapshot" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.snapshot.AccountSnapshot">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.snapshot.</code><code class="sig-name descname">AccountSnapshot</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">account_history=[]</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<p>This class allows to easily access Account history</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account_name</strong> (<em>str</em>) – Name of the account</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive
+instance</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.build">
+<code class="sig-name descname">build</code><span class="sig-paren">(</span><em class="sig-param">only_ops=[]</em>, <em class="sig-param">exclude_ops=[]</em>, <em class="sig-param">enable_rewards=False</em>, <em class="sig-param">enable_out_votes=False</em>, <em class="sig-param">enable_in_votes=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.build" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds the account history based on all account operations</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>only_ops</strong> (<em>array</em>) – Limit generator by these
+operations (<em>optional</em>)</p></li>
+<li><p><strong>exclude_ops</strong> (<em>array</em>) – Exclude these operations from
+generator (<em>optional</em>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.build_curation_arrays">
+<code class="sig-name descname">build_curation_arrays</code><span class="sig-paren">(</span><em class="sig-param">end_date=None</em>, <em class="sig-param">sum_days=7</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.build_curation_arrays" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build curation arrays</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.build_hp_arrays">
+<code class="sig-name descname">build_hp_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.build_hp_arrays" title="Permalink to this definition">¶</a></dt>
+<dd><p>Builds the own_hp and eff_hp array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.build_rep_arrays">
+<code class="sig-name descname">build_rep_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.build_rep_arrays" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build reputation arrays</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.build_vp_arrays">
+<code class="sig-name descname">build_vp_arrays</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.build_vp_arrays" title="Permalink to this definition">¶</a></dt>
+<dd><p>Build vote power arrays</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.get_account_history">
+<code class="sig-name descname">get_account_history</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.get_account_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Uses account history to fetch all related ops</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em><em>, </em><em>datetime</em>) – start number/date of transactions to
+return (<em>optional</em>)</p></li>
+<li><p><strong>stop</strong> (<em>int</em><em>, </em><em>datetime</em>) – stop number/date of transactions to
+return (<em>optional</em>)</p></li>
+<li><p><strong>use_block_num</strong> (<em>bool</em>) – if true, start and stop are block numbers,
+otherwise virtual OP count numbers.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.get_data">
+<code class="sig-name descname">get_data</code><span class="sig-paren">(</span><em class="sig-param">timestamp=None</em>, <em class="sig-param">index=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.get_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns snapshot for given timestamp</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.get_ops">
+<code class="sig-name descname">get_ops</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em>, <em class="sig-param">only_ops=[]</em>, <em class="sig-param">exclude_ops=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.get_ops" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns ops in the given range</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.parse_op">
+<code class="sig-name descname">parse_op</code><span class="sig-paren">(</span><em class="sig-param">op</em>, <em class="sig-param">only_ops=[]</em>, <em class="sig-param">enable_rewards=False</em>, <em class="sig-param">enable_out_votes=False</em>, <em class="sig-param">enable_in_votes=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.parse_op" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse account history operation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.reset">
+<code class="sig-name descname">reset</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.reset" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resets the arrays not the stored account history</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.search">
+<code class="sig-name descname">search</code><span class="sig-paren">(</span><em class="sig-param">search_str</em>, <em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.search" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns ops in the given range</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.update">
+<code class="sig-name descname">update</code><span class="sig-paren">(</span><em class="sig-param">timestamp</em>, <em class="sig-param">own</em>, <em class="sig-param">delegated_in=None</em>, <em class="sig-param">delegated_out=None</em>, <em class="sig-param">hive=0</em>, <em class="sig-param">hbd=0</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.update" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates the internal state arrays</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>timestamp</strong> (<em>datetime</em>) – datetime of the update</p></li>
+<li><p><strong>own</strong> (<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a><em>, </em><em>float</em>) – vests</p></li>
+<li><p><strong>delegated_in</strong> (<em>dict</em>) – Incoming delegation</p></li>
+<li><p><strong>delegated_out</strong> (<em>dict</em>) – Outgoing delegation</p></li>
+<li><p><strong>hive</strong> (<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a><em>, </em><em>float</em>) – hive</p></li>
+<li><p><strong>hbd</strong> (<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a><em>, </em><em>float</em>) – hbd</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.update_in_vote">
+<code class="sig-name descname">update_in_vote</code><span class="sig-paren">(</span><em class="sig-param">timestamp</em>, <em class="sig-param">weight</em>, <em class="sig-param">op</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.update_in_vote" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.update_out_vote">
+<code class="sig-name descname">update_out_vote</code><span class="sig-paren">(</span><em class="sig-param">timestamp</em>, <em class="sig-param">weight</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.update_out_vote" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.snapshot.AccountSnapshot.update_rewards">
+<code class="sig-name descname">update_rewards</code><span class="sig-paren">(</span><em class="sig-param">timestamp</em>, <em class="sig-param">curation_reward</em>, <em class="sig-param">author_vests</em>, <em class="sig-param">author_hive</em>, <em class="sig-param">author_hbd</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.snapshot.AccountSnapshot.update_rewards" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.storage.html" class="btn btn-neutral float-right" title="bhive.storage module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.rc.html" class="btn btn-neutral float-left" title="bhive.rc module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
