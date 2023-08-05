@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+gotaway/__init__.py
+gotaway.egg-info/PKG-INFO
+gotaway.egg-info/SOURCES.txt
+gotaway.egg-info/dependency_links.txt
+gotaway.egg-info/top_level.txt

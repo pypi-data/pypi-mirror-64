@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gotaway
+Version: 0.1.0
+Summary: REST Python Framework for AWS Lambda-based applications
+Home-page: https://github.com/rafaelpivato/gotaway
+Author: Rafael Pivato
+Author-email: rpivato@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/rafaelpivato/gotaway/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/rpivato%40gmail.com
+Project-URL: Source, https://github.com/rafaelpivato/gotaway/
+Description: # gotaway
+        REST Python Framework for AWS Lambda-based applications
+        
+Keywords: micro framework aws lambda api gateway
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
