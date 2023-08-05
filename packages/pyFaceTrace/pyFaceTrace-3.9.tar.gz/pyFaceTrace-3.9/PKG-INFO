@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pyFaceTrace
+Version: 3.9
+Summary: easy Face Recognition fo python
+Home-page: https://pypi.org/project/pyFaceTrace
+Author: KuoYuan Li
+Author-email: funny4875@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Face recognition,Face Trace
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
