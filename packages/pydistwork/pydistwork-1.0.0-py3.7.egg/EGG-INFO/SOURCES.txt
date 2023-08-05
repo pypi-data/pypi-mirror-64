@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+package/__init__.py
+package/mymodule1.py
+package/templates/temp_file
+pydistwork.egg-info/PKG-INFO
+pydistwork.egg-info/SOURCES.txt
+pydistwork.egg-info/dependency_links.txt
+pydistwork.egg-info/entry_points.txt
+pydistwork.egg-info/not-zip-safe
+pydistwork.egg-info/top_level.txt
