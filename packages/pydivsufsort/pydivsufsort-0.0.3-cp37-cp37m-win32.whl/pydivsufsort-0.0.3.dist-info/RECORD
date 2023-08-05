@@ -1,0 +1,11 @@
+pydivsufsort/__init__.py,sha256=SJ29ovQ3nER9COgAlzSboNWm1DaqRCaZ-trwKip2oBQ,66
+pydivsufsort/divsufsort.dll,sha256=QuKSRKsLpC8xYej32V5DwBHWSZJgL4fWyN7_JxwWXRo,32768
+pydivsufsort/divsufsort.py,sha256=nMcF2NYleX2dJMSvBTovlGvXvAy-vqT1XY9HfTq63g8,3046
+pydivsufsort/divsufsort64.dll,sha256=aEvTOi4UWlkpjX69zp5Z_bPs0RqWOCLnM7UlPLI8i9I,43008
+pydivsufsort/dll.py,sha256=glSdaCiKmMIx83dIOc4EX4t7BsWnQHHSrYpjNXfIYbI,525
+pydivsufsort/stringalg.cp37-win32.pyd,sha256=Ivv_mElAcDQZqcij168ImpaCvRbOt5g9TuyzhgrN_vg,232960
+pydivsufsort-0.0.3.dist-info/LICENSE,sha256=AXgiHGWRdCgX-OrP5XRJ7zIyuudGSPvFRzv2V8WvXCs,1062
+pydivsufsort-0.0.3.dist-info/METADATA,sha256=YQyFu_9WbX0qKVa7k39chUIurRAJJM8n6V6Xt_GSCZM,2534
+pydivsufsort-0.0.3.dist-info/WHEEL,sha256=W7gQNdCXaaCQL4_mS6kf-ClnoFRCfSnJ5Gcl1436agg,102
+pydivsufsort-0.0.3.dist-info/top_level.txt,sha256=WT8xN9DXFjOdNpKxhEkWhzhmNqHoDZAl7BX6mV6Rz3s,13
+pydivsufsort-0.0.3.dist-info/RECORD,,
