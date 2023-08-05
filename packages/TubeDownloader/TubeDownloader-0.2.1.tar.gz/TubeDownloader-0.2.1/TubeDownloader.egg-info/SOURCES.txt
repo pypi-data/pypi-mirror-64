@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+TubeDownloader/TubeDownloader.py
+TubeDownloader/__init__.py
+TubeDownloader.egg-info/PKG-INFO
+TubeDownloader.egg-info/SOURCES.txt
+TubeDownloader.egg-info/dependency_links.txt
+TubeDownloader.egg-info/requires.txt
+TubeDownloader.egg-info/top_level.txt
+TubeDownloader/img/icon.png
+test/test_app.py
