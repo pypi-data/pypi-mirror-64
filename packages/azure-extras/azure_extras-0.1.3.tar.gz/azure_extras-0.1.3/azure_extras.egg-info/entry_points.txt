@@ -1,0 +1,5 @@
+[console_scripts]
+az-chkhealth = azure_extras.health_check:chkhealth
+az-kudu = azure_extras.kudu:kudu
+az-sajctl = azure_extras.sajctl:sajctl
+
