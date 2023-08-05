@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wechat-backup
+Version: 0.0.2
+Summary: A library to access user data and resources from WeChat backup files.
+Home-page: https://github.com/he-yaowen/wechat-backup
+Author: HE Yaowen
+Author-email: he.yaowen@hotmail.com
+License: UNKNOWN
+Description: # WeChat Backup
+        
+        A library to access user data and resources from WeChat backup files.
+        
+        ## License
+        
+        Copyright (C) 2020 HE Yaowen <he.yaowen@hotmail.com>
+        
+        The GNU General Public License (GPL) version 3, see [COPYING](./COPYING).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

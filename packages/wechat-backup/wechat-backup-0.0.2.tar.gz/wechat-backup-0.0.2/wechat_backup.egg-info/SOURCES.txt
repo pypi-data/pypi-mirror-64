@@ -1,0 +1,12 @@
+README.md
+setup.py
+wechat_backup/__init__.py
+wechat_backup/backup.py
+wechat_backup/message.py
+wechat_backup/utils.py
+wechat_backup.egg-info/PKG-INFO
+wechat_backup.egg-info/SOURCES.txt
+wechat_backup.egg-info/dependency_links.txt
+wechat_backup.egg-info/top_level.txt
+wechat_backup/ios/__init__.py
+wechat_backup/ios/backup.py
