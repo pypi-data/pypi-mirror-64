@@ -1,0 +1,6 @@
+README.md
+setup.py
+acacia.egg-info/PKG-INFO
+acacia.egg-info/SOURCES.txt
+acacia.egg-info/dependency_links.txt
+acacia.egg-info/top_level.txt
