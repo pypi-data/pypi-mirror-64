@@ -1,0 +1,3 @@
+six
+PyYAML
+Django>=1.11
