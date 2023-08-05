@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+loggerly/__init__.py
+loggerly/loggerly.py
+loggerly.egg-info/PKG-INFO
+loggerly.egg-info/SOURCES.txt
+loggerly.egg-info/dependency_links.txt
+loggerly.egg-info/not-zip-safe
+loggerly.egg-info/requires.txt
+loggerly.egg-info/top_level.txt
