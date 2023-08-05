@@ -1,0 +1,14 @@
+user_app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+user_app/admin.py,sha256=8L2jv_RG1DRDFe0avOrst_kGJD1ZGJJKVRQks1v5EW8,1257
+user_app/apps.py,sha256=owcjnj-oJKFoi9A6t86mDX3vrrE-Liwh_nohshG0rBk,90
+user_app/forms.py,sha256=hWrh08HDhhdvW-ePqSrmV4FlG07PpxP3YZAjCFZ-acc,671
+user_app/models.py,sha256=rVwwLHgGc3XkTM9bXlIEGyxBoGlfsoU4tG82UPfG1HY,3351
+user_app/settings.py,sha256=KDmYmCliYRTS6KTiq99cOvVhCtmI4J_QmvQtF-8yqNE,5824
+user_app/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+user_app/utils.py,sha256=G94v6Be5Je_d1aKHsHaaNv4hIkqelbSHzrv_KIoFoOY,762
+user_app/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+Django_CustomUser_Model-1.0.5.dist-info/LICENSE,sha256=7Fsu9SuU_8T6WC-MIgY8XCwFvjbUF0PyHVeekb17MTQ,1092
+Django_CustomUser_Model-1.0.5.dist-info/METADATA,sha256=ejP2DO5GBCT6pzsHsc-AYlDvYd7d6kX-TjIq5hUSUBA,4197
+Django_CustomUser_Model-1.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Django_CustomUser_Model-1.0.5.dist-info/top_level.txt,sha256=JXPxZQXiSZCFUiZIwaxu6qTP_Z4zBbY8JnuC296YNu0,9
+Django_CustomUser_Model-1.0.5.dist-info/RECORD,,
