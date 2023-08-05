@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: expl
+Version: 1.0.0
+Summary: Generate exploit template
+Home-page: https://github.com/AlirezaKm/expl
+Author: Alireza Km
+Author-email: alitm28@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: exploit,template,generator
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
