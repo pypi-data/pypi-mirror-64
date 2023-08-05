@@ -1,0 +1,9 @@
+streamsx/endpoint/__init__.py,sha256=b-QwRS6C2TjFgZd9fH7yCFdNSZHC5ruQci43mS7vnmM,852
+streamsx/endpoint/_endpoint.py,sha256=l9-48Oc6nK3nprk25atzIRwvzagCC2v5dYGxgMSwmUc,11550
+streamsx.endpoint-1.0.4.dist-info/DESCRIPTION.rst,sha256=JXXbRMB7Yr4AwSePaFeiBLbsZAe1YKxF1Cwz1C2WC-Q,624
+streamsx.endpoint-1.0.4.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+streamsx.endpoint-1.0.4.dist-info/METADATA,sha256=NfgNiOpFdqePpKS0Nnwc2F3VQTB-d7zNpM4HYW86onY,1405
+streamsx.endpoint-1.0.4.dist-info/RECORD,,
+streamsx.endpoint-1.0.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+streamsx.endpoint-1.0.4.dist-info/metadata.json,sha256=02Lan-SwGCjE_jcvpnoq1b7moK2mvU8Xb1NbIgtsTCQ,1053
+streamsx.endpoint-1.0.4.dist-info/top_level.txt,sha256=-HIIPsBc56LEpwY9WQHNMVJy2nOLXnKZ6slLXwmeZoY,9
