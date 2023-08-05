@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pys3landsat
+Version: 0.1.0
+Summary: Download Landsat 8 images from Amazon S3
+Home-page: https://github.com/eamanu/pyamazonlandsat
+Author: Emmanuel Arias
+Author-email: eamanu@yaerobi.com
+License: MIT
+Description: UNKNOWN
+Keywords: Landsat,Amazon,S3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
