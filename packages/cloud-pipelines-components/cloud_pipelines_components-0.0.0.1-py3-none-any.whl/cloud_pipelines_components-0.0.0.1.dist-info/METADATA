@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cloud-pipelines-components
+Version: 0.0.0.1
+Summary: Cloud Pipelines - Components SDK
+Home-page: https://github.com/cloud-pipelines/components
+Author: Cloud Pipelines
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5.3
+Requires-Dist: PyYAML
+Requires-Dist: cloudpickle
+Requires-Dist: Deprecated
+Requires-Dist: strip-hints (>=0.1.8)
+
+UNKNOWN
+
+
