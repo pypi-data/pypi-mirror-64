@@ -1,0 +1,6 @@
+[console_scripts]
+Rit = Rit.Rit:main
+
+[gui_scripts]
+Rit-gui = Rit.gui:main
+
