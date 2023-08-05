@@ -1,0 +1,115 @@
+Metadata-Version: 2.1
+Name: lidtk
+Version: 0.2.0
+Summary: Language identification Toolkit
+Home-page: https://github.com/MartinThoma/language-identification
+Author: Martin Thoma
+Author-email: info@martin-thoma.de
+Maintainer: Martin Thoma
+Maintainer-email: info@martin-thoma.de
+License: MIT
+Download-URL: https://github.com/MartinThoma/language-identification
+Description: [![DOI](https://zenodo.org/badge/116556356.svg)](https://zenodo.org/badge/latestdoi/116556356)
+        [![Build Status](https://travis-ci.org/MartinThoma/lidtk.svg?branch=master)](https://travis-ci.org/MartinThoma/lidtk)
+        
+        # lidtk
+        
+        lidtk - the language identification toolkit - was written in order to
+        investigate the current state of language performance.
+        
+        
+        ## Installation
+        
+        The recommended way to install clana is:
+        
+        ```
+        $ pip install lidtk --user
+        ```
+        
+        If you want the latest version:
+        
+        ```
+        $ git clone https://github.com/MartinThoma/lidtk.git; cd lidtk
+        $ pip install -e . --user
+        ```
+        
+        I recommend getting the [WiLI-2018 dataset](https://zenodo.org/record/841984).
+        
+        
+        ## Usage
+        
+        
+        ```
+        $ lidtk --help
+        
+        Usage: lidtk [OPTIONS] COMMAND [ARGS]...
+        
+        Options:
+          --version  Show the version and exit.
+          --help     Show this message and exit.
+        
+        Commands:
+          analyze-data           Utility function for the languages...
+          analyze-unicode-block  Analyze how important a Unicode block is for...
+          char-distrib           Use the character distribution language...
+          cld2                   Use the CLD-2 language classifier.
+          create-dataset         Create sharable dataset from downloaded...
+          download               Download 1000 documents of each language.
+          google-cloud           Use the CLD-2 language classifier.
+          langdetect             Use the langdetect language classifier.
+          langid                 Use the langid language classifier.
+          map                    Map predictions to something known by WiLI
+          nn                     Use a neural network classifier.
+          textcat                Use the CLD-2 language classifier.
+          tfidf_nn               Use the TfidfNNClassifier classifier.
+        
+        ```
+        
+        For example:
+        
+        ```
+        $ lidtk cld2 predict --text 'This is a test.'
+        eng
+        ```
+        
+        The usual order is:
+        
+        1. `lidtk download`: Please use [WiLI-2018](https://zenodo.org/record/841984) instead of downloading the dataset on your own.
+        2. `lidtk create-dataset`: This step can be skipped if you use WiLI-2018
+        3. `lidtk analyze-unicode-block --start 0 --end 128`
+        4. `lidtk tfidf_nn train vectorizer --config lidtk/classifiers/config/tfidf_nn.yaml`
+        5. `lidtk tfidf_nn train vectorizer --config lidtk/classifiers/config/tfidf_nn.yaml`
+        6. `lidtk tfidf_nn wili --config lidtk/classifiers/config/tfidf_nn.yaml`
+        
+        Or to use one directly:
+        
+        ```
+        $ lidtk cld2 predict --text 'This text is written in some language.'
+        
+        eng
+        ```
+        
+        
+        ## Development
+        
+        Check tests with `tox`.
+        
+Keywords: Machine Learning,Data Science
+Platform: Linux
+Classifier: Development Status :: 7 - Inactive
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Python: >= 3.0
+Description-Content-Type: text/markdown
