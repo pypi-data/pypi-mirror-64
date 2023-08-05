@@ -1,0 +1,3 @@
+[console_scripts]
+nwt = nwt.controllers.cli:main
+
