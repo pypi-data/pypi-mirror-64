@@ -1,0 +1,18 @@
+{
+  "sources": [
+    {
+      "type": "url",
+      "url": [ "https://github.com/owner-1/repository-1/revision-1.tgz" ]
+    },
+    {
+      "type": "url",
+      "url": [ "https://github.com/owner-2/repository-1/revision-1.tgz" ]
+    },
+    {
+      "type": "url",
+      "url": [ "https://example.com/file.txt" ]
+    }
+ ],
+  "version": 1,
+  "revision": "602140776b2ce6c9159bcf52ada73a297c063d5e"
+}
