@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: FHIR-Patient-Summary
+Version: 0.9.6
+Summary: Create a FHIR patient summary document in docx or pdf format.
+Home-page: https://github.com/nicford/FHIR-Patient-Summary
+Author: Nicolas Ford
+Author-email: zcabnjf@ucl.ac.uk
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: datetime
+Requires-Dist: FHIR-Parser (==0.1.5)
+Requires-Dist: docxtpl
+
+# FHIR-Patient-Summary
+Python package that creates patient summary documents in docx or pdf from FHIR records
+
+# Prerequisites
+
+The following dotnet application must be running for the library to work.
+
+https://github.com/goshdrive/FHIRworks_2020
+
+
+# Usage
+
+```python
+from fhir_patient_summary import createPatientSummaryDocument, createPatientSummaryDocumentFromPatientIDList
+
+outputDir = ""  # desired output directory of created documents
+patientID = ""  # patient ID for which a summary document should be created
+patientIDs = [] # list of patient IDs for which summary documents should be created
+
+# single patient docx format
+createPatientSummaryDocument(patientID, "docx", outputDir)
+
+# single patient pdf format
+createPatientSummaryDocument(patientID, "pdf", outputDir)
+
+# multiple patient docx format
+createPatientSummaryDocumentFromPatientIDList(patientIDs, "docx", outputDir)
+
+# multiple patient pdf format
+createPatientSummaryDocumentFromPatientIDList(patientIDs, "pdf", outputDir)
+
+```
+
+
