@@ -1,0 +1,14 @@
+README.md
+setup.py
+mysvr.egg-info/PKG-INFO
+mysvr.egg-info/SOURCES.txt
+mysvr.egg-info/dependency_links.txt
+mysvr.egg-info/not-zip-safe
+mysvr.egg-info/requires.txt
+mysvr.egg-info/top_level.txt
+svr/L2.py
+svr/SV.py
+svr/__init__.py
+svr/kernelfunc.py
+svr/examples/1d_svr.py
+svr/examples/__init__.py

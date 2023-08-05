@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: mysvr
+Version: 1.0.0
+Summary: Support Vector Regression (SVR) package.
+Home-page: https://github.com/fazaghifari/MySVR
+Author: Kemas Zakaria and Ghifari Adam F
+Author-email: ghifariadamf@gmail.com
+License: MIT
+Download-URL: https://github.com/fazaghifari/MySVR/releases
+Description: 
+        MySVR is a Support Vector Regression (SVR) package with multi-kernel feature. Written with a simple style, 
+        this package is suitable for anyone who wish to learn about SVR implementation in Python.
+        
+        Author: Kemas Zakaria and Ghifari Adam F
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.*
