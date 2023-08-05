@@ -1,0 +1,7 @@
+README.md
+setup.py
+xsthunder_python_lib.egg-info/PKG-INFO
+xsthunder_python_lib.egg-info/SOURCES.txt
+xsthunder_python_lib.egg-info/dependency_links.txt
+xsthunder_python_lib.egg-info/requires.txt
+xsthunder_python_lib.egg-info/top_level.txt
