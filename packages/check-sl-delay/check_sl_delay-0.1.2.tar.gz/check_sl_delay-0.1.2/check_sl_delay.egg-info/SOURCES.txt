@@ -1,0 +1,11 @@
+README.md
+setup.py
+check_sl_delay/__init__.py
+check_sl_delay/check_sl_delay.py
+check_sl_delay.egg-info/PKG-INFO
+check_sl_delay.egg-info/SOURCES.txt
+check_sl_delay.egg-info/dependency_links.txt
+check_sl_delay.egg-info/entry_points.txt
+check_sl_delay.egg-info/not-zip-safe
+check_sl_delay.egg-info/requires.txt
+check_sl_delay.egg-info/top_level.txt
