@@ -1,0 +1,15 @@
+romp/__init__.py,sha256=PiUSiFLCm0YX5rbHS4xOLGdqdPDC8j3etV3nmEaelzI,92
+romp/__main__.py,sha256=chtb2qkmosqESi9f3-D4IYvFMhUfJT07mXx32BzzP5M,33
+romp/_core.py,sha256=Z3yZRhYNXTgwuG78-yWZlS3v9SKPmGtBOAva08Tf6ak,5585
+romp/_matrix.py,sha256=caMp8itK2KFl3G59iHGyElZ7rep4FDFFC58K9j3O3CY,7513
+romp/_version.py,sha256=FxDZQ5m5dnhrXaSpiYEgH7RI16b3gJbxh9vXLCoP-8I,498
+romp/cli.py,sha256=gL4Czx2A7hFMl3uBznh8vBBlyHjNwUM4XKkD2rO5B5I,15110
+romp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+romp/tests/print_sys_version.py,sha256=41K24CyH3enRhoCBKItp7oNDcTAWjPQ21CUR8ONo9fg,155
+romp/tests/test_integration.py,sha256=q5xCaMcW8voStDgKAq7feE1JkNvXecJcfvuuERKmhIM,2937
+romp-2020.3.dist-info/LICENSE,sha256=siL8rptM-HFf6aOSRcr_OhVPrAfv0vWuU4NKf39oyw8,1071
+romp-2020.3.dist-info/METADATA,sha256=nAE-TEcLiPR77hooW_4mx_3LuwS5X1MPpRmmbxCptWA,9075
+romp-2020.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+romp-2020.3.dist-info/entry_points.txt,sha256=oVJ2QNbHFR70I-8AznI60pbw-u53MuMbUyB77Q6LavQ,40
+romp-2020.3.dist-info/top_level.txt,sha256=OVEFyZ4dRUSzy-UjshilkHPszBI-uIOoiPYwctPohpM,5
+romp-2020.3.dist-info/RECORD,,
