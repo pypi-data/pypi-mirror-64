@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+sagemill/__init__.py
+sagemill/builder.py
+sagemill/converter.py
+sagemill/process.py
+sagemill/train.py
+sagemill.egg-info/PKG-INFO
+sagemill.egg-info/SOURCES.txt
+sagemill.egg-info/dependency_links.txt
+sagemill.egg-info/requires.txt
+sagemill.egg-info/top_level.txt
+sagemill/docker/process/Dockerfile
+sagemill/docker/train/Dockerfile
+sagemill/docker/train/entrypoint.sh
