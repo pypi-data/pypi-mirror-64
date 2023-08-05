@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: konker-client
+Version: 0.4.0
+Summary: Konker Client to easier send and receive messages in the plataform via MQTT and Request
+Home-page: https://github.com/gandrade/konker_client
+Author: Gustavo Esteves de Andrade
+Author-email: gandrade@inmetrics.com.br
+License: UNKNOWN
+Keywords: konker_client
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: paho-mqtt
+Requires-Dist: psutil
+Requires-Dist: netifaces
+Requires-Dist: aiohttp
+
+=============
+Konker Client
+=============
+
+
+
+
+
+
+Konker Client to easier send and receive messages in the plataform via MQTT and Request
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `elgertam/cookiecutter-pipenv`_ project template, based on `audreyr/cookiecutter-pypackage`_.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`elgertam/cookiecutter-pipenv`: https://github.com/elgertam/cookiecutter-pipenv
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-02-24)
+------------------
+
+* First release on PyPI.
+
+
