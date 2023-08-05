@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: jcson
+Version: 0.1.1
+Summary: jcson - enhanced json for configuration
+Home-page: https://github.com/zakalibit/jcson
+Author: Alex Revetchi
+Author-email: alex.revetchi@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: jcson - enhanced json for configuration
+        ========================================
+        
+        Introdcution
+        ------------
+        The jcson python module is an enhanced json parser, that supports:
+        
+        * path expression sustitutions, a way of referring to other parts of the json/dictionary tree
+        * include directive
+        * new line and inline comments
+Platform: Linux
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
