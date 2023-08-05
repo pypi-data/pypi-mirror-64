@@ -1,0 +1,7 @@
+README.md
+setup.py
+python_elf_wrapper.egg-info/PKG-INFO
+python_elf_wrapper.egg-info/SOURCES.txt
+python_elf_wrapper.egg-info/dependency_links.txt
+python_elf_wrapper.egg-info/requires.txt
+python_elf_wrapper.egg-info/top_level.txt
