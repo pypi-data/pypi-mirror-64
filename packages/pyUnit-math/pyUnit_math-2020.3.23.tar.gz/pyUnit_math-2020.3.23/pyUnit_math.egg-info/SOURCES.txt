@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+pi.c
+setup.py
+C:/Users/Administrator/PycharmProjects/pyunit-math/pi.c
+pyUnit_math.egg-info/PKG-INFO
+pyUnit_math.egg-info/SOURCES.txt
+pyUnit_math.egg-info/dependency_links.txt
+pyUnit_math.egg-info/not-zip-safe
+pyUnit_math.egg-info/requires.txt
+pyUnit_math.egg-info/top_level.txt
+pyunit_math/__init__.py
+pyunit_math/distance.py
+pyunit_math/function.py
+pyunit_math/pi.py
