@@ -1,0 +1,9 @@
+README.md
+setup.py
+SimpleSpider/SimpleSpider.py
+SimpleSpider/__init__.py
+SimpleSpider.egg-info/PKG-INFO
+SimpleSpider.egg-info/SOURCES.txt
+SimpleSpider.egg-info/dependency_links.txt
+SimpleSpider.egg-info/requires.txt
+SimpleSpider.egg-info/top_level.txt
