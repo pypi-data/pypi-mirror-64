@@ -1,0 +1,3 @@
+[console_scripts]
+pngminifier = pngminifier.__main__:PNGMinifier
+
