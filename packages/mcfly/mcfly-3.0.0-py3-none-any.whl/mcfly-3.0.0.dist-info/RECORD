@@ -1,0 +1,10 @@
+mcfly/__init__.py,sha256=PD9-F-d62yc1RSHQJYi8CHs4EfkCUhDfINckgMzfFfI,843
+mcfly/_version.py,sha256=Wmqw-xPCqmOflum7JeoaIJRlZCIOC5EqyKyvcq2mwlw,645
+mcfly/find_architecture.py,sha256=kGFEaSaPXO9LbLpQ7FvqZbD1O3K2zf7vGa-ZPkuYyy8,14860
+mcfly/modelgen.py,sha256=rdRDvlnZFRAKFSEKx78GU3Aze6FZ2F7b5lr1ib2USRs,29864
+mcfly/storage.py,sha256=6Ydsz0MSppuBL-qEKZKolNRI9PC7lYlEmluuM5BJ0Lk,3375
+mcfly-3.0.0.dist-info/LICENSE,sha256=4DukHX-rIHAHaf5BGLq1DYAMt0-ZA1OgXS9f_xwig2M,11558
+mcfly-3.0.0.dist-info/METADATA,sha256=_4zQioPRRvu8RZ4BiD1S4loEhaqJr92y5LZC7Xf1YQk,4780
+mcfly-3.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mcfly-3.0.0.dist-info/top_level.txt,sha256=A_9-m7q8IJ6I4gD0SmfK04dTUfoDGJdumThm4Tc1E7A,6
+mcfly-3.0.0.dist-info/RECORD,,
