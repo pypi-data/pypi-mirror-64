@@ -1,0 +1,3 @@
+[console_scripts]
+rapidswitch = rapid_desktop_switcher:main
+
