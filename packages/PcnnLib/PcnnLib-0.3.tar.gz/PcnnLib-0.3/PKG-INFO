@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: PcnnLib
+Version: 0.3
+Summary: Pulse-coupled neural network library
+Home-page: https://gitlab.com/trikster/pcnnlib
+Author: Anton Zotov
+Author-email: anton@zotov.online
+License: MIT
+Download-URL: https://gitlab.com/trikster/pcnnlib/-/archive/0.3/pcnnlib-0.3.tar.gz
+Description: UNKNOWN
+Keywords: pcnn,pulse,neural,impulse
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
