@@ -1,0 +1,9 @@
+secure_aiohttp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+secure_aiohttp/secure_setup.py,sha256=0F8vy4EacpIqtM5qTC1a2uUx3WDmMQyDKOUqC3lL9t4,3060
+secure_aiohttp/settings.py,sha256=bp0EHGo40WyLLS3APksXNm1lT3QaGkAnXoY4nA0-6Ck,639
+secure_aiohttp/utils.py,sha256=Df16oMM8GsLs3yAyGekxvEsQHB6ZPYU6xw_GfIVqook,1914
+secure_aiohttp-0.0.22.dist-info/LICENSE,sha256=uOY8oGqzK7dREuuXbweWnMspZVcaSi-Ik3evMDGB4hs,11345
+secure_aiohttp-0.0.22.dist-info/METADATA,sha256=XKeG5e_d4GFBFYFY-u17HTZ857p-QA83_CjYnDlnwz4,4546
+secure_aiohttp-0.0.22.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+secure_aiohttp-0.0.22.dist-info/top_level.txt,sha256=YACHaOupm3JaOsU6ENs2NmfK8jyD0KGCXvYxjEQmwsg,15
+secure_aiohttp-0.0.22.dist-info/RECORD,,
