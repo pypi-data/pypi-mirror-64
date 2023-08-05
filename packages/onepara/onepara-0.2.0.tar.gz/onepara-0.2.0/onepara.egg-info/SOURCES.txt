@@ -1,0 +1,8 @@
+setup.py
+onepara/__init__.py
+onepara.egg-info/PKG-INFO
+onepara.egg-info/SOURCES.txt
+onepara.egg-info/dependency_links.txt
+onepara.egg-info/not-zip-safe
+onepara.egg-info/requires.txt
+onepara.egg-info/top_level.txt
