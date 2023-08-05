@@ -1,0 +1,14 @@
+fortnox/__init__.py,sha256=q2F6YDuXNz8I-UOeRWDC7SpiNR71gwmrHG_tnV5nrbY,348
+fortnox/client.py,sha256=hjBLGClIzAx4VRfzu3zjIzcdEL749oxKcffzyzrStCE,2460
+fortnox/coercion.py,sha256=UEh3XEa_lrTfqBCbht1Urq0b4EfHyYq36JOOQZk-U9I,539
+fortnox/configuration.py,sha256=ARuFJKtcZpND0gawwnqJwlWFhT4YB-UN0c1PI3xePTA,2817
+fortnox/errors.py,sha256=Uuakq8VyLap22HFOWmW5DOQ3S3K98y54UR6yHCHLlFQ,2369
+fortnox/http_client.py,sha256=jbYQjodXlX_y9KYP_V_0qFKc4eaBORG7dlvd1jM_lNY,8039
+fortnox/services/__init__.py,sha256=iu-adWEPPzLuxFEde-bhsJSgdc5rUopDD8UiTMM-ZM0,108
+fortnox/services/company_settings_service.py,sha256=6od5WMwGrqnVOk757fu5tNaaXrNZSW4on3C5YwCd9iw,1236
+fortnox/services/customer_services.py,sha256=I2OJtTJR-cPAwZm_F45MFbRGzseKdYT1ykKKM_mFFHw,4485
+pyfortnox-0.0.1.dist-info/LICENSE,sha256=ZqoPOpVmMgobzHR9862ei2tJtzGgLt92QE5owhooIrU,1071
+pyfortnox-0.0.1.dist-info/METADATA,sha256=B5i7ufFnFy1CijriJOQedeubpt4Gu3IxBrqMub0LWzE,991
+pyfortnox-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyfortnox-0.0.1.dist-info/top_level.txt,sha256=HdJEZamxb7__O4skn65GNWqY3HjKXwjc3svnh_YpHgo,8
+pyfortnox-0.0.1.dist-info/RECORD,,
