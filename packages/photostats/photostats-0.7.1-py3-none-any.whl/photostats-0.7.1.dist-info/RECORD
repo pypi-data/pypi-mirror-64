@@ -1,0 +1,12 @@
+photostats/__init__.py,sha256=CJCb5Nm32zi3EvE6ml6S5qoTdos1CeBkfTAFSR5b0e0,170
+photostats/__main__.py,sha256=OQFvQJDSe6g8JzHhFVO1T1_BvcOXj_DqlXzXLiGpsko,583
+photostats/get_exif.py,sha256=RoIgyMfGmVNdTfx3luZQ9sbk58Bg5_dEit3WzFVb7kM,1456
+photostats/lenses.py,sha256=Y80DAQyQ8aYLDqZVtERk-S0yC7QCfsBDdEg-o8hz6bA,2607
+photostats/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+photostats/tests/test_get_exif.py,sha256=q6AZfkPHrXijlpixfAcmlygXAPCycQdVKaE2njDTpus,64
+photostats/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+photostats/utils/create_plot.py,sha256=F4SNmrIF7Pt5L-YMSmtrj9z8C9in7fgnvytxHBwd4oY,728
+photostats-0.7.1.dist-info/METADATA,sha256=ALvL7VLKIdEascIXeAy6rW85yI3bWeXWLpU10723s2g,1736
+photostats-0.7.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+photostats-0.7.1.dist-info/top_level.txt,sha256=g04QRNGBh3z1RtgVUUO-De9oss-W0ZyN9nNIfSIQ8HI,11
+photostats-0.7.1.dist-info/RECORD,,
