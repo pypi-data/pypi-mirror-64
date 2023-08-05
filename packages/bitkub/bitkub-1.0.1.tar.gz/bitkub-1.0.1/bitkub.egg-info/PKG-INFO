@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bitkub
+Version: 1.0.1
+Summary: A Python library for Bitkub API
+Home-page: https://github.com/sang-sakarin/bitkub
+Author: sang_sakarin
+Author-email: sang_sakarin@outlook.com
+License: sang_sakarin
+Description: Bitkub Python
+Keywords: bitkub bitkub-python bitkub-python-sdk
+Platform: UNKNOWN
