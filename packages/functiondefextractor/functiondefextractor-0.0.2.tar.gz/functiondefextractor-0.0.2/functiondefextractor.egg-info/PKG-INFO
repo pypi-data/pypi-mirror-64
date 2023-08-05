@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: functiondefextractor
+Version: 0.0.2
+Summary: Function Definition Extractor
+Home-page: https://github.com/bkk003/FunctionDefExtractor
+Author: Brijesh
+Author-email: brijesh.krishnank@philips.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.com/bkk003/FunctionDefExtractor.svg?branch=master)](https://travis-ci.com/bkk003/FunctionDefExtractor)
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+        [![codecov](https://codecov.io/gh/bkk003/FunctionDefExtractor/branch/master/graph/badge.svg)](https://codecov.io/gh/bkk003/FunctionDefExtractor)
+        
+        
+        Function Definition Extractor
+        =============================
+        
+        What is the project intended to solve?
+        -------------------------------------
+        Project will help to extract the function definitions from source or test code and report the extracted output
+         in a data frame which can be further used for Similarity processing, Review, etc...
+        
+        Dependencies
+        ------------
+        `Python 3.7.3 `
+        
+        [packages]
+        **************
+        ```
+        pip
+        
+        mutmut
+        
+        pytest
+        
+        pandas
+        
+        codecov
+        
+        pytest-cov
+        
+        pylint
+        ```
+        [Third party tools]
+        ******************
+        ```
+        Ctags
+        
+        grep
+        ```
+        Installation
+        -----------
+        # INSTALL
+        
+        Requirements are added in requirement.txt file
+        
+        python & packages
+        ----------------
+        
+        `Python 3.7.3 - 64 bit`
+        
+        python:
+        install python for the respective OS at `https://www.python.org/downloads/` Make sure to update the path variable to point to the python installation folder.
+        
+        pip:
+        get `get-pip.py` from below link to your folder `https://bootstrap.pypa.io/get-pip.py` Open a command prompt and navigate to the folder containing `get-pip.py`. Run the following command:
+        
+        pandas:
+        `python -m pip install pandas`
+        
+        pylint:
+        `python -m pip install -U pylint`
+        
+        mutmut:
+        `python -m pip install mutmut`
+        
+        pytest:
+        `python -m pip install pytest`
+        
+        unittest:
+        `python -m pip install unittest`
+        
+        codecov:
+        `python -m pip install codecov`
+        
+        pytest-cov:
+        `python -m pip install pytest-cov`
+        
+        Other tools
+        -----------
+        Ctags: `https://en.wikipedia.org/wiki/Ctags`
+        ***********************
+        
+        Windows:
+        1. Download Ctags from `https://sourceforge.net/projects/ctags/files/ctags/5.8/ctags58.zip/download?use_mirror
+        =excellmedia` 
+        
+           or 
+        
+             `http://ctags.sourceforge.net/`
+        2. select the right package(based on the Operating system and architecture) and extract the zip file to a folder
+        3. Update the system 'path' environment variable with the path to ctags executable
+        
+        Linux: 
+        
+        `apt-get install ctags`
+        
+        OS X: 
+        
+        `brew install ctags`
+        grep
+        ***********************
+        1. Download grep `"binaries and Dependencies"` from `http://gnuwin32.sourceforge.net/packages/grep.htm` 
+        2. extract the content to a folder
+        3. Copy and paste contents from `\bin` folder of Dependencies to `\bin` folder of Binaries
+        4. Update the system `'path'` environment variable with the path to "grep" executable
+        
+        
+        
+        
+        Usage & Configuration
+        --------------------
+        1. Install the tool using `pip install functiondefextractor`
+        2. To call from script
+        ```
+        from functiondefextractor import core_extractor
+        out_put = core_extractor.extractor (r"path_to_repo/code")
+        print(out_put)
+        ```
+        
+        ```
+        from functiondefextractor import core_extractor
+        out_put = core_extractor.extractor (r"path_to_repo/code")
+        # Default value of arguments are parse_code="True", parse_test="True", annot=None, delta=None
+        print(out_put)
+        ```
+        3. To call from commandline
+        ```
+        python -m functiondefextractor.extractor_cmd -h 
+        ```
+        Note: 
+        
+        1.To use annotation based search feature, input annot and delta parameters (For example annot = "@Test", delta = "5") 
+          which returns a data frame containing + and - delta number of lines from the given annotation
+          
+        2.While using this feature parse_code, parse_test conditions are set to default(True).
+        
+        3.An xlsx file is also generated as output in the same input location. 
+        ```
+        from functiondefextractor import core_extractor
+        out_put = core_extractor.extractor (r"path_to_repo/code", parse_code="True", parse_test="True
+        ", annot="@Test", delta="5")
+        print(out_put)
+        ```
+        
+        How to test the software
+        -----------------------
+        1. To test the tool use : navigate to `functiondefextractor` which is the root directory
+        2. Issue `pytest -v` to run all the tests
+        To report the pytest in html: issue command `pytest --html=report.html`
+        
+        To run test for coverage: `pytest --cov-report html --cov="src"`
+        
+        pydoc creation `python -m pydoc -w module_name`
+        
+        mutation testing using mutmut `mutmut run`
+        
+        pylint execution on code `pylint src test >"path_to_save_file\pylint.txt"`
+        
+        jscpd execution on root folder `jscpd --min-tokens 20 --reporters "html" --mode "strict" --format "python" --output . .`
+        
+        Contact / Getting help
+        ----------------------
+        ```
+        Brijesh Krishnan <brijesh.krishnank@philips.com>
+        
+        Sannihith Reddy <sannihith.reddyp@philips.com>
+        
+        ```
+        
+        License
+        --------
+        ```
+        The MIT License (MIT) Copyright © [2019] Koninklijke Philips N.V, https://www.philips.com
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the Software), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED AS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

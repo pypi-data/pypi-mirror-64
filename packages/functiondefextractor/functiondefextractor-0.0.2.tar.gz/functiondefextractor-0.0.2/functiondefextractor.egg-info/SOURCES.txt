@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+functiondefextractor/__init__.py
+functiondefextractor/core_extractor.py
+functiondefextractor/extractor_cmd.py
+functiondefextractor.egg-info/PKG-INFO
+functiondefextractor.egg-info/SOURCES.txt
+functiondefextractor.egg-info/dependency_links.txt
+functiondefextractor.egg-info/requires.txt
+functiondefextractor.egg-info/top_level.txt
