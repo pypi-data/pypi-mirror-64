@@ -1,0 +1,7 @@
+setup.py
+herming/__init__.py
+herming.egg-info/PKG-INFO
+herming.egg-info/SOURCES.txt
+herming.egg-info/dependency_links.txt
+herming.egg-info/not-zip-safe
+herming.egg-info/top_level.txt
