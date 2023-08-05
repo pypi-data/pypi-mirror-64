@@ -1,0 +1,3 @@
+[console_scripts]
+git-tool = git_tools.command_line:main
+
