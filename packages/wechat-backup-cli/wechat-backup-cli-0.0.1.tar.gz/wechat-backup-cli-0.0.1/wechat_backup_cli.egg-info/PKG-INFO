@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: wechat-backup-cli
+Version: 0.0.1
+Summary: A command-line tool to access user data and resources from WeChat backup files.
+Home-page: https://github.com/he-yaowen/wechat-backup-cli
+Author: HE Yaowen
+Author-email: he.yaowen@hotmail.com
+License: UNKNOWN
+Description: # WeChat Backup Command-line
+        
+        A command-line tool to access user data and resources from WeChat backup files.
+        
+        ## License
+        
+        Copyright (C) 2020 HE Yaowen <he.yaowen@hotmail.com>
+        
+        The GNU General Public License (GPL) version 3, see [COPYING](./COPYING).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
