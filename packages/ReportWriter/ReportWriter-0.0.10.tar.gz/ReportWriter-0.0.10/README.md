@@ -1,0 +1,1 @@
+A small class for building complex strings.
