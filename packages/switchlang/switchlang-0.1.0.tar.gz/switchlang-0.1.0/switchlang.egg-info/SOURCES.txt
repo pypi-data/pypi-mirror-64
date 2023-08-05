@@ -1,0 +1,8 @@
+README.md
+setup.py
+switchlang/__init__.py
+switchlang/__switchlang_impl.py
+switchlang.egg-info/PKG-INFO
+switchlang.egg-info/SOURCES.txt
+switchlang.egg-info/dependency_links.txt
+switchlang.egg-info/top_level.txt
