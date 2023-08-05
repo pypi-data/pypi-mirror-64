@@ -1,0 +1,3 @@
+[console_scripts]
+camd_worker = camd.campaigns.worker:main
+
