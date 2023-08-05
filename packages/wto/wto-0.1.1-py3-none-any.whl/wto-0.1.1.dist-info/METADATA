@@ -1,0 +1,266 @@
+Metadata-Version: 2.1
+Name: wto
+Version: 0.1.1
+Summary: A Python library to query the WTO's API
+Home-page: https://github.com/LaRocca89/wto_data_puller
+Author: Greg LaRocca
+Author-email: larocca89@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+A Python library for querying the World Trade Organization's (WTO) API. 
+
+For information pertaining to the WTO API, please visit https://apiportal.wto.org/.
+
+**Installation:** This package requires the requests library. You can install the WTO package from PyPI:
+`pip install wto`
+
+
+**How to use this package**
+Users can call any of the package's 17 defined functions. Each function queries the WTOâ€™s API and retrieves data as a timestamped JSON or CSV file. The functions are: <br>
+1. `get_time_series_datapoints()` collects individual data point along a time series. 
+2. `get_time_series_data_count()` provides a summary data count of the query.
+3. `get_time_series_metadata()` generates a list of metadata for a particular query.
+4. `get_topics()` creates a list of topics grouping indicators.
+5. `get_frequencies()` generates a list of frequencies, for example monthly vs. annual.
+6. `get_periods()` generates a list of time periods per frequency, for example January or Q1.
+7. `get_units()` makes a document describing the unit of measurement in which data points are expressed. For example, USD or tariff duty percent.
+8. `get_indicator_categories()` generates a list for grouping indicators and contains subcategories.
+9. `get_indicators()` compiles a list of indicators.
+10. `get_regions()` creates a list of geographic regions.
+11. `get_economic_groups()` lists territories that are not geographical.
+12. `get_reporting_economies()` outputs a datafile of territories that report data to the WTO.
+13. `get_partner_economies()` outputs territories that trade with a territory.
+14. `get_classifications()`generates a list of product classifications.
+15. `get_products()` produces a list of goods and services that can be used for queries.
+16. `get_years()` creates a list of years for which datapoints are available.
+17. `get_value_flags()` predefined metadata for values, such as an estimation.
+18. `get_json_data()` queries the api with a specific url address for json files. Once retrieved, the file is saved as a json file.
+19. `get_csv_data()` retrieves a csv query from a specific address. Then saves the query as a csv file.   
+
+
+**Documentation for each of the functions:** More information regarding each query can be found at https://apiportal.wto.org/.
+
+1. The `get_time_series_datapoint()` function is used to query the WTO's API to retrieve. The function has 16 arguments. Two arguments are mandatory. Thirteen arguments are optional.
+The mandatory arguments are `indicator_code` and `key`.
+
+    * `indicator_code` pertains to the specific variable that you would like to query. <br>
+    * `key` is the user's API key. <br>
+
+    There are thirteen remaining keyword arguments that have default values that users can potentially alter. Currently, 
+some of these argument are functioning, however not all are. The author hopes to resolve these issues in the future.
+Optional arguments include: 
+    1. `reporting_economy`, 
+    2. `partner_economy`, 
+    3. `time_period`, 
+    4. `product_sector`, 
+    5. `product_sub_sector`,
+    6. `frmt`,
+    7. `output_mode`,
+    8. `decimals`,
+    9. `offset`,
+    10. `max_records`,
+    11. `heading_style`,
+    12. `language` (English 1, French 2, Spanish 3)
+    13. `proxies` allows users to specify a proxy if needed.
+<br>
+<br>
+2. The `get_time_series_data_count()` function returns the total number of data points. The function has 8 arguments.
+
+    Two arguments are mandatory.
+    * `indicator_code` pertains to the specific variable that you would like to query. <br>
+    * `key` is the user's API key.
+
+    six are optional.
+    1. `reporting_economy`, 
+    2. `partner_economy`, 
+    3. `time_period`,
+    4. `product_sector`, 
+    5. `product_sub_sector`
+    6. `proxies` allows users to specify a proxy if needed.
+<br>
+<br>
+3. The `get_time_series_metadata()` function returns the query's metadata. The function has 9 arguments.
+
+    Two arguments are mandatory.
+    - `indicator_code` pertains to the specific variable that you would like to query. <br>
+    - `key` is the user's API key.
+
+    Seven are optional.
+    1. `reporting_economy`, 
+    2. `partner_economy`, 
+    3. `time_period`,
+    4. `product_sector`, 
+    5. `product_sub_sector`,
+    6. `language` (the default selection is English - 1, French - 2, Spanish - 3)
+    7. `proxies` allows users to specify a proxy if needed.
+<br>
+<br>
+4. The `get_topics()` function generates topics grouping indicators. The function has 3 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key.
+
+    Two argument is optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies` allows users to specify a proxy if needed.
+<br>
+<br>
+5. The `get_frequencies()` function outputs a list of frequencies available. The function has 3 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key. 
+
+    one argument is optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3)
+<br>
+<br>
+6. The `get_periods()` outputs periods per frequency, January 2019 or H1 2019 for example. The function has 2 arguments.
+
+    One argument is mandatory. 
+    - `key` is the user's API key.
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies` allows users to specify a proxy if needed.
+<br>
+<br>
+7. The `get_units()` outputs measurements in which datapoints are expressed and magnitude, for example millions of USD. The function has 2 arguments.
+
+    One argument is mandatory. 
+    - `key` is the user's API key.
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies`
+<br>
+<br>
+8. The `get_indicator_categories()` function generates a list for grouping indicators and contains subcategories. The function has 3 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key. 
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies`
+<br>
+<br>
+9. The `get_indicators()` function compiles a list of indicators. The functin has 8 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key.
+
+    Seven arguments are optional.
+    1. `indicator_code` pertains to the specific variable that you would like to query. default value is 'all' <br>
+    2. `name` is a specific country or region. default value is none, but users can specify a string.
+    3. `topics` 
+    4. `product_classification`
+    5. `trade_partner`
+    6. `frequency`
+    7. `language`
+    8. `proxies`
+<br>
+<br>
+10. The `get_regions()` function creates a list of geographic regions. The function has 3 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key.
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies`
+<br>
+<br>
+11. The `get_economic_groups()` lists territories that are not geographical. The function has 3 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key.
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies`
+<br>
+<br>
+12. The `get_reporting_economies()` function outputs a datafile of territories that report data to the WTO. The function has 7 arguments.
+
+    One argument is mandatory.
+    - `key` is the user's API key.
+
+    Six arguments are optional.
+    1. `name` is a specific reporting country or region. default value is none, but users can specify a string.
+    2. `economy` refers to the specific country or group of countries. Default value is 'all'
+    3. `region' 
+    4. `group`
+    5. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    6. `proxies`
+<br>
+<br>
+13. The `get_partner_economies()` outputs territories that trade with a particular territory. The function has 7 arguments. <br>
+
+    One argument is mandatory.<br>
+    - `key` is the user's API key. <br>
+    Six arguments are optional.
+    1. `name` is a specific reporting country or region. default value is none, but users can specify a string.
+    2. `economy` refers to the specific country or group of countries. Default value is 'all'
+    3. `region' 
+    4. `group`
+    5. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    6. `proxies`
+<br>
+<br>
+14. The `get_classifications()`generates a list of product classifications. The function has 3 arguments.
+
+    One argument is mandatory. <br>
+    - `key` is the user's API key.
+
+    Two arguments are optional.
+    1. `language` (the default selection is English - 1, French - 2, Spanish - 3) <br>
+    2. `proxies`
+<br>
+<br>
+15. The `get_products()` function produces a list of goods and services that can be used for queries. The function has 5 arguments.
+
+    One argument is mandatory.<br>
+    - `key` is the user's API key.
+
+    Four arguments are optional:
+    1. `name`
+    2. `product_classification` default value is 'all'
+    3. `language`
+    4. `proxies`
+<br>
+<br>
+16. The `get_years()` function creates a list of years for which datapoints are available. The function has 2 arguments. <br>
+
+    One argument is mandatory.<br>
+    - `key` is the user's API key.
+
+    One argument is optional:
+    1. `proxies`
+<br>
+<br>
+17. The `get_value_flags()` function creates a predefined metadata for values, such as an estimation.The function has 3 arguments. 
+
+    One argument is mandatory. 
+    - `key` is the user's API key. <br>
+
+    Two arguments are optional:
+    1. `language`
+    2. `proxies`
+<br>
+<br>
+18. `get_json_data()` queries the API for a specific url and saves the results as a json data file. The function accepts two arguments.
+    1. `url`: which is the exact url to retrieve.
+    2. `proxies`
+    <br>
+<br>
+19. `get_csv_data()` queries the API for a specific url and saves the results as an uncompressed csv data file. The function accepts two arguments.
+    1. `url`: which is the exact url to retrieve.
+    2. `proxies`
+
