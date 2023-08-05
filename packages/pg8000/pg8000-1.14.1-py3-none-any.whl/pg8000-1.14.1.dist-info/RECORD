@@ -1,0 +1,8 @@
+pg8000/__init__.py,sha256=ulLvn0YyPFxFCTCq8Zm28EjZtOk1Wy6iRXeL5aX2xDQ,4080
+pg8000/_version.py,sha256=SCSptKv6wSYrnsY03hZ4sBuR_xrBhbBxuwRYy7u1inE,472
+pg8000/core.py,sha256=t7oKXWhjEhkOvMyLklsbOh0jDMGhwzonGNDI4gKkNek,83666
+pg8000-1.14.1.dist-info/LICENSE,sha256=ajeuMaRRJmNZOfXAg-mNSOpc_-VhO2LbZM1dywol5nc,1438
+pg8000-1.14.1.dist-info/METADATA,sha256=stQ9q1iTPDyBL2D2OENq1jCr7BkqlGGGgAZn2o1A_ZQ,1601
+pg8000-1.14.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pg8000-1.14.1.dist-info/top_level.txt,sha256=R-X4475Cez2l7ZYcYUJzuffAxDS7xHCCA0JCjs8iKKE,7
+pg8000-1.14.1.dist-info/RECORD,,
