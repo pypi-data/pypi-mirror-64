@@ -1,0 +1,3 @@
+[console_scripts]
+prime = pyunit_prime.cli:main
+
