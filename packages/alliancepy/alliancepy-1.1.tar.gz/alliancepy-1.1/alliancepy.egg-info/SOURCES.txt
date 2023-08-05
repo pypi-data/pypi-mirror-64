@@ -1,0 +1,12 @@
+README.rst
+setup.py
+alliancepy/__init__.py
+alliancepy/client.py
+alliancepy/http.py
+alliancepy/season.py
+alliancepy/team.py
+alliancepy.egg-info/PKG-INFO
+alliancepy.egg-info/SOURCES.txt
+alliancepy.egg-info/dependency_links.txt
+alliancepy.egg-info/requires.txt
+alliancepy.egg-info/top_level.txt
