@@ -1,0 +1,15 @@
+setup.py
+Caly/__init__.py
+Caly.egg-info/PKG-INFO
+Caly.egg-info/SOURCES.txt
+Caly.egg-info/dependency_links.txt
+Caly.egg-info/requires.txt
+Caly.egg-info/top_level.txt
+conf/sounds/invalid_keypress.mp3
+conf/sounds/pop.wav
+conf/sounds/tock.wav
+conf/txt/words_00.txt
+conf/txt/words_01.txt
+conf/txt/words_02.txt
+conf/txt/words_03.txt
+scripts/caly
