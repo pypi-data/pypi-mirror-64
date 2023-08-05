@@ -1,0 +1,7 @@
+.. _ndbreports:
+
+Report filtering
+================
+
+.. automodule:: pyroute2.ndb.report
+    :members:
