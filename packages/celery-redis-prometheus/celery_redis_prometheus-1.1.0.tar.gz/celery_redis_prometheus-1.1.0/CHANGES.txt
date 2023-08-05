@@ -1,0 +1,13 @@
+celery_redis_prometheus changes
+===============================
+
+1.1.0 (2020-03-20)
+------------------
+
+- Make py2 compatible.
+
+
+1.0.0 (2020-03-20)
+------------------
+
+- Initial release

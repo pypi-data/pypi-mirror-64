@@ -1,0 +1,6 @@
+celery
+prometheus_client
+setuptools
+
+[test]
+pytest
