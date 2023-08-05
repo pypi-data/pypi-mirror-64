@@ -1,0 +1,11 @@
+aio2ch/__init__.py,sha256=DLfCtkhchCeEXxdDcFPBVnSzNUuq7-2THtoQDWRFcqc,127
+aio2ch/api.py,sha256=Aq7-sJR1hoB2VOl8rwYncPqXax_yAvXJWPihDieiYEQ,9839
+aio2ch/api_client.py,sha256=vpr4WNQsfciVGlPpb04oYLACBQTrnqyVEPA5TG7lEPI,1514
+aio2ch/exceptions.py,sha256=ypW8-MBJ4HzoBLaQo4qPIfvgmEPL1SmVKUvXmJVAsnQ,211
+aio2ch/helpers.py,sha256=-HqIMhFAfkYnwa-P5efdElCrEVPr91puXhbZCGJSXGg,2048
+aio2ch/objects.py,sha256=8dCTSBJBjvHP_qirAH6CHrd_0mIJZBOXZOlDMAoCzDM,3938
+aio2ch-2.1.2.dist-info/LICENSE,sha256=3yfzoDqcnDRWV2s--vzf-QfSDCq9kuxesiU5Y9bZh6M,1084
+aio2ch-2.1.2.dist-info/METADATA,sha256=rmPb5sfyDl--RqoNsn99OOnls5NMxC-kak_gY6Jt-3I,4318
+aio2ch-2.1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aio2ch-2.1.2.dist-info/top_level.txt,sha256=TiSrQZo9MaqvFNUw5ztaCPFtRNmlHIUwTUG5dYdbnz0,7
+aio2ch-2.1.2.dist-info/RECORD,,
