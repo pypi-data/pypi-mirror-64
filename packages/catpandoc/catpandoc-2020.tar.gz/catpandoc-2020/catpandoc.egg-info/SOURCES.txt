@@ -1,0 +1,13 @@
+README.md
+setup.py
+catpandoc/__init__.py
+catpandoc/__main__.py
+catpandoc/application.py
+catpandoc/pandoc2ansi.py
+catpandoc/pandoc2plain.py
+catpandoc/processpandoc.py
+catpandoc.egg-info/PKG-INFO
+catpandoc.egg-info/SOURCES.txt
+catpandoc.egg-info/dependency_links.txt
+catpandoc.egg-info/entry_points.txt
+catpandoc.egg-info/top_level.txt
