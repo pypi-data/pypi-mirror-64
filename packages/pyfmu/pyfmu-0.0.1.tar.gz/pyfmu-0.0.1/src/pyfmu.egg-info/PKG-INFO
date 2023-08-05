@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyfmu
+Version: 0.0.1
+Summary: A set of tools for developing functional-mockup-units (FMUs) using the full capabilities of Python.
+Home-page: UNKNOWN
+Author: INTO-CPS Association
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/INTO-CPS-Association/pyfmu/issues
+Project-URL: Documentation, https://into-cps-application.readthedocs.io/en/latest/submodules/pyfmu/docs/index.html
+Project-URL: Source Code, https://github.com/INTO-CPS-Association/pyfmu
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Provides-Extra: tests
+Provides-Extra: docs
+Provides-Extra: gui
