@@ -1,0 +1,11 @@
+qrpic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qrpic/main.py,sha256=l_iyeppyCvEnQys_rRbC98YsnuPWCoixwdoTkfeUk-I,7297
+qrpic/geom/__init__.py,sha256=FIW0vePylbyyZYUGc6AEW8w1SaG1b-Mi4G0pagbEzlk,197
+qrpic/itertools/__init__.py,sha256=An9aHJPM1ITaNs5vTEV_783J5eyL2TncRYwUNZUzKwY,278
+qrpic/svgdom/__init__.py,sha256=MQflLwNNtRbK3MJyiymGMvMg6oMAwf0odn3M4U1sgz4,7130
+qrpic-0.1.dist-info/LICENSE,sha256=N3ckWJ-DdhfozHqtjHJArczeDmlKxtg7sFWmsJEQ6Qw,1071
+qrpic-0.1.dist-info/METADATA,sha256=hF07Jx-zifYcs_d3QuGvtopnPrIaDvheNm4fzOMkFNM,4656
+qrpic-0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+qrpic-0.1.dist-info/entry_points.txt,sha256=27epS3wvCeM-APc5LiGaWeeT46IWQeSgeCUEdEgN-aU,42
+qrpic-0.1.dist-info/top_level.txt,sha256=G8HrNE1RJ9ofa_ICMQU5CfGAjgL1NOzAXLIVM4X18Ww,6
+qrpic-0.1.dist-info/RECORD,,
