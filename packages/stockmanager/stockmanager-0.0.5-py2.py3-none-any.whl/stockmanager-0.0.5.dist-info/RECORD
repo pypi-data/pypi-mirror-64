@@ -1,0 +1,9 @@
+stockmanager/__init__.py,sha256=EIgos7HIdXtLDwW4vctoyTodRoS1zK0MJuQkbJCI8QU,391
+stockmanager/base.py,sha256=1YHCrWy0FY0iJZdIAlBkgWU0LIBEi0b9wWP8vfkDA8c,13984
+stockmanager/helpers.py,sha256=S5DM3B72iiVFrKKewaC2iLFmO6XZDvJkI3wcGFCm2oc,1931
+stockmanager-0.0.5.dist-info/AUTHORS.rst,sha256=UKle7rtN3Ed9WxkdsTGwMtT8pDKnMyPeqFB4eI3ohwE,75
+stockmanager-0.0.5.dist-info/LICENSE.txt,sha256=hekp23yO5hUWFfA90dQ66HH5TDxNzwjEZi8X-_HNXx8,1078
+stockmanager-0.0.5.dist-info/METADATA,sha256=xGj80aiU8DVZCzCCdJw12glW9DaIejofyZ3IpdHYB5E,2014
+stockmanager-0.0.5.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+stockmanager-0.0.5.dist-info/top_level.txt,sha256=2LnvvkahelqLqGakum2lAGwAfqh_5vVkesbJD9QHyCw,13
+stockmanager-0.0.5.dist-info/RECORD,,
