@@ -1,0 +1,53 @@
+Metadata-Version: 1.2
+Name: covidapi
+Version: 0.1.0
+Summary: Pythonic Interface for http://covidapi.info
+Home-page: https://github.com/backtrackbaba/covid-api
+Author: Saiprasad Balasubramanian
+Author-email: sai.cosmo@gmail.com
+License: MIT
+Description: covidapi
+        ========
+        
+        .. image:: https://img.shields.io/pypi/v/covidapi.svg
+            :target: https://pypi.python.org/pypi/covidapi
+            :alt: Latest PyPI version
+        
+        .. image:: https://travis-ci.org/kragniz/cookiecutter-pypackage-minimal.png
+           :target: https://travis-ci.org/kragniz/cookiecutter-pypackage-minimal
+           :alt: Latest Travis CI build status
+        
+        Pythonic Interface for http://covidapi.info
+        
+        Usage
+        -----
+        
+        Installation
+        ------------
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Licence
+        -------
+        
+        Authors
+        -------
+        
+        `covidapi` was written by `Saiprasad Balasubramanian <sai.cosmo@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6

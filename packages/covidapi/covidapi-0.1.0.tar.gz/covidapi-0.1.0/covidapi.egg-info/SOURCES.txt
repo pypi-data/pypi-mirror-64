@@ -1,0 +1,7 @@
+README.rst
+setup.py
+covidapi/__init__.py
+covidapi.egg-info/PKG-INFO
+covidapi.egg-info/SOURCES.txt
+covidapi.egg-info/dependency_links.txt
+covidapi.egg-info/top_level.txt
