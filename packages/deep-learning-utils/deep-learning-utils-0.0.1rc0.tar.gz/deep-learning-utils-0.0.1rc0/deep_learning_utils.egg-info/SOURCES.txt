@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+deep_learning_utils.egg-info/PKG-INFO
+deep_learning_utils.egg-info/SOURCES.txt
+deep_learning_utils.egg-info/dependency_links.txt
+deep_learning_utils.egg-info/top_level.txt
+dlutils/__init__.py
+dlutils/_version.py
+tests/__init__.py
