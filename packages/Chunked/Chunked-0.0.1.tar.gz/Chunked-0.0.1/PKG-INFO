@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: Chunked
+Version: 0.0.1
+Summary: This is a simple program that encodes an input stream using HTTP "chunked" encoding
+Home-page: https://github.com/rkashapov/chunked
+Author: Rustam Kashapov
+Author-email: hardtechnik91@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN

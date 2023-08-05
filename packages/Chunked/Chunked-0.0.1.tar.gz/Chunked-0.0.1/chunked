@@ -1,0 +1,26 @@
+#!/usr/bin/env python
+import argparse
+import sys
+
+
+def chunks(input, output, chunk_size=32, write_end=False):
+    while True:
+        chunk = input.read(chunk_size)
+        if not chunk:
+            break
+        size = hex(len(chunk))[2:]  # cut 0x part
+        output.write(size + '\r\n')
+        output.write(chunk + '\r\n')
+    if write_end:
+        output.write('0\r\n\r\n')
+
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='This is a simple program that encodes an input stream '
+                    'using HTTP "chunked" encoding',
+    )
+    parser.add_argument('--chunk-size', type=int, default=32, required=False)
+    parser.add_argument('--write-end', action='store_true', required=False)
+    args = parser.parse_args()
+    chunks(sys.stdin, sys.stdout, args.chunk_size, args.write_end)
