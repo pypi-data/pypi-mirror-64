@@ -1,0 +1,12 @@
+django_tree_view/__init__.py,sha256=_FO5DntTqUU78mJYqu1rFOOscgVj9AD7v7TEaSAyCVo,432
+django_tree_view/module_tree.py,sha256=Er8VFz5gevAxt5mdWdgR4Qqcff0QkeTXVfMYiobQ7Tg,1831
+django_tree_view/path_resolver.py,sha256=mkKK4QhNft-h2ejx9MqfBxDC4npjF2m7R3E1gBebDc4,3951
+django_tree_view/view.py,sha256=a7ARJ7FJbebLzGTsUXI6XvrzWtGfjFSI4_eJ4AzYwo4,3604
+django_tree_view/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tree_view/tests/tests.py,sha256=qrf1jeCzNluHiwsa-3PT0Tr6xMNV_BhLKJxW3j2_D6c,4468
+django_tree_view/tests/urls.py,sha256=oGATRWCJhNo1hh1aFJiRA5rkUrOU2K2QggvuXkVhul0,118
+django_tree_view-0.0.0.dist-info/LICENSE,sha256=3zadg6RilfqcoXgQ6j6BXFbJBGZbjlpiAxtVboyrBQk,1072
+django_tree_view-0.0.0.dist-info/METADATA,sha256=7QfSwV-sWtRkZNZrZn3BmzQ57taWCUuMQC_gEGAZnsY,2113
+django_tree_view-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_tree_view-0.0.0.dist-info/top_level.txt,sha256=E1TG9sIk4SHY8bT-N9Chmm77LjfaVu6wYrVThiTlkCI,17
+django_tree_view-0.0.0.dist-info/RECORD,,
