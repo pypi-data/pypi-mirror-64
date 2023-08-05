@@ -1,0 +1,9 @@
+hmip/__init__.py,sha256=zAMO8S7dIRVhTD0-lKY_CEa19AIO1_IWGD9LM-CaldU,87
+hmip/hopfield.py,sha256=RN0sr9d0m0Sbx81RidJhYus6o7j_krqdwpdcM0D5_SY,30057
+hmip/other_solvers.py,sha256=w4vl7vRi2Lx6_AhdjrGdz4mW-a-q2MeV8hRzqFRTGHY,1528
+hmip/utils.py,sha256=73EEQEH_XFMD4OSojxPacSHSn_1QMOvsLXwPi01Tc7I,22039
+hmip-0.0.6.dist-info/LICENSE,sha256=nG73PI9xTkSdCkhL95x7pvxjJLLUHBfR87VvMzXSz-c,1073
+hmip-0.0.6.dist-info/METADATA,sha256=hHWlS5IrC8kgk7LeE9K2uQ5amNWIXl1kF49UMmr4GF4,1640
+hmip-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+hmip-0.0.6.dist-info/top_level.txt,sha256=5ywZrz1TwPRr7ERmSGnbCLZFZoNb4wO0vipLVENZU8U,5
+hmip-0.0.6.dist-info/RECORD,,
