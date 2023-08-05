@@ -1,0 +1,113 @@
+__version__ = '0.11.1'
+import psycopg2
+import geohash2
+import logging
+from geolite2 import geolite2
+import re
+from typing import List, Dict, Union
+from hashlib import sha256
+from base64 import b64encode
+from datetime import datetime
+from os import access, R_OK
+from os.path import isfile
+
+Event = Dict[str,Union[str, Dict]]
+
+logger = logging.getLogger('ringserverstats')
+logger.setLevel(logging.INFO)
+# create console handler and set level to debug
+ch = logging.StreamHandler()
+ch.setLevel(logging.DEBUG)
+# create formatter
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+# add formatter to ch
+ch.setFormatter(formatter)
+# add ch to logger
+logger.addHandler(ch)
+
+def iterable_log(data: str):
+    """
+    Generator to iterate over lines in file or in string.
+    Very nice.
+    """
+    if isfile(data) and access(data, R_OK):
+        with open(data,'r') as loglines:
+            for logline in loglines:
+                yield logline.strip()
+    else:
+       # Consider data is the log lines to analyse
+       for logline in data.split("\n"):
+           yield logline
+
+def parse_ringserver_log(data: str) -> List[Event]:
+    """
+    Read a txlog file and parses information.
+    Returns a list of events (dictionary)
+    """
+    logstart_pattern = r'START CLIENT (?P<hostname>\b(?:[0-9A-Za-z][0-9A-Za-z-]{0,62})(?:\.(?:[0-9A-Za-z][0-9A-Za-z-]{0,62}))*(\.?|\b)) \[(?P<ip>(?<![0-9])(?:(?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5])[.](?:[0-1]?[0-9]{1,2}|2[0-4][0-9]|25[0-5]))(?![0-9]))\] \((?P<agent>.*)\) @ (?P<time>[0-9]+-[0-9]+-[0-9]+ (?:2[0123]|[01]?[0-9]):(?:[0-5][0-9]):(?:[0-5][0-9])).*'
+    logevent_pattern = '(?P<network>[A-Z0-9]*)_(?P<station>[A-Z0-9]*)_(?P<location>[A-Z0-9]*)_(?P<channel>[A-Z0-9]*)/MSEED (?P<bytes>[0-9]+) (?P<packets>[0-9]+)'
+    georeader = geolite2.reader()
+    process_events = True
+    events = []
+    linecount = 0
+    for log in iterable_log(data):
+        linecount +=1
+        # log line exemple: START CLIENT 52.red-88-2-197.staticip.rima-tde.net [88.2.197.52] (SeedLink|SeedLink Client) @ 2016-11-28 00:00:00 (connected 2016-11-26 16:37:07) TX
+        if log.startswith('START CLIENT'):
+            events_data = re.search(logstart_pattern, log)
+            if events_data == None:
+                logger.warning("Unable to parse START log at line %d : %s"%(linecount, log))
+                process_events = False
+                continue
+            events_data = events_data.groupdict()
+            location = georeader.get(events_data['ip'])
+            # hash location and get the city name
+            if location != None:
+                events_data['geohash'] = geohash2.encode(location['location']['latitude'], location['location']['longitude'])
+                try:
+                    events_data['countrycode'] = location['country']['iso_code']
+                except KeyError:
+                    events_data['countrycode'] = ''
+                try:
+                    events_data['city'] = location['city']['names']['en']
+                except KeyError:
+                    events_data['city'] = ''
+            else:
+                logger.warning("No location available at line %d : %s\nAssuming it was in Grenoble"%(linecount, log))
+                events_data['geohash'] = 'u0h0fpnzj9ft'
+                events_data['city'] = 'Grenoble'
+                events_data['countrycode'] = 'FR'
+            # hash hostname
+            events_data['hostname'] = b64encode(sha256(events_data['hostname'].encode()).digest())[:12].decode() # overcomplicated oneliner to hash the hostname
+            logger.debug(events_data)
+        elif log.startswith('END CLIENT'):
+            process_events = True
+        elif process_events:
+            # line exemple :
+            # FR_SURF_00_HHZ/MSEED 21511168 42014
+            event = re.search(logevent_pattern, log)
+            if event == None:
+                logger.warning("Unable to parse log at %d : %s"%(linecount, log))
+                continue
+            event = event.groupdict()
+            logger.debug(event)
+            events.append({**events_data, **event})
+    return(events)
+
+def register_events(events: List[Event], dburi: str):
+    logger.info("Storing %d metrics"%len(events))
+    try:
+        conn = psycopg2.connect(dburi)
+        cur = conn.cursor()
+        for i in events:
+            cur.execute("""
+            INSERT INTO ringserver_events (time, bytes, client, network, station, location, channel, city, country, agent, geohash)
+            VALUES (%(time)s, %(bytes)s, %(client)s, %(network)s, %(station)s, %(location)s, %(channel)s, %(city)s, %(countrycode)s, %(agent)s, %(geohash)s);
+            """, i)
+            conn.commit()
+            cur.close()
+            conn.close()
+            logger.info("Done")
+    except Exception as e:
+        logger.error("Error writing to postgres %s database"%(dburi))
+        logger.error(e)
