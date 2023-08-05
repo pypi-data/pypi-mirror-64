@@ -1,0 +1,10 @@
+torch
+torchvision
+pandas
+tables
+redis
+pymongo
+nmslib
+wget
+opencv-python
+requests
