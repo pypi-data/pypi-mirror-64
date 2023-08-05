@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: rctf-cli
+Version: 1.0
+Summary: A CLI tool for managing your rCTF installation
+Home-page: http://rctf.redpwn.net/
+Author: Aaron Esau
+Author-email: redpwn@aaronesau.com
+License: BSD-3-Clause
+Description: # rctf-cli
+        A CLI management tool for your rCTF installation
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
