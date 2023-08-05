@@ -1,0 +1,10 @@
+README.md
+setup.py
+bitscope/__init__.py
+bitscope/scope.py
+bitscope.egg-info/PKG-INFO
+bitscope.egg-info/SOURCES.txt
+bitscope.egg-info/dependency_links.txt
+bitscope.egg-info/not-zip-safe
+bitscope.egg-info/requires.txt
+bitscope.egg-info/top_level.txt
