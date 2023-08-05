@@ -1,0 +1,2 @@
+spidev
+typing_extensions
