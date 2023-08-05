@@ -1,0 +1,8 @@
+cython
+numpy
+pandas
+matplotlib
+theano
+scikit-image
+seaborn
+nptyping
