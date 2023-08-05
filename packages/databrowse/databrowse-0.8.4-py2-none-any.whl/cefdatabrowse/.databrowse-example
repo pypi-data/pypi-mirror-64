@@ -1,0 +1,16 @@
+[databrowse]
+dataroot = /
+limatix-qautils = /limatix-qautils
+qautils = /QAutils
+
+[cefdatabrowse]
+width = 1478
+height = 827
+x = 0
+y = 0
+
+[3rdparty]
+dataguzzlerlib = /dataguzzler-lib/python
+nditoolbox = /NDITool
+
+
