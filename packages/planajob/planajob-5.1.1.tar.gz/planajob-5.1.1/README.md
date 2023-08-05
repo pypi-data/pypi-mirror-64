@@ -1,0 +1,44 @@
+This is a sales order and purchasin package
+
+it includes list of cutomer details and suppliers
+you can enter sales and purchase orders
+invoice print out is included
+
+
+Download to a directory of your choice and cd to that directory.
+
+edit line 8 of planajob3.py to point to your directory
+
+type python planajob5.py or whatever the .py file is called.
+
+the main menu will appear
+
+click on setup and again setup on the sub menu This will set up the database file in your directory
+
+
+The other menu options should be obvious but note that when addin a new record you will see a box with a number of line
+
+Enter the details as prompted
+
+there are 4 type of transactions:
+
+listings eg of customer details
+adding a record eg a new stock record
+Issuing or receiving stock
+printing an invoice
+
+when listin, if the page is too long then click on any blank part of the screen and use the up/down keys on the keyboard
+you can use gedit to edit or print the output
+when adding a new record you will find that some records cannot be duplicated eg stock. 
+If you enter a duplicate you will see a warning at the bottom. just click ok and try again
+issuing or receiving stock will update the stock record and also the issued field in the order
+printing an invoice is where you would like to use gedit to print out
+
+
+Any problems please email to
+
+terryhugheskirkcudbright@yahoo.co.uk
+
+
+
+
