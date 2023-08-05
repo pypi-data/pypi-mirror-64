@@ -1,0 +1,12 @@
+datasetops/__init__.py,sha256=ww-LIKM2flnGtlT40___iNS4tpNOAuQg6d7Qu319760,372
+datasetops/abstract.py,sha256=sk2g4XkaPEkog6uajT8zQc0YVZPMoevAMU0usIaZwtE,1039
+datasetops/compose.py,sha256=R6P_zgGHAAifBxVdj7AAt3s4hpbdixDURgr3zVlJ-zc,5354
+datasetops/dataset.py,sha256=s3ZjPCiBEcYQmqTJZyadzm6ryqpp9jkwc1NkG7RDLvk,34147
+datasetops/examples.py,sha256=n3GdzOUhji8VWlFS3IzpPrPrtmbGMBtzX1MV8eXnYVs,2188
+datasetops/loaders.py,sha256=p19VON2vEsejed-fxRZv-v-JWbllXa4t1fSBK1eiqWs,6792
+datasetops/types.py,sha256=50fJlHaUdhjJKY7tEHKKHJ-Dv-ZnAEJo6yepNfPxaDk,550
+datasetops-0.0.5.dist-info/LICENSE,sha256=MZ9C-9BynXRnNsHUKCCm8JioUEflEN73J2xIEv7-hFc,1072
+datasetops-0.0.5.dist-info/METADATA,sha256=KlEo8_8_QTlWz_Nm5GJ1bveWFbWWG2rkWcUtwiApztM,6650
+datasetops-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+datasetops-0.0.5.dist-info/top_level.txt,sha256=lFFdXtuIOHLsLO1dHzxdtmE7O-EWaO6wAorHderA-w8,11
+datasetops-0.0.5.dist-info/RECORD,,
