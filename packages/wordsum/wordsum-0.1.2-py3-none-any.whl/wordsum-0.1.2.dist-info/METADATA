@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wordsum
+Version: 0.1.2
+Summary: 
+Author: JackMcKew
+Author-email: jackmckew2@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: black (>=19.10b0,<20.0)
+Requires-Dist: mypy (>=0.770,<0.771)
+Requires-Dist: nbformat (>=5.0.4,<6.0.0)
