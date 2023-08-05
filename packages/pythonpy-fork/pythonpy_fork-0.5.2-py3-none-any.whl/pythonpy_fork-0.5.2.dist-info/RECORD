@@ -1,0 +1,15 @@
+pythonpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonpy/__main__.py,sha256=XVXHP8CF_ywlqPgDudp0Y0YLtezzMcYmsGnAKCQcHU4,250
+pythonpy/__version__.py,sha256=LADBavpB8x-lrtqob-7SCQZXFPfLZCu34A0lBsgTGGI,21
+pythonpy/pycompleter.py,sha256=OGamnuU6j48EjgS6A8A_OHUI1rMDC6ASaPHZt8nFCW8,11694
+pythonpy/pyeval.py,sha256=od4aZzdIf6UvTd3qN_eL2FV6aIWxs9L5eJQeigcbRFE,9592
+pythonpy/completion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pythonpy/completion/pycompletion.sh,sha256=c9W5SL4iFBI1MtPFElAF0Tu7dzEwmpzqVTZoJraw2WE,1659
+pythonpy_fork-0.5.2.data/scripts/find_pycompletion.sh,sha256=KdpJbtOmb8PWPz_IQ7ttLlK__SNEQgl_WCOC-dXEzRs,139
+pythonpy_fork-0.5.2.dist-info/COPYING.md,sha256=llYAasj2CkLS5mcJ7eRisHzPx_EUig0iG-awvVW-gLg,1719
+pythonpy_fork-0.5.2.dist-info/LICENSE.txt,sha256=xxq-ZV5xvCrohv6DMqkvl9NCaMtFRtVqeOSMelulhdE,1828
+pythonpy_fork-0.5.2.dist-info/METADATA,sha256=wKliK0x1WlGb_Gt-QB9Q91d9eoYWg95vTP1_scecFIQ,291
+pythonpy_fork-0.5.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pythonpy_fork-0.5.2.dist-info/entry_points.txt,sha256=UvwhYh10NBA63ckPRj5zBnPS9licXoH3c9Q0YmJigsA,237
+pythonpy_fork-0.5.2.dist-info/top_level.txt,sha256=cTQeBpOYf72v4j936GYnWkr-w9LjtNlq8oWTbKNbdPM,9
+pythonpy_fork-0.5.2.dist-info/RECORD,,
