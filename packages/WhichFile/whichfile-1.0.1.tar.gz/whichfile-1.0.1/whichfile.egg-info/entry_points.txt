@@ -1,0 +1,3 @@
+[console_scripts]
+whichfile = whichfile.__main__:entry_point
+
