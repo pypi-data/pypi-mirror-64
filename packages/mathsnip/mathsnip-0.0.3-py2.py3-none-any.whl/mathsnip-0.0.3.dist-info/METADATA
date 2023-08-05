@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mathsnip
+Version: 0.0.3
+Summary: this is a description
+Home-page: https://github.com/zk4/mathsnip
+Author: zk
+Author-email: liuzq7@gmail.com
+License: BSD
+Download-URL: https://github.com/zk4/mathsnip/archive/master.zip
+Keywords: best practice for python project
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Requires-Python: >3.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.15.4)
+Requires-Dist: pytest (==5.2.1)
+Requires-Dist: opencv-contrib-python (==4.1.0.25)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: setuptools (==40.6.3)
+Requires-Dist: pynput (==1.4.4)
+Requires-Dist: Pillow (==7.0.0)
+Requires-Dist: PyYAML (==5.3.1)
+
+# Intro
+mathpix api version
+only Mac support. 
+
+
+# Install
+``` bash
+pip install mathsnip
+```
+
+
+# Usage
+Must use root permission. Because it needs to catch the global key.
+``` bash
+sudo mathsnip -i <app_id> -k <app_key>
+```
+
+wait untill you see . it takes about 3 secs for cv to init.
+
+![Image](assets/2020-03-21-22-32-28.png)
+
+press `cmd+shift+e` to clip the screen. 
+
+
+
+![Image](assets/2020-03-21-22-23-58.gif)
+
