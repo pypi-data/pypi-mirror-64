@@ -1,0 +1,10 @@
+django_openid_connect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_openid_connect/backends.py,sha256=ZuPTjVj1Q27H2DcmeWWxHq3VmX3bCiQ14kT89t3mELM,2504
+django_openid_connect/pipeline.py,sha256=gOQ3iZZF4GyyZIrByH_ZGjBpv6rO28awBBXwdwZ-01M,1397
+django_openid_connect/settings.py,sha256=QI5HWgA4skWUPlv2bayTBrVeLDQT2VeywizMlqXRuXI,3502
+django_openid_connect/urls.py,sha256=IdpRjxTvGg44t_fUyYbb98g4JCSO4mPzh3ZdmnjGKX8,792
+django_openid_connect/wsgi.py,sha256=qg-uAC0bBOHGmgDr1TTTXYttJdGZS-DltPe96BGuMQE,420
+django_openid_connect-1.0.0.dist-info/LICENSE,sha256=8zo53sL3kUytQLoGap38scE1DW-6caVBba5Y0l0W1Ps,1063
+django_openid_connect-1.0.0.dist-info/WHEEL,sha256=OyjuYVC9vVJqb-Aqln3fyrroYJ4WrcSwx2msO2AokVc,85
+django_openid_connect-1.0.0.dist-info/METADATA,sha256=OsLJghztu3Qyq9So3ugqlmJN3MpleoLaDYIlS7zfKX4,453
+django_openid_connect-1.0.0.dist-info/RECORD,,
