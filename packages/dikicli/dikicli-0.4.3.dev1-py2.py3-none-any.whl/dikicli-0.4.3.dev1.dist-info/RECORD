@@ -1,0 +1,12 @@
+dikicli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dikicli/__main__.py,sha256=I9NV9ENeOxSdyWKTB9m7t1aNKRBKGNxBubINaO6hxsE,37
+dikicli/cli.py,sha256=GQhVYerCVCvwAHNQqA9ibTeUgqoh8cjj_lPbDuli6Ow,4019
+dikicli/core.py,sha256=homzl7Fh7iyEO70EpoE-Fgd_yYVynmzqdkZOLTUaslA,18897
+dikicli/templates.py,sha256=72FBsv4_1kK5SzMIPcFxoirR38MJQODMrU0-k3TA_yk,993
+dikicli-0.4.3.dev1.dist-info/LICENSE,sha256=C-_evP1CUscYJ8gIupl1VPFwplv4ERsYl_r1jHDkBcg,1067
+dikicli-0.4.3.dev1.dist-info/METADATA,sha256=Gaamp35WM-DExKIA0IiltRdpCTlbgJXNLFjQ_97-gfE,1605
+dikicli-0.4.3.dev1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+dikicli-0.4.3.dev1.dist-info/entry_points.txt,sha256=0vyPOgYqnQEhiWRjlaNJQY1FC4Zy00BC9Cx3-CC3lgI,94
+dikicli-0.4.3.dev1.dist-info/pbr.json,sha256=doAKv-OIgFARwc-M1NJqyHR5pfkfDurHwKHrsEjUpN4,47
+dikicli-0.4.3.dev1.dist-info/top_level.txt,sha256=3CJ7OX1Q_STVBFj70cIDQ0v7CjtbuIKp9sZxJt2WojQ,8
+dikicli-0.4.3.dev1.dist-info/RECORD,,
