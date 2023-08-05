@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+c_src/gpio.cpp
+py_src/Odroid/__init__.py
+py_src/Odroid.GPiO.egg-info/PKG-INFO
+py_src/Odroid.GPiO.egg-info/SOURCES.txt
+py_src/Odroid.GPiO.egg-info/dependency_links.txt
+py_src/Odroid.GPiO.egg-info/not-zip-safe
+py_src/Odroid.GPiO.egg-info/requires.txt
+py_src/Odroid.GPiO.egg-info/top_level.txt
+py_src/Odroid/GPIO/__init__.py
+py_src/Odroid/GPIO/gpio_event.py
+py_src/RPi/__init__.py
+py_src/RPi/GPIO/__init__.py
