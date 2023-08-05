@@ -1,0 +1,17 @@
+pybuilder_archetype_api/__init__.py,sha256=A2zrNkS_KFzkm_XEgp25-1_TmrdWIXeggk6R3maxIKo,3592
+pybuilder_archetype_api/errors.py,sha256=XJkZjP4BwMWt1Yg1uMn_QRbVduiXv1PJMsRKhiMTi1I,1030
+pybuilder_archetype_api/helpers.py,sha256=ttwaH1HJgVvWuqBPzPIEZkCBP6zsVXe7Jbie1JXsFjU,2423
+pybuilder_archetype_api/messages.py,sha256=K_a8-3fnwK-LYk6XebM9gyAldAY8G6u1RVJe_P01Qjk,911
+pybuilder_archetype_api/resources/__init__.py,sha256=k6rnBXN1g25xdDl8hW1X3bl19RRz8fEWw0lThqXootY,54
+pybuilder_archetype_api/resources/gunicorn_config.py,sha256=rsXuqn6nWp44E32RH48Gcf05XmmFiNb8732eWWWw1Yc,211
+pybuilder_archetype_api/resources/main.py,sha256=UvPYFspbvcjeyFZST4Z_G8wRD9bOi5VYhtl22DGRQx0,754
+pybuilder_archetype_api/resources/requirements.txt,sha256=DWl_246O9B_dO519QDXRJtZetOYTZ-A72aS7dksedIQ,98
+pybuilder_archetype_api/resources/wsgi.py,sha256=M9aXZQDn63s6w4JrENl9Waa8twx6BtviKNBFBaAgZfo,87
+pybuilder_archetype_api/resources/api/api_example.py,sha256=3j77PT0TZYCIH1oMDdZH9wgAswyQcvCM9XRGrLLxaQg,469
+pybuilder_archetype_api/resources/config/constants.py,sha256=fzxgWLmMl-BzhwjchZFnbOHru0sN5Du7au48yLcigKU,230
+pybuilder_archetype_api-0.1.0.dist-info/METADATA,sha256=EMtiV73HlS-10yNCY2e80ACwJF7d0Kuxoe9MBhmTtb8,492
+pybuilder_archetype_api-0.1.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pybuilder_archetype_api-0.1.0.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pybuilder_archetype_api-0.1.0.dist-info/top_level.txt,sha256=Zk7bvSSj5r_gSRBb7ELh_Uwlqn5oqViSA2XUy0KbjQY,24
+pybuilder_archetype_api-0.1.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pybuilder_archetype_api-0.1.0.dist-info/RECORD,,
