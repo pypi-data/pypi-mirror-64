@@ -1,0 +1,12 @@
+sagemill/__init__.py,sha256=zB80RiDfOU4nOWs5p-3Xg1tCTdivPIN7j9MyiTkqcuQ,195
+sagemill/builder.py,sha256=QtJ5Kss15EtwGt6FKtmHHeT9j2ugO4XNStkNKV1VNvA,2293
+sagemill/converter.py,sha256=qgVTpH7frujYKpKiJyiuBKVM7UriyI2nXTGoOivfZe4,3568
+sagemill/process.py,sha256=bnQsahML0uLlgo_WlSUfIKNyQM9AO3KsilXMqaMHneY,342
+sagemill/train.py,sha256=xUG-uz97IqfCSiwXt-o1_7RGlPJ1nEEIEbkseCq4XEk,725
+sagemill/docker/process/Dockerfile,sha256=QH5z2FkfhlpliEKnpN09pjA9D-l20-7Bk4ryxwtLT5I,226
+sagemill/docker/train/Dockerfile,sha256=nNi6WjffF9Hj3ISOQZzosvq6tiPAx-3Cg8M6YYH44vI,284
+sagemill/docker/train/entrypoint.sh,sha256=GLAc7L5exgKsa_ip6srldchyKiGANMESIA9wymFSmIw,354
+sagemill-0.0.1.dist-info/METADATA,sha256=JX7HLyvL4IFpCimWZFUJ6uFOHjrUPoPqZ7ly8tLI8ZU,1911
+sagemill-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sagemill-0.0.1.dist-info/top_level.txt,sha256=uoTlNSEesGU5kMje8bl6eviqisSAMPyJT1McJSceznI,9
+sagemill-0.0.1.dist-info/RECORD,,
