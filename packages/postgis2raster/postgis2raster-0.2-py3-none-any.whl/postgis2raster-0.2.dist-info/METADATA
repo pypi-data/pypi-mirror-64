@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: postgis2raster
+Version: 0.2
+Summary: This library helps user create raster files directly off postgis tables, rasterization and fishnet analysis.
+Home-page: https://urbantalks.in
+Author: SANDEEP KUMAR
+Author-email: sandeepgadhwal1@gmail.com
+License: MIT
+Download-URL: https://github.com/sandeepgadhwal/postgis2raster/archive/v_02.tar.gz
+Keywords: postgis,raster,fishnet
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: psycopg2
+Requires-Dist: pyproj
+
+# postgis2raster
+converts postgis vector geometry to Gdal Rasters 
+
+# Eaxmple of Fishnets
+
+## Single Band Circle
+```python
+postgis2raster.analysis_circle(
+    table='mytable',
+    output_raster='myimage.tif',
+    query_x=16.55268272,
+    query_y=40.82717010,
+    radius=2500,
+    cell_size=30
+)
+```
+![Single band circle](https://raw.githubusercontent.com/sandeepgadhwal/postgis2raster/master/images/single_band_circle.png)
+
+#
+
+## Multi Band Circle
+```python
+postgis2raster.analysis_circle(
+    table='mytable',
+    output_raster='myimage.tif',
+    query_x=16.55268272,
+    query_y=40.82717010,
+    radius=2500,
+    cell_size=30,
+    classes_to_bands=True
+)
+```
+![Multi band circle](https://raw.githubusercontent.com/sandeepgadhwal/postgis2raster/master/images/multi_band_circle.png)
+
+#
+
+## Single Band Polygon
+```python
+postgis2raster.analysis_polygon(
+    table='mytable',
+    output_raster='myimage.tif',
+    query_x=16.55268272,
+    query_y=40.82717010,
+    height=5000,
+    width=5000,
+    cell_size=30
+)
+```
+![Single band circle](https://raw.githubusercontent.com/sandeepgadhwal/postgis2raster/master/images/single_band_polygon.png)
+
+#
+
+## Multi Band Polygon
+```python
+postgis2raster.analysis_polygon(
+    table='mytable',
+    output_raster='myimage.tif',
+    query_x=16.55268272,
+    query_y=40.82717010,
+    height=5000,
+    width=5000,
+    cell_size=30,
+    classes_to_bands=True
+)
+```
+![Multi band circle](https://raw.githubusercontent.com/sandeepgadhwal/postgis2raster/master/images/multi_band_polygon.png)
+
+
+
