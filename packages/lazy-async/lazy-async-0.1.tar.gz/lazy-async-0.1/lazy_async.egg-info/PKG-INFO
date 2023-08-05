@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: lazy-async
+Version: 0.1
+Summary: Lazy evaluation for function/method/property getter
+Home-page: https://github.com/jqqqqqqqqqq/
+Author: Curtis Jiang
+License: MIT
+Description: # Lazy Evaluation
+        ![build](https://travis-ci.org/jqqqqqqqqqq/python-lazy-async.svg?branch=master)
+        ![shields](https://img.shields.io/badge/python-3.7%2B-blue.svg?style=flat-square)
+        [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+        
+        Lazy evaluate function/class method/class property getter. The target will be evaluated once and only once on first call
+        , and concurrent calls will get the result immediately once the target is ready and gets the same exception when the target
+        raises some exception.
+        
+        Compatible with both sync and async.
+        
+        ## Installation
+        
+        ```bash
+        pip install lazy-async
+        ```
+        
+        ## Example
+        
+        ```python
+        from lazy_async import lazy, lazy_getter
+        import asyncio
+        import time
+        
+        class ExampleClass:
+            def __init__(self):
+                self.sync_called = 0
+                self.async_called = 0
+        
+            @lazy
+            def func1(self):
+                time.sleep(5)
+                self.sync_called += 1
+                return 'something'
+        
+            @lazy
+            async def func2(self):
+                await asyncio.sleep(5)
+                self.async_called += 1
+                return 'something'
+        
+            @lazy
+            def func3(self):
+                time.sleep(5)
+                raise ValueError('SomeException')
+        
+            @lazy
+            async def func4(self):
+                await asyncio.sleep(5)
+                raise ValueError('SomeException')
+        
+            @lazy_getter
+            def func5(self):
+                time.sleep(5)
+                return 'something'
+        
+            @lazy_getter
+            async def func6(self):
+                await asyncio.sleep(5)
+                return 'something'
+        ```
+        
+        See unittest for detailed example.
+        
+Keywords: Lazy Evaluation,Decorator
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
