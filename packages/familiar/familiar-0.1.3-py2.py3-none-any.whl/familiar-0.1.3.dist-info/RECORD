@@ -1,0 +1,15 @@
+familiar.py,sha256=1uxVH-LNkhYA4i7CHYK4_6nMWL2RZOVyYX-PterdpJg,374
+familiar_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+familiar_tools/familiar.py,sha256=GSbxoYj45OBdXrr8LhbpGgPknNB77UpTUGhvyFsFh8g,426
+familiar_tools/settings.py,sha256=_bfjXCwQxpYpVX7tzEu-TmqP2BtUZSI_m-_byKyfvDY,341
+familiar_tools/__pycache__/__init__.cpython-37.pyc,sha256=4lDGNHlgjrvnV_WRAMtOBzU9niWGT7DTHRSvRom9IWw,170
+familiar_tools/__pycache__/familiar.cpython-37.pyc,sha256=UgpFojOg3pQQ_CLfDLAe-7X5fOUS_RTspgZGB2xcEag,739
+familiar_tools/__pycache__/settings.cpython-37.pyc,sha256=5qoUI9zJMEpV0qSRYBOrBs33AGX2SKatK58AFgWgsGQ,433
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/familiar.py,sha256=1uxVH-LNkhYA4i7CHYK4_6nMWL2RZOVyYX-PterdpJg,374
+src/settings.py,sha256=a4Nu1tPKVcSHrC4IMlRzE80dDewDIzLPNXaen0XfFi8,336
+familiar-0.1.3.dist-info/LICENSE.txt,sha256=9AS6Tzk9Fxbp5BERqtuTTWnY6AcTcla8IWkso265eEE,1071
+familiar-0.1.3.dist-info/METADATA,sha256=lHys0EVnRxM80H779exyXRlQ8sT7Bm0hOX2lmdggcHA,977
+familiar-0.1.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+familiar-0.1.3.dist-info/top_level.txt,sha256=rvPWE5Vi8ETqOc9dTElKWqkaGQhVbHwXei7-bSfkNV8,24
+familiar-0.1.3.dist-info/RECORD,,
