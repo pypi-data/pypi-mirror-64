@@ -1,0 +1,12 @@
+Click>=7.0
+beautifulsoup4>=4.6
+pylev>=1.3
+prompt-toolkit>=2.0
+tinydb>=3.11
+toml>=0.10
+bullet==2.0.0
+requests>=2.22
+logzero==1.5
+cmd2==0.9.23
+hydra-core==0.11.3
+Flask==1.1.1
