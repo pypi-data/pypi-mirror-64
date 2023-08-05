@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pulumi_google_analytics/__init__.py
+pulumi_google_analytics/service.py
+pulumi_google_analytics.egg-info/PKG-INFO
+pulumi_google_analytics.egg-info/SOURCES.txt
+pulumi_google_analytics.egg-info/dependency_links.txt
+pulumi_google_analytics.egg-info/requires.txt
+pulumi_google_analytics.egg-info/top_level.txt
+pulumi_google_analytics/dynamic_providers/__init__.py
+pulumi_google_analytics/dynamic_providers/web_property.py
+pulumi_google_analytics/dynamic_providers/web_property_provider.py
