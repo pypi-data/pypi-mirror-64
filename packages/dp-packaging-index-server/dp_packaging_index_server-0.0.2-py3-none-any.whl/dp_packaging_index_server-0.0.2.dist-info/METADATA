@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: dp-packaging-index-server
+Version: 0.0.2
+Summary: A table for storing app settings
+Home-page: https://gitlab.com/hoka/dp_packaging_index_server
+Author: Kai Hoppert
+Author-email: kai.hoppert@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 3.0
+Requires-Dist: Django
+Requires-Dist: pkginfo
+Requires-Dist: dp-settings
+Requires-Dist: dp-file-system-file
+Requires-Dist: dp-packaging-index-server
+
+Information
+===========
+With this app you can host a index server like pypi. It has a reduced functionality.
+
+The common use case is hosting packages you don't want to share with other people (private or business purpose).
+
