@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "screenplay_pdf_to_json"
+version = "0.1.0"
+description = ""
+authors = ["VVNoodle <brickkace@gmail.com>"]
+license= "MIT"
+readme= "README.md"
+repository = "https://github.com/SMASH-CUT/screenplay-pdf-to-json"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+spacy = "^2.2.4"
+"pdfminer.six" = "^20200124"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
