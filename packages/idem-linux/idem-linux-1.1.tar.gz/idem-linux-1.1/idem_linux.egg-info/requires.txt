@@ -1,0 +1,9 @@
+aiofiles==0.4.0
+corn>=4
+distro>=1.0
+dnspython>=1.16.0
+idem>=5.1
+ifcfg>=0.20
+pop>=8.1
+python_dateutil>=2.8.1
+rend>=4.1
