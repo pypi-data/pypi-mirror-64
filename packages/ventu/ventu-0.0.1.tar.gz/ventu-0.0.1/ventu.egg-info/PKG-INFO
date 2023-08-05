@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: ventu
+Version: 0.0.1
+Summary: Host your deep learning models easily.
+Home-page: https://github.com/zenchars/ventu
+Author: Keming Yang
+Author-email: kemingy94@gmail.com
+License: UNKNOWN
+Description: # Ventu
+        
+        Help you host your deep learning models easily.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
