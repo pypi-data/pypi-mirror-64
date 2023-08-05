@@ -1,0 +1,12 @@
+cachier/__init__.py,sha256=1vn9WQmT-EZEy3bbs93Bl0ogZAp1YlzOi6k5OQTXpoQ,118
+cachier/_version.py,sha256=ub2tmbYMBPtrurHZOxIkzbSgnkcLzap-sl4m2N8Dwlw,471
+cachier/base_core.py,sha256=1MLZyBAvaw5SkbqU5uxBk_NQrmsyiH9kuM8lFNpoK7g,1880
+cachier/core.py,sha256=PFlMVj91peldjz-7Hn-uWdJjiA-euYU3VQ_DNuzr4r0,8724
+cachier/mongo_core.py,sha256=3AXbvSGr4KwMh4lfZT3P6OG-mzhdPsf35BfX7WOgffs,5054
+cachier/pickle_core.py,sha256=QQlRC7jcvnSiRtd3oTuq6GWw_T1UjFTydbkbsdpnR7U,7264
+cachier-1.4.2.dist-info/LICENSE,sha256=-2WrMJkIa0gVP6YQHXXDT7ws-S3M2NEVEF4XF3K8qrY,1069
+cachier-1.4.2.dist-info/METADATA,sha256=0xuyy1WNv8cSF-7NwzMPkMsU9w-6eYiemVWYQiPDhDY,11136
+cachier-1.4.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+cachier-1.4.2.dist-info/entry_points.txt,sha256=HZPL3TEoT-aieCOvQvsLEDBAuPBSbDNrIjMiDA8h6zE,71
+cachier-1.4.2.dist-info/top_level.txt,sha256=_rW_HiJumDCch67YT-WAgzcyvKg5RiYDMZq9d-0ZpaE,8
+cachier-1.4.2.dist-info/RECORD,,
