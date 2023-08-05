@@ -1,0 +1,11 @@
+badai/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+badai/_nbdev.py,sha256=a-d7Ib-UaabVzoiZO76mKpPogk1Q60IeOaIuHAQvzgg,681
+badai/utils.py,sha256=IvP9DPfvK4Yl2tdPvPrJFH4UBf91OiMEETF1xUu_v8k,1860
+badai/vision/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+badai/vision/core.py,sha256=_MGIblNZsJa6_9x9TMoFtISauacdDVZL-BRO_XGhV2w,714
+badai-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+badai-0.0.4.dist-info/METADATA,sha256=AUK46bQcMklGwErq3qkeiYnsCkL3UUhWsP1DxhPm-IA,939
+badai-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+badai-0.0.4.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+badai-0.0.4.dist-info/top_level.txt,sha256=hG_Z8Kw3tq60QMuXskd6DSl2d3PXrBBlYrFXMxw_pOQ,6
+badai-0.0.4.dist-info/RECORD,,
