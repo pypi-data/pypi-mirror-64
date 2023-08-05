@@ -1,0 +1,10 @@
+soak/__init__.py,sha256=ed-I14NYHXz_Od21iv1NY0iEwQ5VSzEUcG8y07oTNxE,815
+soak/context.py,sha256=UmTsS0umMEGSbo2_grTX3W_acF2i2xzWoae52yfO-GA,1937
+soak/soak.py,sha256=ZfsjQ-H1X6EVPc25pXYQRAVAEp_v1W0kgqy4Z2Ibz5s,3305
+soak/terminal.py,sha256=gEok6cOzd34LF14ifNlyieOlD16QMpiPUiKBggydcyQ,1289
+soak-5.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+soak-5.dist-info/METADATA,sha256=kPxRc_yjkZkpeD8UZQwZuYpEFHmxKpyIRSIxJoetoRY,474
+soak-5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+soak-5.dist-info/entry_points.txt,sha256=zjQR8xe2nGcrPxbtv5HvKKALVEidM4AhkK_40mgST54,46
+soak-5.dist-info/top_level.txt,sha256=eOYgnDrBe4vhKpNyAyUtKE14-vZ6b9I27Fkqe_hGdx4,5
+soak-5.dist-info/RECORD,,
