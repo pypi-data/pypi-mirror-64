@@ -1,0 +1,9 @@
+README.md
+setup.py
+fsqlfly/__init__.py
+fsqlfly/main.py
+fsqlfly.egg-info/PKG-INFO
+fsqlfly.egg-info/SOURCES.txt
+fsqlfly.egg-info/dependency_links.txt
+fsqlfly.egg-info/entry_points.txt
+fsqlfly.egg-info/top_level.txt
