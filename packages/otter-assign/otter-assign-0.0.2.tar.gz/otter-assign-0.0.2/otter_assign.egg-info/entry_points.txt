@@ -1,0 +1,3 @@
+[console_scripts]
+oassign = oassign.oassign:main
+

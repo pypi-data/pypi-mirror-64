@@ -1,0 +1,8 @@
+pyyaml
+nbformat
+ipython
+nbconvert
+tqdm
+setuptools
+otter-grader
+pandas

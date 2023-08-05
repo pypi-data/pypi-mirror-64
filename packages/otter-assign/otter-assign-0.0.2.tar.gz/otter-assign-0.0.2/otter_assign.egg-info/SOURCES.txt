@@ -1,0 +1,13 @@
+README.md
+setup.py
+oassign/__init__.py
+oassign/oassign.py
+oassign/to_ok.py
+otter_assign.egg-info/PKG-INFO
+otter_assign.egg-info/SOURCES.txt
+otter_assign.egg-info/dependency_links.txt
+otter_assign.egg-info/entry_points.txt
+otter_assign.egg-info/requires.txt
+otter_assign.egg-info/top_level.txt
+test/__init__.py
+test/test_conversion.py
