@@ -1,0 +1,17 @@
+email:
+  biz:
+    subject: 邮件测试
+    receivers: [yuanjie@xiaomi.com,]
+    msg: 测试信息,
+    emoji: 🥰
+    msg_prefix: 👍
+    msg_suffix: 👍
+    date: '20200202'
+    msg_fn: 'lambda x: x'
+
+
+  push:
+    subject: ''
+    receivers: ''
+    msg_prefix: ''
+    msg_suffix: ''
