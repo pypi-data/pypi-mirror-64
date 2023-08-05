@@ -1,0 +1,12 @@
+VARNA_PATH = '/Users/magnus/work/opt/varna'
+VARNA_JAR_NAME = 'VARNA.jar'
+SIMRNA_DATA_PATH = '/Users/magnus/work/opt/simRNA/SimRNA_64bitIntel_MacOSX_staticLibs/data'
+QRNAS_PATH = "/Users/magnus/work/opt/qrnas/"
+RCHIE_PATH = "/Users/magnus/work/opt/r-chie/"
+RFAM_DB_PATH = "/Users/magnus/work/db/rfam/Rfam.cm"
+CONTEXTFOLD_PATH = "/Users/magnus/work/opt/ContextFold_1_00/"
+DIFF_TOOL = "open -a diffmerge"
+CPUS_CLUSTER = 630
+#RNASTRUCTURE_PATH = "/Users/magnus/work/opt/RNAstructure/6.0.1/"
+RNASTRUCTURE_PATH = "/Users/magnus/work/opt/RNAstructure/6.1/"
+ENTRNA_PATH = "/Users/magnus/work/opt/ENTRNA"

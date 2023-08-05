@@ -1,0 +1,1 @@
+calc_rmsd_to_1st_frame_exec="/Users/magnus/work/opt/simrna/SimRNA_64bitIntel_MacOSX_staticLibs/calc_rmsd_to_1st_frame"
