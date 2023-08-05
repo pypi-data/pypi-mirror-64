@@ -1,0 +1,14 @@
+.gitignore
+LICENSE
+README.md
+setup.cfg
+setup.py
+examples/MPU6050_CSV_IMU_test.py
+examples/MPU6050_SimpleRead_test.py
+imu_mpu6050/__init__.py
+imu_mpu6050/imu_mpu6050.py
+py_imu_mpu6050.egg-info/PKG-INFO
+py_imu_mpu6050.egg-info/SOURCES.txt
+py_imu_mpu6050.egg-info/dependency_links.txt
+py_imu_mpu6050.egg-info/requires.txt
+py_imu_mpu6050.egg-info/top_level.txt
