@@ -1,0 +1,7 @@
+argh.py
+setup.py
+yaargh_dummy_argh.egg-info/PKG-INFO
+yaargh_dummy_argh.egg-info/SOURCES.txt
+yaargh_dummy_argh.egg-info/dependency_links.txt
+yaargh_dummy_argh.egg-info/requires.txt
+yaargh_dummy_argh.egg-info/top_level.txt
