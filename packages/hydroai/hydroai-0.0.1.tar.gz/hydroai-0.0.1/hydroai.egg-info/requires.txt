@@ -1,0 +1,9 @@
+cdsapi
+cfgrib
+dask
+xarray
+geopandas
+numpy
+pandas
+scikit-learn
+regionmask
