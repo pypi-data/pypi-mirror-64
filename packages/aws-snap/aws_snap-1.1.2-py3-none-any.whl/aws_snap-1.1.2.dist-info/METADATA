@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: aws-snap
+Version: 1.1.2
+Summary: CLI (simple command line client) for making snapshots of AWS EC2 instances
+Home-page: https://gitlab.com/shindagger/aws-snap-python
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: string-color (>=0.2.7)
+Requires-Dist: boto3
+
+# aws-snap   
+
+Create snapshots of AWS EC2 instance volumes.   
+
+## installation   
+
+`pip install aws-snap`   
+
+this should install the CLI tool `aws-snap` and `snapit`   
+_the two are interchangable_   
+
+## usage   
+
+`snapit -h` # show help and exit   
+
+`snapit i-0d2bd932gf7de4c95` # create snapshot of instance with ID i-0d2bd932gf7de4c95   
+
+`snapit i-0d2bd932gf7de4c95 i-67dfg98s0ijj6y2j0` # snapshots of multiple instances   
+
+`snapit i-0d2bd932gf7de4c95 -r us-west-1` # specify a region other than the one set in your profile   
+
+`snapit i-0d2bd932gf7de4c95 -s` # stop the instance before snapping   
+
+
+
