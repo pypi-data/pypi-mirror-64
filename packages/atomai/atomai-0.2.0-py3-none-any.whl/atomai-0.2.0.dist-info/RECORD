@@ -1,0 +1,12 @@
+atomai/__init__.py,sha256=8daPyGOfdXhEwhl27Jzx-MxCvbVAtAsA4XxK71fbrQA,127
+atomai/__version__.py,sha256=YEbxOyA4NnHCqOkbAeVJ0IpQIx9YcJMkiD7wg9oLsI4,18
+atomai/atomnet.py,sha256=j-ZCLB_u2iiXTwKMliO9UkJm5Omn3cTx22x_IjgUYq8,21025
+atomai/atomstat.py,sha256=xLfYKFd00vW_HH_CnHX0XbtIwAbJCUHaDHa0WE9oo2g,43898
+atomai/losses_metrics.py,sha256=ybcKOFIxDXspLYWI6Ban0E_pH053nC6ZZa9g8nfQDn0,2856
+atomai/models.py,sha256=XVmKiRsC5NzGkI4JL2KYF5Rae3oSU5sG7pRO2S5w6cg,14012
+atomai/utils.py,sha256=QYGccpW_YJOaKr5OEQsHZhk3YbAed-nWA3yqxKI4jT8,40664
+atomai-0.2.0.dist-info/LICENSE,sha256=Es2ZfG1BK-9BAFPPS8qL9TuHXDU3BMg-kS9lJASLGzw,1072
+atomai-0.2.0.dist-info/METADATA,sha256=2YTI6xHRIokZ7_1i5RI6JWgGZSawpg_o4M2HaVZuxJ8,5386
+atomai-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+atomai-0.2.0.dist-info/top_level.txt,sha256=-FX01uVLCXKul24p1VdgPjRhkPWH7fC8ITqnvl_jCco,7
+atomai-0.2.0.dist-info/RECORD,,
