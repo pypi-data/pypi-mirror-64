@@ -1,0 +1,3 @@
+[console_scripts]
+divvy = divvy.__main__:main
+
