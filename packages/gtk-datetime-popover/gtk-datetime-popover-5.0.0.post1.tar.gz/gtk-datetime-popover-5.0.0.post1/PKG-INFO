@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gtk-datetime-popover
+Version: 5.0.0.post1
+Summary: A Gtk Popover widget for handling dates and times
+License: GPL-3.0+
+Author: BeatLink
+Author-email: beatlink@protonmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pygobject (>=3.34.0,<4.0.0)
