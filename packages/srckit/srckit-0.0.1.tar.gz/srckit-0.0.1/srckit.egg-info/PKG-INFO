@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: srckit
+Version: 0.0.1
+Summary: Library for source code manipulation projects
+Home-page: https://github.com/pypa/srckit
+Author: John Gerlock
+Author-email: john.gerlock@gmail.com.com
+License: UNKNOWN
+Description: # srckit
+        Library for source code manipulation projects
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,6 @@
+README.md
+setup.py
+srckit.egg-info/PKG-INFO
+srckit.egg-info/SOURCES.txt
+srckit.egg-info/dependency_links.txt
+srckit.egg-info/top_level.txt
