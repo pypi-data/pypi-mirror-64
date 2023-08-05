@@ -1,0 +1,16 @@
+arize/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arize/api.py,sha256=iF0vQj3oIa54Q58qb39TVcCHpmWawNeqWCu0gHr2nYE,7170
+arize/protocol_pb2.py,sha256=Rm_tGNDqcBKVzCTK6haPWarv8ppEFu8FcDYrsM8m1GQ,16542
+arize/examples/client.py,sha256=xy4k4l9zftZ4rLc6N_7U4CFSUqekSvFAjQVEtnPs7ic,732
+arizeai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arizeai/api.py,sha256=9Xn4yJT2RfaQPobh3Up42Z5IAnoFdTovsqa0FHUF4tM,6543
+arizeai/client.py,sha256=9sA3MTpXx2-HKB6zIbHEnReymlErQSACle5L4aFVHt4,470
+arizeai/client_async.py,sha256=PdUZYcty_765KUJD6AMC1TlhkF_Ip_AMR1BDRhKJV6g,513
+arizeai/protocol_pb2.py,sha256=-_obQtgjzw-y2ox2ARfA67NDs6Vrs_FAHsjxj_5vR4E,17787
+arizeai/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arizeai/examples/client.py,sha256=gJpSVDq4yUk33lz0HUBAb0S6aCTn0PKi3xbrxaThMWA,629
+arize-0.0.2.dist-info/LICENSE.md,sha256=8vLN8Gms62NCBorxIv9MUvuK7myueb6_-dhXHPmm4H0,1479
+arize-0.0.2.dist-info/METADATA,sha256=9yBaohRjSOdu22_8QqlUjXsKYiuEK7jmpEy7B2RtMW0,4416
+arize-0.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+arize-0.0.2.dist-info/top_level.txt,sha256=88CeS9Ggf3jO8mh5Xa11O_hJgZmSpWOOBjEfI8dM5NA,6
+arize-0.0.2.dist-info/RECORD,,
