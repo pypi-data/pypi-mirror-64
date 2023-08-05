@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+espn_api/__init__.py
+espn_api.egg-info/PKG-INFO
+espn_api.egg-info/SOURCES.txt
+espn_api.egg-info/dependency_links.txt
+espn_api.egg-info/requires.txt
+espn_api.egg-info/top_level.txt
