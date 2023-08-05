@@ -1,0 +1,10 @@
+jupytab/__init__.py,sha256=M5UDd8PiTblLZ7hp78E5ZRJ8PUGMNlxKTxToaAw2wcI,183
+jupytab/dataframe_table.py,sha256=G0hApwdmKGSo-3Ea4tLeu7ugtNGrA11ywIVkMZpy5XI,4070
+jupytab/table.py,sha256=NAIqyGuMwToZCHK151dA_H-Lv1bCv5AccrId_U7X6Lo,3394
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dataframe.py,sha256=U9EkmxAPAVKHEGSbNwCpSmhskchBhGyEEF1IrMqIVho,2697
+tests/test_util.py,sha256=YcRPZ6gxJY_q7vzE2mN6HQNS-oeU_ztRc0kvURM4nR8,2304
+jupytab-0.9.4.dist-info/METADATA,sha256=cn9fa-Hm9c5zOkOI-H-tR0BUTp0PI7B7HnK58mlH8qM,1198
+jupytab-0.9.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+jupytab-0.9.4.dist-info/top_level.txt,sha256=44AGuU3HRDTD80sZRAQ2R9o2igmoZ2H9frD-DCrnXjM,14
+jupytab-0.9.4.dist-info/RECORD,,
