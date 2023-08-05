@@ -1,0 +1,12 @@
+ntap/LM.py,sha256=qKkDM1-cSgKRPv-Lv5n6rZaY2QDcsL01kxKVeV3tzQI,5956
+ntap/RNN.py,sha256=0fYdl-p9DyHvOoa4lgWKbBcW8qkIfx2eaePvLC6npdw,10907
+ntap/SVM.py,sha256=_ycEHPTFA6X6z8sAvXTop4Jtw63rBV2zLFYonpmfGLE,7865
+ntap/__init__.py,sha256=NxjcJ01h8JDzAI2-J-RK3lecL43IxBh3cvOENEl3g2w,73
+ntap/data.py,sha256=TRmBahkvSYr_xpKg25Iml5R9ZNqFhof2m69ngucw7KA,21794
+ntap/helpers.py,sha256=AwRgh66gHT0dNGn4Ea3oPxpui8U-gn0colZdJTVjSbY,980
+ntap/models.py,sha256=ItbA8FHiKZssWOPZ7M6C3XhCG4e1nFVOjmJAdBiL_ns,10803
+ntap-1.0.13.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ntap-1.0.13.dist-info/METADATA,sha256=nNQ1f7JMbyFh107MwQHXkRi3exUDmnMVckLuL4ukosw,17624
+ntap-1.0.13.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ntap-1.0.13.dist-info/top_level.txt,sha256=iTIU9Q30rORNnalmDtbpXRYxIbSEet5DltkA90atga0,5
+ntap-1.0.13.dist-info/RECORD,,
