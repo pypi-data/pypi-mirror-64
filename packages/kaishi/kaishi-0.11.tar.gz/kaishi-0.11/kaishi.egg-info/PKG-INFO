@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: kaishi
+Version: 0.11
+Summary: Tool kit to accelerate the first steps of the data science process
+Home-page: https://github.com/kungfuai/kaishi
+Author: KUNGFU.AI
+Author-email: michael@kungfu.ai
+License: UNKNOWN
+Download-URL: https://github.com/kungfuai/kaishi/archive/0.11.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
