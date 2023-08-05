@@ -1,0 +1,7 @@
+README.md
+kwargparse.py
+setup.py
+kwargparse.egg-info/PKG-INFO
+kwargparse.egg-info/SOURCES.txt
+kwargparse.egg-info/dependency_links.txt
+kwargparse.egg-info/top_level.txt
