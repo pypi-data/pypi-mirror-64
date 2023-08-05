@@ -1,0 +1,14 @@
+bbfcapi/__init__.py,sha256=4OIIb2CtILucI3ybpnwfgs5bZNPJVmP_TE_pTROEwjc,27
+bbfcapi/api.py,sha256=NNojnfj0ptaHEaZfdQ98lSAbs4GvCoh-theMWtvE_cE,198
+bbfcapi/apis.py,sha256=mqRA8iVvjjLfr1eH3_AUsvbzM-hb-TYhCv_O9QZ-4ps,957
+bbfcapi/app.py,sha256=3GS6zIrJ-EqlzuQhMCCgSJ6RylH_nP8WI1ALFvYaS4I,742
+bbfcapi/client.py,sha256=BeGPwjAZlw2t4v0pacaa8WIJaIePZS5zqxckG3FcBcQ,853
+bbfcapi/clients.py,sha256=kJJxqBBVEqSJdXjh9zbeptFCB-xLbhYMoRoTcXI2PqY,147
+bbfcapi/lib.py,sha256=oH-mx3fLdAj48rN2s7V3mQ65pOuF2dFcLE92SKqD0QU,347
+bbfcapi/libs.py,sha256=M9xbdNzb4Lf7s90w26orS5Wxpa60SK78srsQAyhvJq4,116
+bbfcapi/parser.py,sha256=FtKsQK5CEqrRVY15oZBOhA8dUaIInz2VePX4aDbKe0o,766
+bbfcapi/types.py,sha256=FnJPexQjZTt4bNnEfCeHtqrS01EAqsMRWWFo_NfnLZk,729
+bbfcapi-2.0.0.dev1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+bbfcapi-2.0.0.dev1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+bbfcapi-2.0.0.dev1.dist-info/METADATA,sha256=oTZYMueTlF6tAgh8r2yl2zHDrrgWVO5MTYIX33CpbRI,7195
+bbfcapi-2.0.0.dev1.dist-info/RECORD,,
