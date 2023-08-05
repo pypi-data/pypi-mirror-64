@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.py
+./LICENSE
+./__init__.py
+./__main__.py
+./upgrade_ensurepip.py
+upgrade_ensurepip.egg-info/PKG-INFO
+upgrade_ensurepip.egg-info/SOURCES.txt
+upgrade_ensurepip.egg-info/dependency_links.txt
+upgrade_ensurepip.egg-info/entry_points.txt
+upgrade_ensurepip.egg-info/namespace_packages.txt
+upgrade_ensurepip.egg-info/top_level.txt
