@@ -1,0 +1,32 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pytest = "*"
+hypothesis-pytest = "*"
+flake8 = "*"
+flake8-docstrings = "*"
+flake8-bugbear = "*"
+coveralls = "*"
+pytest-cov = "*"
+mccabe = "*"
+tox = "*"
+tox-travis = "*"
+coverage = "*"
+twine = "*"
+hypothesis = "*"
+mypy = "*"
+black = "==19.3b0"
+mkdocs = "*"
+markdown-include = "*"
+ipython = "*"
+jupyter = "*"
+safety = "*"
+pymdown-extensions = "*"
+
+[requires]
+python_version = "3.7"
+
+[packages]
