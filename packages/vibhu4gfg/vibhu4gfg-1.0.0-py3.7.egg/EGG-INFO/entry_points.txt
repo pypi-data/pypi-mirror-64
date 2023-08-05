@@ -1,0 +1,3 @@
+[console_scripts]
+pydistwork = package.mymodule1:main
+
