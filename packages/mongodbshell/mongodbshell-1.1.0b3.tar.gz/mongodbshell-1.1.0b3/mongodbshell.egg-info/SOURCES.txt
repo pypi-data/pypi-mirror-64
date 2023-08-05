@@ -1,0 +1,15 @@
+README.rst
+setup.py
+mongodbshell/__init__.py
+mongodbshell/demo_exists.py
+mongodbshell/drop_collection.py
+mongodbshell/mongoclient.py
+mongodbshell/mping.py
+mongodbshell/pager.py
+mongodbshell/smping.py
+mongodbshell/version.py
+mongodbshell.egg-info/PKG-INFO
+mongodbshell.egg-info/SOURCES.txt
+mongodbshell.egg-info/dependency_links.txt
+mongodbshell.egg-info/requires.txt
+mongodbshell.egg-info/top_level.txt
