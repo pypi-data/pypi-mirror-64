@@ -1,0 +1,9 @@
+LICENSE,sha256=4A8aLnRrcxHxnv-PxNYaWb_sM8oajgZzQ7ka7srqjSU,35085
+computlib/.gitignore,sha256=DNBkdlt0Cp15HxUmbuVdZEtLDPQClHVMIdWQHtnHgcM,11
+computlib/__init__.py,sha256=IaqSn0r-ME7JC31BiKZQV0pgl6DVjCnL5Ihjv9lHPTU,69
+computlib/main.py,sha256=P61V1YII9nvM_hu-eXlF50o51nRAAAqDE_vqhzhmBGM,155
+computlib/tools.py,sha256=6PgUOQudC_bHn6h927g_0fWsLnK8qsihCRmF-hecny8,447
+computlib-0.2.0.dist-info/LICENSE,sha256=4A8aLnRrcxHxnv-PxNYaWb_sM8oajgZzQ7ka7srqjSU,35085
+computlib-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+computlib-0.2.0.dist-info/METADATA,sha256=oadoh1PRN2E8AtF1MxdhYEGgfvwS1mNfaWdx1Z7RCLI,2101
+computlib-0.2.0.dist-info/RECORD,,
