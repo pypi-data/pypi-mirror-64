@@ -1,0 +1,8 @@
+dynamodb_meta_store/__init__.py,sha256=qbG3qYeclXtpJZhfhvtmc6Tq2ddaL-tAShrOd5UJHCs,74
+dynamodb_meta_store/exceptions.py,sha256=qqLD05Vpdn04g9cNSiZiUkneUD2KF6_BOZV5qfg8YWk,367
+dynamodb_meta_store/meta_store.py,sha256=Q7FEKQwt7zq6N1-TS97BLP_h3lCxQrkTkdrdglaJ0mc,9683
+dynamodb_meta_store-0.4.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+dynamodb_meta_store-0.4.1.dist-info/METADATA,sha256=tjLtsiysgzv51OiHASzwXIYTdtMh1z1duOF-ZL8y87c,938
+dynamodb_meta_store-0.4.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dynamodb_meta_store-0.4.1.dist-info/top_level.txt,sha256=6fvBXv8Kjlewh7bf496VpoxCLRadqCoHRMWaXiBBMzI,20
+dynamodb_meta_store-0.4.1.dist-info/RECORD,,
