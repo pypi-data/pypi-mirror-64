@@ -1,0 +1,117 @@
+# python-cyrating
+
+A python wrapper for Cyrating https://www.cyrating.com.
+
+[![Latest PyPI Release](https://img.shields.io/pypi/v/cyrating.svg)](https://pypi.org/project/cyrating/)
+[![License](https://img.shields.io/pypi/l/cyrating.svg)](https://github.com/wq/python-requirejs/blob/master/LICENSE)
+[![Python Support](https://img.shields.io/pypi/pyversions/cyrating.svg)](https://pypi.org/project/cyrating/)
+
+## Installation
+```sh
+pip install cyrating
+```
+
+Then in your application root directory use the following command to set up your configuration including your Cyrating token which is provided in your user interface:
+
+```sh
+echo -e "[cyrating]\ntoken: cyratingtoken" > cyrating.ini
+```
+
+
+## Usage example
+
+```python
+>>> import cyrating
+>>> cr = cyrating.init()
+```
+
+Method  | Description
+------------- | -------------
+get_main_company  | returns main company
+get_entities  | returns list of entities
+get_suppliers | returns list of suppliers
+get_certificate | returns certificate of a specific company
+
+# Examples
+
+**Returns main company**
+```python
+>>> cr.main_company()
+[...]
+```
+
+**Returns list of entities**
+```python
+>>> cr.entities()
+[...]
+```
+
+**Returns list of suppliers**
+```python
+>>> cr.suppliers()
+[...]
+```
+
+**Returns domains of a company**
+```python
+>>> cr.domains(main_company)
+[...]
+```
+
+**Tag a domain**
+```python
+>>> cr.set_tags('example.com', ['tag1', 'tag2'])
+[...]
+```
+
+**Returns certificate of a specific company**
+```python
+>>> main_company = cr.get_main_company()
+>>> cr.get_certificate(main_company)
+```
+
+**Save certificate of a specific company to a file**
+```python
+>>> main_company = cr.get_main_company()
+>>> cr.get_certificate(main_company, filename='Cyrating - Certificate of {}.pdf'.format(main_company['name']))
+```
+
+
+## Release History
+
+0.0.4 (2020-03-23)
+---------------------
+
+* Fix README
+
+
+0.0.3 (2020-03-20)
+---------------------
+
+* Fix README
+
+
+0.0.2 (2020-03-16)
+---------------------
+
+* API updates
+
+
+0.0.1 (2019-02-27)
+---------------------
+
+* The first proper release
+
+
+## Meta
+
+Cyrating – [@cyrating](https://twitter.com/cyrating) – hello@cyrating.com
+
+Distributed under the ISCL license. See ``LICENSE`` for more information.
+
+
+## Contributing
+
+1. Send issues to issues@cyrating.com
+
+
