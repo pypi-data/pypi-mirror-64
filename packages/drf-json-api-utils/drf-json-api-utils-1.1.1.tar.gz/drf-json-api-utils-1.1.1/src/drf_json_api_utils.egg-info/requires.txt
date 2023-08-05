@@ -1,0 +1,13 @@
+django>=3.0.0
+djangorestframework-jsonapi
+djangorestframework
+django-filter
+
+[dev]
+check-manifest
+
+[django-simple-history]
+django-simple-history
+
+[test]
+coverage
