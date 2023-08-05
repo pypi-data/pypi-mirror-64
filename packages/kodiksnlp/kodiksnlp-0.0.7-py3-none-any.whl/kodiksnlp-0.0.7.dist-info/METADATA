@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: kodiksnlp
+Version: 0.0.7
+Summary: Kodiks Turkish NLP Tool
+Home-page: https://gitlab.com/kodiks-ai/kodiksnlp
+Author: Yavuz Kömeçoğlu
+Author-email: yavuz.komecoglu@kodiks.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.21.0)
+
+# Kodiks Türkçe Doğal Dil İşleme Python Kütüphanesi
+
+## Kodiks Türkçe Doğal Dil İşleme resmi Python NLP kütüphanesi
+
+### Kurulum
+**KodiksNLP**, Python 3.5 veya üstünü destekler. KodiksNLP'yi [PyPI](https://pypi.org/project/kodiksnlp/)'den pip ile yükleyebilirsiniz.
+
+```
+pip install kodiksnlp
+```
+
+bu aynı zamanda KodiksNLP'nin bağlımlılıklarından biri olan requests>=2.21.0 paketini de yükler.
+
+Şu anda kodiksnlp'nin önceki bir sürümü yüklüyse, şunu kullanın:
+
+```
+pip install kodiksnlp -U
+```
+
+### Çalıştırma
+Python paketi detaylı kullanım örnekleri için [dökümantasyonu](http://yavuzkomecoglu.com/kodiksai/nlp/) inceleyiniz.
+

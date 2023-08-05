@@ -1,0 +1,9 @@
+kodiksnlp/__init__.py,sha256=XnMRhdrPYHO9ZxbpnGAH2X92il89kN4ECzmoUhtJmCE,317
+kodiksnlp/preprocessing.py,sha256=LsMfvTmT8x64Tf54HKWkZwROS_F1m8jRKTZtEh2yk6w,2083
+kodiksnlp/similarity.py,sha256=cey471QIE20FYM_iGu0XqCGyTX43uo6bYsQaY21Jz2I,1856
+kodiksnlp/wordembedding.py,sha256=vrnP4Ck6JN-vhCc3mEpKe2DfGISxvm1qvoZ2chBTQxY,2141
+kodiksnlp-0.0.7.dist-info/LICENSE,sha256=RruuTJ85GUDaeXaNrXejOwZ6dS_Elgecvwp2jNwpQfY,1073
+kodiksnlp-0.0.7.dist-info/METADATA,sha256=oh2zNyBjYzpruzUurNlvWw3wNZHuwbJhSD-Iq914g_E,1157
+kodiksnlp-0.0.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+kodiksnlp-0.0.7.dist-info/top_level.txt,sha256=ynofQDFWxz53B4WshNjsgtolfiwAL6CH6fsjGTJO5lM,10
+kodiksnlp-0.0.7.dist-info/RECORD,,
