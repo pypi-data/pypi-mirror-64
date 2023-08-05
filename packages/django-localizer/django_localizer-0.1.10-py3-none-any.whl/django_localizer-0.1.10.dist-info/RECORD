@@ -1,0 +1,13 @@
+django_localizer/__init__.py,sha256=swhOlHNOWOhxejBYELmtM6lv0ZaQlNjUsuyj0JMGw5M,72
+django_localizer/apps.py,sha256=Z414v9ioG1NT_5FwrqIU2GQ66qXvoLEyoYTX37GR8Wg,125
+django_localizer/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_localizer/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_localizer/management/commands/generate_localizations.py,sha256=WHHSByUiRgz8b5XDhoZVF-ptTRpYyRfrfaUtReJ3qdI,6532
+django_localizer/settings.py,sha256=YUGy5dquN8doDdB1ErHCQZEDORrbfJqmNvEm1_ZjYNo,127
+django_localizer/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_localizer/templatetags/translate.py,sha256=pHm1Nt1VRQPIipj47IOfnE2c8EM2Ma5V14_eTKhXTmU,198
+django_localizer/translate.py,sha256=xnCJDchGa_GxW2_v-DA5YsI9LPomVh0Hdal_h5mLMWE,564
+django_localizer-0.1.10.dist-info/LICENSE,sha256=daEdpEyAJIa8b2VkCqSKcw8PaExcB6Qro80XNes_sHA,2
+django_localizer-0.1.10.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+django_localizer-0.1.10.dist-info/METADATA,sha256=Z0j6Aa0HCXWYSAA9FFz0aqg6afaKAbVmupKo0XFDD5c,477
+django_localizer-0.1.10.dist-info/RECORD,,
