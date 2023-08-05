@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: notebook_snippets
+Version: 1.0.1
+Summary: code snippets integration for JupyterLab
+Home-page: https://github.com/mkzilla/jupyterlab-snippets
+Author: chengtian
+Author-email: 792400644@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: Jupyter,JupyterLab,snippets
+Platform: Linux
+Platform: Mac OS X
+Platform: Windows
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
