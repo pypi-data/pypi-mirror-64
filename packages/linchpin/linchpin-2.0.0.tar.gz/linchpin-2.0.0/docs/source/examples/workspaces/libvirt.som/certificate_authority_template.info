@@ -1,0 +1,4 @@
+cn = redhat
+ca
+cert_signing_key
+expiration_days = 700

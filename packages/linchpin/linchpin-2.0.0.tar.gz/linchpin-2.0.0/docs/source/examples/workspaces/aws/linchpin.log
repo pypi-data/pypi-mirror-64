@@ -1,0 +1,1120 @@
+DEBUG 2019-11-22 10:23:25,794 Processing target: aws-route53
+DEBUG 2019-11-22 10:23:25,802 rundb_id: 1
+DEBUG 2019-11-22 10:23:25,802 uhash: f5b854
+DEBUG 2019-11-22 10:23:25,936 STATE - Target 'aws-route53' does not validate.  For more information run `linchpin validate`
+DEBUG 2019-11-22 10:23:31,823 Processing target: aws-route53
+DEBUG 2019-11-22 10:23:31,922 STATE - [ERROR] topology for target 'aws-route53' does not validate
+errors:
+	res_defs[0][zone]: field 'zone' could not be recognized within the schema provided
+
+DEBUG 2019-11-22 10:24:05,071 Processing target: aws-route53
+DEBUG 2019-11-22 10:24:05,147 STATE - [SUCCESS] topology for target 'aws-route53' is valid
+
+DEBUG 2019-11-22 10:24:09,948 Processing target: aws-route53
+DEBUG 2019-11-22 10:24:09,970 rundb_id: 2
+DEBUG 2019-11-22 10:24:09,970 uhash: a33bc9
+DEBUG 2019-11-22 10:24:10,089 calling: preup
+DEBUG 2019-11-22 10:24:10,089 hook preup initiated
+DEBUG 2019-11-22 10:24:12,222 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-22 10:25:45,579 Processing target: aws-route53
+DEBUG 2019-11-22 10:25:45,588 rundb_id: 3
+DEBUG 2019-11-22 10:25:45,589 uhash: 626d8b
+DEBUG 2019-11-22 10:25:45,704 calling: preup
+DEBUG 2019-11-22 10:25:45,705 hook preup initiated
+DEBUG 2019-11-22 10:25:48,832 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-22 10:26:13,981 Processing target: aws-route53
+DEBUG 2019-11-22 10:26:13,989 rundb_id: 4
+DEBUG 2019-11-22 10:26:13,989 uhash: f54509
+DEBUG 2019-11-22 10:26:14,102 calling: preup
+DEBUG 2019-11-22 10:26:14,102 hook preup initiated
+DEBUG 2019-11-22 10:26:17,315 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:09:14,751 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:09:14,762 rundb_id: 1
+DEBUG 2019-12-10 12:09:14,763 uhash: 71dd45
+DEBUG 2019-12-10 12:09:14,889 calling: preup
+DEBUG 2019-12-10 12:09:14,889 hook preup initiated
+DEBUG 2019-12-10 12:09:18,263 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:09:36,455 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:09:36,467 rundb_id: 2
+DEBUG 2019-12-10 12:09:36,467 uhash: dc6a27
+DEBUG 2019-12-10 12:09:36,586 calling: preup
+DEBUG 2019-12-10 12:09:36,587 hook preup initiated
+DEBUG 2019-12-10 12:09:39,665 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:11:18,805 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:11:18,817 rundb_id: 3
+DEBUG 2019-12-10 12:11:18,818 uhash: 53b5c8
+DEBUG 2019-12-10 12:11:18,932 calling: preup
+DEBUG 2019-12-10 12:11:18,932 hook preup initiated
+DEBUG 2019-12-10 12:11:21,947 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:11:38,990 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:11:38,996 rundb_id: 4
+DEBUG 2019-12-10 12:11:38,997 uhash: bf1a32
+DEBUG 2019-12-10 12:11:39,111 calling: preup
+DEBUG 2019-12-10 12:11:39,112 hook preup initiated
+DEBUG 2019-12-10 12:11:42,268 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:12:05,125 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:12:05,132 rundb_id: 5
+DEBUG 2019-12-10 12:12:05,132 uhash: 72075e
+DEBUG 2019-12-10 12:12:05,255 calling: preup
+DEBUG 2019-12-10 12:12:05,256 hook preup initiated
+DEBUG 2019-12-10 12:12:08,419 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:17:35,672 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:17:35,680 rundb_id: 6
+DEBUG 2019-12-10 12:17:35,680 uhash: f25080
+DEBUG 2019-12-10 12:17:35,794 calling: preup
+DEBUG 2019-12-10 12:17:35,794 hook preup initiated
+DEBUG 2019-12-10 12:17:39,201 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:19:36,930 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:19:36,943 rundb_id: 7
+DEBUG 2019-12-10 12:19:36,943 uhash: a5a9a7
+DEBUG 2019-12-10 12:19:37,068 calling: preup
+DEBUG 2019-12-10 12:19:37,068 hook preup initiated
+INFO 2019-12-10 12:20:05,751 Playbook Return code 0
+DEBUG 2019-12-10 12:20:05,751 STATE - Action 'up' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-10 12:20:05,752 hook postinv initiated
+DEBUG 2019-12-10 12:20:05,778 hook postup initiated
+DEBUG 2019-12-10 12:20:05,778 STATE - 
+ID: 1
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-new         	     7	a5a9a7	        0
+
+DEBUG 2019-12-10 12:21:10,070 Processing target: aws-ec2-new
+DEBUG 2019-12-10 12:21:10,083 using data from run_id: None
+DEBUG 2019-12-10 12:21:10,083 rundb_id: 8
+DEBUG 2019-12-10 12:21:10,083 uhash: a5a9a7
+DEBUG 2019-12-10 12:21:10,211 calling: predestroy
+DEBUG 2019-12-10 12:21:10,211 hook predestroy initiated
+INFO 2019-12-10 12:21:40,340 Playbook Return code 0
+DEBUG 2019-12-10 12:21:40,340 STATE - Action 'destroy' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-10 12:21:40,365 hook postdestroy initiated
+DEBUG 2019-12-10 12:21:40,366 STATE - 
+ID: 2
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-new         	     8	a5a9a7	        0
+
+DEBUG 2019-12-10 12:27:02,249 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:27:02,261 rundb_id: 1
+DEBUG 2019-12-10 12:27:02,261 uhash: d63c01
+DEBUG 2019-12-10 12:27:02,380 calling: preup
+DEBUG 2019-12-10 12:27:02,380 hook preup initiated
+DEBUG 2019-12-10 12:27:07,342 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:28:55,166 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:28:55,175 rundb_id: 2
+DEBUG 2019-12-10 12:28:55,175 uhash: a0376c
+DEBUG 2019-12-10 12:28:55,294 calling: preup
+DEBUG 2019-12-10 12:28:55,294 hook preup initiated
+DEBUG 2019-12-10 12:28:59,682 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:31:00,265 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:31:00,270 rundb_id: 3
+DEBUG 2019-12-10 12:31:00,270 uhash: d29128
+DEBUG 2019-12-10 12:31:00,382 calling: preup
+DEBUG 2019-12-10 12:31:00,382 hook preup initiated
+DEBUG 2019-12-10 12:31:04,384 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:35:48,043 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:35:48,055 rundb_id: 4
+DEBUG 2019-12-10 12:35:48,055 uhash: 020186
+DEBUG 2019-12-10 12:35:48,177 calling: preup
+DEBUG 2019-12-10 12:35:48,178 hook preup initiated
+DEBUG 2019-12-10 12:35:51,963 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 12:36:41,222 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:36:41,234 rundb_id: 5
+DEBUG 2019-12-10 12:36:41,235 uhash: 2875d9
+DEBUG 2019-12-10 12:36:41,353 calling: preup
+DEBUG 2019-12-10 12:36:41,353 hook preup initiated
+INFO 2019-12-10 12:36:47,320 Playbook Return code 0
+DEBUG 2019-12-10 12:36:47,320 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-10 12:36:47,320 hook postinv initiated
+DEBUG 2019-12-10 12:36:47,348 hook postup initiated
+DEBUG 2019-12-10 12:36:47,348 STATE - 
+ID: 3
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-key-new     	     5	2875d9	        0
+
+DEBUG 2019-12-10 12:40:27,935 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:40:27,942 rundb_id: 6
+DEBUG 2019-12-10 12:40:27,942 uhash: b6c05f
+DEBUG 2019-12-10 12:40:28,067 calling: preup
+DEBUG 2019-12-10 12:40:28,068 hook preup initiated
+INFO 2019-12-10 12:40:34,063 Playbook Return code 0
+DEBUG 2019-12-10 12:40:34,063 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-10 12:40:34,063 hook postinv initiated
+DEBUG 2019-12-10 12:40:34,128 hook postup initiated
+DEBUG 2019-12-10 12:40:34,129 STATE - 
+ID: 4
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-key-new     	     6	b6c05f	        0
+
+DEBUG 2019-12-10 12:43:44,162 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:43:44,175 rundb_id: 7
+DEBUG 2019-12-10 12:43:44,175 uhash: 99f8b5
+DEBUG 2019-12-10 12:43:44,296 calling: preup
+DEBUG 2019-12-10 12:43:44,296 hook preup initiated
+INFO 2019-12-10 12:43:50,327 Playbook Return code 0
+DEBUG 2019-12-10 12:43:50,327 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-10 12:43:50,327 hook postinv initiated
+DEBUG 2019-12-10 12:43:50,358 hook postup initiated
+DEBUG 2019-12-10 12:43:50,358 STATE - 
+ID: 5
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-key-new     	     7	99f8b5	        0
+
+DEBUG 2019-12-10 12:50:15,196 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:50:15,209 rundb_id: 8
+DEBUG 2019-12-10 12:50:15,209 uhash: 7e3404
+DEBUG 2019-12-10 12:50:15,322 calling: preup
+DEBUG 2019-12-10 12:50:15,322 hook preup initiated
+INFO 2019-12-10 12:50:20,937 Playbook Return code 0
+DEBUG 2019-12-10 12:50:20,937 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-10 12:50:20,937 hook postinv initiated
+DEBUG 2019-12-10 12:50:20,968 hook postup initiated
+DEBUG 2019-12-10 12:50:20,968 STATE - 
+ID: 6
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-key-new     	     8	7e3404	        0
+
+DEBUG 2019-12-10 12:52:51,946 Processing target: aws-ec2-key-new
+DEBUG 2019-12-10 12:52:51,958 rundb_id: 9
+DEBUG 2019-12-10 12:52:51,958 uhash: aa338b
+DEBUG 2019-12-10 12:52:52,075 calling: preup
+DEBUG 2019-12-10 12:52:52,075 hook preup initiated
+INFO 2019-12-10 12:52:58,923 Playbook Return code 0
+DEBUG 2019-12-10 12:52:58,923 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-10 12:52:58,923 hook postinv initiated
+DEBUG 2019-12-10 12:52:58,983 hook postup initiated
+DEBUG 2019-12-10 12:52:58,984 STATE - 
+ID: 7
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-key-new     	     9	aa338b	        0
+
+DEBUG 2019-12-10 13:16:54,118 Processing target: aws-sg-new
+DEBUG 2019-12-10 13:16:54,130 rundb_id: 1
+DEBUG 2019-12-10 13:16:54,130 uhash: ddefd6
+DEBUG 2019-12-10 13:16:54,266 calling: preup
+DEBUG 2019-12-10 13:16:54,266 hook preup initiated
+INFO 2019-12-10 13:17:04,436 Playbook Return code 0
+DEBUG 2019-12-10 13:17:04,437 STATE - Action 'up' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-10 13:17:04,437 hook postinv initiated
+DEBUG 2019-12-10 13:17:04,481 hook postup initiated
+DEBUG 2019-12-10 13:17:04,481 STATE - 
+ID: 8
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-sg-new          	     1	ddefd6	        0
+
+DEBUG 2019-12-10 13:17:38,983 Processing target: aws-sg-new
+DEBUG 2019-12-10 13:17:39,000 using data from run_id: None
+DEBUG 2019-12-10 13:17:39,000 rundb_id: 2
+DEBUG 2019-12-10 13:17:39,000 uhash: ddefd6
+DEBUG 2019-12-10 13:17:39,123 calling: predestroy
+DEBUG 2019-12-10 13:17:39,123 hook predestroy initiated
+INFO 2019-12-10 13:17:46,093 Playbook Return code 0
+DEBUG 2019-12-10 13:17:46,093 STATE - Action 'destroy' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-10 13:17:46,122 hook postdestroy initiated
+DEBUG 2019-12-10 13:17:46,122 STATE - 
+ID: 9
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-sg-new          	     2	ddefd6	        0
+
+DEBUG 2019-12-10 13:25:10,115 Processing target: aws-s3-new
+DEBUG 2019-12-10 13:25:10,129 rundb_id: 1
+DEBUG 2019-12-10 13:25:10,129 uhash: 1de379
+DEBUG 2019-12-10 13:25:10,247 calling: preup
+DEBUG 2019-12-10 13:25:10,247 hook preup initiated
+DEBUG 2019-12-10 13:25:13,269 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 13:25:32,386 Processing target: aws-s3-new
+DEBUG 2019-12-10 13:25:32,398 rundb_id: 2
+DEBUG 2019-12-10 13:25:32,398 uhash: e566fd
+DEBUG 2019-12-10 13:25:32,534 calling: preup
+DEBUG 2019-12-10 13:25:32,534 hook preup initiated
+DEBUG 2019-12-10 13:25:35,561 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 13:27:03,871 Processing target: aws-s3-new
+DEBUG 2019-12-10 13:27:03,876 rundb_id: 3
+DEBUG 2019-12-10 13:27:03,876 uhash: 7e4bd6
+DEBUG 2019-12-10 13:27:03,994 calling: preup
+DEBUG 2019-12-10 13:27:03,995 hook preup initiated
+DEBUG 2019-12-10 13:27:07,296 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-10 13:29:19,169 Processing target: aws-s3-new
+DEBUG 2019-12-10 13:29:19,181 rundb_id: 4
+DEBUG 2019-12-10 13:29:19,181 uhash: 0e9965
+DEBUG 2019-12-10 13:29:19,303 calling: preup
+DEBUG 2019-12-10 13:29:19,303 hook preup initiated
+INFO 2019-12-10 13:29:26,022 Playbook Return code 0
+DEBUG 2019-12-10 13:29:26,022 STATE - Action 'up' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-10 13:29:26,022 hook postinv initiated
+DEBUG 2019-12-10 13:29:26,058 hook postup initiated
+DEBUG 2019-12-10 13:29:26,058 STATE - 
+ID: 10
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-s3-new          	     4	0e9965	        0
+
+DEBUG 2019-12-10 13:30:02,886 Processing target: aws-s3-new
+DEBUG 2019-12-10 13:30:02,899 using data from run_id: None
+DEBUG 2019-12-10 13:30:02,899 rundb_id: 5
+DEBUG 2019-12-10 13:30:02,899 uhash: 0e9965
+DEBUG 2019-12-10 13:30:03,014 calling: predestroy
+DEBUG 2019-12-10 13:30:03,014 hook predestroy initiated
+INFO 2019-12-10 13:30:09,588 Playbook Return code 0
+DEBUG 2019-12-10 13:30:09,588 STATE - Action 'destroy' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-10 13:30:09,616 hook postdestroy initiated
+DEBUG 2019-12-10 13:30:09,617 STATE - 
+ID: 11
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-s3-new          	     5	0e9965	        0
+
+DEBUG 2019-12-10 15:29:03,125 STATE - Target 'msg:' does not exist.
+DEBUG 2019-12-10 15:29:20,225 Processing target: aws-ec2-eip
+DEBUG 2019-12-10 15:29:20,238 rundb_id: 1
+DEBUG 2019-12-10 15:29:20,238 uhash: 6cfd03
+DEBUG 2019-12-10 15:29:20,352 calling: preup
+DEBUG 2019-12-10 15:29:20,353 hook preup initiated
+INFO 2019-12-10 15:29:26,358 Playbook Return code 0
+DEBUG 2019-12-10 15:29:26,359 STATE - Action 'up' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-10 15:29:26,359 hook postinv initiated
+DEBUG 2019-12-10 15:29:26,394 hook postup initiated
+DEBUG 2019-12-10 15:29:26,394 STATE - 
+ID: 12
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-eip         	     1	6cfd03	        0
+
+DEBUG 2019-12-10 15:30:58,735 Processing target: aws-ec2-eip
+DEBUG 2019-12-10 15:30:58,752 using data from run_id: None
+DEBUG 2019-12-10 15:30:58,752 rundb_id: 2
+DEBUG 2019-12-10 15:30:58,753 uhash: 6cfd03
+DEBUG 2019-12-10 15:30:58,877 calling: predestroy
+DEBUG 2019-12-10 15:30:58,878 hook predestroy initiated
+INFO 2019-12-10 15:31:05,915 Playbook Return code 0
+DEBUG 2019-12-10 15:31:05,915 STATE - Action 'destroy' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-10 15:31:05,948 hook postdestroy initiated
+DEBUG 2019-12-10 15:31:05,948 STATE - 
+ID: 13
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-eip         	     2	6cfd03	        0
+
+DEBUG 2019-12-10 15:33:19,272 STATE - Target 'ec2_vpc_net' does not exist.
+DEBUG 2019-12-10 15:33:35,325 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-10 15:33:35,338 rundb_id: 1
+DEBUG 2019-12-10 15:33:35,338 uhash: 8ea5b3
+DEBUG 2019-12-10 15:33:35,457 calling: preup
+DEBUG 2019-12-10 15:33:35,457 hook preup initiated
+INFO 2019-12-10 15:33:43,217 Playbook Return code 0
+DEBUG 2019-12-10 15:33:43,217 STATE - Action 'up' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-10 15:33:43,217 hook postinv initiated
+DEBUG 2019-12-10 15:33:43,252 hook postup initiated
+DEBUG 2019-12-10 15:33:43,252 STATE - 
+ID: 14
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-net     	     1	8ea5b3	        0
+
+DEBUG 2019-12-10 15:34:17,763 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-10 15:34:17,778 using data from run_id: None
+DEBUG 2019-12-10 15:34:17,778 rundb_id: 2
+DEBUG 2019-12-10 15:34:17,778 uhash: 8ea5b3
+DEBUG 2019-12-10 15:34:17,898 calling: predestroy
+DEBUG 2019-12-10 15:34:17,898 hook predestroy initiated
+INFO 2019-12-10 15:34:24,920 Playbook Return code 0
+DEBUG 2019-12-10 15:34:24,920 STATE - Action 'destroy' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-10 15:34:24,947 hook postdestroy initiated
+DEBUG 2019-12-10 15:34:24,947 STATE - 
+ID: 15
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-net     	     2	8ea5b3	        0
+
+DEBUG 2019-12-10 15:44:14,242 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-10 15:44:14,261 rundb_id: 1
+DEBUG 2019-12-10 15:44:14,261 uhash: 576d40
+DEBUG 2019-12-10 15:44:14,383 calling: preup
+DEBUG 2019-12-10 15:44:14,383 hook preup initiated
+INFO 2019-12-10 15:44:25,338 Playbook Return code 0
+DEBUG 2019-12-10 15:44:25,338 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-10 15:44:25,338 hook postinv initiated
+DEBUG 2019-12-10 15:44:25,405 hook postup initiated
+DEBUG 2019-12-10 15:44:25,405 STATE - 
+ID: 16
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     1	576d40	        0
+
+DEBUG 2019-12-10 15:45:33,574 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-10 15:45:33,592 using data from run_id: None
+DEBUG 2019-12-10 15:45:33,592 rundb_id: 2
+DEBUG 2019-12-10 15:45:33,592 uhash: 576d40
+DEBUG 2019-12-10 15:45:33,720 calling: predestroy
+DEBUG 2019-12-10 15:45:33,720 hook predestroy initiated
+INFO 2019-12-10 15:45:48,067 Playbook Return code 0
+DEBUG 2019-12-10 15:45:48,068 STATE - Action 'destroy' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-10 15:45:48,111 hook postdestroy initiated
+DEBUG 2019-12-10 15:45:48,111 STATE - 
+ID: 17
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     2	576d40	        0
+
+DEBUG 2019-12-10 16:00:16,907 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-10 16:00:16,920 rundb_id: 1
+DEBUG 2019-12-10 16:00:16,921 uhash: bb23f9
+DEBUG 2019-12-10 16:00:17,044 calling: preup
+DEBUG 2019-12-10 16:00:17,044 hook preup initiated
+INFO 2019-12-10 16:00:37,843 Playbook Return code 0
+DEBUG 2019-12-10 16:00:37,843 STATE - Action 'up' on Target 'aws-ec2-vpc-routetable' is complete
+DEBUG 2019-12-10 16:00:37,843 hook postinv initiated
+DEBUG 2019-12-10 16:00:37,890 hook postup initiated
+DEBUG 2019-12-10 16:00:37,891 STATE - 
+ID: 18
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-routetable	     1	bb23f9	        0
+
+DEBUG 2019-12-10 16:01:30,498 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-10 16:01:30,514 using data from run_id: None
+DEBUG 2019-12-10 16:01:30,514 rundb_id: 2
+DEBUG 2019-12-10 16:01:30,514 uhash: bb23f9
+DEBUG 2019-12-10 16:01:30,646 calling: predestroy
+DEBUG 2019-12-10 16:01:30,646 hook predestroy initiated
+INFO 2019-12-10 16:01:53,118 Playbook Return code 2
+DEBUG 2019-12-10 16:01:53,161 hook postdestroy initiated
+DEBUG 2019-12-10 16:01:53,161 STATE - 
+ID: 19
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-routetable	     2	bb23f9	        2
+
+DEBUG 2019-12-10 16:25:03,190 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-10 16:25:03,199 rundb_id: 1
+DEBUG 2019-12-10 16:25:03,199 uhash: 1eeccc
+DEBUG 2019-12-10 16:25:03,312 calling: preup
+DEBUG 2019-12-10 16:25:03,313 hook preup initiated
+INFO 2019-12-10 16:25:29,770 Playbook Return code 0
+DEBUG 2019-12-10 16:25:29,770 STATE - Action 'up' on Target 'aws-ec2-vpc-endpoint' is complete
+DEBUG 2019-12-10 16:25:29,770 hook postinv initiated
+DEBUG 2019-12-10 16:25:29,814 hook postup initiated
+DEBUG 2019-12-10 16:25:29,814 STATE - 
+ID: 20
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-endpoint	     1	1eeccc	        0
+
+DEBUG 2019-12-10 16:29:21,766 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-10 16:29:21,776 using data from run_id: None
+DEBUG 2019-12-10 16:29:21,776 rundb_id: 2
+DEBUG 2019-12-10 16:29:21,776 uhash: 1eeccc
+DEBUG 2019-12-10 16:29:21,892 calling: predestroy
+DEBUG 2019-12-10 16:29:21,892 hook predestroy initiated
+INFO 2019-12-10 16:29:59,781 Playbook Return code 0
+DEBUG 2019-12-10 16:29:59,781 STATE - Action 'destroy' on Target 'aws-ec2-vpc-endpoint' is complete
+DEBUG 2019-12-10 16:29:59,818 hook postdestroy initiated
+DEBUG 2019-12-10 16:29:59,818 STATE - 
+ID: 21
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-endpoint	     2	1eeccc	        0
+
+DEBUG 2019-12-11 11:29:22,390 Processing target: aws-ec2-vpc-nat-gateway
+DEBUG 2019-12-11 11:29:22,407 rundb_id: 1
+DEBUG 2019-12-11 11:29:22,408 uhash: a59336
+DEBUG 2019-12-11 11:29:22,536 calling: preup
+DEBUG 2019-12-11 11:29:22,536 hook preup initiated
+INFO 2019-12-11 11:29:37,359 Playbook Return code 0
+DEBUG 2019-12-11 11:29:37,359 STATE - Action 'up' on Target 'aws-ec2-vpc-nat-gateway' is complete
+DEBUG 2019-12-11 11:29:37,360 hook postinv initiated
+DEBUG 2019-12-11 11:29:37,405 hook postup initiated
+DEBUG 2019-12-11 11:29:37,405 STATE - 
+ID: 22
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-nat-gateway	     1	a59336	        0
+
+DEBUG 2019-12-11 11:30:51,384 Processing target: aws-ec2-vpc-nat-gateway
+DEBUG 2019-12-11 11:30:51,402 using data from run_id: None
+DEBUG 2019-12-11 11:30:51,402 rundb_id: 2
+DEBUG 2019-12-11 11:30:51,402 uhash: a59336
+DEBUG 2019-12-11 11:30:51,530 calling: predestroy
+DEBUG 2019-12-11 11:30:51,530 hook predestroy initiated
+INFO 2019-12-11 11:30:59,960 Playbook Return code 2
+DEBUG 2019-12-11 11:31:00,005 hook postdestroy initiated
+DEBUG 2019-12-11 11:31:00,005 STATE - 
+ID: 23
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-nat-gateway	     2	a59336	        2
+
+DEBUG 2019-12-12 09:11:58,684 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-12 09:11:58,690 rundb_id: 1
+DEBUG 2019-12-12 09:11:58,690 uhash: 29b3d1
+DEBUG 2019-12-12 09:11:58,823 calling: preup
+DEBUG 2019-12-12 09:11:58,823 hook preup initiated
+INFO 2019-12-12 09:12:06,446 Playbook Return code 0
+DEBUG 2019-12-12 09:12:06,446 STATE - Action 'up' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-12 09:12:06,446 hook postinv initiated
+DEBUG 2019-12-12 09:12:06,488 hook postup initiated
+DEBUG 2019-12-12 09:12:06,488 STATE - 
+ID: 24
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-elb-lb      	     1	29b3d1	        0
+
+DEBUG 2019-12-12 09:12:51,363 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-12 09:12:51,378 using data from run_id: None
+DEBUG 2019-12-12 09:12:51,379 rundb_id: 2
+DEBUG 2019-12-12 09:12:51,379 uhash: 29b3d1
+DEBUG 2019-12-12 09:12:51,507 calling: predestroy
+DEBUG 2019-12-12 09:12:51,507 hook predestroy initiated
+INFO 2019-12-12 09:12:58,065 Playbook Return code 0
+DEBUG 2019-12-12 09:12:58,065 STATE - Action 'destroy' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-12 09:12:58,098 hook postdestroy initiated
+DEBUG 2019-12-12 09:12:58,098 STATE - 
+ID: 25
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-elb-lb      	     2	29b3d1	        0
+
+DEBUG 2019-12-12 09:13:29,198 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-12 09:13:29,213 using data from run_id: None
+DEBUG 2019-12-12 09:13:29,213 rundb_id: 3
+DEBUG 2019-12-12 09:13:29,213 uhash: 29b3d1
+DEBUG 2019-12-12 09:13:29,329 calling: predestroy
+DEBUG 2019-12-12 09:13:29,329 hook predestroy initiated
+INFO 2019-12-12 09:13:35,634 Playbook Return code 0
+DEBUG 2019-12-12 09:13:35,634 STATE - Action 'destroy' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-12 09:13:35,668 hook postdestroy initiated
+DEBUG 2019-12-12 09:13:35,668 STATE - 
+ID: 26
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-elb-lb      	     3	29b3d1	        0
+
+DEBUG 2019-12-12 09:23:08,505 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-12 09:23:08,524 rundb_id: 1
+DEBUG 2019-12-12 09:23:08,524 uhash: 0b1e47
+DEBUG 2019-12-12 09:23:08,655 calling: preup
+DEBUG 2019-12-12 09:23:08,655 hook preup initiated
+INFO 2019-12-12 09:23:19,053 Playbook Return code 0
+DEBUG 2019-12-12 09:23:19,054 STATE - Action 'up' on Target 'aws-ec2-vpc-internet-gateway' is complete
+DEBUG 2019-12-12 09:23:19,054 hook postinv initiated
+DEBUG 2019-12-12 09:23:19,128 hook postup initiated
+DEBUG 2019-12-12 09:23:19,128 STATE - 
+ID: 27
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-internet-gateway	     1	0b1e47	        0
+
+DEBUG 2019-12-16 11:27:12,754 Processing target: aws-ec2-new
+DEBUG 2019-12-16 11:27:12,761 rundb_id: 9
+DEBUG 2019-12-16 11:27:12,762 uhash: 0a3c1a
+DEBUG 2019-12-16 11:27:12,887 calling: preup
+DEBUG 2019-12-16 11:27:12,887 hook preup initiated
+DEBUG 2019-12-16 11:27:15,172 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-16 11:29:13,367 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:29:13,376 rundb_id: 3
+DEBUG 2019-12-16 11:29:13,376 uhash: c55e89
+DEBUG 2019-12-16 11:29:13,492 calling: preup
+DEBUG 2019-12-16 11:29:13,493 hook preup initiated
+INFO 2019-12-16 11:29:36,327 Playbook Return code 0
+DEBUG 2019-12-16 11:29:36,327 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:29:36,327 hook postinv initiated
+DEBUG 2019-12-16 11:29:36,368 hook postup initiated
+DEBUG 2019-12-16 11:29:36,368 STATE - 
+ID: 28
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     3	c55e89	        0
+
+DEBUG 2019-12-16 11:45:29,548 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:45:29,561 using data from run_id: None
+DEBUG 2019-12-16 11:45:29,561 rundb_id: 4
+DEBUG 2019-12-16 11:45:29,561 uhash: c55e89
+DEBUG 2019-12-16 11:45:29,690 calling: predestroy
+DEBUG 2019-12-16 11:45:29,690 hook predestroy initiated
+INFO 2019-12-16 11:45:54,150 Playbook Return code 0
+DEBUG 2019-12-16 11:45:54,150 STATE - Action 'destroy' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:45:54,190 hook postdestroy initiated
+DEBUG 2019-12-16 11:45:54,190 STATE - 
+ID: 29
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     4	c55e89	        0
+
+DEBUG 2019-12-16 11:49:48,081 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:49:48,095 rundb_id: 5
+DEBUG 2019-12-16 11:49:48,095 uhash: 536be4
+DEBUG 2019-12-16 11:49:48,219 calling: preup
+DEBUG 2019-12-16 11:49:48,220 hook preup initiated
+INFO 2019-12-16 11:50:09,969 Playbook Return code 0
+DEBUG 2019-12-16 11:50:09,969 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:50:09,969 hook postinv initiated
+DEBUG 2019-12-16 11:50:10,008 hook postup initiated
+DEBUG 2019-12-16 11:50:10,008 STATE - 
+ID: 30
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     5	536be4	        0
+
+DEBUG 2019-12-16 11:51:55,049 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:51:55,056 using data from run_id: None
+DEBUG 2019-12-16 11:51:55,056 rundb_id: 6
+DEBUG 2019-12-16 11:51:55,057 uhash: 536be4
+DEBUG 2019-12-16 11:51:55,181 calling: predestroy
+DEBUG 2019-12-16 11:51:55,181 hook predestroy initiated
+INFO 2019-12-16 11:52:18,538 Playbook Return code 0
+DEBUG 2019-12-16 11:52:18,539 STATE - Action 'destroy' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:52:18,597 hook postdestroy initiated
+DEBUG 2019-12-16 11:52:18,598 STATE - 
+ID: 31
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     6	536be4	        0
+
+DEBUG 2019-12-16 11:53:01,244 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:53:01,254 rundb_id: 7
+DEBUG 2019-12-16 11:53:01,254 uhash: 2206ae
+DEBUG 2019-12-16 11:53:01,374 calling: preup
+DEBUG 2019-12-16 11:53:01,374 hook preup initiated
+INFO 2019-12-16 11:53:24,299 Playbook Return code 0
+DEBUG 2019-12-16 11:53:24,299 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:53:24,299 hook postinv initiated
+DEBUG 2019-12-16 11:53:24,344 hook postup initiated
+DEBUG 2019-12-16 11:53:24,344 STATE - 
+ID: 32
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     7	2206ae	        0
+
+DEBUG 2019-12-16 11:57:06,471 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:57:06,489 using data from run_id: None
+DEBUG 2019-12-16 11:57:06,489 rundb_id: 8
+DEBUG 2019-12-16 11:57:06,489 uhash: 2206ae
+DEBUG 2019-12-16 11:57:06,612 calling: predestroy
+DEBUG 2019-12-16 11:57:06,612 hook predestroy initiated
+INFO 2019-12-16 11:57:29,807 Playbook Return code 0
+DEBUG 2019-12-16 11:57:29,807 STATE - Action 'destroy' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:57:29,840 hook postdestroy initiated
+DEBUG 2019-12-16 11:57:29,840 STATE - 
+ID: 33
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     8	2206ae	        0
+
+DEBUG 2019-12-16 11:58:26,707 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 11:58:26,721 rundb_id: 9
+DEBUG 2019-12-16 11:58:26,721 uhash: 0e24c8
+DEBUG 2019-12-16 11:58:26,839 calling: preup
+DEBUG 2019-12-16 11:58:26,839 hook preup initiated
+INFO 2019-12-16 11:58:48,955 Playbook Return code 0
+DEBUG 2019-12-16 11:58:48,956 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 11:58:48,956 hook postinv initiated
+DEBUG 2019-12-16 11:58:49,034 hook postup initiated
+DEBUG 2019-12-16 11:58:49,034 STATE - 
+ID: 34
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-subnet  	     9	0e24c8	        0
+
+DEBUG 2019-12-16 15:42:39,648 Processing target: aws-ec2-new
+DEBUG 2019-12-16 15:42:39,662 rundb_id: 10
+DEBUG 2019-12-16 15:42:39,662 uhash: e6a83a
+DEBUG 2019-12-16 15:42:39,789 calling: preup
+DEBUG 2019-12-16 15:42:39,789 hook preup initiated
+INFO 2019-12-16 15:42:44,802 Playbook Return code 0
+DEBUG 2019-12-16 15:42:44,802 STATE - Action 'up' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-16 15:42:44,802 hook postinv initiated
+DEBUG 2019-12-16 15:42:44,829 Processing target: aws-ec2-key-new
+DEBUG 2019-12-16 15:42:44,843 rundb_id: 10
+DEBUG 2019-12-16 15:42:44,843 uhash: 53032f
+DEBUG 2019-12-16 15:42:44,884 calling: preup
+DEBUG 2019-12-16 15:42:44,884 hook preup initiated
+INFO 2019-12-16 15:42:49,042 Playbook Return code 0
+DEBUG 2019-12-16 15:42:49,042 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-16 15:42:49,043 hook postinv initiated
+DEBUG 2019-12-16 15:42:49,063 Processing target: aws-sg-new
+DEBUG 2019-12-16 15:42:49,073 rundb_id: 3
+DEBUG 2019-12-16 15:42:49,073 uhash: 357e8a
+DEBUG 2019-12-16 15:42:49,112 calling: preup
+DEBUG 2019-12-16 15:42:49,113 hook preup initiated
+INFO 2019-12-16 15:42:53,095 Playbook Return code 0
+DEBUG 2019-12-16 15:42:53,095 STATE - Action 'up' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-16 15:42:53,095 hook postinv initiated
+DEBUG 2019-12-16 15:42:53,113 Processing target: aws-s3-new
+DEBUG 2019-12-16 15:42:53,120 rundb_id: 6
+DEBUG 2019-12-16 15:42:53,120 uhash: 69e009
+DEBUG 2019-12-16 15:42:53,178 calling: preup
+DEBUG 2019-12-16 15:42:53,179 hook preup initiated
+INFO 2019-12-16 15:43:01,104 Playbook Return code 0
+DEBUG 2019-12-16 15:43:01,105 STATE - Action 'up' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-16 15:43:01,105 hook postinv initiated
+DEBUG 2019-12-16 15:43:01,167 Processing target: aws-ec2-eip
+DEBUG 2019-12-16 15:43:01,175 rundb_id: 3
+DEBUG 2019-12-16 15:43:01,175 uhash: cedb2d
+DEBUG 2019-12-16 15:43:01,215 calling: preup
+DEBUG 2019-12-16 15:43:01,215 hook preup initiated
+INFO 2019-12-16 15:43:05,372 Playbook Return code 0
+DEBUG 2019-12-16 15:43:05,372 STATE - Action 'up' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-16 15:43:05,372 hook postinv initiated
+DEBUG 2019-12-16 15:43:05,392 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-16 15:43:05,407 rundb_id: 3
+DEBUG 2019-12-16 15:43:05,407 uhash: 77cf98
+DEBUG 2019-12-16 15:43:05,448 calling: preup
+DEBUG 2019-12-16 15:43:05,448 hook preup initiated
+INFO 2019-12-16 15:43:09,492 Playbook Return code 0
+DEBUG 2019-12-16 15:43:09,493 STATE - Action 'up' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-16 15:43:09,493 hook postinv initiated
+DEBUG 2019-12-16 15:43:09,510 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 15:43:09,517 rundb_id: 10
+DEBUG 2019-12-16 15:43:09,517 uhash: 1a7418
+DEBUG 2019-12-16 15:43:09,555 calling: preup
+DEBUG 2019-12-16 15:43:09,555 hook preup initiated
+INFO 2019-12-16 15:43:17,884 Playbook Return code 0
+DEBUG 2019-12-16 15:43:17,884 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 15:43:17,884 hook postinv initiated
+DEBUG 2019-12-16 15:43:17,902 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-16 15:43:17,910 rundb_id: 3
+DEBUG 2019-12-16 15:43:17,910 uhash: 6f37a4
+DEBUG 2019-12-16 15:43:17,947 calling: preup
+DEBUG 2019-12-16 15:43:17,947 hook preup initiated
+INFO 2019-12-16 15:43:28,408 Playbook Return code 0
+DEBUG 2019-12-16 15:43:28,408 STATE - Action 'up' on Target 'aws-ec2-vpc-routetable' is complete
+DEBUG 2019-12-16 15:43:28,408 hook postinv initiated
+DEBUG 2019-12-16 15:43:28,424 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-16 15:43:28,431 rundb_id: 3
+DEBUG 2019-12-16 15:43:28,431 uhash: 750408
+DEBUG 2019-12-16 15:43:28,467 calling: preup
+DEBUG 2019-12-16 15:43:28,467 hook preup initiated
+DEBUG 2019-12-16 15:43:37,418 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-16 15:48:36,221 Processing target: aws-ec2-new
+DEBUG 2019-12-16 15:48:36,231 rundb_id: 11
+DEBUG 2019-12-16 15:48:36,231 uhash: 9a1786
+DEBUG 2019-12-16 15:48:36,356 calling: preup
+DEBUG 2019-12-16 15:48:36,356 hook preup initiated
+INFO 2019-12-16 15:48:41,006 Playbook Return code 0
+DEBUG 2019-12-16 15:48:41,006 STATE - Action 'up' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-16 15:48:41,006 hook postinv initiated
+DEBUG 2019-12-16 15:48:41,025 Processing target: aws-ec2-key-new
+DEBUG 2019-12-16 15:48:41,032 rundb_id: 11
+DEBUG 2019-12-16 15:48:41,032 uhash: 233adf
+DEBUG 2019-12-16 15:48:41,070 calling: preup
+DEBUG 2019-12-16 15:48:41,070 hook preup initiated
+INFO 2019-12-16 15:48:44,985 Playbook Return code 0
+DEBUG 2019-12-16 15:48:44,985 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-16 15:48:44,985 hook postinv initiated
+DEBUG 2019-12-16 15:48:45,003 Processing target: aws-sg-new
+DEBUG 2019-12-16 15:48:45,010 rundb_id: 4
+DEBUG 2019-12-16 15:48:45,010 uhash: de3455
+DEBUG 2019-12-16 15:48:45,073 calling: preup
+DEBUG 2019-12-16 15:48:45,073 hook preup initiated
+INFO 2019-12-16 15:48:49,068 Playbook Return code 0
+DEBUG 2019-12-16 15:48:49,068 STATE - Action 'up' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-16 15:48:49,068 hook postinv initiated
+DEBUG 2019-12-16 15:48:49,087 Processing target: aws-s3-new
+DEBUG 2019-12-16 15:48:49,095 rundb_id: 7
+DEBUG 2019-12-16 15:48:49,095 uhash: 00fac9
+DEBUG 2019-12-16 15:48:49,141 calling: preup
+DEBUG 2019-12-16 15:48:49,141 hook preup initiated
+INFO 2019-12-16 15:48:55,084 Playbook Return code 0
+DEBUG 2019-12-16 15:48:55,085 STATE - Action 'up' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-16 15:48:55,085 hook postinv initiated
+DEBUG 2019-12-16 15:48:55,104 Processing target: aws-ec2-eip
+DEBUG 2019-12-16 15:48:55,112 rundb_id: 4
+DEBUG 2019-12-16 15:48:55,112 uhash: 8bdbde
+DEBUG 2019-12-16 15:48:55,177 calling: preup
+DEBUG 2019-12-16 15:48:55,177 hook preup initiated
+INFO 2019-12-16 15:48:59,361 Playbook Return code 0
+DEBUG 2019-12-16 15:48:59,361 STATE - Action 'up' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-16 15:48:59,361 hook postinv initiated
+DEBUG 2019-12-16 15:48:59,381 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-16 15:48:59,388 rundb_id: 4
+DEBUG 2019-12-16 15:48:59,388 uhash: c3584d
+DEBUG 2019-12-16 15:48:59,427 calling: preup
+DEBUG 2019-12-16 15:48:59,427 hook preup initiated
+INFO 2019-12-16 15:49:04,403 Playbook Return code 0
+DEBUG 2019-12-16 15:49:04,403 STATE - Action 'up' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-16 15:49:04,403 hook postinv initiated
+DEBUG 2019-12-16 15:49:04,422 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 15:49:04,430 rundb_id: 11
+DEBUG 2019-12-16 15:49:04,430 uhash: fe9fde
+DEBUG 2019-12-16 15:49:04,471 calling: preup
+DEBUG 2019-12-16 15:49:04,471 hook preup initiated
+INFO 2019-12-16 15:49:14,663 Playbook Return code 0
+DEBUG 2019-12-16 15:49:14,663 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 15:49:14,663 hook postinv initiated
+DEBUG 2019-12-16 15:49:14,688 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-16 15:49:14,696 rundb_id: 4
+DEBUG 2019-12-16 15:49:14,696 uhash: 45dcad
+DEBUG 2019-12-16 15:49:14,736 calling: preup
+DEBUG 2019-12-16 15:49:14,736 hook preup initiated
+INFO 2019-12-16 15:49:26,828 Playbook Return code 0
+DEBUG 2019-12-16 15:49:26,828 STATE - Action 'up' on Target 'aws-ec2-vpc-routetable' is complete
+DEBUG 2019-12-16 15:49:26,828 hook postinv initiated
+DEBUG 2019-12-16 15:49:26,847 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-16 15:49:26,855 rundb_id: 4
+DEBUG 2019-12-16 15:49:26,855 uhash: d74195
+DEBUG 2019-12-16 15:49:26,922 calling: preup
+DEBUG 2019-12-16 15:49:26,922 hook preup initiated
+INFO 2019-12-16 15:49:41,030 Playbook Return code 0
+DEBUG 2019-12-16 15:49:41,030 STATE - Action 'up' on Target 'aws-ec2-vpc-endpoint' is complete
+DEBUG 2019-12-16 15:49:41,030 hook postinv initiated
+DEBUG 2019-12-16 15:49:41,048 Processing target: aws-ec2-vpc-nat-gateway
+DEBUG 2019-12-16 15:49:41,055 rundb_id: 3
+DEBUG 2019-12-16 15:49:41,055 uhash: 5e82dd
+DEBUG 2019-12-16 15:49:41,096 calling: preup
+DEBUG 2019-12-16 15:49:41,096 hook preup initiated
+INFO 2019-12-16 15:49:49,539 Playbook Return code 0
+DEBUG 2019-12-16 15:49:49,539 STATE - Action 'up' on Target 'aws-ec2-vpc-nat-gateway' is complete
+DEBUG 2019-12-16 15:49:49,539 hook postinv initiated
+DEBUG 2019-12-16 15:49:49,600 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-16 15:49:49,610 rundb_id: 4
+DEBUG 2019-12-16 15:49:49,610 uhash: 169b4d
+DEBUG 2019-12-16 15:49:49,655 calling: preup
+DEBUG 2019-12-16 15:49:49,656 hook preup initiated
+INFO 2019-12-16 15:49:53,742 Playbook Return code 0
+DEBUG 2019-12-16 15:49:53,743 STATE - Action 'up' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-16 15:49:53,743 hook postinv initiated
+DEBUG 2019-12-16 15:49:53,769 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:49:53,777 rundb_id: 2
+DEBUG 2019-12-16 15:49:53,777 uhash: 358fa5
+DEBUG 2019-12-16 15:49:53,821 calling: preup
+DEBUG 2019-12-16 15:49:53,821 hook preup initiated
+DEBUG 2019-12-16 15:49:59,535 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-16 15:50:58,086 Processing target: aws-ec2-new
+DEBUG 2019-12-16 15:50:58,097 rundb_id: 12
+DEBUG 2019-12-16 15:50:58,097 uhash: e1a2af
+DEBUG 2019-12-16 15:50:58,221 calling: preup
+DEBUG 2019-12-16 15:50:58,221 hook preup initiated
+INFO 2019-12-16 15:51:02,930 Playbook Return code 0
+DEBUG 2019-12-16 15:51:02,930 STATE - Action 'up' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-16 15:51:02,930 hook postinv initiated
+DEBUG 2019-12-16 15:51:02,957 Processing target: aws-ec2-key-new
+DEBUG 2019-12-16 15:51:02,967 rundb_id: 12
+DEBUG 2019-12-16 15:51:02,968 uhash: 79aa39
+DEBUG 2019-12-16 15:51:03,047 calling: preup
+DEBUG 2019-12-16 15:51:03,047 hook preup initiated
+INFO 2019-12-16 15:51:07,105 Playbook Return code 0
+DEBUG 2019-12-16 15:51:07,105 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-16 15:51:07,105 hook postinv initiated
+DEBUG 2019-12-16 15:51:07,138 Processing target: aws-sg-new
+DEBUG 2019-12-16 15:51:07,151 rundb_id: 5
+DEBUG 2019-12-16 15:51:07,151 uhash: 09f809
+DEBUG 2019-12-16 15:51:07,271 calling: preup
+DEBUG 2019-12-16 15:51:07,271 hook preup initiated
+INFO 2019-12-16 15:51:11,355 Playbook Return code 0
+DEBUG 2019-12-16 15:51:11,355 STATE - Action 'up' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-16 15:51:11,356 hook postinv initiated
+DEBUG 2019-12-16 15:51:11,388 Processing target: aws-s3-new
+DEBUG 2019-12-16 15:51:11,401 rundb_id: 8
+DEBUG 2019-12-16 15:51:11,401 uhash: 4069e7
+DEBUG 2019-12-16 15:51:11,454 calling: preup
+DEBUG 2019-12-16 15:51:11,454 hook preup initiated
+INFO 2019-12-16 15:51:19,093 Playbook Return code 0
+DEBUG 2019-12-16 15:51:19,093 STATE - Action 'up' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-16 15:51:19,093 hook postinv initiated
+DEBUG 2019-12-16 15:51:19,119 Processing target: aws-ec2-eip
+DEBUG 2019-12-16 15:51:19,133 rundb_id: 5
+DEBUG 2019-12-16 15:51:19,133 uhash: 6689b0
+DEBUG 2019-12-16 15:51:19,230 calling: preup
+DEBUG 2019-12-16 15:51:19,231 hook preup initiated
+INFO 2019-12-16 15:51:23,208 Playbook Return code 0
+DEBUG 2019-12-16 15:51:23,208 STATE - Action 'up' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-16 15:51:23,208 hook postinv initiated
+DEBUG 2019-12-16 15:51:23,230 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-16 15:51:23,238 rundb_id: 5
+DEBUG 2019-12-16 15:51:23,238 uhash: 021c5b
+DEBUG 2019-12-16 15:51:23,284 calling: preup
+DEBUG 2019-12-16 15:51:23,284 hook preup initiated
+INFO 2019-12-16 15:51:27,295 Playbook Return code 0
+DEBUG 2019-12-16 15:51:27,295 STATE - Action 'up' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-16 15:51:27,295 hook postinv initiated
+DEBUG 2019-12-16 15:51:27,322 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 15:51:27,331 rundb_id: 12
+DEBUG 2019-12-16 15:51:27,331 uhash: 20fc6e
+DEBUG 2019-12-16 15:51:27,380 calling: preup
+DEBUG 2019-12-16 15:51:27,380 hook preup initiated
+INFO 2019-12-16 15:51:36,014 Playbook Return code 0
+DEBUG 2019-12-16 15:51:36,014 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 15:51:36,014 hook postinv initiated
+DEBUG 2019-12-16 15:51:36,038 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-16 15:51:36,047 rundb_id: 5
+DEBUG 2019-12-16 15:51:36,048 uhash: 1c248b
+DEBUG 2019-12-16 15:51:36,097 calling: preup
+DEBUG 2019-12-16 15:51:36,097 hook preup initiated
+INFO 2019-12-16 15:51:47,918 Playbook Return code 0
+DEBUG 2019-12-16 15:51:47,918 STATE - Action 'up' on Target 'aws-ec2-vpc-routetable' is complete
+DEBUG 2019-12-16 15:51:47,918 hook postinv initiated
+DEBUG 2019-12-16 15:51:47,941 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-16 15:51:47,956 rundb_id: 5
+DEBUG 2019-12-16 15:51:47,957 uhash: 877147
+DEBUG 2019-12-16 15:51:48,007 calling: preup
+DEBUG 2019-12-16 15:51:48,008 hook preup initiated
+INFO 2019-12-16 15:52:03,844 Playbook Return code 0
+DEBUG 2019-12-16 15:52:03,844 STATE - Action 'up' on Target 'aws-ec2-vpc-endpoint' is complete
+DEBUG 2019-12-16 15:52:03,844 hook postinv initiated
+DEBUG 2019-12-16 15:52:03,903 Processing target: aws-ec2-vpc-nat-gateway
+DEBUG 2019-12-16 15:52:03,911 rundb_id: 4
+DEBUG 2019-12-16 15:52:03,912 uhash: 2c0367
+DEBUG 2019-12-16 15:52:03,968 calling: preup
+DEBUG 2019-12-16 15:52:03,968 hook preup initiated
+INFO 2019-12-16 15:52:13,129 Playbook Return code 0
+DEBUG 2019-12-16 15:52:13,129 STATE - Action 'up' on Target 'aws-ec2-vpc-nat-gateway' is complete
+DEBUG 2019-12-16 15:52:13,130 hook postinv initiated
+DEBUG 2019-12-16 15:52:13,155 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-16 15:52:13,164 rundb_id: 5
+DEBUG 2019-12-16 15:52:13,164 uhash: cbb685
+DEBUG 2019-12-16 15:52:13,210 calling: preup
+DEBUG 2019-12-16 15:52:13,210 hook preup initiated
+INFO 2019-12-16 15:52:18,383 Playbook Return code 0
+DEBUG 2019-12-16 15:52:18,384 STATE - Action 'up' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-16 15:52:18,384 hook postinv initiated
+DEBUG 2019-12-16 15:52:18,413 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:52:18,420 rundb_id: 3
+DEBUG 2019-12-16 15:52:18,420 uhash: 092ae1
+DEBUG 2019-12-16 15:52:18,473 calling: preup
+DEBUG 2019-12-16 15:52:18,473 hook preup initiated
+DEBUG 2019-12-16 15:52:24,213 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-16 15:54:11,158 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:54:11,168 rundb_id: 4
+DEBUG 2019-12-16 15:54:11,168 uhash: c7da24
+DEBUG 2019-12-16 15:54:11,300 calling: preup
+DEBUG 2019-12-16 15:54:11,300 hook preup initiated
+DEBUG 2019-12-16 15:54:17,569 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-16 15:58:36,769 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:58:36,784 rundb_id: 5
+DEBUG 2019-12-16 15:58:36,784 uhash: c2a0ce
+DEBUG 2019-12-16 15:58:36,908 calling: preup
+DEBUG 2019-12-16 15:58:36,908 hook preup initiated
+DEBUG 2019-12-16 15:59:25,035 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:59:25,046 rundb_id: 6
+DEBUG 2019-12-16 15:59:25,047 uhash: 49280a
+DEBUG 2019-12-16 15:59:25,172 calling: preup
+DEBUG 2019-12-16 15:59:25,172 hook preup initiated
+INFO 2019-12-16 15:59:30,150 Playbook Return code 0
+DEBUG 2019-12-16 15:59:30,151 STATE - Action 'up' on Target 'aws-ec2-vpc-internet-gateway' is complete
+DEBUG 2019-12-16 15:59:30,151 hook postinv initiated
+DEBUG 2019-12-16 15:59:30,257 hook postup initiated
+DEBUG 2019-12-16 15:59:30,257 STATE - 
+ID: 35
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-internet-gateway	     6	49280a	        0
+
+DEBUG 2019-12-16 15:59:34,767 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 15:59:34,782 rundb_id: 7
+DEBUG 2019-12-16 15:59:34,782 uhash: d15110
+DEBUG 2019-12-16 15:59:34,904 calling: preup
+DEBUG 2019-12-16 15:59:34,904 hook preup initiated
+INFO 2019-12-16 15:59:39,974 Playbook Return code 0
+DEBUG 2019-12-16 15:59:39,975 STATE - Action 'up' on Target 'aws-ec2-vpc-internet-gateway' is complete
+DEBUG 2019-12-16 15:59:39,975 hook postinv initiated
+DEBUG 2019-12-16 15:59:40,104 hook postup initiated
+DEBUG 2019-12-16 15:59:40,104 STATE - 
+ID: 36
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-vpc-internet-gateway	     7	d15110	        0
+
+DEBUG 2019-12-16 15:59:57,644 Processing target: aws-ec2-new
+DEBUG 2019-12-16 15:59:57,659 rundb_id: 13
+DEBUG 2019-12-16 15:59:57,659 uhash: 77c061
+DEBUG 2019-12-16 15:59:57,796 calling: preup
+DEBUG 2019-12-16 15:59:57,796 hook preup initiated
+INFO 2019-12-16 16:00:02,494 Playbook Return code 0
+DEBUG 2019-12-16 16:00:02,494 STATE - Action 'up' on Target 'aws-ec2-new' is complete
+DEBUG 2019-12-16 16:00:02,494 hook postinv initiated
+DEBUG 2019-12-16 16:00:02,518 Processing target: aws-ec2-key-new
+DEBUG 2019-12-16 16:00:02,527 rundb_id: 13
+DEBUG 2019-12-16 16:00:02,527 uhash: 559fcd
+DEBUG 2019-12-16 16:00:02,570 calling: preup
+DEBUG 2019-12-16 16:00:02,570 hook preup initiated
+INFO 2019-12-16 16:00:06,631 Playbook Return code 0
+DEBUG 2019-12-16 16:00:06,631 STATE - Action 'up' on Target 'aws-ec2-key-new' is complete
+DEBUG 2019-12-16 16:00:06,632 hook postinv initiated
+DEBUG 2019-12-16 16:00:06,681 Processing target: aws-sg-new
+DEBUG 2019-12-16 16:00:06,690 rundb_id: 6
+DEBUG 2019-12-16 16:00:06,690 uhash: 25b771
+DEBUG 2019-12-16 16:00:06,735 calling: preup
+DEBUG 2019-12-16 16:00:06,735 hook preup initiated
+INFO 2019-12-16 16:00:10,589 Playbook Return code 0
+DEBUG 2019-12-16 16:00:10,590 STATE - Action 'up' on Target 'aws-sg-new' is complete
+DEBUG 2019-12-16 16:00:10,590 hook postinv initiated
+DEBUG 2019-12-16 16:00:10,614 Processing target: aws-s3-new
+DEBUG 2019-12-16 16:00:10,622 rundb_id: 9
+DEBUG 2019-12-16 16:00:10,622 uhash: c4cc1c
+DEBUG 2019-12-16 16:00:10,666 calling: preup
+DEBUG 2019-12-16 16:00:10,666 hook preup initiated
+INFO 2019-12-16 16:00:42,166 Playbook Return code 0
+DEBUG 2019-12-16 16:00:42,166 STATE - Action 'up' on Target 'aws-s3-new' is complete
+DEBUG 2019-12-16 16:00:42,167 hook postinv initiated
+DEBUG 2019-12-16 16:00:42,195 Processing target: aws-ec2-eip
+DEBUG 2019-12-16 16:00:42,204 rundb_id: 6
+DEBUG 2019-12-16 16:00:42,205 uhash: 23cdf3
+DEBUG 2019-12-16 16:00:42,250 calling: preup
+DEBUG 2019-12-16 16:00:42,250 hook preup initiated
+INFO 2019-12-16 16:00:47,153 Playbook Return code 0
+DEBUG 2019-12-16 16:00:47,153 STATE - Action 'up' on Target 'aws-ec2-eip' is complete
+DEBUG 2019-12-16 16:00:47,153 hook postinv initiated
+DEBUG 2019-12-16 16:00:47,191 Processing target: aws-ec2-vpc-net
+DEBUG 2019-12-16 16:00:47,201 rundb_id: 6
+DEBUG 2019-12-16 16:00:47,201 uhash: b79347
+DEBUG 2019-12-16 16:00:47,251 calling: preup
+DEBUG 2019-12-16 16:00:47,251 hook preup initiated
+INFO 2019-12-16 16:00:50,696 Playbook Return code 0
+DEBUG 2019-12-16 16:00:50,696 STATE - Action 'up' on Target 'aws-ec2-vpc-net' is complete
+DEBUG 2019-12-16 16:00:50,696 hook postinv initiated
+DEBUG 2019-12-16 16:00:50,717 Processing target: aws-ec2-vpc-subnet
+DEBUG 2019-12-16 16:00:50,725 rundb_id: 13
+DEBUG 2019-12-16 16:00:50,725 uhash: c68f6d
+DEBUG 2019-12-16 16:00:50,796 calling: preup
+DEBUG 2019-12-16 16:00:50,796 hook preup initiated
+INFO 2019-12-16 16:00:56,021 Playbook Return code 0
+DEBUG 2019-12-16 16:00:56,022 STATE - Action 'up' on Target 'aws-ec2-vpc-subnet' is complete
+DEBUG 2019-12-16 16:00:56,022 hook postinv initiated
+DEBUG 2019-12-16 16:00:56,043 Processing target: aws-ec2-vpc-routetable
+DEBUG 2019-12-16 16:00:56,051 rundb_id: 6
+DEBUG 2019-12-16 16:00:56,051 uhash: d626b2
+DEBUG 2019-12-16 16:00:56,091 calling: preup
+DEBUG 2019-12-16 16:00:56,092 hook preup initiated
+INFO 2019-12-16 16:01:00,531 Playbook Return code 0
+DEBUG 2019-12-16 16:01:00,531 STATE - Action 'up' on Target 'aws-ec2-vpc-routetable' is complete
+DEBUG 2019-12-16 16:01:00,531 hook postinv initiated
+DEBUG 2019-12-16 16:01:00,552 Processing target: aws-ec2-vpc-endpoint
+DEBUG 2019-12-16 16:01:00,561 rundb_id: 6
+DEBUG 2019-12-16 16:01:00,561 uhash: 5b79d7
+DEBUG 2019-12-16 16:01:00,603 calling: preup
+DEBUG 2019-12-16 16:01:00,603 hook preup initiated
+INFO 2019-12-16 16:01:05,340 Playbook Return code 0
+DEBUG 2019-12-16 16:01:05,340 STATE - Action 'up' on Target 'aws-ec2-vpc-endpoint' is complete
+DEBUG 2019-12-16 16:01:05,340 hook postinv initiated
+DEBUG 2019-12-16 16:01:05,361 Processing target: aws-ec2-vpc-nat-gateway
+DEBUG 2019-12-16 16:01:05,369 rundb_id: 5
+DEBUG 2019-12-16 16:01:05,369 uhash: 29121d
+DEBUG 2019-12-16 16:01:05,415 calling: preup
+DEBUG 2019-12-16 16:01:05,415 hook preup initiated
+INFO 2019-12-16 16:01:09,784 Playbook Return code 0
+DEBUG 2019-12-16 16:01:09,784 STATE - Action 'up' on Target 'aws-ec2-vpc-nat-gateway' is complete
+DEBUG 2019-12-16 16:01:09,784 hook postinv initiated
+DEBUG 2019-12-16 16:01:09,806 Processing target: aws-ec2-elb-lb
+DEBUG 2019-12-16 16:01:09,815 rundb_id: 6
+DEBUG 2019-12-16 16:01:09,815 uhash: d3977c
+DEBUG 2019-12-16 16:01:09,882 calling: preup
+DEBUG 2019-12-16 16:01:09,882 hook preup initiated
+INFO 2019-12-16 16:01:14,440 Playbook Return code 0
+DEBUG 2019-12-16 16:01:14,440 STATE - Action 'up' on Target 'aws-ec2-elb-lb' is complete
+DEBUG 2019-12-16 16:01:14,440 hook postinv initiated
+DEBUG 2019-12-16 16:01:14,465 Processing target: aws-ec2-vpc-internet-gateway
+DEBUG 2019-12-16 16:01:14,477 rundb_id: 8
+DEBUG 2019-12-16 16:01:14,477 uhash: 4abf37
+DEBUG 2019-12-16 16:01:14,549 calling: preup
+DEBUG 2019-12-16 16:01:14,549 hook preup initiated
+INFO 2019-12-16 16:01:18,709 Playbook Return code 0
+DEBUG 2019-12-16 16:01:18,709 STATE - Action 'up' on Target 'aws-ec2-vpc-internet-gateway' is complete
+DEBUG 2019-12-16 16:01:18,709 hook postinv initiated
+DEBUG 2019-12-16 16:01:18,732 Processing target: aws-ec2-template
+DEBUG 2019-12-16 16:01:18,742 rundb_id: 1
+DEBUG 2019-12-16 16:01:18,743 uhash: af382f
+DEBUG 2019-12-16 16:01:18,839 calling: preup
+DEBUG 2019-12-16 16:01:18,839 hook preup initiated
+INFO 2019-12-16 16:01:22,694 Playbook Return code 0
+DEBUG 2019-12-16 16:01:22,694 STATE - Action 'up' on Target 'aws-ec2-template' is complete
+DEBUG 2019-12-16 16:01:22,695 hook postinv initiated
+DEBUG 2019-12-16 16:01:22,867 hook postup initiated
+DEBUG 2019-12-16 16:01:22,867 STATE - 
+ID: 37
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+aws-ec2-new         	    13	77c061	        0
+aws-ec2-key-new     	    13	559fcd	        0
+aws-sg-new          	     6	25b771	        0
+aws-s3-new          	     9	c4cc1c	        0
+aws-ec2-eip         	     6	23cdf3	        0
+aws-ec2-vpc-net     	     6	b79347	        0
+aws-ec2-vpc-subnet  	    13	c68f6d	        0
+aws-ec2-vpc-routetable	     6	d626b2	        0
+aws-ec2-vpc-endpoint	     6	5b79d7	        0
+aws-ec2-vpc-nat-gateway	     5	29121d	        0
+aws-ec2-elb-lb      	     6	d3977c	        0
+aws-ec2-vpc-internet-gateway	     8	4abf37	        0
+aws-ec2-template    	     1	af382f	        0
+

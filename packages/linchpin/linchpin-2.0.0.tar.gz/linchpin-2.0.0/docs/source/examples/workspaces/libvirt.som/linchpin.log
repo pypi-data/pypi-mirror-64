@@ -1,0 +1,2491 @@
+DEBUG 2019-12-18 07:28:12,906 Processing target: libvirt-new
+DEBUG 2019-12-18 07:28:25,753 Processing target: libvirt-new
+DEBUG 2019-12-18 07:28:51,124 Processing target: libvirt-new
+DEBUG 2019-12-18 07:29:27,699 Processing target: libvirt-new
+DEBUG 2019-12-18 07:29:27,720 rundb_id: 1
+DEBUG 2019-12-18 07:29:27,720 uhash: d8a071
+DEBUG 2019-12-18 07:29:27,839 calling: preup
+DEBUG 2019-12-18 07:29:27,839 hook preup initiated
+DEBUG 2019-12-18 07:29:48,246 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 07:30:46,740 Processing target: libvirt-new
+DEBUG 2019-12-18 07:30:46,758 rundb_id: 2
+DEBUG 2019-12-18 07:30:46,758 uhash: 8261c6
+DEBUG 2019-12-18 07:30:46,874 calling: preup
+DEBUG 2019-12-18 07:30:46,874 hook preup initiated
+DEBUG 2019-12-18 07:37:33,881 Processing target: libvirt-new
+DEBUG 2019-12-18 07:37:33,893 rundb_id: 3
+DEBUG 2019-12-18 07:37:33,893 uhash: 127402
+DEBUG 2019-12-18 07:37:34,002 calling: preup
+DEBUG 2019-12-18 07:37:34,002 hook preup initiated
+DEBUG 2019-12-18 07:42:42,823 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 07:43:55,977 Processing target: libvirt-new
+DEBUG 2019-12-18 07:43:55,984 rundb_id: 4
+DEBUG 2019-12-18 07:43:55,984 uhash: cc8685
+DEBUG 2019-12-18 07:43:56,086 calling: preup
+DEBUG 2019-12-18 07:43:56,086 hook preup initiated
+DEBUG 2019-12-18 07:48:43,048 Processing target: libvirt-new
+DEBUG 2019-12-18 07:48:43,063 rundb_id: 5
+DEBUG 2019-12-18 07:48:43,063 uhash: e393c0
+DEBUG 2019-12-18 07:48:43,173 calling: preup
+DEBUG 2019-12-18 07:48:43,173 hook preup initiated
+DEBUG 2019-12-18 07:52:54,331 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 10:00:58,209 Processing target: libvirt-new
+DEBUG 2019-12-18 10:01:39,881 Processing target: libvirt-new
+DEBUG 2019-12-18 10:01:39,888 rundb_id: 6
+DEBUG 2019-12-18 10:01:39,889 uhash: 9f2d78
+DEBUG 2019-12-18 10:01:39,987 calling: preup
+DEBUG 2019-12-18 10:01:39,987 hook preup initiated
+DEBUG 2019-12-18 10:17:03,076 Processing target: libvirt-new
+DEBUG 2019-12-18 10:17:03,089 rundb_id: 7
+DEBUG 2019-12-18 10:17:03,089 uhash: 5922f8
+DEBUG 2019-12-18 10:17:03,197 calling: preup
+DEBUG 2019-12-18 10:17:03,197 hook preup initiated
+DEBUG 2019-12-18 10:22:36,336 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 13:56:34,497 Processing target: libvirt-new
+DEBUG 2019-12-18 13:56:34,505 rundb_id: 8
+DEBUG 2019-12-18 13:56:34,505 uhash: aea569
+DEBUG 2019-12-18 13:56:34,611 calling: preup
+DEBUG 2019-12-18 13:56:34,612 hook preup initiated
+DEBUG 2019-12-18 13:58:08,869 Processing target: libvirt-new
+DEBUG 2019-12-18 13:58:08,881 rundb_id: 9
+DEBUG 2019-12-18 13:58:08,881 uhash: d116e5
+DEBUG 2019-12-18 13:58:08,989 calling: preup
+DEBUG 2019-12-18 13:58:08,989 hook preup initiated
+DEBUG 2019-12-18 13:59:05,904 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 14:11:59,338 Processing target: libvirt-new
+DEBUG 2019-12-18 14:11:59,343 rundb_id: 10
+DEBUG 2019-12-18 14:11:59,343 uhash: ffe984
+DEBUG 2019-12-18 14:11:59,470 calling: preup
+DEBUG 2019-12-18 14:11:59,470 hook preup initiated
+DEBUG 2019-12-18 14:12:12,838 Processing target: libvirt-new
+DEBUG 2019-12-18 14:12:12,851 rundb_id: 11
+DEBUG 2019-12-18 14:12:12,851 uhash: a8cd08
+DEBUG 2019-12-18 14:12:12,982 calling: preup
+DEBUG 2019-12-18 14:12:12,983 hook preup initiated
+DEBUG 2019-12-18 14:17:35,895 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-18 14:18:49,724 Processing target: libvirt-new
+DEBUG 2019-12-18 14:18:49,732 rundb_id: 12
+DEBUG 2019-12-18 14:18:49,733 uhash: 28d0c4
+DEBUG 2019-12-18 14:18:49,845 calling: preup
+DEBUG 2019-12-18 14:18:49,845 hook preup initiated
+DEBUG 2019-12-18 14:24:12,919 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-29 14:37:59,916 Processing target: libvirt-new
+DEBUG 2020-01-29 14:37:59,923 rundb_id: 13
+DEBUG 2020-01-29 14:37:59,923 uhash: 531d2d
+DEBUG 2020-01-29 14:38:00,035 calling: preup
+DEBUG 2020-01-29 14:38:00,035 hook preup initiated
+DEBUG 2020-01-29 14:41:33,311 Processing target: libvirt-custom-img
+DEBUG 2020-01-29 14:41:33,319 rundb_id: 1
+DEBUG 2020-01-29 14:41:33,319 uhash: 85b00d
+DEBUG 2020-01-29 14:41:33,452 calling: preup
+DEBUG 2020-01-29 14:41:33,453 hook preup initiated
+DEBUG 2020-01-29 14:51:02,967 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:29:36,507 Processing target: libvirt-new
+DEBUG 2020-01-30 10:29:36,513 rundb_id: 14
+DEBUG 2020-01-30 10:29:36,514 uhash: a890c4
+DEBUG 2020-01-30 10:29:36,646 calling: preup
+DEBUG 2020-01-30 10:29:36,646 hook preup initiated
+DEBUG 2020-01-30 10:34:38,235 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:34:38,247 rundb_id: 1
+DEBUG 2020-01-30 10:34:38,247 uhash: 8fa033
+DEBUG 2020-01-30 10:34:38,361 calling: preup
+DEBUG 2020-01-30 10:34:38,361 hook preup initiated
+DEBUG 2020-01-30 10:37:01,651 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:38:36,580 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:38:36,587 rundb_id: 2
+DEBUG 2020-01-30 10:38:36,587 uhash: 07a23c
+DEBUG 2020-01-30 10:38:36,715 calling: preup
+DEBUG 2020-01-30 10:38:36,715 hook preup initiated
+DEBUG 2020-01-30 10:38:56,473 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:40:48,827 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:40:48,835 rundb_id: 3
+DEBUG 2020-01-30 10:40:48,836 uhash: d3730f
+DEBUG 2020-01-30 10:40:48,940 calling: preup
+DEBUG 2020-01-30 10:40:48,940 hook preup initiated
+DEBUG 2020-01-30 10:41:10,987 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:43:17,433 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:43:17,446 rundb_id: 4
+DEBUG 2020-01-30 10:43:17,446 uhash: bb3c77
+DEBUG 2020-01-30 10:43:17,556 calling: preup
+DEBUG 2020-01-30 10:43:17,557 hook preup initiated
+DEBUG 2020-01-30 10:43:40,361 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:44:15,835 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:44:15,843 rundb_id: 5
+DEBUG 2020-01-30 10:44:15,843 uhash: 76f912
+DEBUG 2020-01-30 10:44:15,948 calling: preup
+DEBUG 2020-01-30 10:44:15,948 hook preup initiated
+DEBUG 2020-01-30 10:44:36,060 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:46:14,500 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:46:14,516 rundb_id: 6
+DEBUG 2020-01-30 10:46:14,516 uhash: c3c066
+DEBUG 2020-01-30 10:46:14,632 calling: preup
+DEBUG 2020-01-30 10:46:14,632 hook preup initiated
+DEBUG 2020-01-30 10:46:33,216 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:48:00,256 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:48:00,268 rundb_id: 7
+DEBUG 2020-01-30 10:48:00,268 uhash: 3707e3
+DEBUG 2020-01-30 10:48:00,382 calling: preup
+DEBUG 2020-01-30 10:48:00,382 hook preup initiated
+DEBUG 2020-01-30 10:48:20,913 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:50:04,320 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:50:04,325 rundb_id: 8
+DEBUG 2020-01-30 10:50:04,325 uhash: f469f1
+DEBUG 2020-01-30 10:50:04,458 calling: preup
+DEBUG 2020-01-30 10:50:04,458 hook preup initiated
+DEBUG 2020-01-30 10:50:23,252 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:51:17,138 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:51:17,146 rundb_id: 9
+DEBUG 2020-01-30 10:51:17,146 uhash: 45e6e0
+DEBUG 2020-01-30 10:51:17,255 calling: preup
+DEBUG 2020-01-30 10:51:17,255 hook preup initiated
+DEBUG 2020-01-30 10:51:24,346 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:51:46,120 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:51:46,132 rundb_id: 10
+DEBUG 2020-01-30 10:51:46,132 uhash: c8cfce
+DEBUG 2020-01-30 10:51:46,251 calling: preup
+DEBUG 2020-01-30 10:51:46,252 hook preup initiated
+DEBUG 2020-01-30 10:51:53,180 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-30 10:52:09,823 Processing target: libvirt-custom-xml
+DEBUG 2020-01-30 10:52:09,831 rundb_id: 11
+DEBUG 2020-01-30 10:52:09,831 uhash: f90b5d
+DEBUG 2020-01-30 10:52:09,937 calling: preup
+DEBUG 2020-01-30 10:52:09,937 hook preup initiated
+INFO 2020-01-30 10:52:54,969 Playbook Return code 0
+DEBUG 2020-01-30 10:52:54,970 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-01-30 10:52:54,970 calling: postinv
+DEBUG 2020-01-30 10:52:54,970 hook postinv initiated
+DEBUG 2020-01-30 10:52:55,008 calling: postup
+DEBUG 2020-01-30 10:52:55,008 hook postup initiated
+DEBUG 2020-01-30 10:52:55,008 STATE - 
+ID: 1
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    11	f90b5d	        0
+
+DEBUG 2020-01-31 09:59:07,100 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 09:59:07,134 rundb_id: 12
+DEBUG 2020-01-31 09:59:07,134 uhash: 6ade4f
+DEBUG 2020-01-31 09:59:07,255 STATE - Target 'libvirt-custom-xml' does not validate.  For more information run `linchpin validate`
+DEBUG 2020-01-31 09:59:16,080 Processing target: libvirt-minimal
+DEBUG 2020-01-31 09:59:16,143 Processing target: libvirt-new
+DEBUG 2020-01-31 09:59:16,156 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 09:59:16,169 Processing target: libvirt-network
+DEBUG 2020-01-31 09:59:16,173 Processing target: libvirt-storage
+DEBUG 2020-01-31 09:59:16,178 Processing target: libvirt-custom-img
+DEBUG 2020-01-31 09:59:16,183 Processing target: libvirt-network-dns
+DEBUG 2020-01-31 09:59:16,188 Processing target: libvirt-multi-node-net
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-minimal' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-new' is valid
+[SUCCESS] layout for target 'libvirt-new' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [ERROR] topology for target 'libvirt-custom-xml' does not validate
+errors:
+	res_defs[0][cloud_config][users][0][root_password]: field 'root_password' could not be recognized within the schema provided
+[SUCCESS] layout for target 'libvirt-custom-xml' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-network' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-storage' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-custom-img' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-network-dns' is valid
+
+DEBUG 2020-01-31 09:59:16,197 STATE - [SUCCESS] topology for target 'libvirt-multi-node-net' is valid
+
+DEBUG 2020-01-31 09:59:49,382 Processing target: libvirt-minimal
+DEBUG 2020-01-31 09:59:49,448 Processing target: libvirt-new
+DEBUG 2020-01-31 09:59:49,458 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 09:59:49,464 Processing target: libvirt-network
+DEBUG 2020-01-31 09:59:49,468 Processing target: libvirt-storage
+DEBUG 2020-01-31 09:59:49,473 Processing target: libvirt-custom-img
+DEBUG 2020-01-31 09:59:49,478 Processing target: libvirt-network-dns
+DEBUG 2020-01-31 09:59:49,484 Processing target: libvirt-multi-node-net
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-minimal' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-new' is valid
+[SUCCESS] layout for target 'libvirt-new' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-custom-xml' is valid
+[SUCCESS] layout for target 'libvirt-custom-xml' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-network' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-storage' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-custom-img' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-network-dns' is valid
+
+DEBUG 2020-01-31 09:59:49,493 STATE - [SUCCESS] topology for target 'libvirt-multi-node-net' is valid
+
+DEBUG 2020-01-31 09:59:53,753 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 09:59:53,761 rundb_id: 13
+DEBUG 2020-01-31 09:59:53,762 uhash: 34f4d6
+DEBUG 2020-01-31 09:59:53,881 calling: preup
+DEBUG 2020-01-31 09:59:53,881 hook preup initiated
+DEBUG 2020-01-31 10:00:16,101 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-31 10:01:09,692 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 10:01:09,705 rundb_id: 14
+DEBUG 2020-01-31 10:01:09,705 uhash: 36be39
+DEBUG 2020-01-31 10:01:09,819 calling: preup
+DEBUG 2020-01-31 10:01:09,819 hook preup initiated
+INFO 2020-01-31 10:02:09,817 Playbook Return code 0
+DEBUG 2020-01-31 10:02:09,817 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-01-31 10:02:09,818 calling: postinv
+DEBUG 2020-01-31 10:02:09,818 hook postinv initiated
+DEBUG 2020-01-31 10:02:09,869 calling: postup
+DEBUG 2020-01-31 10:02:09,869 hook postup initiated
+DEBUG 2020-01-31 10:02:09,869 STATE - 
+ID: 2
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    14	36be39	        0
+
+DEBUG 2020-01-31 10:20:54,436 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 10:20:54,445 using data from run_id: None
+DEBUG 2020-01-31 10:20:54,445 rundb_id: 15
+DEBUG 2020-01-31 10:20:54,445 uhash: 36be39
+DEBUG 2020-01-31 10:20:54,550 calling: predestroy
+DEBUG 2020-01-31 10:20:54,550 hook predestroy initiated
+INFO 2020-01-31 10:21:06,051 Playbook Return code 0
+DEBUG 2020-01-31 10:21:06,051 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-01-31 10:21:06,051 calling: postinv
+DEBUG 2020-01-31 10:21:06,084 hook postdestroy initiated
+DEBUG 2020-01-31 10:21:06,085 STATE - 
+ID: 3
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    15	36be39	        0
+
+DEBUG 2020-01-31 14:23:30,149 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:23:30,155 rundb_id: 16
+DEBUG 2020-01-31 14:23:30,155 uhash: 051000
+DEBUG 2020-01-31 14:23:30,275 calling: preup
+DEBUG 2020-01-31 14:23:30,275 hook preup initiated
+DEBUG 2020-01-31 14:23:36,836 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-31 14:24:39,219 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:24:39,225 rundb_id: 17
+DEBUG 2020-01-31 14:24:39,225 uhash: f09af9
+DEBUG 2020-01-31 14:24:39,331 calling: preup
+DEBUG 2020-01-31 14:24:39,331 hook preup initiated
+DEBUG 2020-01-31 14:24:47,178 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-31 14:28:11,890 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:28:11,899 rundb_id: 18
+DEBUG 2020-01-31 14:28:11,899 uhash: 4dd6cc
+DEBUG 2020-01-31 14:28:12,006 calling: preup
+DEBUG 2020-01-31 14:28:12,006 hook preup initiated
+DEBUG 2020-01-31 14:28:19,585 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-31 14:30:19,201 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:30:19,214 rundb_id: 19
+DEBUG 2020-01-31 14:30:19,214 uhash: 9da842
+DEBUG 2020-01-31 14:30:19,328 calling: preup
+DEBUG 2020-01-31 14:30:19,328 hook preup initiated
+DEBUG 2020-01-31 14:30:27,349 STATE - Unsuccessful provision of resource
+DEBUG 2020-01-31 14:33:55,581 STATE - linchpin version 1.9.2
+DEBUG 2020-01-31 14:35:10,823 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:35:26,722 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:37:17,701 Processing target: libvirt-custom-xml
+DEBUG 2020-01-31 14:37:17,706 rundb_id: 1
+DEBUG 2020-01-31 14:37:17,706 uhash: 219e36
+DEBUG 2020-01-31 14:37:17,830 calling: preup
+DEBUG 2020-01-31 14:37:17,830 hook preup initiated
+DEBUG 2020-01-31 14:43:05,103 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-18 09:13:50,300 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:13:50,323 rundb_id: 1
+DEBUG 2020-02-18 09:13:50,323 uhash: 49822c
+DEBUG 2020-02-18 09:13:50,437 calling: preup
+DEBUG 2020-02-18 09:13:50,438 hook preup initiated
+INFO 2020-02-18 09:14:18,524 Playbook Return code 0
+DEBUG 2020-02-18 09:14:18,524 STATE - Action 'up' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:14:18,524 calling: postinv
+DEBUG 2020-02-18 09:14:18,525 hook postinv initiated
+DEBUG 2020-02-18 09:14:18,552 calling: postup
+DEBUG 2020-02-18 09:14:18,552 hook postup initiated
+DEBUG 2020-02-18 09:14:18,553 STATE - 
+ID: 1
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     1	49822c	        0
+
+DEBUG 2020-02-18 09:16:13,319 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:16:13,332 using data from run_id: None
+DEBUG 2020-02-18 09:16:13,332 rundb_id: 2
+DEBUG 2020-02-18 09:16:13,332 uhash: 49822c
+DEBUG 2020-02-18 09:16:13,436 calling: predestroy
+DEBUG 2020-02-18 09:16:13,436 hook predestroy initiated
+INFO 2020-02-18 09:16:23,680 Playbook Return code 0
+DEBUG 2020-02-18 09:16:23,680 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:16:23,680 calling: postinv
+DEBUG 2020-02-18 09:16:23,709 hook postdestroy initiated
+DEBUG 2020-02-18 09:16:23,709 STATE - 
+ID: 2
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     2	49822c	        0
+
+DEBUG 2020-02-18 09:16:52,805 Processing target: libvirt-new
+DEBUG 2020-02-18 09:16:52,821 using data from run_id: None
+DEBUG 2020-02-18 09:16:52,821 rundb_id: 1
+DEBUG 2020-02-18 09:16:52,821 uhash: 
+DEBUG 2020-02-18 09:16:52,932 calling: predestroy
+DEBUG 2020-02-18 09:16:52,932 hook predestroy initiated
+DEBUG 2020-02-18 09:17:03,224 Processing target: libvirt-new
+DEBUG 2020-02-18 09:17:03,234 rundb_id: 2
+DEBUG 2020-02-18 09:17:03,234 uhash: 1f6a81
+DEBUG 2020-02-18 09:17:03,344 calling: preup
+DEBUG 2020-02-18 09:17:03,344 hook preup initiated
+DEBUG 2020-02-18 09:19:05,151 Processing target: libvirt-new
+DEBUG 2020-02-18 09:19:05,170 using data from run_id: None
+DEBUG 2020-02-18 09:19:05,170 rundb_id: 3
+DEBUG 2020-02-18 09:19:05,170 uhash: 1f6a81
+DEBUG 2020-02-18 09:19:05,303 calling: predestroy
+DEBUG 2020-02-18 09:19:05,303 hook predestroy initiated
+INFO 2020-02-18 09:19:14,594 Playbook Return code 0
+DEBUG 2020-02-18 09:19:14,594 STATE - Action 'destroy' on Target 'libvirt-new' is complete
+DEBUG 2020-02-18 09:19:14,595 calling: postinv
+DEBUG 2020-02-18 09:19:14,621 hook postdestroy initiated
+DEBUG 2020-02-18 09:19:14,621 STATE - 
+ID: 3
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-new         	     3	1f6a81	        0
+
+DEBUG 2020-02-18 09:20:29,648 STATE - Template-data (-d) file was not found. Check the template path and try again.
+DEBUG 2020-02-18 09:20:43,638 STATE - Error attempting to parse PinFile data file.
+Template-data files require a prepended '@' (eg. '@/path/to/template-data.yml')
+Perhaps the path to the PinFile or template-data is missing or the incorrect path?.
+DEBUG 2020-02-18 09:21:12,879 STATE - Error attempting to parse PinFile data file.
+Template-data files require a prepended '@' (eg. '@/path/to/template-data.yml')
+Perhaps the path to the PinFile or template-data is missing or the incorrect path?.
+DEBUG 2020-02-18 09:21:31,227 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:21:31,244 using data from run_id: None
+DEBUG 2020-02-18 09:21:31,244 rundb_id: 3
+DEBUG 2020-02-18 09:21:31,244 uhash: 49822c
+DEBUG 2020-02-18 09:21:31,358 calling: predestroy
+DEBUG 2020-02-18 09:21:31,358 hook predestroy initiated
+INFO 2020-02-18 09:21:40,554 Playbook Return code 0
+DEBUG 2020-02-18 09:21:40,554 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:21:40,554 calling: postinv
+DEBUG 2020-02-18 09:21:40,591 hook postdestroy initiated
+DEBUG 2020-02-18 09:21:40,591 STATE - 
+ID: 4
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     3	49822c	        0
+
+DEBUG 2020-02-18 09:21:55,200 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:21:55,216 rundb_id: 4
+DEBUG 2020-02-18 09:21:55,216 uhash: 162b49
+DEBUG 2020-02-18 09:21:55,315 calling: preup
+DEBUG 2020-02-18 09:21:55,315 hook preup initiated
+INFO 2020-02-18 09:22:19,226 Playbook Return code 0
+DEBUG 2020-02-18 09:22:19,227 STATE - Action 'up' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:22:19,227 calling: postinv
+DEBUG 2020-02-18 09:22:19,227 hook postinv initiated
+DEBUG 2020-02-18 09:22:19,260 calling: postup
+DEBUG 2020-02-18 09:22:19,261 hook postup initiated
+DEBUG 2020-02-18 09:22:19,261 STATE - 
+ID: 5
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     4	162b49	        0
+
+DEBUG 2020-02-18 09:22:28,997 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:22:29,007 using data from run_id: None
+DEBUG 2020-02-18 09:22:29,007 rundb_id: 5
+DEBUG 2020-02-18 09:22:29,008 uhash: 162b49
+DEBUG 2020-02-18 09:22:29,104 calling: predestroy
+DEBUG 2020-02-18 09:22:29,104 hook predestroy initiated
+INFO 2020-02-18 09:22:38,903 Playbook Return code 0
+DEBUG 2020-02-18 09:22:38,903 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:22:38,903 calling: postinv
+DEBUG 2020-02-18 09:22:38,924 hook postdestroy initiated
+DEBUG 2020-02-18 09:22:38,924 STATE - 
+ID: 6
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     5	162b49	        0
+
+DEBUG 2020-02-18 09:23:30,683 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:23:30,695 rundb_id: 6
+DEBUG 2020-02-18 09:23:30,695 uhash: da9696
+DEBUG 2020-02-18 09:23:30,803 calling: preup
+DEBUG 2020-02-18 09:23:30,803 hook preup initiated
+INFO 2020-02-18 09:23:55,182 Playbook Return code 0
+DEBUG 2020-02-18 09:23:55,182 STATE - Action 'up' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:23:55,182 calling: postinv
+DEBUG 2020-02-18 09:23:55,182 hook postinv initiated
+DEBUG 2020-02-18 09:23:55,208 calling: postup
+DEBUG 2020-02-18 09:23:55,208 hook postup initiated
+DEBUG 2020-02-18 09:23:55,208 STATE - 
+ID: 7
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     6	da9696	        0
+
+DEBUG 2020-02-18 09:24:03,228 Processing target: libvirt-minimal
+DEBUG 2020-02-18 09:24:03,241 using data from run_id: None
+DEBUG 2020-02-18 09:24:03,241 rundb_id: 7
+DEBUG 2020-02-18 09:24:03,241 uhash: da9696
+DEBUG 2020-02-18 09:24:03,335 calling: predestroy
+DEBUG 2020-02-18 09:24:03,335 hook predestroy initiated
+INFO 2020-02-18 09:24:13,051 Playbook Return code 0
+DEBUG 2020-02-18 09:24:13,051 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-18 09:24:13,051 calling: postinv
+DEBUG 2020-02-18 09:24:13,076 hook postdestroy initiated
+DEBUG 2020-02-18 09:24:13,077 STATE - 
+ID: 8
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     7	da9696	        0
+
+DEBUG 2020-02-18 09:24:19,494 STATE - linchpin version 1.10.0
+DEBUG 2020-02-24 14:15:02,850 Processing target: libvirt-minimal
+DEBUG 2020-02-24 14:15:02,856 rundb_id: 8
+DEBUG 2020-02-24 14:15:02,856 uhash: 90ef60
+DEBUG 2020-02-24 14:15:02,950 calling: preup
+DEBUG 2020-02-24 14:15:02,950 hook preup initiated
+DEBUG 2020-02-24 14:17:26,269 Processing target: libvirt-minimal
+DEBUG 2020-02-24 14:17:26,275 using data from run_id: None
+DEBUG 2020-02-24 14:17:26,275 rundb_id: 9
+DEBUG 2020-02-24 14:17:26,275 uhash: 90ef60
+DEBUG 2020-02-24 14:17:26,378 calling: predestroy
+DEBUG 2020-02-24 14:17:26,378 hook predestroy initiated
+INFO 2020-02-24 14:17:38,373 Playbook Return code 0
+DEBUG 2020-02-24 14:17:38,373 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-02-24 14:17:38,373 calling: postinv
+DEBUG 2020-02-24 14:17:38,397 hook postdestroy initiated
+DEBUG 2020-02-24 14:17:38,398 STATE - 
+ID: 9
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	     9	90ef60	        0
+
+DEBUG 2020-02-24 14:18:06,512 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:18:06,525 rundb_id: 2
+DEBUG 2020-02-24 14:18:06,525 uhash: 777d1d
+DEBUG 2020-02-24 14:18:06,639 calling: preup
+DEBUG 2020-02-24 14:18:06,639 hook preup initiated
+DEBUG 2020-02-24 14:18:17,742 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:19:10,956 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:19:10,969 rundb_id: 3
+DEBUG 2020-02-24 14:19:10,969 uhash: 242dda
+DEBUG 2020-02-24 14:19:11,086 calling: preup
+DEBUG 2020-02-24 14:19:11,086 hook preup initiated
+DEBUG 2020-02-24 14:19:34,306 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:25:18,053 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:25:18,062 rundb_id: 4
+DEBUG 2020-02-24 14:25:18,062 uhash: a91260
+DEBUG 2020-02-24 14:25:18,172 calling: preup
+DEBUG 2020-02-24 14:25:18,172 hook preup initiated
+DEBUG 2020-02-24 14:25:26,340 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:27:08,084 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:27:08,096 rundb_id: 5
+DEBUG 2020-02-24 14:27:08,096 uhash: e04662
+DEBUG 2020-02-24 14:27:08,204 calling: preup
+DEBUG 2020-02-24 14:27:08,204 hook preup initiated
+DEBUG 2020-02-24 14:27:16,445 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:31:02,950 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:31:02,969 rundb_id: 6
+DEBUG 2020-02-24 14:31:02,970 uhash: 4e6e11
+DEBUG 2020-02-24 14:31:03,087 calling: preup
+DEBUG 2020-02-24 14:31:03,087 hook preup initiated
+DEBUG 2020-02-24 14:31:09,303 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:31:24,227 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:31:24,236 rundb_id: 7
+DEBUG 2020-02-24 14:31:24,236 uhash: c1239c
+DEBUG 2020-02-24 14:31:24,357 calling: preup
+DEBUG 2020-02-24 14:31:24,357 hook preup initiated
+DEBUG 2020-02-24 14:31:30,742 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:32:38,843 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:32:38,861 rundb_id: 8
+DEBUG 2020-02-24 14:32:38,861 uhash: 01ff01
+DEBUG 2020-02-24 14:32:38,978 calling: preup
+DEBUG 2020-02-24 14:32:38,978 hook preup initiated
+DEBUG 2020-02-24 14:33:00,250 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:33:15,684 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:33:15,693 rundb_id: 9
+DEBUG 2020-02-24 14:33:15,693 uhash: 1e8a71
+DEBUG 2020-02-24 14:33:15,806 calling: preup
+DEBUG 2020-02-24 14:33:15,807 hook preup initiated
+INFO 2020-02-24 14:34:16,359 Playbook Return code 0
+DEBUG 2020-02-24 14:34:16,359 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 14:34:16,359 calling: postinv
+DEBUG 2020-02-24 14:34:16,359 hook postinv initiated
+DEBUG 2020-02-24 14:34:16,390 calling: postup
+DEBUG 2020-02-24 14:34:16,390 hook postup initiated
+DEBUG 2020-02-24 14:34:16,390 STATE - 
+ID: 10
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	     9	1e8a71	        0
+
+DEBUG 2020-02-24 14:43:59,885 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:43:59,898 rundb_id: 10
+DEBUG 2020-02-24 14:43:59,898 uhash: 7f9be0
+DEBUG 2020-02-24 14:44:00,023 calling: preup
+DEBUG 2020-02-24 14:44:00,023 hook preup initiated
+DEBUG 2020-02-24 14:44:03,470 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:47:18,537 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:47:18,545 rundb_id: 11
+DEBUG 2020-02-24 14:47:18,545 uhash: cd79a7
+DEBUG 2020-02-24 14:47:18,665 calling: preup
+DEBUG 2020-02-24 14:47:18,665 hook preup initiated
+DEBUG 2020-02-24 14:47:22,527 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 14:51:11,385 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 14:51:11,394 rundb_id: 12
+DEBUG 2020-02-24 14:51:11,394 uhash: 1dfdbc
+DEBUG 2020-02-24 14:51:11,503 calling: preup
+DEBUG 2020-02-24 14:51:11,503 hook preup initiated
+DEBUG 2020-02-24 14:51:16,353 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:02:42,262 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:02:42,270 rundb_id: 13
+DEBUG 2020-02-24 15:02:42,271 uhash: 97a547
+DEBUG 2020-02-24 15:02:42,394 calling: preup
+DEBUG 2020-02-24 15:02:42,394 hook preup initiated
+INFO 2020-02-24 15:02:54,998 Playbook Return code 0
+DEBUG 2020-02-24 15:02:54,998 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 15:02:54,998 calling: postinv
+DEBUG 2020-02-24 15:02:54,998 hook postinv initiated
+DEBUG 2020-02-24 15:02:55,035 calling: postup
+DEBUG 2020-02-24 15:02:55,035 hook postup initiated
+DEBUG 2020-02-24 15:02:55,035 STATE - 
+ID: 11
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    13	97a547	        0
+
+DEBUG 2020-02-24 15:03:10,746 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:03:10,761 using data from run_id: None
+DEBUG 2020-02-24 15:03:10,761 rundb_id: 14
+DEBUG 2020-02-24 15:03:10,761 uhash: 97a547
+DEBUG 2020-02-24 15:03:10,881 calling: predestroy
+DEBUG 2020-02-24 15:03:10,881 hook predestroy initiated
+INFO 2020-02-24 15:03:20,745 Playbook Return code 0
+DEBUG 2020-02-24 15:03:20,746 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 15:03:20,746 calling: postinv
+DEBUG 2020-02-24 15:03:20,774 hook postdestroy initiated
+DEBUG 2020-02-24 15:03:20,774 STATE - 
+ID: 12
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    14	97a547	        0
+
+DEBUG 2020-02-24 15:03:49,072 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:03:49,077 rundb_id: 15
+DEBUG 2020-02-24 15:03:49,077 uhash: aecb4e
+DEBUG 2020-02-24 15:03:49,186 calling: preup
+DEBUG 2020-02-24 15:03:49,186 hook preup initiated
+DEBUG 2020-02-24 15:03:56,252 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:06:57,969 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:06:57,983 rundb_id: 16
+DEBUG 2020-02-24 15:06:57,984 uhash: d7a584
+DEBUG 2020-02-24 15:06:58,098 calling: preup
+DEBUG 2020-02-24 15:06:58,098 hook preup initiated
+DEBUG 2020-02-24 15:07:05,158 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:11:21,280 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:11:21,293 rundb_id: 17
+DEBUG 2020-02-24 15:11:21,293 uhash: e7b5dc
+DEBUG 2020-02-24 15:11:21,409 calling: preup
+DEBUG 2020-02-24 15:11:21,409 hook preup initiated
+DEBUG 2020-02-24 15:11:30,269 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:16:49,323 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:16:49,336 rundb_id: 18
+DEBUG 2020-02-24 15:16:49,336 uhash: 85b897
+DEBUG 2020-02-24 15:16:49,452 calling: preup
+DEBUG 2020-02-24 15:16:49,452 hook preup initiated
+DEBUG 2020-02-24 15:17:03,575 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:19:47,767 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:19:47,784 rundb_id: 19
+DEBUG 2020-02-24 15:19:47,784 uhash: 92c1cf
+DEBUG 2020-02-24 15:19:47,901 calling: preup
+DEBUG 2020-02-24 15:19:47,901 hook preup initiated
+DEBUG 2020-02-24 15:19:59,449 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:26:05,512 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:26:05,527 rundb_id: 20
+DEBUG 2020-02-24 15:26:05,527 uhash: 9107d7
+DEBUG 2020-02-24 15:26:05,646 calling: preup
+DEBUG 2020-02-24 15:26:05,646 hook preup initiated
+DEBUG 2020-02-24 15:26:18,096 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:38:19,768 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:38:19,776 rundb_id: 21
+DEBUG 2020-02-24 15:38:19,776 uhash: ddb3a9
+DEBUG 2020-02-24 15:38:19,891 calling: preup
+DEBUG 2020-02-24 15:38:19,891 hook preup initiated
+DEBUG 2020-02-24 15:38:34,350 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:46:50,087 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:46:50,097 rundb_id: 22
+DEBUG 2020-02-24 15:46:50,097 uhash: 1a4f6a
+DEBUG 2020-02-24 15:46:50,205 calling: preup
+DEBUG 2020-02-24 15:46:50,205 hook preup initiated
+DEBUG 2020-02-24 15:47:12,207 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 15:51:18,370 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 15:51:18,383 rundb_id: 23
+DEBUG 2020-02-24 15:51:18,384 uhash: 9cc16f
+DEBUG 2020-02-24 15:51:18,508 calling: preup
+DEBUG 2020-02-24 15:51:18,508 hook preup initiated
+DEBUG 2020-02-24 15:51:40,219 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 16:33:47,300 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 16:33:47,309 rundb_id: 24
+DEBUG 2020-02-24 16:33:47,309 uhash: 3dc1fc
+DEBUG 2020-02-24 16:33:47,432 calling: preup
+DEBUG 2020-02-24 16:33:47,432 hook preup initiated
+DEBUG 2020-02-24 16:33:55,491 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-24 16:34:56,509 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 16:34:56,523 rundb_id: 25
+DEBUG 2020-02-24 16:34:56,523 uhash: 350e41
+DEBUG 2020-02-24 16:34:56,651 calling: preup
+DEBUG 2020-02-24 16:34:56,651 hook preup initiated
+INFO 2020-02-24 16:35:21,725 Playbook Return code 0
+DEBUG 2020-02-24 16:35:21,725 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 16:35:21,725 calling: postinv
+DEBUG 2020-02-24 16:35:21,725 hook postinv initiated
+DEBUG 2020-02-24 16:35:21,770 calling: postup
+DEBUG 2020-02-24 16:35:21,771 hook postup initiated
+DEBUG 2020-02-24 16:35:21,771 STATE - 
+ID: 13
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    25	350e41	        0
+
+DEBUG 2020-02-24 16:36:06,152 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 16:36:06,167 using data from run_id: None
+DEBUG 2020-02-24 16:36:06,167 rundb_id: 26
+DEBUG 2020-02-24 16:36:06,167 uhash: 350e41
+DEBUG 2020-02-24 16:36:06,288 calling: predestroy
+DEBUG 2020-02-24 16:36:06,288 hook predestroy initiated
+INFO 2020-02-24 16:36:15,982 Playbook Return code 0
+DEBUG 2020-02-24 16:36:15,982 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 16:36:15,982 calling: postinv
+DEBUG 2020-02-24 16:36:16,025 hook postdestroy initiated
+DEBUG 2020-02-24 16:36:16,025 STATE - 
+ID: 14
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    26	350e41	        0
+
+DEBUG 2020-02-24 16:37:14,118 Processing target: libvirt-custom-xml
+DEBUG 2020-02-24 16:37:14,132 rundb_id: 27
+DEBUG 2020-02-24 16:37:14,132 uhash: 55b3ae
+DEBUG 2020-02-24 16:37:14,246 calling: preup
+DEBUG 2020-02-24 16:37:14,246 hook preup initiated
+INFO 2020-02-24 16:38:10,693 Playbook Return code 0
+DEBUG 2020-02-24 16:38:10,694 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-24 16:38:10,694 calling: postinv
+DEBUG 2020-02-24 16:38:10,694 hook postinv initiated
+DEBUG 2020-02-24 16:38:10,746 calling: postup
+DEBUG 2020-02-24 16:38:10,746 hook postup initiated
+DEBUG 2020-02-24 16:38:10,747 STATE - 
+ID: 15
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    27	55b3ae	        0
+
+DEBUG 2020-02-25 09:09:09,897 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:09:09,913 using data from run_id: None
+DEBUG 2020-02-25 09:09:09,913 rundb_id: 28
+DEBUG 2020-02-25 09:09:09,913 uhash: 55b3ae
+DEBUG 2020-02-25 09:09:10,039 calling: predestroy
+DEBUG 2020-02-25 09:09:10,039 hook predestroy initiated
+INFO 2020-02-25 09:09:20,449 Playbook Return code 0
+DEBUG 2020-02-25 09:09:20,449 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-25 09:09:20,449 calling: postinv
+DEBUG 2020-02-25 09:09:20,481 hook postdestroy initiated
+DEBUG 2020-02-25 09:09:20,481 STATE - 
+ID: 16
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    28	55b3ae	        0
+
+DEBUG 2020-02-25 09:43:23,162 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:43:23,176 rundb_id: 29
+DEBUG 2020-02-25 09:43:23,176 uhash: ad4398
+DEBUG 2020-02-25 09:43:23,294 calling: preup
+DEBUG 2020-02-25 09:43:23,294 hook preup initiated
+DEBUG 2020-02-25 09:43:28,451 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:47:54,992 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:47:55,009 rundb_id: 30
+DEBUG 2020-02-25 09:47:55,009 uhash: 03c630
+DEBUG 2020-02-25 09:47:55,149 calling: preup
+DEBUG 2020-02-25 09:47:55,149 hook preup initiated
+DEBUG 2020-02-25 09:48:01,066 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:50:18,900 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:50:18,909 rundb_id: 31
+DEBUG 2020-02-25 09:50:18,909 uhash: 7fb6f1
+DEBUG 2020-02-25 09:50:19,027 calling: preup
+DEBUG 2020-02-25 09:50:19,027 hook preup initiated
+DEBUG 2020-02-25 09:50:23,992 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:51:13,016 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:51:13,030 rundb_id: 32
+DEBUG 2020-02-25 09:51:13,030 uhash: 1ac6c6
+DEBUG 2020-02-25 09:51:13,146 calling: preup
+DEBUG 2020-02-25 09:51:13,146 hook preup initiated
+DEBUG 2020-02-25 09:51:17,956 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:51:55,661 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:51:55,675 rundb_id: 33
+DEBUG 2020-02-25 09:51:55,676 uhash: 5515ed
+DEBUG 2020-02-25 09:51:55,801 calling: preup
+DEBUG 2020-02-25 09:51:55,802 hook preup initiated
+DEBUG 2020-02-25 09:52:00,859 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:52:57,064 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:52:57,077 rundb_id: 34
+DEBUG 2020-02-25 09:52:57,077 uhash: 99dbf2
+DEBUG 2020-02-25 09:52:57,197 calling: preup
+DEBUG 2020-02-25 09:52:57,197 hook preup initiated
+DEBUG 2020-02-25 09:53:02,261 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:56:14,671 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:56:14,685 rundb_id: 35
+DEBUG 2020-02-25 09:56:14,685 uhash: eca77f
+DEBUG 2020-02-25 09:56:14,805 calling: preup
+DEBUG 2020-02-25 09:56:14,805 hook preup initiated
+DEBUG 2020-02-25 09:56:19,595 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 09:57:32,158 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 09:57:32,168 rundb_id: 36
+DEBUG 2020-02-25 09:57:32,168 uhash: f73555
+DEBUG 2020-02-25 09:57:32,295 calling: preup
+DEBUG 2020-02-25 09:57:32,295 hook preup initiated
+DEBUG 2020-02-25 09:57:36,823 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:04:32,507 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:04:32,520 rundb_id: 37
+DEBUG 2020-02-25 10:04:32,520 uhash: 5e1be0
+DEBUG 2020-02-25 10:04:32,643 calling: preup
+DEBUG 2020-02-25 10:04:32,643 hook preup initiated
+DEBUG 2020-02-25 10:04:37,656 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:06:12,064 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:06:12,073 rundb_id: 38
+DEBUG 2020-02-25 10:06:12,073 uhash: 97a691
+DEBUG 2020-02-25 10:06:12,193 calling: preup
+DEBUG 2020-02-25 10:06:12,194 hook preup initiated
+DEBUG 2020-02-25 10:06:17,426 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:13:47,144 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:13:47,157 rundb_id: 39
+DEBUG 2020-02-25 10:13:47,158 uhash: b39a05
+DEBUG 2020-02-25 10:13:47,278 calling: preup
+DEBUG 2020-02-25 10:13:47,278 hook preup initiated
+DEBUG 2020-02-25 10:13:52,499 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:18:54,307 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:18:54,317 rundb_id: 40
+DEBUG 2020-02-25 10:18:54,317 uhash: 1cda9a
+DEBUG 2020-02-25 10:18:54,450 calling: preup
+DEBUG 2020-02-25 10:18:54,450 hook preup initiated
+DEBUG 2020-02-25 10:18:59,923 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:24:41,824 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:24:41,838 rundb_id: 41
+DEBUG 2020-02-25 10:24:41,838 uhash: 7034cc
+DEBUG 2020-02-25 10:24:41,966 calling: preup
+DEBUG 2020-02-25 10:24:41,966 hook preup initiated
+DEBUG 2020-02-25 10:24:47,176 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:33:22,678 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:33:22,693 rundb_id: 42
+DEBUG 2020-02-25 10:33:22,693 uhash: 88dedd
+DEBUG 2020-02-25 10:33:22,815 calling: preup
+DEBUG 2020-02-25 10:33:22,816 hook preup initiated
+DEBUG 2020-02-25 10:33:26,222 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:36:22,492 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:36:22,503 rundb_id: 43
+DEBUG 2020-02-25 10:36:22,503 uhash: 0f346a
+DEBUG 2020-02-25 10:36:22,635 calling: preup
+DEBUG 2020-02-25 10:36:22,635 hook preup initiated
+DEBUG 2020-02-25 10:36:26,192 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:40:53,599 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:40:53,613 rundb_id: 44
+DEBUG 2020-02-25 10:40:53,614 uhash: d1c29a
+DEBUG 2020-02-25 10:40:53,740 calling: preup
+DEBUG 2020-02-25 10:40:53,740 hook preup initiated
+DEBUG 2020-02-25 10:41:04,461 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:41:45,268 Processing target: libvirt-minimal
+DEBUG 2020-02-25 10:41:45,281 using data from run_id: None
+DEBUG 2020-02-25 10:41:45,281 rundb_id: 10
+DEBUG 2020-02-25 10:41:45,281 uhash: 90ef60
+DEBUG 2020-02-25 10:41:45,401 calling: predestroy
+DEBUG 2020-02-25 10:41:45,402 hook predestroy initiated
+DEBUG 2020-02-25 10:41:54,091 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:41:54,108 using data from run_id: None
+DEBUG 2020-02-25 10:41:54,108 rundb_id: 45
+DEBUG 2020-02-25 10:41:54,108 uhash: d1c29a
+DEBUG 2020-02-25 10:41:54,230 calling: predestroy
+DEBUG 2020-02-25 10:41:54,230 hook predestroy initiated
+INFO 2020-02-25 10:42:03,341 Playbook Return code 0
+DEBUG 2020-02-25 10:42:03,341 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-25 10:42:03,341 calling: postinv
+DEBUG 2020-02-25 10:42:03,386 hook postdestroy initiated
+DEBUG 2020-02-25 10:42:03,386 STATE - 
+ID: 17
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    45	d1c29a	        0
+
+DEBUG 2020-02-25 10:42:26,138 Processing target: libvirt-minimal
+DEBUG 2020-02-25 10:42:26,158 using data from run_id: None
+DEBUG 2020-02-25 10:42:26,158 rundb_id: 11
+DEBUG 2020-02-25 10:42:26,158 uhash: 90ef60
+DEBUG 2020-02-25 10:42:32,880 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:42:32,894 rundb_id: 46
+DEBUG 2020-02-25 10:42:32,894 uhash: f293c5
+DEBUG 2020-02-25 10:42:33,020 calling: preup
+DEBUG 2020-02-25 10:42:33,020 hook preup initiated
+DEBUG 2020-02-25 10:42:45,505 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:43:43,844 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:43:43,852 rundb_id: 47
+DEBUG 2020-02-25 10:43:43,852 uhash: 36d827
+DEBUG 2020-02-25 10:43:43,996 calling: preup
+DEBUG 2020-02-25 10:43:43,996 hook preup initiated
+DEBUG 2020-02-25 10:43:50,065 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-25 10:45:26,998 Processing target: libvirt-custom-xml
+DEBUG 2020-02-25 10:45:27,009 rundb_id: 48
+DEBUG 2020-02-25 10:45:27,009 uhash: 20e3fe
+DEBUG 2020-02-25 10:45:27,132 calling: preup
+DEBUG 2020-02-25 10:45:27,132 hook preup initiated
+DEBUG 2020-02-25 10:45:33,170 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 12:32:38,455 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:32:38,481 rundb_id: 49
+DEBUG 2020-02-26 12:32:38,481 uhash: 98d9c9
+DEBUG 2020-02-26 12:32:38,607 calling: preup
+DEBUG 2020-02-26 12:32:38,608 hook preup initiated
+DEBUG 2020-02-26 12:32:44,039 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 12:33:06,183 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:33:06,204 rundb_id: 50
+DEBUG 2020-02-26 12:33:06,204 uhash: ba429f
+DEBUG 2020-02-26 12:33:06,326 calling: preup
+DEBUG 2020-02-26 12:33:06,326 hook preup initiated
+INFO 2020-02-26 12:37:16,844 Playbook Return code 0
+DEBUG 2020-02-26 12:37:16,844 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:37:16,844 calling: postinv
+DEBUG 2020-02-26 12:37:16,844 hook postinv initiated
+DEBUG 2020-02-26 12:37:16,916 calling: postup
+DEBUG 2020-02-26 12:37:16,916 hook postup initiated
+DEBUG 2020-02-26 12:37:16,917 STATE - 
+ID: 18
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    50	ba429f	        0
+
+DEBUG 2020-02-26 12:40:04,291 STATE - linchpin version 1.10.0
+DEBUG 2020-02-26 12:42:57,101 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:42:57,121 using data from run_id: None
+DEBUG 2020-02-26 12:42:57,121 rundb_id: 51
+DEBUG 2020-02-26 12:42:57,121 uhash: ba429f
+DEBUG 2020-02-26 12:42:57,241 calling: predestroy
+DEBUG 2020-02-26 12:42:57,241 hook predestroy initiated
+INFO 2020-02-26 12:43:06,520 Playbook Return code 0
+DEBUG 2020-02-26 12:43:06,520 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:43:06,520 calling: postinv
+DEBUG 2020-02-26 12:43:06,571 hook postdestroy initiated
+DEBUG 2020-02-26 12:43:06,572 STATE - 
+ID: 19
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    51	ba429f	        0
+
+DEBUG 2020-02-26 12:43:49,601 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:43:49,616 rundb_id: 52
+DEBUG 2020-02-26 12:43:49,616 uhash: bff5f3
+DEBUG 2020-02-26 12:43:49,740 calling: preup
+DEBUG 2020-02-26 12:43:49,741 hook preup initiated
+INFO 2020-02-26 12:44:44,429 Playbook Return code 0
+DEBUG 2020-02-26 12:44:44,429 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:44:44,429 calling: postinv
+DEBUG 2020-02-26 12:44:44,430 hook postinv initiated
+DEBUG 2020-02-26 12:44:44,569 calling: postup
+DEBUG 2020-02-26 12:44:44,569 hook postup initiated
+DEBUG 2020-02-26 12:44:44,569 STATE - 
+ID: 20
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    52	bff5f3	        0
+
+DEBUG 2020-02-26 12:51:05,441 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:51:05,464 using data from run_id: None
+DEBUG 2020-02-26 12:51:05,464 rundb_id: 53
+DEBUG 2020-02-26 12:51:05,464 uhash: bff5f3
+DEBUG 2020-02-26 12:51:05,589 calling: predestroy
+DEBUG 2020-02-26 12:51:05,589 hook predestroy initiated
+INFO 2020-02-26 12:51:16,163 Playbook Return code 0
+DEBUG 2020-02-26 12:51:16,163 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:51:16,163 calling: postinv
+DEBUG 2020-02-26 12:51:16,208 hook postdestroy initiated
+DEBUG 2020-02-26 12:51:16,208 STATE - 
+ID: 21
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    53	bff5f3	        0
+
+DEBUG 2020-02-26 12:51:24,182 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:51:24,197 rundb_id: 54
+DEBUG 2020-02-26 12:51:24,197 uhash: e64bbe
+DEBUG 2020-02-26 12:51:24,334 calling: preup
+DEBUG 2020-02-26 12:51:24,334 hook preup initiated
+INFO 2020-02-26 12:52:23,121 Playbook Return code 0
+DEBUG 2020-02-26 12:52:23,121 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:52:23,121 calling: postinv
+DEBUG 2020-02-26 12:52:23,122 hook postinv initiated
+DEBUG 2020-02-26 12:52:23,205 calling: postup
+DEBUG 2020-02-26 12:52:23,205 hook postup initiated
+DEBUG 2020-02-26 12:52:23,205 STATE - 
+ID: 22
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    54	e64bbe	        0
+
+DEBUG 2020-02-26 12:56:54,933 STATE - linchpin version 1.10.0
+DEBUG 2020-02-26 12:58:11,909 STATE - Target 'libvirt-custom-xm' does not exist.
+DEBUG 2020-02-26 12:58:14,273 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:58:14,291 using data from run_id: None
+DEBUG 2020-02-26 12:58:14,291 rundb_id: 55
+DEBUG 2020-02-26 12:58:14,292 uhash: e64bbe
+DEBUG 2020-02-26 12:58:14,406 STATE - Target 'libvirt-custom-xml' does not validate.  For more information run `linchpin validate`
+DEBUG 2020-02-26 12:58:29,331 Processing target: libvirt-minimal
+DEBUG 2020-02-26 12:58:29,405 Processing target: libvirt-new
+DEBUG 2020-02-26 12:58:29,415 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:58:29,429 Processing target: libvirt-network
+DEBUG 2020-02-26 12:58:29,434 Processing target: libvirt-storage
+DEBUG 2020-02-26 12:58:29,439 Processing target: libvirt-custom-img
+DEBUG 2020-02-26 12:58:29,444 Processing target: libvirt-network-dns
+DEBUG 2020-02-26 12:58:29,449 Processing target: libvirt-multi-node-net
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-minimal' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-new' is valid
+[SUCCESS] layout for target 'libvirt-new' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [ERROR] topology for target 'libvirt-custom-xml' does not validate
+errors:
+	res_defs[0][cloud_config][users][0][ssh-authorized-keys]: field 'ssh-authorized-keys' could not be recognized within the schema provided
+[SUCCESS] layout for target 'libvirt-custom-xml' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-network' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-storage' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-custom-img' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-network-dns' is valid
+
+DEBUG 2020-02-26 12:58:29,459 STATE - [SUCCESS] topology for target 'libvirt-multi-node-net' is valid
+
+DEBUG 2020-02-26 12:58:45,538 Processing target: libvirt-minimal
+DEBUG 2020-02-26 12:58:45,606 Processing target: libvirt-new
+DEBUG 2020-02-26 12:58:45,615 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:58:45,621 Processing target: libvirt-network
+DEBUG 2020-02-26 12:58:45,625 Processing target: libvirt-storage
+DEBUG 2020-02-26 12:58:45,630 Processing target: libvirt-custom-img
+DEBUG 2020-02-26 12:58:45,634 Processing target: libvirt-network-dns
+DEBUG 2020-02-26 12:58:45,640 Processing target: libvirt-multi-node-net
+DEBUG 2020-02-26 12:58:45,648 STATE - [SUCCESS] topology for target 'libvirt-minimal' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-new' is valid
+[SUCCESS] layout for target 'libvirt-new' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-custom-xml' is valid
+[SUCCESS] layout for target 'libvirt-custom-xml' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-network' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-storage' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-custom-img' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-network-dns' is valid
+
+DEBUG 2020-02-26 12:58:45,649 STATE - [SUCCESS] topology for target 'libvirt-multi-node-net' is valid
+
+DEBUG 2020-02-26 12:58:49,731 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:58:49,752 using data from run_id: None
+DEBUG 2020-02-26 12:58:49,752 rundb_id: 56
+DEBUG 2020-02-26 12:58:49,752 uhash: e64bbe
+DEBUG 2020-02-26 12:58:49,884 calling: predestroy
+DEBUG 2020-02-26 12:58:49,884 hook predestroy initiated
+INFO 2020-02-26 12:59:00,248 Playbook Return code 0
+DEBUG 2020-02-26 12:59:00,248 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 12:59:00,248 calling: postinv
+DEBUG 2020-02-26 12:59:00,294 hook postdestroy initiated
+DEBUG 2020-02-26 12:59:00,295 STATE - 
+ID: 23
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    56	e64bbe	        0
+
+DEBUG 2020-02-26 12:59:19,735 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 12:59:19,752 rundb_id: 57
+DEBUG 2020-02-26 12:59:19,752 uhash: e5b45a
+DEBUG 2020-02-26 12:59:19,881 calling: preup
+DEBUG 2020-02-26 12:59:19,881 hook preup initiated
+INFO 2020-02-26 13:00:17,934 Playbook Return code 0
+DEBUG 2020-02-26 13:00:17,934 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:00:17,935 calling: postinv
+DEBUG 2020-02-26 13:00:17,935 hook postinv initiated
+DEBUG 2020-02-26 13:00:18,022 calling: postup
+DEBUG 2020-02-26 13:00:18,022 hook postup initiated
+DEBUG 2020-02-26 13:00:18,022 STATE - 
+ID: 24
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    57	e5b45a	        0
+
+DEBUG 2020-02-26 13:06:10,690 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:06:10,707 using data from run_id: None
+DEBUG 2020-02-26 13:06:10,707 rundb_id: 58
+DEBUG 2020-02-26 13:06:10,707 uhash: e5b45a
+DEBUG 2020-02-26 13:06:10,803 calling: predestroy
+DEBUG 2020-02-26 13:06:10,803 hook predestroy initiated
+INFO 2020-02-26 13:06:19,948 Playbook Return code 0
+DEBUG 2020-02-26 13:06:19,948 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:06:19,948 calling: postinv
+DEBUG 2020-02-26 13:06:20,011 hook postdestroy initiated
+DEBUG 2020-02-26 13:06:20,011 STATE - 
+ID: 25
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    58	e5b45a	        0
+
+DEBUG 2020-02-26 13:06:43,495 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:06:43,509 rundb_id: 59
+DEBUG 2020-02-26 13:06:43,510 uhash: 00d26a
+DEBUG 2020-02-26 13:06:43,613 calling: preup
+DEBUG 2020-02-26 13:06:43,613 hook preup initiated
+INFO 2020-02-26 13:07:41,654 Playbook Return code 0
+DEBUG 2020-02-26 13:07:41,654 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:07:41,655 calling: postinv
+DEBUG 2020-02-26 13:07:41,655 hook postinv initiated
+DEBUG 2020-02-26 13:07:41,716 calling: postup
+DEBUG 2020-02-26 13:07:41,716 hook postup initiated
+DEBUG 2020-02-26 13:07:41,716 STATE - 
+ID: 26
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    59	00d26a	        0
+
+DEBUG 2020-02-26 13:11:58,517 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:11:58,530 using data from run_id: None
+DEBUG 2020-02-26 13:11:58,530 rundb_id: 60
+DEBUG 2020-02-26 13:11:58,530 uhash: 00d26a
+DEBUG 2020-02-26 13:11:58,671 calling: predestroy
+DEBUG 2020-02-26 13:11:58,671 hook predestroy initiated
+INFO 2020-02-26 13:12:07,105 Playbook Return code 0
+DEBUG 2020-02-26 13:12:07,106 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:12:07,106 calling: postinv
+DEBUG 2020-02-26 13:12:07,160 hook postdestroy initiated
+DEBUG 2020-02-26 13:12:07,160 STATE - 
+ID: 27
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    60	00d26a	        0
+
+DEBUG 2020-02-26 13:12:16,636 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:12:16,653 rundb_id: 61
+DEBUG 2020-02-26 13:12:16,653 uhash: f25f75
+DEBUG 2020-02-26 13:12:16,799 calling: preup
+DEBUG 2020-02-26 13:12:16,799 hook preup initiated
+DEBUG 2020-02-26 13:12:37,145 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 13:13:28,126 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:13:28,145 rundb_id: 62
+DEBUG 2020-02-26 13:13:28,145 uhash: aab39c
+DEBUG 2020-02-26 13:13:28,268 calling: preup
+DEBUG 2020-02-26 13:13:28,269 hook preup initiated
+DEBUG 2020-02-26 13:14:10,895 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 13:17:54,761 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:17:54,782 using data from run_id: None
+DEBUG 2020-02-26 13:17:54,782 rundb_id: 63
+DEBUG 2020-02-26 13:17:54,782 uhash: aab39c
+DEBUG 2020-02-26 13:17:54,911 calling: predestroy
+DEBUG 2020-02-26 13:17:54,911 hook predestroy initiated
+INFO 2020-02-26 13:18:04,398 Playbook Return code 0
+DEBUG 2020-02-26 13:18:04,398 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:18:04,398 calling: postinv
+DEBUG 2020-02-26 13:18:04,497 hook postdestroy initiated
+DEBUG 2020-02-26 13:18:04,497 STATE - 
+ID: 28
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    63	aab39c	        0
+
+DEBUG 2020-02-26 13:20:09,831 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:20:09,849 rundb_id: 64
+DEBUG 2020-02-26 13:20:09,849 uhash: f3b4fb
+DEBUG 2020-02-26 13:20:09,991 calling: preup
+DEBUG 2020-02-26 13:20:09,991 hook preup initiated
+DEBUG 2020-02-26 13:20:53,520 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 13:24:04,624 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:24:04,642 using data from run_id: None
+DEBUG 2020-02-26 13:24:04,642 rundb_id: 65
+DEBUG 2020-02-26 13:24:04,642 uhash: f3b4fb
+DEBUG 2020-02-26 13:24:04,786 calling: predestroy
+DEBUG 2020-02-26 13:24:04,786 hook predestroy initiated
+INFO 2020-02-26 13:24:14,105 Playbook Return code 0
+DEBUG 2020-02-26 13:24:14,105 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:24:14,105 calling: postinv
+DEBUG 2020-02-26 13:24:14,205 hook postdestroy initiated
+DEBUG 2020-02-26 13:24:14,205 STATE - 
+ID: 29
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    65	f3b4fb	        0
+
+DEBUG 2020-02-26 13:24:25,565 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:24:25,582 rundb_id: 66
+DEBUG 2020-02-26 13:24:25,582 uhash: 350177
+DEBUG 2020-02-26 13:24:25,717 calling: preup
+DEBUG 2020-02-26 13:24:25,717 hook preup initiated
+DEBUG 2020-02-26 13:24:45,296 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-26 13:26:01,907 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:26:01,922 using data from run_id: None
+DEBUG 2020-02-26 13:26:01,922 rundb_id: 67
+DEBUG 2020-02-26 13:26:01,922 uhash: 350177
+DEBUG 2020-02-26 13:26:02,050 calling: predestroy
+DEBUG 2020-02-26 13:26:02,050 hook predestroy initiated
+INFO 2020-02-26 13:26:11,124 Playbook Return code 0
+DEBUG 2020-02-26 13:26:11,124 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:26:11,124 calling: postinv
+DEBUG 2020-02-26 13:26:11,200 hook postdestroy initiated
+DEBUG 2020-02-26 13:26:11,200 STATE - 
+ID: 30
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    67	350177	        0
+
+DEBUG 2020-02-26 13:26:22,459 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:26:22,466 rundb_id: 68
+DEBUG 2020-02-26 13:26:22,467 uhash: 809dc4
+DEBUG 2020-02-26 13:26:22,593 calling: preup
+DEBUG 2020-02-26 13:26:22,593 hook preup initiated
+INFO 2020-02-26 13:27:21,645 Playbook Return code 0
+DEBUG 2020-02-26 13:27:21,645 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:27:21,645 calling: postinv
+DEBUG 2020-02-26 13:27:21,646 hook postinv initiated
+DEBUG 2020-02-26 13:27:21,743 calling: postup
+DEBUG 2020-02-26 13:27:21,743 hook postup initiated
+DEBUG 2020-02-26 13:27:21,743 STATE - 
+ID: 31
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    68	809dc4	        0
+
+DEBUG 2020-02-26 13:33:57,817 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:33:57,832 using data from run_id: None
+DEBUG 2020-02-26 13:33:57,832 rundb_id: 69
+DEBUG 2020-02-26 13:33:57,832 uhash: 809dc4
+DEBUG 2020-02-26 13:33:57,964 calling: predestroy
+DEBUG 2020-02-26 13:33:57,964 hook predestroy initiated
+INFO 2020-02-26 13:34:08,777 Playbook Return code 0
+DEBUG 2020-02-26 13:34:08,777 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:34:08,777 calling: postinv
+DEBUG 2020-02-26 13:34:08,840 hook postdestroy initiated
+DEBUG 2020-02-26 13:34:08,841 STATE - 
+ID: 32
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    69	809dc4	        0
+
+DEBUG 2020-02-26 13:35:42,333 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:35:42,348 rundb_id: 70
+DEBUG 2020-02-26 13:35:42,348 uhash: 44486a
+DEBUG 2020-02-26 13:35:42,477 calling: preup
+DEBUG 2020-02-26 13:35:42,478 hook preup initiated
+INFO 2020-02-26 13:36:40,573 Playbook Return code 0
+DEBUG 2020-02-26 13:36:40,573 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:36:40,573 calling: postinv
+DEBUG 2020-02-26 13:36:40,573 hook postinv initiated
+DEBUG 2020-02-26 13:36:40,678 calling: postup
+DEBUG 2020-02-26 13:36:40,678 hook postup initiated
+DEBUG 2020-02-26 13:36:40,678 STATE - 
+ID: 33
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    70	44486a	        0
+
+DEBUG 2020-02-26 13:54:12,099 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:54:12,120 using data from run_id: None
+DEBUG 2020-02-26 13:54:12,120 rundb_id: 71
+DEBUG 2020-02-26 13:54:12,120 uhash: 44486a
+DEBUG 2020-02-26 13:54:12,244 calling: predestroy
+DEBUG 2020-02-26 13:54:12,244 hook predestroy initiated
+INFO 2020-02-26 13:54:21,793 Playbook Return code 0
+DEBUG 2020-02-26 13:54:21,793 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:54:21,793 calling: postinv
+DEBUG 2020-02-26 13:54:21,876 hook postdestroy initiated
+DEBUG 2020-02-26 13:54:21,876 STATE - 
+ID: 34
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    71	44486a	        0
+
+DEBUG 2020-02-26 13:54:28,045 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 13:54:28,057 rundb_id: 72
+DEBUG 2020-02-26 13:54:28,057 uhash: b49bf9
+DEBUG 2020-02-26 13:54:28,193 calling: preup
+DEBUG 2020-02-26 13:54:28,193 hook preup initiated
+INFO 2020-02-26 13:57:39,700 Playbook Return code 0
+DEBUG 2020-02-26 13:57:39,700 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 13:57:39,700 calling: postinv
+DEBUG 2020-02-26 13:57:39,700 hook postinv initiated
+DEBUG 2020-02-26 13:57:39,798 calling: postup
+DEBUG 2020-02-26 13:57:39,798 hook postup initiated
+DEBUG 2020-02-26 13:57:39,799 STATE - 
+ID: 35
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    72	b49bf9	        0
+
+DEBUG 2020-02-26 14:04:06,204 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 14:04:06,221 using data from run_id: None
+DEBUG 2020-02-26 14:04:06,221 rundb_id: 73
+DEBUG 2020-02-26 14:04:06,221 uhash: b49bf9
+DEBUG 2020-02-26 14:04:06,345 calling: predestroy
+DEBUG 2020-02-26 14:04:06,345 hook predestroy initiated
+INFO 2020-02-26 14:04:15,889 Playbook Return code 0
+DEBUG 2020-02-26 14:04:15,889 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 14:04:15,889 calling: postinv
+DEBUG 2020-02-26 14:04:15,981 hook postdestroy initiated
+DEBUG 2020-02-26 14:04:15,981 STATE - 
+ID: 36
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    73	b49bf9	        0
+
+DEBUG 2020-02-26 14:04:32,552 Processing target: libvirt-custom-xml
+DEBUG 2020-02-26 14:04:32,567 rundb_id: 74
+DEBUG 2020-02-26 14:04:32,567 uhash: 9b370b
+DEBUG 2020-02-26 14:04:32,702 calling: preup
+DEBUG 2020-02-26 14:04:32,702 hook preup initiated
+INFO 2020-02-26 14:05:33,566 Playbook Return code 0
+DEBUG 2020-02-26 14:05:33,566 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-26 14:05:33,567 calling: postinv
+DEBUG 2020-02-26 14:05:33,567 hook postinv initiated
+DEBUG 2020-02-26 14:05:33,674 calling: postup
+DEBUG 2020-02-26 14:05:33,674 hook postup initiated
+DEBUG 2020-02-26 14:05:33,674 STATE - 
+ID: 37
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    74	9b370b	        0
+
+DEBUG 2020-02-27 11:48:18,217 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:48:18,229 rundb_id: 75
+DEBUG 2020-02-27 11:48:18,229 uhash: c360bf
+DEBUG 2020-02-27 11:48:18,349 calling: preup
+DEBUG 2020-02-27 11:48:18,349 hook preup initiated
+DEBUG 2020-02-27 11:48:23,299 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 11:48:52,489 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:48:52,501 rundb_id: 76
+DEBUG 2020-02-27 11:48:52,502 uhash: 2126d6
+DEBUG 2020-02-27 11:48:52,629 calling: preup
+DEBUG 2020-02-27 11:48:52,629 hook preup initiated
+DEBUG 2020-02-27 11:49:35,992 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:49:36,008 using data from run_id: None
+DEBUG 2020-02-27 11:49:36,008 rundb_id: 77
+DEBUG 2020-02-27 11:49:36,008 uhash: 2126d6
+DEBUG 2020-02-27 11:49:36,134 calling: predestroy
+DEBUG 2020-02-27 11:49:36,134 hook predestroy initiated
+INFO 2020-02-27 11:49:45,493 Playbook Return code 0
+DEBUG 2020-02-27 11:49:45,493 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-27 11:49:45,493 calling: postinv
+DEBUG 2020-02-27 11:49:45,573 hook postdestroy initiated
+DEBUG 2020-02-27 11:49:45,573 STATE - 
+ID: 38
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    77	2126d6	        0
+
+DEBUG 2020-02-27 11:51:07,549 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:51:07,562 rundb_id: 78
+DEBUG 2020-02-27 11:51:07,562 uhash: 094ae0
+DEBUG 2020-02-27 11:51:07,694 calling: preup
+DEBUG 2020-02-27 11:51:07,695 hook preup initiated
+DEBUG 2020-02-27 11:51:25,326 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 11:57:38,046 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:57:38,069 rundb_id: 79
+DEBUG 2020-02-27 11:57:38,069 uhash: 68d556
+DEBUG 2020-02-27 11:57:38,211 calling: preup
+DEBUG 2020-02-27 11:57:38,211 hook preup initiated
+DEBUG 2020-02-27 11:57:41,234 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 11:59:02,973 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 11:59:02,996 rundb_id: 80
+DEBUG 2020-02-27 11:59:02,997 uhash: dce75f
+DEBUG 2020-02-27 11:59:03,135 calling: preup
+DEBUG 2020-02-27 11:59:03,135 hook preup initiated
+DEBUG 2020-02-27 11:59:06,267 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:00:50,406 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:00:50,426 rundb_id: 81
+DEBUG 2020-02-27 12:00:50,426 uhash: 4809bf
+DEBUG 2020-02-27 12:00:50,545 calling: preup
+DEBUG 2020-02-27 12:00:50,546 hook preup initiated
+DEBUG 2020-02-27 12:00:53,518 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:02:52,394 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:02:52,406 rundb_id: 82
+DEBUG 2020-02-27 12:02:52,406 uhash: f32694
+DEBUG 2020-02-27 12:02:52,545 calling: preup
+DEBUG 2020-02-27 12:02:52,545 hook preup initiated
+DEBUG 2020-02-27 12:02:55,898 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:05:22,702 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:05:22,717 rundb_id: 83
+DEBUG 2020-02-27 12:05:22,717 uhash: 84c528
+DEBUG 2020-02-27 12:05:22,839 calling: preup
+DEBUG 2020-02-27 12:05:22,839 hook preup initiated
+DEBUG 2020-02-27 12:05:29,262 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:05:29,277 rundb_id: 84
+DEBUG 2020-02-27 12:05:29,277 uhash: 9e0c3f
+DEBUG 2020-02-27 12:05:29,413 calling: preup
+DEBUG 2020-02-27 12:05:29,413 hook preup initiated
+DEBUG 2020-02-27 12:05:32,519 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:07:05,575 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:07:05,592 rundb_id: 85
+DEBUG 2020-02-27 12:07:05,593 uhash: b2f352
+DEBUG 2020-02-27 12:07:05,736 calling: preup
+DEBUG 2020-02-27 12:07:05,736 hook preup initiated
+DEBUG 2020-02-27 12:07:12,078 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:09:40,003 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:09:40,026 rundb_id: 86
+DEBUG 2020-02-27 12:09:40,026 uhash: 1ade86
+DEBUG 2020-02-27 12:09:40,192 calling: preup
+DEBUG 2020-02-27 12:09:40,192 hook preup initiated
+DEBUG 2020-02-27 12:09:45,803 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:13:36,373 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:13:36,392 rundb_id: 87
+DEBUG 2020-02-27 12:13:36,392 uhash: dae2c5
+DEBUG 2020-02-27 12:13:36,536 calling: preup
+DEBUG 2020-02-27 12:13:36,536 hook preup initiated
+DEBUG 2020-02-27 12:13:49,869 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:16:35,962 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:16:35,975 rundb_id: 88
+DEBUG 2020-02-27 12:16:35,975 uhash: 0fafcd
+DEBUG 2020-02-27 12:16:36,106 calling: preup
+DEBUG 2020-02-27 12:16:36,106 hook preup initiated
+DEBUG 2020-02-27 12:16:46,282 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:19:42,996 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:19:43,015 rundb_id: 89
+DEBUG 2020-02-27 12:19:43,015 uhash: 169a66
+DEBUG 2020-02-27 12:19:43,144 calling: preup
+DEBUG 2020-02-27 12:19:43,144 hook preup initiated
+DEBUG 2020-02-27 12:19:48,657 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:22:49,003 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:22:49,019 rundb_id: 90
+DEBUG 2020-02-27 12:22:49,019 uhash: 6dc706
+DEBUG 2020-02-27 12:22:49,150 calling: preup
+DEBUG 2020-02-27 12:22:49,150 hook preup initiated
+DEBUG 2020-02-27 12:22:55,191 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:24:23,764 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:24:23,780 rundb_id: 91
+DEBUG 2020-02-27 12:24:23,780 uhash: 8298ef
+DEBUG 2020-02-27 12:24:23,932 calling: preup
+DEBUG 2020-02-27 12:24:23,932 hook preup initiated
+DEBUG 2020-02-27 12:24:30,174 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:25:11,792 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:25:11,810 rundb_id: 92
+DEBUG 2020-02-27 12:25:11,810 uhash: 947847
+DEBUG 2020-02-27 12:25:11,945 calling: preup
+DEBUG 2020-02-27 12:25:11,945 hook preup initiated
+DEBUG 2020-02-27 12:25:18,441 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:31:59,853 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:31:59,870 rundb_id: 93
+DEBUG 2020-02-27 12:31:59,870 uhash: d245cc
+DEBUG 2020-02-27 12:32:00,016 calling: preup
+DEBUG 2020-02-27 12:32:00,016 hook preup initiated
+DEBUG 2020-02-27 12:32:06,585 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:32:48,491 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:32:48,536 rundb_id: 94
+DEBUG 2020-02-27 12:32:48,536 uhash: 23bbdb
+DEBUG 2020-02-27 12:32:48,678 calling: preup
+DEBUG 2020-02-27 12:32:48,678 hook preup initiated
+DEBUG 2020-02-27 12:32:54,861 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 12:35:38,937 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 12:35:38,955 rundb_id: 95
+DEBUG 2020-02-27 12:35:38,955 uhash: bb85cd
+DEBUG 2020-02-27 12:35:39,083 calling: preup
+DEBUG 2020-02-27 12:35:39,083 hook preup initiated
+DEBUG 2020-02-27 12:35:45,421 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 15:06:38,596 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 15:06:38,615 rundb_id: 96
+DEBUG 2020-02-27 15:06:38,615 uhash: 329597
+DEBUG 2020-02-27 15:06:38,754 calling: preup
+DEBUG 2020-02-27 15:06:38,754 hook preup initiated
+DEBUG 2020-02-27 15:06:45,226 STATE - Unsuccessful provision of resource
+DEBUG 2020-02-27 15:07:02,959 Processing target: libvirt-custom-xml
+DEBUG 2020-02-27 15:07:02,977 rundb_id: 97
+DEBUG 2020-02-27 15:07:02,977 uhash: 74ca4c
+DEBUG 2020-02-27 15:07:03,112 calling: preup
+DEBUG 2020-02-27 15:07:03,112 hook preup initiated
+INFO 2020-02-27 15:07:54,490 Playbook Return code 0
+DEBUG 2020-02-27 15:07:54,490 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-02-27 15:07:54,490 calling: postinv
+DEBUG 2020-02-27 15:07:54,490 hook postinv initiated
+DEBUG 2020-02-27 15:07:54,614 calling: postup
+DEBUG 2020-02-27 15:07:54,614 hook postup initiated
+DEBUG 2020-02-27 15:07:54,614 STATE - 
+ID: 39
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	    97	74ca4c	        0
+
+DEBUG 2020-03-02 17:56:25,821 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 17:56:25,832 rundb_id: 98
+DEBUG 2020-03-02 17:56:25,832 uhash: 215f0f
+DEBUG 2020-03-02 17:56:25,944 calling: preup
+DEBUG 2020-03-02 17:56:25,944 hook preup initiated
+DEBUG 2020-03-02 17:57:02,219 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 17:58:44,741 STATE - YAML parsing error: mapping values are not allowed here
+  in "<unicode string>", line 78, column 20:
+                  users:
+                       ^
+DEBUG 2020-03-02 17:59:19,444 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 17:59:19,460 rundb_id: 99
+DEBUG 2020-03-02 17:59:19,460 uhash: 1cc0ca
+DEBUG 2020-03-02 17:59:19,612 calling: preup
+DEBUG 2020-03-02 17:59:19,612 hook preup initiated
+DEBUG 2020-03-02 17:59:26,939 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:01:15,179 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:01:15,194 rundb_id: 100
+DEBUG 2020-03-02 18:01:15,194 uhash: 9d0754
+DEBUG 2020-03-02 18:01:15,324 calling: preup
+DEBUG 2020-03-02 18:01:15,324 hook preup initiated
+DEBUG 2020-03-02 18:01:21,813 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:04:01,968 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:04:01,980 rundb_id: 101
+DEBUG 2020-03-02 18:04:01,980 uhash: bbe305
+DEBUG 2020-03-02 18:04:02,126 calling: preup
+DEBUG 2020-03-02 18:04:02,126 hook preup initiated
+DEBUG 2020-03-02 18:05:45,561 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:05:45,584 using data from run_id: None
+DEBUG 2020-03-02 18:05:45,585 rundb_id: 102
+DEBUG 2020-03-02 18:05:45,585 uhash: bbe305
+DEBUG 2020-03-02 18:05:45,770 calling: predestroy
+DEBUG 2020-03-02 18:05:45,770 hook predestroy initiated
+INFO 2020-03-02 18:05:54,544 Playbook Return code 0
+DEBUG 2020-03-02 18:05:54,544 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-02 18:05:54,544 calling: postinv
+DEBUG 2020-03-02 18:05:54,625 hook postdestroy initiated
+DEBUG 2020-03-02 18:05:54,625 STATE - 
+ID: 40
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   102	bbe305	        0
+
+DEBUG 2020-03-02 18:06:36,766 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:06:36,789 rundb_id: 103
+DEBUG 2020-03-02 18:06:36,789 uhash: 0754d5
+DEBUG 2020-03-02 18:06:36,932 calling: preup
+DEBUG 2020-03-02 18:06:36,933 hook preup initiated
+DEBUG 2020-03-02 18:09:56,204 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:09:56,226 using data from run_id: None
+DEBUG 2020-03-02 18:09:56,226 rundb_id: 104
+DEBUG 2020-03-02 18:09:56,226 uhash: 0754d5
+DEBUG 2020-03-02 18:09:56,376 calling: predestroy
+DEBUG 2020-03-02 18:09:56,376 hook predestroy initiated
+INFO 2020-03-02 18:10:05,451 Playbook Return code 0
+DEBUG 2020-03-02 18:10:05,451 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-02 18:10:05,452 calling: postinv
+DEBUG 2020-03-02 18:10:05,505 hook postdestroy initiated
+DEBUG 2020-03-02 18:10:05,505 STATE - 
+ID: 41
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   104	0754d5	        0
+
+DEBUG 2020-03-02 18:10:20,861 Processing target: libvirt-new
+DEBUG 2020-03-02 18:10:20,877 rundb_id: 4
+DEBUG 2020-03-02 18:10:20,877 uhash: da3067
+DEBUG 2020-03-02 18:10:20,992 calling: preup
+DEBUG 2020-03-02 18:10:20,992 hook preup initiated
+DEBUG 2020-03-02 18:13:14,741 Processing target: libvirt-new
+DEBUG 2020-03-02 18:13:14,765 using data from run_id: None
+DEBUG 2020-03-02 18:13:14,765 rundb_id: 5
+DEBUG 2020-03-02 18:13:14,765 uhash: da3067
+DEBUG 2020-03-02 18:13:14,915 calling: predestroy
+DEBUG 2020-03-02 18:13:14,915 hook predestroy initiated
+INFO 2020-03-02 18:13:23,248 Playbook Return code 0
+DEBUG 2020-03-02 18:13:23,249 STATE - Action 'destroy' on Target 'libvirt-new' is complete
+DEBUG 2020-03-02 18:13:23,249 calling: postinv
+DEBUG 2020-03-02 18:13:23,325 hook postdestroy initiated
+DEBUG 2020-03-02 18:13:23,325 STATE - 
+ID: 42
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-new         	     5	da3067	        0
+
+DEBUG 2020-03-02 18:14:24,965 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:14:24,973 rundb_id: 105
+DEBUG 2020-03-02 18:14:24,974 uhash: 39eb2b
+DEBUG 2020-03-02 18:14:25,108 calling: preup
+DEBUG 2020-03-02 18:14:25,109 hook preup initiated
+DEBUG 2020-03-02 18:16:49,310 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:16:49,332 rundb_id: 12
+DEBUG 2020-03-02 18:16:49,332 uhash: 945847
+DEBUG 2020-03-02 18:16:49,464 calling: preup
+DEBUG 2020-03-02 18:16:49,464 hook preup initiated
+DEBUG 2020-03-02 18:16:54,138 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:17:19,170 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:17:19,184 rundb_id: 106
+DEBUG 2020-03-02 18:17:19,184 uhash: e2bcdd
+DEBUG 2020-03-02 18:17:19,328 calling: preup
+DEBUG 2020-03-02 18:17:19,328 hook preup initiated
+DEBUG 2020-03-02 18:20:25,207 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:20:25,219 rundb_id: 13
+DEBUG 2020-03-02 18:20:25,219 uhash: 684ebc
+DEBUG 2020-03-02 18:20:25,333 STATE - Target 'libvirt-minimal' does not validate.  For more information run `linchpin validate`
+DEBUG 2020-03-02 18:20:33,957 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:20:34,029 Processing target: libvirt-new
+DEBUG 2020-03-02 18:20:34,039 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:20:34,045 Processing target: libvirt-network
+DEBUG 2020-03-02 18:20:34,050 Processing target: libvirt-storage
+DEBUG 2020-03-02 18:20:34,055 Processing target: libvirt-custom-img
+DEBUG 2020-03-02 18:20:34,059 Processing target: libvirt-network-dns
+DEBUG 2020-03-02 18:20:34,065 Processing target: libvirt-multi-node-net
+DEBUG 2020-03-02 18:20:34,074 STATE - [ERROR] topology for target 'libvirt-minimal' does not validate
+errors:
+	res_defs[1][networks][0]: value for field '0' must be of type 'dict'
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-new' is valid
+[SUCCESS] layout for target 'libvirt-new' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-custom-xml' is valid
+[SUCCESS] layout for target 'libvirt-custom-xml' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-network' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-storage' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-custom-img' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-network-dns' is valid
+
+DEBUG 2020-03-02 18:20:34,074 STATE - [SUCCESS] topology for target 'libvirt-multi-node-net' is valid
+
+DEBUG 2020-03-02 18:21:00,966 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:21:00,984 rundb_id: 14
+DEBUG 2020-03-02 18:21:00,985 uhash: fda9bd
+DEBUG 2020-03-02 18:21:01,085 calling: preup
+DEBUG 2020-03-02 18:21:01,085 hook preup initiated
+DEBUG 2020-03-02 18:21:05,459 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:21:22,880 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:21:22,900 rundb_id: 15
+DEBUG 2020-03-02 18:21:22,901 uhash: 430616
+DEBUG 2020-03-02 18:21:23,021 calling: preup
+DEBUG 2020-03-02 18:21:23,021 hook preup initiated
+DEBUG 2020-03-02 18:23:07,130 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:23:07,146 rundb_id: 16
+DEBUG 2020-03-02 18:23:07,146 uhash: 97390a
+DEBUG 2020-03-02 18:23:07,295 calling: preup
+DEBUG 2020-03-02 18:23:07,295 hook preup initiated
+DEBUG 2020-03-02 18:23:15,064 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:23:15,093 using data from run_id: None
+DEBUG 2020-03-02 18:23:15,093 rundb_id: 17
+DEBUG 2020-03-02 18:23:15,093 uhash: 97390a
+DEBUG 2020-03-02 18:23:15,233 calling: predestroy
+DEBUG 2020-03-02 18:23:15,233 hook predestroy initiated
+INFO 2020-03-02 18:23:24,085 Playbook Return code 0
+DEBUG 2020-03-02 18:23:24,085 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-03-02 18:23:24,085 calling: postinv
+DEBUG 2020-03-02 18:23:24,219 hook postdestroy initiated
+DEBUG 2020-03-02 18:23:24,220 STATE - 
+ID: 43
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	    17	97390a	        0
+
+DEBUG 2020-03-02 18:23:38,917 Processing target: libvirt-minimal
+DEBUG 2020-03-02 18:23:38,941 rundb_id: 18
+DEBUG 2020-03-02 18:23:38,941 uhash: aafab7
+DEBUG 2020-03-02 18:23:39,074 calling: preup
+DEBUG 2020-03-02 18:23:39,074 hook preup initiated
+DEBUG 2020-03-02 18:27:02,160 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:27:02,185 using data from run_id: None
+DEBUG 2020-03-02 18:27:02,186 rundb_id: 107
+DEBUG 2020-03-02 18:27:02,186 uhash: e2bcdd
+DEBUG 2020-03-02 18:27:02,333 calling: predestroy
+DEBUG 2020-03-02 18:27:02,333 hook predestroy initiated
+INFO 2020-03-02 18:27:10,133 Playbook Return code 0
+DEBUG 2020-03-02 18:27:10,134 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-02 18:27:10,134 calling: postinv
+DEBUG 2020-03-02 18:27:10,189 hook postdestroy initiated
+DEBUG 2020-03-02 18:27:10,189 STATE - 
+ID: 44
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   107	e2bcdd	        0
+
+DEBUG 2020-03-02 18:27:53,947 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:27:53,958 rundb_id: 108
+DEBUG 2020-03-02 18:27:53,959 uhash: 7a7041
+DEBUG 2020-03-02 18:27:54,091 calling: preup
+DEBUG 2020-03-02 18:27:54,091 hook preup initiated
+DEBUG 2020-03-02 18:28:12,288 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:28:50,510 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:28:50,532 using data from run_id: None
+DEBUG 2020-03-02 18:28:50,532 rundb_id: 109
+DEBUG 2020-03-02 18:28:50,532 uhash: 7a7041
+DEBUG 2020-03-02 18:28:50,710 calling: predestroy
+DEBUG 2020-03-02 18:28:50,710 hook predestroy initiated
+INFO 2020-03-02 18:28:59,804 Playbook Return code 0
+DEBUG 2020-03-02 18:28:59,804 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-02 18:28:59,804 calling: postinv
+DEBUG 2020-03-02 18:28:59,853 hook postdestroy initiated
+DEBUG 2020-03-02 18:28:59,854 STATE - 
+ID: 45
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   109	7a7041	        0
+
+DEBUG 2020-03-02 18:29:02,142 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:29:02,162 rundb_id: 110
+DEBUG 2020-03-02 18:29:02,162 uhash: fae3de
+DEBUG 2020-03-02 18:29:02,296 calling: preup
+DEBUG 2020-03-02 18:29:02,296 hook preup initiated
+DEBUG 2020-03-02 18:29:24,418 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:30:31,415 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:30:31,427 rundb_id: 111
+DEBUG 2020-03-02 18:30:31,427 uhash: a231ed
+DEBUG 2020-03-02 18:30:31,565 calling: preup
+DEBUG 2020-03-02 18:30:31,565 hook preup initiated
+DEBUG 2020-03-02 18:30:35,796 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:31:28,892 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:31:28,904 rundb_id: 112
+DEBUG 2020-03-02 18:31:28,904 uhash: 8b0445
+DEBUG 2020-03-02 18:31:29,024 calling: preup
+DEBUG 2020-03-02 18:31:29,024 hook preup initiated
+DEBUG 2020-03-02 18:31:33,842 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:32:22,347 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:32:22,363 rundb_id: 113
+DEBUG 2020-03-02 18:32:22,363 uhash: 95e6a6
+DEBUG 2020-03-02 18:32:22,485 calling: preup
+DEBUG 2020-03-02 18:32:22,485 hook preup initiated
+DEBUG 2020-03-02 18:32:26,599 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:33:05,410 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:33:05,427 rundb_id: 114
+DEBUG 2020-03-02 18:33:05,427 uhash: d93b3f
+DEBUG 2020-03-02 18:33:05,549 calling: preup
+DEBUG 2020-03-02 18:33:05,549 hook preup initiated
+DEBUG 2020-03-02 18:33:09,804 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:34:37,127 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:34:37,139 rundb_id: 115
+DEBUG 2020-03-02 18:34:37,139 uhash: b1f6f6
+DEBUG 2020-03-02 18:34:37,257 calling: preup
+DEBUG 2020-03-02 18:34:37,257 hook preup initiated
+DEBUG 2020-03-02 18:34:41,359 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:35:59,560 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:35:59,583 rundb_id: 116
+DEBUG 2020-03-02 18:35:59,583 uhash: 538afc
+DEBUG 2020-03-02 18:35:59,713 calling: preup
+DEBUG 2020-03-02 18:35:59,714 hook preup initiated
+DEBUG 2020-03-02 18:36:03,918 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:36:38,978 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:36:39,001 rundb_id: 117
+DEBUG 2020-03-02 18:36:39,001 uhash: de4bc4
+DEBUG 2020-03-02 18:36:39,130 calling: preup
+DEBUG 2020-03-02 18:36:39,130 hook preup initiated
+DEBUG 2020-03-02 18:36:43,694 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:37:30,115 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:37:30,134 rundb_id: 118
+DEBUG 2020-03-02 18:37:30,135 uhash: 6ed782
+DEBUG 2020-03-02 18:37:30,267 calling: preup
+DEBUG 2020-03-02 18:37:30,267 hook preup initiated
+DEBUG 2020-03-02 18:37:34,526 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:37:47,451 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:37:47,472 rundb_id: 119
+DEBUG 2020-03-02 18:37:47,472 uhash: a144a6
+DEBUG 2020-03-02 18:37:47,604 calling: preup
+DEBUG 2020-03-02 18:37:47,604 hook preup initiated
+DEBUG 2020-03-02 18:37:54,737 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-02 18:39:29,804 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:39:29,833 using data from run_id: None
+DEBUG 2020-03-02 18:39:29,833 rundb_id: 120
+DEBUG 2020-03-02 18:39:29,834 uhash: a144a6
+DEBUG 2020-03-02 18:39:29,998 calling: predestroy
+DEBUG 2020-03-02 18:39:29,998 hook predestroy initiated
+INFO 2020-03-02 18:39:38,222 Playbook Return code 0
+DEBUG 2020-03-02 18:39:38,222 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-02 18:39:38,222 calling: postinv
+DEBUG 2020-03-02 18:39:38,312 hook postdestroy initiated
+DEBUG 2020-03-02 18:39:38,312 STATE - 
+ID: 46
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   120	a144a6	        0
+
+DEBUG 2020-03-02 18:39:45,491 Processing target: libvirt-custom-xml
+DEBUG 2020-03-02 18:39:45,509 rundb_id: 121
+DEBUG 2020-03-02 18:39:45,509 uhash: f4fa6e
+DEBUG 2020-03-02 18:39:45,653 calling: preup
+DEBUG 2020-03-02 18:39:45,653 hook preup initiated
+DEBUG 2020-03-18 13:12:36,098 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:12:36,132 rundb_id: 19
+DEBUG 2020-03-18 13:12:36,133 uhash: dd4a62
+DEBUG 2020-03-18 13:12:36,469 calling: preup
+DEBUG 2020-03-18 13:12:36,470 hook preup initiated
+DEBUG 2020-03-18 13:19:37,059 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 13:21:38,926 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:21:38,966 using data from run_id: None
+DEBUG 2020-03-18 13:21:38,966 rundb_id: 20
+DEBUG 2020-03-18 13:21:38,966 uhash: dd4a62
+DEBUG 2020-03-18 13:21:39,418 calling: predestroy
+DEBUG 2020-03-18 13:21:39,418 hook predestroy initiated
+INFO 2020-03-18 13:22:02,970 Playbook Return code 0
+DEBUG 2020-03-18 13:22:02,971 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-03-18 13:22:02,971 calling: postinv
+DEBUG 2020-03-18 13:22:03,110 hook postdestroy initiated
+DEBUG 2020-03-18 13:22:03,110 STATE - 
+ID: 47
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	    20	dd4a62	        0
+
+DEBUG 2020-03-18 13:37:04,952 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:37:04,980 rundb_id: 21
+DEBUG 2020-03-18 13:37:04,981 uhash: 3cae8b
+DEBUG 2020-03-18 13:37:05,305 calling: preup
+DEBUG 2020-03-18 13:37:05,306 hook preup initiated
+DEBUG 2020-03-18 13:37:17,452 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 13:40:22,349 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:40:22,376 rundb_id: 22
+DEBUG 2020-03-18 13:40:22,376 uhash: 6842c3
+DEBUG 2020-03-18 13:40:22,695 calling: preup
+DEBUG 2020-03-18 13:40:22,696 hook preup initiated
+DEBUG 2020-03-18 13:41:06,359 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 13:42:26,460 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:42:26,488 rundb_id: 23
+DEBUG 2020-03-18 13:42:26,488 uhash: 9f6564
+DEBUG 2020-03-18 13:42:26,702 calling: preup
+DEBUG 2020-03-18 13:42:26,702 hook preup initiated
+DEBUG 2020-03-18 13:42:55,315 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 13:44:34,704 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:44:34,740 rundb_id: 24
+DEBUG 2020-03-18 13:44:34,740 uhash: 72824a
+DEBUG 2020-03-18 13:44:34,927 calling: preup
+DEBUG 2020-03-18 13:44:34,928 hook preup initiated
+DEBUG 2020-03-18 13:45:03,828 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 13:46:01,581 Processing target: libvirt-minimal
+DEBUG 2020-03-18 13:46:01,601 rundb_id: 25
+DEBUG 2020-03-18 13:46:01,601 uhash: dad23b
+DEBUG 2020-03-18 13:46:01,983 calling: preup
+DEBUG 2020-03-18 13:46:01,983 hook preup initiated
+DEBUG 2020-03-18 13:52:30,442 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:32:12,351 STATE - linchpin version 1.10.0
+DEBUG 2020-03-18 14:33:33,995 Processing target: libvirt-minimal
+DEBUG 2020-03-18 14:33:34,061 using data from run_id: None
+DEBUG 2020-03-18 14:33:34,062 rundb_id: 26
+DEBUG 2020-03-18 14:33:34,062 uhash: dad23b
+DEBUG 2020-03-18 14:33:34,577 calling: predestroy
+DEBUG 2020-03-18 14:33:34,577 hook predestroy initiated
+INFO 2020-03-18 14:34:07,842 Playbook Return code 0
+DEBUG 2020-03-18 14:34:07,843 STATE - Action 'destroy' on Target 'libvirt-minimal' is complete
+DEBUG 2020-03-18 14:34:07,844 calling: postinv
+DEBUG 2020-03-18 14:34:08,000 hook postdestroy initiated
+DEBUG 2020-03-18 14:34:08,001 STATE - 
+ID: 48
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-minimal     	    26	dad23b	        0
+
+DEBUG 2020-03-18 14:35:00,113 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:35:00,149 rundb_id: 122
+DEBUG 2020-03-18 14:35:00,149 uhash: 307f9a
+DEBUG 2020-03-18 14:35:00,601 calling: preup
+DEBUG 2020-03-18 14:35:00,601 hook preup initiated
+DEBUG 2020-03-18 14:35:36,159 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:40:59,263 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:40:59,296 rundb_id: 123
+DEBUG 2020-03-18 14:40:59,297 uhash: e2d44b
+DEBUG 2020-03-18 14:40:59,707 calling: preup
+DEBUG 2020-03-18 14:40:59,708 hook preup initiated
+DEBUG 2020-03-18 14:41:37,488 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:43:44,769 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:43:44,818 rundb_id: 124
+DEBUG 2020-03-18 14:43:44,818 uhash: 7fee80
+DEBUG 2020-03-18 14:43:45,430 calling: preup
+DEBUG 2020-03-18 14:43:45,431 hook preup initiated
+DEBUG 2020-03-18 14:44:37,318 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:45:08,793 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:45:08,826 rundb_id: 125
+DEBUG 2020-03-18 14:45:08,827 uhash: 3558e3
+DEBUG 2020-03-18 14:45:09,123 calling: preup
+DEBUG 2020-03-18 14:45:09,124 hook preup initiated
+DEBUG 2020-03-18 14:45:51,634 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:46:33,943 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:46:33,980 rundb_id: 126
+DEBUG 2020-03-18 14:46:33,981 uhash: b6b0d9
+DEBUG 2020-03-18 14:46:34,356 calling: preup
+DEBUG 2020-03-18 14:46:34,356 hook preup initiated
+DEBUG 2020-03-18 14:46:53,532 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:51:36,368 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:51:36,397 rundb_id: 127
+DEBUG 2020-03-18 14:51:36,398 uhash: d5ffae
+DEBUG 2020-03-18 14:51:36,774 calling: preup
+DEBUG 2020-03-18 14:51:36,774 hook preup initiated
+DEBUG 2020-03-18 14:51:55,892 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:53:48,498 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:53:48,520 rundb_id: 128
+DEBUG 2020-03-18 14:53:48,520 uhash: 4b09aa
+DEBUG 2020-03-18 14:53:49,015 calling: preup
+DEBUG 2020-03-18 14:53:49,015 hook preup initiated
+DEBUG 2020-03-18 14:54:09,041 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:56:11,042 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:56:11,075 rundb_id: 129
+DEBUG 2020-03-18 14:56:11,075 uhash: a0a5be
+DEBUG 2020-03-18 14:56:11,285 calling: preup
+DEBUG 2020-03-18 14:56:11,285 hook preup initiated
+DEBUG 2020-03-18 14:56:30,434 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:57:09,928 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:57:09,953 rundb_id: 130
+DEBUG 2020-03-18 14:57:09,954 uhash: 7c0675
+DEBUG 2020-03-18 14:57:10,344 calling: preup
+DEBUG 2020-03-18 14:57:10,344 hook preup initiated
+DEBUG 2020-03-18 14:57:29,079 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:57:45,844 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:57:45,869 rundb_id: 131
+DEBUG 2020-03-18 14:57:45,869 uhash: dcbc20
+DEBUG 2020-03-18 14:57:46,134 calling: preup
+DEBUG 2020-03-18 14:57:46,134 hook preup initiated
+DEBUG 2020-03-18 14:58:12,750 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:58:36,278 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:58:36,305 rundb_id: 132
+DEBUG 2020-03-18 14:58:36,305 uhash: df0eb9
+DEBUG 2020-03-18 14:58:36,515 calling: preup
+DEBUG 2020-03-18 14:58:36,516 hook preup initiated
+DEBUG 2020-03-18 14:58:55,478 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 14:59:35,157 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 14:59:35,210 using data from run_id: None
+DEBUG 2020-03-18 14:59:35,210 rundb_id: 133
+DEBUG 2020-03-18 14:59:35,210 uhash: df0eb9
+DEBUG 2020-03-18 14:59:35,449 calling: predestroy
+DEBUG 2020-03-18 14:59:35,449 hook predestroy initiated
+INFO 2020-03-18 14:59:58,888 Playbook Return code 0
+DEBUG 2020-03-18 14:59:58,888 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 14:59:58,889 calling: postinv
+DEBUG 2020-03-18 14:59:59,047 hook postdestroy initiated
+DEBUG 2020-03-18 14:59:59,048 STATE - 
+ID: 49
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   133	df0eb9	        0
+
+DEBUG 2020-03-18 15:00:02,790 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:00:02,827 rundb_id: 134
+DEBUG 2020-03-18 15:00:02,827 uhash: e63572
+DEBUG 2020-03-18 15:00:03,246 calling: preup
+DEBUG 2020-03-18 15:00:03,247 hook preup initiated
+INFO 2020-03-18 15:02:29,862 Playbook Return code 0
+DEBUG 2020-03-18 15:02:29,866 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 15:02:29,866 calling: postinv
+DEBUG 2020-03-18 15:02:29,867 hook postinv initiated
+DEBUG 2020-03-18 15:02:30,140 calling: postup
+DEBUG 2020-03-18 15:02:30,140 hook postup initiated
+DEBUG 2020-03-18 15:02:30,141 STATE - 
+ID: 50
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   134	e63572	        0
+
+DEBUG 2020-03-18 15:07:58,233 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:07:58,303 using data from run_id: None
+DEBUG 2020-03-18 15:07:58,303 rundb_id: 135
+DEBUG 2020-03-18 15:07:58,303 uhash: e63572
+DEBUG 2020-03-18 15:07:58,922 calling: predestroy
+DEBUG 2020-03-18 15:07:58,922 hook predestroy initiated
+INFO 2020-03-18 15:08:23,073 Playbook Return code 0
+DEBUG 2020-03-18 15:08:23,074 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 15:08:23,074 calling: postinv
+DEBUG 2020-03-18 15:08:23,234 hook postdestroy initiated
+DEBUG 2020-03-18 15:08:23,234 STATE - 
+ID: 51
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   135	e63572	        0
+
+DEBUG 2020-03-18 15:09:10,654 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:09:10,684 rundb_id: 136
+DEBUG 2020-03-18 15:09:10,685 uhash: b7cbda
+DEBUG 2020-03-18 15:09:11,049 calling: preup
+DEBUG 2020-03-18 15:09:11,049 hook preup initiated
+INFO 2020-03-18 15:11:52,982 Playbook Return code 0
+DEBUG 2020-03-18 15:11:52,983 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 15:11:52,985 calling: postinv
+DEBUG 2020-03-18 15:11:52,987 hook postinv initiated
+DEBUG 2020-03-18 15:11:53,269 calling: postup
+DEBUG 2020-03-18 15:11:53,269 hook postup initiated
+DEBUG 2020-03-18 15:11:53,269 STATE - 
+ID: 52
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   136	b7cbda	        0
+
+DEBUG 2020-03-18 15:13:02,020 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:13:02,065 using data from run_id: None
+DEBUG 2020-03-18 15:13:02,065 rundb_id: 137
+DEBUG 2020-03-18 15:13:02,065 uhash: b7cbda
+DEBUG 2020-03-18 15:13:02,525 calling: predestroy
+DEBUG 2020-03-18 15:13:02,525 hook predestroy initiated
+INFO 2020-03-18 15:13:27,819 Playbook Return code 0
+DEBUG 2020-03-18 15:13:27,820 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 15:13:27,820 calling: postinv
+DEBUG 2020-03-18 15:13:27,982 hook postdestroy initiated
+DEBUG 2020-03-18 15:13:27,983 STATE - 
+ID: 53
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   137	b7cbda	        0
+
+DEBUG 2020-03-18 15:14:03,631 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:14:03,664 rundb_id: 138
+DEBUG 2020-03-18 15:14:03,664 uhash: 84b6d2
+DEBUG 2020-03-18 15:14:03,931 calling: preup
+DEBUG 2020-03-18 15:14:03,932 hook preup initiated
+INFO 2020-03-18 15:16:20,068 Playbook Return code 0
+DEBUG 2020-03-18 15:16:20,069 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 15:16:20,069 calling: postinv
+DEBUG 2020-03-18 15:16:20,069 hook postinv initiated
+DEBUG 2020-03-18 15:16:20,338 calling: postup
+DEBUG 2020-03-18 15:16:20,338 hook postup initiated
+DEBUG 2020-03-18 15:16:20,339 STATE - 
+ID: 54
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   138	84b6d2	        0
+
+DEBUG 2020-03-18 15:22:36,496 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:22:36,529 rundb_id: 139
+DEBUG 2020-03-18 15:22:36,529 uhash: 2a7e85
+DEBUG 2020-03-18 15:22:36,922 calling: preup
+DEBUG 2020-03-18 15:22:36,922 hook preup initiated
+DEBUG 2020-03-18 15:23:22,638 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 15:25:10,783 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:25:10,810 rundb_id: 140
+DEBUG 2020-03-18 15:25:10,810 uhash: a74f5d
+DEBUG 2020-03-18 15:25:11,380 calling: preup
+DEBUG 2020-03-18 15:25:11,381 hook preup initiated
+DEBUG 2020-03-18 15:25:51,417 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 15:33:08,909 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:33:08,940 rundb_id: 141
+DEBUG 2020-03-18 15:33:08,941 uhash: 0c1ad3
+DEBUG 2020-03-18 15:33:09,447 calling: preup
+DEBUG 2020-03-18 15:33:09,448 hook preup initiated
+DEBUG 2020-03-18 15:33:43,021 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 15:35:00,473 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:35:00,499 rundb_id: 142
+DEBUG 2020-03-18 15:35:00,499 uhash: a6b6c6
+DEBUG 2020-03-18 15:35:00,751 calling: preup
+DEBUG 2020-03-18 15:35:00,751 hook preup initiated
+DEBUG 2020-03-18 15:35:34,965 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 15:43:15,561 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 15:43:15,596 rundb_id: 143
+DEBUG 2020-03-18 15:43:15,596 uhash: e22710
+DEBUG 2020-03-18 15:43:16,108 calling: preup
+DEBUG 2020-03-18 15:43:16,108 hook preup initiated
+DEBUG 2020-03-18 15:43:52,171 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 16:03:41,530 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:03:41,567 rundb_id: 144
+DEBUG 2020-03-18 16:03:41,567 uhash: 65b569
+DEBUG 2020-03-18 16:03:42,015 calling: preup
+DEBUG 2020-03-18 16:03:42,015 hook preup initiated
+INFO 2020-03-18 16:06:04,805 Playbook Return code 0
+DEBUG 2020-03-18 16:06:04,806 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 16:06:04,806 calling: postinv
+DEBUG 2020-03-18 16:06:04,807 hook postinv initiated
+DEBUG 2020-03-18 16:06:05,147 calling: postup
+DEBUG 2020-03-18 16:06:05,147 hook postup initiated
+DEBUG 2020-03-18 16:06:05,147 STATE - 
+ID: 55
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   144	65b569	        0
+
+DEBUG 2020-03-18 16:13:23,542 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:13:23,575 using data from run_id: None
+DEBUG 2020-03-18 16:13:23,575 rundb_id: 145
+DEBUG 2020-03-18 16:13:23,575 uhash: 65b569
+DEBUG 2020-03-18 16:13:24,054 calling: predestroy
+DEBUG 2020-03-18 16:13:24,054 hook predestroy initiated
+INFO 2020-03-18 16:13:48,809 Playbook Return code 0
+DEBUG 2020-03-18 16:13:48,810 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-18 16:13:48,811 calling: postinv
+DEBUG 2020-03-18 16:13:48,984 hook postdestroy initiated
+DEBUG 2020-03-18 16:13:48,984 STATE - 
+ID: 56
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   145	65b569	        0
+
+DEBUG 2020-03-18 16:14:09,912 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:14:09,935 rundb_id: 146
+DEBUG 2020-03-18 16:14:09,935 uhash: 0bba28
+DEBUG 2020-03-18 16:14:10,431 calling: preup
+DEBUG 2020-03-18 16:14:10,431 hook preup initiated
+DEBUG 2020-03-18 16:15:01,132 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 16:23:27,071 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:23:27,112 rundb_id: 147
+DEBUG 2020-03-18 16:23:27,112 uhash: ffcafd
+DEBUG 2020-03-18 16:23:27,687 calling: preup
+DEBUG 2020-03-18 16:23:27,687 hook preup initiated
+DEBUG 2020-03-18 16:24:54,639 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 16:30:06,921 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:30:06,960 rundb_id: 148
+DEBUG 2020-03-18 16:30:06,960 uhash: acdeea
+DEBUG 2020-03-18 16:30:07,400 calling: preup
+DEBUG 2020-03-18 16:30:07,400 hook preup initiated
+DEBUG 2020-03-18 16:31:53,834 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 16:37:04,135 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:37:04,157 rundb_id: 149
+DEBUG 2020-03-18 16:37:04,158 uhash: 3e2209
+DEBUG 2020-03-18 16:37:04,422 calling: preup
+DEBUG 2020-03-18 16:37:04,423 hook preup initiated
+DEBUG 2020-03-18 16:38:45,870 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-18 16:40:02,963 Processing target: libvirt-custom-xml
+DEBUG 2020-03-18 16:40:03,003 rundb_id: 150
+DEBUG 2020-03-18 16:40:03,003 uhash: 1aadac
+DEBUG 2020-03-18 16:40:03,488 calling: preup
+DEBUG 2020-03-18 16:40:03,488 hook preup initiated
+DEBUG 2020-03-18 16:41:31,871 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 14:18:17,106 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 14:18:17,143 rundb_id: 151
+DEBUG 2020-03-19 14:18:17,143 uhash: 2c512f
+DEBUG 2020-03-19 14:18:17,655 calling: preup
+DEBUG 2020-03-19 14:18:17,656 hook preup initiated
+DEBUG 2020-03-19 14:19:45,813 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 14:50:16,667 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 14:50:16,701 rundb_id: 152
+DEBUG 2020-03-19 14:50:16,702 uhash: c2a740
+DEBUG 2020-03-19 14:50:16,975 calling: preup
+DEBUG 2020-03-19 14:50:16,975 hook preup initiated
+DEBUG 2020-03-19 14:51:42,175 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 14:52:31,466 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 14:52:31,488 rundb_id: 153
+DEBUG 2020-03-19 14:52:31,489 uhash: 2f5fcd
+DEBUG 2020-03-19 14:52:31,983 calling: preup
+DEBUG 2020-03-19 14:52:31,984 hook preup initiated
+DEBUG 2020-03-19 14:54:03,439 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 14:59:36,292 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 14:59:36,328 rundb_id: 154
+DEBUG 2020-03-19 14:59:36,329 uhash: a3ad6c
+DEBUG 2020-03-19 14:59:36,603 calling: preup
+DEBUG 2020-03-19 14:59:36,603 hook preup initiated
+DEBUG 2020-03-19 15:01:08,446 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 15:24:45,224 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 15:24:45,251 rundb_id: 155
+DEBUG 2020-03-19 15:24:45,251 uhash: dd3922
+DEBUG 2020-03-19 15:24:45,492 calling: preup
+DEBUG 2020-03-19 15:24:45,493 hook preup initiated
+DEBUG 2020-03-19 15:26:15,625 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:29:40,472 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:29:40,515 rundb_id: 156
+DEBUG 2020-03-19 16:29:40,516 uhash: 59e1ec
+DEBUG 2020-03-19 16:29:40,802 calling: preup
+DEBUG 2020-03-19 16:29:40,802 hook preup initiated
+DEBUG 2020-03-19 16:31:11,228 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:32:47,967 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:32:48,008 rundb_id: 157
+DEBUG 2020-03-19 16:32:48,008 uhash: 44d82f
+DEBUG 2020-03-19 16:32:48,291 calling: preup
+DEBUG 2020-03-19 16:32:48,291 hook preup initiated
+DEBUG 2020-03-19 16:34:18,874 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:36:12,664 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:36:12,698 rundb_id: 158
+DEBUG 2020-03-19 16:36:12,699 uhash: 8cd99d
+DEBUG 2020-03-19 16:36:13,159 calling: preup
+DEBUG 2020-03-19 16:36:13,160 hook preup initiated
+DEBUG 2020-03-19 16:37:39,880 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:41:37,026 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:41:37,047 rundb_id: 159
+DEBUG 2020-03-19 16:41:37,047 uhash: 2edff9
+DEBUG 2020-03-19 16:41:37,500 calling: preup
+DEBUG 2020-03-19 16:41:37,501 hook preup initiated
+DEBUG 2020-03-19 16:43:06,860 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:44:49,246 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:44:49,297 rundb_id: 160
+DEBUG 2020-03-19 16:44:49,297 uhash: dc2548
+DEBUG 2020-03-19 16:44:49,768 calling: preup
+DEBUG 2020-03-19 16:44:49,768 hook preup initiated
+DEBUG 2020-03-19 16:46:20,508 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:54:52,173 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:54:52,208 rundb_id: 161
+DEBUG 2020-03-19 16:54:52,208 uhash: 5a7a63
+DEBUG 2020-03-19 16:54:52,665 calling: preup
+DEBUG 2020-03-19 16:54:52,665 hook preup initiated
+DEBUG 2020-03-19 16:55:22,171 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 16:57:27,423 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 16:57:27,447 rundb_id: 162
+DEBUG 2020-03-19 16:57:27,448 uhash: 455b19
+DEBUG 2020-03-19 16:57:27,986 calling: preup
+DEBUG 2020-03-19 16:57:27,986 hook preup initiated
+DEBUG 2020-03-19 16:57:53,999 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 17:02:09,292 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 17:02:09,317 rundb_id: 163
+DEBUG 2020-03-19 17:02:09,317 uhash: dcffbd
+DEBUG 2020-03-19 17:02:09,777 calling: preup
+DEBUG 2020-03-19 17:02:09,777 hook preup initiated
+DEBUG 2020-03-19 17:02:35,720 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 17:16:14,887 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 17:16:14,925 rundb_id: 164
+DEBUG 2020-03-19 17:16:14,926 uhash: 0a5b41
+DEBUG 2020-03-19 17:16:15,396 calling: preup
+DEBUG 2020-03-19 17:16:15,397 hook preup initiated
+DEBUG 2020-03-19 17:17:44,140 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 17:19:32,633 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 17:19:32,677 rundb_id: 165
+DEBUG 2020-03-19 17:19:32,677 uhash: 324dbf
+DEBUG 2020-03-19 17:19:33,107 calling: preup
+DEBUG 2020-03-19 17:19:33,108 hook preup initiated
+DEBUG 2020-03-19 17:26:17,779 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 17:50:48,626 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 17:50:48,666 rundb_id: 166
+DEBUG 2020-03-19 17:50:48,666 uhash: 81ee7e
+DEBUG 2020-03-19 17:50:49,079 calling: preup
+DEBUG 2020-03-19 17:50:49,080 hook preup initiated
+DEBUG 2020-03-19 17:57:36,821 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-19 18:27:33,174 Processing target: libvirt-custom-xml
+DEBUG 2020-03-19 18:27:33,207 rundb_id: 167
+DEBUG 2020-03-19 18:27:33,207 uhash: 9dd1ee
+DEBUG 2020-03-19 18:27:33,719 calling: preup
+DEBUG 2020-03-19 18:27:33,720 hook preup initiated
+DEBUG 2020-03-19 18:29:48,993 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 08:46:03,083 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 08:46:03,157 rundb_id: 168
+DEBUG 2020-03-23 08:46:03,157 uhash: b4386e
+DEBUG 2020-03-23 08:46:03,740 calling: preup
+DEBUG 2020-03-23 08:46:03,740 hook preup initiated
+DEBUG 2020-03-23 08:49:24,422 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 08:51:51,033 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 08:51:51,105 using data from run_id: None
+DEBUG 2020-03-23 08:51:51,105 rundb_id: 169
+DEBUG 2020-03-23 08:51:51,106 uhash: b4386e
+DEBUG 2020-03-23 08:51:51,693 calling: predestroy
+DEBUG 2020-03-23 08:51:51,694 hook predestroy initiated
+INFO 2020-03-23 08:52:16,840 Playbook Return code 0
+DEBUG 2020-03-23 08:52:16,841 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 08:52:16,842 calling: postinv
+DEBUG 2020-03-23 08:52:17,060 hook postdestroy initiated
+DEBUG 2020-03-23 08:52:17,061 STATE - 
+ID: 57
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   169	b4386e	        0
+
+DEBUG 2020-03-23 08:55:34,171 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 08:55:34,201 rundb_id: 170
+DEBUG 2020-03-23 08:55:34,201 uhash: a62146
+DEBUG 2020-03-23 08:55:34,475 calling: preup
+DEBUG 2020-03-23 08:55:34,475 hook preup initiated
+DEBUG 2020-03-23 09:02:48,904 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 09:12:34,336 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 09:12:34,366 rundb_id: 171
+DEBUG 2020-03-23 09:12:34,366 uhash: fc7330
+DEBUG 2020-03-23 09:12:34,677 calling: preup
+DEBUG 2020-03-23 09:12:34,678 hook preup initiated
+INFO 2020-03-23 09:19:32,921 Playbook Return code 0
+DEBUG 2020-03-23 09:19:32,921 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 09:19:32,922 calling: postinv
+DEBUG 2020-03-23 09:19:32,922 hook postinv initiated
+DEBUG 2020-03-23 09:19:33,207 calling: postup
+DEBUG 2020-03-23 09:19:33,208 hook postup initiated
+DEBUG 2020-03-23 09:19:33,208 STATE - 
+ID: 58
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   171	fc7330	        0
+
+DEBUG 2020-03-23 10:55:34,899 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 10:55:34,929 rundb_id: 172
+DEBUG 2020-03-23 10:55:34,929 uhash: 2f00f9
+DEBUG 2020-03-23 10:55:35,420 calling: preup
+DEBUG 2020-03-23 10:55:35,420 hook preup initiated
+DEBUG 2020-03-23 10:56:19,141 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 10:57:32,911 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 10:57:32,951 rundb_id: 173
+DEBUG 2020-03-23 10:57:32,951 uhash: 61c6da
+DEBUG 2020-03-23 10:57:33,247 calling: preup
+DEBUG 2020-03-23 10:57:33,247 hook preup initiated
+DEBUG 2020-03-23 11:04:53,141 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 11:05:54,797 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:05:54,866 using data from run_id: None
+DEBUG 2020-03-23 11:05:54,867 rundb_id: 174
+DEBUG 2020-03-23 11:05:54,867 uhash: 61c6da
+DEBUG 2020-03-23 11:05:55,365 calling: predestroy
+DEBUG 2020-03-23 11:05:55,366 hook predestroy initiated
+INFO 2020-03-23 11:06:20,369 Playbook Return code 0
+DEBUG 2020-03-23 11:06:20,369 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:06:20,370 calling: postinv
+DEBUG 2020-03-23 11:06:20,593 hook postdestroy initiated
+DEBUG 2020-03-23 11:06:20,593 STATE - 
+ID: 59
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   174	61c6da	        0
+
+DEBUG 2020-03-23 11:12:19,012 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:12:19,050 rundb_id: 175
+DEBUG 2020-03-23 11:12:19,050 uhash: b0b4a3
+DEBUG 2020-03-23 11:12:19,502 calling: preup
+DEBUG 2020-03-23 11:12:19,502 hook preup initiated
+DEBUG 2020-03-23 11:24:09,347 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:24:09,403 using data from run_id: None
+DEBUG 2020-03-23 11:24:09,403 rundb_id: 176
+DEBUG 2020-03-23 11:24:09,403 uhash: b0b4a3
+DEBUG 2020-03-23 11:24:09,888 calling: predestroy
+DEBUG 2020-03-23 11:24:09,888 hook predestroy initiated
+INFO 2020-03-23 11:24:32,341 Playbook Return code 0
+DEBUG 2020-03-23 11:24:32,342 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:24:32,342 calling: postinv
+DEBUG 2020-03-23 11:24:32,568 hook postdestroy initiated
+DEBUG 2020-03-23 11:24:32,568 STATE - 
+ID: 60
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   176	b0b4a3	        0
+
+DEBUG 2020-03-23 11:24:58,460 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:24:58,508 rundb_id: 177
+DEBUG 2020-03-23 11:24:58,509 uhash: 0f264b
+DEBUG 2020-03-23 11:24:59,018 calling: preup
+DEBUG 2020-03-23 11:24:59,018 hook preup initiated
+DEBUG 2020-03-23 11:26:54,152 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 11:30:05,032 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:30:05,091 using data from run_id: None
+DEBUG 2020-03-23 11:30:05,091 rundb_id: 178
+DEBUG 2020-03-23 11:30:05,091 uhash: 0f264b
+DEBUG 2020-03-23 11:30:05,617 calling: predestroy
+DEBUG 2020-03-23 11:30:05,617 hook predestroy initiated
+INFO 2020-03-23 11:30:29,675 Playbook Return code 0
+DEBUG 2020-03-23 11:30:29,675 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:30:29,676 calling: postinv
+DEBUG 2020-03-23 11:30:29,899 hook postdestroy initiated
+DEBUG 2020-03-23 11:30:29,899 STATE - 
+ID: 61
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   178	0f264b	        0
+
+DEBUG 2020-03-23 11:31:33,450 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:31:33,476 rundb_id: 179
+DEBUG 2020-03-23 11:31:33,476 uhash: 8a84ff
+DEBUG 2020-03-23 11:31:33,965 calling: preup
+DEBUG 2020-03-23 11:31:33,965 hook preup initiated
+DEBUG 2020-03-23 11:33:30,420 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 11:34:14,785 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:34:14,857 using data from run_id: None
+DEBUG 2020-03-23 11:34:14,857 rundb_id: 180
+DEBUG 2020-03-23 11:34:14,858 uhash: 8a84ff
+DEBUG 2020-03-23 11:34:15,345 calling: predestroy
+DEBUG 2020-03-23 11:34:15,345 hook predestroy initiated
+INFO 2020-03-23 11:34:39,318 Playbook Return code 0
+DEBUG 2020-03-23 11:34:39,319 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:34:39,319 calling: postinv
+DEBUG 2020-03-23 11:34:39,516 hook postdestroy initiated
+DEBUG 2020-03-23 11:34:39,517 STATE - 
+ID: 62
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   180	8a84ff	        0
+
+DEBUG 2020-03-23 11:34:45,825 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:34:45,854 rundb_id: 181
+DEBUG 2020-03-23 11:34:45,855 uhash: 09f566
+DEBUG 2020-03-23 11:34:46,157 calling: preup
+DEBUG 2020-03-23 11:34:46,157 hook preup initiated
+INFO 2020-03-23 11:37:15,046 Playbook Return code 0
+DEBUG 2020-03-23 11:37:15,046 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:37:15,047 calling: postinv
+DEBUG 2020-03-23 11:37:15,047 hook postinv initiated
+DEBUG 2020-03-23 11:37:15,290 calling: postup
+DEBUG 2020-03-23 11:37:15,291 hook postup initiated
+DEBUG 2020-03-23 11:37:15,291 STATE - 
+ID: 63
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   181	09f566	        0
+
+DEBUG 2020-03-23 11:38:41,209 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 11:38:41,288 using data from run_id: None
+DEBUG 2020-03-23 11:38:41,288 rundb_id: 182
+DEBUG 2020-03-23 11:38:41,288 uhash: 09f566
+DEBUG 2020-03-23 11:38:41,851 calling: predestroy
+DEBUG 2020-03-23 11:38:41,851 hook predestroy initiated
+INFO 2020-03-23 11:39:05,590 Playbook Return code 0
+DEBUG 2020-03-23 11:39:05,591 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 11:39:05,592 calling: postinv
+DEBUG 2020-03-23 11:39:05,805 hook postdestroy initiated
+DEBUG 2020-03-23 11:39:05,805 STATE - 
+ID: 64
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   182	09f566	        0
+
+DEBUG 2020-03-23 13:46:55,480 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 13:46:55,511 rundb_id: 183
+DEBUG 2020-03-23 13:46:55,511 uhash: a23e38
+DEBUG 2020-03-23 13:46:56,057 calling: preup
+DEBUG 2020-03-23 13:46:56,057 hook preup initiated
+DEBUG 2020-03-23 13:47:50,344 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 13:53:09,123 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 13:53:09,167 rundb_id: 184
+DEBUG 2020-03-23 13:53:09,167 uhash: 556d85
+DEBUG 2020-03-23 13:53:09,602 calling: preup
+DEBUG 2020-03-23 13:53:09,602 hook preup initiated
+DEBUG 2020-03-23 13:53:27,715 STATE - Unsuccessful provision of resource
+DEBUG 2020-03-23 13:53:43,781 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 13:53:43,828 using data from run_id: None
+DEBUG 2020-03-23 13:53:43,828 rundb_id: 185
+DEBUG 2020-03-23 13:53:43,828 uhash: 556d85
+DEBUG 2020-03-23 13:53:44,337 calling: predestroy
+DEBUG 2020-03-23 13:53:44,337 hook predestroy initiated
+INFO 2020-03-23 13:54:08,790 Playbook Return code 0
+DEBUG 2020-03-23 13:54:08,791 STATE - Action 'destroy' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 13:54:08,791 calling: postinv
+DEBUG 2020-03-23 13:54:09,017 hook postdestroy initiated
+DEBUG 2020-03-23 13:54:09,018 STATE - 
+ID: 65
+Action: destroy
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   185	556d85	        0
+
+DEBUG 2020-03-23 13:54:13,776 Processing target: libvirt-custom-xml
+DEBUG 2020-03-23 13:54:13,821 rundb_id: 186
+DEBUG 2020-03-23 13:54:13,822 uhash: 2872dd
+DEBUG 2020-03-23 13:54:14,135 calling: preup
+DEBUG 2020-03-23 13:54:14,135 hook preup initiated
+INFO 2020-03-23 13:56:40,506 Playbook Return code 0
+DEBUG 2020-03-23 13:56:40,507 STATE - Action 'up' on Target 'libvirt-custom-xml' is complete
+DEBUG 2020-03-23 13:56:40,507 calling: postinv
+DEBUG 2020-03-23 13:56:40,508 hook postinv initiated
+DEBUG 2020-03-23 13:56:40,801 calling: postup
+DEBUG 2020-03-23 13:56:40,801 hook postup initiated
+DEBUG 2020-03-23 13:56:40,802 STATE - 
+ID: 66
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+libvirt-custom-xml  	   186	2872dd	        0
+

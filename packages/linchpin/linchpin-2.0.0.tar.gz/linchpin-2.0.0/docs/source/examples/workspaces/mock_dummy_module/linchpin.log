@@ -1,0 +1,235 @@
+DEBUG 2019-11-25 11:38:08,845 Processing target: dummy-new
+DEBUG 2019-11-25 11:38:08,858 rundb_id: 1
+DEBUG 2019-11-25 11:38:08,858 uhash: 4c3954
+DEBUG 2019-11-25 11:38:08,898 calling: preup
+DEBUG 2019-11-25 11:38:08,898 hook preup initiated
+INFO 2019-11-25 11:38:13,196 Playbook Return code 0
+DEBUG 2019-11-25 11:38:13,196 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 11:38:13,196 hook postinv initiated
+DEBUG 2019-11-25 11:38:13,219 STATE - Error: 'hosts'
+DEBUG 2019-11-25 11:42:26,812 Processing target: dummy-new
+DEBUG 2019-11-25 11:42:26,831 rundb_id: 2
+DEBUG 2019-11-25 11:42:26,831 uhash: c53462
+DEBUG 2019-11-25 11:42:26,877 calling: preup
+DEBUG 2019-11-25 11:42:26,877 hook preup initiated
+DEBUG 2019-11-25 11:42:28,374 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:43:33,346 Processing target: dummy-new
+DEBUG 2019-11-25 11:43:33,361 rundb_id: 3
+DEBUG 2019-11-25 11:43:33,361 uhash: 73a48d
+DEBUG 2019-11-25 11:43:33,422 calling: preup
+DEBUG 2019-11-25 11:43:33,422 hook preup initiated
+DEBUG 2019-11-25 11:43:35,029 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:44:30,618 Processing target: dummy-new
+DEBUG 2019-11-25 11:44:30,631 rundb_id: 4
+DEBUG 2019-11-25 11:44:30,631 uhash: ecfd79
+DEBUG 2019-11-25 11:44:30,678 calling: preup
+DEBUG 2019-11-25 11:44:30,678 hook preup initiated
+DEBUG 2019-11-25 11:44:32,270 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:45:05,100 Processing target: dummy-new
+DEBUG 2019-11-25 11:45:05,107 rundb_id: 5
+DEBUG 2019-11-25 11:45:05,107 uhash: c1dc4e
+DEBUG 2019-11-25 11:45:05,157 calling: preup
+DEBUG 2019-11-25 11:45:05,157 hook preup initiated
+DEBUG 2019-11-25 11:45:06,880 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:45:53,783 Processing target: dummy-new
+DEBUG 2019-11-25 11:45:53,795 rundb_id: 6
+DEBUG 2019-11-25 11:45:53,796 uhash: e971ff
+DEBUG 2019-11-25 11:45:53,845 calling: preup
+DEBUG 2019-11-25 11:45:53,845 hook preup initiated
+DEBUG 2019-11-25 11:45:55,472 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:46:29,001 Processing target: dummy-new
+DEBUG 2019-11-25 11:46:29,008 rundb_id: 7
+DEBUG 2019-11-25 11:46:29,008 uhash: 45110d
+DEBUG 2019-11-25 11:46:29,048 calling: preup
+DEBUG 2019-11-25 11:46:29,048 hook preup initiated
+DEBUG 2019-11-25 11:46:31,619 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:46:47,800 Processing target: dummy-new
+DEBUG 2019-11-25 11:46:47,812 rundb_id: 8
+DEBUG 2019-11-25 11:46:47,812 uhash: 97f259
+DEBUG 2019-11-25 11:46:47,868 calling: preup
+DEBUG 2019-11-25 11:46:47,868 hook preup initiated
+DEBUG 2019-11-25 11:46:49,432 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 11:47:14,484 Processing target: dummy-new
+DEBUG 2019-11-25 11:47:14,495 rundb_id: 9
+DEBUG 2019-11-25 11:47:14,496 uhash: aeb2ad
+DEBUG 2019-11-25 11:47:14,547 calling: preup
+DEBUG 2019-11-25 11:47:14,548 hook preup initiated
+INFO 2019-11-25 11:47:18,676 Playbook Return code 0
+DEBUG 2019-11-25 11:47:18,676 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 11:47:18,677 hook postinv initiated
+DEBUG 2019-11-25 11:47:18,719 STATE - Error: 'hosts'
+DEBUG 2019-11-25 11:47:32,737 Processing target: dummy-new
+DEBUG 2019-11-25 11:47:32,756 rundb_id: 10
+DEBUG 2019-11-25 11:47:32,756 uhash: 00d526
+DEBUG 2019-11-25 11:47:32,835 calling: preup
+DEBUG 2019-11-25 11:47:32,835 hook preup initiated
+INFO 2019-11-25 11:47:37,798 Playbook Return code 0
+DEBUG 2019-11-25 11:47:37,798 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 11:47:37,799 hook postinv initiated
+DEBUG 2019-11-25 11:47:37,844 hook postup initiated
+DEBUG 2019-11-25 11:47:37,844 STATE - 
+ID: 3
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    10	00d526	        0
+
+DEBUG 2019-11-25 11:59:48,774 Processing target: dummy-new
+DEBUG 2019-11-25 11:59:48,785 rundb_id: 11
+DEBUG 2019-11-25 11:59:48,786 uhash: 47823f
+DEBUG 2019-11-25 11:59:48,832 calling: preup
+DEBUG 2019-11-25 11:59:48,832 hook preup initiated
+INFO 2019-11-25 11:59:53,034 Playbook Return code 0
+DEBUG 2019-11-25 11:59:53,034 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 11:59:53,034 hook postinv initiated
+DEBUG 2019-11-25 11:59:53,082 hook postup initiated
+DEBUG 2019-11-25 11:59:53,083 STATE - 
+ID: 4
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    11	47823f	        0
+
+DEBUG 2019-11-25 12:01:15,019 Processing target: dummy-new
+DEBUG 2019-11-25 12:01:15,031 rundb_id: 12
+DEBUG 2019-11-25 12:01:15,032 uhash: b5cada
+DEBUG 2019-11-25 12:01:15,082 calling: preup
+DEBUG 2019-11-25 12:01:15,082 hook preup initiated
+INFO 2019-11-25 12:01:19,683 Playbook Return code 0
+DEBUG 2019-11-25 12:01:19,683 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 12:01:19,683 hook postinv initiated
+DEBUG 2019-11-25 12:01:19,715 hook postup initiated
+DEBUG 2019-11-25 12:01:19,715 STATE - 
+ID: 5
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    12	b5cada	        0
+
+DEBUG 2019-11-25 12:03:28,554 Processing target: dummy-new
+DEBUG 2019-11-25 12:03:28,567 rundb_id: 13
+DEBUG 2019-11-25 12:03:28,567 uhash: d72dce
+DEBUG 2019-11-25 12:03:28,607 calling: preup
+DEBUG 2019-11-25 12:03:28,607 hook preup initiated
+INFO 2019-11-25 12:03:32,712 Playbook Return code 0
+DEBUG 2019-11-25 12:03:32,712 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 12:03:32,712 hook postinv initiated
+DEBUG 2019-11-25 12:03:32,745 hook postup initiated
+DEBUG 2019-11-25 12:03:32,745 STATE - 
+ID: 6
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    13	d72dce	        0
+
+DEBUG 2019-11-25 12:10:23,527 Processing target: dummy-new
+DEBUG 2019-11-25 12:10:23,539 rundb_id: 14
+DEBUG 2019-11-25 12:10:23,540 uhash: b99718
+DEBUG 2019-11-25 12:10:23,597 calling: preup
+DEBUG 2019-11-25 12:10:23,597 hook preup initiated
+DEBUG 2019-11-25 12:10:53,514 Processing target: dummy-new
+DEBUG 2019-11-25 12:10:53,528 rundb_id: 15
+DEBUG 2019-11-25 12:10:53,528 uhash: 087f1a
+DEBUG 2019-11-25 12:10:53,592 calling: preup
+DEBUG 2019-11-25 12:10:53,592 hook preup initiated
+DEBUG 2019-11-25 12:11:06,954 Processing target: dummy-new
+DEBUG 2019-11-25 12:11:06,962 rundb_id: 16
+DEBUG 2019-11-25 12:11:06,962 uhash: e07d1a
+DEBUG 2019-11-25 12:11:07,012 calling: preup
+DEBUG 2019-11-25 12:11:07,012 hook preup initiated
+DEBUG 2019-11-25 12:12:03,960 Processing target: dummy-new
+DEBUG 2019-11-25 12:12:03,968 rundb_id: 17
+DEBUG 2019-11-25 12:12:03,968 uhash: 2ea64a
+DEBUG 2019-11-25 12:12:04,019 calling: preup
+DEBUG 2019-11-25 12:12:04,019 hook preup initiated
+DEBUG 2019-11-25 12:12:20,516 Processing target: dummy-new
+DEBUG 2019-11-25 12:12:20,528 rundb_id: 18
+DEBUG 2019-11-25 12:12:20,528 uhash: 410258
+DEBUG 2019-11-25 12:12:20,584 calling: preup
+DEBUG 2019-11-25 12:12:20,584 hook preup initiated
+DEBUG 2019-11-25 12:12:48,159 Processing target: dummy-new
+DEBUG 2019-11-25 12:12:48,175 rundb_id: 19
+DEBUG 2019-11-25 12:12:48,176 uhash: 2d30f6
+DEBUG 2019-11-25 12:12:48,225 calling: preup
+DEBUG 2019-11-25 12:12:48,225 hook preup initiated
+DEBUG 2019-11-25 12:13:32,361 Processing target: dummy-new
+DEBUG 2019-11-25 12:13:32,374 rundb_id: 20
+DEBUG 2019-11-25 12:13:32,374 uhash: 589928
+DEBUG 2019-11-25 12:13:32,432 calling: preup
+DEBUG 2019-11-25 12:13:32,433 hook preup initiated
+DEBUG 2019-11-25 12:13:49,354 Processing target: dummy-new
+DEBUG 2019-11-25 12:13:49,366 rundb_id: 21
+DEBUG 2019-11-25 12:13:49,366 uhash: a2e1ff
+DEBUG 2019-11-25 12:13:49,421 calling: preup
+DEBUG 2019-11-25 12:13:49,421 hook preup initiated
+DEBUG 2019-11-25 12:14:15,221 Processing target: dummy-new
+DEBUG 2019-11-25 12:14:15,234 rundb_id: 22
+DEBUG 2019-11-25 12:14:15,234 uhash: 47ec12
+DEBUG 2019-11-25 12:14:15,291 calling: preup
+DEBUG 2019-11-25 12:14:15,291 hook preup initiated
+DEBUG 2019-11-25 12:14:17,868 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 12:14:30,333 Processing target: dummy-new
+DEBUG 2019-11-25 12:14:30,341 rundb_id: 23
+DEBUG 2019-11-25 12:14:30,341 uhash: 405e56
+DEBUG 2019-11-25 12:14:30,407 calling: preup
+DEBUG 2019-11-25 12:14:30,407 hook preup initiated
+DEBUG 2019-11-25 12:14:32,021 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 12:14:53,050 Processing target: dummy-new
+DEBUG 2019-11-25 12:14:53,061 rundb_id: 24
+DEBUG 2019-11-25 12:14:53,061 uhash: 301b65
+DEBUG 2019-11-25 12:14:53,123 calling: preup
+DEBUG 2019-11-25 12:14:53,123 hook preup initiated
+DEBUG 2019-11-25 12:14:54,868 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 12:15:58,076 Processing target: dummy-new
+DEBUG 2019-11-25 12:15:58,089 rundb_id: 25
+DEBUG 2019-11-25 12:15:58,089 uhash: 5cc1a8
+DEBUG 2019-11-25 12:15:58,141 calling: preup
+DEBUG 2019-11-25 12:15:58,141 hook preup initiated
+INFO 2019-11-25 12:16:02,420 Playbook Return code 0
+DEBUG 2019-11-25 12:16:02,420 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 12:16:02,420 hook postinv initiated
+DEBUG 2019-11-25 12:16:02,460 STATE - Error: 'hosts'
+DEBUG 2019-11-25 12:16:58,150 Processing target: dummy-new
+DEBUG 2019-11-25 12:16:58,163 rundb_id: 26
+DEBUG 2019-11-25 12:16:58,163 uhash: 40331a
+DEBUG 2019-11-25 12:16:58,212 calling: preup
+DEBUG 2019-11-25 12:16:58,212 hook preup initiated
+INFO 2019-11-25 12:17:03,412 Playbook Return code 0
+DEBUG 2019-11-25 12:17:03,412 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 12:17:03,413 hook postinv initiated
+DEBUG 2019-11-25 12:17:03,454 hook postup initiated
+DEBUG 2019-11-25 12:17:03,454 STATE - 
+ID: 8
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    26	40331a	        0
+
+DEBUG 2019-11-25 12:34:03,857 Processing target: dummy-new
+DEBUG 2019-11-25 12:34:03,870 rundb_id: 27
+DEBUG 2019-11-25 12:34:03,870 uhash: 9f07ce
+DEBUG 2019-11-25 12:34:03,926 calling: preup
+DEBUG 2019-11-25 12:34:03,927 hook preup initiated
+DEBUG 2019-11-25 12:34:05,585 STATE - Unsuccessful provision of resource
+DEBUG 2019-11-25 12:34:33,771 Processing target: dummy-new
+DEBUG 2019-11-25 12:34:33,788 rundb_id: 28
+DEBUG 2019-11-25 12:34:33,788 uhash: 9fea58
+DEBUG 2019-11-25 12:34:33,853 calling: preup
+DEBUG 2019-11-25 12:34:33,853 hook preup initiated
+INFO 2019-11-25 12:34:37,776 Playbook Return code 0
+DEBUG 2019-11-25 12:34:37,777 STATE - Action 'up' on Target 'dummy-new' is complete
+DEBUG 2019-11-25 12:34:37,777 hook postinv initiated
+DEBUG 2019-11-25 12:34:37,845 hook postup initiated
+DEBUG 2019-11-25 12:34:37,845 STATE - 
+ID: 9
+Action: up
+
+Target              	Run ID	uHash	Exit Code 
+-------------------------------------------------
+dummy-new           	    28	9fea58	        0
+

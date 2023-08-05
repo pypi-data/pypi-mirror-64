@@ -1,0 +1,17 @@
+DEBUG 2019-12-03 10:33:11,189 Processing target: libvirt-cirros
+DEBUG 2019-12-03 10:33:11,217 rundb_id: 1
+DEBUG 2019-12-03 10:33:11,217 uhash: 6fcc87
+DEBUG 2019-12-03 10:33:11,336 calling: preup
+DEBUG 2019-12-03 10:33:11,337 hook preup initiated
+DEBUG 2019-12-03 10:33:14,699 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-03 10:34:19,740 Processing target: libvirt-cirros
+DEBUG 2019-12-03 10:34:19,744 rundb_id: 2
+DEBUG 2019-12-03 10:34:19,745 uhash: f2423d
+DEBUG 2019-12-03 10:34:19,860 calling: preup
+DEBUG 2019-12-03 10:34:19,860 hook preup initiated
+DEBUG 2019-12-03 10:34:22,928 STATE - Unsuccessful provision of resource
+DEBUG 2019-12-03 10:38:10,805 Processing target: libvirt-cirros
+DEBUG 2019-12-03 10:38:10,812 rundb_id: 3
+DEBUG 2019-12-03 10:38:10,813 uhash: 03d347
+DEBUG 2019-12-03 10:38:10,925 calling: preup
+DEBUG 2019-12-03 10:38:10,926 hook preup initiated
