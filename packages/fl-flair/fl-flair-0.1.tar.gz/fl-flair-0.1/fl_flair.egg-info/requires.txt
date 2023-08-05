@@ -1,0 +1,5 @@
+deconstruct
+fl-flint
+keyboard>=0.11.0
+pywin32
+Pillow
