@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/crc32c_build.py
+src/crc32c/__config__.py
+src/crc32c/__init__.py
+src/crc32c/_checksum.py
+src/crc32c/cffi.py
+src/crc32c/python.py
+src/google_crc32c.egg-info/PKG-INFO
+src/google_crc32c.egg-info/SOURCES.txt
+src/google_crc32c.egg-info/dependency_links.txt
+src/google_crc32c.egg-info/requires.txt
+src/google_crc32c.egg-info/top_level.txt
+src/google_crc32c.egg-info/zip-safe
