@@ -1,0 +1,10 @@
+backlog/__init__.py,sha256=1fU7wYAAe916GngRfkNaiAQVTGPWZIlyd2mJua3wrko,234
+backlog/__main__.py,sha256=ZrW8P51HfnBIG5CHCXFcXAgngDsZ6RZfabQMuwTvVjc,135
+backlog/api.py,sha256=xbCevGWaYbn7O_ekKjuwAaBVVo2u1_hrLo4QMPB6NGI,3289
+backlog/cli.py,sha256=fmyOYawcTFSLNkNRxf_mY-Wp1xDl9TDkmC-eq-akpVo,2549
+backlog-2.0.4.dist-info/LICENSE,sha256=Izf7sczKycbMcwNEJ2DYO7s65dROESN82pX4PxrXAM4,24478
+backlog-2.0.4.dist-info/METADATA,sha256=6hYtmPF2lSBtInOLZ25pVO41oZgWT8TQ4EfrdTExu5A,2783
+backlog-2.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+backlog-2.0.4.dist-info/entry_points.txt,sha256=JuBrT1NPt6w9LmJUVOfZ8G3xihbFVn-2OIPM7SgBybQ,46
+backlog-2.0.4.dist-info/top_level.txt,sha256=qzHRU2P6F24ntkXGiIBl4Qf_AlV0BRebSc5tuLlcOIE,8
+backlog-2.0.4.dist-info/RECORD,,
