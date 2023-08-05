@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: protonvpn-cli-gui
+Version: 0.1.7
+Summary: An unofficial GUI for ProtonVPN on Linux.
+Home-page: https://github.com/jcemerson/protonvpn-cli-gui
+Author: WutDuk
+Author-email: wutduk@pm.me
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: protonvpn-cli
+Requires-Dist: kivy
+
+
+# ProtonVPN-GUI
+
+Work in progress...
+
+https://www.reddit.com/r/ProtonVPN/comments/fc3jcz/protonvvpngui_for_linux_work_in_progress/
+
+
