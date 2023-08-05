@@ -1,0 +1,14 @@
+django/chatbot/__init__.py,sha256=JFuuIkw7mY4OdA2ZDZaf_PV7k1gN2DD0zx1k6cBBUsU,161
+django/chatbot/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+django/chatbot/apps.py,sha256=2Qt5V_SuakQ9V4fTTnXkXvuVrg9g7gF1y1ZrE_8b9AQ,238
+django/chatbot/chatbot.py,sha256=SI-q6WY4RH27fW8a9HtAZW6BHKVqwkKrq2u9gVHELRw,450
+django/chatbot/handler.py,sha256=Zjc9kOTI1R3qy4VhjitT2GCgwLAiPCT5muh1wkm4rFM,5708
+django/chatbot/models.py,sha256=wsYDYuHg1B15C_C9pkpA-kgnSs_BzMf8VRlNrzjpf_E,548
+django/chatbot/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django/chatbot/views.py,sha256=Kx0XPdKnKb_UmWAVNA7hPE1oxgbyUFmi9jpQVeBDxjA,1824
+django/chatbot/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_chatbot-0.0.1.dist-info/METADATA,sha256=yB9x6qL0YbM9yynmNhaHHjplPoRZxDbGHx58ZeXv5D4,849
+django_chatbot-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_chatbot-0.0.1.dist-info/top_level.txt,sha256=V_goijg9tfO20ox_7os6CcnPvmBavbxu46LpJiNLwjA,7
+django_chatbot-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_chatbot-0.0.1.dist-info/RECORD,,
