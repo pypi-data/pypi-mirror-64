@@ -1,0 +1,4 @@
+PyYAML
+cloudpickle
+Deprecated
+strip-hints>=0.1.8
