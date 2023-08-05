@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+tstcls.py
+pytest_tstcls.egg-info/PKG-INFO
+pytest_tstcls.egg-info/SOURCES.txt
+pytest_tstcls.egg-info/dependency_links.txt
+pytest_tstcls.egg-info/requires.txt
+pytest_tstcls.egg-info/top_level.txt
