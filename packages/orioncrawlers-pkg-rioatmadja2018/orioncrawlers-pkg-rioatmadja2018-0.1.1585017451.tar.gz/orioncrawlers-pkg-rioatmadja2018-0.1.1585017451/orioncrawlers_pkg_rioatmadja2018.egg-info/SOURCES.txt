@@ -1,0 +1,9 @@
+README.md
+setup.py
+crawlers/__init__.py
+orioncrawlers_pkg_rioatmadja2018.egg-info/PKG-INFO
+orioncrawlers_pkg_rioatmadja2018.egg-info/SOURCES.txt
+orioncrawlers_pkg_rioatmadja2018.egg-info/dependency_links.txt
+orioncrawlers_pkg_rioatmadja2018.egg-info/requires.txt
+orioncrawlers_pkg_rioatmadja2018.egg-info/top_level.txt
+orioncrawlers_pkg_rioatmadja2018.egg-info/zip-safe
