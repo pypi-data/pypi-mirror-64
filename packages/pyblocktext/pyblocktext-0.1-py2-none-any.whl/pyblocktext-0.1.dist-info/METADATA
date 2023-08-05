@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyblocktext
+Version: 0.1
+Summary: a python package to generate blocktext
+Home-page: https://github.com/gubareve/py-blocktext/
+Author: Evan Gubarev
+Author-email: evan@evangubarev.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+The pyblocktext module lets users run the blocktext() command for single char's in python 2.
+
+
