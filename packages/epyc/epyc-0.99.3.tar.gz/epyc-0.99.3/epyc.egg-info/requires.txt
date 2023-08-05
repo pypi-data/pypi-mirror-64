@@ -1,0 +1,7 @@
+six
+future
+numpy
+pyzmq
+ipyparallel>=6.2.4
+dill
+pandas
