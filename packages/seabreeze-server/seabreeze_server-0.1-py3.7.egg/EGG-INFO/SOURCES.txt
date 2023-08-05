@@ -1,0 +1,10 @@
+README.md
+setup.py
+seabreeze_server/__init__.py
+seabreeze_server/client.py
+seabreeze_server/server.py
+seabreeze_server.egg-info/PKG-INFO
+seabreeze_server.egg-info/SOURCES.txt
+seabreeze_server.egg-info/dependency_links.txt
+seabreeze_server.egg-info/requires.txt
+seabreeze_server.egg-info/top_level.txt
