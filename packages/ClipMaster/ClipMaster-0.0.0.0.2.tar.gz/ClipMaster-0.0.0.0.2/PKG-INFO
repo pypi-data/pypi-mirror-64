@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ClipMaster
+Version: 0.0.0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/ShaonMajumder/ClipMaster
+Author: Shaon Majumder
+Author-email: smazoomder@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/ShaonMajumder/ClipMaster/archive/0.0.0.0.2.tar.gz
+Description: # ClipMaster
+        A growing stand-alone library to mass produce and edit videos.
+Keywords: shaon,video editing
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
