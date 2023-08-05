@@ -1,0 +1,7 @@
+README.md
+setup.py
+let45fc_paginator.egg-info/PKG-INFO
+let45fc_paginator.egg-info/SOURCES.txt
+let45fc_paginator.egg-info/dependency_links.txt
+let45fc_paginator.egg-info/top_level.txt
+paginator/__init__.py
