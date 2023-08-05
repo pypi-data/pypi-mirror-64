@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: emcore
+Version: 0.0.5
+Summary: Python module to access functionality in the emcore library
+Home-page: https://github.com/3dem/emcore
+Author: J.M. De la Rosa Trevin
+Author-email: delarosatrevin@scilifelab.se
+License: GPLv3
+Keywords: electron-microscopy cryo-em structural-biology image-processing
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+UNKNOWN
+
+
