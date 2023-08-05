@@ -1,0 +1,8 @@
+setup.py
+topconjp2lib/__init__.py
+topconjp2lib/topconopenjp2.dll
+topconjp2lib/tpopenjp2.py
+topconjp2lib.egg-info/PKG-INFO
+topconjp2lib.egg-info/SOURCES.txt
+topconjp2lib.egg-info/dependency_links.txt
+topconjp2lib.egg-info/top_level.txt
