@@ -1,0 +1,2 @@
+black==19.10b0
+noseOfYeti>=2.0.0
