@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+dash_resumable_upload_bb/__init__.py
+dash_resumable_upload_bb/bundle.js
+dash_resumable_upload_bb/metadata.json
+dash_resumable_upload_bb/version.py
+dash_resumable_upload_bb.egg-info/PKG-INFO
+dash_resumable_upload_bb.egg-info/SOURCES.txt
+dash_resumable_upload_bb.egg-info/dependency_links.txt
+dash_resumable_upload_bb.egg-info/top_level.txt
