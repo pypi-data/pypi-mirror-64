@@ -1,0 +1,11 @@
+wechat_backup_cli/__init__.py,sha256=PRpnjjAR92q0Kh1L2v64eXb5oX1oyLqqJtoVjfFVUEs,715
+wechat_backup_cli/__main__.py,sha256=mOSeT_jEidlBlbo56PDM7URbE4ziQr_iekYiIqmZU_0,1458
+wechat_backup_cli/ios/__init__.py,sha256=PRpnjjAR92q0Kh1L2v64eXb5oX1oyLqqJtoVjfFVUEs,715
+wechat_backup_cli/ios/command/__init__.py,sha256=PRpnjjAR92q0Kh1L2v64eXb5oX1oyLqqJtoVjfFVUEs,715
+wechat_backup_cli/ios/command/dump_messages.py,sha256=Akf3P7jgFdWDeqezEWfzWh7eMel3ywjXBmPP0hnn3zM,1451
+wechat_backup_cli-0.0.1.dist-info/COPYING,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+wechat_backup_cli-0.0.1.dist-info/METADATA,sha256=7-7e0JcymJ6MxTRRj8p5imxC0PfTGAP00sDh1t58ZjE,762
+wechat_backup_cli-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+wechat_backup_cli-0.0.1.dist-info/entry_points.txt,sha256=3NdpAFBKlhU04LZ88583cKiALOVqAuChdWIQaRgnw1Q,67
+wechat_backup_cli-0.0.1.dist-info/top_level.txt,sha256=vwguUm0Egh8ULdfhyzzDXC6kf2KSLz5py5Y-R9WfVz4,18
+wechat_backup_cli-0.0.1.dist-info/RECORD,,
