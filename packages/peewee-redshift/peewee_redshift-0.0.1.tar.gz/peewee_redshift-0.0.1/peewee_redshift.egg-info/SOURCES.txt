@@ -1,0 +1,8 @@
+README.md
+setup.py
+peewee_redshift/__init__.py
+peewee_redshift.egg-info/PKG-INFO
+peewee_redshift.egg-info/SOURCES.txt
+peewee_redshift.egg-info/dependency_links.txt
+peewee_redshift.egg-info/requires.txt
+peewee_redshift.egg-info/top_level.txt
