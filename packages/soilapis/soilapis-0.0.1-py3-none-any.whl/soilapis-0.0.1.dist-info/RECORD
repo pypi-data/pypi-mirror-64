@@ -1,0 +1,10 @@
+soilapis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soilapis/calculator.py,sha256=aozb2XYVBF1Fo7I0e1PYHY7-nFkkIXZUDcbnItufHfs,2258
+soilapis/extract_country_bbox.py,sha256=HMj5F7TxiLeMwYVTi68zgQnVB-bKIaLBGyw9GzL9n4E,5373
+soilapis/fortran_apis.py,sha256=kxK6aMW7cVRG88LfX04Pgh6hKrx03SDtSr4px6MPenI,2511
+soilapis/summary_soil_property.py,sha256=RAVarILB08mnBTQfjeNeLUPFeoN_TUxxODqucUS-KMs,18147
+soilapis-0.0.1.dist-info/LICENSE.txt,sha256=1areR29E_ctD-bxcKjlLKDlLLpNtxS5FIQqflrnw4uU,1077
+soilapis-0.0.1.dist-info/METADATA,sha256=NMiyQG9d2kaJhqubjbT4wW7lobn3ByLbYC5mzlw1htM,598
+soilapis-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+soilapis-0.0.1.dist-info/top_level.txt,sha256=22tX3zk09b8FObcBMfK_Nn83j-qD3z3XS9aR1aVHC_A,9
+soilapis-0.0.1.dist-info/RECORD,,
