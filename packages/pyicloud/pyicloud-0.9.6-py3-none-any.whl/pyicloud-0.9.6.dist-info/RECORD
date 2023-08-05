@@ -1,0 +1,11 @@
+pyicloud/__init__.py,sha256=Y-mvvmWvgKT3ub2FAzXLPdqu8BiFpYE_je_WaDzw9WM,120
+pyicloud/base.py,sha256=NJg4Y94X39vfRAU4wQ3_3q3Kh_SngnsZbJV5IKtIVlI,12367
+pyicloud/cmdline.py,sha256=ENRsgRW2NHmxqspnj6kZibVLDT8Ma-LbjKck019BKuE,10992
+pyicloud/exceptions.py,sha256=R8vcIoM0xKFzbG6sqv9tT_oslLHkzzQuihDWHsjq_6E,996
+pyicloud/utils.py,sha256=WiXdk8G278h4CQ2vYmxsNT5vXjGElbsPU1DAQ_nwV0I,1734
+pyicloud-0.9.6.dist-info/LICENSE.txt,sha256=WYoGa23mZ6CIv3-kGgKeSaNpH8vJk-J4ypFCKTPT2SI,1087
+pyicloud-0.9.6.dist-info/METADATA,sha256=7f_qbTH7mueW2w35ZrjZU8Wkt8zpFKicvODkIaNtFE4,1031
+pyicloud-0.9.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyicloud-0.9.6.dist-info/entry_points.txt,sha256=gsgNO7axV2Icygk0mMyJpzxviXiP9xme0zcNxE3u1JU,50
+pyicloud-0.9.6.dist-info/top_level.txt,sha256=Z_pxXp8i2Sqa5HbgStVT5CRdtZsfoiVN8n0I1GzhLa4,9
+pyicloud-0.9.6.dist-info/RECORD,,
