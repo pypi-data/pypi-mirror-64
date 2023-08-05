@@ -1,0 +1,8 @@
+package/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package/mymodule1.py,sha256=HQssL5NaONiyLuf7uHufSAJa19XjYxA5cXQNtkxVd9I,264
+package/templates/temp_file,sha256=VtgvD_57iLRwBs5AosDRMG24yBcLPGeW4AnkI7zh7lk,47
+pydistwork-1.0.0.dist-info/METADATA,sha256=NMnRlBvzuR-mmbHstFuELDvPG94moG_jRTTDHv45tA4,174
+pydistwork-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pydistwork-1.0.0.dist-info/entry_points.txt,sha256=W7aAZHuAxpX6c5g5WW9hiw7tTfjrwyvN7CUXyGVTI-k,55
+pydistwork-1.0.0.dist-info/top_level.txt,sha256=TpQW7893uEAT8mPh-QCMZWhhKYvlqryC9Fjm5Hxg2f8,8
+pydistwork-1.0.0.dist-info/RECORD,,
