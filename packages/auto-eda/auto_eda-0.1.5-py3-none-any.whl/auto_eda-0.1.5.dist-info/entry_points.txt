@@ -1,0 +1,3 @@
+[console_scripts]
+auto-eda = code.auto_eda:main
+
