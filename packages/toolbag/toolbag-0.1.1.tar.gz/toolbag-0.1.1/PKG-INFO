@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: toolbag
+Version: 0.1.1
+Summary: Python toolbag, like a toolbox, but more flexible!
+Home-page: https://github.com/shimst3r/toolbag
+Author: Nils Müller
+Author-email: shimst3r@gmail.com
+License: MIT
+Description: # toolbag
+        
+        [![Latest PyPI version](https://img.shields.io/pypi/v/toolbag.svg)](https://pypi.python.org/pypi/toolbag/)
+        
+        [![PyPI license](https://img.shields.io/pypi/l/toolbag.svg)](https://pypi.python.org/pypi/toolbag/)
+        
+        [![PyPI format](https://img.shields.io/pypi/format/toolbag.svg)](https://pypi.python.org/pypi/toolbag/)
+        
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/toolbag.svg)](https://pypi.python.org/pypi/toolbag/)
+        
+        [![PyPI status](https://img.shields.io/pypi/status/toolbag.svg)](https://pypi.python.org/pypi/toolbag/)
+        
+        Python toolbag, like a toolbox, but more flexible!
+        
+        ## Usage
+        
+        ## Installation
+        
+        ## Compatibility
+        
+        ## Licence
+        
+        ## Authors
+        
+        `toolbag` was written by [Nils Müller](mailto:shimst3r@gmail.com).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
