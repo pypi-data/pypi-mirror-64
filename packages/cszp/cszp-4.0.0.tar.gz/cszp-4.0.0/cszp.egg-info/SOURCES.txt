@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cszp.egg-info/PKG-INFO
+cszp.egg-info/SOURCES.txt
+cszp.egg-info/dependency_links.txt
+cszp.egg-info/entry_points.txt
+cszp.egg-info/requires.txt
+cszp.egg-info/top_level.txt
