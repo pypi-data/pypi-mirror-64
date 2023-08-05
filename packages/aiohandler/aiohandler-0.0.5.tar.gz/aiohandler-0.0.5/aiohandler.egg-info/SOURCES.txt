@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiohandler/__init__.py
+aiohandler/aiohandler.py
+aiohandler.egg-info/PKG-INFO
+aiohandler.egg-info/SOURCES.txt
+aiohandler.egg-info/dependency_links.txt
+aiohandler.egg-info/top_level.txt

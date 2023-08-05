@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: aiohandler
+Version: 0.0.5
+Summary: httpheader for logging on async
+Home-page: https://github.com/grarich123/aiohandler
+Author: grarich
+Author-email: grarich123+github@gmail.com
+License: UNKNOWN
+Description: # aiohandler  
+        aiohandler = aiohttp handler
+        
+        loggingモジュールをノンブロッキングでwebhookに送信する拡張ライブラリ  
+        
+        # 使い方  
+        
+        `pip install -i https://test.pypi.org/simple/ aiohandler`  
+        
+        
+        ```python
+        import asyncio
+        import logging
+        import aiohandler
+        
+        WEBHOOK_URL = "Your webhook url"
+        logger = logging.getLogger()
+        handler = aiohandler.AioHTTPHandler(WEBHOOK_URL, method="POST", body="content")#bodyはwebhookで送信するパラメータ
+        logger.addHandler(handler)
+        
+        loop = asyncio.get_event_loop()
+        
+        async def main():
+            print("hello!")
+            logging.info('info')
+            logging.debug('debug')
+            logging.error('error')
+            await asyncio.sleep(1)
+            logging.warning('warning')
+            logging.critical('critical')
+            print("hello world!")
+        
+        if __name__ == "__main__":
+            loop.create_task(main())
+            loop.run_forever()
+        ```
+        ご協力してくださった皆様ありがとうございます！
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
