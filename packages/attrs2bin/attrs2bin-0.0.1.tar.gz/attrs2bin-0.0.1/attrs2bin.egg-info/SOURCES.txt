@@ -1,0 +1,12 @@
+README.md
+setup.py
+attrs2bin/__init__.py
+attrs2bin/dequebuffer.py
+attrs2bin/exceptions.py
+attrs2bin/interfaces.py
+attrs2bin/serializers.py
+attrs2bin.egg-info/PKG-INFO
+attrs2bin.egg-info/SOURCES.txt
+attrs2bin.egg-info/dependency_links.txt
+attrs2bin.egg-info/requires.txt
+attrs2bin.egg-info/top_level.txt
