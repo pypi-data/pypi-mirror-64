@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: tensortest
+Version: 0.2
+Summary: How to publish py package to PyPI
+Home-page: https://github.com/thanhkaist/tensortest
+Author: Thanh Nguyen
+Author-email: thanhnguyen.email@domain.com
+License: MIT
+Download-URL: https://github.com/thanhkaist/tensortest/archive/V_0.2.tar.gz
+Description: UNKNOWN
+Keywords: test,pipy,publish,how to
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
