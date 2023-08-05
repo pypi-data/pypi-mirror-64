@@ -1,0 +1,9 @@
+os_grid_reference/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os_grid_reference/constants.py,sha256=-NRKQACSAvW5n8WTXy5r5ONPKfspQlpT_PQ88jaPhZk,358
+os_grid_reference/ngr_decode.py,sha256=bP2J1cMcDfp0jny80jJvQy9dQrFIc02BAY2IWCmbIeE,5735
+os_grid_reference/ngr_encode.py,sha256=YFHo2c5lvcDC1MJHcFLA2wQB45_PBKr_L3Abj02s04s,5217
+os_grid_reference-0.3.0.dist-info/LICENSE,sha256=WBKuAYeUZMMlcQDzAHs1905KMJglfqy_XFSFCfxz-2k,1069
+os_grid_reference-0.3.0.dist-info/METADATA,sha256=z1ZUjH5T3KVxSR4Ks4dOWhJjGGYtisUfBTFvcFLy_Ts,1783
+os_grid_reference-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+os_grid_reference-0.3.0.dist-info/top_level.txt,sha256=-OQHrSHTF06Hcc7JzpWbSLEf7utcUAfmmkleXhomS9o,18
+os_grid_reference-0.3.0.dist-info/RECORD,,
