@@ -1,0 +1,2 @@
+matplotlib==3.2.1
+pyexiv2==2.1.0
