@@ -1,0 +1,7 @@
+README.md
+setup.py
+biliBV/__init__.py
+biliBV.egg-info/PKG-INFO
+biliBV.egg-info/SOURCES.txt
+biliBV.egg-info/dependency_links.txt
+biliBV.egg-info/top_level.txt
