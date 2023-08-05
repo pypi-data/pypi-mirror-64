@@ -1,0 +1,759 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-03-21 18:40+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\django_power_cms\admin.py:95
+msgid "Publish State"
+msgstr "发布状态"
+
+#: .\django_power_cms\admin.py:99 .\django_power_cms\admin.py:106
+msgid "Other Config"
+msgstr "其它设置"
+
+#: .\django_power_cms\admin.py:105
+msgid "Basic Info"
+msgstr "基础信息"
+
+#: .\django_power_cms\admin.py:113 .\django_power_cms\admin.py:116
+#: .\django_power_cms\admin.py:164 .\django_power_cms\admin.py:166
+msgid "Preview"
+msgstr "预览"
+
+#: .\django_power_cms\admin.py:126
+msgid "Enter into Site Manager..."
+msgstr "进入站点管理"
+
+#: .\django_power_cms\admin.py:154 .\django_power_cms\admin.py:227
+#: .\django_power_cms\models.py:360 .\django_power_cms\models.py:455
+#: .\django_power_cms\models.py:535 .\django_power_cms\models.py:627
+#: .\django_power_cms\models.py:670
+msgid "Title"
+msgstr "标题"
+
+#: .\django_power_cms\admin.py:158
+msgid "Display Page URL"
+msgstr "页面智能标识"
+
+#: .\django_power_cms\admin.py:186
+msgid "Publish Status"
+msgstr "发布状态"
+
+#: .\django_power_cms\admin.py:195
+msgid "Page Basic Settings"
+msgstr "基础信息设置"
+
+#: .\django_power_cms\admin.py:196
+msgid "Page Template & Theme Settings"
+msgstr "模板与主题设置"
+
+#: .\django_power_cms\admin.py:197
+msgid "Page Widgets Settings"
+msgstr "版块设置"
+
+#: .\django_power_cms\admin.py:234
+msgid "Article Publish Settings"
+msgstr "发布状态管理"
+
+#: .\django_power_cms\admin.py:249
+msgid "Article Basic Settings"
+msgstr "基础设置"
+
+#: .\django_power_cms\admin.py:250
+msgid "Article Content Settings"
+msgstr "内容管理"
+
+#: .\django_power_cms\admin.py:251
+msgid "Article Content Image Settigns"
+msgstr "插图管理"
+
+#: .\django_power_cms\admin.py:271
+msgid "Widget Basic Style Settings"
+msgstr "显示设置"
+
+#: .\django_power_cms\admin.py:287
+msgid "Widget Basic Settings"
+msgstr "基础设置"
+
+#: .\django_power_cms\admin.py:288
+msgid "Widget Extra Class"
+msgstr "自定义样式类"
+
+#: .\django_power_cms\admin.py:289
+msgid "Widget Inline Style"
+msgstr "内嵌样式"
+
+#: .\django_power_cms\admin.py:290 .\django_power_cms\models.py:462
+msgid "Widget Links"
+msgstr "版块链接"
+
+#: .\django_power_cms\admin.py:319
+msgid "Static Html Settings"
+msgstr "静态HTML代码"
+
+#: .\django_power_cms\admin.py:334
+msgid "Carouse Widget Image Settings"
+msgstr "轮播图管理"
+
+#: .\django_power_cms\admin.py:358
+msgid "Static List Item Settings"
+msgstr "静态列表项设置"
+
+#: .\django_power_cms\admin.py:376
+msgid "Welcome message settings"
+msgstr "登录用户的欢迎提示信息"
+
+#: .\django_power_cms\admin.py:380
+msgid "Change password link settings"
+msgstr "修改密码链接设置"
+
+#: .\django_power_cms\admin.py:384
+msgid "Login and logout link Settings"
+msgstr "登录/注销链接设置"
+
+#: .\django_power_cms\admin.py:391
+msgid "Topbar Brand Settings"
+msgstr "主导航链接设置"
+
+#: .\django_power_cms\admin.py:392
+msgid "Topbar Settings"
+msgstr "主导航信息设置"
+
+#: .\django_power_cms\admin.py:407
+msgid "Article List Settings"
+msgstr "文章列表设置"
+
+#: .\django_power_cms\admin.py:422
+msgid "Article Detail Settings"
+msgstr "文章详情设置"
+
+#: .\django_power_cms\apps.py:10
+msgid "Django Power CMS"
+msgstr "内容管理系统"
+
+#: .\django_power_cms\apps.py:49 .\django_power_cms\apps.py:95
+msgid "Site Manager"
+msgstr "网站管理"
+
+#: .\django_power_cms\apps.py:60
+#: .\django_power_cms\templates\admin\django_power_cms\site\change_form2.html:43
+msgid "Page Manager"
+msgstr "页面管理"
+
+#: .\django_power_cms\apps.py:65
+#: .\django_power_cms\templates\admin\django_power_cms\site\change_form2.html:49
+msgid "Widget Manager"
+msgstr "版块管理"
+
+#: .\django_power_cms\apps.py:70
+#: .\django_power_cms\templates\admin\django_power_cms\site\change_form2.html:55
+msgid "Article Manager"
+msgstr "文章管理"
+
+#: .\django_power_cms\apps.py:96
+msgid "Template Manager"
+msgstr "页面布局管理"
+
+#: .\django_power_cms\apps.py:97
+msgid "Theme Manager"
+msgstr "主题样式管理"
+
+#: .\django_power_cms\export_templates.py:6
+msgid "Right Portlet Template"
+msgstr "右边栏布局"
+
+#: .\django_power_cms\export_templates.py:9
+msgid "Right Portlet Template Description."
+msgstr "提供支持主导航、顶部、主体、右边栏、底部等版块的页面布局管理功能。"
+
+#: .\django_power_cms\export_templates.py:14
+#: .\django_power_cms\export_templates.py:43
+#: .\django_power_cms\export_templates.py:72
+#: .\django_power_cms\export_templates.py:105
+msgid "Slot Topbars"
+msgstr "主导航栏"
+
+#: .\django_power_cms\export_templates.py:18
+#: .\django_power_cms\export_templates.py:47
+#: .\django_power_cms\export_templates.py:76
+#: .\django_power_cms\export_templates.py:109
+msgid "Slot Headers"
+msgstr "顶部"
+
+#: .\django_power_cms\export_templates.py:22
+#: .\django_power_cms\export_templates.py:51
+#: .\django_power_cms\export_templates.py:84
+#: .\django_power_cms\export_templates.py:113
+msgid "Slot Mains"
+msgstr "主体"
+
+#: .\django_power_cms\export_templates.py:26
+#: .\django_power_cms\export_templates.py:88
+msgid "Right Slot Portlets"
+msgstr "右边栏"
+
+#: .\django_power_cms\export_templates.py:30
+#: .\django_power_cms\export_templates.py:59
+#: .\django_power_cms\export_templates.py:92
+#: .\django_power_cms\export_templates.py:117
+msgid "Slot Footers"
+msgstr "底部"
+
+#: .\django_power_cms\export_templates.py:35
+msgid "Left Portlet Template"
+msgstr "左边栏布局"
+
+#: .\django_power_cms\export_templates.py:38
+msgid "Left Portlet Template Description."
+msgstr "提供支持主导航、顶部、主体、左边栏、底部等版块的页面布局管理功能。"
+
+#: .\django_power_cms\export_templates.py:55
+#: .\django_power_cms\export_templates.py:80
+msgid "Left Slot Portlets"
+msgstr "左边栏"
+
+#: .\django_power_cms\export_templates.py:64
+msgid "Both Portlet Template"
+msgstr "三栏布局"
+
+#: .\django_power_cms\export_templates.py:67
+msgid "Both Portlet Template Description."
+msgstr ""
+"提供支持主导航、顶部、左边栏、主体、右边栏、底部等版块的页面布局管理功能。"
+
+#: .\django_power_cms\export_templates.py:97
+msgid "No Portlet Template"
+msgstr "无栏布局"
+
+#: .\django_power_cms\export_templates.py:100
+msgid "No Portlet Template Description."
+msgstr "提供支持主导航、顶部、主体、底部等版块的页面布局管理功能。"
+
+#: .\django_power_cms\export_themes.py:6
+msgid "django2-style"
+msgstr "DJANGO2-STYLE"
+
+#: .\django_power_cms\export_themes.py:9
+msgid "Django2 style theme Description."
+msgstr "提供支持主导航、顶部、主体、右边栏、底部等版块的页面布局管理功能。"
+
+#: .\django_power_cms\models.py:30 .\django_power_cms\models.py:147
+#: .\django_power_cms\models.py:206 .\django_power_cms\models.py:223
+#: .\django_power_cms\templates\admin\django_power_cms\site\result-card-body.html:7
+msgid "Code"
+msgstr "代码"
+
+#: .\django_power_cms\models.py:31 .\django_power_cms\models.py:148
+#: .\django_power_cms\models.py:207 .\django_power_cms\models.py:222
+#: .\django_power_cms\models.py:261 .\django_power_cms\models.py:358
+#: .\django_power_cms\templates\admin\django_power_cms\site\result-card-body.html:3
+msgid "Name"
+msgstr "名称"
+
+#: .\django_power_cms\models.py:32 .\django_power_cms\models.py:149
+msgid "App Label"
+msgstr "应用"
+
+#: .\django_power_cms\models.py:33 .\django_power_cms\models.py:150
+msgid "App Verbose Name"
+msgstr "应用名称"
+
+#: .\django_power_cms\models.py:34 .\django_power_cms\models.py:151
+#: .\django_power_cms\models.py:672
+msgid "Description"
+msgstr "描述"
+
+#: .\django_power_cms\models.py:35 .\django_power_cms\models.py:152
+#: .\django_power_cms\models.py:676
+msgid "Preview Image"
+msgstr "预览图片"
+
+#: .\django_power_cms\models.py:36
+msgid "Is default theme"
+msgstr "是否默认主题样式"
+
+#: .\django_power_cms\models.py:39 .\django_power_cms\models.py:127
+#: .\django_power_cms\models.py:137 .\django_power_cms\models.py:226
+#: .\django_power_cms\models.py:267
+msgid "Theme"
+msgstr "样式主题"
+
+#: .\django_power_cms\models.py:40
+msgid "Themes"
+msgstr "样式主题"
+
+#: .\django_power_cms\models.py:128
+msgid "CSS File"
+msgstr "CSS文件"
+
+#: .\django_power_cms\models.py:129 .\django_power_cms\models.py:139
+#: .\django_power_cms\models.py:208 .\django_power_cms\models.py:263
+#: .\django_power_cms\models.py:345 .\django_power_cms\models.py:504
+#: .\django_power_cms\models.py:538 .\django_power_cms\models.py:629
+#: .\django_power_cms\models.py:678
+msgid "Order"
+msgstr "排序"
+
+#: .\django_power_cms\models.py:132
+msgid "Theme CSS"
+msgstr "样式主题CSS文件"
+
+#: .\django_power_cms\models.py:133
+msgid "Theme CSSes"
+msgstr "样式主题CSS文件"
+
+#: .\django_power_cms\models.py:138
+msgid "JS File"
+msgstr "JS文件"
+
+#: .\django_power_cms\models.py:142
+msgid "Theme JS"
+msgstr "样式主题JS文件"
+
+#: .\django_power_cms\models.py:143
+msgid "Theme JSes"
+msgstr "样式主题JS文件"
+
+#: .\django_power_cms\models.py:153
+msgid "Template File"
+msgstr "模板文件"
+
+#: .\django_power_cms\models.py:156 .\django_power_cms\models.py:205
+#: .\django_power_cms\models.py:266
+msgid "Template"
+msgstr "页面布局"
+
+#: .\django_power_cms\models.py:157
+msgid "Templates"
+msgstr "页面布局"
+
+#: .\django_power_cms\models.py:211
+msgid "Template Slot"
+msgstr "页面区块"
+
+#: .\django_power_cms\models.py:212
+msgid "Template Slots"
+msgstr "页面区块"
+
+#: .\django_power_cms\models.py:224 .\django_power_cms\models.py:264
+#: .\django_power_cms\models.py:674
+#: .\django_power_cms\templates\admin\django_power_cms\site\result-card-body.html:15
+msgid "Published"
+msgstr "是否发布"
+
+#: .\django_power_cms\models.py:225 .\django_power_cms\models.py:265
+#: .\django_power_cms\models.py:675
+msgid "Published Time"
+msgstr "发布时间"
+
+#: .\django_power_cms\models.py:227
+#: .\django_power_cms\templates\admin\django_power_cms\site\result-card-body.html:11
+msgid "Index Page Code"
+msgstr "首页代码"
+
+#: .\django_power_cms\models.py:228
+msgid "FavIcon"
+msgstr "站点图标"
+
+#: .\django_power_cms\models.py:231 .\django_power_cms\models.py:259
+#: .\django_power_cms\models.py:357 .\django_power_cms\models.py:668
+msgid "Site"
+msgstr "网站"
+
+#: .\django_power_cms\models.py:232
+msgid "Sites"
+msgstr "网站"
+
+#: .\django_power_cms\models.py:260
+msgid "Parent Page"
+msgstr "上级页面"
+
+#: .\django_power_cms\models.py:270 .\django_power_cms\models.py:343
+msgid "Page"
+msgstr "页面"
+
+#: .\django_power_cms\models.py:271
+msgid "Pages"
+msgstr "页面"
+
+#: .\django_power_cms\models.py:344
+msgid "Slot"
+msgstr "区块"
+
+#: .\django_power_cms\models.py:346 .\django_power_cms\models.py:376
+#: .\django_power_cms\models.py:453
+msgid "Widget"
+msgstr "版块"
+
+#: .\django_power_cms\models.py:349
+msgid "Page Widget Binding"
+msgstr "页面版块设置"
+
+#: .\django_power_cms\models.py:350
+msgid "Page Widget Bindings"
+msgstr "页面版块设置"
+
+#: .\django_power_cms\models.py:361
+msgid "Widget With border"
+msgstr "版块边框"
+
+#: .\django_power_cms\models.py:362
+msgid "Widget Body Pading"
+msgstr "版块内边距"
+
+#: .\django_power_cms\models.py:363
+msgid "Widget Style"
+msgstr "版块自定义样式"
+
+#: .\django_power_cms\models.py:364
+msgid "Widget Header Style"
+msgstr "版块标题自定义样式"
+
+#: .\django_power_cms\models.py:365
+msgid "Widget Body Style"
+msgstr "版块主体自定义样式"
+
+#: .\django_power_cms\models.py:366
+msgid "Widget Footer Style"
+msgstr "版块底部自定义样式"
+
+#: .\django_power_cms\models.py:367
+msgid "Widget Class"
+msgstr "版块自定义样式类"
+
+#: .\django_power_cms\models.py:368
+msgid "Widget Header Class"
+msgstr "版块标题自定义样式类"
+
+#: .\django_power_cms\models.py:369
+msgid "Widget Body Class"
+msgstr "版块主体自定义样式类"
+
+#: .\django_power_cms\models.py:370
+msgid "Widget Footer Class"
+msgstr "版块底部自定义样式类"
+
+#: .\django_power_cms\models.py:377
+msgid "Widgets"
+msgstr "版块"
+
+#: .\django_power_cms\models.py:447
+msgid "Top Left"
+msgstr "左上"
+
+#: .\django_power_cms\models.py:448
+msgid "Top Right"
+msgstr "右上"
+
+#: .\django_power_cms\models.py:449
+msgid "Bottom Left"
+msgstr "左下"
+
+#: .\django_power_cms\models.py:450
+msgid "Bottom Right"
+msgstr "右下"
+
+#: .\django_power_cms\models.py:454
+msgid "Widget Link Role"
+msgstr "版块链接位置"
+
+#: .\django_power_cms\models.py:456
+msgid "Url"
+msgstr "链接"
+
+#: .\django_power_cms\models.py:457
+msgid "Icon Class"
+msgstr "图标类名"
+
+#: .\django_power_cms\models.py:458
+msgid "Link Target"
+msgstr "链接目标"
+
+#: .\django_power_cms\models.py:461
+msgid "Widget Link"
+msgstr "版块链接"
+
+#: .\django_power_cms\models.py:465
+msgid "HTML Code"
+msgstr "HTML代码"
+
+#: .\django_power_cms\models.py:468
+msgid "Static HTML Widget"
+msgstr "静态HTML版块"
+
+#: .\django_power_cms\models.py:469
+msgid "Static HTML Widgets"
+msgstr "静态HTML版块"
+
+#: .\django_power_cms\models.py:475
+msgid "Width"
+msgstr "宽度"
+
+#: .\django_power_cms\models.py:476
+msgid "Height"
+msgstr "高度"
+
+#: .\django_power_cms\models.py:488
+msgid "Carousel Widget"
+msgstr "轮播图版块"
+
+#: .\django_power_cms\models.py:489
+msgid "Carousel Widgets"
+msgstr "轮播图版块"
+
+#: .\django_power_cms\models.py:500
+msgid "Carousel"
+msgstr "轮播图"
+
+#: .\django_power_cms\models.py:501 .\django_power_cms\models.py:626
+#: .\django_power_cms\models.py:705
+msgid "Image"
+msgstr "图片"
+
+#: .\django_power_cms\models.py:502 .\django_power_cms\models.py:536
+#: .\django_power_cms\models.py:628 .\django_power_cms\models.py:646
+msgid "URL"
+msgstr "链接"
+
+#: .\django_power_cms\models.py:503 .\django_power_cms\models.py:537
+msgid "URL Target"
+msgstr "链接目标"
+
+#: .\django_power_cms\models.py:507
+msgid "Carousel Widget Image"
+msgstr "轮播图图片"
+
+#: .\django_power_cms\models.py:508
+msgid "Carousel Widget Images"
+msgstr "轮播图图片"
+
+#: .\django_power_cms\models.py:515 .\django_power_cms\models.py:725
+msgid "Max Display Count"
+msgstr "显示数量"
+
+#: .\django_power_cms\models.py:516 .\django_power_cms\models.py:726
+msgid "Empty Display Message"
+msgstr "空数据提示"
+
+#: .\django_power_cms\models.py:519
+msgid "Static List Widget"
+msgstr "静态列表版块"
+
+#: .\django_power_cms\models.py:520
+msgid "Static List Widgets"
+msgstr "静态列表版块"
+
+#: .\django_power_cms\models.py:534
+msgid "The Static List Widget"
+msgstr "静态列表版块"
+
+#: .\django_power_cms\models.py:539 .\django_power_cms\models.py:680
+msgid "Label"
+msgstr "标签"
+
+#: .\django_power_cms\models.py:540
+msgid "Label Class"
+msgstr "标签样式"
+
+#: .\django_power_cms\models.py:549
+msgid "Welcome Message For Login User"
+msgstr "登录用户的欢迎提示信息"
+
+#: .\django_power_cms\models.py:550
+msgid "Welcome Message For Anonymous User"
+msgstr "匿名用户的欢迎提示信息"
+
+#: .\django_power_cms\models.py:551
+msgid "Fix Position"
+msgstr "固定显示位置"
+
+#: .\django_power_cms\models.py:552
+msgid "Show Login Or Logout Link"
+msgstr "显示登录/注销链接"
+
+#: .\django_power_cms\models.py:553
+msgid "Login Link"
+msgstr "登录链接"
+
+#: .\django_power_cms\models.py:554
+msgid "Logout Link"
+msgstr "注销链接"
+
+#: .\django_power_cms\models.py:555
+msgid "Show Change Password Link"
+msgstr "显示修改密码链接"
+
+#: .\django_power_cms\models.py:556
+msgid "Change Password Link"
+msgstr "修改密码链接"
+
+#: .\django_power_cms\models.py:559
+msgid "Topbar Widget"
+msgstr "主导航栏"
+
+#: .\django_power_cms\models.py:560
+msgid "Topbar Widgets"
+msgstr "主导航栏"
+
+#: .\django_power_cms\models.py:604
+msgid "Logout"
+msgstr "注销"
+
+#: .\django_power_cms\models.py:610
+msgid "Login"
+msgstr "登录"
+
+#: .\django_power_cms\models.py:620
+msgid "Change password"
+msgstr "修改密码"
+
+#: .\django_power_cms\models.py:625
+msgid "Topbar"
+msgstr "主导航栏"
+
+#: .\django_power_cms\models.py:633
+msgid "Topbar Brand"
+msgstr "网站品牌图片"
+
+#: .\django_power_cms\models.py:634
+msgid "Topbar Brands"
+msgstr "网站品牌图片"
+
+#: .\django_power_cms\models.py:650
+msgid "Set Top"
+msgstr "置顶"
+
+#: .\django_power_cms\models.py:651
+msgid "Important"
+msgstr "重要"
+
+#: .\django_power_cms\models.py:652
+msgid "Good News"
+msgstr "喜报"
+
+#: .\django_power_cms\models.py:653
+msgid "Warning"
+msgstr "提醒"
+
+#: .\django_power_cms\models.py:669
+msgid "Article Parent"
+msgstr "上级文章"
+
+#: .\django_power_cms\models.py:671
+msgid "Author"
+msgstr "作者"
+
+#: .\django_power_cms\models.py:673
+msgid "Content"
+msgstr "内容"
+
+#: .\django_power_cms\models.py:677
+msgid "Show Preview Image"
+msgstr "显示预览图片"
+
+#: .\django_power_cms\models.py:679
+msgid "Priority"
+msgstr "优先级"
+
+#: .\django_power_cms\models.py:683 .\django_power_cms\models.py:704
+msgid "Article"
+msgstr "文章"
+
+#: .\django_power_cms\models.py:684
+msgid "Articles"
+msgstr "文章"
+
+#: .\django_power_cms\models.py:708
+msgid "Article Content Image"
+msgstr "文章插图"
+
+#: .\django_power_cms\models.py:709
+msgid "Article Content Images"
+msgstr "文章插图"
+
+#: .\django_power_cms\models.py:719
+msgid "Image Link"
+msgstr "图片链接"
+
+#: .\django_power_cms\models.py:722 .\django_power_cms\models.py:743
+msgid "Root"
+msgstr "根节点"
+
+#: .\django_power_cms\models.py:723
+msgid "Article List Page"
+msgstr "文章列表页面"
+
+#: .\django_power_cms\models.py:724
+msgid "Article Page"
+msgstr "文章详情页"
+
+#: .\django_power_cms\models.py:729
+msgid "Article List Widget"
+msgstr "文章列表版块"
+
+#: .\django_power_cms\models.py:730
+msgid "Article List Widgets"
+msgstr "文章插图"
+
+#: .\django_power_cms\models.py:744
+msgid "Show Description"
+msgstr "是否显示描述"
+
+#: .\django_power_cms\models.py:745
+msgid "Show Published Time"
+msgstr "是否显示发布时间"
+
+#: .\django_power_cms\models.py:746
+msgid "Show Author"
+msgstr "显示作者"
+
+#: .\django_power_cms\models.py:747
+msgid "Show Prev&Next Links"
+msgstr "显示上下文章链接"
+
+#: .\django_power_cms\models.py:750
+msgid "Article Detail Widget"
+msgstr "文章详情版块"
+
+#: .\django_power_cms\models.py:751
+msgid "Article Detail Widgets"
+msgstr "文章详情版块"
+
+#: .\django_power_cms\templates\django-power-cms\widgets\article-detail.html:7
+msgid "Article Published Time:"
+msgstr "发布时间："
+
+#: .\django_power_cms\templates\django-power-cms\widgets\article-detail.html:8
+msgid "Article Author:"
+msgstr "作者："
+
+#: .\django_power_cms\templates\django-power-cms\widgets\article-detail.html:23
+msgid "Prev Article:"
+msgstr "上一条："
+
+#: .\django_power_cms\templates\django-power-cms\widgets\article-detail.html:28
+msgid "Next Article:"
+msgstr "下一条："
+
+#~ msgid "Brand Link"
+#~ msgstr "站点标题链接"
+
+#~ msgid "Brand Link Target"
+#~ msgstr "站点标题链接目标"
+
+#~ msgid "Return to site info page"
+#~ msgstr "返回网站管理"

@@ -1,0 +1,54 @@
+# django-power-cms
+
+A power content management system based on django admin framework.
+
+## Install
+
+```shell
+pip install django-power-cms
+```
+
+## Release
+
+### v0.3.1 2020/03/22
+
+1. Site use a tabbed changeform.
+1. Widget use a tabbed changeform.
+1. Article use a tabbed changeform.
+1. Set Page's site field to current selected site.
+1. Set Widget's site field to current selected site.
+1. Set Article's site field to current selected site.
+1. Limit Page queryset to current selected site.
+1. Limit Widget queryset to current selected site.
+1. Limit Article queryset to current selected site.
+1. Add template preview images.
+1. Command django-power-cms-template add register-all sub-command.
+1. Command django-power-cms-theme add register-all sub-command.
+1. Add page's parent filed limit choice to current selected site.
+1. Add article's parent field limit choice to current selected site.
+1. Add preview link in site changelist card.
+1. Fix requirements.txt missing libraries problem.
+
+### v0.3.0 2020/03/21
+
+- Add no-portlet template.
+- Add site's facicon.
+- Add page title.
+- Add article detail widget.
+- Article model add site field.
+- Save current site id in session, and pages/wigets/articles are filtered with the site id.
+- Fix topbar's brand-image and brand-title display position problem.
+- Default template use full screen size instead of 1170px width.
+- Topbar brand link supports site-code-url and page-code-url.
+
+### v0.2.0 2020/03/08
+
+- Add left-portlet, both-portlet template support.
+- Add template and theme register commands.
+- Add page preview button.
+- Allow same page code in different site.
+- Turn site admin style to django-cards-admin.
+
+### v0.1.0 2020/03/05
+
+- First release.
