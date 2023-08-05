@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aws-snap
+Version: 0.0.1
+Summary: CLI (simple command line client) for making snapshots of AWS EC2 instances
+Home-page: https://gitlab.com/shindagger/aws-snap-python
+Author: Andy Klier
+Author-email: andyklier@gmail.com
+License: UNKNOWN
+Description: # aws-snap  
+        
+        Create snapshots of AWS EC2 instance volumes using tag names.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
