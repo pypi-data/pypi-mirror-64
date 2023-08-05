@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: drf-yasg-examples
+Version: 0.1.0
+Summary: Inspector for add example in drf-yasg docs
+License: MIT
+Author: Your Name
+Author-email: you@example.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: drf-yasg (>=1.17.1,<2.0.0)
