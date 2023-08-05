@@ -1,0 +1,15 @@
+README.md
+setup.py
+./dll/CUESDK.x64_2017.dll
+./dll/CUESDK_2017.dll
+cuesdk.egg-info/PKG-INFO
+cuesdk.egg-info/SOURCES.txt
+cuesdk.egg-info/dependency_links.txt
+cuesdk.egg-info/not-zip-safe
+cuesdk.egg-info/top_level.txt
+src/__init__.py
+src/api.py
+src/capi.py
+src/enums.py
+src/structs.py
+src/version.py
