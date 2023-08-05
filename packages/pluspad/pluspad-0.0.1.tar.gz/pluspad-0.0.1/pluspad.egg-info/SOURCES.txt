@@ -1,0 +1,10 @@
+README.md
+setup.py
+pluspad/__init__.py
+pluspad.egg-info/PKG-INFO
+pluspad.egg-info/SOURCES.txt
+pluspad.egg-info/dependency_links.txt
+pluspad.egg-info/not-zip-safe
+pluspad.egg-info/requires.txt
+pluspad.egg-info/top_level.txt
+pluspad_c/src/pluspad.c
