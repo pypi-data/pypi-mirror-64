@@ -1,0 +1,11 @@
+sentileak/__init__.py,sha256=zv40Uq2sfWzJZkjgU_FXNrvmc0Vhspe6x2FvzjS-9nQ,108
+sentileak/analizer.py,sha256=y8fq4_f0xrUcZnE_jSaP15clUcZFl3E9xGmOqe4jIho,8844
+sentileak/dataloader.py,sha256=g7Ik7G7oUkBPd6CdP6K3Bw6bngQu1nAe0ps_QiJYf0k,1066
+sentileak/data/es/boosters.csv,sha256=EaozqaztjBd5Hce0OdHKhMjwx8fN8L0zzIO_RUkP7-4,61
+sentileak/data/es/negations.csv,sha256=rgwI4dzdcGUSowvTFnGxjp_HsacW0OGuVvTrobT8Jt8,92
+sentileak/data/es/sentiment_words.csv,sha256=liSmqzI_YYxvGkdru-Mxyr_E1bIwaO8I-6Bqk17fK2c,36746
+SentiLeak-0.1b2.dist-info/LICENSE,sha256=fTqV5eBpeAZO0_jit8j4Ref9ikBSlHJ8xwj5TLg7gFk,7817
+SentiLeak-0.1b2.dist-info/METADATA,sha256=bk3f0YYYVCD2UuCmQjIEejle4AqK0LNj9FwZ5tPtywo,1821
+SentiLeak-0.1b2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+SentiLeak-0.1b2.dist-info/top_level.txt,sha256=3L4ofmfoH_3MubHd9k_S_-fdzPivY0Tju9mqKoiDkZc,10
+SentiLeak-0.1b2.dist-info/RECORD,,
