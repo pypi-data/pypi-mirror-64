@@ -1,0 +1,12 @@
+LICENSE,sha256=Lh-qBbuRV0-jiCIBhfV7NgdwFxQFOXH3BKOzK865hRs,10480
+alexapy/__init__.py,sha256=etuJVJuqzq9QmCTDeW8DkpJRSbXtcedbwvtdhjOjQeI,764
+alexapy/alexaapi.py,sha256=WM88pZviK2AWlsstIpQPHKv2I48aPMPLs-rjoO3ScgY,32770
+alexapy/alexalogin.py,sha256=oZoh5o33Wcpbgnxkf9dpTQgkxYrDOkRFCHjXr07i8_o,28442
+alexapy/alexawebsocket.py,sha256=v-EethdhR9wmqdhcHQsgEVL31GXnGHHSTKaE0Uk2xU4,13115
+alexapy/cookiejar.py,sha256=CBJ3M-Mg7SGATHJo_lyzbXWtwIwrK44fzPI-JriQExU,5702
+alexapy/errors.py,sha256=b2baezt-3_P4u0aZhOX8uf0YdjF6GAxEar2AGEzLndc,677
+alexapy/helpers.py,sha256=SNBuNZRvU48wYDuonMn1TGdex7mnHW6rpPQZEfsbtbY,3076
+alexapy-1.5.2.dist-info/LICENSE,sha256=Lh-qBbuRV0-jiCIBhfV7NgdwFxQFOXH3BKOzK865hRs,10480
+alexapy-1.5.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+alexapy-1.5.2.dist-info/METADATA,sha256=mjZk__hTpXeWjoRjvMeEiz9eOZ4k9XPWiHx4MfPuiU8,2560
+alexapy-1.5.2.dist-info/RECORD,,
