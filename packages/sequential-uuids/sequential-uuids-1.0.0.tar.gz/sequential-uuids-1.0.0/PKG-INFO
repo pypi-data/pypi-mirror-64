@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: sequential-uuids
+Version: 1.0.0
+Summary: Sequential UUID generator.
+Home-page: https://github.com/moeenz/sequential-uuids
+Author: Moeen Zamani
+Author-email: moeen.zamani@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3
