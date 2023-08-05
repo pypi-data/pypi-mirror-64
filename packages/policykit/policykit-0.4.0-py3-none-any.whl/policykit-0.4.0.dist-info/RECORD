@@ -1,0 +1,12 @@
+policykit/__init__.py,sha256=WvrdW0z8yfs92SiHtWYaQQPKzQxItI4uK8PhaC9OPfQ,70
+policykit/cli.py,sha256=loRK2rxVlyK1Cb0CqgSiRkV6Z7ElV6q6G6NQW5aO8I8,2212
+policykit/conftest.py,sha256=hJ2_UZIG1ovYuVDi1SmxFn1fX-mw-epk0LoK-5cHkFA,2562
+policykit/errors.py,sha256=oQOAZbVtYJK7E0kHemYY7hHDVHgxJumITtwox9MgCuM,95
+policykit/models.py,sha256=WNTa--LRcL0QWOv9ilDRFECEqgS2uDEnjLCEojy_XJ8,2409
+policykit/test_conftest.py,sha256=hfK8ioEyVsZiYe797Nd0wK3_lY9IRW0m2cbl90CaISg,4807
+policykit/test_models.py,sha256=5t7iDAwLjJhRmLawRS8qOZgWiuC7eJb4UVMyaCmwqqI,2061
+policykit-0.4.0.dist-info/entry_points.txt,sha256=ysD0-041km0Yz4j3DiaEUsdQkCowJxSlDfH72OINdyA,97
+policykit-0.4.0.dist-info/LICENSE,sha256=Oy-zphwjpff0Tpu0zxlh2rFYO1ooR1XS5xShM7BDkoc,558
+policykit-0.4.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+policykit-0.4.0.dist-info/METADATA,sha256=HFoaaIfQniYyCTFUSflWtFy_HxBy3TjADATqMWlGhdk,4871
+policykit-0.4.0.dist-info/RECORD,,
