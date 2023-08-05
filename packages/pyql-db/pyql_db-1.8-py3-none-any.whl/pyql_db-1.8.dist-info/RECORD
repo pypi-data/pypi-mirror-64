@@ -1,0 +1,7 @@
+pyql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyql/data.py,sha256=oKM5vPRrSWh8CX5H5fM9MbapKY7mmpHdWgUb6kWO1mY,15378
+pyql/test.py,sha256=d2Js4bKBItnoehBnN3THxnbLozCkGABuCyVZEN4swSo,6641
+pyql_db-1.8.dist-info/METADATA,sha256=kI84AywPVWy7Lki5_e3DZOlXYnkJkp-ImRcex7NsECI,5525
+pyql_db-1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyql_db-1.8.dist-info/top_level.txt,sha256=c7uArT0-gXYLm6txhu6A6IAPCIedlILva7LxhV9oUis,5
+pyql_db-1.8.dist-info/RECORD,,
