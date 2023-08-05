@@ -1,0 +1,1 @@
+This library is created to include test cases through the SMKTEST library in an easy and safe way in projects that have automation in CICD environments.
