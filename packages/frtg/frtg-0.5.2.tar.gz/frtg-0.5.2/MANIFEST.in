@@ -1,0 +1,2 @@
+recursive-include frtg/static/js *.js
+recursive-include frtg/templates *.html
