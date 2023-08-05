@@ -1,0 +1,2024 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhive.account module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhive.aes module" href="bhive.aes.html" />
+    <link rel="prev" title="bhive package" href="bhive.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="bhive.html">bhive package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhive.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhive.account module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.aes.html">bhive.aes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.amount.html">bhive.amount module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asciichart.html">bhive.asciichart module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.asset.html">bhive.asset module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.block.html">bhive.block module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchain.html">bhive.blockchain module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.blockchainobject.html">bhive.blockchainobject module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.cli.html">bhive.cli module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.comment.html">bhive.comment module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.constants.html">bhive.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.conveyor.html">bhive.conveyor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.discussions.html">bhive.discussions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.exceptions.html">bhive.exceptions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hive.html">bhive.hive module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.hiveconnect.html">bhive.hiveconnect module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.imageuploader.html">bhive.imageuploader module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.instance.html">bhive.instance module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.market.html">bhive.market module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.memo.html">bhive.memo module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.message.html">bhive.message module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.nodelist.html">bhive.nodelist module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.notify.html">bhive.notify module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.price.html">bhive.price module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.profile.html">bhive.profile module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.rc.html">bhive.rc module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.snapshot.html">bhive.snapshot module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.storage.html">bhive.storage module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.transactionbuilder.html">bhive.transactionbuilder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.utils.html">bhive.utils module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.version.html">bhive.version module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.vote.html">bhive.vote module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.wallet.html">bhive.wallet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhive.witness.html">bhive.witness module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhive.html#module-bhive">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhive.html">bhive package</a> &raquo;</li>
+        
+      <li>bhive.account module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhive.account.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhive.account">
+<span id="bhive-account-module"></span><h1>bhive.account module<a class="headerlink" href="#module-bhive.account" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhive.account.Account">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.account.</code><code class="sig-name descname">Account</code><span class="sig-paren">(</span><em class="sig-param">account</em>, <em class="sig-param">full=True</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="bhive.blockchainobject.html#bhive.blockchainobject.BlockchainObject" title="bhive.blockchainobject.BlockchainObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.blockchainobject.BlockchainObject</span></code></a></p>
+<p>This class allows to easily access Account data</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account_name</strong> (<em>str</em>) – Name of the account</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive
+instance</p></li>
+<li><p><strong>lazy</strong> (<em>bool</em>) – Use lazy loading</p></li>
+<li><p><strong>full</strong> (<em>bool</em>) – Obtain all account data including orders, positions,
+etc.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Account data</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference internal" href="bhive.exceptions.html#bhive.exceptions.AccountDoesNotExistsException" title="bhive.exceptions.AccountDoesNotExistsException"><strong>bhive.exceptions.AccountDoesNotExistsException</strong></a> – if account
+does not exist</p>
+</dd>
+</dl>
+<p>Instances of this class are dictionaries that come with additional
+methods (see below) that allow dealing with an account and its
+corresponding functions.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">account</span><span class="p">)</span>
+<span class="go">&lt;Account gtg&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">balances</span><span class="p">)</span> 
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This class comes with its own caching function to reduce the
+load on the API server. Instances of this class can be
+refreshed with <code class="docutils literal notranslate"><span class="pre">Account.refresh()</span></code>. The cache can be
+cleared with <code class="docutils literal notranslate"><span class="pre">Account.clear_cache()</span></code></p>
+</div>
+<dl class="method">
+<dt id="bhive.account.Account.allow">
+<code class="sig-name descname">allow</code><span class="sig-paren">(</span><em class="sig-param">foreign</em>, <em class="sig-param">weight=None</em>, <em class="sig-param">permission='posting'</em>, <em class="sig-param">account=None</em>, <em class="sig-param">threshold=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.allow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give additional access to an account by some other public
+key or account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>foreign</strong> (<em>str</em>) – The foreign account that will obtain access</p></li>
+<li><p><strong>weight</strong> (<em>int</em>) – (optional) The weight to use. If not
+define, the threshold will be used. If the weight is
+smaller than the threshold, additional signatures will
+be required. (defaults to threshold)</p></li>
+<li><p><strong>permission</strong> (<em>str</em>) – (optional) The actual permission to
+modify (defaults to <code class="docutils literal notranslate"><span class="pre">posting</span></code>)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+<li><p><strong>threshold</strong> (<em>int</em>) – (optional) The threshold that needs to be
+reached by signatures to be able to interact</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.approvewitness">
+<code class="sig-name descname">approvewitness</code><span class="sig-paren">(</span><em class="sig-param">witness</em>, <em class="sig-param">account=None</em>, <em class="sig-param">approve=True</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.approvewitness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Approve a witness</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> (<em>list</em>) – list of Witness name or id</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.available_balances">
+<em class="property">property </em><code class="sig-name descname">available_balances</code><a class="headerlink" href="#bhive.account.Account.available_balances" title="Permalink to this definition">¶</a></dt>
+<dd><p>List balances of an account. This call returns instances of
+<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.amount.Amount</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.balances">
+<em class="property">property </em><code class="sig-name descname">balances</code><a class="headerlink" href="#bhive.account.Account.balances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all account balances as dictionary</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.blog_history">
+<code class="sig-name descname">blog_history</code><span class="sig-paren">(</span><em class="sig-param">limit=None</em>, <em class="sig-param">start=-1</em>, <em class="sig-param">reblogs=True</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.blog_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stream the blog entries done by an account in reverse time order.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>RPC nodes keep a limited history of entries for the
+user blog. Older blog posts of an account may not be available
+via this call due to these node limitations.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – (optional) stream the latest <cite>limit</cite>
+blog entries. If unset (default), all available blog
+entries are streamed.</p></li>
+<li><p><strong>start</strong> (<em>int</em>) – (optional) start streaming the blog
+entries from this index. <cite>start=-1</cite> (default) starts
+with the latest available entry.</p></li>
+<li><p><strong>reblogs</strong> (<em>bool</em>) – (optional) if set <cite>True</cite> (default)
+reblogs / rehives are included. If set <cite>False</cite>,
+reblogs/rehives are omitted.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to stream blog
+entries for (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>blog_history_reverse example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveioblog&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">post</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">blog_history</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">post</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.cancel_transfer_from_savings">
+<code class="sig-name descname">cancel_transfer_from_savings</code><span class="sig-paren">(</span><em class="sig-param">request_id</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.cancel_transfer_from_savings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cancel a withdrawal from ‘savings’ account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>request_id</strong> (<em>str</em>) – Identifier for tracking or cancelling
+the withdrawal</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.change_recovery_account">
+<code class="sig-name descname">change_recovery_account</code><span class="sig-paren">(</span><em class="sig-param">new_recovery_account</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.change_recovery_account" title="Permalink to this definition">¶</a></dt>
+<dd><p>Request a change of the recovery account.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It takes 30 days until the change applies. Another
+request within this time restarts the 30 day period.
+Setting the current recovery account again cancels any
+pending change request.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_recovery_account</strong> (<em>str</em>) – account name of the new
+recovery account</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to change the
+recovery account for (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.claim_reward_balance">
+<code class="sig-name descname">claim_reward_balance</code><span class="sig-paren">(</span><em class="sig-param">reward_hive=0</em>, <em class="sig-param">reward_hbd=0</em>, <em class="sig-param">reward_vests=0</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.claim_reward_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Claim reward balances.
+By default, this will claim <code class="docutils literal notranslate"><span class="pre">all</span></code> outstanding balances. To bypass
+this behaviour, set desired claim amount by setting any of
+<cite>reward_hive</cite>, <cite>reward_hbd</cite> or <cite>reward_vests</cite>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reward_hive</strong> (<em>str</em>) – Amount of HIVE you would like to claim.</p></li>
+<li><p><strong>reward_hbd</strong> (<em>str</em>) – Amount of HBD you would like to claim.</p></li>
+<li><p><strong>reward_vests</strong> (<em>str</em>) – Amount of VESTS you would like to claim.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – The source account for the claim if not
+<code class="docutils literal notranslate"><span class="pre">default_account</span></code> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.comment_history">
+<code class="sig-name descname">comment_history</code><span class="sig-paren">(</span><em class="sig-param">limit=None</em>, <em class="sig-param">start_permlink=None</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.comment_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stream the comments done by an account in reverse time order.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>RPC nodes keep a limited history of user comments for the
+user feed. Older comments may not be available via this
+call due to these node limitations.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – (optional) stream the latest <cite>limit</cite>
+comments. If unset (default), all available comments
+are streamed.</p></li>
+<li><p><strong>start_permlink</strong> (<em>str</em>) – (optional) start streaming the
+comments from this permlink. <cite>start_permlink=None</cite>
+(default) starts with the latest available entry.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to stream
+comments for (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>comment_history_reverse example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;ned&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">comment</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">comment_history</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">comment</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.convert">
+<code class="sig-name descname">convert</code><span class="sig-paren">(</span><em class="sig-param">amount</em>, <em class="sig-param">account=None</em>, <em class="sig-param">request_id=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.convert" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert HiveDollars to Hive (takes 3.5 days to settle)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<em>float</em>) – amount of HBD to convert</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+<li><p><strong>request_id</strong> (<em>str</em>) – (optional) identifier for tracking the
+conversion`</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.curation_stats">
+<code class="sig-name descname">curation_stats</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.curation_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the curation reward of the last 24h and 7d and the average
+of the last 7 days</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Account curation</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dictionary</p>
+</dd>
+</dl>
+<p>Sample output:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;24hr&#39;</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s1">&#39;7d&#39;</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s1">&#39;avg&#39;</span><span class="o">:</span> <span class="mf">0.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.delegate_vesting_shares">
+<code class="sig-name descname">delegate_vesting_shares</code><span class="sig-paren">(</span><em class="sig-param">to_account</em>, <em class="sig-param">vesting_shares</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.delegate_vesting_shares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Delegate HP to another account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to_account</strong> (<em>str</em>) – Account we are delegating shares to
+(delegatee).</p></li>
+<li><p><strong>vesting_shares</strong> (<em>str</em>) – Amount of VESTS to delegate eg. <cite>10000
+VESTS</cite>.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – The source account (delegator). If not specified,
+<code class="docutils literal notranslate"><span class="pre">default_account</span></code> is used.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.disallow">
+<code class="sig-name descname">disallow</code><span class="sig-paren">(</span><em class="sig-param">foreign</em>, <em class="sig-param">permission='posting'</em>, <em class="sig-param">account=None</em>, <em class="sig-param">threshold=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.disallow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove additional access to an account by some other public
+key or account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>foreign</strong> (<em>str</em>) – The foreign account that will obtain access</p></li>
+<li><p><strong>permission</strong> (<em>str</em>) – (optional) The actual permission to
+modify (defaults to <code class="docutils literal notranslate"><span class="pre">posting</span></code>)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+<li><p><strong>threshold</strong> (<em>int</em>) – The threshold that needs to be reached
+by signatures to be able to interact</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.disapprovewitness">
+<code class="sig-name descname">disapprovewitness</code><span class="sig-paren">(</span><em class="sig-param">witness</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.disapprovewitness" title="Permalink to this definition">¶</a></dt>
+<dd><p>Disapprove a witness</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>witness</strong> (<em>list</em>) – list of Witness name or id</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.ensure_full">
+<code class="sig-name descname">ensure_full</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.ensure_full" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ensure that all data are loaded</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.estimate_virtual_op_num">
+<code class="sig-name descname">estimate_virtual_op_num</code><span class="sig-paren">(</span><em class="sig-param">blocktime</em>, <em class="sig-param">stop_diff=0</em>, <em class="sig-param">max_count=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.estimate_virtual_op_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns an estimation of an virtual operation index for a given time or blockindex</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>blocktime</strong> (<em>int</em><em>, </em><em>datetime</em>) – start time or start block index from which account
+operation should be fetched</p></li>
+<li><p><strong>stop_diff</strong> (<em>int</em>) – Sets the difference between last estimation and
+new estimation at which the estimation stops. Must not be zero. (default is 1)</p></li>
+<li><p><strong>max_count</strong> (<em>int</em>) – sets the maximum number of iterations. -1 disables this (default 100)</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">utc</span> <span class="o">=</span> <span class="n">pytz</span><span class="o">.</span><span class="n">timezone</span><span class="p">(</span><span class="s1">&#39;UTC&#39;</span><span class="p">)</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">utc</span><span class="o">.</span><span class="n">localize</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">utcnow</span><span class="p">())</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">7</span><span class="p">)</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">start_op</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">estimate_virtual_op_num</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span>
+
+<span class="n">b</span> <span class="o">=</span> <span class="n">Blockchain</span><span class="p">()</span>
+<span class="n">start_block_num</span> <span class="o">=</span> <span class="n">b</span><span class="o">.</span><span class="n">get_estimated_block_num</span><span class="p">(</span><span class="n">start_time</span><span class="p">)</span>
+<span class="n">start_op2</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">estimate_virtual_op_num</span><span class="p">(</span><span class="n">start_block_num</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">block_num</span> <span class="o">=</span> <span class="mi">21248120</span>
+<span class="n">start</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="n">op_num</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">estimate_virtual_op_num</span><span class="p">(</span><span class="n">block_num</span><span class="p">,</span> <span class="n">stop_diff</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_count</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">stop</span> <span class="o">=</span> <span class="n">t</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">stop</span> <span class="o">-</span> <span class="n">start</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">get_account_history</span><span class="p">(</span><span class="n">op_num</span><span class="p">,</span> <span class="mi">0</span><span class="p">):</span>
+    <span class="n">block_est</span> <span class="o">=</span> <span class="n">h</span><span class="p">[</span><span class="s2">&quot;block&quot;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">block_est</span> <span class="o">-</span> <span class="n">block_num</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.feed_history">
+<code class="sig-name descname">feed_history</code><span class="sig-paren">(</span><em class="sig-param">limit=None</em>, <em class="sig-param">start_author=None</em>, <em class="sig-param">start_permlink=None</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.feed_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stream the feed entries of an account in reverse time order.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>RPC nodes keep a limited history of entries for the
+user feed. Older entries may not be available via this
+call due to these node limitations.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – (optional) stream the latest <cite>limit</cite>
+feed entries. If unset (default), all available entries
+are streamed.</p></li>
+<li><p><strong>start_author</strong> (<em>str</em>) – (optional) start streaming the
+replies from this author. <cite>start_permlink=None</cite>
+(default) starts with the latest available entry.
+If set, <cite>start_permlink</cite> has to be set as well.</p></li>
+<li><p><strong>start_permlink</strong> (<em>str</em>) – (optional) start streaming the
+replies from this permlink. <cite>start_permlink=None</cite>
+(default) starts with the latest available entry.
+If set, <cite>start_author</cite> has to be set as well.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to get replies
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>comment_history_reverse example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;ned&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">reply</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">feed_history</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">reply</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.follow">
+<code class="sig-name descname">follow</code><span class="sig-paren">(</span><em class="sig-param">other, what=['blog'], account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.follow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Follow/Unfollow/Mute/Unmute another account’s blog</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>other</strong> (<em>str</em>) – Follow this account</p></li>
+<li><p><strong>what</strong> (<em>list</em>) – List of states to follow.
+<code class="docutils literal notranslate"><span class="pre">['blog']</span></code> means to follow <code class="docutils literal notranslate"><span class="pre">other</span></code>,
+<code class="docutils literal notranslate"><span class="pre">[]</span></code> means to unfollow/unmute <code class="docutils literal notranslate"><span class="pre">other</span></code>,
+<code class="docutils literal notranslate"><span class="pre">['ignore']</span></code> means to ignore <code class="docutils literal notranslate"><span class="pre">other</span></code>,
+(defaults to <code class="docutils literal notranslate"><span class="pre">['blog']</span></code>)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.getSimilarAccountNames">
+<code class="sig-name descname">getSimilarAccountNames</code><span class="sig-paren">(</span><em class="sig-param">limit=5</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.getSimilarAccountNames" title="Permalink to this definition">¶</a></dt>
+<dd><p>Deprecated, please use get_similar_account_names</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_account_bandwidth">
+<code class="sig-name descname">get_account_bandwidth</code><span class="sig-paren">(</span><em class="sig-param">bandwidth_type=1</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_account_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_account_history">
+<code class="sig-name descname">get_account_history</code><span class="sig-paren">(</span><em class="sig-param">index</em>, <em class="sig-param">limit</em>, <em class="sig-param">order=-1</em>, <em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em>, <em class="sig-param">only_ops=[]</em>, <em class="sig-param">exclude_ops=[]</em>, <em class="sig-param">raw_output=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_account_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for individual account transactions. This call can be used in a
+<code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em>) – first number of transactions to return</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – limit number of transactions to return</p></li>
+<li><p><strong>start</strong> (<em>int</em><em>, </em><em>datetime</em>) – start number/date of transactions to
+return (<em>optional</em>)</p></li>
+<li><p><strong>stop</strong> (<em>int</em><em>, </em><em>datetime</em>) – stop number/date of transactions to
+return (<em>optional</em>)</p></li>
+<li><p><strong>use_block_num</strong> (<em>bool</em>) – if true, start and stop are block numbers, otherwise virtual OP count numbers.</p></li>
+<li><p><strong>only_ops</strong> (<em>array</em>) – Limit generator by these
+operations (<em>optional</em>)</p></li>
+<li><p><strong>exclude_ops</strong> (<em>array</em>) – Exclude thse operations from
+generator (<em>optional</em>)</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em>) – internal api call batch size (<em>optional</em>)</p></li>
+<li><p><strong>order</strong> (<em>int</em>) – 1 for chronological, -1 for reverse order</p></li>
+<li><p><strong>raw_output</strong> (<em>bool</em>) – if False, the output is a dict, which
+includes all values. Otherwise, the output is list.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>only_ops and exclude_ops takes an array of strings:
+The full list of operation ID’s can be found in
+bhivebase.operationids.ops.
+Example: [‘transfer’, ‘vote’]</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_account_votes">
+<code class="sig-name descname">get_account_votes</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_account_votes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all votes that the account has done</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_account_votes</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_balance">
+<code class="sig-name descname">get_balance</code><span class="sig-paren">(</span><em class="sig-param">balances</em>, <em class="sig-param">symbol</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_balance" title="Permalink to this definition">¶</a></dt>
+<dd><p>Obtain the balance of a specific Asset. This call returns instances of
+<a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.amount.Amount</span></code></a>. Available balance types:</p>
+<ul class="simple">
+<li><p>“available”</p></li>
+<li><p>“saving”</p></li>
+<li><p>“reward”</p></li>
+<li><p>“total”</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>balances</strong> (<em>str</em>) – Defines the balance type</p></li>
+<li><p><strong>symbol</strong> (<em>str</em><em>, </em><em>dict</em>) – Can be “HBD”, “HIVE” or “VESTS</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_balance</span><span class="p">(</span><span class="s2">&quot;rewards&quot;</span><span class="p">,</span> <span class="s2">&quot;HBD&quot;</span><span class="p">)</span>
+<span class="go">0.000 HBD</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_balances">
+<code class="sig-name descname">get_balances</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_balances" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns all account balances as dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Account balances</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dictionary</p>
+</dd>
+</dl>
+<p>Sample output:</p>
+<blockquote>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;available&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mf">102.985</span> <span class="nx">HIVE</span><span class="p">,</span> <span class="mf">0.008</span> <span class="nx">HBD</span><span class="p">,</span> <span class="mf">146273.695970</span> <span class="nx">VESTS</span><span class="p">],</span>
+    <span class="s1">&#39;savings&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mf">0.000</span> <span class="nx">HIVE</span><span class="p">,</span> <span class="mf">0.000</span> <span class="nx">HBD</span><span class="p">],</span>
+    <span class="s1">&#39;rewards&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mf">0.000</span> <span class="nx">HIVE</span><span class="p">,</span> <span class="mf">0.000</span> <span class="nx">HBD</span><span class="p">,</span> <span class="mf">0.000000</span> <span class="nx">VESTS</span><span class="p">],</span>
+    <span class="s1">&#39;total&#39;</span><span class="o">:</span> <span class="p">[</span><span class="mf">102.985</span> <span class="nx">HIVE</span><span class="p">,</span> <span class="mf">0.008</span> <span class="nx">HBD</span><span class="p">,</span> <span class="mf">146273.695970</span> <span class="nx">VESTS</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_bandwidth">
+<code class="sig-name descname">get_bandwidth</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_bandwidth" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns used and allocated bandwidth</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>dictionary</p>
+</dd>
+</dl>
+<p>Sample output:</p>
+<blockquote>
+<div><div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;used&#39;</span><span class="o">:</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="s1">&#39;allocated&#39;</span><span class="o">:</span> <span class="mi">2211037</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div></blockquote>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_blog">
+<code class="sig-name descname">get_blog</code><span class="sig-paren">(</span><em class="sig-param">start_entry_id=0</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">raw_data=False</em>, <em class="sig-param">short_entries=False</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_blog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of blog entries for an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_entry_id</strong> (<em>int</em>) – default is 0</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – default is 100</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – default is False</p></li>
+<li><p><strong>short_entries</strong> (<em>bool</em>) – when set to True and raw_data is True, get_blog_entries is used istead of get_blog</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account name is used (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_blog</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">[&lt;Comment @hiveio/firstpost&gt;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_blog_authors">
+<code class="sig-name descname">get_blog_authors</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_blog_authors" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of authors that have had their content reblogged on a given blog account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account name is used (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_blog_authors</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_blog_entries">
+<code class="sig-name descname">get_blog_entries</code><span class="sig-paren">(</span><em class="sig-param">start_entry_id=0</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">raw_data=True</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_blog_entries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of blog entries for an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_entry_id</strong> (<em>int</em>) – default is 0</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – default is 100</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – default is False</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account name is used (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">entry</span> <span class="o">=</span> <span class="n">account</span><span class="o">.</span><span class="n">get_blog_entries</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">raw_data</span><span class="o">=</span><span class="kc">True</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2"> - </span><span class="si">%s</span><span class="s2"> - </span><span class="si">%s</span><span class="s2"> - </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="s2">&quot;author&quot;</span><span class="p">],</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;permlink&quot;</span><span class="p">],</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;blog&quot;</span><span class="p">],</span> <span class="n">entry</span><span class="p">[</span><span class="s2">&quot;reblog_on&quot;</span><span class="p">]))</span>
+<span class="go">hiveio - firstpost - hiveio - 1970-01-01T00:00:00</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_conversion_requests">
+<code class="sig-name descname">get_conversion_requests</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_conversion_requests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of HBD conversion request</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_conversion_requests</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_creator">
+<code class="sig-name descname">get_creator</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_creator" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account creator or <cite>None</cite> if the account was mined</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_curation_reward">
+<code class="sig-name descname">get_curation_reward</code><span class="sig-paren">(</span><em class="sig-param">days=7</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_curation_reward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the curation reward of the last <cite>days</cite> days</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>days</strong> (<em>int</em>) – limit number of days to be included int the return value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_downvote_manabar">
+<code class="sig-name descname">get_downvote_manabar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_downvote_manabar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return downvote manabar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_downvoting_power">
+<code class="sig-name descname">get_downvoting_power</code><span class="sig-paren">(</span><em class="sig-param">with_regeneration=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_downvoting_power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account downvoting power in the range of 0-100%</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_effective_vesting_shares">
+<code class="sig-name descname">get_effective_vesting_shares</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_effective_vesting_shares" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the effective vesting shares</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_escrow">
+<code class="sig-name descname">get_escrow</code><span class="sig-paren">(</span><em class="sig-param">escrow_id=0</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_escrow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the escrow for a certain account by id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>escrow_id</strong> (<em>int</em>) – Id (only pre appbase)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_escrow</span><span class="p">(</span><span class="mi">1234</span><span class="p">)</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_expiring_vesting_delegations">
+<code class="sig-name descname">get_expiring_vesting_delegations</code><span class="sig-paren">(</span><em class="sig-param">after=None</em>, <em class="sig-param">limit=1000</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_expiring_vesting_delegations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the expirations for vesting delegations.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>after</strong> (<em>datetime</em>) – expiration after (only for pre appbase nodes)</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – limits number of shown entries (only for pre appbase nodes)</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_expiring_vesting_delegations</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_feed">
+<code class="sig-name descname">get_feed</code><span class="sig-paren">(</span><em class="sig-param">start_entry_id=0</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">raw_data=False</em>, <em class="sig-param">short_entries=False</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_feed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of items in an account’s feed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_entry_id</strong> (<em>int</em>) – default is 0</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – default is 100</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – default is False</p></li>
+<li><p><strong>short_entries</strong> (<em>bool</em>) – when set to True and raw_data is True, get_feed_entries is used istead of get_feed</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account name is used (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_feed</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">raw_data</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_feed_entries">
+<code class="sig-name descname">get_feed_entries</code><span class="sig-paren">(</span><em class="sig-param">start_entry_id=0</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">raw_data=True</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_feed_entries" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of entries in an account’s feed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_entry_id</strong> (<em>int</em>) – default is 0</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – default is 100</p></li>
+<li><p><strong>raw_data</strong> (<em>bool</em>) – default is False</p></li>
+<li><p><strong>short_entries</strong> (<em>bool</em>) – when set to True and raw_data is True, get_feed_entries is used istead of get_feed</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account name is used (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_feed_entries</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_follow_count">
+<code class="sig-name descname">get_follow_count</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_follow_count" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_followers">
+<code class="sig-name descname">get_followers</code><span class="sig-paren">(</span><em class="sig-param">raw_name_list=True</em>, <em class="sig-param">limit=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_followers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account followers as list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_following">
+<code class="sig-name descname">get_following</code><span class="sig-paren">(</span><em class="sig-param">raw_name_list=True</em>, <em class="sig-param">limit=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_following" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns who the account is following as list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_hive_power">
+<code class="sig-name descname">get_hive_power</code><span class="sig-paren">(</span><em class="sig-param">onlyOwnSP=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_hive_power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account hive power</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_manabar">
+<code class="sig-name descname">get_manabar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_manabar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return manabar</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_manabar_recharge_time">
+<code class="sig-name descname">get_manabar_recharge_time</code><span class="sig-paren">(</span><em class="sig-param">manabar</em>, <em class="sig-param">recharge_pct_goal=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_manabar_recharge_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account mana recharge time in minutes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>manabar</strong> (<em>dict</em>) – manabar dict from get_manabar() or get_rc_manabar()</p></li>
+<li><p><strong>recharge_pct_goal</strong> (<em>float</em>) – mana recovery goal in percentage (default is 100)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_manabar_recharge_time_str">
+<code class="sig-name descname">get_manabar_recharge_time_str</code><span class="sig-paren">(</span><em class="sig-param">manabar</em>, <em class="sig-param">recharge_pct_goal=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_manabar_recharge_time_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account manabar recharge time as string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>manabar</strong> (<em>dict</em>) – manabar dict from get_manabar() or get_rc_manabar()</p></li>
+<li><p><strong>recharge_pct_goal</strong> (<em>float</em>) – mana recovery goal in percentage (default is 100)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_manabar_recharge_timedelta">
+<code class="sig-name descname">get_manabar_recharge_timedelta</code><span class="sig-paren">(</span><em class="sig-param">manabar</em>, <em class="sig-param">recharge_pct_goal=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_manabar_recharge_timedelta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account mana recharge time as timedelta object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>manabar</strong> (<em>dict</em>) – manabar dict from get_manabar() or get_rc_manabar()</p></li>
+<li><p><strong>recharge_pct_goal</strong> (<em>float</em>) – mana recovery goal in percentage (default is 100)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_muters">
+<code class="sig-name descname">get_muters</code><span class="sig-paren">(</span><em class="sig-param">raw_name_list=True</em>, <em class="sig-param">limit=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_muters" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account muters as list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_mutings">
+<code class="sig-name descname">get_mutings</code><span class="sig-paren">(</span><em class="sig-param">raw_name_list=True</em>, <em class="sig-param">limit=100</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_mutings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns who the account is muting as list</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_owner_history">
+<code class="sig-name descname">get_owner_history</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_owner_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the owner history of an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_owner_history</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_rc">
+<code class="sig-name descname">get_rc</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_rc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return RC of account</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_rc_manabar">
+<code class="sig-name descname">get_rc_manabar</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_rc_manabar" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns current_mana and max_mana for RC</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_recharge_time">
+<code class="sig-name descname">get_recharge_time</code><span class="sig-paren">(</span><em class="sig-param">voting_power_goal=100</em>, <em class="sig-param">starting_voting_power=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_recharge_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account voting power recharge time in minutes</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>voting_power_goal</strong> (<em>float</em>) – voting power goal in percentage (default is 100)</p></li>
+<li><p><strong>starting_voting_power</strong> (<em>float</em>) – returns recharge time if current voting power is
+the provided value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_recharge_time_str">
+<code class="sig-name descname">get_recharge_time_str</code><span class="sig-paren">(</span><em class="sig-param">voting_power_goal=100</em>, <em class="sig-param">starting_voting_power=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_recharge_time_str" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account recharge time as string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>voting_power_goal</strong> (<em>float</em>) – voting power goal in percentage (default is 100)</p></li>
+<li><p><strong>starting_voting_power</strong> (<em>float</em>) – returns recharge time if current voting power is
+the provided value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_recharge_timedelta">
+<code class="sig-name descname">get_recharge_timedelta</code><span class="sig-paren">(</span><em class="sig-param">voting_power_goal=100</em>, <em class="sig-param">starting_voting_power=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_recharge_timedelta" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account voting power recharge time as timedelta object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>voting_power_goal</strong> (<em>float</em>) – voting power goal in percentage (default is 100)</p></li>
+<li><p><strong>starting_voting_power</strong> (<em>float</em>) – returns recharge time if current voting power is
+the provided value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_recovery_request">
+<code class="sig-name descname">get_recovery_request</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_recovery_request" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the recovery request for an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_recovery_request</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_reputation">
+<code class="sig-name descname">get_reputation</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_reputation" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account reputation in the (hiveio) normalized form</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_savings_withdrawals">
+<code class="sig-name descname">get_savings_withdrawals</code><span class="sig-paren">(</span><em class="sig-param">direction='from'</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_savings_withdrawals" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the list of savings withdrawls for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p></li>
+<li><p><strong>direction</strong> (<em>str</em>) – Can be either from or to (only non appbase nodes)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_savings_withdrawals</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_similar_account_names">
+<code class="sig-name descname">get_similar_account_names</code><span class="sig-paren">(</span><em class="sig-param">limit=5</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_similar_account_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns <code class="docutils literal notranslate"><span class="pre">limit</span></code> account names similar to the current account
+name as a list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>limit</strong> (<em>int</em>) – limits the number of accounts, which will be
+returned</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Similar account names as list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+<p>This is a wrapper around <a class="reference internal" href="bhive.blockchain.html#bhive.blockchain.Blockchain.get_similar_account_names" title="bhive.blockchain.Blockchain.get_similar_account_names"><code class="xref py py-func docutils literal notranslate"><span class="pre">bhive.blockchain.Blockchain.get_similar_account_names()</span></code></a>
+using the current account name as reference.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_tags_used_by_author">
+<code class="sig-name descname">get_tags_used_by_author</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_tags_used_by_author" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of tags used by an author.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_tags_used_by_author</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_vesting_delegations">
+<code class="sig-name descname">get_vesting_delegations</code><span class="sig-paren">(</span><em class="sig-param">start_account=''</em>, <em class="sig-param">limit=100</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_vesting_delegations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the vesting delegations by an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p></li>
+<li><p><strong>start_account</strong> (<em>str</em>) – delegatee to start with, leave empty to start from the first by name</p></li>
+<li><p><strong>limit</strong> (<em>int</em>) – maximum number of results to return</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_vesting_delegations</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_vests">
+<code class="sig-name descname">get_vests</code><span class="sig-paren">(</span><em class="sig-param">only_own_vests=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_vests" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account vests</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_vote">
+<code class="sig-name descname">get_vote</code><span class="sig-paren">(</span><em class="sig-param">comment</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_vote" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a vote if the account has already voted for comment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>comment</strong> (<em>str</em><em>, </em><a class="reference internal" href="bhive.comment.html#bhive.comment.Comment" title="bhive.comment.Comment"><em>Comment</em></a>) – can be a Comment object or a authorpermlink</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_vote_pct_for_HBD">
+<code class="sig-name descname">get_vote_pct_for_HBD</code><span class="sig-paren">(</span><em class="sig-param">hbd</em>, <em class="sig-param">voting_power=None</em>, <em class="sig-param">hive_power=None</em>, <em class="sig-param">not_broadcasted_vote=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_vote_pct_for_HBD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the voting percentage needed to have a vote worth a given number of HBD.</p>
+<p>If the returned number is bigger than 10000 or smaller than -10000,
+the given HBD value is too high for that account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>hbd</strong> (<em>str</em><em>, </em><em>int</em><em>, </em><a class="reference internal" href="bhive.amount.html#bhive.amount.Amount" title="bhive.amount.Amount"><em>amount.Amount</em></a>) – The amount of HBD in vote value</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_voting_power">
+<code class="sig-name descname">get_voting_power</code><span class="sig-paren">(</span><em class="sig-param">with_regeneration=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_voting_power" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account voting power in the range of 0-100%</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_voting_value_HBD">
+<code class="sig-name descname">get_voting_value_HBD</code><span class="sig-paren">(</span><em class="sig-param">voting_weight=100</em>, <em class="sig-param">voting_power=None</em>, <em class="sig-param">hive_power=None</em>, <em class="sig-param">not_broadcasted_vote=True</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_voting_value_HBD" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account voting value in HBD</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.get_withdraw_routes">
+<code class="sig-name descname">get_withdraw_routes</code><span class="sig-paren">(</span><em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.get_withdraw_routes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the withdraw routes for an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>list</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;bhive.app&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span><span class="o">.</span><span class="n">get_withdraw_routes</span><span class="p">()</span>
+<span class="go">[]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.has_voted">
+<code class="sig-name descname">has_voted</code><span class="sig-paren">(</span><em class="sig-param">comment</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.has_voted" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns if the account has already voted for comment</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>comment</strong> (<em>str</em><em>, </em><a class="reference internal" href="bhive.comment.html#bhive.comment.Comment" title="bhive.comment.Comment"><em>Comment</em></a>) – can be a Comment object or a authorpermlink</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.history">
+<code class="sig-name descname">history</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em>, <em class="sig-param">only_ops=[]</em>, <em class="sig-param">exclude_ops=[]</em>, <em class="sig-param">batch_size=1000</em>, <em class="sig-param">raw_output=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for individual account transactions. The
+earlist operation will be first. This call can be used in a
+<code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em><em>, </em><em>datetime</em>) – start number/date of transactions to return (<em>optional</em>)</p></li>
+<li><p><strong>stop</strong> (<em>int</em><em>, </em><em>datetime</em>) – stop number/date of transactions to return (<em>optional</em>)</p></li>
+<li><p><strong>use_block_num</strong> (<em>bool</em>) – if true, start and stop are block numbers,
+otherwise virtual OP count numbers.</p></li>
+<li><p><strong>only_ops</strong> (<em>array</em>) – Limit generator by these
+operations (<em>optional</em>)</p></li>
+<li><p><strong>exclude_ops</strong> (<em>array</em>) – Exclude thse operations from
+generator (<em>optional</em>)</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em>) – internal api call batch size (<em>optional</em>)</p></li>
+<li><p><strong>raw_output</strong> (<em>bool</em>) – if False, the output is a dict, which
+includes all values. Otherwise, the output is list.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>only_ops and exclude_ops takes an array of strings:
+The full list of operation ID’s can be found in
+bhivebase.operationids.ops.
+Example: [‘transfer’, ‘vote’]</p>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">max_op_count</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">virtual_op_count</span><span class="p">()</span>
+<span class="c1"># Returns the 100 latest operations</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">max_op_count</span> <span class="o">-</span> <span class="mi">99</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">max_op_count</span><span class="p">,</span> <span class="n">use_block_num</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>100
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">max_block</span> <span class="o">=</span> <span class="mi">21990141</span>
+<span class="c1"># Returns the account operation inside the last 100 block. This can be empty.</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">max_block</span> <span class="o">-</span> <span class="mi">99</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">max_block</span><span class="p">,</span> <span class="n">use_block_num</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">stop_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1"># Returns the account operation from 1.4.2018 back to 1.3.2018</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start_time</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">stop_time</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.history_reverse">
+<code class="sig-name descname">history_reverse</code><span class="sig-paren">(</span><em class="sig-param">start=None</em>, <em class="sig-param">stop=None</em>, <em class="sig-param">use_block_num=True</em>, <em class="sig-param">only_ops=[]</em>, <em class="sig-param">exclude_ops=[]</em>, <em class="sig-param">batch_size=1000</em>, <em class="sig-param">raw_output=False</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.history_reverse" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a generator for individual account transactions. The
+latest operation will be first. This call can be used in a
+<code class="docutils literal notranslate"><span class="pre">for</span></code> loop.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<em>int</em><em>, </em><em>datetime</em>) – start number/date of transactions to
+return. If negative the virtual_op_count is added. (<em>optional</em>)</p></li>
+<li><p><strong>stop</strong> (<em>int</em><em>, </em><em>datetime</em>) – stop number/date of transactions to
+return. If negative the virtual_op_count is added. (<em>optional</em>)</p></li>
+<li><p><strong>use_block_num</strong> (<em>bool</em>) – if true, start and stop are block numbers,
+otherwise virtual OP count numbers.</p></li>
+<li><p><strong>only_ops</strong> (<em>array</em>) – Limit generator by these
+operations (<em>optional</em>)</p></li>
+<li><p><strong>exclude_ops</strong> (<em>array</em>) – Exclude thse operations from
+generator (<em>optional</em>)</p></li>
+<li><p><strong>batch_size</strong> (<em>int</em>) – internal api call batch size (<em>optional</em>)</p></li>
+<li><p><strong>raw_output</strong> (<em>bool</em>) – if False, the output is a dict, which
+includes all values. Otherwise, the output is list.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>only_ops and exclude_ops takes an array of strings:
+The full list of operation ID’s can be found in
+bhivebase.operationids.ops.
+Example: [‘transfer’, ‘vote’]</p>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;gtg&quot;</span><span class="p">)</span>
+<span class="n">max_op_count</span> <span class="o">=</span> <span class="n">acc</span><span class="o">.</span><span class="n">virtual_op_count</span><span class="p">()</span>
+<span class="c1"># Returns the 100 latest operations</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history_reverse</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">max_op_count</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">max_op_count</span> <span class="o">-</span> <span class="mi">99</span><span class="p">,</span> <span class="n">use_block_num</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>100
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">max_block</span> <span class="o">=</span> <span class="mi">21990141</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="c1"># Returns the account operation inside the last 100 block. This can be empty.</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history_reverse</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">max_block</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">max_block</span><span class="o">-</span><span class="mi">100</span><span class="p">,</span> <span class="n">use_block_num</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+<div class="highlight-python3 notranslate"><div class="highlight"><pre><span></span><span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">start_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">stop_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="c1"># Returns the account operation from 1.4.2018 back to 1.3.2018</span>
+<span class="n">acc_op</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">h</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">history_reverse</span><span class="p">(</span><span class="n">start</span><span class="o">=</span><span class="n">start_time</span><span class="p">,</span> <span class="n">stop</span><span class="o">=</span><span class="n">stop_time</span><span class="p">):</span>
+    <span class="n">acc_op</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">acc_op</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>0
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.hp">
+<em class="property">property </em><code class="sig-name descname">hp</code><a class="headerlink" href="#bhive.account.Account.hp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the accounts Hive Power</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.interest">
+<code class="sig-name descname">interest</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.interest" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calculate interest for an account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>account</strong> (<em>str</em>) – Account name to get interest for</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dictionary</p>
+</dd>
+</dl>
+<p>Sample output:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;interest&#39;</span><span class="o">:</span> <span class="mf">0.0</span><span class="p">,</span>
+    <span class="s1">&#39;last_payment&#39;</span><span class="o">:</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="nx">tzinfo</span><span class="o">=&lt;</span><span class="nx">UTC</span><span class="o">&gt;</span><span class="p">),</span>
+    <span class="s1">&#39;next_payment&#39;</span><span class="o">:</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">datetime</span><span class="p">(</span><span class="mi">2018</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">50</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="nx">tzinfo</span><span class="o">=&lt;</span><span class="nx">UTC</span><span class="o">&gt;</span><span class="p">),</span>
+    <span class="s1">&#39;next_payment_duration&#39;</span><span class="o">:</span> <span class="nx">datetime</span><span class="p">.</span><span class="nx">timedelta</span><span class="p">(</span><span class="o">-</span><span class="mi">65</span><span class="p">,</span> <span class="mi">52132</span><span class="p">,</span> <span class="mi">684026</span><span class="p">),</span>
+    <span class="s1">&#39;interest_rate&#39;</span><span class="o">:</span> <span class="mf">0.0</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.is_fully_loaded">
+<em class="property">property </em><code class="sig-name descname">is_fully_loaded</code><a class="headerlink" href="#bhive.account.Account.is_fully_loaded" title="Permalink to this definition">¶</a></dt>
+<dd><p>Is this instance fully loaded / e.g. all data available?</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.json">
+<code class="sig-name descname">json</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.json" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.json_metadata">
+<em class="property">property </em><code class="sig-name descname">json_metadata</code><a class="headerlink" href="#bhive.account.Account.json_metadata" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.mute">
+<code class="sig-name descname">mute</code><span class="sig-paren">(</span><em class="sig-param">mute</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.mute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Mute another account</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>mute</strong> (<em>str</em>) – Mute this account</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.name">
+<em class="property">property </em><code class="sig-name descname">name</code><a class="headerlink" href="#bhive.account.Account.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account name</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.print_info">
+<code class="sig-name descname">print_info</code><span class="sig-paren">(</span><em class="sig-param">force_refresh=False</em>, <em class="sig-param">return_str=False</em>, <em class="sig-param">use_table=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.print_info" title="Permalink to this definition">¶</a></dt>
+<dd><p>Prints import information about the account</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.profile">
+<em class="property">property </em><code class="sig-name descname">profile</code><a class="headerlink" href="#bhive.account.Account.profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account profile</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.refresh">
+<code class="sig-name descname">refresh</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.refresh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Refresh/Obtain an account’s data from the API server</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.rep">
+<em class="property">property </em><code class="sig-name descname">rep</code><a class="headerlink" href="#bhive.account.Account.rep" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account reputation</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.reply_history">
+<code class="sig-name descname">reply_history</code><span class="sig-paren">(</span><em class="sig-param">limit=None</em>, <em class="sig-param">start_author=None</em>, <em class="sig-param">start_permlink=None</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.reply_history" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stream the replies to an account in reverse time order.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>RPC nodes keep a limited history of entries for the
+replies to an author. Older replies to an account may
+not be available via this call due to
+these node limitations.</p>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>limit</strong> (<em>int</em>) – (optional) stream the latest <cite>limit</cite>
+replies. If unset (default), all available replies
+are streamed.</p></li>
+<li><p><strong>start_author</strong> (<em>str</em>) – (optional) start streaming the
+replies from this author. <cite>start_permlink=None</cite>
+(default) starts with the latest available entry.
+If set, <cite>start_permlink</cite> has to be set as well.</p></li>
+<li><p><strong>start_permlink</strong> (<em>str</em>) – (optional) start streaming the
+replies from this permlink. <cite>start_permlink=None</cite>
+(default) starts with the latest available entry.
+If set, <cite>start_author</cite> has to be set as well.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to get replies
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>comment_history_reverse example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;ned&quot;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">reply</span> <span class="ow">in</span> <span class="n">acc</span><span class="o">.</span><span class="n">reply_history</span><span class="p">(</span><span class="n">limit</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">reply</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.reward_balances">
+<em class="property">property </em><code class="sig-name descname">reward_balances</code><a class="headerlink" href="#bhive.account.Account.reward_balances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.saving_balances">
+<em class="property">property </em><code class="sig-name descname">saving_balances</code><a class="headerlink" href="#bhive.account.Account.saving_balances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.set_withdraw_vesting_route">
+<code class="sig-name descname">set_withdraw_vesting_route</code><span class="sig-paren">(</span><em class="sig-param">to</em>, <em class="sig-param">percentage=100</em>, <em class="sig-param">account=None</em>, <em class="sig-param">auto_vest=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.set_withdraw_vesting_route" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set up a vesting withdraw route. When vesting shares are
+withdrawn, they will be routed to these accounts based on the
+specified weights.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to</strong> (<em>str</em>) – Recipient of the vesting withdrawal</p></li>
+<li><p><strong>percentage</strong> (<em>float</em>) – The percent of the withdraw to go
+to the ‘to’ account.</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the vesting account</p></li>
+<li><p><strong>auto_vest</strong> (<em>bool</em>) – Set to true if the ‘to’ account
+should receive the VESTS as VESTS, or false if it should
+receive them as HIVE. (defaults to <code class="docutils literal notranslate"><span class="pre">False</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.total_balances">
+<em class="property">property </em><code class="sig-name descname">total_balances</code><a class="headerlink" href="#bhive.account.Account.total_balances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.transfer">
+<code class="sig-name descname">transfer</code><span class="sig-paren">(</span><em class="sig-param">to</em>, <em class="sig-param">amount</em>, <em class="sig-param">asset</em>, <em class="sig-param">memo=''</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.transfer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transfer an asset to another account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to</strong> (<em>str</em>) – Recipient</p></li>
+<li><p><strong>amount</strong> (<em>float</em>) – Amount to transfer</p></li>
+<li><p><strong>asset</strong> (<em>str</em>) – Asset to transfer</p></li>
+<li><p><strong>memo</strong> (<em>str</em>) – (optional) Memo, may begin with <cite>#</cite> for encrypted
+messaging</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<p>Transfer example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="kn">from</span> <span class="nn">bhive</span> <span class="kn">import</span> <span class="n">Hive</span>
+<span class="n">active_wif</span> <span class="o">=</span> <span class="s2">&quot;5xxxx&quot;</span>
+<span class="n">hv</span> <span class="o">=</span> <span class="n">Hive</span><span class="p">(</span><span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="n">active_wif</span><span class="p">])</span>
+<span class="n">acc</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="n">hive_instance</span><span class="o">=</span><span class="n">hv</span><span class="p">)</span>
+<span class="n">acc</span><span class="o">.</span><span class="n">transfer</span><span class="p">(</span><span class="s2">&quot;test1&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;HIVE&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.transfer_from_savings">
+<code class="sig-name descname">transfer_from_savings</code><span class="sig-paren">(</span><em class="sig-param">amount</em>, <em class="sig-param">asset</em>, <em class="sig-param">memo</em>, <em class="sig-param">request_id=None</em>, <em class="sig-param">to=None</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.transfer_from_savings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Withdraw HBD or HIVE from ‘savings’ account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<em>float</em>) – HIVE or HBD amount</p></li>
+<li><p><strong>asset</strong> (<em>float</em>) – ‘HIVE’ or ‘HBD’</p></li>
+<li><p><strong>memo</strong> (<em>str</em>) – (optional) Memo</p></li>
+<li><p><strong>request_id</strong> (<em>str</em>) – (optional) identifier for tracking or
+cancelling the withdrawal</p></li>
+<li><p><strong>to</strong> (<em>str</em>) – (optional) the source account for the transfer if
+not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.transfer_to_savings">
+<code class="sig-name descname">transfer_to_savings</code><span class="sig-paren">(</span><em class="sig-param">amount</em>, <em class="sig-param">asset</em>, <em class="sig-param">memo</em>, <em class="sig-param">to=None</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.transfer_to_savings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transfer HBD or HIVE into a ‘savings’ account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<em>float</em>) – HIVE or HBD amount</p></li>
+<li><p><strong>asset</strong> (<em>float</em>) – ‘HIVE’ or ‘HBD’</p></li>
+<li><p><strong>memo</strong> (<em>str</em>) – (optional) Memo</p></li>
+<li><p><strong>to</strong> (<em>str</em>) – (optional) the source account for the transfer if
+not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.transfer_to_vesting">
+<code class="sig-name descname">transfer_to_vesting</code><span class="sig-paren">(</span><em class="sig-param">amount</em>, <em class="sig-param">to=None</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.transfer_to_vesting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Vest HIVE</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<em>float</em>) – Amount to transfer</p></li>
+<li><p><strong>to</strong> (<em>str</em>) – Recipient (optional) if not set equal to account</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="bhive.account.Account.type_id">
+<code class="sig-name descname">type_id</code><em class="property"> = 2</em><a class="headerlink" href="#bhive.account.Account.type_id" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.unfollow">
+<code class="sig-name descname">unfollow</code><span class="sig-paren">(</span><em class="sig-param">unfollow</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.unfollow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unfollow/Unmute another account’s blog</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>unfollow</strong> (<em>str</em>) – Unfollow/Unmute this account</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.update_account_jsonmetadata">
+<code class="sig-name descname">update_account_jsonmetadata</code><span class="sig-paren">(</span><em class="sig-param">metadata</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.update_account_jsonmetadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an account’s profile in json_metadata using the posting key</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metadata</strong> (<em>dict</em>) – The new metadata to use</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.update_account_keys">
+<code class="sig-name descname">update_account_keys</code><span class="sig-paren">(</span><em class="sig-param">new_password</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.update_account_keys" title="Permalink to this definition">¶</a></dt>
+<dd><p>Updates all account keys</p>
+<p>This method does <strong>not</strong> add any private keys to your
+wallet but merely changes the memo public key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_password</strong> (<em>str</em>) – is used to derive the owner, active,
+posting and memo key</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.update_account_metadata">
+<code class="sig-name descname">update_account_metadata</code><span class="sig-paren">(</span><em class="sig-param">metadata</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.update_account_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an account’s profile in json_metadata</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metadata</strong> (<em>dict</em>) – The new metadata to use</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.update_account_profile">
+<code class="sig-name descname">update_account_profile</code><span class="sig-paren">(</span><em class="sig-param">profile</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.update_account_profile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an account’s profile in json_metadata</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>profile</strong> (<em>dict</em>) – The new profile to use</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+<p>Sample profile structure:</p>
+<div class="highlight-js notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;Holger&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;about&#39;</span><span class="o">:</span> <span class="s1">&#39;bhive Developer&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;location&#39;</span><span class="o">:</span> <span class="s1">&#39;Germany&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;profile_image&#39;</span><span class="o">:</span> <span class="s1">&#39;https://c1.staticflickr.com/5/4715/38733717165_7070227c89_n.jpg&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;cover_image&#39;</span><span class="o">:</span> <span class="s1">&#39;https://farm1.staticflickr.com/894/26382750057_69f5c8e568.jpg&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;website&#39;</span><span class="o">:</span> <span class="s1">&#39;https://github.com/thecrazygmn/bhive&#39;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;test&quot;</span><span class="p">)</span>
+<span class="n">profile</span> <span class="o">=</span> <span class="n">account</span><span class="o">.</span><span class="n">profile</span>
+<span class="n">profile</span><span class="p">[</span><span class="s2">&quot;about&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;test account&quot;</span>
+<span class="n">account</span><span class="o">.</span><span class="n">update_account_profile</span><span class="p">(</span><span class="n">profile</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.update_memo_key">
+<code class="sig-name descname">update_memo_key</code><span class="sig-paren">(</span><em class="sig-param">key</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.update_memo_key" title="Permalink to this definition">¶</a></dt>
+<dd><p>Update an account’s memo public key</p>
+<p>This method does <strong>not</strong> add any private keys to your
+wallet but merely changes the memo public key.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> (<em>str</em>) – New memo public key</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the account to allow access
+to (defaults to <code class="docutils literal notranslate"><span class="pre">default_account</span></code>)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.verify_account_authority">
+<code class="sig-name descname">verify_account_authority</code><span class="sig-paren">(</span><em class="sig-param">keys</em>, <em class="sig-param">account=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.verify_account_authority" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns true if the signers have enough authority to authorize an account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>keys</strong> (<em>list</em>) – public key</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – When set, a different account is used for the request (Default is object account name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>dictionary</p>
+</dd>
+</dl>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">bhive.account</span> <span class="kn">import</span> <span class="n">Account</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">account</span> <span class="o">=</span> <span class="n">Account</span><span class="p">(</span><span class="s2">&quot;hiveio&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">account</span><span class="o">.</span><span class="n">verify_account_authority</span><span class="p">([</span><span class="s2">&quot;STM7Q2rLBqzPzFeteQZewv9Lu3NLE69fZoLeL6YK59t7UmssCBNTU&quot;</span><span class="p">])[</span><span class="s2">&quot;valid&quot;</span><span class="p">])</span>
+<span class="go">False</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.virtual_op_count">
+<code class="sig-name descname">virtual_op_count</code><span class="sig-paren">(</span><em class="sig-param">until=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.virtual_op_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the number of individual account transactions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.vp">
+<em class="property">property </em><code class="sig-name descname">vp</code><a class="headerlink" href="#bhive.account.Account.vp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the account voting power in the range of 0-100%</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.Account.withdraw_vesting">
+<code class="sig-name descname">withdraw_vesting</code><span class="sig-paren">(</span><em class="sig-param">amount</em>, <em class="sig-param">account=None</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Account.withdraw_vesting" title="Permalink to this definition">¶</a></dt>
+<dd><p>Withdraw VESTS from the vesting account.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>amount</strong> (<em>float</em>) – number of VESTS to withdraw over a period of
+13 weeks</p></li>
+<li><p><strong>account</strong> (<em>str</em>) – (optional) the source account for the transfer
+if not <code class="docutils literal notranslate"><span class="pre">default_account</span></code></p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.account.Accounts">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.account.</code><code class="sig-name descname">Accounts</code><span class="sig-paren">(</span><em class="sig-param">name_list</em>, <em class="sig-param">batch_limit=100</em>, <em class="sig-param">lazy=False</em>, <em class="sig-param">full=True</em>, <em class="sig-param">hive_instance=None</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.Accounts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#bhive.account.AccountsObject" title="bhive.account.AccountsObject"><code class="xref py py-class docutils literal notranslate"><span class="pre">bhive.account.AccountsObject</span></code></a></p>
+<p>Obtain a list of accounts</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>name_list</strong> (<em>list</em>) – list of accounts to fetch</p></li>
+<li><p><strong>batch_limit</strong> (<em>int</em>) – (optional) maximum number of accounts
+to fetch per call, defaults to 100</p></li>
+<li><p><strong>hive_instance</strong> (<a class="reference internal" href="bhive.hive.html#bhive.hive.Hive" title="bhive.hive.Hive"><em>Hive</em></a>) – Hive() instance to use when
+accessing a RPCcreator = Account(creator, hive_instance=self)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="class">
+<dt id="bhive.account.AccountsObject">
+<em class="property">class </em><code class="sig-prename descclassname">bhive.account.</code><code class="sig-name descname">AccountsObject</code><a class="headerlink" href="#bhive.account.AccountsObject" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code></p>
+<dl class="method">
+<dt id="bhive.account.AccountsObject.printAsTable">
+<code class="sig-name descname">printAsTable</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.AccountsObject.printAsTable" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="bhive.account.AccountsObject.print_summarize_table">
+<code class="sig-name descname">print_summarize_table</code><span class="sig-paren">(</span><em class="sig-param">tag_type='Follower'</em>, <em class="sig-param">return_str=False</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#bhive.account.AccountsObject.print_summarize_table" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhive.aes.html" class="btn btn-neutral float-right" title="bhive.aes module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhive.html" class="btn btn-neutral float-left" title="bhive package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

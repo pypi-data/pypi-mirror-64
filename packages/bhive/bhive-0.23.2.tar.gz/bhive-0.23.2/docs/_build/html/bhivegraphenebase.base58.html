@@ -1,0 +1,354 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>bhivegraphenebase.base58 module &mdash; bhive 0.20.20 documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="_static/bhive-icon_bw.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="bhivegraphenebase.bip38 module" href="bhivegraphenebase.bip38.html" />
+    <link rel="prev" title="bhivegraphenebase.account module" href="bhivegraphenebase.account.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> bhive
+          
+
+          
+            
+            <img src="_static/bhive-logo_2.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.20
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Quickstart</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">bhivepy CLI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="apidefinitions.html">Api Definitions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">bhive</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="bhive.html">bhive package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhiveapi.html">bhiveapi package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivebase.html">bhivebase package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="bhivegrapheneapi.html">bhivegrapheneapi package</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="bhivegraphenebase.html">bhivegraphenebase package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="bhivegraphenebase.html#submodules">Submodules</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.account.html">bhivegraphenebase.account module</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">bhivegraphenebase.base58 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.bip38.html">bhivegraphenebase.bip38 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.chains.html">bhivegraphenebase.chains module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.dictionary.html">bhivegraphenebase.dictionary module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.ecdsasig.html">bhivegraphenebase.ecdsasig module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.objects.html">bhivegraphenebase.objects module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.objecttypes.html">bhivegraphenebase.objecttypes module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.operationids.html">bhivegraphenebase.operationids module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.operations.html">bhivegraphenebase.operations module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.py23.html">bhivegraphenebase.py23 module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.signedtransactions.html">bhivegraphenebase.signedtransactions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.types.html">bhivegraphenebase.types module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="bhivegraphenebase.version.html">bhivegraphenebase.version module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="bhivegraphenebase.html#module-bhivegraphenebase">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html">Repository</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#flow">Flow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#how-to-contribute">How to Contribute</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#issues">Issues</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#contributing">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribute.html#copyright-and-licensing">Copyright and Licensing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="support.html">Support and Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="indices.html">Indices and Tables</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">bhive</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="modules.html">bhive</a> &raquo;</li>
+        
+          <li><a href="bhivegraphenebase.html">bhivegraphenebase package</a> &raquo;</li>
+        
+      <li>bhivegraphenebase.base58 module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/bhivegraphenebase.base58.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-bhivegraphenebase.base58">
+<span id="bhivegraphenebase-base58-module"></span><h1>bhivegraphenebase.base58 module<a class="headerlink" href="#module-bhivegraphenebase.base58" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="bhivegraphenebase.base58.Base58">
+<em class="property">class </em><code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">Base58</code><span class="sig-paren">(</span><em class="sig-param">data</em>, <em class="sig-param">prefix='GPH'</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.Base58" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Base58 base class</p>
+<p>This class serves as an abstraction layer to deal with base58 encoded
+strings and their corresponding hex and binary representation throughout the
+library.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>hex</em><em>, </em><em>wif</em><em>, </em><em>bip38 encrypted wif</em><em>, </em><em>base58 string</em>) – Data to initialize object, e.g. pubkey data, address data, …</p></li>
+<li><p><strong>prefix</strong> (<em>str</em>) – Prefix to use for Address/PubKey strings (defaults to <code class="docutils literal notranslate"><span class="pre">GPH</span></code>)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Base58 object initialized with <code class="docutils literal notranslate"><span class="pre">data</span></code></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#bhivegraphenebase.base58.Base58" title="bhivegraphenebase.base58.Base58">Base58</a></p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – if data cannot be decoded</p>
+</dd>
+</dl>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">bytes(Base58)</span></code>: Returns the raw data</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">str(Base58)</span></code>:   Returns the readable <code class="docutils literal notranslate"><span class="pre">Base58CheckEncoded</span></code> data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">repr(Base58)</span></code>:  Gives the hex representation of the data.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">format(Base58,_format)</span></code>: Formats the instance according to <code class="docutils literal notranslate"><span class="pre">_format</span></code></p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;btc&quot;</span></code>: prefixed with <code class="docutils literal notranslate"><span class="pre">0x80</span></code>. Yields a valid btc address</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;wif&quot;</span></code>: prefixed with <code class="docutils literal notranslate"><span class="pre">0x00</span></code>. Yields a valid wif key</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">&quot;bts&quot;</span></code>: prefixed with <code class="docutils literal notranslate"><span class="pre">BTS</span></code></p></li>
+<li><p>etc.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.b58decode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">b58decode</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.b58decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.b58encode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">b58encode</code><span class="sig-paren">(</span><em class="sig-param">v</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.b58encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.base58CheckDecode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">base58CheckDecode</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.base58CheckDecode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.base58CheckEncode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">base58CheckEncode</code><span class="sig-paren">(</span><em class="sig-param">version</em>, <em class="sig-param">payload</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.base58CheckEncode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.base58decode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">base58decode</code><span class="sig-paren">(</span><em class="sig-param">base58_str</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.base58decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.base58encode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">base58encode</code><span class="sig-paren">(</span><em class="sig-param">hexstring</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.base58encode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.doublesha256">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">doublesha256</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.doublesha256" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.gphBase58CheckDecode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">gphBase58CheckDecode</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.gphBase58CheckDecode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.gphBase58CheckEncode">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">gphBase58CheckEncode</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.gphBase58CheckEncode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="data">
+<dt id="bhivegraphenebase.base58.log">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">log</code><em class="property"> = &lt;Logger bhivegraphenebase.base58 (WARNING)&gt;</em><a class="headerlink" href="#bhivegraphenebase.base58.log" title="Permalink to this definition">¶</a></dt>
+<dd><p>Default Prefix</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="bhivegraphenebase.base58.ripemd160">
+<code class="sig-prename descclassname">bhivegraphenebase.base58.</code><code class="sig-name descname">ripemd160</code><span class="sig-paren">(</span><em class="sig-param">s</em><span class="sig-paren">)</span><a class="headerlink" href="#bhivegraphenebase.base58.ripemd160" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="bhivegraphenebase.bip38.html" class="btn btn-neutral float-right" title="bhivegraphenebase.bip38 module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="bhivegraphenebase.account.html" class="btn btn-neutral float-left" title="bhivegraphenebase.account module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, ChainSquad GmbH, 2018-2019, Holger Nahrstaedt
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
