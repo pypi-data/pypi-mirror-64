@@ -1,0 +1,5 @@
+[console_scripts]
+clang-format-hook = hooks.clang_format:main
+clang-tidy-hook = hooks.clang_tidy:main
+oclint-hook = hooks.oclint:main
+
