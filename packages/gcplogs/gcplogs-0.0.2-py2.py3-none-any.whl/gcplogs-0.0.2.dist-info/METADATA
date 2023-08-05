@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: gcplogs
+Version: 0.0.2
+Summary: gcplogs is a simple command line tool to read GCP Stackdriver logs.
+Home-page: https://github.com/zeyaddeeb/gcplogs
+Author: Zeyad Deeb
+Author-email: zeyad.deeb@icloud.com
+License: MIT
+Keywords: gcp logs
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Dist: google-api-python-client (>=1.8.0)
+Requires-Dist: google-cloud-logging (>=1.15.0)
+Requires-Dist: Click (>=7.0)
+Requires-Dist: click-completion (>=0.5.2)
+Requires-Dist: termcolor (>=1.1.0)
+Requires-Dist: grpcio (>=1.27.2)
+Requires-Dist: python-dateutil (>=2.8.1)
+
+gcplogs is a simple command line tool to read GCP Stackdriver logs.
+
+

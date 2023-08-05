@@ -1,0 +1,14 @@
+gcplogs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gcplogs/_version.py,sha256=iGN02n_0wi40IQYJ5tnHV0-MhszyDtP2Go8jaKF-km8,94
+gcplogs/bin.py,sha256=Q6ewMLOr-aC4VkoGRmKD9BjTNf_ye99ZSVEWFpzH0_o,1468
+gcplogs/constants.py,sha256=7iGrXcMTl3Di45TSk-M6DqGd6i5JfMUNB-4tytw20KQ,2939
+gcplogs/core.py,sha256=Ds2Voryyd162pmseVLsuL387ciJdtM0N-g9JDT-8AVQ,2657
+gcplogs/exceptions.py,sha256=ybPpmk-UZSCIEpG2RXwkCxy4lg-XtDbIkcYPqWq4fGM,191
+gcplogs/helpers.py,sha256=s9TwjUDPiDVWzeSgj1mHmDdDZjmtTmBTZM4S7DBgZRw,11427
+gcplogs-0.0.2.dist-info/AUTHORS,sha256=VO1_dY4jHkji7HdGUkPrfdY3UQg-syv-DdQw0WjKBQY,81
+gcplogs-0.0.2.dist-info/LICENSE,sha256=fgu8WWedWK8884QGaMkWf8U21LKi2dpXGVzI5C9R-yg,1075
+gcplogs-0.0.2.dist-info/METADATA,sha256=MvK4yxC-KzkO-ESYyubSKWWpEwTNuJU5hNi_m1Ta1iU,932
+gcplogs-0.0.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+gcplogs-0.0.2.dist-info/entry_points.txt,sha256=nm09wWTVi7hWhoN2EaRD7eEuUm2AAFpG6tOeqDrbyCs,45
+gcplogs-0.0.2.dist-info/top_level.txt,sha256=5MPVRTG_F5eBlwBflLn1QCsN7AROIx_Vfm2epEHCLOE,8
+gcplogs-0.0.2.dist-info/RECORD,,
