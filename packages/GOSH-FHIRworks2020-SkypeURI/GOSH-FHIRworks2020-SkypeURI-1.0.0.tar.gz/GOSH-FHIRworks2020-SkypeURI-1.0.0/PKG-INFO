@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: GOSH-FHIRworks2020-SkypeURI
+Version: 1.0.0
+Summary: GOSH FHIR Hackathon API
+Home-page: https://github.com/AlexNiculae/GOSH-FHIRworks2020-SkypeURI
+Author: Alexandru-Vlad Niculae
+Author-email: 43644109+AlexNiculae@users.noreply.github.com
+License: UNKNOWN
+Description: # GOSH-FHIRworks2020-SkypeURI Project Descrpition
+        
+        This is a simple API that generates URIs to Skype group chats/calls given a list of FHIR patients UUIDs.
+        
+        ### Create a (group) video call
+        ```
+          >> from SkypeURI import SkypeURI
+          >> patient1UUID = '8f789d0b-3145-4cf2-8504-13159edaa747'
+          >> patient2UUID = '4a064229-2a40-45f4-a259-f4eedcfd525a'
+          >> patientUUIDs = [patient1UUID, patient2UUID]
+          >> SkypeURI().getSkypeVideoURI(patientUUIDs)
+        ```
+        
+        ### Create a (group) voice call
+        ```
+          >> from SkypeURI import SkypeURI
+          >> patient1UUID = '8f789d0b-3145-4cf2-8504-13159edaa747'
+          >> patient2UUID = '4a064229-2a40-45f4-a259-f4eedcfd525a'
+          >> patientUUIDs = [patient1UUID, patient2UUID]
+          >> SkypeURI().getSkypeVoiceURI(patientUUIDs)
+        ```
+        
+        ### Create a group chat
+        ```
+          >> from SkypeURI import SkypeURI
+          >> patient1UUID = '8f789d0b-3145-4cf2-8504-13159edaa747'
+          >> patient2UUID = '4a064229-2a40-45f4-a259-f4eedcfd525a'
+          >> patientUUIDs = [patient1UUID, patient2UUID]
+          >> SkypeURI().getSkypeVideoURI(patientUUIDs)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
