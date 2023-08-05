@@ -1,0 +1,3 @@
+[console_scripts]
+puncurl = uncurl.bin:main
+
