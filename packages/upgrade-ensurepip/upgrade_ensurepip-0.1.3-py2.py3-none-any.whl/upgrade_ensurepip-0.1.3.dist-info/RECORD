@@ -1,0 +1,10 @@
+upgrade_ensurepip/__init__.py,sha256=GQMKMOBYmM6Tr407wUjAxpQ94LR5v4MdWV0hlgfq-oo,1190
+upgrade_ensurepip/__main__.py,sha256=_w6o_nKa8tmq5bcXU_mqWNHbxpRFMov7iYDsx_l7iNk,75
+upgrade_ensurepip/upgrade_ensurepip.py,sha256=pnQ4sNj2Dd2NCQlLoSEwZglHkvkjTLJH25zg_WrEKIQ,4124
+upgrade_ensurepip-0.1.3.dist-info/LICENSE,sha256=NMR8jhksHfOc49eBTgtsE1hxWjtCKd1e8til1iJcsbg,1121
+upgrade_ensurepip-0.1.3.dist-info/METADATA,sha256=kGBrM6A40cNTWoT9co7P4f4QbO6htyLXUcQpj8fw4xA,2626
+upgrade_ensurepip-0.1.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+upgrade_ensurepip-0.1.3.dist-info/entry_points.txt,sha256=sCPdKe6jKbekW0DU3QCQEZzVYpkLQ-lkfI5xRIZS9A4,71
+upgrade_ensurepip-0.1.3.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+upgrade_ensurepip-0.1.3.dist-info/top_level.txt,sha256=JwN_YoefOIpAmQxU3UAt2-85T2tl-ZeO11D9bHcGBjc,18
+upgrade_ensurepip-0.1.3.dist-info/RECORD,,
