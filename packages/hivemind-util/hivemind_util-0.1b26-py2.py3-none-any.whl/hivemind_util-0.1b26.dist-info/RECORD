@@ -1,0 +1,7 @@
+hivemind_util-0.1b26.dist-info/METADATA,sha256=o-B-5ZhaakcGtfJrBPJKRLWnA3qrZeM9KQtQAdM_zAA,718
+hivemind_util-0.1b26.dist-info/RECORD,,
+hivemind_util-0.1b26.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+hivemind_util-0.1b26.dist-info/top_level.txt,sha256=IgK9JQK8WXKv0nVQXSJVGF1oMaX27lB8yNQTey4nbZ8,13
+hivemindutil/__init__.py,sha256=XeXmAtDOTidF7tAnO-zlr12knNvndRl4D5lTLYLMDC0,51
+hivemindutil/boundingbox.py,sha256=FJfuXZ5hGxHZBipJ73iE3ztEh6kvL3J91hR89QtnbTI,1248
+hivemindutil/hm.py,sha256=MqG39ElxzivQzNvnEge55Z8YFegAOhGa317FRoWlGs4,16273
