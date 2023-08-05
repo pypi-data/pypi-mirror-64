@@ -1,0 +1,8 @@
+README.md
+setup.py
+idworker/__init__.py
+idworker/idworker.py
+idworker.egg-info/PKG-INFO
+idworker.egg-info/SOURCES.txt
+idworker.egg-info/dependency_links.txt
+idworker.egg-info/top_level.txt
