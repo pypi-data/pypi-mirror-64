@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: jiramenu
+Version: 1.0.6
+Summary: dmenu/rofi frontend for jira
+Home-page: https://github.com/ljurk/jiramenu
+Author: Lukas Jurk
+Author-email: ljurk@pm.me
+License: GPLv3
+Description: # jiramenu
+        
+        # installation
+        
+        ## pip
+        
+        ```
+        pip install jiramenu
+        ```
+        
+        ## aur
+        
+        you can use your favourite aur helper to install `python-jiramenu-git`. for example
+        ```
+        yay -S python-jiramenu-git
+        ```
+        
+        # usage
+        
+        jiramenu expects a config file in your home directory called `.jiramenu`. To generate one just run:
+        
+        ```
+        jiramenu copy-config
+        ```
+        
+        after editing the file to fit your needs you can the following command to show the frontend
+        
+        ```
+        jiramenu show
+        ```
+        
+Keywords: jira dmenu rofi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
