@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: os-grid-reference
+Version: 0.3.0
+Summary: Encode and decode British National Grid References
+Home-page: https://gitlab.com/jbrobertson/os-grid-reference
+Author: JB Robertson
+Author-email: jbr@freeshell.org
+License: UNKNOWN
+Description: # Encode and decode British National Grid References
+        
+        The [Ordnance Survey]() encodes the coordinate
+        of map tiles with names such as `HU396753` (see the [British National Gird page
+        on Wikipedia][2]).
+        
+        This Python package has to encode and decode such references:
+        - decoding: given a tile name, get the coordinates of the tile 
+          in the [EPSG 27700][3] coordinate system;
+        - encoding: given the coordinates of a point, get the name of
+          the tiles that contain it;
+        
+        ## Examples
+        
+        To decode a tile name:  
+        ```
+        $ python -m os_grid_reference.ngr_decode HU396753 
+        {
+            "sw_easting": 439600.0,
+            "sw_northing": 1175300.0,
+            "ne_easting": 439700.0,
+            "ne_northing": 1175400.0,
+            "size": 100.0
+        }
+        ```
+        
+        To find the 100m tile containing a point:
+        ```
+        $ python -m os_grid_reference.ngr_encode --easting 439600.0 --northing 1175300.0 --size 100m
+        HU396753
+        ```
+        
+        
+        
+        ## See also
+        
+        - a similar utility from [Edina Digimap][4]: [NGConf][5]
+        - a collection of Shapefiles representing the tiles: [OSGB Grids][6]
+        
+        [1]: https://www.ordnancesurvey.co.uk/
+        [2]: https://en.wikipedia.org/wiki/Ordnance_Survey_National_Grid
+        [3]: https://epsg.io/27700
+        [4]: https://digimap.edina.ac.uk/
+        [5]: https://digimap.edina.ac.uk/webhelp/os/data_information/os_data_issues/grid_references.htm
+        [6]: https://github.com/charlesroper/OSGB_Grids
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
