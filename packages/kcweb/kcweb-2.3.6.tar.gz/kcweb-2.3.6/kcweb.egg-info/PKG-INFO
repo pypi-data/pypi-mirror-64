@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: kcweb
+Version: 2.3.6
+Summary: 基于python后端开发框架
+Home-page: http://intapp.kwebapp.cn/index/index/doc/docde/1
+Author: 坤坤
+Author-email: fk1402936534@qq.com
+License: MIT Licence
+Description: 修复调试服务器在CTRL+C退出后 端口未释放，以及创建应用时自动识别windows系统来选择python解释器
+Platform: UNKNOWN
