@@ -1,0 +1,13 @@
+hydroai/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+hydroai/_nbdev.py,sha256=U3oF__IPy3z9X4NCEbHOGn6gSh38HEQ3PeMFCls6_WE,933
+hydroai/core.py,sha256=8LMBEv1yY6sp8j4o6YjMycznQFYT17bo7DGuqZZHBiA,1689
+hydroai/data.py,sha256=H60hrzlW1lYsxMB-iBKbddwQuUdtLEJbrvLZ3gQFtDI,5029
+hydroai/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydroai/model/data.py,sha256=1RhqpvtVn-KbidF-1E715CIIMoCygv_mPd94U7jfCSo,1285
+hydroai/model/evaluation.py,sha256=DpzopH4AW6d6jOdM5TxihtlfPwYlKSkCpfqkmhHhm-k,349
+hydroai-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+hydroai-0.0.1.dist-info/METADATA,sha256=ZE9alec3SvmvRVs_Cr-bl6V9kVM-lbUFLXP1c1_jEd0,1516
+hydroai-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hydroai-0.0.1.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+hydroai-0.0.1.dist-info/top_level.txt,sha256=TJ2aC3Dh3hBGadKJiGfiBn3u8R1hHMaLkZagTd3h2xU,8
+hydroai-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: hydroai
+Version: 0.0.1
+Summary: Side project to demonstrate the operational value of machine learning for hydrologic modeling
+Home-page: https://github.com/pjbutcher/hydroai
+Author: Phil Butcher
+Author-email: phillipjbutcher@gmail.com
+License: Apache Software License 2.0
+Keywords: hydroai,hydrology,meteorology,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cdsapi
+Requires-Dist: cfgrib
+Requires-Dist: dask
+Requires-Dist: xarray
+Requires-Dist: geopandas
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: regionmask
+
+# hydroai
+> This project contains all the backend logic to demonstrate the viability of machine learning methods for operational hydrologic forecasting.
+
+
+## Install
+
+`pip install hydroai`
+
+## How to use
+
+Checkout the following tutorials which demonstrate some initial functionality available in hydroai.
+
+- [Processing ERA5-Land Data](https://pjbutcher.github.io/hydroai/tutorial_process_era5_land/)
+- [Training a Random Forest Model on ERA5-Land Forcings](https://pjbutcher.github.io/hydroai/tutorial_simple_random_forest/)
+
+
