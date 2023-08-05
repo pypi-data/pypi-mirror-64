@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+textualheatmap/__init__.py
+textualheatmap/textual_heatmap.py
+textualheatmap/textual_heatmap_test.py
+textualheatmap.egg-info/PKG-INFO
+textualheatmap.egg-info/SOURCES.txt
+textualheatmap.egg-info/dependency_links.txt
+textualheatmap.egg-info/not-zip-safe
+textualheatmap.egg-info/requires.txt
+textualheatmap.egg-info/top_level.txt
