@@ -1,0 +1,11 @@
+README.md
+setup.py
+crawlers/__init__.py
+engines/__init__.py
+oriondsc_pkg_rioatmadja2018.egg-info/PKG-INFO
+oriondsc_pkg_rioatmadja2018.egg-info/SOURCES.txt
+oriondsc_pkg_rioatmadja2018.egg-info/dependency_links.txt
+oriondsc_pkg_rioatmadja2018.egg-info/requires.txt
+oriondsc_pkg_rioatmadja2018.egg-info/top_level.txt
+oriondsc_pkg_rioatmadja2018.egg-info/zip-safe
+sql/__init__.py
