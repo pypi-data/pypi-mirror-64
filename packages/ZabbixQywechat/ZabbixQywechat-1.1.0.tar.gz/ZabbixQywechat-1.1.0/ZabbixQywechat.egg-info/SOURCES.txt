@@ -1,0 +1,7 @@
+README.md
+setup.py
+ZabbixQywechat/__init__.py
+ZabbixQywechat.egg-info/PKG-INFO
+ZabbixQywechat.egg-info/SOURCES.txt
+ZabbixQywechat.egg-info/dependency_links.txt
+ZabbixQywechat.egg-info/top_level.txt
