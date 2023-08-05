@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pyfmu
+Version: 0.0.1
+Summary: A set of tools for developing functional-mockup-units (FMUs) using the full capabilities of Python.
+Home-page: UNKNOWN
+Author: INTO-CPS Association
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/INTO-CPS-Association/pyfmu/issues
+Project-URL: Documentation, https://into-cps-application.readthedocs.io/en/latest/submodules/pyfmu/docs/index.html
+Project-URL: Source Code, https://github.com/INTO-CPS-Association/pyfmu
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: Jinja2
+Provides-Extra: docs
+Requires-Dist: Sphinx ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinx-autoapi ; extra == 'docs'
+Provides-Extra: gui
+Provides-Extra: tests
+Requires-Dist: numpy ; extra == 'tests'
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: fmpy ; extra == 'tests'
+Requires-Dist: pyqtgraph ; extra == 'tests'
+Requires-Dist: scipy ; extra == 'tests'
+Requires-Dist: PyQt5 ; extra == 'tests'
+
+UNKNOWN
+
+
