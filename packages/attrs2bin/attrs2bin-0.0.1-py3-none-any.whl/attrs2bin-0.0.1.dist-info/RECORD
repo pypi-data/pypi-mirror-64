@@ -1,0 +1,10 @@
+attrs2bin/__init__.py,sha256=BsNj5Pur_ZLHiTNHjFNd2tVSOO3puvc-8hYQHj7Mr4E,4282
+attrs2bin/dequebuffer.py,sha256=VbIdKeyYl6Ba3eT-7LpoT7d84Qli-_AkZyg-Giglnfs,523
+attrs2bin/exceptions.py,sha256=Q7Jw5YjfjMWWN2IDtUtex4_WUL4HQG29d_pWrN63fU8,600
+attrs2bin/interfaces.py,sha256=vtx6CSxcvlJaNxVDxhYeEBJMmXKmDYVv2CDyhHhezv4,924
+attrs2bin/serializers.py,sha256=QjfU_YvsRVgqODxNRMv8MVYMv-GkqIGYrDYmn2LARm4,3763
+attrs2bin-0.0.1.dist-info/LICENSE,sha256=B9FlXuWcjDFV9AprQYoqQ2XJbpGZRRJ_c8VnkvT-MQA,1094
+attrs2bin-0.0.1.dist-info/METADATA,sha256=ucw-iv7krFCh52ymthUIahdvWwHQdPol-6TxWykbeU4,3046
+attrs2bin-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+attrs2bin-0.0.1.dist-info/top_level.txt,sha256=CMSSz4rMtLW7JUGASN9RpzEAkP2NbCkjx6SqMfI1oi0,10
+attrs2bin-0.0.1.dist-info/RECORD,,
