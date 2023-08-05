@@ -1,0 +1,12 @@
+mysvr-1.0.0.dist-info/DESCRIPTION.rst,sha256=def8YW8gFvxM2ZqEpRWHXAXYGBTvocjX_fiXmsiIkoY,243
+mysvr-1.0.0.dist-info/METADATA,sha256=mgq-uxxPjOVns15Pk7G1UOWXbegqB79sroq-37kXA-I,678
+mysvr-1.0.0.dist-info/RECORD,,
+mysvr-1.0.0.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+mysvr-1.0.0.dist-info/metadata.json,sha256=oRsafhH9GWhq3MP_XL6En41cgF1rwE2wx-SGVsttbOQ,631
+mysvr-1.0.0.dist-info/top_level.txt,sha256=pMYk3AWlJIoy4rrmKSNP8OSwqaFjoQ95kNIhyK7meIs,17
+svr/L2.py,sha256=uhgeo0Q21sYURzyYRF5KJYTPZDvj4jP7N1ZB7JOVSuI,5659
+svr/SV.py,sha256=F1it0OWmn6ilVYQDHi2YDHQF0I2XGuYetdcat8SrAiM,12231
+svr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+svr/kernelfunc.py,sha256=v7_gRY6ffh-7fj3u38anY4TDKZJQ5vkBRDIWkfvS1JI,2634
+svr/examples/1d_svr.py,sha256=McSzGgXb2I8NV5WJOvTNh4mThKGgxTbmhCjwX_-duGk,951
+svr/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
