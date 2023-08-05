@@ -1,0 +1,9 @@
+urllib3<1.25,>=1.21.1
+requests
+boto3
+
+[dev]
+pre-commit
+flake8
+flake8-quotes
+twine
