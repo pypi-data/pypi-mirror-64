@@ -1,0 +1,7 @@
+README.md
+setup.py
+vaknl_conversion_model.egg-info/PKG-INFO
+vaknl_conversion_model.egg-info/SOURCES.txt
+vaknl_conversion_model.egg-info/dependency_links.txt
+vaknl_conversion_model.egg-info/requires.txt
+vaknl_conversion_model.egg-info/top_level.txt
