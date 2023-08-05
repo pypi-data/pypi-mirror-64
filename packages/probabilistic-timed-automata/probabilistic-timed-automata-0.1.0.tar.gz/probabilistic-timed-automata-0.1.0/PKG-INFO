@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: probabilistic-timed-automata
+Version: 0.1.0
+Summary: Probabilistic Timed Automata library for Python
+Home-page: https://github.com/anand-bala/probabilistic-timed-automata.git
+License: MIT
+Author: Anand Balakrishnan
+Author-email: anandbala1597@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: attrs (>=19.3.0,<20.0.0)
+Requires-Dist: portion (>=2.0.0,<3.0.0)
+Project-URL: Repository, https://github.com/anand-bala/probabilistic-timed-automata.git
+Description-Content-Type: text/x-rst
+
+Probabilistic Timed Automata
+============================
+
+Python library for building and simulating probabilistic timed automata.
+
+.. image:: https://travis-ci.com/anand-bala/probabilistic-timed-automata.svg?branch=master
+  :target: https://travis-ci.com/anand-bala/probabilistic-timed-automata
+
+.. image:: https://codecov.io/gh/anand-bala/probabilistic-timed-automata/branch/master/graph/badge.svg?token=9JIV7X4YEQ
+  :target: https://codecov.io/gh/anand-bala/probabilistic-timed-automata
+
+.. image:: https://badge.fury.io/py/probabilistic-timed-automata.svg
+  :target: https://badge.fury.io/py/probabilistic-timed-automata
+
+.. image:: https://img.shields.io/badge/docs-link-brightgreen
+  :target: https://anand-bala.github.io/probabilistic-timed-automata
+
+Installation
+------------
+
+To install using `pip` just use:
+
+.. code-block:: shell
+
+    $ pip install probabilistic-timed-automata
+
+
+For developers, since this project uses `poetry <https://python-poetry.org/>`_
+for building/dependency management, please install that (and familiarize
+yourself with it). Then, you can run:
+
+.. code-block:: shell
+
+    $ poetry install
+
+
+Usage
+-----
+
+
+
+
