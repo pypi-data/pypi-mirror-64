@@ -1,0 +1,8 @@
+_rapidfuzz_cpp.cpython-36m-i386-linux-gnu.so,sha256=oK_QJkrGJVux_x5URWp5zCVScLArGpjZCkyZiQo9uR0,2966652
+rapidfuzz-0.2.1.dist-info/top_level.txt,sha256=IC2UZIO1W44XrrAuhhGY2v93_Bh3h9b906nuUCN3Dwk,25
+rapidfuzz-0.2.1.dist-info/RECORD,,
+rapidfuzz-0.2.1.dist-info/METADATA,sha256=h36O_sMs9Cjm3H6RrMtmvBY8i7wcHlZ7gKw9EZLkBcE,4117
+rapidfuzz-0.2.1.dist-info/WHEEL,sha256=J8QCTcKkxhGknm4E-WnHiBUInD4YtJqRjI7PSXFrmP8,110
+rapidfuzz/process.py,sha256=Xr1yicXzPD6xs2eRUYSzyNIaiGtL5Vsf5Y7oWzXaJtA,1436
+rapidfuzz/__init__.py,sha256=iorXsN3dYxuul64EXEPX019TXqqcPgnUw0LL7Q3gWI8,84
+rapidfuzz/fuzz.py,sha256=mfM_7QsUANkxpL7Ppm4FUH39OblWEHNCK5IRJJV4FrM,33
