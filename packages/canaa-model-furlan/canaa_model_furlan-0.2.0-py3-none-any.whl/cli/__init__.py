@@ -1,0 +1,5 @@
+__tool_name__ = 'canaa-model'
+__version__ = '0.2.0'
+__description__ = 'Canaa model creator'
+__author__ = 'Guionardo Furlan'
+__author_email__ = 'guionardo.furlan@hbsis.com.br'
