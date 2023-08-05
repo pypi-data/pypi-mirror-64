@@ -1,0 +1,3 @@
+[console_scripts]
+check-availability=check_availability.cli:run
+
