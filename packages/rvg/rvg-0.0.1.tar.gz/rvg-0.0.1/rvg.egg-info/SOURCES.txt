@@ -1,0 +1,9 @@
+README.md
+setup.py
+rvg/__init__.py
+rvg/rvg.py
+rvg.egg-info/PKG-INFO
+rvg.egg-info/SOURCES.txt
+rvg.egg-info/dependency_links.txt
+rvg.egg-info/requires.txt
+rvg.egg-info/top_level.txt
