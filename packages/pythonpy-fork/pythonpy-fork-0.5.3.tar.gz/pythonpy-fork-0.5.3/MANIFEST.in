@@ -1,0 +1,35 @@
+exclude *.pyc *~ *.so .DS_Store
+
+include .bumpversion.cfg
+include .editorconfig
+include .gitignore
+include .travis.yml
+include appveyor.yml
+
+include CHANGELOG.md
+include CLASSIFIERS.txt
+include CODE_OF_CONDUCT.md
+include COPYING.md
+include LICENSE.txt
+include PKG-INFO
+include README.rst
+
+include Makefile
+include conftest.py
+include mypy.ini
+include noxfile.py
+include pyproject.toml
+include pytest.ini
+include pytype.cfg
+include setup.cfg
+include setup.py
+
+recursive-include pythonpy *
+recursive-include requirements *.txt
+recursive-include tests *.py *.jpg *.png *.toml *.json
+
+exclude .noxresults.json
+
+recursive-exclude pythonpy *.pyc *~ *.so .DS_Store
+recursive-exclude requirements *.pyc *~ *.so .DS_Store
+recursive-exclude tests *.pyc *~ *.so .DS_Store

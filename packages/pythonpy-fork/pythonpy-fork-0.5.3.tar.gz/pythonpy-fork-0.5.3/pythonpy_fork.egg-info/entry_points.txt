@@ -1,0 +1,8 @@
+[console_scripts]
+py = pythonpy.__main__:main
+py3 = pythonpy.__main__:main
+py3.7 = pythonpy.__main__:main
+pycompleter = pythonpy.pycompleter:main
+pycompleter3 = pythonpy.pycompleter:main
+pycompleter3.7 = pythonpy.pycompleter:main
+
