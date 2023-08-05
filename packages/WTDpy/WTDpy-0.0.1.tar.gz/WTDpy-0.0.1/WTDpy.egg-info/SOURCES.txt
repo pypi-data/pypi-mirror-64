@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+WTDpy.egg-info/PKG-INFO
+WTDpy.egg-info/SOURCES.txt
+WTDpy.egg-info/dependency_links.txt
+WTDpy.egg-info/not-zip-safe
+WTDpy.egg-info/requires.txt
+WTDpy.egg-info/top_level.txt
+wtdpy/__init__.py
+wtdpy/wtdpy.py
+wtdpy.egg-info/PKG-INFO
+wtdpy.egg-info/SOURCES.txt
+wtdpy.egg-info/dependency_links.txt
+wtdpy.egg-info/not-zip-safe
+wtdpy.egg-info/requires.txt
+wtdpy.egg-info/top_level.txt
