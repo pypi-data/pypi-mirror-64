@@ -1,0 +1,6 @@
+README.md
+setup.py
+paatapdf.egg-info/PKG-INFO
+paatapdf.egg-info/SOURCES.txt
+paatapdf.egg-info/dependency_links.txt
+paatapdf.egg-info/top_level.txt
