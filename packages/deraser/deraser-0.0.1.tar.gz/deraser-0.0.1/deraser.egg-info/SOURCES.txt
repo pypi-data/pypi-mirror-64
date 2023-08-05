@@ -1,0 +1,9 @@
+README.md
+setup.py
+deraser/__init__.py
+deraser/base.py
+deraser.egg-info/PKG-INFO
+deraser.egg-info/SOURCES.txt
+deraser.egg-info/dependency_links.txt
+deraser.egg-info/requires.txt
+deraser.egg-info/top_level.txt
