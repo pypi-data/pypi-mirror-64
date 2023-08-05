@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: iqsopenapi
+Version: 0.0.1
+Summary: inquantstudio quant open api
+Home-page: http://www.inquantstudio.com/
+Author: inquantstudio
+Author-email: sunliusi@hotmail.com
+License: UNKNOWN
+Description: # -*- coding: utf-8 -*-
+        from iqsopenapi import *
+        
+        if __name__ == '__main__':
+            """测试"""
+            try:
+               api = StgyOpenApi("1",print,print,print,print,"d://logs/IQS.OpenApi.Python/")
+               api.Start()           
+               sub = api.Subscribe([{'symbol':'rb2005','exchange':4,'marketType':'TICK','barType':0},{'symbol':'rb2005','exchange':4,'marketType':'BAR','barType':60}])
+               unSub = api.Unsubscribe([{'symbol':'rb2005','exchange':4,'marketType':'TICK','barType':60}])
+               subList = api.GetSubscribeList()
+               lastTick = api.GetLastTick("rb2005",Exchange.SHFE,1)
+               lastBar = api.GetLastBar('rb2005',Exchange.SHFE,5 * 60,1)
+               hisBar = api.GetHisBar('rb2005',Exchange.SHFE,5 * 60,20190101120000,20190101140000)
+               clientOrderId = uuid.uuid4().hex
+               sendOrder = api.SendOrder(clientOrderId,'rb2005',Exchange.SHFE,"B",2400,1,OrderType.MKT,Offset.Open,'测试')
+               cancelOrder = api.CancelOrder("1231231")
+               assetInfo = api.GetAssetInfo()
+               orders = api.GetOrders()
+               order = api.GetOrder(clientOrderId)
+               openOrders = api.GetOpenOrders()   
+               positions = api.GetPositions()
+               contract = api.GetContract('rb2005',Exchange.SHFE)
+            except Exception as e:
+                print(e)
+            pass
+        
+        
+         
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
