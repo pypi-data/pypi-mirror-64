@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: jalali-django-admin-rangefilter
+Version: 0.1.2
+Summary: jalali-django-admin-rangefilter app, add the filter by a custom date range on the admin UI.
+Home-page: https://github.com/nshayanfar/jalali-django-admin-rangefilter
+Author: Nima Shayanfar
+Author-email: nshayanfar@gmail.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: persiantools
+
+jalali-django-admin-rangefilter
+========================
+
+This is a multilingual date range filter for django admin and it is inspired by django-admin-rangefilter.
+
+To see the jalali calendar, make sure that request's LANGUAGE_CODE contains 'fa' ('fa' for Farsi).
+
+
+Requirements
+------------
+
+* Python 3.5+
+* Django 3.0+
+
+
+Installation
+------------
+
+Use your favorite Python package manager to install the app from PyPI, e.g.
+
+Example:
+
+``pip install jalali-django-admin-rangefilter``
+
+
+Add ``rangefilter2`` to ``INSTALLED_APPS``:
+
+Example:
+
+```python
+
+    INSTALLED_APPS = (
+        ...
+        'rangefilter2',
+        ...
+    )
+```
+
+
+Example usage in admin
+-------------
+
+```python
+
+    from django.contrib import admin
+    from rangefilter2.filter import DateRangeFilter
+
+    from .models import Post
+
+
+    @admin.register(Post)
+    class PostAdmin(admin.ModelAdmin):
+        list_filter = (
+            ('created_at', DateRangeFilter),
+        )
+```
+## [Unreleased]
+
+## [0.1.0] - 2020-03-05
+### Added
+- Initial commit
+
+
+## [0.1.2] - 2020-03-23
+### Fixed
+- Multiple filters in a page previously didn't work
+
