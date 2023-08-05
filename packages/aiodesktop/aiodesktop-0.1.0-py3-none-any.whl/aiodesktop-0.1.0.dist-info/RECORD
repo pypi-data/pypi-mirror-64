@@ -1,0 +1,10 @@
+aiodesktop/__init__.py,sha256=L-dqU02AESdf7nRmXuZ43IiyRyiNmWv_LBu7io3Cf80,111
+aiodesktop/browser.py,sha256=LrTpiiT7eZFEt4-F2OfYlB2aO1O107NZ-PcjybMEZbA,9318
+aiodesktop/compat.py,sha256=w7iAjkrVSgqFcpraHntE-tllv8AK3TFkgEDczlpCBaU,533
+aiodesktop/server.py,sha256=2kkzwEobGPmvVjIVZk9huUEI9OpPLZLkoW3PGaXv3zs,14425
+aiodesktop/static/bootstrap.js,sha256=Z0ftF_dP94BOYQYHxvRraSIQ-RqScSs1dNWtfSe_9CY,5919
+aiodesktop-0.1.0.dist-info/LICENSE,sha256=5paJZhG_KyupnoHTz9za5c6Xwsgs2wjFMgr-AhoIjPg,1057
+aiodesktop-0.1.0.dist-info/METADATA,sha256=B2v1jeMzZNS3G0adSeQHRj7h5rNKeaSRd3QZ4qoQmgw,3952
+aiodesktop-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aiodesktop-0.1.0.dist-info/top_level.txt,sha256=4rC0-Sz3KAB-b63ql8luAYQ-FjAtcU7qGEQfYp5lFqk,11
+aiodesktop-0.1.0.dist-info/RECORD,,
