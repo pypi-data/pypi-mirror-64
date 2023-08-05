@@ -1,0 +1,3 @@
+[console_scripts]
+weather-reporter-kishor = weather_reporter.cli:main
+
