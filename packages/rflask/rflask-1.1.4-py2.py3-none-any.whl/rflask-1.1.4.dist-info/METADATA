@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: rflask
+Version: 1.1.4
+Summary: This is a tools for init flask restful api project, this can save your time.
+Home-page: https://github.com/Deacone/init-flask-restful-api
+Author: Deacone
+Author-email: 1173619682@qq.com.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/Deacone/init-flask-restful-api
+Project-URL: Source Code, https://github.com/Deacone/init-flask-restful-api
+Project-URL: Issue tracker, https://github.com/Deacone/init-flask-restful-api/issues
+Keywords: flask restful api init
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: Click (>=5.1)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: pallets-sphinx-themes ; extra == 'dev'
+Requires-Dist: sphinxcontrib-log-cabinet ; extra == 'dev'
+Requires-Dist: sphinx-issues ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: pallets-sphinx-themes ; extra == 'docs'
+Requires-Dist: sphinxcontrib-log-cabinet ; extra == 'docs'
+Requires-Dist: sphinx-issues ; extra == 'docs'
+Provides-Extra: dotenv
+Requires-Dist: python-dotenv ; extra == 'dotenv'
+
+UNKNOWN
+
+
