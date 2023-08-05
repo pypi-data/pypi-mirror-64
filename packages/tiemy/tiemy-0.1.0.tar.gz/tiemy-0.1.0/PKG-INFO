@@ -1,0 +1,45 @@
+Metadata-Version: 1.1
+Name: tiemy
+Version: 0.1.0
+Summary: A minimalistic timing decorator for callables
+Home-page: http://github.com/rahulunair/tiemy
+Author: unrahul
+Author-email: mail@rahul.onl
+License: three-clause BSD
+Description: 
+        Tiemy
+        --------
+        
+        A minimalistic timing decorator for callables
+        
+        Tiemy is timid
+        ``````````````
+        
+        ::
+        
+            >>> from tiemy import timer
+            >>> @timer
+            >>> def function(*args):
+        
+        easy to install
+        ```````````````
+        ::
+        
+            $ pip install tiemy
+        
+        Links
+        `````
+        
+        * `pypi <http://pypi.python.org/pypi/tiemy>`_
+        * `github repo <https://github.com/rahulunair/tiemy>`_
+        
+        Latest Release Notes (version: 0.1.0)
+        `````````````````````````````````````
+        
+        * one decorator `timer` to time functions and print mean and std of runs
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Benchmark 
