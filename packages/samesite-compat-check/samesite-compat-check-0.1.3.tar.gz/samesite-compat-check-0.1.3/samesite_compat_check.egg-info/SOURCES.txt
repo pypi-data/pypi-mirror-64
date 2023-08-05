@@ -1,0 +1,9 @@
+README.md
+setup.py
+samesite_compat_check/__init__.py
+samesite_compat_check/__version__.py
+samesite_compat_check/check.py
+samesite_compat_check.egg-info/PKG-INFO
+samesite_compat_check.egg-info/SOURCES.txt
+samesite_compat_check.egg-info/dependency_links.txt
+samesite_compat_check.egg-info/top_level.txt
