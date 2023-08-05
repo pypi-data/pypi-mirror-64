@@ -1,0 +1,5 @@
+flickr-api
+langdetect
+pillow
+perseus-core-library
+requests
