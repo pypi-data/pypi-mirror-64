@@ -1,0 +1,15 @@
+dataknead/__init__.py,sha256=9OV9Cnpmx9bot8YdRf6z_O1lKMArhu2dTuA8sxBI_e4,59
+dataknead/baseloader.py,sha256=v2yuA9UIZRm3IzjI_YrKz9yJvO22CCfMn938peopSYU,215
+dataknead/console.py,sha256=R1q4sr9JweXNHh5gMHI8DwUTRbB9dT3-uUBCjLbW-qA,3505
+dataknead/knead.py,sha256=89XnB0-IQ4klA0sluR7E76ncq_nSVRicd6Lbq9p5Oww,4140
+dataknead/loaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataknead/loaders/csv.py,sha256=KntXwjoMP95iNCOEzHHq8e48Wr-WXH59N4L9fooGOYw,2381
+dataknead/loaders/excel.py,sha256=KUW5Q2kwOHZgYn9xL-Y3lgea-iNWu9FuxXGzeGKByFw,766
+dataknead/loaders/json.py,sha256=zhCmHyKebvV5zmVxhLdGejsTX7jPBL9BoVY8_x4slLQ,341
+dataknead/loaders/text.py,sha256=epYx4fu0RU_AggkR-Rcn80NB9-CO9uVa0CFZAd8bnEM,263
+dataknead/loaders/xml.py,sha256=IR_8f9ZeT18p4cCtHiM537fsFbOrk2bsm9K8ovNi8jo,334
+dataknead-0.3.0.dist-info/entry_points.txt,sha256=zO3mFbjlRzVt-EMUt_LiLlm0kGyM8LUSmtbvgrzUZxU,47
+dataknead-0.3.0.dist-info/LICENSE.txt,sha256=2Y2Jdj_qABSBhqeCTeoOF58PsSbuJgCu1mAvrRi9FrA,1061
+dataknead-0.3.0.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+dataknead-0.3.0.dist-info/METADATA,sha256=-WS52emCsEjb_Xn2mLalRub_jV2YqIRxa-bIuXAZfTI,706
+dataknead-0.3.0.dist-info/RECORD,,
