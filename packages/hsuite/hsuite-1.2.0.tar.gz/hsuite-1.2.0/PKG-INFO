@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: hsuite
+Version: 1.2.0
+Summary: HSuite is a toolset for pentest
+Home-page: https://github.com/Placidina/hsuite
+Author: Alan Placidina Maria
+Author-email: placidina@protonmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/Placidina/hsuite/issues
+Project-URL: Source Code, https://github.com/Placidina/hsuite
+Description: # HSuite
+        
+        [![License](https://img.shields.io/badge/license-MIT-green.svg)](https://github.com/Placidina/hsuite/blob/master/LICENSE)
+        
+        HSuite is a HTTP Protocol brute force.
+        
+        Works on Python versions:
+        
+        - 2.6.x and greater
+        - 2.7.x and greater
+        - 3.4.x and greater
+        - 3.5.x and greater
+        - 3.6.x and greater
+        - 3.7.x and greater
+        - 3.8.x and greater
+        
+        ## Tools
+        
+        - [S3Dump](https://github.com/Placidina/hsuite/blob/master/docs/s3dump/README.md)
+        
+        ## Install
+        
+        - Simple: `pip install hsuite`
+        **or**
+        - Extras for scripts: `pip install hsuite[s3dump,...]`
+        
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*
+Description-Content-Type: text/markdown
+Provides-Extra: s3dump
