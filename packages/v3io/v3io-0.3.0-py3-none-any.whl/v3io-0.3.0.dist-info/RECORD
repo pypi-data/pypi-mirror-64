@@ -1,0 +1,16 @@
+v3io/__init__.py,sha256=3wVEs2QD_7OcTlD97cZdCeizd2hUbJJ0GeIO8wQIjrk,22
+v3io/common/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+v3io/common/helpers.py,sha256=tEsxnbKR-CWGiqaYhWpKZqeViZ79FfFFsoAASwolGkE,244
+v3io/dataplane/__init__.py,sha256=9dvnVXtGxVa2fcM7AURSqR_ElCAXGQXNQNes8soaID0,65
+v3io/dataplane/batch.py,sha256=Nu6HlLv2JuOgH4SsT8C-8d8pyCY74ipjO5wRkFvlV7E,2401
+v3io/dataplane/client.py,sha256=298uexF_K23ixRyeM6b_IL4ZYXhoFvmbu1BDMbmxxCU,35465
+v3io/dataplane/items_cursor.py,sha256=V6aDOp971G9c9biYhMv4SV2WSbY_1z5tDwkvrQZU2lM,3474
+v3io/dataplane/output.py,sha256=SqzLQVd39W31odiqzlxaYLorbMTcxMC1VSSFaMDN_ls,6420
+v3io/dataplane/request.py,sha256=nC98TCeMgQ2kkLpeoQVShQ3bcE7fiAQBddJBZpsRO0w,9477
+v3io/dataplane/response.py,sha256=DO3A57g0Tw-NDMAX51HQpZvy700bcEkbWGQwia7zulc,1207
+v3io/logger/__init__.py,sha256=8IRLYZvb_ds8lpcScgIWZc2bsKDj2Zrcxljqxvt5WqM,62
+v3io/logger/logger.py,sha256=0iqX_oIqp0glPbBJOTFnxMiRFDaK3BNGfWbdZJDKpCY,2839
+v3io-0.3.0.dist-info/METADATA,sha256=VhENjmY1uKoRqr1AJiV4XgRTE4_u-Vcie3J35KrnnrE,1072
+v3io-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+v3io-0.3.0.dist-info/top_level.txt,sha256=hMPB6rM2vH8-SGxuL9afJsY_8OY9ey5zavwzCSLRuRs,5
+v3io-0.3.0.dist-info/RECORD,,
