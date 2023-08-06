@@ -1,0 +1,69 @@
+version: 2.1
+
+orbs:
+  docker: circleci/docker@1.0.0
+
+commands:
+  set-up-pipenv:
+    description: Install Pipenv and Sync Dependencies
+    steps:
+      - run:
+          name: Install Pipenv
+          command: |
+            pip install --no-cache-dir pipenv==2018.11.26
+      - run:
+          name: Install Development Dependencies
+          command: |
+            pipenv sync --dev
+
+jobs:
+  pipenv-check:
+    description: Check for Security Vulnerabilities
+    docker:
+      - image: python:3.7-buster
+    steps:
+      - checkout
+      - set-up-pipenv
+      - run:
+          name: Run Check
+          command: |
+            pipenv check
+
+  pipenv-unittest:
+    description: Verify that Unit Tests Pass
+    docker:
+      - image: python:3.7-buster
+    steps:
+      - checkout
+      - set-up-pipenv
+      - run:
+          name: Run Unit Tests
+          command: |
+            pipenv run python -m xmlrunner discover -o /tmp/tests-xml-output/
+      - store_test_results:
+          path: /tmp/tests-xml-output/
+
+workflows:
+  version: 2
+  test-publish:
+    jobs:
+      - pipenv-check
+      - pipenv-unittest
+
+      - docker/hadolint:
+          ignore-rules: DL3013
+
+      - docker/publish:
+          name: publish-app
+          requires:
+            - pipenv-check
+            - pipenv-unittest
+            - docker/hadolint
+          filters:
+            branches:
+              only: master
+          context: discord-fate-bot/publish
+          image: $DOCKER_LOGIN/$CIRCLE_PROJECT_REPONAME
+          cache_from: $DOCKER_LOGIN/$CIRCLE_PROJECT_REPONAME:latest
+          tag: $CIRCLE_SHA1,latest
+
