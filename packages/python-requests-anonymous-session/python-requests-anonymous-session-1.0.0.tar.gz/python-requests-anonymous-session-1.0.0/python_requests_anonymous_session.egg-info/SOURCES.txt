@@ -1,0 +1,8 @@
+README.md
+setup.py
+python_requests_anonymous_session/__init__.py
+python_requests_anonymous_session.egg-info/PKG-INFO
+python_requests_anonymous_session.egg-info/SOURCES.txt
+python_requests_anonymous_session.egg-info/dependency_links.txt
+python_requests_anonymous_session.egg-info/requires.txt
+python_requests_anonymous_session.egg-info/top_level.txt
