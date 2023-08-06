@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: chess-hic
+Version: 0.0.2
+Summary: Quantitative comparison and automatic feature extraction for chromatin contact data.
+Home-page: https://github.com/vaquerizaslab/chess
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: https://github.com/vaquerizaslab/chess/archive/v0.0.2.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
