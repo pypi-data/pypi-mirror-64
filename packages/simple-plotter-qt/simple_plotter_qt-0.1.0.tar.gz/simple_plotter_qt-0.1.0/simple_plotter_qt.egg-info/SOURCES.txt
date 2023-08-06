@@ -1,0 +1,14 @@
+.gitignore
+CHANGELOG
+LICENSE
+NOTICE
+README.rst
+setup.py
+simple_plotter_qt/__init__.py
+simple_plotter_qt/gui.py
+simple_plotter_qt.egg-info/PKG-INFO
+simple_plotter_qt.egg-info/SOURCES.txt
+simple_plotter_qt.egg-info/dependency_links.txt
+simple_plotter_qt.egg-info/entry_points.txt
+simple_plotter_qt.egg-info/requires.txt
+simple_plotter_qt.egg-info/top_level.txt

@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: simple_plotter_qt
+Version: 0.1.0
+Summary: Qt-based GUI front-end for simple-plotter
+Home-page: https://simple-plotter.readthedocs.io/en/latest/
+Author: Thies Hecker
+Author-email: thies.hecker@gmx.de
+License: GPL3
+Project-URL: Documentation, https://simple-plotter.readthedocs.io/
+Project-URL: Source Code, https://gitlab.com/thecker/simple-plotter-qt/
+Description: simple-plotter-qt
+        =================
+        
+        Qt based GUI front-end for the plot code generator `simple-plotter`_.
+        
+        *simple-plotter-qt* is released under the GPLv3+ license.
+        For details see the LICENSE file.
+        
+        Getting started
+        ---------------
+        
+        It can be installed with pip:
+        
+        ::
+        
+            pip install simple-plotter-qt
+        
+        It depends on:
+        
+        * simple-plotter
+        * PyQt5
+        * matplotlib
+        * setuptools_scm
+        
+        Launching the application
+        -------------------------
+        
+        setup-tools will install a script called *simple-plotter-qt*.
+        It can be launched via a terminal:
+        
+        ::
+        
+            simple-plotter-qt
+        
+        Further information
+        -------------------
+        
+        For further information please visit the *simple-plotter* documentation:
+        
+        https://simple-plotter.readthedocs.io/en/latest
+        
+        .. _simple-plotter: https://gitlab.com/thecker/simple-plotter
+Keywords: plot plotting matplotlib gui
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
