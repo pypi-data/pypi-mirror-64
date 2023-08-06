@@ -1,0 +1,10 @@
+stoltzmaniac/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+stoltzmaniac/data_handler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stoltzmaniac/data_handler/base.py,sha256=wyPRkyXl5bAytb2BPz9WPT680TVcn-VuvjfCGrPSVvQ,283
+stoltzmaniac/data_handler/converter.py,sha256=wMbT8hX7mj3VEErCjVXRQUgeffJJzFBPSwwceIslRzE,838
+stoltzmaniac/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stoltzmaniac/utils/check_types.py,sha256=x7L1uZwezZehEBxs-IimfMFRJzTE8B5ZRglvXVCpeaU,550
+stoltzmaniac/utils/convert.py,sha256=uqTClqjleaEkE3vXAe76omCc_ob2NgZwueN7EcFozKg,552
+stoltzmaniac-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+stoltzmaniac-0.1.1.dist-info/METADATA,sha256=MM_4Pvs_U0rS9Ud-BtMvwVy-cujaExpI2DD6cZXVkK4,348
+stoltzmaniac-0.1.1.dist-info/RECORD,,
