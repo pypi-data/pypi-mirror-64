@@ -1,0 +1,8 @@
+pytest>=5.0.0
+pytest-cov
+WebTest
+flake8
+sphinx
+nbsphinx
+bump2version
+twine
