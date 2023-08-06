@@ -1,0 +1,10 @@
+wdldoc/__init__.py,sha256=IMqHrrSIByGoIq-hR7WmyluqihWgWxlJEiBhd6YFBbY,829
+wdldoc/__main__.py,sha256=1aGiZGNHf0P5LoW_HOOfQjdf12-ECfyRACVWO61u4Ag,2403
+wdldoc/miniwdl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wdldoc/miniwdl/sources.py,sha256=6-AWjFUZowV7rqtsFKK6qNLfgZDwkItitNDLsYUKKx4,795
+wdldoc/templates/markdown.py,sha256=-zNb2AKPrC8-oGGaDFMFMI7KaBgLvYAz81-IscT-mGw,2105
+wdldoc-1.0.0a1.dist-info/entry_points.txt,sha256=sXLCCYaNtC7AkffutNKkeWOZGoOShvp3dCTyrKgo5Us,47
+wdldoc-1.0.0a1.dist-info/LICENSE.md,sha256=-h2uH9ZHFDKwxa6BD6UaKexEPSLXXFYoUEOlxMJoVSQ,1071
+wdldoc-1.0.0a1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+wdldoc-1.0.0a1.dist-info/METADATA,sha256=qeRv_Nvx55qfxJ8PYiHT4LwbjF4UyZiG4dF9RQEvezE,2333
+wdldoc-1.0.0a1.dist-info/RECORD,,
