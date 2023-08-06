@@ -1,0 +1,10 @@
+numpy
+matplotlib
+Cython
+astropy-helpers
+astropy
+sphinx_astropy
+numpydoc
+scipy
+scikit-image
+networkx
