@@ -1,0 +1,212 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>django-channels-presence &#8212; django-channels-presence 0.0.9 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '0.0.9',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Usage" href="usage.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="usage.html" title="Usage"
+             accesskey="N">next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">django-channels-presence 0.0.9 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="django-channels-presence">
+<h1>django-channels-presence<a class="headerlink" href="#django-channels-presence" title="Permalink to this headline">¶</a></h1>
+<p><code class="docutils literal"><span class="pre">django-channels-presence</span></code> is a Django app which adds “rooms” and presence
+notification capability to a Django application using <a class="reference external" href="https://github.com/andrewgodwin/channels">django-channels</a>.  If you’re building a chat room
+or other site that needs to keep track of “who is connected right now”, this
+might be useful to you.</p>
+<div class="section" id="quick-install">
+<h2>Quick install<a class="headerlink" href="#quick-install" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Install with pip:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">django</span><span class="o">-</span><span class="n">channels</span><span class="o">-</span><span class="n">presence</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Add <code class="docutils literal"><span class="pre">&quot;channels_presence&quot;</span></code> to <code class="docutils literal"><span class="pre">INSTALLED_APPS</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># proj/settings.py</span>
+
+<span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;channels_presence&quot;</span><span class="p">,</span>
+    <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="upgrading">
+<h2>Upgrading<a class="headerlink" href="#upgrading" title="Permalink to this headline">¶</a></h2>
+<p>Django Channels v2 is a major backwards-incompatible change from Django
+Channels v1; and hence the latest django-channels-presence is not
+compatible with older versions of django-channels.</p>
+<p>If you’re using:</p>
+<ul class="simple">
+<li>django-channels v1.x: Use django-channels-presence v0.</li>
+<li>django-channels v2.x: Use django-channels-presence v1+.</li>
+</ul>
+<p>Code that uses <code class="docutils literal"><span class="pre">django-channels-presence</span></code> v0 or <code class="docutils literal"><span class="pre">django-channels</span></code> v1 will
+need to be rewritten to target channel layers, consumers, and other new
+concepts from <code class="docutils literal"><span class="pre">django-channels</span></code> v2.</p>
+</div>
+<div class="section" id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Permalink to this headline">¶</a></h2>
+<p>This application builds on top of
+<a class="reference external" href="https://github.com/django/channels">django-channels</a>. You should have a good
+understanding of how it works before diving in here.  To enable groups and
+messaging by channel name, <code class="docutils literal"><span class="pre">django-channels-presence</span></code> requires that the
+optional “channel layers” feature of <code class="docutils literal"><span class="pre">django-channels</span></code> v2 be used.</p>
+<p>There are 3 main tasks that need to be accomplished in order to track “presence” in rooms using <code class="docutils literal"><span class="pre">django-channels</span></code>:</p>
+<ol class="arabic simple">
+<li>Observe connections, adding the channel names for each connecting socket to a group.</li>
+<li>Observe disconnections, removing the channel names for each connecting socket from a group.</li>
+<li>Prune channel names from groups after they go stale. We won’t always get a socket disconnect event when a socket drops off; so we need to use heartbeats and a periodic pruning task to remove stale connections.</li>
+</ol>
+<p><code class="docutils literal"><span class="pre">django-channels-presence</span></code> provides database models and helpers to handle
+each of these tasks.  This implementation makes database queries on every
+connection, disconnection, and message, as well as periodic queries to prune
+stale connections. As a result, it will scale differently than
+<code class="docutils literal"><span class="pre">django-channels</span></code> alone.</p>
+<p><strong>Contents</strong>:</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#prerequisites">Prerequisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="usage.html#managing-presences">Managing presences</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#adding-channels-to-rooms">1. Adding channels to rooms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#removing-channels-from-rooms">2. Removing channels from rooms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#updating-the-last-seen-timestamp">3. Updating the “last_seen” timestamp</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="usage.html#a-heartbeats">3a. Heartbeats</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#pruning-stale-connections">4. Pruning stale connections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="usage.html#listening-for-changes-in-presence">5. Listening for changes in presence</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#settings">Settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#models">Models</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#room"><code class="docutils literal"><span class="pre">Room</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#presence"><code class="docutils literal"><span class="pre">Presence</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#decorators">Decorators</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#touch-presence"><code class="docutils literal"><span class="pre">touch_presence</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="api.html#remove-presence"><code class="docutils literal"><span class="pre">remove_presence</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#signals">Signals</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="api.html#presence-changed"><code class="docutils literal"><span class="pre">presence_changed</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">django-channels-presence</a><ul>
+<li><a class="reference internal" href="#quick-install">Quick install</a></li>
+<li><a class="reference internal" href="#upgrading">Upgrading</a></li>
+<li><a class="reference internal" href="#motivation">Motivation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="usage.html"
+                        title="next chapter">Usage</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="usage.html" title="Usage"
+             >next</a> |</li>
+        <li class="nav-item nav-item-0"><a href="#">django-channels-presence 0.0.9 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2020, Charlie DeTar.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.7.
+    </div>
+  </body>
+</html>
