@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: talkgenerator
+Version: 2.1.4
+Summary: Automatically generating presentation slide decks based on a given topic for improvised presentations
+Home-page: https://github.com/korymath/talk-generator
+Author: Thomas Winters, Kory Mathewson
+Author-email: info@thomaswinters.be
+License: MIT License
+Platform: Windows
+Platform: Mac
+Platform: Linux
+Requires-Dist: beautifulsoup4
+Requires-Dist: cachier (==1.4.2)
+Requires-Dist: environs
+Requires-Dist: inflect
+Requires-Dist: lxml (==4.5.0)
+Requires-Dist: nltk
+Requires-Dist: pexels-api
+Requires-Dist: Pillow (==7.0.0)
+Requires-Dist: praw
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: python-pptx (==0.6.18)
+Requires-Dist: python-pixabay
+Requires-Dist: pyunsplash
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: safygiphy
+Requires-Dist: tracery
+
+Check our GitHub repository on https://github.com/korymath/talk-generator for more information!
+
+

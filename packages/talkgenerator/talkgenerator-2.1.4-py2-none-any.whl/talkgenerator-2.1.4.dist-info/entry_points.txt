@@ -1,0 +1,3 @@
+[console_scripts]
+talkgenerator = talkgenerator.run:main_cli
+
