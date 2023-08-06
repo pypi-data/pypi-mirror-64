@@ -1,0 +1,3 @@
+[console_scripts]
+zotnote=zotnote.__main__:main
+

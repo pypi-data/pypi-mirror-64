@@ -1,0 +1,12 @@
+templates/template.j2,sha256=0xxR4gb0UMrIVR6JtDvKB9i34oXq-pQy5NR5BMTY2rg,443
+zotnote/__init__.py,sha256=-4w7ovE6klusUiUV9S6gqY1jnrxPTlzJX5i1AJS9jQk,228
+zotnote/__main__.py,sha256=SGiLjVRVXdUzrdmDse3XAkqDpAzDUvUPEp76qdhrqK0,361
+zotnote/cli.py,sha256=WVi6xOCCQ3aAMqEQGQ6tEOm0Hetg-SNFBG3t2PlFcMU,2045
+zotnote/config.py,sha256=OYDbvwPmWXb1z6ZiT4b6D3v1wLv8FTD83-JR_4_r-10,3401
+zotnote/templates.py,sha256=IJELDuzUW0LcrLxFykjd7i9EAb2nVt8zCQnq36dXD4s,1034
+zotnote/zotero.py,sha256=-cjcjDBWGUX2u41HTNClqSRtlsrq_Gcp-uKu7-h58EM,3449
+zotnote-0.1.0.dist-info/entry_points.txt,sha256=pax_c0d4zsxPrQAunLj9UR5vTKmacU1WHTRrHo7XLbk,49
+zotnote-0.1.0.dist-info/LICENSE,sha256=izBwZw5AEkESvSg2m_bTxj5hAxpR5swbj6nnTlsjH6c,1072
+zotnote-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+zotnote-0.1.0.dist-info/METADATA,sha256=skwFSyM_rlHXrBpXs9WEGlhb1-0KQn6ocOfZoGktGiQ,2257
+zotnote-0.1.0.dist-info/RECORD,,
