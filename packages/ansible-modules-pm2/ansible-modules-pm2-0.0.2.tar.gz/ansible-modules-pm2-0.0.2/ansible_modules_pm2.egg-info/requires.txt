@@ -1,0 +1,7 @@
+ansible>=2.2.0
+
+[dev]
+molecule[docker]
+pyyaml
+jinja2
+tabulate
