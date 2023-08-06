@@ -1,0 +1,10 @@
+README.md
+setup.py
+mlinnate/__init__.py
+mlinnate/innate.py
+mlinnate/innate_keras_callback.py
+mlinnate.egg-info/PKG-INFO
+mlinnate.egg-info/SOURCES.txt
+mlinnate.egg-info/dependency_links.txt
+mlinnate.egg-info/requires.txt
+mlinnate.egg-info/top_level.txt

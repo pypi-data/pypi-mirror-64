@@ -1,0 +1,6 @@
+numpy
+matplotlib
+dill
+rpyc
+IPython
+h5py
