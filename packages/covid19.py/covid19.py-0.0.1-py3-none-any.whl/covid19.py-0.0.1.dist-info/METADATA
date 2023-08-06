@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: covid19.py
+Version: 0.0.1
+Summary: Track the COVID-19 data in all the countries in the word from the command line
+Home-page: https://github.com/alexcoppe/covid19.py
+Author: Alessandro Coppe
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
