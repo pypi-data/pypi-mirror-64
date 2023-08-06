@@ -1,0 +1,11 @@
+spectra,/data/NG4/anke/MSSim/sampled_data/EHEC11128_sampl100MSSim.mgf
+instrument,FT-Hybrid
+protease,Trypsin
+DB,/data/NG4/anke/proteome/Shigellaflex_decoy.trie
+# Protecting group on cysteine:
+mod,57.021464,C
+mod,0.984016,NQ
+mod,15.994915,M
+mods,2
+ParentPPM,10
+IonTolerance,0.8

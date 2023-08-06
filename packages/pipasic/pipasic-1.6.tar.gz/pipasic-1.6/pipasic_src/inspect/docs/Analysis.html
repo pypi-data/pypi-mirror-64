@@ -1,0 +1,79 @@
+<h1>Inspect: A Proteomics Search Toolkit</h1>
+Copyright 2007, The Regents of the University of California
+<h3>Table of Contents</h1>
+<li><a href="index.html">Overview</a>
+<li><a href="Copyright.html">Copyright information</a>
+<li><a href="Installation.html">Installation</a>
+<li><a href="Database.html">Database</a>
+<li><a href="Searching.html">Searching</a>
+<li><a href="Analysis.html">Analysis</a>
+<li><a href="InspectTutorial.pdf">Basic Tutorial</a>
+<li><a href="InspectAdvancedTutorial.pdf">Advanced Tutorial</a>
+<li><a href="UnrestrictedSearchTutorial.pdf">Unrestricted Search Tutorial</a>
+<hr>
+<h2>Analysis</h2>
+Inspect writes search results to a tab-delimited file.  Up to ten search hits are written for each spectrum,
+but typcially all but the first can be discarded.  
+<br><br>
+The quality of each match can be determiend by the F-Score.  The F-score is a weighted sum of two factors.  First is the
+MQScore, or match quality score (in column 6).  Second
+is the delta-score (in column 14), the difference in MQScore between this match and the best alternative.
+Because delta-score is highly dependent on database size and search parameters, Inspect takes the ratio of
+the delta-score to the average delta-score for all top-scoring matches.
+<br><br>
+The preferred method to compute the false discovery rate (FDR) for a collection of matches is to employ a decoy
+database.  This method requires you to generate shuffled protein records before search using the "ShuffleDB" script
+(see the Database section for details).  Then, run the ComputeFDR.jar script to compute the empirical false discovery
+rate for a given f-score cutoff.
+<br><br>
+As of January 3, 2012, the columns have been updated slightly.  Below is a list of all the columns and their meaning:
+<li>SpectrumFile - The file searched
+<li>Scan# - The scan number within the file; this value is 0 for .dta files;  For MGF files, the scan# is equivalent to the SpecIndex, but is 0-based numbering.
+<li>Annotation - Peptide annotation, with prefix and suffix and (non-fixed) modifications indicated.
+Example: K.DFSQIDNAP+16EER.E
+<li>Protein - The name of the protein this peptide comes from.  (Protein names are stored to the .index file
+corresponding to the database .trie file)
+<li>Charge - Precursor charge.  If "multicharge" is set, or if no charge is specified in the source file, Inspect
+attempts to guess the charge.
+<li>MQScore	- Match quality score, the main measure of match quality.
+<li>Length - The length of the matched peptide in amino acids.</li>
+<li>TotalPRMScore - Summed score for break points (between amino acids), based upon a Bayesian network modeling
+fragmentation propensities
+<li>MedianPRMScore - Median score for break pounts.</li>
+<li>FractionY - The fraction of charge 1 y ions detected</li>
+<li>FractionB - The fraction of charge 1 b ions detected</li>
+<li>Intensity - Fraction of high-intensity peaks which are b or y fragments.  For a length-n peptide, the top n*3
+peaks are considered.
+<li>NTT - Number of tryptic termini (or Unused, if no protease was specified).  Note that the N- and C-terminus of
+a protein are both considered to be valid termini.
+<li>InspectFDR - This is the FDR of all matches with F-score equal to or greater than this match.  Since Inspect knows
+nothing about a decoy database, it is often best to run ComputeFDR.jar to compute an empirical FDR.
+<li>DeltaScore - Difference between the MQScore of this match and the best alternative
+<li>DeltaScoreOther - Difference between the MQScore of this match and the best alternative from a different locus.
+To see the difference between this and the previous column, consider a search that finds similar matches
+of the form "M+16MALGEER" and "MM+16ALGEER".  In such a case, DeltaScore would be very small, but DeltaScoreOther
+might still be large.
+<li>RecordNumber - Index of the protein record in the database
+<li>DBFilePos - Byte-position of this match within the database
+<li>SpecFilePos - Offset, in the input file, of this spectrum; useful for passing to the "Label" script (see below)
+<li>PrecursorMZ - The precursor m/z given in the spectrum file.
+<li>PrecursorError - The difference (in m/z units) between the precursor m/z given in the file and the theoretical m/z of the identified peptide.
+<li>SpecIndex - This is a one-based number of the index of the spectrum in the original spectrum file.  Only MS2+ spectra are counted.</li>
+<hr>
+<h2>Post-processing</h2>
+Python scripts for performing various analyses are included in the distribution.
+<b>Run a script with no command-line parameters to print a list of available arguments.</b><br>
+<li>Label.py - Given a spectrum and a peptide annotation, label the spectrum peaks with
+their associated fragments.  Produces a .png image for a spectrum, with associated peptide interpretation.  Requires
+the Python Imaging Library (PIL).  Sample command:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<tt>Label.py Shewanella.mzXML:6200392 R.SNGSIGQNQ+14TPGR.V</tt>
+<li>ComputeFDR.jar - Given Inspect output, filter to a user-determined FDR.  The ComputeFDR.jar script can be used for many experiments but typical use for Inspect results would be</li>
+<pre>      java -jar ComputeFDR.jar -f InspectResult.out 3 XXX -n 1 -p 2 -s 14 1 -fdr 0.01</pre>
+<li>Summary.py - Given Inspect output, produce an html-format summary of the results.  The report provides
+a "protein-level" look at the results. This script is also used when
+producing a "second-pass" protein database, containing the proteins identified with high confidence.
+<li>PTMAnalysis.py - This script examines output from MS-Alignment (Inspect run in "blind" mode), and
+highlights the most plausible evidence for PTMs.  The script iteratively selects the most common
+post-translational modifications, and report the selections.  These selections require manual curation
+and/or validation.
+<hr>
