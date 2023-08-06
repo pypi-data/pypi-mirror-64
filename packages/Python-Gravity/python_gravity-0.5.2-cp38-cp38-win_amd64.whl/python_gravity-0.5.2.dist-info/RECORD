@@ -1,0 +1,16 @@
+pygravity/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygravity/math.cp38-win_amd64.pyd,sha256=d8s3WWl88j_7srmZbwjpcqpKhTnWcjRj-SAlzsk-LL4,26112
+pygravity/two_d/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygravity/two_d/_core.py,sha256=FmjOsclcKA2weRqKd7-mrZCkiGzestFyq9nDuMsvmHs,20
+pygravity/two_d/vector.cp38-win_amd64.pyd,sha256=LQ0yov1B-_9xLoybWfVI47Nn4Ct2FUaHh471pJpvlMs,46080
+pygravity/twod/__init__.py,sha256=_diStv3a9hYRC1c4qBVuK1wXGYgYEbMqhYDhdVR_O3c,258
+pygravity/twod/_core.cp38-win_amd64.pyd,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygravity/twod/_core.py,sha256=FmjOsclcKA2weRqKd7-mrZCkiGzestFyq9nDuMsvmHs,20
+pygravity/twod/gravity.cp38-win_amd64.pyd,sha256=ua4PF5WNntw5H2w_aEjC8U7mZLMt2F3pR_ZcrXWVAVo,89088
+pygravity/twod/physics.cp38-win_amd64.pyd,sha256=pEy99RkYnMJOw0Eaoj1oRpcfqo_H32Q_qB7DFOmL0wY,46080
+pygravity/twod/vector.cp38-win_amd64.pyd,sha256=q7l7Es7l8w1mbKy0HoyQgui1Y_cxwUsFPVXaT6dFurc,103424
+python_gravity-0.5.2.dist-info/LICENSE,sha256=vP8HnY6kCgr1X5Nf4UzLSuZPmFeZ32ntkwJbqJa3S4k,1065
+python_gravity-0.5.2.dist-info/METADATA,sha256=MrTt_I23-fOeH6Gi0SRdi710Py8BcwMzR9A8NilLGlw,342
+python_gravity-0.5.2.dist-info/WHEEL,sha256=z-ezgbNu1Y2ixypRrBmFDHP9mmiBhiGywozViqVfAIc,105
+python_gravity-0.5.2.dist-info/top_level.txt,sha256=kTu-k7vicAXJ5oaHGXyEIWf_mjSLW6LTRVtQ7kM9Ols,10
+python_gravity-0.5.2.dist-info/RECORD,,
