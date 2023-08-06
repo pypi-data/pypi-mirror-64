@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: LaoNLP
+Version: 0.1.dev0
+Summary: Lao Natural Language Processing library
+Home-page: https://github.com/wannaphong/laonlp
+Author: Wannaphong
+Author-email: wannaphong@kkumail.com
+License: Apache Software License 2.0
+Project-URL: Documentation, https://github.com/wannaphong/LaoNLP/wiki
+Project-URL: Source, https://github.com/wannaphong/LaoNLP
+Project-URL: Bug Reports, https://github.com/wannaphong/LaoNLP/issues
+Keywords: lao,NLP,natural language processing,text analytics,text processing,localization,computational linguistics,Lao language
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pythainlp (>=2.1.0)
+
+# LaoNLP
+Lao language NLP
+
+

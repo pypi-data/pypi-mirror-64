@@ -1,0 +1,11 @@
+laonlp/__init__.py,sha256=SYdG-WIjyCFIrgATRbYUwCUkwGmt-eA-yeeI986rSOI,83
+laonlp/corpus/Lao-Dictionary.txt,sha256=giZxxap3PQpvE4uIKygQs6yUJRwn1yhte5dOnFwtSI0,205310
+laonlp/corpus/__init__.py,sha256=h6YUt467gzeHEuK9OvINyTgcyFXdPAmHtz4Y4xRP5Rc,224
+laonlp/corpus/lao_words.py,sha256=6qBUPh6VOY2saCiToqZjrSlXsgOMMLi6Epy8ndu1SP0,634
+laonlp/corpus/lo_spellcheck_dict.txt,sha256=oERTDeb6C-GQCenL7rtDqbfpRJTNTrVCRL5_48Fabrg,409234
+laonlp/tokenize/__init__.py,sha256=8nEKDooQLI2SFXVwiLsHMMtsMbO_L4ouR5jEMmqLGEY,269
+LaoNLP-0.1.dev0.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+LaoNLP-0.1.dev0.dist-info/METADATA,sha256=mtD9xf7bE7rnowlXheh1Z2CsP5YSaxkX7I9ttLqwlA4,1121
+LaoNLP-0.1.dev0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+LaoNLP-0.1.dev0.dist-info/top_level.txt,sha256=7aF6F0Phx0V2apTg5OTSCfErf-rrb7Xd38HHTba19yo,7
+LaoNLP-0.1.dev0.dist-info/RECORD,,
