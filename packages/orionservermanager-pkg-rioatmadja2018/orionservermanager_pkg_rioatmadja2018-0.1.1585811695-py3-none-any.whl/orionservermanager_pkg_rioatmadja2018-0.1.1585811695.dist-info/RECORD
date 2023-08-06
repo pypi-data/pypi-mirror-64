@@ -1,0 +1,13 @@
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/DESCRIPTION.rst,sha256=0332zdsqZp7kaBH5NclLf3JVTjcUDhYubxgu3Q0mWVI,1237
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/METADATA,sha256=SL5Sb18aMhWqyLe4_JLiDq5ojUCawGkMUY1SyFz2nh0,2552
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/RECORD,,
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/metadata.json,sha256=OEbsuYHQN_DlFG0iUDpkRnPgfhx7JAhoZZpxcxbbyV8,1223
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/top_level.txt,sha256=uHOIOoDjlm0O0k7aQZuIM921qA7LZ5z6WHPGPF8Q6Hk,22
+orionservermanager_pkg_rioatmadja2018-0.1.1585811695.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+server_managers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+server_managers/server_managers.py,sha256=RB2E_fQE0lnVSRVRCe8bYuHDjHHTDUHW7p4Mwha5pwM,431
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/functional/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
