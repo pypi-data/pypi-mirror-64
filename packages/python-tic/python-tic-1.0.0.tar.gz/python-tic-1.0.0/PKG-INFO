@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-tic
+Version: 1.0.0
+Summary: Teleinfo python library
+Home-page: https://github.com/biker91620/ticpy/tree/master
+Author: biker91620
+License: GPL-3
+Description: # teleinfo - EDF teléinformation Python library
+        
+        
+        This library allows you to retrieve teleinfo using serial port device (USBTICLCV2).
+        
+        ### Example
+        
+        ~~~
+        from ticpy import Teleinfo, TeleinfoMode
+        
+        with Teleinfo('/dev/tty.usbserial-DA4Y56SG', mode=TeleinfoMode.HISTORY) as teleinfo:
+        
+            frame = teleinfo.read_frame()
+            print(frame.get("PAPP"))
+        ~~~
+Keywords: rest,ticpy,linky,tic,ticpyio,smart-things,iot
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown

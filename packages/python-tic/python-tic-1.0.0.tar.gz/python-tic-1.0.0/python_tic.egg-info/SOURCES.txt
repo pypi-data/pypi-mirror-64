@@ -1,0 +1,9 @@
+README.md
+setup.py
+python_tic.egg-info/PKG-INFO
+python_tic.egg-info/SOURCES.txt
+python_tic.egg-info/dependency_links.txt
+python_tic.egg-info/requires.txt
+python_tic.egg-info/top_level.txt
+ticpy/__init__.py
+ticpy/teleinfo.py
