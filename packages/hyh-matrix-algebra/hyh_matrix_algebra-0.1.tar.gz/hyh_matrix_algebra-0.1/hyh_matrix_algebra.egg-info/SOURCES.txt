@@ -1,0 +1,9 @@
+setup.py
+hyh_matrix_algebra/MatrixAlgebra.py
+hyh_matrix_algebra/__init__.py
+hyh_matrix_algebra/test.py
+hyh_matrix_algebra.egg-info/PKG-INFO
+hyh_matrix_algebra.egg-info/SOURCES.txt
+hyh_matrix_algebra.egg-info/dependency_links.txt
+hyh_matrix_algebra.egg-info/not-zip-safe
+hyh_matrix_algebra.egg-info/top_level.txt
