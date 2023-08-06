@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/dicto
+bin/dictocaller.py
+dicto-pkg/__init__.py
+dicto_pkg.egg-info/PKG-INFO
+dicto_pkg.egg-info/SOURCES.txt
+dicto_pkg.egg-info/dependency_links.txt
+dicto_pkg.egg-info/top_level.txt

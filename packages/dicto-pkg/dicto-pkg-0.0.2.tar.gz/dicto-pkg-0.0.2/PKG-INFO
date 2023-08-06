@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: dicto-pkg
+Version: 0.0.2
+Summary: Looks up definition of words you highlight/select
+Home-page: https://github.com/narasaka/dicto
+Author: Nathanael Tehilla
+Author-email: nathanael.tehilla@gmail.com
+License: UNKNOWN
+Description: # dicto
+        Looks up definitions of words that you highlight/select whatever you wanna call it.
+        
+        ### Usage
+        * To run dicto, simply type
+        
+              dicto
+            
+        dicto runs in the background, so you can close your terminal now.
+        
+        * Select the word you want, 
+        
+        and press the hotkey <kbd>alt</kbd>+<kbd>T</kbd> (default)
+        
+        * To stop dicto, type
+        
+              dicto --stop
+        
+        ### Dependencies
+        Dicto needs pyperclip, which also requires xclip (recommended) or xsel.
+        Install them! I dare you...
+        
+        On Debian:
+        
+            sudo apt-get install xclip
+                
+        On CentOS 7 / RHEL 7 / Fedora:
+        
+            sudo yum install xclip
+            or
+            dnf install xclip
+                
+        On Arch:
+        
+            sudo pacman install xclip
+        
+        ### Troubleshooting
+        If dicto does not work, try
+        
+            git clone https://github.com/narasaka/dicto.git
+            cd dicto
+            pip3 install -r requirements.txt
+        
+        If dicto outputs 2 or more of the same notification pop ups,
+        
+            dicto --stop
+            dicto
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
