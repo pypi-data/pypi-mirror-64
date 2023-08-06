@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: mtcping
+Version: 0.1.0
+Summary: Do tcping on many targets.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Description: # tcping
+        
+        Do tcping on many targets.
+        
+        ## Install
+        
+        ```shell
+        pip install mtcping
+        ```
+        
+        ## Installed Command Utils
+        
+        - mtcping
+        
+        
+        ## Usage
+        
+        ```shell
+        [root@testsvr tmp]# mtcping --help
+        Usage: mtcping [OPTIONS] [PORT]...
+        
+        Options:
+          -t, --timeout INTEGER
+          -i, --hosts-file TEXT  [required]
+          -p, --ports-file TEXT
+          --help                 Show this message and exit.
+        ```
+        
+        ## Example
+        
+        ```shell
+        mtcping -i hosts.txt -p ports.txt -t 30
+        ```
+        
+        ## Released
+        
+        ### v0.1.0
+        
+        - First release.
+Keywords: command line utils,mtcping
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
