@@ -1,0 +1,12 @@
+rofi_menu/__init__.py,sha256=7FAquIkQ99M-x975goOlpaRnnIptGuSwUY5GD_y-W7A,131
+rofi_menu/constants.py,sha256=N0CpG_T_kmY6W8QgTiu6-MpUISy69iETdWlLZdXMfQ4,235
+rofi_menu/contrib/__init__.py,sha256=l8yD7YVAnzGrlard2x7OqSpYpyPh4bjOMkSfIZPwY-0,103
+rofi_menu/contrib/monitor.py,sha256=1-bgEGL09cpjWCotClLo5U_TDrh5cg07364XnEzAzrY,1827
+rofi_menu/contrib/shell.py,sha256=SJ2eyS0ttPWHrL4mnK7SxDYHz4InYAW6ErwWSYe6Hqs,1037
+rofi_menu/contrib/touchpad.py,sha256=_jDN2-6mGpWXXFFBq8LTOkzjaq0BWnenNGjXaOrsxks,1330
+rofi_menu/main.py,sha256=v_ZZDsFPwtRnc-R8XAQVVLrI3nsIKJUBP1iW_l4KqVY,673
+rofi_menu/menu.py,sha256=bHf0EPBW1neVYQ1gIf5KbNCvWw4ZkKyrvfqpY_2PhSA,5687
+rofi_menu/rofi_mode.py,sha256=m9jsGbLtVXSC8L2ROv_sXT_49J1K6VWJGN1SwOTQBis,988
+rofi_menu-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+rofi_menu-0.2.0.dist-info/METADATA,sha256=7vT0kSK9kvf14_TgRhp0bspi4YsZLliOInYHhRIPMLM,431
+rofi_menu-0.2.0.dist-info/RECORD,,
