@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: mtcping
+Version: 0.1.1
+Summary: Do tcping on many targets.
+Home-page: UNKNOWN
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Description: # tcping
+        
+        Do tcping on many targets.
+        
+        ## Install
+        
+        ```shell
+        pip install mtcping
+        ```
+        
+        ## Installed Command Utils
+        
+        - mtcping
+        
+        
+        ## Usage
+        
+        ```shell
+        [root@testsvr tmp]# mtcping --help
+        Usage: mtcping [OPTIONS] [PORT]...
+        
+        Options:
+          -t, --timeout INTEGER
+          -i, --hosts-file TEXT  [required]
+          -p, --ports-file TEXT
+          --help                 Show this message and exit.
+        ```
+        
+        ## Example
+        
+        ```shell
+        C:\Code\mtcping>mtcping -i hosts.txt -p ports.txt
+        www.google.com   80    is closed
+        www.google.com   443   is closed
+        www.baidu.com    443   is open
+        www.qq.com       80    is open
+        www.qq.com       443   is open
+        www.baidu.com    80    is open
+        
+        C:\Code\mtcping>type hosts.txt
+        www.baidu.com
+        www.qq.com
+        www.google.com
+        
+        C:\Code\mtcping>type ports.txt
+        80
+        443
+        
+        C:\Code\mtcping>mtcping -i hosts.txt 80 443
+        www.google.com   80    is closed
+        www.google.com   443   is closed
+        www.baidu.com    80    is open
+        www.baidu.com    443   is open
+        www.qq.com       443   is open
+        www.qq.com       80    is open
+        
+        ```
+        
+        - We can load ports list from a file or form command arguments.
+        - We can load hosts list from a file or read from stdin.
+        
+        ## Released
+        
+        ### v0.1.1 2020/04/01
+        
+        - Fix requirements.txt, use click<7.0 instead of click~=6.7, so that it can work for python2.6.
+        
+        ### v0.1.0 2020/04/01
+        
+        - First release.
+Keywords: command line utils,mtcping
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Description-Content-Type: text/markdown
