@@ -1,0 +1,12 @@
+gdz/__init__.py,sha256=rUGzya9f9adWNdJh2n-DH8-WP4XH_X-JSWN5DqhWfqA,19
+gdz/gdz.py,sha256=xGzBAwE2g2uIuzCMCGpcd-kD1PvA9_m6YL2plf4RHRQ,1256
+gdz/types/book.py,sha256=ajHEB_pBDnAkmTUPKf7eF1CYkbBokMKO-ptJCj9gJT4,776
+gdz/types/class_.py,sha256=161lOLQuxNwCR-gLVEm3ikIpKsiZrFsO9mXBJXBTrf8,84
+gdz/types/edition.py,sha256=6AwlF7wE3Lw3ATosJmYPOMJD0urmJEvvotjmIHO1kek,275
+gdz/types/structure_entry.py,sha256=l_115VIkfLoDmf-KlYekhxpCBsp1dRGz7MFTe5drQ10,220
+gdz/types/subject.py,sha256=bDibtriMu86FjTJCELpjfuQD1gEgt4j-ulbFXh2ppuw,86
+gdz/types/task.py,sha256=hnFDdIKQaheqm-zjp_8RKlnalSR1ldRX0bON3Mpzrhk,309
+gdz-0.1.4.dist-info/METADATA,sha256=JIdvsBN7R3kQSOBIvyQLKG-2n74MY5GxHyFauJ9kpnU,1157
+gdz-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gdz-0.1.4.dist-info/top_level.txt,sha256=Rb_YjSlR4a1XHL6kMdwdrz6_2QzCqZl7lZc8oZ16Mj8,4
+gdz-0.1.4.dist-info/RECORD,,
