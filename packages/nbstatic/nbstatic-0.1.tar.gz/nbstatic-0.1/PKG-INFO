@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: nbstatic
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/adrn/nbstatic
+Author: adrn,eteq
+Author-email: adrianmpw@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides: nbstatic
+Requires-Python: >=3.6
