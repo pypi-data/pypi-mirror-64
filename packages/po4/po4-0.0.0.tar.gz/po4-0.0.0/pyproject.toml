@@ -1,0 +1,48 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "po4"
+author = "Kale Kundert"
+author-email = "kale@thekunderts.net"
+home-page = 'https://github.com/kalekundert/po4'
+requires-python = "~=3.8"
+requires = [
+  'appdirs',
+  'autoprop',
+  'autosnapgene',
+  'Biopython',
+  'configurator',
+  'docopt',
+  'inform',
+  'more_itertools>=8.0',
+  'pandas',
+  'setuptools',
+  'tabulate',
+  'toml',
+  'voluptuous',
+  'xlrd>=1.0',
+]
+classifiers = [
+  'Programming Language :: Python :: 3',
+  'License :: OSI Approved :: MIT License',
+]
+
+[tool.flit.scripts]
+po4 = "po4.cli.main:main"
+
+[tool.flit.entrypoints."po4.databases"]
+excel = "po4.loaders.excel"
+
+[tool.flit.entrypoints."stepwise.protocols"]
+protocols = "po4.stepwise:Plugin"
+
+[tool.flit.metadata.urls]
+'Documentation' = 'https://po4.readthedocs.io/en/latest/'
+'Version Control' = 'https://github.com/kalekundert/po4'
+'Bug Tracker' = 'https://github.com/kalekundert/po4/issues'
+'Continuous Integration' = 'https://travis-ci.org/kalekundert/po4'
+'Test Coverage' = 'https://coveralls.io/github/kalekundert/po4'
+
+
