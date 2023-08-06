@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: subgrab
+Version: 1.0.0
+Summary: Automate subtitles fetching
+License: MIT
+Author: Rafay Ghafoor
+Author-email: rafayghafoor@protonmail.com
+Requires-Python: >=3.6.1,<4.0.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: bs4 (>=0.0.1,<0.0.2)
+Requires-Dist: lxml (>=4.5.0,<5.0.0)
+Requires-Dist: requests (>=2.23.0,<3.0.0)
