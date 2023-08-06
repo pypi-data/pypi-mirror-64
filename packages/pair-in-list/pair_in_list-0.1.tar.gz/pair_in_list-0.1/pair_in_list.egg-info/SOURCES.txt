@@ -1,0 +1,8 @@
+setup.py
+pair_in_list/__init__.py
+pair_in_list/pair_in_list.py
+pair_in_list.egg-info/PKG-INFO
+pair_in_list.egg-info/SOURCES.txt
+pair_in_list.egg-info/dependency_links.txt
+pair_in_list.egg-info/not-zip-safe
+pair_in_list.egg-info/top_level.txt
