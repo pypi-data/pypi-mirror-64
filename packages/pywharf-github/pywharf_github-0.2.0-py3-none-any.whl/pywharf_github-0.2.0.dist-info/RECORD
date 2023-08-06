@@ -1,0 +1,7 @@
+pywharf_backends/github/__init__.py,sha256=XdTbKuOf7HslbVh9nFZvk6emqPppUiU-EdE1PU2IL94,634
+pywharf_backends/github/impl.py,sha256=g_7vM6pwbgXPsTTQ6Iep8v6aXuxBIdKuI25KcMZtXJ8,20540
+pywharf_github-0.2.0.dist-info/entry_points.txt,sha256=Z1MrXjcE2vR5W12eN2pTvp3Rhcpk3bVVX_cu45cG6P0,183
+pywharf_github-0.2.0.dist-info/LICENSE,sha256=UkBJrTKVq0To5sCkVJ1g-eL5NpkImAH4tYjQbGrOfNQ,1101
+pywharf_github-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pywharf_github-0.2.0.dist-info/METADATA,sha256=ltXqCwq3gWnAMmokha2ri3bWMGeM5lFp9NwMvnAklt8,905
+pywharf_github-0.2.0.dist-info/RECORD,,
