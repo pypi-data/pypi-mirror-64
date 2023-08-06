@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: toil-pymesos
+Version: 0.3.78
+Summary: A pure python implementation of Mesos scheduler and executor
+Home-page: https://github.com/DailyDreaming/toil-pymesos
+Author: Zhongbo Tian is the real author; DailyDreaming is temporarily forking this as a py3.7 fix
+Author-email: tianzhongbo@douban.com
+License: UNKNOWN
+Platform: POSIX
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Requires-Dist: six
+Requires-Dist: toil-http-parser
+Requires-Dist: addict
+
+UNKNOWN
+
+
