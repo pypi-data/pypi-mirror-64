@@ -1,0 +1,11 @@
+dstf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dstf/constraints.py,sha256=D0YlecuY2XZwV4EinOKYSvP0NhG6RXyHz2vHOWkt2GM,2762
+dstf/core.py,sha256=EfcoO5H6ivO3k8a7Yx3-7x-f7z0-pA_R9TTmbemm2kA,2435
+dstf/operators.py,sha256=Wvo2L5gOrns1bdoV88IKJ3I6fRCnWRFv58-sipw88tE,1255
+dstf/properties.py,sha256=1luBYFFqWvQ-PFtEDdn3g5oKmkBjWNnjJmy7jN5SZcQ,1591
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dstf-0.0.1.dist-info/LICENSE,sha256=kT4vc_yuv_q-KQFCzkfPkZpLdpr0GkTDAzXEI0wkZUM,1070
+dstf-0.0.1.dist-info/METADATA,sha256=A5O4a9Py-mmLVsjvOjLW0QKiAQpEFguveQmwDoRKOwc,602
+dstf-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dstf-0.0.1.dist-info/top_level.txt,sha256=j5A9M03ZGvpvBTdPukuoz0AkUwqKIGOcTMrqnIIP9oA,11
+dstf-0.0.1.dist-info/RECORD,,
