@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: UDASwissKnife
+Version: 0.3.2
+Summary: Utils and common libraries for Python
+Home-page: https://github.com/urbandataanalytics/SwissKnife
+Author: UDARealState Data engineering Team
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: coverage (==4.5.4)
+Requires-Dist: nose (==1.3.7)
+Provides-Extra: all
+Requires-Dist: fastavro (==0.22.7) ; extra == 'all'
+Requires-Dist: google-cloud-storage (==1.23.0) ; extra == 'all'
+Provides-Extra: avro
+Requires-Dist: fastavro (==0.22.7) ; extra == 'avro'
+Provides-Extra: gcloud
+Requires-Dist: google-cloud-storage (==1.23.0) ; extra == 'gcloud'
+
+# SwissKnife
+
+Librería de utilidades y funcionalidades comunes creada por el equipo de Data Engineering de UDA Real Estate.
+
+## Dockerfile
+
+El dockerfile está diseñado para ejecutar los tests (no tendria sentido dockerizar una librería). Ejecutando la imagen construída, obtendremos directamente el resultado de nosetests.xml por consola, de tal forma que si la queremos en un fichero, deberíamos hacer lo siguiente:
+
+```bash
+sudo docker run swissknife:latest > nosetests.xml
+```
+
+## Cómo obtener el Entorno de Ejecución actual
+
+El objeto se encuentra localizado en **SwissKnife.info.CURRENT_ENVIRONMENT**. Devuelve un objeto del tipo *ExecutionEnvironment*.
+
+Dicho objeto se trata de un enumerado con los siguientes valores:
+
+- PRO  -> "preo"
+- PRE  -> "pre"
+- DEV  -> "dev"
+- TEST -> "test
+
+Adicionalmente, tiene los siguientes métodos que simplifican conocer cual entorno de ejecución es sin tener que hacer comparaciones
+directas con el enumerado:
+
+- is_pro()  -> bool
+- is_pre()  -> bool
+- is_dev()  -> bool
+- is_test() -> bool
+
+El valor es tomado de la variable de entorno "ENV" que puede tener los valores "pro", "pre", "dev" y "test". Se permite que el texto esté en 
+mayúscula total o parcialmente. Si dicha variable no existe o tiene un valor incorrecto, la aplicación devolverá un ExecutionEnvironment
+con el valor por defecto, *DEV*.
+
+## How to install
+
+- basic install:
+  ```bash
+    pip install UDASwissKnife
+  ```
+- Install with an extra. For example, _avro_:
+  ```bash
+    pip install UDASwissKnife[avro]
+  ```
+- Install several extras. For example, _avro_ and _gcloud_:
+  ```bash
+    pip install UDASwissKnife[avro,gcloud]
+  ```
+
+- Install all extras:
+```bash
+pip install UDASwissKnife[all]
+```
+
+## Basic libraries
+
+    - info
+
+## Extra libraries
+
+    - avro: Includes AvroWriter.
+    - gcloud: Includes GCloudStreaming.
+
+
