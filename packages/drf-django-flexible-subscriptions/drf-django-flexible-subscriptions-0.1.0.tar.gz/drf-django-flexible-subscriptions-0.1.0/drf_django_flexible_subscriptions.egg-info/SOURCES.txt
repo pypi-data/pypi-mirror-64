@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+drf_django_flexible_subscriptions.egg-info/PKG-INFO
+drf_django_flexible_subscriptions.egg-info/SOURCES.txt
+drf_django_flexible_subscriptions.egg-info/dependency_links.txt
+drf_django_flexible_subscriptions.egg-info/requires.txt
+drf_django_flexible_subscriptions.egg-info/top_level.txt
+subscriptions_api/__init__.py
+subscriptions_api/models.py
+subscriptions_api/permissions.py
+subscriptions_api/serializers.py
+subscriptions_api/urls.py
+subscriptions_api/views.py
+subscriptions_api/migrations/__init__.py
