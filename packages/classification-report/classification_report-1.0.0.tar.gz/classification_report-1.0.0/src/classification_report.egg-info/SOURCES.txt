@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/classification_report/__init__.py
+src/classification_report/config.py
+src/classification_report/report.py
+src/classification_report/return_types.py
+src/classification_report/utils.py
+src/classification_report/version.py
+src/classification_report.egg-info/PKG-INFO
+src/classification_report.egg-info/SOURCES.txt
+src/classification_report.egg-info/dependency_links.txt
+src/classification_report.egg-info/requires.txt
+src/classification_report.egg-info/top_level.txt
