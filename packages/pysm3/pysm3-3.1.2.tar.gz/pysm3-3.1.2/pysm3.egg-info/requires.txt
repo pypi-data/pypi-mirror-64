@@ -1,0 +1,15 @@
+astropy
+healpy
+numba
+toml
+
+[docs]
+sphinx-astropy
+nbsphinx
+sphinx-astropy
+ipykernel
+sphinx-math-dollar
+Pygments
+
+[test]
+pytest-astropy
