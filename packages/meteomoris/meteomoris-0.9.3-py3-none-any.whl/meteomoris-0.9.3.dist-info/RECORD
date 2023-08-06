@@ -1,0 +1,9 @@
+meteomoris/__init__.py,sha256=twWF8n5kUA6Pf36rHmJAXMKq-ClOjgqEGY7DQH2ObKs,46
+meteomoris/__main__.py,sha256=IxU1XN-SE89Eokf2AAXACKwAsG7hQNTWLZDLI117f2M,134
+meteomoris/meteo.py,sha256=L1CVYHbCazbHPWZYjlbw4DZxkm8Yn2y1Ifc0CS45y_U,5616
+meteomoris-0.9.3.dist-info/LICENSE,sha256=sWKVMNh31jXdMEc_Lrj07SoftBqNoqQjit9nEKgiXWs,1102
+meteomoris-0.9.3.dist-info/METADATA,sha256=Er-YXltjvvNl4T2fL2JgFOrnWzqVK1T0nqrnxY_JajQ,2515
+meteomoris-0.9.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+meteomoris-0.9.3.dist-info/entry_points.txt,sha256=8H73qOEQpM8v3biseovUNBSDrpuj01188k8R3tOUuFY,57
+meteomoris-0.9.3.dist-info/top_level.txt,sha256=JCs8_A00zj9QdCF7L97Y_2ZySZvmDPuPPMZT4asiux4,11
+meteomoris-0.9.3.dist-info/RECORD,,
