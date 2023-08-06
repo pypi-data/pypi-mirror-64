@@ -1,0 +1,8 @@
+before_script:
+  - "pip install -r .ci/requirements.txt"
+
+pyflakes:3:
+  image: "python:3"
+  stage: "test"
+  script:
+      - "./tools/pyflakes.sh"

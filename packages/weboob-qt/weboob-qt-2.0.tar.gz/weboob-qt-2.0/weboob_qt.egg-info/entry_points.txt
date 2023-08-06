@@ -1,0 +1,14 @@
+[gui_scripts]
+qbooblyrics = weboob.applications.qbooblyrics:QBooblyrics.run
+qboobmsg = weboob.applications.qboobmsg:QBoobMsg.run
+qboobtracker = weboob.applications.qboobtracker:QBoobTracker.run
+qcineoob = weboob.applications.qcineoob:QCineoob.run
+qcookboob = weboob.applications.qcookboob:QCookboob.run
+qflatboob = weboob.applications.qflatboob:QFlatBoob.run
+qgalleroob = weboob.applications.qgalleroob:QGalleroob.run
+qhandjoob = weboob.applications.qhandjoob:QHandJoob.run
+qhavedate = weboob.applications.qhavedate:QHaveDate.run
+qvideoob = weboob.applications.qvideoob:QVideoob.run
+qwebcontentedit = weboob.applications.qwebcontentedit:QWebContentEdit.run
+weboob-config-qt = weboob.applications.qweboobcfg:QWeboobCfg.run
+
