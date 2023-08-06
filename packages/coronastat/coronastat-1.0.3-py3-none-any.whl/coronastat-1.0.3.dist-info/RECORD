@@ -1,0 +1,11 @@
+coronastat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coronastat/corona.py,sha256=uyIJZCVhSmWjtWlfGFNHv8hTLjHvrZ2UglzW_xPTZmw,3647
+coronastat/driver.py,sha256=oytc4neU6o9VlbZDK7eGK-s5FUQNoL1vfkTDPwlydow,539
+coronastat/proxy.py,sha256=hln1oDYzYyQNQ-kvDpLb6Zd2TmzLdwsC1jr90W5Gucg,1427
+coronastat/utils.py,sha256=MYkRv77NzrJZmBmXv3M_9KC0JxDpCb7j7yweNCZQWBk,4203
+coronastat-1.0.3.dist-info/LICENSE,sha256=R7Vev3zPv0ONk5GI2wJNs7aZ7tdQfmbk93OnGfsMciw,1067
+coronastat-1.0.3.dist-info/METADATA,sha256=CTmDX_vHgJCTRgpY6NH2kFEvp6y3yNivE2f-ZZiD-y4,891
+coronastat-1.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+coronastat-1.0.3.dist-info/entry_points.txt,sha256=X3ymqMbzkFJMWU0cQjDXEdqwAQwtC_B5xbFLaPrvufM,55
+coronastat-1.0.3.dist-info/top_level.txt,sha256=mRtc5GN6YKoo4CpvFLKcxNhkt4a-MbVmveyx38HIrkM,11
+coronastat-1.0.3.dist-info/RECORD,,
