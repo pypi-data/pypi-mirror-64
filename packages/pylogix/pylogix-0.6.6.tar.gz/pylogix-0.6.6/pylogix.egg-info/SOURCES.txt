@@ -1,0 +1,9 @@
+README.md
+setup.py
+pylogix/__init__.py
+pylogix/eip.py
+pylogix/lgxDevice.py
+pylogix.egg-info/PKG-INFO
+pylogix.egg-info/SOURCES.txt
+pylogix.egg-info/dependency_links.txt
+pylogix.egg-info/top_level.txt
