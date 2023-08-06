@@ -1,0 +1,12 @@
+mypapers/__init__.py,sha256=LJbMCjadXcmiCvyJIpqjVXZtCDlaoLSluc6zkZVr4dU,208
+mypapers/config/__init__.py,sha256=6JOIJsxtsAQ04cD2c63BVEUOGeRfkDK3rp3Mux37yJI,208
+mypapers/crawl/__init__.py,sha256=6JOIJsxtsAQ04cD2c63BVEUOGeRfkDK3rp3Mux37yJI,208
+mypapers/db/__init__.py,sha256=Jtf2z4fVXmG-5zxjfFxXwSzl20x4CS1dw7t9AN-M_1E,208
+mypapers/export/__init__.py,sha256=Jtf2z4fVXmG-5zxjfFxXwSzl20x4CS1dw7t9AN-M_1E,208
+mypapers/plot/__init__.py,sha256=6JOIJsxtsAQ04cD2c63BVEUOGeRfkDK3rp3Mux37yJI,208
+mypapers/stats/__init__.py,sha256=hwnd1v3RmVH3b0flgJjbmj684GEgETlKyXoRRow6KtA,208
+mypapers/utils/__init__.py,sha256=6JOIJsxtsAQ04cD2c63BVEUOGeRfkDK3rp3Mux37yJI,208
+mypapers-0.0.1.dist-info/METADATA,sha256=YJyq0a7E41hTp9BZyhEg7tvCperIz1-rD6GuWrnhjNs,1764
+mypapers-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+mypapers-0.0.1.dist-info/top_level.txt,sha256=vU9QBriQdvQ9wQQMQ1CBSCWA-U0eh5E40dFNlHoYCyQ,9
+mypapers-0.0.1.dist-info/RECORD,,
