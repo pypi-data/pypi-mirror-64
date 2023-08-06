@@ -1,0 +1,10 @@
+cwlformat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cwlformat/formatter.py,sha256=rCKlw6hN0ScMAyqneyNkAA4tmiDht3oTq01D7UNqlKw,2357
+cwlformat/keyorder.yml,sha256=XcnfwjPOgpCGuDactwCm6j6xx11m4QvAe7LMRkXhWig,902
+cwlformat/version.py,sha256=WG5_MOJrPORt_7fd7hJqvRUY50hhcaSOszwT2VUoMuY,77
+cwlformat-2020.3.26.dist-info/LICENSE,sha256=N9XicZ-J7NQDe3mwgmbFtecF0iiXw0ToOp8jia0K-Ww,30
+cwlformat-2020.3.26.dist-info/METADATA,sha256=oHhMv3VSaerH8PCSkIdKbyjoPDWR5Yh9BFF3PWhj-GM,2554
+cwlformat-2020.3.26.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cwlformat-2020.3.26.dist-info/entry_points.txt,sha256=HAErAilkskK6bCisexcAXUBor9dDlYOek-Lp-mcZV1k,57
+cwlformat-2020.3.26.dist-info/top_level.txt,sha256=McelpkxxwFNaUP0M_AgWOl4uEzwfRHQcPkI55RgN-xo,10
+cwlformat-2020.3.26.dist-info/RECORD,,
