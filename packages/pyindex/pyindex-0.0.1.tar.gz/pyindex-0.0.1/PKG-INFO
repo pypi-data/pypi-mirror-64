@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyindex
+Version: 0.0.1
+Summary: The search engine for python3
+Home-page: https://github.com/Anshumankumar/pyindex
+Author: Anshuman kumar
+Author-email: anshuman@recvani.com
+License: UNKNOWN
+Description: # pyindex
+        The reverse indexing library for searching of text
+        
+        Search Engine in python
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
