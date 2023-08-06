@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-dynamic-field
+Version: 0.0.1
+Summary: Create dynamic fields from django admin.
+Home-page: https://github.com/noelpuru/django-dynamic-field
+Author: Noel Puru
+Author-email: noel@noelcodes.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Provides ability for Django admin to define and store dynamic types.
+
+To use it, you must have an attribute 'fieldtype' on your model.
+
+

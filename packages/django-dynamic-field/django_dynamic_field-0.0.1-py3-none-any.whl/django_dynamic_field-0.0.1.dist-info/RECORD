@@ -1,0 +1,12 @@
+dynamicfield/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dynamicfield/admin.py,sha256=-oYnzMB4fmGnREdoyauIakNSrxdT2dfkHfNHhsZCbdg,1452
+dynamicfield/apps.py,sha256=itLo_hPbEjJDdGPUqyJgccgzb36EHsFLuEQ3UqTvxvQ,99
+dynamicfield/example.py,sha256=DdtVSlJZ22sI7kLYHU4Hw1P8RyqwS1h4yUlqNYGLvOc,798
+dynamicfield/forms.py,sha256=jfgfk9-yyKCJygFubGPjAQgIJL57tWN3qFhlCjE0FcU,319
+dynamicfield/models.py,sha256=JFpDvraw0D7npbazZAu97G_GfNGbmkjfn0wyCk4FGOo,1972
+dynamicfield/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_dynamic_field-0.0.1.dist-info/LICENSE,sha256=OJR59g7pXpBHZvjf7eWZGB1IPG7h36qwYdTZtjaBYkY,1066
+django_dynamic_field-0.0.1.dist-info/METADATA,sha256=-26s_GLT-9havibzMDBAwaJakDfyKqtTC7ydxfa9rL0,607
+django_dynamic_field-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_dynamic_field-0.0.1.dist-info/top_level.txt,sha256=GJb_nrOO4i9r63F2NNwLCIYl_nIBH_cxRL6PcinT3Ho,13
+django_dynamic_field-0.0.1.dist-info/RECORD,,
