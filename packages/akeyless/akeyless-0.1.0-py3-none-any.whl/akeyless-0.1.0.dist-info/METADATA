@@ -1,0 +1,174 @@
+Metadata-Version: 2.1
+Name: akeyless
+Version: 0.1.0
+Summary: Akeyless SDK implementation for Python
+Home-page: https://github.com/akeylesslabs/akeyless-python-sdk-examples
+Author: Akeyless Security
+Author-email: refael@akeyless.io
+Maintainer: Akeyless Security
+License: Apache License 2.0
+Keywords: Akeyless,akeyless sdk,encryption
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Requires-Dist: six (>=1.10)
+Requires-Dist: cryptography (>=2.1.4)
+Requires-Dist: ecdsa (>=0.13)
+Requires-Dist: cachetools (>=2.1.0)
+Requires-Dist: akeyless-auth-api (>=0.1.1)
+Requires-Dist: akeyless-kfm-api (>=0.1.1)
+Requires-Dist: akeyless-uam-api (>=0.1.1)
+
+#######################
+AKEYLESS SDK for Python
+#######################
+
+The AKEYLESS Software Development Kit (SDK) for Python allows Python developers to write software that makes use of the AKEYLESS service.
+
+AKEYLESS is an innovative Secrets & Keys Management-as-a-Service solution, made to protect the Hybrid and Multi-Cloud environments.
+
+* An enterprise-grade holistic solution; made to protect and manage any type of Secret: Encryption Keys, TLS Certificates, Passwords, API Tokens, SSH Keys and more.
+* Environment agnostic; either on-prem, private cloud and as-a-Service for Public Cloud.
+* Zero-Knowledge Technology; Patent-pending innovative no-trust Encryption Keys Management system.
+
+For more information, please visit `our website`_.
+
+
+***************
+Getting Started
+***************
+Sign up for AKEYLESS
+====================
+
+Before you begin, you need an AKEYLESS account. Please register `here`_ and receive your admin client access credentials.
+
+
+Minimum requirements
+====================
+
+* Python 3.5+
+* cryptography >= 1.8.1
+
+Installation
+============
+
+.. note::
+    If you have not already installed `cryptography`_, you might need to install additional prerequisites as
+    detailed in the `cryptography installation guide`_ for your operating system.
+
+.. code::
+
+    $pip install akeyless
+
+*************
+Documentation
+*************
+
+You can find the AKEYLESS Python SDK full documentation at `Read the Docs`_.
+
+*****
+Usage
+*****
+
+The following code sample demonstrates how to encrypt/decrypt data via the AKEYLESS service where the key fragments are stored in multiple locations and are never combined:
+
+.. code::
+
+    from akeyless import AkeylessClientConfig, AkeylessClient
+
+
+    def encrypt_decrypt_string(access_id, api_key, key_name, plaintext):
+        """Encrypts and then decrypts a string using an AES key from your Akeyless account.
+
+        :param str access_id: The client access id.
+        :param str api_key: The client access key.
+        :param str key_name: The name of the key to use in the encryption process
+        :param str plaintext: Data to encrypt
+        """
+
+        akeyless_server_dns = "vault.akeyless.io"  # Akeyless prod environment.
+
+        conf = AkeylessClientConfig(akeyless_server_dns, access_id, api_key)
+        client = AkeylessClient(conf)
+
+        # Encrypt the plaintext source data
+        ciphertext = client.encrypt_string(key_name, plaintext)
+
+        # Decrypt the ciphertext
+        decrypt_res = client.decrypt_string(key_name, ciphertext)
+
+        # Verify that the decryption result is identical to the source plaintext
+        assert decrypt_res == plaintext
+
+        client.close()
+
+
+The following code sample demonstrates how to save and load secrets
+
+.. code::
+
+    from akeyless import AkeylessClientConfig, AkeylessAdminClient
+
+
+    def secret_management(access_id, api_key, secret_name, secret_value, secret_metadata=""):
+        """Create a new secret.
+
+        :param str access_id: The client access id.
+        :param str api_key: The client access key.
+        :param str secret_name: The name of the new secret
+        :param str secret_value: The value of the new secret
+        :param str secret_metadata: Metadata about the secret
+        """
+
+        akeyless_server_dns = "vault.akeyless.io"  # Akeyless prod environment.
+
+        conf = AkeylessClientConfig(akeyless_server_dns, access_id, api_key)
+        client = AkeylessAdminClient(conf)
+
+        # Create new secret
+        client.create_secret(secret_name, secret_value, secret_metadata)
+
+        # Get secret value
+        secret_val_res = client.get_secret_value(secret_name)
+        assert secret_val_res == secret_value
+
+        # Get secret details
+        secret_des = client.describe_item(secret_name)
+        print(secret_des)
+
+        # Update secret value
+        new_secret_value = "this is a new secret"
+        client.update_secret_value(secret_name, new_secret_value)
+        secret_val_res = client.get_secret_value(secret_name)
+        assert secret_val_res == new_secret_value
+
+        client.close()
+
+
+You can find more examples in the `examples directory`_
+
+
+*******
+License
+*******
+This SDK is distributed under the `Apache License, Version 2.0`_ see LICENSE.txt for more information.
+
+
+.. _our website: https://www.akeyless.io/
+.. _here: https://console.vault.akeyless.io/register
+.. _cryptography: https://cryptography.io/en/latest/
+.. _cryptography installation guide: https://cryptography.io/en/latest/installation/
+.. _Read the Docs:
+.. _Apache License, Version 2.0: http://www.apache.org/licenses/LICENSE-2.0
+.. _examples directory: https://github.com/akeylesslabs/akeyless-python-sdk-examples/tree/master/examples/src
+
+
