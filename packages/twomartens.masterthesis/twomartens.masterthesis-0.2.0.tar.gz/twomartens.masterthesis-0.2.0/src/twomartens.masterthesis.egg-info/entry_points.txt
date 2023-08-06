@@ -1,0 +1,3 @@
+[console_scripts]
+tm-masterthesis = twomartens.masterthesis.main:main
+
