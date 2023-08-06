@@ -1,0 +1,161 @@
+#!/bin/bash
+
+#   ansible-vagrant-test
+#
+#   DESCRIPTION:
+#   A wrapper around vagrant and and ansible tests. 
+#
+#   USECASES:
+#   * "Localized" testing of an ansible checkout inside a VM
+#   * ansible unit or integration ([non_]destructive) tests
+
+TEST_TYPE=$1  # unit or integration
+CWD=$(pwd)
+
+function USAGE() {
+    THIS=$(basename "$0")
+    echo ""
+    echo "Usage: TARGET=centos7 $THIS <test_type>"
+    echo ""
+    echo "Available TARGET(s):"
+    echo "  * centos7"
+    echo "  * centos6"
+    echo ""
+    echo "Optional Exports:"
+    echo "  * NOCLEAN=true              ... do not wipe out pre-existing vagrant boxes"
+    echo "  * TEST_FLAGS='-t test_git'  ... typical ansible test flags for limiting tests"
+    echo "  * MAKE_TARGET='destructive' ... typical ansible test flags for limiting tests"
+    echo ""
+    echo "Notes:"
+    echo "  * Only run this from a directory where an 'ansible' subdir exists"
+    echo "  * vagrant and virtualbox must be installed and functional for your user"
+    echo ""
+    exit 0
+}
+
+if [[ $TEST_TYPE == "help" ]]; then
+    USAGE
+fi
+
+if [ ! -d ansible ] && [ ! -L ansible ]; then
+    echo ""
+    echo "ERROR: Missing an 'ansible' directory"
+    echo ""
+    exit 1
+    #USAGE
+fi
+
+function FIXSSH() {
+    vagrant ssh-config > ssh.config
+
+    COMMAND="echo 'vagrant:root' | sudo chpasswd"
+    ssh -F ssh.config -tt default "$COMMAND"
+    COMMAND="echo 'vagrant:vagrant' | sudo chpasswd"
+    ssh -F ssh.config -tt default "$COMMAND"
+
+    COMMAND="sudo cp -Rp ~vagrant/.ssh /root/"
+    ssh -F ssh.config -tt default "$COMMAND"
+
+    COMMAND="sudo chown -R root:root /root/.ssh"
+    ssh -F ssh.config -tt default "$COMMAND"
+}
+
+function INSTALL_EL_PACKAGES() {
+    COMMAND="yum -y install ansible python-pip python-nose python-mock python-coverage python-virtualenv"
+    ssh -F ssh.config -tt root@default "$COMMAND"
+
+    COMMAND="rpm -e --nodeps ansible"
+    ssh -F ssh.config -tt root@default "$COMMAND"
+
+    COMMAND="yum -y install vim-enhanced git subversion mercurial unzip zip"
+    ssh -F ssh.config -tt root@default "$COMMAND"
+
+    COMMAND="yum -y install rubygems"
+    ssh -F ssh.config -tt root@default "$COMMAND"
+
+    COMMAND="pip install backports.ssl_match_hostname"
+    ssh -F ssh.config -tt root@default "$COMMAND"
+}
+
+#
+# NOCLEAN=true will skip deleting existing boxes
+#
+
+NOCLEAN=${NOCLEAN:-}
+if [ -z $NOCLEAN ]; then
+
+    echo "# CLEANING"
+
+    if [ -f Vagrantfile ]; then
+        vagrant destroy -f
+        rm -rf .vagrant
+        rm -f Vagrantfile
+    fi
+    vagrant init geerlingguy/$TARGET
+    vagrant up
+else
+    echo "# NOT CLEANING"
+fi    
+
+#
+# Make sure it's running ...
+#
+
+vagrant up
+
+#
+# Fixup ssh ...
+#
+
+FIXSSH
+
+#
+# Validate ssh ...
+#
+
+ssh -F ssh.config default 'whoami'
+RC=$?
+if [[ $RC != 0 ]]; then
+    exit $RC
+fi
+ssh -F ssh.config root@default 'whoami'
+RC=$?
+if [[ $RC != 0 ]]; then
+    exit $RC
+fi
+
+#
+# Install package requirements ...
+#
+
+INSTALL_EL_PACKAGES
+
+#
+# Assemble the test command ...
+#
+
+case $TEST_TYPE in
+    unit)
+        echo "# Running unit tests ..."
+        COMMAND="cd /vagrant/ansible ; source hacking/env-setup"
+        COMMAND="$COMMAND; make tests"
+        ;;
+    integration)
+        echo "# Running unit tests ..."
+        COMMAND="cd /vagrant/ansible ; source hacking/env-setup"
+        COMMAND="$COMMAND; export TEST_FLAGS='${TEST_FLAGS:-''}'"
+        COMMAND="$COMMAND; cd test/integration"
+        COMMAND="$COMMAND; LC_ALL=en_US.utf-8 make ${MAKE_TARGET:-}"
+        ;;
+    *)
+        echo "unknown target, choices are unit or integration"
+        exit 1
+        ;;
+esac
+
+# TESTS SHOULD BE RUN AS ROOT (FOR NOW)
+echo $COMMAND
+ssh -F ssh.config -tt root@default "$COMMAND"
+
+
+
