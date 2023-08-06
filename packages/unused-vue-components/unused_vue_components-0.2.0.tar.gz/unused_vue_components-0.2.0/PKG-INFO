@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: unused_vue_components
+Version: 0.2.0
+Summary: Find unused vue components
+Home-page: https://github.com/heaviss/unused-vue-components
+Author: Vladimir Seregin
+Author-email: 31631@rambler.ru
+License: MIT
+Description: # Made of shit, sticks and regexes
+        
+        This is a toy script to find components that are imported, used in `components` but aren't used in template.
+        
+        Just for fun and learning.
+        
+        Use [eslint-plugin-vue v5](https://github.com/vuejs/eslint-plugin-vue/releases/tag/v5.0.0-beta.3) when it leaves beta
+        
+        ## Install
+        ```
+        pip install unused-vue-components
+        ```
+        
+        ## Use
+        ```
+        find_unused_components.py PATH_TO_SOURCES
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
