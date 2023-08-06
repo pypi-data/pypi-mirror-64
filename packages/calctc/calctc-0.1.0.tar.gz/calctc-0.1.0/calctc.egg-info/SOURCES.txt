@@ -1,0 +1,9 @@
+setup.py
+calctc.egg-info/PKG-INFO
+calctc.egg-info/SOURCES.txt
+calctc.egg-info/dependency_links.txt
+calctc.egg-info/entry_points.txt
+calctc.egg-info/not-zip-safe
+calctc.egg-info/requires.txt
+calctc.egg-info/top_level.txt
+funniest/__init__.py
