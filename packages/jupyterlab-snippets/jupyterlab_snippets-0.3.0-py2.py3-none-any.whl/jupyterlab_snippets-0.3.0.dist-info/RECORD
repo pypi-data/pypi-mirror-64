@@ -1,0 +1,12 @@
+jupyterlab-snippets/__init__.py,sha256=X2zGekb6WnTrpopRz58KrklZkspwHj-rOGUAr1Sge8E,535
+jupyterlab-snippets/_version.py,sha256=1diiLz2k8iBMS2MjTQABbP2nnb5aN1oyNqJjgEG5MNs,72
+jupyterlab-snippets/handlers.py,sha256=MThWyHC_x-8cfnmSniS-H_5_achEGXvi_s0Ak6Xcwns,1084
+jupyterlab-snippets/loader.py,sha256=KZnnYT4KSEXsdheGlJvtjCTEabKQ6hH5ONiPS-lgkFQ,1244
+jupyterlab-snippets/labextension/jupyterlab-snippets-0.3.0.tgz,sha256=fStzAmg5RFlvT1pZsD73VjyLeyU6XxanBjiswHF6zSI,4752
+jupyterlab_snippets-0.3.0.data/data/etc/jupyter/jupyter_notebook_config.d/jupyterlab-snippets.json,sha256=Dqa19BAkTjTC7f60krH-rRYMd1dYb9Qnki8zP6-o8ik,96
+jupyterlab_snippets-0.3.0.data/data/share/jupyter/lab/extensions/jupyterlab-snippets-0.3.0.tgz,sha256=fStzAmg5RFlvT1pZsD73VjyLeyU6XxanBjiswHF6zSI,4752
+jupyterlab_snippets-0.3.0.dist-info/LICENSE,sha256=YZpUl7FnMw4CUWHN5B4DXegE5yR4Y5zAd_vAUrq9eM0,1509
+jupyterlab_snippets-0.3.0.dist-info/METADATA,sha256=P9jndpXCjiv2DxnY5n5hGNyffy_PEhcwTRXQnkhZIEA,3983
+jupyterlab_snippets-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jupyterlab_snippets-0.3.0.dist-info/top_level.txt,sha256=HIAmEHQROQmW3x7L8eCyjFpZhkG-ATmfV9BK57IStUA,20
+jupyterlab_snippets-0.3.0.dist-info/RECORD,,
