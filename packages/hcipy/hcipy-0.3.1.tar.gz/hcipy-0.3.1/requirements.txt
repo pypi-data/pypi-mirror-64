@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib>=2.0.0
+Pillow
+pyyaml
+astropy
+imageio
+xxhash
+numexpr
+asdf
