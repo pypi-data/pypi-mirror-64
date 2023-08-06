@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: my-statistical-distributions
+Version: 1.3
+Summary: A simple class for Binomial, Gaussian, and Poisson distributions
+Home-page: https://github.com/tihartmann/my_statistical_distributions
+Author: Timo Hartmann
+Author-email: timo.hartmann@posteo.de
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: A simple class for Binomial, Gaussian, and Poisson distributions
+Platform: UNKNOWN
