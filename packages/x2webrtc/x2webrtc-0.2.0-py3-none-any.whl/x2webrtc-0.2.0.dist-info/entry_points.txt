@@ -1,0 +1,3 @@
+[console_scripts]
+x2webrtc = x2webrtc.cli:main
+
