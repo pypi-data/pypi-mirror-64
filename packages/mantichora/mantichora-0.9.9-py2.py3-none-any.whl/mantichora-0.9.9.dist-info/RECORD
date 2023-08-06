@@ -1,0 +1,11 @@
+mantichora/__init__.py,sha256=b9kRDmphl7yCmQpuvueupHXZEnMSpiSuUdEQNCJj_ZA,158
+mantichora/_version.py,sha256=0takdFKYislEWAXc6opiF9Hngt358J3NlApl84HmXLA,497
+mantichora/hubmp.py,sha256=nFlqB4ptnJzBq6NJIX1fpdu7npx4FH7EOoFiNwsgeo0,8522
+mantichora/hubthreading.py,sha256=PXg3FlHYqFKrUS4avDvc6n22m-UxwE4dUfvXOvcJT0w,5123
+mantichora/main.py,sha256=pzxZ0t3y6au2cgK4tC1zi9DXKoq6qaZQ249C-pPAyOQ,4279
+mantichora/queuehandler.py,sha256=TcE7WYrqm9dYU0OtmiqGx4n_oi12H0buVof4YTDWn8o,1229
+mantichora-0.9.9.dist-info/LICENSE,sha256=vWp-IICkOVbP2bEFzIMvKF6NRi6lk9J5gRMnVFZDFqQ,1487
+mantichora-0.9.9.dist-info/METADATA,sha256=eQNd4YZ2Wfv6YmrpS7jPWGQ9qa8axG10qN-2ym7sxFI,17149
+mantichora-0.9.9.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+mantichora-0.9.9.dist-info/top_level.txt,sha256=1bxZWw38_RAljfQDGUShMeorzuQCJ3TRQTA6FDB5mVU,11
+mantichora-0.9.9.dist-info/RECORD,,
