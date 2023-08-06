@@ -1,0 +1,11 @@
+flaskscaffold/__init__.py,sha256=aISJ0LpvrvV5URaL0_CnQ94kNNwH_1E3TW2DH3tnWuQ,166
+flaskscaffold/create_scaffold.py,sha256=N2f0XZlRThr6e3HCYyXHw1Vh-k9baeVnlYifVv80ss4,1263
+flaskscaffold/complimentary_files/.gitignore,sha256=eSwb6glVWeZY7FyzWJKDV58N5HyKS-Spp9SYeA14CCA,2140
+flaskscaffold/complimentary_files/app.py,sha256=uNn916lvWSpFUz1hjXT1eScNhPK3PpufQ-wyKAKr2sY,170
+flaskscaffold-0.8.data/scripts/flaskscaffold-create,sha256=vGvgHY5tyW37hWbGhFjzgbD7MA9U1PIDrJ5-rIQNZOI,54
+flaskscaffold-0.8.dist-info/DESCRIPTION.rst,sha256=p9-_ub5Rxbc-nX75RCnc8JhzamR9VrCKqX18WFZADbI,824
+flaskscaffold-0.8.dist-info/METADATA,sha256=XVD3nZa31sxeZbmFyHZRWAluhyTVTgz2yDuc9MQDXVk,1128
+flaskscaffold-0.8.dist-info/RECORD,,
+flaskscaffold-0.8.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+flaskscaffold-0.8.dist-info/metadata.json,sha256=SsFLvEfqUN5KJqFlzOleRGQf2oPZYxyFXZrq7GOeSYw,495
+flaskscaffold-0.8.dist-info/top_level.txt,sha256=gc7uTHsbE0PNgWhVwMji2CIFHJhqZwJL9_A5zfObngE,14
