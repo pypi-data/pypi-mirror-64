@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "aiohttp-prometheus-exporter"
+version = "0.1.0a2"
+description = ""
+authors = ["Adrian Krupa <adrian.krupa91@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+aiohttp = "^3.6.2"
+prometheus_client = "^0.7.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
