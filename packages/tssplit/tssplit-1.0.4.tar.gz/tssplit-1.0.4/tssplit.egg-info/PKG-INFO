@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: tssplit
+Version: 1.0.4
+Summary: Trivial split for strings with quotes and escaped characters
+Home-page: https://github.com/mezantrop/tssplit
+Author: Mikhail Zakharov
+Author-email: zmey20000@yahoo.com
+License: bsd-2-clause
+Description: # Trivial split for strings with quotes and escaped characters
+        
+        ## Installation
+        ```shell script
+        pip install tssplit
+        ```
+        
+        ## Usage
+        ```python
+        from tssplit import tssplit
+        
+        tssplit('--:--;--,--"--/--"--\'--:--\'--/"--^--', quote='"\'', delimiter=':;,', escape='/^', trim='') 
+        ['--', '--', '--', '----/------:----"----']
+        ```
+        
+        ## Changelog
+        * 2020.03.28    v1.0    Initial release
+        * 2020.03.28    v1.0.1  Many quick fixes to make all things work in PyPI
+        * 2020.03.29    v1.0.2  Minor fixes, Readme update, Long description provided
+        * 2020.03.29    v1.0.3  Trim option to strip() characters from chunks
+        * 2020.03.29    v1.0.4  Multiple characters for quotes, delimiters and escapes
+        
+Keywords: split,parse,quote,trim,strip,string,delimiter,separator
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Filters
+Classifier: Topic :: Text Processing :: General
+Description-Content-Type: text/markdown
