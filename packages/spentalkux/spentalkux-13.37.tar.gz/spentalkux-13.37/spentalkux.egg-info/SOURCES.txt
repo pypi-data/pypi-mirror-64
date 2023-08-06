@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+spentalkux/__init__.py
+spentalkux.egg-info/PKG-INFO
+spentalkux.egg-info/SOURCES.txt
+spentalkux.egg-info/dependency_links.txt
+spentalkux.egg-info/top_level.txt
