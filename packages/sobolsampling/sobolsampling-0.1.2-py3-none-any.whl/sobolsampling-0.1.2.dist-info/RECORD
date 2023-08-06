@@ -1,0 +1,9 @@
+sobolsampling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sobolsampling/sobol_new.py,sha256=Pmpqqf_zeDN1uLeZcpSNsxzV7bDk7Ffa8NNDBDdi0TA,2915
+sobolsampling/sobolcoeff.csv,sha256=wrnnmiACQ6wqweqRcohAH7YBVxWlCdw-L2VHgIpiTzQ,1680896
+sobolsampling-0.1.2.dist-info/DESCRIPTION.rst,sha256=LnHr0cHOkqJkPduSR0xuGLvvjp4WYJrgHERtdvL9E-4,289
+sobolsampling-0.1.2.dist-info/METADATA,sha256=ALnX0ZSMPEx4lKYgU2-7Dmi2qgzJnJQfbHaHbhjQoPc,642
+sobolsampling-0.1.2.dist-info/RECORD,,
+sobolsampling-0.1.2.dist-info/WHEEL,sha256=Ds0ba8WsPJtjBPzEMyPOBG3qfPa6B4mlzB-vhzorIZs,97
+sobolsampling-0.1.2.dist-info/metadata.json,sha256=vq64b6KfvreP64KPvap53fGPidSOEbFM-GvUc_4r3U8,585
+sobolsampling-0.1.2.dist-info/top_level.txt,sha256=thG32vu_ttXgxG2h9Tu8xXkfJa-04uyNvQEpqklK_EQ,14
