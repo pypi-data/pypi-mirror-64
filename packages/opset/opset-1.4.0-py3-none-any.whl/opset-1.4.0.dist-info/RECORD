@@ -1,0 +1,7 @@
+opset/__init__.py,sha256=j97gb6mdMViPB3_SoctNUhe110j0PWdsi5lHp2FA9o4,328
+opset/configurator.py,sha256=hYJ4fKQd28yKPUkRMSlvVap0z0tVX2OOGta2suANsRY,22271
+opset/utils.py,sha256=Rp9uyDlhZ8ZYozceoZfMU8TFX2azZdX2nyPsUtBPoKY,3799
+opset-1.4.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+opset-1.4.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+opset-1.4.0.dist-info/METADATA,sha256=mxz61gNxuWD1_qL_AaPCLU-8NzBc229rXA3fjPD6FLE,24252
+opset-1.4.0.dist-info/RECORD,,
