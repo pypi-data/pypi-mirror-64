@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: khatvar
+Version: 0.1
+Summary: A Test package
+Home-page: https://github.com/cafebazaar/?
+Author: Mahdi Sadeghzadeh Ghamsary, Masood Adeli
+Author-email: devexp@cafebazaar.ir
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Just for test
+
+
