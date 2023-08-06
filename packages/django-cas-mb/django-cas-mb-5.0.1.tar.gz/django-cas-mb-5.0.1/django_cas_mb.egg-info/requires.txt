@@ -1,0 +1,6 @@
+Django>=2.0
+python-cas-mb>=1.5.1
+
+[dev]
+black==19.10b0
+twine==3.1.1
