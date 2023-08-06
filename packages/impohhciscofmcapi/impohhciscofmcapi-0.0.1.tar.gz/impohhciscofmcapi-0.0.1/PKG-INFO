@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: impohhciscofmcapi
+Version: 0.0.1
+Summary: The Library for Cisco REST API Firepower
+Home-page: https://github.com/impohh/impohhciscofmcapi
+Author: Anuchit Ketngam
+Author-email: porclub.por@gmail.com
+License: MIT
+Download-URL: https://github.com/impohh/impohhciscofmcapi
+Description: UNKNOWN
+Keywords: Cisco FMC,Cisco API FMC,Object Cisco FMC,REST API Cisco Firepower
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
