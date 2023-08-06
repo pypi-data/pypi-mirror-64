@@ -1,0 +1,19 @@
+#!python
+
+import argparse
+from multissh.mssh import MultiSSH
+
+arg_parser = argparse.ArgumentParser(description='MultiSSH')
+arg_parser.add_argument('--verbose', help='Display verbose data', action='store_true', default=False)
+arg_parser.add_argument('--source', help='Source to credentials', type=str, required=True)
+arg_parser.add_argument('--workers', help='Count of workers', type=int, default=None)
+
+args = arg_parser.parse_args()
+
+config = {
+    'verbose': args.verbose,
+    'source': args.source,
+    'workers': args.workers
+}
+
+MultiSSH(config).run()
