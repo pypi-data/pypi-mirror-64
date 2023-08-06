@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+test_output.out
+lazyloads.egg-info/PKG-INFO
+lazyloads.egg-info/SOURCES.txt
+lazyloads.egg-info/dependency_links.txt
+lazyloads.egg-info/not-zip-safe
+lazyloads.egg-info/top_level.txt
+lzl/__init__.py
+lzl/__pycache__/__init__.cpython-38.pyc
+lzl/__pycache__/cmp.cpython-38.pyc

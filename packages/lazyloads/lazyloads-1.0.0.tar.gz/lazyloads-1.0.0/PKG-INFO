@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: lazyloads
+Version: 1.0.0
+Summary: Python Module to make your life easier
+Home-page: https://github.com/feimaomiao/lazyloads
+Author: Matthew Lam
+Author-email: lcpmatthew@gmail.com
+License: UNKNOWN
+Description: # lazyloads  
+        Python package for extra functions in builtin data types including:  
+        -  list  
+        -  dict  
+        -  string  
+        -  int  
+        -  float  
+        
+        ## Installing lazyloads  
+        `pip install lazyloads`    
+        or     
+        `python3 -m pip install lazyloads`  
+        
+        ## Install requirements  
+        Python >= 3.5  
+        
+        ## Includes  
+        - [lzlist](docs/documentation.md/#lzlist-object)  
+        - [lzstr](docs/documentation.md/#lzstr-object)  
+        - [lzdict](docs/documentation.md/#lzdict-object)  
+        - [lzint](docs/documentation.md/#lzint-object)  
+        - [lzfloat](docs/documentation.md/#lzfloat-object)  
+          
+        ## How to import 
+        ```python
+        import lzl
+        ```
+        For more functions and docs, visit [here](docs/documentation.md/)
+        
+        ## Unexpected errors
+        Please open an issue for any errors encountered.   
+        
+        Thank you!  
+        ###### lazyloads, a python module to make your life easier  
+        ###### © 2020 Matthew Lam
+Keywords: lazy built in function expansion extension other
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
