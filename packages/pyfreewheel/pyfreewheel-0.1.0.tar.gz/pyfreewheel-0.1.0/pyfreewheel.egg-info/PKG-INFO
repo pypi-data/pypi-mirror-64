@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: pyfreewheel
+Version: 0.1.0
+Summary: Communicate with the Freewheel inbound API
+Home-page: https://github.com/entrez/pyfreewheel
+Author: Michael Meyer
+Author-email: me@entrez.cc
+License: UNKNOWN
+Description: # pyfreewheel
+        
+        ## Description
+        Communicate with the [Freewheel inbound API](https://hub.freewheel.tv/display/SSPTW/Inbound+API): retrieve, create, and update information on sites, publishers, zones, etc.
+        
+        ## Usage
+        Call `freewheel.API()` with your inbound API key as the only positional argument to create an API object with functions `retrieve(<endpoint>)`, `update(<endpoint>)`, `create(<endpoint>)`, corresponding to `GET`, `PUT`, and `POST` respectively.
+        
+        ```python
+        #import freewheel
+        FW_API_KEY = '<inbound api key>'
+        fw = freewheel.API(FW_API_KEY)
+        sites = fw.request('site')
+        print(sites.results)
+        
+        example_zone = fw.request('zone', id=123456)
+        sid = example_zone.results['site_id']
+        updated = fw.update('site', {'name': 'New Name'}, id=sid)
+        print(updated.results)
+        ```
+        
+Keywords: api freewheel adtech
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

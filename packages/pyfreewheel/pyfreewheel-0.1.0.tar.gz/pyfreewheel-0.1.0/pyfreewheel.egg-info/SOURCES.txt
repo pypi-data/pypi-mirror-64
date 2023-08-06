@@ -1,0 +1,8 @@
+README.md
+setup.py
+freewheel/__init__.py
+freewheel/errors.py
+pyfreewheel.egg-info/PKG-INFO
+pyfreewheel.egg-info/SOURCES.txt
+pyfreewheel.egg-info/dependency_links.txt
+pyfreewheel.egg-info/top_level.txt
