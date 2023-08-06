@@ -1,0 +1,7 @@
+README.md
+setup.py
+yoyo_pack/__init__.py
+yoyo_pack.egg-info/PKG-INFO
+yoyo_pack.egg-info/SOURCES.txt
+yoyo_pack.egg-info/dependency_links.txt
+yoyo_pack.egg-info/top_level.txt
