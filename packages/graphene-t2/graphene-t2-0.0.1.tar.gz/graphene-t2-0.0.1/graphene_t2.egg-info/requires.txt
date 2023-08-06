@@ -1,0 +1,11 @@
+graphene<3,>=2.1.7
+graphene-django<3,>=2.8
+
+[dev]
+black==19.10b0
+pytest>=3.6.3
+pytest-django>=3.3.2
+
+[test]
+pytest>=3.6.3
+pytest-django>=3.3.2
