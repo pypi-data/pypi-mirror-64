@@ -1,0 +1,5 @@
+setup.py
+sqlfmt.egg-info/PKG-INFO
+sqlfmt.egg-info/SOURCES.txt
+sqlfmt.egg-info/dependency_links.txt
+sqlfmt.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: sqlfmt
+Version: 0.0.0
+Summary: The uncompromising SQL query formatter.
+Home-page: https://github.com/HH-MWB/sqlfmt
+Author: HH-MWB
+Author-email: h.hong@mail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Quality Assurance
+Requires-Python: >=3.6
