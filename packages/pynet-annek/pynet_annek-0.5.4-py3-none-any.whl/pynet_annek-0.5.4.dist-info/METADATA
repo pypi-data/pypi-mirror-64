@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pynet-annek
+Version: 0.5.4
+Summary: A cli for managing network switches
+License: MIT
+Author: Michael MacKenna
+Author-email: mpmackenna@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: netmiko (>=2.4,<3.0)
+Requires-Dist: termcolor (>=1.1,<2.0)
+Description-Content-Type: text/markdown
+
+# pynet #
+A cli tool for interacting with network switches
+
+## Synopsis ##
+
+> pynet is a cli tool for running adhoc commands and getting version information and configurations
+> from network devices. It stores devices in a sqlite database. It can then query those devices and
+> store some basic information about devices in the database.
+>
+> pynet supports csv import of devices to the database. If you have a bunch of network devices that
+> are configured via ssh and you need to retrieve version information from all of those devices, pynet
+> can help you accomplish that task.
+>
+> pynet is a basic tool created to perform some necessary tasks quickly. It is not complete by any
+> stretch of the imagination. The user should be willing to look at the source code and possibly
+> use the cli to sqlite to massage the db if necessary.
+
+

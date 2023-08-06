@@ -1,0 +1,3 @@
+[console_scripts]
+pynet=pynet_annek.cli:main
+
