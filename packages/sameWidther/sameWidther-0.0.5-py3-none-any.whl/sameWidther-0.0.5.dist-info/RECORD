@@ -1,0 +1,11 @@
+__init__.py,sha256=SSST6752ge1SxleGtjaF7Fx0QL50Ui1Ni01JCYrlUxs,26
+flattenKern.py,sha256=JG7jmCuot9Q1ILC9gkDUT3phN_Cflrwptnjnae5WBZI,2709
+sameWidther.py,sha256=fBUQ80gzxiQaOns4WXsUPsHl5zwMUBZHhUW6rgDrM7Y,5643
+databases/ENG.json,sha256=YuibCFoUdCr2evou8jxBPk7aNbMtDVZQJZGiamXZ_4o,4975107
+databases/GER.json,sha256=jP1tHDWDRBLkbxsrA3kc59n19DJraTLWuScjBpidgZw,11325470
+databases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sameWidther-0.0.5.dist-info/METADATA,sha256=3wx1GPQk_qx8dbmYCHgHkg4-Fs46zCxhkWwJnSW5pgg,1933
+sameWidther-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sameWidther-0.0.5.dist-info/entry_points.txt,sha256=JF8mlonCJh3Tlde6WVnsOA2UpeCApK0UJRR4xz7QSeo,50
+sameWidther-0.0.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sameWidther-0.0.5.dist-info/RECORD,,
