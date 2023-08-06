@@ -1,0 +1,12 @@
+fastavro
+confluent-kafka
+tqdm
+certifi
+
+[dev]
+autopep8
+flake8
+pytest
+sphinx
+sphinx_rtd_theme
+twine
