@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cldpy
+Version: 0.0.6
+Summary: cloudpy.io
+Home-page: https://github.com/ortutay/cldpy
+Author: cloudpy.io
+Author-email: author@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Numpy In The Cloud
+
+It's numpy, but in the cloud!
+
+
