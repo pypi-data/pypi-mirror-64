@@ -1,0 +1,11 @@
+mcubes/__init__.py,sha256=V0vJ3i4cJYc3qoW7tket6oO8cfbYjZb-_VHiEzvT7WI,174
+mcubes/_mcubes.cpython-37m-darwin.so,sha256=-85ucuyZKcAfEgSivRyR84bP4Xp9szcvtJ4A8VGmp34,120276
+mcubes/exporter.py,sha256=QbE2Jrfm2_ZMoP6fI1WOSrGQ1mjTZqZsKfEqgCONsJw,1697
+mcubes/numpy_smoothing.py,sha256=GYm2_WFTDlY0-u28-LpchD2oFhhJ92DY6tH8CHIgVqY,2572
+mcubes/smoothing.py,sha256=WUNxZ5WORM0aVCXMmYSBZAgfK6QoHoG5R1522WkVfp8,9697
+mcubes/torch_smoothing.py,sha256=wY922DzBr0CV5R8iMYNcM0CgJMd1xykt23JEE_Ajwdw,6732
+PyMCubes-0.1.0.dist-info/LICENSE,sha256=VpN3ReqH0cV4w86hvPAtnEiaSautF5Bv1r152qRGDxk,1494
+PyMCubes-0.1.0.dist-info/METADATA,sha256=cBjPtHzoYGrb6IJWUN7ilLDtvnTYE7RVpfNgMzhFSb8,860
+PyMCubes-0.1.0.dist-info/WHEEL,sha256=PJpvlWYoaC6URR0LWg8CW_GxFlQ7xrZNRTDuqcfncbQ,110
+PyMCubes-0.1.0.dist-info/top_level.txt,sha256=vsHgGZkH95lEw83wCzaAaa3D1x8y5XQ92bE7BnlK5J0,7
+PyMCubes-0.1.0.dist-info/RECORD,,
