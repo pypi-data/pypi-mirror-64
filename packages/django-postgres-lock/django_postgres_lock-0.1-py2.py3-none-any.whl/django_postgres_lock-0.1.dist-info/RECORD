@@ -1,0 +1,11 @@
+postgres_lock/__init__.py,sha256=Lgf9keBX7aG_JEFt6UYSyiFKcm-BYGtmk9ohpQhYpyk,20
+postgres_lock/apps.py,sha256=7MmGiFTbxd60CCusaT0xWGjzUSnMBOYxmCKv3kaiHUs,100
+postgres_lock/lock.py,sha256=Ss-uLiLZjWfvhpkEHPC-i0MHkfZpCgYzDHS1tSxBhoM,2202
+postgres_lock/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_lock/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+postgres_lock/management/commands/command_lock.py,sha256=086RQmDIpmDBclfcio9kPrrlOScW6ReAXch7V9iAFHs,1640
+django_postgres_lock-0.1.dist-info/LICENSE,sha256=OLHrQlHf6IBdsLL4ZnCVd5IFUkC7VPbGEHQy7uslhQo,1508
+django_postgres_lock-0.1.dist-info/METADATA,sha256=4InU94uspj2dUb2y9iT_gfEBX02H3Epoy4ryhGjcy30,1911
+django_postgres_lock-0.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+django_postgres_lock-0.1.dist-info/top_level.txt,sha256=WXxXqGIIX79IO9-WBDckZEZpWMYieIT2iEX0kRLiZfc,14
+django_postgres_lock-0.1.dist-info/RECORD,,
