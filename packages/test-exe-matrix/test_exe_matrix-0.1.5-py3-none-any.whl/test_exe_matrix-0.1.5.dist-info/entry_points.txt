@@ -1,0 +1,3 @@
+[console_scripts]
+test_exe_matrix=test_exe_matrix.main:entrypoint
+
