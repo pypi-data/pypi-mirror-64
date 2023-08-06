@@ -1,0 +1,35 @@
+affine
+cartopy>=0.17
+cython
+descartes
+fiona
+# need to pin for comparables
+freetype>=2.10
+gdal
+geojson
+# talk to google
+google-api-python-client
+# templating
+jinja2
+# due to font issues
+matplotlib>=3.2.0
+metpy
+metar>=1.7.0
+mock
+# needed for fiona?
+ncurses
+netCDF4
+geopandas
+pandas
+pint
+psycopg2
+pytest
+pytest-mpl
+pytest-runner
+rasterstats
+# interpolation
+scipy
+shapely
+tqdm
+# prevent xarray 0.12.2 bug
+xarray<0.12.2

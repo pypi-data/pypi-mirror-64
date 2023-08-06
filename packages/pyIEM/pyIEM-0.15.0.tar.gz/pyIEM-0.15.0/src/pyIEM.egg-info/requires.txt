@@ -1,0 +1,5 @@
+jinja2
+matplotlib
+pytz
+psycopg2
+scipy
