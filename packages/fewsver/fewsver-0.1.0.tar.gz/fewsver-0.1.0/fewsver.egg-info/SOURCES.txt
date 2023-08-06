@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+fewsver/__init__.py
+fewsver.egg-info/PKG-INFO
+fewsver.egg-info/SOURCES.txt
+fewsver.egg-info/dependency_links.txt
+fewsver.egg-info/top_level.txt
