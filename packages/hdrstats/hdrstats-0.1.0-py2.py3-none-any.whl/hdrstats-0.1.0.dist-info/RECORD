@@ -1,0 +1,11 @@
+hdrstats/__init__.py,sha256=wWUN7BLvzMoKrczCNHCghnekFXbaQBNZoYJy75srT3o,646
+hdrstats/cli.py,sha256=DckjcIgA0UBctwKofX8QE9ULYHzWKm0pjs7g3fuStFs,13217
+hdrstats/hdrstats.py,sha256=aZpgDbDwIayO1QUWWcVeIg4SZOhtMZ25CtJ8Ao1Zu7E,2912
+hdrstats/image.py,sha256=6vhuHW5UGsPyHGCTCpW-WU-_QWsRmzX-b0fdW1eFan4,3418
+hdrstats-0.1.0.dist-info/LICENSE,sha256=25xxJSY6vTn8ECjnbcCoQt-U9wkEJ7HdEE98i2L96zY,14847
+hdrstats-0.1.0.dist-info/METADATA,sha256=2Vthb2L9SKUF8HO2hpCOrMarQuaXdEtZBqak8oeyvlA,1753
+hdrstats-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+hdrstats-0.1.0.dist-info/entry_points.txt,sha256=7GJLgBvTPmNgF9cYau1LwUMCwOFEpU89d0AIimgJUTg,48
+hdrstats-0.1.0.dist-info/top_level.txt,sha256=ZOtw4oH6aC8_UCjfCcS5uee5KKIHDxPSp9vYRpJ5JcE,9
+hdrstats-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hdrstats-0.1.0.dist-info/RECORD,,
