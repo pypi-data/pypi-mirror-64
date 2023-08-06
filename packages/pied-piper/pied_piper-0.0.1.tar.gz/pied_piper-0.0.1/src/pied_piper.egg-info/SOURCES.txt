@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/pied_piper/__init__.py
+src/pied_piper.egg-info/PKG-INFO
+src/pied_piper.egg-info/SOURCES.txt
+src/pied_piper.egg-info/dependency_links.txt
+src/pied_piper.egg-info/requires.txt
+src/pied_piper.egg-info/top_level.txt
