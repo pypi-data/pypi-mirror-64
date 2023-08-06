@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: PyWebIO
+Version: 0.1.1
+Summary: Make your python interactive script be a web service.
+Home-page: https://github.com/wang0618/pywebio
+Author: WangWeimin
+Author-email: wang0.618@qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: flask
