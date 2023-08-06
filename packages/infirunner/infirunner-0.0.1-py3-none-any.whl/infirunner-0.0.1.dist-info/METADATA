@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: infirunner
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ziyang Hu
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: click
+Requires-Dist: colorama
+Requires-Dist: python-box
+Requires-Dist: gputil
+Requires-Dist: flufl.lock
+Provides-Extra: all
+Requires-Dist: torch ; extra == 'all'
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: statsmodels ; extra == 'all'
+Requires-Dist: scipy ; extra == 'all'
+Requires-Dist: pandas ; extra == 'all'
+
+UNKNOWN
+
+
