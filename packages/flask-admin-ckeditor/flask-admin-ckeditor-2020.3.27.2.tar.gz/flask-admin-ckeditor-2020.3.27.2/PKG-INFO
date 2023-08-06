@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: flask-admin-ckeditor
+Version: 2020.3.27.2
+Summary: ckeditor for flask-admin
+Home-page: https://github.com/suckmybigdick/flask-admin-ckeditor
+Author-email: 13750192465@163.com
+License: UNKNOWN
+Description: ckeditor for flask-admin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
