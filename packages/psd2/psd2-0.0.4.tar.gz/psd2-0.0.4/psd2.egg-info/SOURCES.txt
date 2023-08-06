@@ -1,0 +1,8 @@
+README.md
+setup.py
+psd2/__init__.py
+psd2/psd2.py
+psd2.egg-info/PKG-INFO
+psd2.egg-info/SOURCES.txt
+psd2.egg-info/dependency_links.txt
+psd2.egg-info/top_level.txt
