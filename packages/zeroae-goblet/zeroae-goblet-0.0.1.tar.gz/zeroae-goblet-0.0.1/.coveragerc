@@ -1,0 +1,9 @@
+[run]
+source = zeroae
+
+[report]
+omit =
+    setup.py
+    zeroae/goblet/__main__.py
+    zeroae/goblet/_version.py
+    tests/*

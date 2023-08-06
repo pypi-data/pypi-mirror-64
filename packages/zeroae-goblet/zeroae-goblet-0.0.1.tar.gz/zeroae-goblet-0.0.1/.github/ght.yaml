@@ -1,0 +1,62 @@
+---
+codecov:
+  #
+  # TODO: Place your codecov.io *BADGE* token here for private repositories
+  badge_token: CODECOV_BADGE_TOKEN
+
+codacy:
+  project_id: 2b7e8dd25f3a40e08a98d5b094181c4b
+
+ght:
+  command_line_interface:
+    - (*) Click
+    - ( ) None
+
+  license:
+    - ( ) MIT
+    - ( ) BSD
+    - ( ) ISC
+    - (*) Apache
+    - ( ) GNUv3
+    - ( ) Proprietary
+
+cookiecutter:
+  #
+  # These were guess based on the repository information
+  # You probably want to customize them.
+  project_namespace: "zeroae"
+  project_slug: "goblet"
+  project_name: "ZeroAE's GitHub App framework"
+
+  #
+  # These are likely correct...
+  anaconda_organization: "zeroae"
+
+  #
+  # These should not be changed at the moment...
+  noarch_python: y
+  use_pytest: y
+  add_pyup_badge: y
+  version: 0.0.0
+
+  #
+  # These should probably be left alone. They came from github
+  full_name: "Patrick Sodré"
+  email: "psodre@gmail.com"
+  github_username: "sodre"
+  github_organization: "zeroae"
+  project_repo: "zeroae-goblet"
+  project_short_description: "A Chalice blueprint for creating GitHub Apps"
+
+#
+# These were picked up during Initial Commit...
+github:
+  author:
+    email: psodre@gmail.com
+    name: Patrick Sodré
+    username: sodre
+  repository:
+    name: zeroae-goblet
+    full_name: zeroae/zeroae-goblet
+    description: A Chalice blueprint for creating GitHub Apps
+    private: false

@@ -1,0 +1,3 @@
+[zeroae.cli]
+goblet = zeroae.goblet.cli:goblet
+
