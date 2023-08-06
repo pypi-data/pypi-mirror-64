@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: deepl-tr-async
+Version: 0.0.2
+Summary: deepl translate for free, based no pyppeteer
+Home-page: https://github.com/ffremt/deepl-tr-async
+License: MIT
+Keywords: mt,language,learning
+Author: ffreemt
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: absl-py (>=0.9.0,<0.10.0)
+Requires-Dist: environs (>=7.3.1,<8.0.0)
+Requires-Dist: flake8 (>=3.7.9,<4.0.0)
+Requires-Dist: fuzzywuzzy (>=0.18.0,<0.19.0)
+Requires-Dist: linetimer (>=0.1.4,<0.2.0)
+Requires-Dist: logzero (>=1.5.0,<2.0.0)
+Requires-Dist: polyglot (>=16.7.4,<17.0.0)
+Requires-Dist: pycld2 (>=0.41,<0.42)
+Requires-Dist: pyicu (>=2.4.3,<3.0.0)
+Requires-Dist: pyinstaller (>=3.6,<4.0)
+Requires-Dist: pyperclip (>=1.7.0,<2.0.0)
+Requires-Dist: pyppeteer (>=0.0.25,<0.0.26)
+Requires-Dist: pyquery (>=1.4.1,<2.0.0)
+Requires-Dist: pytest-cov (>=2.8.1,<3.0.0)
+Requires-Dist: python-dotenv (>=0.12.0,<0.13.0)
+Requires-Dist: tqdm (>=4.43.0,<5.0.0)
+Project-URL: Repository, https://github.com/ffremt/deepl-tr-async
+Description-Content-Type: text/markdown
+
+# deepl-tr-async ![build](https://github.com/ffreemt/deepl-tr-async/workflows/build/badge.svg)[![codecov](https://codecov.io/gh/ffreemt/deepl-tr-async/branch/master/graph/badge.svg)](https://codecov.io/gh/ffreemt/deepl-tr-async)
+deepl translate for free with async and proxy support, based on pyppeteer
+
+### Installation
+Not available yet
+```pip install deepl-tr-async```
+
+Validate installation
+```
+python -c "import deepl_tr_async; print(deepl_tr_async.__version__)"
+# 0.0.1 or other version info
+```
+
+### Usage
+
+```
+import asyncio
+from deepl_tr_async import deepl_tr_async
+
+asyncio.get_event_loop().run_until_complete(deep_tr_async('test this and that'))
+# '测试这个和那个'
+```
+
+## Extra installation for Windows 10
+
+Download and install the pyicu and pycld2 whl packages for your OS version from https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyicu and https://www.lfd.uci.edu/~gohlke/pythonlibs/#pycld2
+
+### Acknowledgments
+
+* Thanks to everyone whose code was used
+
