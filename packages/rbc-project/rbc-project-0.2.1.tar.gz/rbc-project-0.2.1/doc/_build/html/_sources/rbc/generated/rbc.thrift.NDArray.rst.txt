@@ -1,0 +1,23 @@
+rbc.thrift.NDArray
+==================
+
+.. currentmodule:: rbc.thrift
+
+.. autoclass:: NDArray
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~NDArray.__init__
+      ~NDArray.toobject
+   
+   
+
+   
+   
+   

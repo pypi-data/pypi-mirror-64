@@ -1,0 +1,22 @@
+rbc.thrift.Client
+=================
+
+.. currentmodule:: rbc.thrift
+
+.. autoclass:: Client
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Client.__init__
+   
+   
+
+   
+   
+   

@@ -1,0 +1,177 @@
+
+*OmniSci* runtime extension functions
+=====================================
+
+*OmniSci* runtime extension functions are runtime User-Defined
+Functions (UDFs) and User-Defined Table Functions (UDTFs).  The
+runtime extension functions are registered via OmniSci thrift
+end-point function `register_runtime_udf` that takes as input a string
+of signatures and a mapping of device-LLVM IR strings. For instance,
+consider two runtime UDFs for integer and double arguments,
+respectively::
+
+  foo(x: int) -> int
+  foo(x: double) -> double
+
+then the signatures string is::
+
+  foo 'int32(int32)'
+  foo__1 'double(double)'
+
+and the device-LLVM IR mapping contains a value corresponding to key
+``cpu``::
+
+  ...
+  declare @foo(...) {
+     ...
+  }
+  declare @foo__1(...) {
+     ...
+  }
+
+Code path of runtime UDF registration
+-------------------------------------
+
+The algorithm for runtime UDF registration is as follows (using pseudo-code).
+
+::
+
+   register_runtime_udf(signatures: string, device_ir_map: map<string, string>):
+
+     read_rt_udf_cpu_module(device_ir_map['cpu'])
+
+     calcite->setRuntimeUserDefinedFunction(signatures)
+
+     whitelist = calcite->getRuntimeUserDefinedFunctionWhitelist()
+     ExtensionFunctionsWhitelist::clearRTUdfs()
+     ExtensionFunctionsWhitelist::addRTUdfs(whitelist)
+
+So, ``register_runtime_udf`` contains three registration tasks:
+
+1. ``read_rt_udf_cpu_module`` compiles the LLVM IR module string to
+   bitcode so that it can be linked to a LLVM IR module of a query
+   execution.
+
+2. ``calcite->setRuntimeUserDefinedFunction`` adds UDF definitions to Calcite.
+
+3. ``ExtensionFunctionsWhitelist::addRTUdfs`` saves UDF signatures for
+   constructing LLVM IR declarations. The whitelist contains the
+   extension function signatures in JSON form.
+
+Compiling LLVM IR module
+''''''''''''''''''''''''
+
+Adding UDF definitions to Calcite
+'''''''''''''''''''''''''''''''''
+
+The algorithm of ``setRuntimeUserDefinedFunction`` Calcite handler is given below.
+
+::
+
+  class CalciteServerHandler {
+    GenericObjectPool parserPool
+    Map<String, ExtensionFunction> extSigs = null
+    Map<String, ExtensionFunction> udfRTSigs = null
+    String udfRTSigsJson = ""    
+  }
+
+  COMMENT: CalciteServerHandler instance initiated at loadtime
+  COMMENT: extSigs can be updated at runtime by CalciteServerHandler::setRuntimeUserDefinedFunction
+  CalciteServerHandler(int mapdPort, String dataDir, String extensionFunctionsAstFile, SockTransportProperties skT, String udfAstFile) {
+    # builtin extension functions
+    extSigs = ExtensionFunctionSignatureParser.parse(extensionFunctionsAstFile)
+    extSigsJson = ExtensionFunctionSignatureParser.signaturesToJson(extSigs)
+    # add loadtime udfs
+    udfSigs = ExtensionFunctionSignatureParser.parse(udfAstFile)
+    udfSigsJson = ExtensionFunctionSignatureParser.signaturesToJson(udfSigs)
+    extSigs.update(udfSigs)
+
+    parserFactory = CalciteParserFactory(dataDir, extSigs, mapdPort, skT)  # wraps to CalciteParserFactory::makeObject() -> MapDParser instance
+    parserPool = GenericObjectPool(parserFactory)
+  }
+
+  CalciteServerHandler::process(..., String sqlText, ...) -> TPlanResult {
+     parser = (MapDParser) parserPool.borrowObject()
+     parser.setUser(mapDUser)
+     CURRENT_PARSER.set(parser)
+     String relAlgebra = parser.getRelAlgebra(sqlText, parserOptions, mapDUser)
+     CURRENT_PARSER.set(null)
+     parserPool.returnObject(parser)
+     result = TPlanResult()
+     result.plan_result = relAlgebra
+     return result
+  }
+
+  COMMENT: updates extSigs in-place
+  COMMENT: there is also setRuntimeUserDefinedTableFunction that uses <isUDF>=false
+  CalciteServerHandler::setRuntimeUserDefinedFunction(signatures) {
+    extSigs.remove(udfRTSigs.keys())
+    udfRTSigsJson = ""
+    udfRTSigs = ExtensionFunctionSignatureParser.parseFromString(signatures, <isUDF>)
+    udfRTSigs.remove(extSigs.keys())  # avoid overriding builtin/loadtime extension functions
+    udfRTSigsJson = ExtensionFunctionSignatureParser.signaturesToJson(udfRTSigs)
+    extSigs.update(udfRTSigs)
+  }
+
+  
+  COMMENT: CalciteParserFactory instance is initiated at loadtime
+  COMMENT: CalciteParserFactory::makeObject is called by Calcite server, see CalciteServerHandler::process for using parser instance
+  CalciteParserFactory::makeObject() {
+    return MapDParser(dataDir, extSigs, mapdPort, socket_transport_properties)
+  }
+
+  class MapDParser {
+    Map<String, ExtensionFunction> extSigs
+  }
+
+  COMMENT: MapDPlanner instance is initiated in runtime (presumably)
+  MapDPlanner MapDParser::getPlanner(..) {
+    config = Frameworks.newConfigBuilder()...operatorTable(createOperatorTable(extSigs))...
+    return MapDPlanner(config)
+  }
+
+  COMMENT: called from MapDParser::getPlanner in runtime
+  MapDParser::createOperatorTable(Map<String, ExtensionFunction> extSigs) -> SqlOperatorTable {
+    tempOpTab = MapDSqlOperatorTable(SqlStdOperatorTable.instance())
+    MapDSqlOperatorTable.addUDF(tempOpTab, extSigs)
+    retun tempOpTab
+  }
+
+  class MapDSqlOperatorTable {
+    ListSqlOperatorTable listOpTab
+  }
+
+  COMMENT: MapDSqlOperatorTable is initiated in runtime from MapDParser::createOperatorTable
+  MapDSqlOperatorTable(SqlOperatorTable parentTable) {
+    super(ImmutableList.of(parentTable, new CaseInsensitiveListSqlOperatorTable()))
+    listOpTab = (ListSqlOperatorTable) tableList.get(1)  # ???
+  }
+
+  COMMENT: called from MapDParser::createOperatorTable in runtime
+  COMMENT: Note that only the first extension function is added to the operator table. What if the number of arguments differ for functions with the same demangledName?
+  MapDSqlOperatorTable::addUDF(MapDSqlOperatorTable opTab, final Map<String, ExtensionFunction> extSigs) {
+    opTab.addOperator(new RowCopier())
+    ...
+    demangledNames = {}
+    for key, extSig in extSigs.items():
+      demangledName = dropSuffix(key)
+      if demangleName not in demangledNames:
+          demangledNames.add(demangledName)
+          opTab.addOperator(ExtFunction(key, extSig))  # Should demangledName be used as a key??
+  }
+
+  MapDSqlOperatorTable::addOperator(SqlOperator op) {
+    listOpTab.add(op);
+  }
+
+
+  class ExtensionFunction {
+    List<ExtArgumentType> args
+    ExtArgumentType ret
+    boolean isRowUdf
+    /* add session/mapduser/... */
+  }
+
+  
+Saving UDF signatures for LLVM IR declarations
+''''''''''''''''''''''''''''''''''''''''''''''
