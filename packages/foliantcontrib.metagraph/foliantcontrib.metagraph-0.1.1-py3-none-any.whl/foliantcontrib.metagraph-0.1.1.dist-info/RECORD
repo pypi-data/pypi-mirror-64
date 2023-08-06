@@ -1,0 +1,8 @@
+foliant/preprocessors/metagraph/__init__.py,sha256=zhfk81_VOWuAJxFvo7bZayWJOgbyHVESWteXWvlShUE,35
+foliant/preprocessors/metagraph/draw.py,sha256=0ecFTbP8csJUg7cj96cDOcX5xAaTpZBs3edv6mXw6yY,2379
+foliant/preprocessors/metagraph/metagraph.py,sha256=fajF-hW1xK9Qr2Zw-avjqBUadyuPjD9uJ4BC6fTCClk,1156
+foliantcontrib.metagraph-0.1.1.dist-info/LICENSE,sha256=PufEtkm3g2iPEYbJqg2lDjMQJ1FMm_oUPyeYPiN4PHE,1056
+foliantcontrib.metagraph-0.1.1.dist-info/METADATA,sha256=cBqYgbfyI-7SCZBhncOXa5h7DWig39XeitLG8VdoZ_o,2320
+foliantcontrib.metagraph-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+foliantcontrib.metagraph-0.1.1.dist-info/top_level.txt,sha256=5uvI8ZIgBWKY09Z8Xs4ESLGD7yAEGbiLvIrdHdaC9mE,8
+foliantcontrib.metagraph-0.1.1.dist-info/RECORD,,
