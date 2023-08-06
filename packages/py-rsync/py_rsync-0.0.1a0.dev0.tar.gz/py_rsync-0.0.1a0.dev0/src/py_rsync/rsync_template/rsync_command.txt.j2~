@@ -1,0 +1,18 @@
+rsync \
+    -a \
+    -v \
+    -hh \
+    --stats \
+    -i \
+    {{force_update}} \
+    {{backup}} \
+    {{compress}} \
+    {{dry}} \
+    {{info}} \
+    {{delete}} \
+    {{delete_excluded}} \
+    {{include}} \
+    {{exclude}} \
+    '{{source}}/' \
+    '{{target}}'
+
