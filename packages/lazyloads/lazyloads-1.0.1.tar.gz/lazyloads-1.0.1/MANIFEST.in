@@ -1,0 +1,6 @@
+include lzl/*.py
+global-exclude */__pycache__
+include README.md
+include test_output.out
+include tests
+exclude *egg-info
