@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+test/test_core.py
+whigo.egg-info/PKG-INFO
+whigo.egg-info/SOURCES.txt
+whigo.egg-info/dependency_links.txt
+whigo.egg-info/requires.txt
+whigo.egg-info/top_level.txt
