@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jspp
+Version: 0.1.8
+Summary: BETA
+Home-page: https://github.com/JhinScripter/jspp
+License: UNKNOWN
+Description: Python package(JSPP) created by Jhin Scripter.  
+        [WIP] / BETA  
+          
+        | Jhin Scripter Python Package (JSPP)  
+          
+        Discord: Jhin Scripter#0922  
+        Youtube: https://www.youtube.com/channel/UCkyQbVJRI_38yB77eiSHBhw  
+        Twitter: @JhinScripter  
+          
+        You will be able to report any errors or help improve the package on my discord (Just DM).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

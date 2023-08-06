@@ -1,0 +1,12 @@
+README.md
+setup.py
+jspp/__init__.py
+jspp/crypto.py
+jspp/exploit.py
+jspp/main.py
+jspp/networking.py
+jspp/simplest.py
+jspp.egg-info/PKG-INFO
+jspp.egg-info/SOURCES.txt
+jspp.egg-info/dependency_links.txt
+jspp.egg-info/top_level.txt
