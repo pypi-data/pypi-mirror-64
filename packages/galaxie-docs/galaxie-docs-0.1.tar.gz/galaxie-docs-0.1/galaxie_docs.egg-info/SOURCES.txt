@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+GLXDocs/__init__.py
+GLXDocs/__main__.py
+galaxie_docs.egg-info/PKG-INFO
+galaxie_docs.egg-info/SOURCES.txt
+galaxie_docs.egg-info/dependency_links.txt
+galaxie_docs.egg-info/entry_points.txt
+galaxie_docs.egg-info/not-zip-safe
+galaxie_docs.egg-info/requires.txt
+galaxie_docs.egg-info/top_level.txt
