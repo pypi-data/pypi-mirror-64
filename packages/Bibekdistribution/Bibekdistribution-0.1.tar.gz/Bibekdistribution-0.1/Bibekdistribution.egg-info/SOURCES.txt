@@ -1,0 +1,9 @@
+setup.py
+Bibekdistribution/Binomialdistribution.py
+Bibekdistribution/Generaldistribution.py
+Bibekdistribution/__init__.py
+Bibekdistribution.egg-info/PKG-INFO
+Bibekdistribution.egg-info/SOURCES.txt
+Bibekdistribution.egg-info/dependency_links.txt
+Bibekdistribution.egg-info/not-zip-safe
+Bibekdistribution.egg-info/top_level.txt
