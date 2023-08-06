@@ -1,0 +1,6 @@
+include cardholder/img/*.gif
+include medlib/gui/images/*.png
+include medlib/medlibmodel/images/*.png
+include medlib/setup/setup.ini
+include medlib/dict/*.properties
+include medlib/config.ini
