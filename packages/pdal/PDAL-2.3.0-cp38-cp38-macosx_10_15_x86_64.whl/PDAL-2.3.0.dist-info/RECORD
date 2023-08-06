@@ -1,0 +1,13 @@
+PDAL-2.3.0.data/data/lib/libpdal_plugin_filter_python.dylib,sha256=rZDqXGuFN-s6e6tGi9hukmCBCS2WEd5Gj_C3R1mrlX0,316132
+PDAL-2.3.0.data/data/lib/libpdal_plugin_reader_numpy.dylib,sha256=vHQCCHrq4dnP5EZq-QjGWb9MYDcJgVFFYE-ctzu6DHI,251048
+pdal/__init__.py,sha256=Ccwo3ExHbhz4RKzqZjQe3qcg_fvPbE2ct1DFuX8vcAE,513
+pdal/array.py,sha256=viKU_87Ar7wC5xczZQFaJyB_JTFcTxpq94Qx9aQgiN0,192
+pdal/dimension.py,sha256=qEP2coq0cRw3bUgI8WYmnMvTGyUvBC31ou64nIJzqKI,126
+pdal/libpdalpython.cpython-38-darwin.so,sha256=QWbqvwK1ED35lCGfQ673j7aVHSs4TJHXOeIAH3Gtl3A,206400
+pdal/pio.py,sha256=BFi6UpSKR-Jw1u7tcWjGzDh_gdT3F0k1AobQ-th8ZXw,4643
+pdal/pipeline.py,sha256=vCO3cXT6xRO1zuCUBIoyVYwHl7Z2EWh0Ubns4OM3iUI,1140
+PDAL-2.3.0.dist-info/LICENSE.txt,sha256=DkKr7sYVCI2ybAE9xm_ks-GlWaRNQxSqVRQCqSTVkUo,1898
+PDAL-2.3.0.dist-info/METADATA,sha256=II0hAgguLQkWynzaIcZpB-tCaJs25w36pfU41zprd0g,6408
+PDAL-2.3.0.dist-info/WHEEL,sha256=LXYCn2TcqE58NTeHHeRTJCnRW7zFV_KfSTeTZpGqsrY,104
+PDAL-2.3.0.dist-info/top_level.txt,sha256=Zoku1e0BhF5QpgPRpGbMannBRa7JLACFxjdJLRblrig,5
+PDAL-2.3.0.dist-info/RECORD,,
