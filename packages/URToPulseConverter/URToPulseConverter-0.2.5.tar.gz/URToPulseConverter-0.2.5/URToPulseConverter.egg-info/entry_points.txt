@@ -1,0 +1,3 @@
+[console_scripts]
+URToPulse = postprocessor.main:main
+
