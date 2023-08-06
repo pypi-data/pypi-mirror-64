@@ -1,0 +1,3 @@
+[console_scripts]
+valiant=valiant.console:main
+
