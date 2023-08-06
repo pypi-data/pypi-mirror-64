@@ -1,0 +1,7 @@
+setup.py
+landlord/__init__.py
+landlord_ai.egg-info/PKG-INFO
+landlord_ai.egg-info/SOURCES.txt
+landlord_ai.egg-info/dependency_links.txt
+landlord_ai.egg-info/not-zip-safe
+landlord_ai.egg-info/top_level.txt
