@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: gxps
+Version: 0.8.5.dev4
+Summary: XPS analysis
+Home-page: https://github.com/schachmett/gxps
+Maintainer: Simon Fischer
+Maintainer-email: sf@simon-fischer.info
+License: GPLv3
+Keywords: physics,XPS,x-ray photoelectron spectroscopy,chemistry
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: bidict (==0.18.0)
+Requires-Dist: cairocffi (==1.0.0)
+Requires-Dist: lmfit (==0.9.12)
+Requires-Dist: matplotlib (==3.0.2)
+Requires-Dist: more-itertools (==5.0.0)
+Requires-Dist: numpy (==1.16.1)
+Requires-Dist: pycairo (==1.18.0)
+Requires-Dist: scipy (==1.2.0)
+Requires-Dist: pbr (==5.4.4)
+
+XPS analysis
+
+
