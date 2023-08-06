@@ -1,0 +1,10 @@
+setup.py
+mlnd_distributions_rv/Binomialdistribution.py
+mlnd_distributions_rv/Gaussiandistribution.py
+mlnd_distributions_rv/Generaldistribution.py
+mlnd_distributions_rv/__init__.py
+mlnd_distributions_rv.egg-info/PKG-INFO
+mlnd_distributions_rv.egg-info/SOURCES.txt
+mlnd_distributions_rv.egg-info/dependency_links.txt
+mlnd_distributions_rv.egg-info/not-zip-safe
+mlnd_distributions_rv.egg-info/top_level.txt
