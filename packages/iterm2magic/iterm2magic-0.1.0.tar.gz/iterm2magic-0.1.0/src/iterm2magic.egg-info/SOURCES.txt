@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/iterm2magic.egg-info/PKG-INFO
+src/iterm2magic.egg-info/SOURCES.txt
+src/iterm2magic.egg-info/dependency_links.txt
+src/iterm2magic.egg-info/entry_points.txt
+src/iterm2magic.egg-info/requires.txt
+src/iterm2magic.egg-info/top_level.txt
