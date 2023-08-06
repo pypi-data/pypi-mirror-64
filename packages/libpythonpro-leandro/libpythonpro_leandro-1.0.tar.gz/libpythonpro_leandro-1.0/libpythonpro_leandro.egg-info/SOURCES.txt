@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro_leandro/__init__.py
+libpythonpro_leandro/github_api.py
+libpythonpro_leandro.egg-info/PKG-INFO
+libpythonpro_leandro.egg-info/SOURCES.txt
+libpythonpro_leandro.egg-info/dependency_links.txt
+libpythonpro_leandro.egg-info/not-zip-safe
+libpythonpro_leandro.egg-info/requires.txt
+libpythonpro_leandro.egg-info/top_level.txt

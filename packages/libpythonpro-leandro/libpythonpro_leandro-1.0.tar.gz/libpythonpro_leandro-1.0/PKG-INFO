@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: libpythonpro_leandro
+Version: 1.0
+Summary: Módulo para exemplificar construção de projetos Python no curso PyTools
+Home-page: https://github.com/LeandroBP/libpythonpro
+Author: Leandro Batista Pereira
+Author-email: leandrobatistapereira98@gmail.com
+License: GNU AFFERO GENERAL PUBLIC LICENSE
+Description: # libpythonpro
+        
+        MÃ³dulo para exemplificar a construÃ§Ã£o de um projeto Python do curso PyTools
+        
+        Contribuindo via git teste!
+        
+        Link do Curso [Python Pro ] (https://www.python.pro.br/)
+        
+        [![Build Status](https://travis-ci.org/LeandroBP/libpythonpro.svg?branch=master)](https://travis-ci.org/LeandroBP/libpythonpro)
+        [![Updates](https://pyup.io/repos/github/LeandroBP/libpythonpro/shield.svg)](https://pyup.io/repos/github/LeandroBP/libpythonpro/)
+        [![Python 3](https://pyup.io/repos/github/LeandroBP/libpythonpro/python-3-shield.svg)](https://pyup.io/repos/github/LeandroBP/libpythonpro/)
+        
+        Suportada a versÃ£o 3 do Python
+        
+        Para instalar:
+        
+        ``` console
+        python3 -m venv .venv
+        source .venv/bin/activate
+        pip install -r requeriments-dev.txt
+        ```
+        Para conferir a qualidade do cÃ³digo:
+        
+        ``` console
+        flake8
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Pytest
+Description-Content-Type: text/markdown
