@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+DXC_AI_Test/ai.py
+DXC_AI_Test.egg-info/PKG-INFO
+DXC_AI_Test.egg-info/SOURCES.txt
+DXC_AI_Test.egg-info/dependency_links.txt
+DXC_AI_Test.egg-info/entry_points.txt
+DXC_AI_Test.egg-info/requires.txt
+DXC_AI_Test.egg-info/top_level.txt

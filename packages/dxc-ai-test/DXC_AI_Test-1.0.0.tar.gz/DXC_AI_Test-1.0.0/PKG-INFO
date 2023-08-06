@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: DXC_AI_Test
+Version: 1.0.0
+Summary: A Python package to add two numbers.
+Home-page: UNKNOWN
+Author: DXC
+Author-email: pulagamnkr@gmail.com
+License: MIT
+Description: # DXC AI Package
+        
+        A Python package for DXC AI projects .
+        
+        ## Usage
+        
+        DXC AI projects package
+        
+        ```
+        pip install DXC_AI_Test
+        ```
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
