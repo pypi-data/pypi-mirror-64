@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+fs_dlk/__init__.py
+fs_dlk/_dlkfs.py
+fs_dlk/_version.py
+fs_dlk/opener.py
+fs_dlk.egg-info/PKG-INFO
+fs_dlk.egg-info/SOURCES.txt
+fs_dlk.egg-info/dependency_links.txt
+fs_dlk.egg-info/entry_points.txt
+fs_dlk.egg-info/requires.txt
+fs_dlk.egg-info/top_level.txt

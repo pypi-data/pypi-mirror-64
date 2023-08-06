@@ -1,0 +1,99 @@
+Metadata-Version: 1.1
+Name: fs-dlk
+Version: 0.1.3
+Summary: Azure Datalake filesystem for PyFilesystem2
+Home-page: https://github.com/emedgene/fs_dlk
+Author: emedgene
+Author-email: pypi@emedgene.com
+License: MIT
+Download-URL: https://github.com/emedgene/fs_dlk/tarball/0.1.3
+Description: fs\_dlk
+        =======
+        
+        `pyfilesystem2 <https://github.com/PyFilesystem/pyfilesystem2>`_ interface to `Azure Datalake <https://github.com/Azure/azure-data-lake-store-python>`_
+        
+        
+        Installing
+        ----------
+        
+        ::
+        
+            pip install fs-dlk
+        
+        
+        Opening FS Datalake
+        -------------------
+        
+        Authentication with username and password:
+        
+        .. code-block:: python
+        
+            from fs_dlk import DLKFS
+            dlkfs = DLKFS("/path/to/the/remote/dir", username="username", password="password")
+        
+        
+        Authentication with tenant secret:
+        
+        .. code-block:: python
+        
+            from fs_dlk import DLKFS
+            dlkfs = DLKFS("/path/to/the/remote/dir", tenant_id="tenant id", client_id="client id", client_secret="client_secret")
+        
+        
+        Specifying custom store name:
+        
+        .. code-block:: python
+        
+            from fs_dlk import DLKFS
+            dlkfs = DLKFS("/path/to/the/remote/dir", store="store name", **auth_args_here)
+        
+        
+        Authentication with connection strings:
+        ---------------------------------------
+        
+        Username and password auth:
+        
+        .. code-block:: python
+        
+            import fs
+            dlkfs = fs.open_fs("dlk://username:password@/store_name/path/to/remote")
+        
+        
+        Tenant secret auth:
+        
+        .. code-block:: python
+        
+            import fs
+            dlkfs = fs.open_fs("dlk://username:password@tenant-id/store_name/path/to/remote")
+        
+        
+        Downloading files
+        -----------------
+        
+        .. code-block:: python
+        
+            with open("local_file", "wb") as local_file:
+                dlkfs.download("path/to/remote/file", local_file)
+        
+        
+        Uploading files
+        -----------------
+        
+        .. code-block:: python
+        
+            with open("local_file", "wb") as local_file:
+                dlkfs.upload("path/to/remote/file", local_file)
+        
+Keywords: pyfilesystem,Azure,Datalake,dlk
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Filesystems
