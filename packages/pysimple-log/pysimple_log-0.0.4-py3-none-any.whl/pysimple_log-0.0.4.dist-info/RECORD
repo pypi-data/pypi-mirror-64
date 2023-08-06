@@ -1,0 +1,12 @@
+simplelog/__init__.py,sha256=PuYScKkoK2Ril2cCd7qFJIy54HN0171AZ02iRUxEIeI,1192
+simplelog/tests/__init__.py,sha256=39aJTX_4gXsi1glTtPNgL44phkogc7tM4hw74N6C0uU,96
+simplelog/tests/tasks.py,sha256=YaYI_z8vpq4zwDfDthw1aFgzfvtoCVrXnrc1UfeKe1E,862
+simplelog/tests/test_basic.py,sha256=VKbStsl2wnybfF1h3yqLcjMdbdy0Uusmq6WUB9PlLIo,527
+simplelog/tests/test_set_level.py,sha256=jnZtZ8t3sza1lVUf2TIcKOdzZ72WpbXSm7bHDgs6Dpo,1027
+simplelog/utils/__init__.py,sha256=8foJyuJVXWkkKCdgeu2voyElmuVLEB9bQcZqpph2ygI,28
+simplelog/utils/defaults.py,sha256=yuWSGzaqzGg81pigGKQIGtWf85MNXF8fLwBfy8yJOQA,526
+simplelog/utils/logger.py,sha256=jBHERSty-rJlqFRqARry5b6wCC78poYzdspXUsvpJCg,4541
+pysimple_log-0.0.4.dist-info/METADATA,sha256=ZxU7Kf9Ao_hzXXArBpk5dCsAm35G5n-Wr2Bk4X-tZiU,5875
+pysimple_log-0.0.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pysimple_log-0.0.4.dist-info/top_level.txt,sha256=JYe90Lai7fqh0Z6mwonoNkxc8CZn3R2h32h_YR52INw,10
+pysimple_log-0.0.4.dist-info/RECORD,,
