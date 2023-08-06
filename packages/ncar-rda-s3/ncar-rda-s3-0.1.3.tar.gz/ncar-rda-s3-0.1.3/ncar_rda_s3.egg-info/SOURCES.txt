@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ncar_rda_s3.egg-info/PKG-INFO
+ncar_rda_s3.egg-info/SOURCES.txt
+ncar_rda_s3.egg-info/dependency_links.txt
+ncar_rda_s3.egg-info/requires.txt
+ncar_rda_s3.egg-info/top_level.txt
+rda_s3/__init__.py
+rda_s3/rda_s3.py
