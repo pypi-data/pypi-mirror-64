@@ -1,0 +1,147 @@
+Metadata-Version: 2.0
+Name: django-cryptolock
+Version: 0.1.0
+Summary: Django authentication using cryptocurrency wallets
+Home-page: https://github.com/dethos/django-cryptolock
+Author: Gonçalo Valério
+Author-email: gon@ovalerio.net
+License: MIT
+Keywords: django-cryptolock
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.2
+Classifier: Framework :: Django :: 3.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: django (>=2.2)
+Requires-Dist: django-model-utils (>=2.0)
+Requires-Dist: monero (>=0.6)
+Requires-Dist: python-monerorpc (>=0.5.5)
+Requires-Dist: pybitid (>=0.0.4)
+
+=============================
+Django-Cryptolock
+=============================
+
+.. image:: https://badge.fury.io/py/django-cryptolock.svg
+    :target: https://badge.fury.io/py/django-cryptolock
+
+.. image:: https://travis-ci.org/dethos/django-cryptolock.svg?branch=master
+    :target: https://travis-ci.org/dethos/django-cryptolock
+
+.. image:: https://coveralls.io/repos/github/dethos/django-cryptolock/badge.svg
+    :target: https://coveralls.io/github/dethos/django-cryptolock
+
+Authenticatio using cryptocurrency wallets for Django projects
+
+This package provided a django app containing a set of utilities to make easier to
+implement the BitId and Monero Cryptolock authentication "protocols".
+
+Future releases might include other cryptocurrencies but for the being
+(until we reach some stability) the focus will continue BTC and XMR.
+
+**DISCLAIMER:** This package is still in an early stage of development. It isn't meant to be
+used on any production scenario yet (in other words, only test projects for now).
+
+Documentation
+-------------
+
+The full documentation is at https://django-cryptolock.readthedocs.io.
+
+Quickstart
+----------
+
+1. Install Django-Cryptolock::
+
+    pip install django-cryptolock
+
+2. Add it to your `INSTALLED_APPS`:
+
+.. code-block:: python
+
+    INSTALLED_APPS = (
+        ...
+        'django_cryptolock.apps.DjangoCryptolockConfig',
+        ...
+    )
+
+3. Migrate your database::
+
+    python manage.py migrate
+
+
+4. Add the following settings to your project for the Monero Backend:
+
+.. code-block:: python
+
+    AUTHENTICATION_BACKENDS = [
+        "django_cryptolock.backends.MoneroAddressBackend",
+        ...
+    ]
+    DJCL_MONERO_NETWORK = "mainnet"
+    DJCL_MONERO_WALLET_RPC_PROTOCOL = "<http_or_https>"
+    DJCL_MONERO_WALLET_RPC_HOST = "<wallet_rpc_host>:<port>"
+    DJCL_MONERO_WALLET_RPC_USER = "<user>"
+    DJCL_MONERO_WALLET_RPC_PASS = "<password>"
+
+5. Add Django-Cryptolock's URL patterns:
+
+.. code-block:: python
+
+    from django.conf.urls import url
+
+
+    urlpatterns = [
+        ...
+        url(r"^auth/", include("django_cryptolock.urls", namespace="django_cryptolock")),
+        ...
+    ]
+
+More detailed information can be found in the documentation.
+
+Credits
+-------
+
+Tools used in rendering this package:
+
+*  Cookiecutter_
+*  `cookiecutter-djangopackage`_
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`cookiecutter-djangopackage`: https://github.com/pydanny/cookiecutter-djangopackage
+
+
+
+
+History
+-------
+
+0.1.0 (2020-03-31)
+++++++++++++++++++
+
+* Add validation for existing addresses on the signup form
+* Add rudimentary BitId support
+* Renamed the base auth views to generic names
+
+0.0.2 (2020-01-08)
+++++++++++++++++++
+
+* A default ``urls.py`` is provided by the package so can work "out-of-the-box".
+* Default location for templates moved to ``django_cryptolock`` folder.
+* Update quickstart guide.
+* Update instructions to contribute to the project.
+* Add ``DJCL`` namespace to all related settings.
+* MoneroAddressBackend is now executed when more parameters are added to the
+  ``authenticate`` function.
+
+0.0.1 (2019-11-25)
+++++++++++++++++++
+
+* First release on PyPI.
+
+
