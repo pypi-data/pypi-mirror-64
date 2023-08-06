@@ -1,0 +1,8 @@
+cbayesian.cpython-37m-darwin.so
+fpls_warp.cpython-37m-darwin.so
+mlogit_warp.cpython-37m-darwin.so
+oclogit_warp.cpython-37m-darwin.so
+ocmlogit_warp.cpython-37m-darwin.so
+optimum_reparamN2.cpython-37m-darwin.so
+optimum_reparam_N.cpython-37m-darwin.so
+optimum_reparam_Ng.cpython-37m-darwin.so
