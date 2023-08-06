@@ -1,0 +1,8 @@
+protobuf
+pyyaml
+json-merge-patch
+jsonpatch
+opentelemetry-sdk==0.5b0
+
+[sdk]
+grpcio-tools
