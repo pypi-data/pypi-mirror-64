@@ -1,0 +1,3 @@
+requests
+avro-python3
+confluent_kafka

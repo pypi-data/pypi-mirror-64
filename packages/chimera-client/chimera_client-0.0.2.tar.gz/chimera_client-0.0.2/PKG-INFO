@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: chimera_client
+Version: 0.0.2
+Summary: Client for communication using chimera channels.
+Home-page: https://gitlab.inspr.com/chimera/client
+License: UNKNOWN
+Description: # Installation
+        
+            pip3 install chimera_client
+        
+        # Usage
+        
+        Bellow are some examples of the basic usage.
+        
+        ## Reader
+        ```python
+        
+            from chimera_client.reader import Reader
+            
+            # Read a message from specific channel
+            reader = Reader(False)
+            message = reader.readMessage('my_channel')
+            
+            # or
+            
+            # Read a message comming from any allowed channel
+            reader = Reader()
+            message = reader.readMessage()
+            
+            #### ... process the message read ... ####
+            
+            # Commit the changes.
+            # It means that Reader processed the messages
+            # and those will never be read again.
+            reader.commit()
+            
+            # or changes in a specific channel
+            reader.commit('my_channel')
+            
+            # close the Reader
+            reader.close()
+        ```
+        
+        ## Writer
+        ```python
+            from chimera_client.writer import Writer
+            
+            # message
+            phone_info = {
+                "name": "User1",
+                "country": "Brazil",
+                "ddi": 55,
+                "ddd": 21,
+                "phone": 999887766
+            }
+            
+            # write the message in the phone_information_channel channel
+            writer = Writer()
+            writer.writeMessage(phone_info, 'phone_information_channe;')
+        ```
+        
+        # Documentation
+        
+        Install `pydoc`
+        ```bash
+            pip3 install pdoc3
+        ```
+        
+        View doc in terminal:
+        ```bash
+            pydoc3 chimera_client
+            pydoc3 chimera_client.schema.py
+        ```
+        View doc in the browser
+        ```bash
+            # start the pydoc3 server
+            pydoc3 -b
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
