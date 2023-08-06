@@ -1,0 +1,1 @@
+Deprecated, go for official version https://pypi.org/project/opentelemetry-azure-monitor/.
