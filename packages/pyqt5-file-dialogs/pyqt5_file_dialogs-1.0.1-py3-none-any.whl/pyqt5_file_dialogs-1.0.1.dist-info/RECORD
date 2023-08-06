@@ -1,0 +1,9 @@
+pyqt5filedialogs/__init__.py,sha256=ggaDDNmHDhJAuwOmZkZ9WA8-dgUCxcKYinG2WXgA71U,230
+pyqt5filedialogs/_filedialog.py,sha256=RhHE_VKq0ziHg6xkuyLCesFMkCfMIUND5Qmo7F1rnWw,3821
+qt5filedialog/__init__.py,sha256=JgndronrPbFiuBu_NwOP2S1AYe9Fv89n6ZDr9QW2nto,121
+qt5filedialog/_filedialog.py,sha256=RhHE_VKq0ziHg6xkuyLCesFMkCfMIUND5Qmo7F1rnWw,3821
+pyqt5_file_dialogs-1.0.1.dist-info/LICENSE.txt,sha256=iVHjkCAmXs0Q7YwXmsGVZTEt9bTgVDpiSpUGEIRNwvI,1075
+pyqt5_file_dialogs-1.0.1.dist-info/METADATA,sha256=k9htmAF3VTKSAQxdAXFa5MtwFGy9XGOvLtTXOZM-G6Q,2023
+pyqt5_file_dialogs-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyqt5_file_dialogs-1.0.1.dist-info/top_level.txt,sha256=-9nmv2w8vrGbY0OsMNxPLYguA5vPdpiOOS74fDqizNE,17
+pyqt5_file_dialogs-1.0.1.dist-info/RECORD,,
