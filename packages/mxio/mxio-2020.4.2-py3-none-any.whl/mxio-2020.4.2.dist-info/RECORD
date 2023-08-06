@@ -1,0 +1,17 @@
+mxio/__init__.py,sha256=1eOrzl2xYSHAEbgHjfdgIrGV_kAQSsXbe9gYZakM4IQ,1760
+mxio/common.py,sha256=CmoJevVi4ASZcj76DzjCkeTMNHxSzMRyyzmtrBlrIZI,136
+mxio/log.py,sha256=3PLlgp5OspVhiAo7UhRABhprbfHvFxT3YyFuEhlTu-A,2626
+mxio/parser.py,sha256=v1JyyXobvtczjI_hj3Uf8oPWYpwXXWyiy5XAAuCNhgA,4825
+mxio/utils.py,sha256=SaM5RTInwGA76T7DNpcNWZZSio6jE7m8ZSBGca0dFzg,2239
+mxio/data/PILATUS_1.2.yml,sha256=uZ6g3lUPDv4CGzWDQbHMn-mLgGyvsBs4KNXpFNxf90w,611
+mxio/data/SLS_1.0.yml,sha256=T7ZuG5PLIyhjnNkZXSvHlKWENUIelSyAPXEBCaoDKHc,626
+mxio/formats/__init__.py,sha256=pKvU52ZxgicmFNvbq_zu4q-7a3zRq9HS9KhWGabR2Xk,487
+mxio/formats/cbf.py,sha256=tJ2l1wCkxUqOcyBMPygei-FMh4ixraPtDLZUdeqmDB4,16174
+mxio/formats/hdf5.py,sha256=IAK5kX3fpuhqRGIH4H0xQJrSxt6P9wRgByC_o2sqFh8,10425
+mxio/formats/marccd.py,sha256=P6d6oF3dvg_n_c4EY0bwRB8bJMpEDb3GTe5x8gD_Gps,5606
+mxio/formats/smv.py,sha256=qHM2TI7HKWUqp9t4K1fOpNJh99sfPx1dFPLlf9q5Mls,6684
+mxio-2020.4.2.dist-info/LICENSE,sha256=yrW1bBFllJul7T4dGvmh92joPL2JFiuWZkIIvsR1BZI,1083
+mxio-2020.4.2.dist-info/METADATA,sha256=bqMtHNb5SLqWZa-FqazNppfDdw3wtyR6hYp2ZU_U6Ro,789
+mxio-2020.4.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+mxio-2020.4.2.dist-info/top_level.txt,sha256=bCxu_A4Hgo7MaLyVoYNC8ohNQebecSkZ3M_WnFtHrIQ,5
+mxio-2020.4.2.dist-info/RECORD,,
