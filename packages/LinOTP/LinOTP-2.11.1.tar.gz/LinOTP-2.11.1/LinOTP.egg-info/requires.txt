@@ -1,0 +1,17 @@
+PasteScript<=1.7.5
+Pygments<2.6.0
+Pylons>=0.9.7
+SQLAlchemy>=0.6
+WebOb
+configobj>=4.6.0
+docutils>=0.4
+httplib2
+netaddr
+passlib
+pycryptodomex>=3.4
+pyrad>=1.1
+pysodium>=0.6.8
+python-ldap
+qrcode>=2.4
+requests
+simplejson>=2.0
