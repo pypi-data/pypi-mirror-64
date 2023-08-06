@@ -1,0 +1,9 @@
+README.md
+setup.py
+QazaqstanPhoneNumberParser.egg-info/PKG-INFO
+QazaqstanPhoneNumberParser.egg-info/SOURCES.txt
+QazaqstanPhoneNumberParser.egg-info/dependency_links.txt
+QazaqstanPhoneNumberParser.egg-info/top_level.txt
+src/__init__.py
+src/parser.py
+src/test.py
