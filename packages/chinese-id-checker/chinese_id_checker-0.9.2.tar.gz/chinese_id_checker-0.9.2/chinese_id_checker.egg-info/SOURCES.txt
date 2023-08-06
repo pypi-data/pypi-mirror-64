@@ -1,0 +1,15 @@
+README.md
+setup.py
+chinese_id_checker/__init__.py
+chinese_id_checker.egg-info/PKG-INFO
+chinese_id_checker.egg-info/SOURCES.txt
+chinese_id_checker.egg-info/dependency_links.txt
+chinese_id_checker.egg-info/not-zip-safe
+chinese_id_checker.egg-info/top_level.txt
+chinese_id_checker/checker/__init__.py
+chinese_id_checker/checker/chinese_id_checker.py
+chinese_id_checker/checker/exceptions.py
+chinese_id_checker/checker/location.py
+chinese_id_checker/test/__init__.py
+chinese_id_checker/test/test_chinese_id_checker.py
+chinese_id_checker/test/test_location.py
