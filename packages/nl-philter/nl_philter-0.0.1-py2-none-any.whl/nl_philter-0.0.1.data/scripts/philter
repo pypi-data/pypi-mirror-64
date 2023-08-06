@@ -1,0 +1,130 @@
+#!python
+import sys
+import os
+import argparse
+
+from philter.commands import cmd_gen_thald, cmd_thald_to_clut, cmd_cube
+
+DEFAULT_Scale = 8
+DEFAULT_Size = 5
+DEFAULT_Reps = 3
+DEFAULT_Pad = 0.4
+
+
+def parse_args(exec_path: str, args: list):
+    name = os.path.basename(exec_path)
+    parser = argparse.ArgumentParser(
+        usage="%s [cmd]" % name,
+        description="A CLI toolkit for creating LUTss",
+    )
+
+    cmd_p = parser.add_subparsers(dest="cmd", title="subcommands")
+
+    # ------------------------------------------------
+    cmd = cmd_p.add_parser(
+        "gen",
+        help="Generate a fotified identity THALD image (somewhat immune to"
+             " compression artifacts) which can be used to capture color"
+             " transformations."
+    )
+
+    cmd.add_argument(
+        "-s", "--size", metavar="S", dest="gen_size",
+        help="Set size of the target hald."
+             " The HALD column number, i.e how many color columns per HALD sample."
+             " (NOTE: Photoshop will only reliably work with 5 which is the default)",
+        type=int, default=DEFAULT_Size,
+    )
+    cmd.add_argument(
+        "-x", "--scale", metavar="S", dest="gen_scale",
+        help="Set scale multiplier of the target hald.",
+        type=int, default=DEFAULT_Scale,
+    )
+    cmd.add_argument(
+        "-r", "--reps", metavar="N", dest="gen_reps",
+        help="Set repeat grid size NxN.",
+        type=int, default=DEFAULT_Reps,
+    )
+
+    cmd.add_argument(
+        metavar="NAME", dest="gen_name",
+        help="Set name for the output file.",
+        nargs="?", type=str, default="hald_identity",
+    )
+
+    # ------------------------------------------------
+    cmd = cmd_p.add_parser(
+        "clut",
+        help="Generate CLUT image and CUBE map file from a fortified THALD image."
+    )
+
+    cmd.add_argument(
+        "-s", "--size", metavar="S", dest="clut_size",
+        help="("
+             "Size argument is ignored for this command as it is not needed,"
+             " this argument is here to reassure the user that this is fine"
+             ")",
+        type=int, default=DEFAULT_Size,
+    )
+    cmd.add_argument(
+        "-x", "--scale", metavar="S", dest="clut_scale",
+        help="Set scale multiplier of the hald.",
+        type=int, default=DEFAULT_Scale,
+    )
+    cmd.add_argument(
+        "-r", "--reps", metavar="N", dest="clut_reps",
+        help="Set repeat grid size NxN.",
+        type=int, default=DEFAULT_Reps,
+    )
+
+    cmd.add_argument(
+        metavar="THALD", dest="clut_iname",
+        help="Path to the transformed hald.",
+        type=str,
+    )
+    cmd.add_argument(
+        metavar="NAME", dest="clut_name",
+        help="Set name for the output file.",
+        nargs="?", type=str, default="",
+    )
+
+    # ------------------------------------------------
+    cmd = cmd_p.add_parser(
+        "cube",
+        help="Generate CUBE file from a non fortified HALD image."
+    )
+    cmd.add_argument(
+        metavar="THALD", dest="cube_iname",
+        help="Path to the clut hald.",
+        type=str,
+    )
+    cmd.add_argument(
+        metavar="NAME", dest="cube_name",
+        help="Set name for the output file.",
+        nargs="?", type=str, default="",
+    )
+
+    return parser, parser.parse_args(args)
+
+
+def main(args: list):
+    padding = DEFAULT_Pad
+
+    p, a = parse_args(args[0], args[1:])
+    if a.cmd == "gen":
+        cmd_gen_thald(
+            a.gen_size,
+            a.gen_scale, padding, a.gen_reps,
+            a.gen_name
+        )
+    elif a.cmd == "clut":
+        cmd_thald_to_clut(
+            a.clut_scale, padding, a.clut_reps,
+            a.clut_iname, a.clut_name
+        )
+    elif a.cmd == "cube":
+        cmd_cube(a.cube_iname, a.cube_name)
+
+
+if __name__ == '__main__':
+    main(sys.argv)

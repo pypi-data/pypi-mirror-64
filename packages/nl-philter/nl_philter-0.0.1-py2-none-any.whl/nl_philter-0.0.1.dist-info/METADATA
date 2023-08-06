@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nl-philter
+Version: 0.0.1
+Summary: cLUT/Cube toolkit for recording color transformations.
+Home-page: UNKNOWN
+Author: nonlogicaldev
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: Pillow (>=6.2.0)
+
+UNKNOWN
+
+
