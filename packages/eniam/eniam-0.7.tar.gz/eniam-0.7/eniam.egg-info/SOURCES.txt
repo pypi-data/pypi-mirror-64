@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+uruchamianie.txt
+eniam.egg-info/PKG-INFO
+eniam.egg-info/SOURCES.txt
+eniam.egg-info/dependency_links.txt
+eniam.egg-info/top_level.txt
+scripts/.DS_Store
+scripts/eniam.py
