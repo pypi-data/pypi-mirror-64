@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+napari_mat_images.py
+pyproject.toml
+setup.py
+napari_mat_images.egg-info/PKG-INFO
+napari_mat_images.egg-info/SOURCES.txt
+napari_mat_images.egg-info/dependency_links.txt
+napari_mat_images.egg-info/entry_points.txt
+napari_mat_images.egg-info/requires.txt
+napari_mat_images.egg-info/top_level.txt
