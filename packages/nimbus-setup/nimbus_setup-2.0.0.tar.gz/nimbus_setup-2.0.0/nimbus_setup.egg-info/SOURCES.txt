@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+setup.sh
+utils.py
+nimbus_setup/__init__.py
+nimbus_setup/utils.py
+nimbus_setup.egg-info/PKG-INFO
+nimbus_setup.egg-info/SOURCES.txt
+nimbus_setup.egg-info/dependency_links.txt
+nimbus_setup.egg-info/not-zip-safe
+nimbus_setup.egg-info/requires.txt
+nimbus_setup.egg-info/top_level.txt

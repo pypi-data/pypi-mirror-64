@@ -1,0 +1,5 @@
+include README.md
+recursive-include nimbus_setup *.po
+recursive-include nimbus_setup *.mo
+global-exclude __pycache__
+global-exclude *.py[co]
