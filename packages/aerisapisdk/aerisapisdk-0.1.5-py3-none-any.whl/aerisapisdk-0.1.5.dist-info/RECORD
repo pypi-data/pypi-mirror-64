@@ -1,0 +1,13 @@
+aerisapisdk/__init__.py,sha256=E3WjeEe4txC3X0UpwYRMR_Zsd_r6UccTeqGA_VEtQjE,613
+aerisapisdk/aeradminsdk.py,sha256=b4BB1qWuKqyCa0Czd0gNqP4z7L-V1Q173ie0k9ET0Ms,4775
+aerisapisdk/aerframesdk.py,sha256=q1m8BARz2IXYmJ9SAcNZ52ulraN2YI8deOyd3ALaXag,29575
+aerisapisdk/aerisconfig.py,sha256=X4m6Kx9da-Ooa0lgFEOIeMwflAp7NVP-ZgR0bFH8SxQ,3147
+aerisapisdk/aerisutils.py,sha256=cm7ktW100Tww9gbCfSQAG66wl_YJ7W0vPFt-YrNUwyE,802
+aerisapisdk/aertrafficsdk.py,sha256=jm9l_jzcDLQgEhyMt58ZryrZuFUAwyqCsui7cizJFtQ,2149
+aerisapisdk/cli.py,sha256=HtBdU8rDba_PaOOpRpY_Vqz6c2OR3lhpqV2pJfPyIvk,20844
+aerisapisdk/exceptions.py,sha256=r1OR3rQx4SV8jwAAbUzco2qIAEvZkdZGlfVCrq0LzIM,1298
+aerisapisdk-0.1.5.dist-info/entry_points.txt,sha256=jVa9VLMAmpnoGfW4gOhsZyLGmcvv8m6A8_WbEQiugbc,49
+aerisapisdk-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aerisapisdk-0.1.5.dist-info/WHEEL,sha256=SrtnPGVTMeYWttls9xnWA01eUhCZ3ufFdJUYb1J3r-U,83
+aerisapisdk-0.1.5.dist-info/METADATA,sha256=hczduyTNR1D0eUiwhoj6zU8fkPfZOoxrXaQh21dhWAE,1711
+aerisapisdk-0.1.5.dist-info/RECORD,,
