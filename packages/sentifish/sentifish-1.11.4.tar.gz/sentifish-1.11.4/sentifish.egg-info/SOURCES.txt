@@ -1,0 +1,8 @@
+README.rst
+setup.py
+sentifish/__init__.py
+sentifish.egg-info/PKG-INFO
+sentifish.egg-info/SOURCES.txt
+sentifish.egg-info/dependency_links.txt
+sentifish.egg-info/requires.txt
+sentifish.egg-info/top_level.txt
