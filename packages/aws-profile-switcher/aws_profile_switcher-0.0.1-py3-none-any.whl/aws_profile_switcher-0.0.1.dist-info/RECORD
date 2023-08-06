@@ -1,0 +1,9 @@
+aws_profile_switcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aws_profile_switcher/_version.py,sha256=M4etmfMQJ85dW-Bzs3Zhb7jL7EGaiyp3NGHdsGb8SHw,50
+aws_profile_switcher/run.py,sha256=aB7i5MPwqE9ofCsBbDpVLeEoL2L4daoMGC7BWbXzj0U,4399
+aws_profile_switcher-0.0.1.dist-info/LICENSE,sha256=OYQVBo0IfV273o0FlT1eaRI9A-_2LCbTs8WD1-a4Pp0,1068
+aws_profile_switcher-0.0.1.dist-info/METADATA,sha256=dn8iu1UjDVmcneDC7jlGaCH6TSbwvs435K-KTxfK3vg,1554
+aws_profile_switcher-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aws_profile_switcher-0.0.1.dist-info/entry_points.txt,sha256=ahtKtYDDW_0qizF9MopsaV-s5zbwrAAcDIY4UbaBRNA,72
+aws_profile_switcher-0.0.1.dist-info/top_level.txt,sha256=K6L27jhRYlVGc-RV-NliufyUmtKh8U9bqRCDrxuUNic,21
+aws_profile_switcher-0.0.1.dist-info/RECORD,,
