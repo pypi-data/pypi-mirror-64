@@ -1,0 +1,10 @@
+canoser>=0.7.11
+libra-core>=0.8.1
+protobuf
+grpcio
+more-itertools
+PyNaCl
+pygments
+requests
+toml
+mnemonic
