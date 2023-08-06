@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Multiasistencia xmlns="http://www.diverza.com/ns/addenda/multiasistencia/1" xsi:schemaLocation="http://www.diverza.com/ns/addenda/multiasistencia/1 schema.xsd" Version="1.0" Tipo="Asistencia" Proveedor="{{ clave_proveedor }}" Siniestro="{{ no_siniestro }}" SubTotal="{{ importe}}" IVA="{{ iva }}" IVARet="{{ retencion_iva }}" ISRRet="{{ retencion_isr }}" Total="{{ total }}" OrdenPago="{{ orden_pago }}" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  
+  {#<Cristales Deducible="1" CodigoNAGS="1"/>#}
+  {#<Honorarios>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+  {#</Honorarios>#}
+
+  {#<Gruas>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+  {#</Gruas>#}
+
+  {#<Asistencia>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+    {#<Servicio OrdenDePagoHonorarios="1" Costo="1"/>#}
+  {#</Asistencia>#}
+
+  {#<Reparaciones NumValuacionInicial="1" Costo="1">#}
+    {#<ValeRefacciones Numero="1" Costo="1"/>#}
+    {#<ValeRefacciones Numero="1" Costo="1"/>#}
+    {#<ValeComplementoMO Numero="1" Costo="1"/>#}
+    {#<ValeComplementoMO Numero="1" Costo="1"/>#}
+  {#</Reparaciones>#}
+
+  {#<GMedicos PaseMedico="1" Costo="1"/>-->#}
+</Multiasistencia>
