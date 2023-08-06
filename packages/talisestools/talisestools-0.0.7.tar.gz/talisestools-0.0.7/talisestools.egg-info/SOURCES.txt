@@ -1,0 +1,8 @@
+README.md
+setup.py
+talisestools/__init__.py
+talisestools.egg-info/PKG-INFO
+talisestools.egg-info/SOURCES.txt
+talisestools.egg-info/dependency_links.txt
+talisestools.egg-info/requires.txt
+talisestools.egg-info/top_level.txt
