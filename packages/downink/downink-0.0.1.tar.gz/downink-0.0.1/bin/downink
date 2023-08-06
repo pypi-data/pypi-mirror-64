@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+import argparse
+
+from .. import downink
+
+NAME = 'downink'
+VERSION = '0.0.1a'
+
+if __name__ == '__main__':
+
+    parser = argparse.ArgumentParser(
+        prog=NAME,
+        description='download files from the internet by filtering from class names and regex',
+    )
+
+    parser.add_argument('url', help='url to crawl and download things from')
+    parser.add_argument(
+        '-c',
+        nargs='+',
+        dest='classes',
+        help='classes to identify anchor tags to download resources from',
+    )
+    parser.add_argument(
+        '-e',
+        nargs='+',
+        dest='expressions',
+        help='regular expression to search anchor tags'
+    )
+    parser.add_argument(
+        '-v',
+        '--version',
+        dest='version',
+        action='version',
+        version='%(prog)s {VERSION}'.format(VERSION=VERSION),
+    )
+
+    args = parser.parse_args()
+
+    downink.Downink(args.url, args.classes, args.expressions)

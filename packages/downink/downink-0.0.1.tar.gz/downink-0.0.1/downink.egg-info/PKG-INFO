@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: downink
+Version: 0.0.1
+Summary: Download resources from the internet with a single command.
+Home-page: http://github.com/mentix02/downink
+Author: mentix02
+Author-email: manan.yadav02@gmail.com
+License: MIT
+Description: # downink
+        
+        Download resources from the internet with a single command.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
