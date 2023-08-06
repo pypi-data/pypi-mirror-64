@@ -1,0 +1,8 @@
+mathparse
+nltk
+pint>=0.8.1
+python-dateutil<2.8,>=2.7
+pyyaml
+spacy
+sqlalchemy
+pytz
