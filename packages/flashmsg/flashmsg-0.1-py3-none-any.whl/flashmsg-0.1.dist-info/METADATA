@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flashmsg
+Version: 0.1
+Summary: A fancy print
+Home-page: https://github.com/baeriswyld/flash_msg
+Author: Daniel C. Baeriswyl
+Author-email: daniel@magic-carpet.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# flash_msg
+
+
