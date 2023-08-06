@@ -1,0 +1,12 @@
+vokativ/__init__.py,sha256=CgLElxUGveoo4_w-_TCbkPnDdKOLejnedl7iqbQ-mi0,57
+vokativ/vokativ.py,sha256=4RLxHUwyzA3e7AZA-t9Ld4ipdoat-dsiEIKsPyKfsFo,2893
+vokativ/data/man_suffixes,sha256=GLgj0laTksVn4Efx9FUnIviJZ2tHMys7u1CegeaKOKs,9132
+vokativ/data/man_vs_woman_suffixes,sha256=WKWNLnDBai2J9Wy8K0e4JOWBspeuxV3wJeJnR25Rjm4,9507
+vokativ/data/woman_first_vs_last_name_suffixes,sha256=XumS9wqllBPDgEWUdmB-6ngoIFubgWmF4OBvXEj0Vp4,1198
+vokativ/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vokativ/tests/all.py,sha256=iH6StUhPzZoQJDhPZlGAMZIXvtIllGZ6cyo9cO_QvfU,2563
+vokativ-1.2.1.dist-info/LICENSE,sha256=AaQzwJF6Dnzl690kZkA0nfkZ-dPDlE1YYz8ib5PBqiE,1087
+vokativ-1.2.1.dist-info/METADATA,sha256=MKNQlH4WiFAg8z3-ifmzK6qF1HHBcAGgQNGwl5chmNc,3048
+vokativ-1.2.1.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+vokativ-1.2.1.dist-info/top_level.txt,sha256=StLBRbgGsuQ2UmaHG3tr8S7cojL95kOZq8Uizlcp8ac,8
+vokativ-1.2.1.dist-info/RECORD,,
