@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: makinage
+Version: 0.1.0
+Summary: Reactive data science
+Home-page: https://github.com/maki-nage/makinage.git
+Author: Romain Picard
+Author-email: romain.picard@oakbits.com
+License: MIT
+Project-URL: Documentation, https://makinage.readthedocs.io
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
