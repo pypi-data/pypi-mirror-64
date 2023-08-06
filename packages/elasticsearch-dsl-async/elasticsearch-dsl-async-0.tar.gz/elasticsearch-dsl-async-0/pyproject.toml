@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "elasticsearch_dsl_async"
+dist-name = "elasticsearch-dsl-async"
+author = "Seth Michael Larson"
+author-email = "seth.larson@elastic.co"
+home-page = "https://github.com/elastic/elasticsearch-dsl-py"
+classifiers = ["License :: OSI Approved :: Apache Software License"]
