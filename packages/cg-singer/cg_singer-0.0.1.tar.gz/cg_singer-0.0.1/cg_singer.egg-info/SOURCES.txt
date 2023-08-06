@@ -1,0 +1,7 @@
+README.md
+setup.py
+cg_singer/__init__.py
+cg_singer.egg-info/PKG-INFO
+cg_singer.egg-info/SOURCES.txt
+cg_singer.egg-info/dependency_links.txt
+cg_singer.egg-info/top_level.txt
