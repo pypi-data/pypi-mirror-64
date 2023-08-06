@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: autopreprocessing
+Version: 1.04-beta
+Summary: Easy way to data preprocessing in python for machine learning and data science!
+Home-page: https://github.com/harunshimanto/autopreprocessing
+Author: Harun-Ur-Rashid
+Author-email: harunspeedy1995@gmail.com
+License: BSD 3-Clause License
+Download-URL: https://github.com/harunshimanto/autopreprocessing/archive/v_1.04-beta.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering
