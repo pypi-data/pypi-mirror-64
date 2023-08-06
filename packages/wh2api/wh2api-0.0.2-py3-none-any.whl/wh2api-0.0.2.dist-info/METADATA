@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wh2api
+Version: 0.0.2
+Summary: python sdk for wormhole api
+Home-page: https://github.com/wfjo852/wh_api_md.git
+Author: C2monster
+Author-email: contact@c2monster.com
+License: UNKNOWN
+Keywords: wormhole,sdk,wh_api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+UNKNOWN
+
+
