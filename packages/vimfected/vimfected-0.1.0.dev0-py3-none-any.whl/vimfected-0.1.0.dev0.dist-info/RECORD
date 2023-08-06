@@ -1,0 +1,15 @@
+vimfected/__init__.py,sha256=_8UaSv1P2I8uuZFdr4PjErdyoaMoxa7cvwmN4kKPcVU,76
+vimfected/__main__.py,sha256=sGjZbKIjAJwUECQ7jBLaCGDxA3qoXjk076StDh9Q5CY,34
+vimfected/game.py,sha256=irtZykR0l6skOhKlfhzrw_l2mw1JIjkHYkRRdZP20Bg,1058
+vimfected/locals.py,sha256=yElsVSb6G2x8zpAh1qU17OHPhUTsSx5-3IdAwuO0E2g,39
+vimfected/player.py,sha256=JQkiCEUfYFkm4OBI-dbXjcuhniw9zSCvofFTeiD53CE,1465
+vimfected/sprites.py,sha256=Cnhs8CmJKgNwDnoIkJRlujtmDlJ1WKvEK9GRWKkMr_E,778
+vimfected/utils.py,sha256=XsTNe4R5gn6mQWn6Tr0Sc30JqT9kkiiLXHj8f5pj4dc,483
+vimfected/assets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vimfected/assets/__pycache__/__init__.cpython-38.pyc,sha256=iYA_aAz-UyeSvtdj9xJY8giEBJlP3Qox1tmYiLxRmCE,160
+vimfected-0.1.0.dev0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+vimfected-0.1.0.dev0.dist-info/METADATA,sha256=_isEZO3Ll_dITYp33wp9V-kYcrSCp6SvZeOame91th4,1074
+vimfected-0.1.0.dev0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+vimfected-0.1.0.dev0.dist-info/entry_points.txt,sha256=yNfJLpls-3QDGzRTkrATPXsNowofDxuwAR7PzSL6K4E,46
+vimfected-0.1.0.dev0.dist-info/top_level.txt,sha256=LtwfYMmRGcH-ZO9MKv9vySlCt-oMkpXflgMyqfFUUvw,10
+vimfected-0.1.0.dev0.dist-info/RECORD,,
