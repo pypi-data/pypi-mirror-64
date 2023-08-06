@@ -1,0 +1,12 @@
+README.md
+setup.py
+pytorch_ranger/__init__.py
+pytorch_ranger/ranger.py
+pytorch_ranger/ranger913A.py
+pytorch_ranger/rangerqh.py
+pytorch_ranger/types.py
+pytorch_ranger.egg-info/PKG-INFO
+pytorch_ranger.egg-info/SOURCES.txt
+pytorch_ranger.egg-info/dependency_links.txt
+pytorch_ranger.egg-info/requires.txt
+pytorch_ranger.egg-info/top_level.txt
