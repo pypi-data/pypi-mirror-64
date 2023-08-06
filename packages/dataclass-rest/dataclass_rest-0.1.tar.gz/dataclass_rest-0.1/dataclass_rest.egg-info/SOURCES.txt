@@ -1,0 +1,15 @@
+README.md
+setup.py
+dataclass_rest/__init__.py
+dataclass_rest/async_base.py
+dataclass_rest/base.py
+dataclass_rest/common.py
+dataclass_rest/decorators.py
+dataclass_rest/errors.py
+dataclass_rest/py.typed
+dataclass_rest/sync_base.py
+dataclass_rest.egg-info/PKG-INFO
+dataclass_rest.egg-info/SOURCES.txt
+dataclass_rest.egg-info/dependency_links.txt
+dataclass_rest.egg-info/requires.txt
+dataclass_rest.egg-info/top_level.txt
