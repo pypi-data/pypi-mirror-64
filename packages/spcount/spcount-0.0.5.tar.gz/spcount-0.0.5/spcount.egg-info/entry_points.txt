@@ -1,0 +1,3 @@
+[console_scripts]
+spcount = spcount.__main__:main
+

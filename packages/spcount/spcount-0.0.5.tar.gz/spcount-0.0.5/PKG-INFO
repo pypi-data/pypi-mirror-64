@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: spcount
+Version: 0.0.5
+Summary: Multiple genomes read count
+Home-page: https://github.com/shengqh/spcount
+Author: Quanhu Sheng
+Author-email: quanhu.sheng.1@vumc.org
+License: UNKNOWN
+Download-URL: https://github.com/shengqh/spcount/archive/v0.0.5.tar.gz
+Description: # spcount
+        
+        This package is used to map short reads to multiple genomes with perfect match and report only once for each category.
+        
+        # Prerequisites
+        
+        Install bowtie
+        
+        ```
+        BOWTIE_VERSION="1.2.3"
+        cd ~; \
+          wget https://github.com/BenLangmead/bowtie/releases/download/v${BOWTIE_VERSION}/bowtie-${BOWTIE_VERSION}-linux-x86_64.zip; \
+          unzip bowtie-${BOWTIE_VERSION}-linux-x86_64.zip; \
+          rm bowtie-${BOWTIE_VERSION}-linux-x86_64.zip
+        export PATH=$PATH:~/bowtie-${BOWTIE_VERSION}-linux-x86_64
+        ```
+        
+        # Installation
+        
+        Install python main package
+        
+        ```
+        pip install git+git://github.com/shengqh/spcount.git
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
