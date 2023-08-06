@@ -1,0 +1,15 @@
+README.md
+setup.py
+Lib/__init__.py
+Lib/flattenKern.py
+Lib/sameWidther.py
+Lib/databases/ENG.json
+Lib/databases/GER.json
+Lib/databases/__init__.py
+Lib/sameWidther.egg-info/PKG-INFO
+Lib/sameWidther.egg-info/SOURCES.txt
+Lib/sameWidther.egg-info/dependency_links.txt
+Lib/sameWidther.egg-info/entry_points.txt
+Lib/sameWidther.egg-info/not-zip-safe
+Lib/sameWidther.egg-info/requires.txt
+Lib/sameWidther.egg-info/top_level.txt
