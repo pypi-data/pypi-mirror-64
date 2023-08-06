@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: eht-dmc
+Version: 0.1.dev0
+Summary: Python code to perform radio interferometric imaging and modeling within a Bayesian framework in both total intensity and polarization.
+Home-page: https://github.com/dpesce/DMC
+Author: Dom Pesce
+Author-email: dpesce@cfa.harvard.edu
+License: GPLv3
+Keywords: radio interferometry VLBI
+Platform: UNKNOWN
+Requires-Dist: ehtim
+Requires-Dist: pymc3
+Requires-Dist: future
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: corner
+Requires-Dist: ehtplot
+
+# DMC
+A radio interferometric modeling tool developed for the Event Horizon Telescope (EHT).  The framework employed here utilizes PyMC3 for sampling and the eht-imaging library for VLBI data manipulation.
+
+NOTE: Currently still in testing mode, so no guarantees that code will work at all yet.
+
+### Installation instructions
+Clone the repository, move into the main directory, and install using `pip`:
+
+```
+git clone https://github.com/dpesce/DMC.git
+cd DMC
+pip install .
+```
+
+
