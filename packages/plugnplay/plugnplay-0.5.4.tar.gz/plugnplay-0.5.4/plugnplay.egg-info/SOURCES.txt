@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+plugnplay/__init__.py
+plugnplay/manager.py
+plugnplay.egg-info/PKG-INFO
+plugnplay.egg-info/SOURCES.txt
+plugnplay.egg-info/dependency_links.txt
+plugnplay.egg-info/top_level.txt
