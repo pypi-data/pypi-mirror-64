@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/pyqt5_file_dialogs.egg-info/PKG-INFO
+src/pyqt5_file_dialogs.egg-info/SOURCES.txt
+src/pyqt5_file_dialogs.egg-info/dependency_links.txt
+src/pyqt5_file_dialogs.egg-info/requires.txt
+src/pyqt5_file_dialogs.egg-info/top_level.txt
+src/pyqt5filedialogs/__init__.py
+src/pyqt5filedialogs/_filedialog.py
