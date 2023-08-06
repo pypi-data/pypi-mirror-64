@@ -1,0 +1,15 @@
+CODE_OF_CONDUCT.md
+MANIFEST.in
+README.md
+setup.py
+word_tools/__init__.py
+word_tools/lookup.py
+word_tools/transform.py
+word_tools.egg-info/PKG-INFO
+word_tools.egg-info/SOURCES.txt
+word_tools.egg-info/dependency_links.txt
+word_tools.egg-info/entry_points.txt
+word_tools.egg-info/requires.txt
+word_tools.egg-info/top_level.txt
+word_tools/cli/__init__.py
+word_tools/cli/cli.py
