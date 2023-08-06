@@ -1,0 +1,4 @@
+[console_scripts]
+txt = xtlib.xt_run:mini
+xt = xtlib.xt_run:main
+
