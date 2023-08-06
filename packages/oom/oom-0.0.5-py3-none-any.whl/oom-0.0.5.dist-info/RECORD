@@ -1,0 +1,8 @@
+oom/__init__.py,sha256=ncZpnrPAsdO_OB0hblZIoSE9OY5pkJQKmY5iLaQ_3yI,34
+oom/exit_on_out_of_ram.py,sha256=OJsDzcoanziAfHUC1YrzgvF7OfC3Cf_bzqCj4YhJHsc,4167
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oom-0.0.5.dist-info/LICENSE,sha256=xCs5ywcMLkMC-TvTeDkUMLmDVEBNtjCVCqz5NAo3SJY,1073
+oom-0.0.5.dist-info/METADATA,sha256=SEQvrqmZQnaV8OeZsubbWEytZYkzKx32380bwTzWRO0,1186
+oom-0.0.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+oom-0.0.5.dist-info/top_level.txt,sha256=rBo4fpX-0fRNRol2_JZg02G5H9LpfaPMmP3FkK-uniI,10
+oom-0.0.5.dist-info/RECORD,,
