@@ -1,0 +1,3 @@
+
+[pretix.plugin]
+pretix_landing_pages=pretix_landing_pages:PretixPluginMeta
