@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pttydev
+Version: 0.0.4
+Summary: TTYDev - Pseudo TTY Device
+Home-page: https://github.com/kr-g/pttydev
+Author: k.r. goger
+Author-email: k.r.goger+pttydev@gmail.com
+License: MIT
+Description: 
+        # PTTYDev - Pseudo TTY Device
+        
+        PTTYDev provides a common interface and enhanced timeout and automatic reconnection handling.
+        Using a pptydev enables your code to read input from a serial device or via websocket.
+        
+        ## Platform
+        
+        Tested on ESP32, pyserial and MicroPython WebRepl
+        
+        ## Related project
+        
+        [mpycntrl](https://github.com/kr-g/mpycntrl)
+        
+        
+        ## Development status
+        
+        Alpha state,
+        
+        in case of unexpected behaviour change timeouts for your board
+        
+        ## Installation
+        
+        pttydev can be installed with pip from here [pttydev](https://pypi.org/project/pttydev/)
+        
+        
+        ## Sample Code
+        
+        some sample code is under the pttydev directory on project homepage on github
+        
+        [sample.py](https://github.com/kr-g/pttydev/blob/master/pttydev/sample.py)
+        
+        
+        
+        
+Keywords: python threading pyserial websocket websocket-client micropython webrepl esp8266 esp32
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
