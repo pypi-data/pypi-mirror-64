@@ -1,0 +1,7 @@
+README.md
+setup.py
+INDICovid19.egg-info/PKG-INFO
+INDICovid19.egg-info/SOURCES.txt
+INDICovid19.egg-info/dependency_links.txt
+INDICovid19.egg-info/requires.txt
+INDICovid19.egg-info/top_level.txt
