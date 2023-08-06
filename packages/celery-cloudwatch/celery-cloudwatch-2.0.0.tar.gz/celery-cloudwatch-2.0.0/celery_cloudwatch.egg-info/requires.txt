@@ -1,0 +1,5 @@
+celery
+boto3
+pyyaml
+voluptuous
+six
