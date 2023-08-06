@@ -1,0 +1,12 @@
+taburu/__init__.py,sha256=wgR_dvHyeZRKxqXx3gyy5o9XbKgMCCd80qLLWNBrNcM,72
+taburu/aggregate.py,sha256=u9itlM2Ulv-GG_McJ7OL5Fa67dyKKKGLxmny9uChvjQ,876
+taburu/channel.py,sha256=zB1bVmkvCyoFM_cNSY1OSflbt3gJ_NJe42cKhQZ0rQs,1429
+taburu/command.py,sha256=eu-I_1QCZn0GEl9J3KuFYzuXuSCSWnvbzNVB4cQQ_kc,2862
+taburu/event.py,sha256=NRkLAX7iYfdW4wMmg_BMbVLYFcI6GSsoM_O00_3vwCU,1260
+taburu/state.py,sha256=TtqSsBggUoBq0y7F5fTd4PFM8xt_FQw0kBrTiuf3v5M,1588
+taburu/table.py,sha256=fsIMdZ6mWTj7FfHs0oab-Yt8ATSpciW4ar-kIB-fvUc,11988
+taburu-2020.3.26.dist-info/LICENSE,sha256=ufmFSJqsZxZ0VxLtAYQCWbO-DXPEA2oVtQp3Z_Ojjxc,10777
+taburu-2020.3.26.dist-info/METADATA,sha256=vfb6OHvy0I1SI1imlVbi-bllqXobBphUGGquaaRjYbQ,1032
+taburu-2020.3.26.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+taburu-2020.3.26.dist-info/top_level.txt,sha256=A7mpe9V7Db5ByRWaKbQEugopgigH8Tzu3ZUtH3JIIHE,7
+taburu-2020.3.26.dist-info/RECORD,,
