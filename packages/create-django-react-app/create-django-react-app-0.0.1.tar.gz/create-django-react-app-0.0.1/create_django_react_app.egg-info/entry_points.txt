@@ -1,0 +1,3 @@
+[console_scripts]
+create-django-react-app = create_django_react_app.create_django_react_app:main
+
