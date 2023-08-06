@@ -1,0 +1,12 @@
+pqgit/Git-Icon-White.png,sha256=XRZ0ZoyPQ34kiPzsgkC0PJODWcCrWrcEflRWMyvwX3o,2383
+pqgit/__init__.py,sha256=nX-CyhL9mWoNKBJ0whtX7qS_u1x4A5LeI-pSqbjHex8,68
+pqgit/model.py,sha256=HFqRo6_HF8P6puUT26ZyFLRQB9ucBpqj4TsV4-u7PrY,4033
+pqgit/pqgit.py,sha256=NlLq4UrZAdRO5XPJal9MXmqsSO2YcUG1d_KhiIj4kxY,15169
+pqgit/ui.py,sha256=O_L9_PI_1KUOc4hjfMWfhhsLCug4HtkvjStgNrOVOdE,5409
+pqgit/util.py,sha256=b_FWXFmuHqSnu2xy3In6X35wWJ35X8mZYHEmdsU1kTc,1120
+pqgit-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pqgit-0.1.0.dist-info/METADATA,sha256=kz-cdNh4WlobjnIg9kOtHnOMEzGJyWCefeAbEJVQPpI,2001
+pqgit-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pqgit-0.1.0.dist-info/entry_points.txt,sha256=Yoj3mDexeMRv0cwIvMsFhWUnFNtJ2mcGwttCnOD3K8U,39
+pqgit-0.1.0.dist-info/top_level.txt,sha256=-Z8ye1ZoFOlS_ua5mYbBIDJ19y06Xim6Z26X3YhH6KA,6
+pqgit-0.1.0.dist-info/RECORD,,
