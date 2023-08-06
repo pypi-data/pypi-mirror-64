@@ -1,0 +1,16 @@
+marvin_python_common/VERSION,sha256=f22sMKwr_g1WgJA2EVn8IOWZsZ8RWUp8Y4E-dOruONc,8
+marvin_python_common/__init__.py,sha256=av9eK4l8UeEz1q4ovVRLGYvS6oXqS6X4ePjpDPVrVEk,632
+marvin_python_common/config.py,sha256=ofopz7N5YNBIaCKhN4L5x758f1ApYgEOXLu_Lhdg4w8,3895
+marvin_python_common/data.py,sha256=gESG30fYSIa-O6OKo8xHy6QUUIXdvieE-tUERp_HIEo,3757
+marvin_python_common/data_source_provider.py,sha256=6H0d4hOODhjY8ewrHp1k06EDdQK2Da9MoNkYVY5_-0w,1299
+marvin_python_common/exceptions.py,sha256=Y9aqNgK3QdDjUjQsfdtcTJEA682rtlLuQqTouEQmHuM,1030
+marvin_python_common/http_client.py,sha256=KGbBMiaA53lg6sjc9llW4BHlnz8xpXSXe08vcOke0bA,6090
+marvin_python_common/log.py,sha256=abXBeA37t_Ym9pPX2m8DBZYWNWH-98QK9mm2j2pZT38,2898
+marvin_python_common/profiling.py,sha256=uzwOepqrmBMxkTVPyMZtBMbC6EXRaTNUyugzVY-tMcQ,4770
+marvin_python_common/utils.py,sha256=oCB-EpGgY016pc-EsHAP6-aUPYOCqueGF5hEwr5ZHMM,7375
+marvin_python_common-0.0.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+marvin_python_common-0.0.0.2.dist-info/METADATA,sha256=frNUtvYJstOlRscXr6NMtxO9zGp97C-ZZn6yekvTq84,1438
+marvin_python_common-0.0.0.2.dist-info/RECORD,,
+marvin_python_common-0.0.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+marvin_python_common-0.0.0.2.dist-info/metadata.json,sha256=A00f1dzKwhAgLEwoB5vzufRa0O9yObATLsizx08T0kQ,1424
+marvin_python_common-0.0.0.2.dist-info/top_level.txt,sha256=STjvAJa3fUsN0UeUn8sD993wHrwsU17sYnqLf4DHu88,21

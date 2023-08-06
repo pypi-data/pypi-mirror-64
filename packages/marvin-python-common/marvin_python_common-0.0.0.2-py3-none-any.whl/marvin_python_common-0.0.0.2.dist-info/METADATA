@@ -1,0 +1,42 @@
+Metadata-Version: 2.0
+Name: marvin-python-common
+Version: 0.0.0.2
+Summary: Marvin Python Common Library
+Home-page: https://github.com/apache/incubator-marvin
+Author: Lucas Cardoso
+Maintainer: Lucas Cardoso
+Maintainer-email: dev@marvin.apache.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Provides-Extra: testing
+Requires-Dist: configobj (>=5.0.6)
+Requires-Dist: findspark (>=1.1.0)
+Requires-Dist: gprof2dot
+Requires-Dist: httpretty (>=0.9.5)
+Requires-Dist: jsonschema (>=2.5.1)
+Requires-Dist: jsonschema (>=2.5.1)
+Requires-Dist: path.py (>=7.2)
+Requires-Dist: progressbar2 (>=3.34.3)
+Requires-Dist: python-dateutil (>=2.7.3)
+Requires-Dist: python-slugify (>=0.1.0)
+Requires-Dist: requests (>=2.19.1)
+Requires-Dist: simplejson (>=3.10.0)
+Requires-Dist: ujsonpath (>=0.0.2)
+Requires-Dist: unidecode (==1.0.23)
+Requires-Dist: urllib3 (==1.21.1)
+Provides-Extra: testing
+Requires-Dist: mock (>=2.0.0); extra == 'testing'
+Requires-Dist: pytest-cov (<2.6,>=1.8.1); extra == 'testing'
+Requires-Dist: pytest-testmon (==0.8.2); extra == 'testing'
+Requires-Dist: pytest-watch (>=4.1.0); extra == 'testing'
+Requires-Dist: pytest (<3); extra == 'testing'
+Requires-Dist: tox (>=2.2.0); extra == 'testing'
+
+UNKNOWN
+
+
