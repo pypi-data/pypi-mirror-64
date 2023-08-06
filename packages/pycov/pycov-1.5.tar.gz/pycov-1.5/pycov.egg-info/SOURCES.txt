@@ -1,0 +1,8 @@
+setup.py
+pycov/__init__.py
+pycov.egg-info/PKG-INFO
+pycov.egg-info/SOURCES.txt
+pycov.egg-info/dependency_links.txt
+pycov.egg-info/not-zip-safe
+pycov.egg-info/requires.txt
+pycov.egg-info/top_level.txt

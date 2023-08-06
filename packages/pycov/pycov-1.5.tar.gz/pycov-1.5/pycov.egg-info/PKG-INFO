@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: pycov
+Version: 1.5
+Summary: A library getting how many people are now ill with coronavirus
+Home-page: https://pypi.org/project/pycov/
+Author: kewldan
+Author-email: kewldanil1@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
