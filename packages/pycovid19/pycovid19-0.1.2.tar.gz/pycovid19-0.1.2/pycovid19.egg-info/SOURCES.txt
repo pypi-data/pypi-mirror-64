@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+pycovid19/__init__.py
+pycovid19/covid19.py
+pycovid19/jupyter_logo.png
+pycovid19/masked_agent.png
+pycovid19.egg-info/PKG-INFO
+pycovid19.egg-info/SOURCES.txt
+pycovid19.egg-info/dependency_links.txt
+pycovid19.egg-info/requires.txt
+pycovid19.egg-info/top_level.txt
