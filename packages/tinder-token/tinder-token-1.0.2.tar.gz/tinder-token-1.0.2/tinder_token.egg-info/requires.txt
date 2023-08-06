@@ -1,0 +1,6 @@
+requests
+
+[facebook]
+robobrowser
+html5lib
+Werkzeug==0.16.1
