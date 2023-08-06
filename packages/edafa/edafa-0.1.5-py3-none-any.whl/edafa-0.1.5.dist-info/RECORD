@@ -1,0 +1,11 @@
+edafa/BasePredictor.py,sha256=IRsLUjfEDqcxez0lTxnIT8BtDscfPPOOj1ohruQsXtk,4562
+edafa/ClassPredictor.py,sha256=P3Ag_HDYa-G3sv7Y2G1R7T9CFQ6ejADKj7x068unTP4,1419
+edafa/SegPredictor.py,sha256=d915ktrfnmT3PpiQXpYqHxyuSvUeRZc7QCzAxqnhjEE,2548
+edafa/__init__.py,sha256=pIPoERknbMO5tSsxrhyeZepw_zIr3mo1RWuDhsNCVEU,122
+edafa/exceptions.py,sha256=BGf4fjb3nv0F8V36O3G8_3yHGGMY_lp3ExLXuUAbopk,639
+edafa/utils.py,sha256=slHXtfGOfquEB0zh8RJ4VLWOfW-E_id0DaVsWS8DDTs,5303
+edafa-0.1.5.dist-info/LICENSE,sha256=aNNz-zoVZ3PqG7wL_bUITuMM2ajqjc9v_BP5yNw5SmM,1069
+edafa-0.1.5.dist-info/METADATA,sha256=Z66zRhK2NecIriXL9Q8tQUmcNbeUP3zmF3Gmn4JjfYU,4169
+edafa-0.1.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+edafa-0.1.5.dist-info/top_level.txt,sha256=Aa-AMfc0KTSBafSPuWTy7R38G_yxCHy8S6_eivWCAwg,6
+edafa-0.1.5.dist-info/RECORD,,
