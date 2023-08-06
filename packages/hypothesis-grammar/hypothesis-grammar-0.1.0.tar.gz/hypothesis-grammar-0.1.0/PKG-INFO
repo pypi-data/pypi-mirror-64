@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hypothesis-grammar
+Version: 0.1.0
+Summary: A reverse-parser as a Hypotheses strategy: generate examples from an EBNF grammar
+Author: Anentropic
+Author-email: ego@anentropic.com
+Requires-Python: >=3.7
+Classifier: Development Status :: Pre-Alpha
+Classifier: Framework :: Hypothesis
+Classifier: Programming Language  :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: hypothesis (>=5.8.0,<6.0.0)
+Requires-Dist: inject (>=4.1.1,<5.0.0)
+Requires-Dist: lark-parser (>=0.8.5,<0.9.0)
+Requires-Dist: typing-extensions (>=3.7.4,<4.0.0)
