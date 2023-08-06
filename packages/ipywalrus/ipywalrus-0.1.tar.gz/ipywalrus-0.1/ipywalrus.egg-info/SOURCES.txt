@@ -1,0 +1,8 @@
+README.md
+ipywalrus.py
+setup.py
+ipywalrus.egg-info/PKG-INFO
+ipywalrus.egg-info/SOURCES.txt
+ipywalrus.egg-info/dependency_links.txt
+ipywalrus.egg-info/not-zip-safe
+ipywalrus.egg-info/top_level.txt
