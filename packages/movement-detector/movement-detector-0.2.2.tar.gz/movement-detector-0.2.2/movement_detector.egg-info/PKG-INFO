@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: movement-detector
+Version: 0.2.2
+Summary: Detect movement in videos.
+Home-page: https://github.com/petioptrv/movement_detector
+Author: Petio Petrov
+License: MIT License
+Copyright (c) 2019 Petio Petrov (petioptrv@icloud.com)
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+Description: # Movement Detector
+        
+        The Movement Detector (MD) is a collection of classes enabling the detection of movement in video files. The original
+        purpose of the library is to enable the detection of freezing responses during behavioural experiments,
+        such as initially proposed by Blanchard and Blanchard 1988 [1].
+        
+        However, the architecture of the classes permits the user to extend the capabilities of the library to virtually any
+        video-processing algorithm.
+        
+        Extensive documentation can be found [here](https://movement-detector.readthedocs.io/en/latest/). Behavioural 
+        scientists that wish to use the library for the detection of freezing responses as quickly as possible should clone the 
+        [repository](https://github.com/petioptrv/movement_detector) as described in the 
+        [Installation](https://movement-detector.readthedocs.io/en/latest/#installation) section of the documentation, 
+        and follow the usage instructions in the 
+        [Research Scientists Workflow](https://movement-detector.readthedocs.io/en/latest/#research-scientists-workflow) 
+        section.
+        
+        
+        [1] Blanchard, D. C., & Blanchard, R. J. (1988). Experimental approaches to the biology of emotion. Annual review of psychology, 39(1), 43-68.
+        
+Keywords: movement detection freezing behavioural behaviour behavioralbehavior research
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: dev
+Provides-Extra: interface
