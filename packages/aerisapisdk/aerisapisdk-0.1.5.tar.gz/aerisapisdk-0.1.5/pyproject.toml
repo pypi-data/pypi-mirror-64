@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "aerisapisdk"
+version = "0.1.5"
+description = "Provides both an SDK and a CLI for the Aeris Connectivity APIs."
+documentation = "https://github.com/aeristhings/aeris-apisdk-py/wiki"
+authors = ["Aeris Communications <aeris-api-publisher@aeris.net>"]
+homepage = "https://github.com/aeristhings/aeris-apisdk-py"
+repository = "https://github.com/aeristhings/aeris-apisdk-py"
+license = "Apache-2.0"
+readme = "pypi_readme.md"
+
+# https://pypi.org/classifiers/
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: Apache Software License",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6.9"
+click = "^7.0"
+requests = "^2.22"
+pathlib = "^1.0.1"
+pywin32 = {version = "^227", platform = "win32"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+responses = "^0.10.11"
+pycodestyle = "^2.5.0"
+
+[tool.poetry.scripts]
+aeriscli = "aerisapisdk.cli:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: aerisapisdk
+Version: 0.1.5
+Summary: Provides both an SDK and a CLI for the Aeris Connectivity APIs.
+Home-page: https://github.com/aeristhings/aeris-apisdk-py
+License: Apache-2.0
+Author: Aeris Communications
+Author-email: aeris-api-publisher@aeris.net
+Requires-Python: >=3.6.9,<4.0.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: pywin32 (>=227,<228); sys_platform == "win32"
+Requires-Dist: requests (>=2.22,<3.0)
+Project-URL: Documentation, https://github.com/aeristhings/aeris-apisdk-py/wiki
+Project-URL: Repository, https://github.com/aeristhings/aeris-apisdk-py
+Description-Content-Type: text/markdown
+
+# Getting Started
+
+```
+$ pip install aerisapisdk
+$ aeriscli --help
+Usage: aeriscli [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  -v, --verbose             Verbose output
+  -cfg, --config-file TEXT  Path to config file.
+  --help                    Show this message and exit.
+
+Commands:
+  aeradmin    AerAdmin API Services
+  aerframe    AerFrame API Services
+  aertraffic  AerTraffic API Services
+  config      Set up the configuration for using this tool
+  ping        Simple ping of the api endpoints
+```
+
+# More Information
+
+Check out the [wiki](https://github.com/aeristhings/aeris-apisdk-py/wiki) for more information.
+
