@@ -1,0 +1,186 @@
+2020-03-30 07:20:47,038:INFO:System: AS4; Platform Functionality: Adaptive
+
+
+2020-03-30 07:20:47,570:INFO:Prepare complex /home/dsoler/repos/pele_platform/pele_platform/Examples/Msm/PR_AS4.pdb
+2020-03-30 07:20:49,606:INFO:
+	**Missing residues found [['AS4', 1, 'L']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:20:49,611:INFO:Complex /home/dsoler/repos/pele_platform/tests/AS4_Pele_10/PR_AS4_processed.pdb prepared
+
+
+2020-03-30 07:20:49,611:INFO:Setting metrics
+2020-03-30 07:20:49,612:INFO:Metrics set
+
+
+2020-03-30 07:20:49,613:INFO:Creating template for residue AS4
+2020-03-30 07:20:51,898:INFO:Template as4z created
+
+
+2020-03-30 07:20:51,900:INFO:Generating exploration box
+2020-03-30 07:20:51,900:INFO:Box [-20.66, 59.868, 2.848] generated
+
+
+2020-03-30 07:20:51,901:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:20:51,901:INFO:Implicit solvent set
+
+
+2020-03-30 07:20:51,902:INFO:Running Simulation
+2020-03-30 07:21:34,128:INFO:Simulation run succesfully (:
+
+
+2020-03-30 07:21:38,165:INFO:System: STR; Platform Functionality: Adaptive
+
+
+2020-03-30 07:21:38,722:INFO:Prepare complex /home/dsoler/repos/pele_platform/pele_platform/Examples/constraints/input_ppp.pdb
+2020-03-30 07:21:40,306:INFO:
+	**Missing residues found [['STR', 1, 'Z']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:21:40,307:INFO:Complex /home/dsoler/repos/pele_platform/tests/STR_Pele_68/input_ppp_processed.pdb prepared
+
+
+2020-03-30 07:21:40,307:INFO:Setting metrics
+2020-03-30 07:21:40,308:INFO:Metrics set
+
+
+2020-03-30 07:21:40,308:INFO:Creating template for residue STR
+2020-03-30 07:21:42,651:INFO:Template strz created
+
+
+2020-03-30 07:21:42,653:INFO:Generating exploration box
+2020-03-30 07:21:42,654:INFO:Box [-20.332, 59.897, 2.823] generated
+
+
+2020-03-30 07:21:42,654:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:21:42,655:INFO:Implicit solvent set
+
+
+2020-03-30 07:21:42,655:INFO:Running Simulation
+2020-03-30 07:21:42,657:INFO:Simulation run succesfully (:
+
+
+2020-03-30 07:21:42,738:INFO:System: API; Platform Functionality: Adaptive
+
+
+2020-03-30 07:21:43,302:INFO:Prepare complex /home/dsoler/repos/pele_platform/pele_platform/Examples/ppi/complex.pdb
+2020-03-30 07:21:48,554:INFO:
+	**Missing residues found [['API', 900, 'Z']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:21:48,556:INFO:Complex /home/dsoler/repos/pele_platform/tests/API_Pele_10/complex_processed.pdb prepared
+
+
+2020-03-30 07:21:48,557:INFO:Setting metrics
+2020-03-30 07:21:48,561:INFO:Metrics set
+
+
+2020-03-30 07:21:48,561:INFO:Creating template for residue API
+2020-03-30 07:21:50,736:INFO:Template apiz created
+
+
+2020-03-30 07:21:50,737:INFO:Generating exploration box
+2020-03-30 07:21:50,738:INFO:Box [58.46355848210691, 7.33174024600783, -24.401180347171945] generated
+
+
+2020-03-30 07:21:50,738:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:21:50,739:INFO:Implicit solvent set
+
+
+2020-03-30 07:21:50,739:INFO:Running Simulation
+2020-03-30 07:22:26,903:INFO:Simulation run succesfully (:
+
+
+2020-03-30 07:22:37,218:INFO:System: API; Platform Functionality: Adaptive
+
+
+2020-03-30 07:22:37,720:INFO:Prepare complex /home/dsoler/repos/pele_platform/tests/API_Pele_10/output/refinement_input/epoch0_trajectory_2.1_BindingEnergy0.294288.pdb
+2020-03-30 07:22:46,103:INFO:
+	**Missing residues found [['API', 900, 'Z']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:22:46,105:INFO:Complex /home/dsoler/repos/pele_platform/tests/API_Pele_10/refinement_simulation/epoch0_trajectory_2.1_BindingEnergy0.294288_processed.pdb prepared
+
+
+2020-03-30 07:22:46,105:INFO:Setting metrics
+2020-03-30 07:22:46,109:INFO:Metrics set
+
+
+2020-03-30 07:22:46,109:INFO:Creating template for residue API
+2020-03-30 07:22:48,232:INFO:Template apiz created
+
+
+2020-03-30 07:22:48,233:INFO:Generating exploration box
+2020-03-30 07:22:48,234:INFO:Box [58.46355848210691,7.33174024600783,-24.401180347171945] generated
+
+
+2020-03-30 07:22:48,234:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:22:48,235:INFO:Implicit solvent set
+
+
+2020-03-30 07:22:48,235:INFO:Running Simulation
+2020-03-30 07:23:27,282:INFO:Simulation run succesfully (:
+
+
+2020-03-30 07:23:35,074:INFO:System: API; Platform Functionality: Adaptive
+
+
+2020-03-30 07:23:35,591:INFO:Prepare complex /home/dsoler/repos/pele_platform/pele_platform/Examples/ppi/complex.pdb
+2020-03-30 07:23:41,418:INFO:
+	**Missing residues found [['API', 900, 'Z']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:23:41,443:INFO:Complex /home/dsoler/repos/pele_platform/tests/API_Pele_11/complex_processed.pdb prepared
+
+
+2020-03-30 07:23:41,444:INFO:Setting metrics
+2020-03-30 07:23:41,448:INFO:Metrics set
+
+
+2020-03-30 07:23:41,449:INFO:Creating template for residue API
+2020-03-30 07:23:43,563:INFO:Template apiz created
+
+
+2020-03-30 07:23:43,564:INFO:Generating exploration box
+2020-03-30 07:23:43,565:INFO:Box [58.46355848210691, 7.33174024600783, -24.401180347171945] generated
+
+
+2020-03-30 07:23:43,566:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:23:43,566:INFO:Implicit solvent set
+
+
+2020-03-30 07:23:43,567:INFO:Running Simulation
+2020-03-30 07:24:19,913:INFO:Simulation run succesfully (:
+
+
+2020-03-30 07:24:33,412:INFO:System: API; Platform Functionality: Adaptive
+
+
+2020-03-30 07:24:33,921:INFO:Prepare complex /home/dsoler/repos/pele_platform/tests/API_Pele_11/output/refinement_input/epoch0_trajectory_2.1_BindingEnergy0.294288.pdb
+2020-03-30 07:24:43,215:INFO:
+	**Missing residues found [['API', 900, 'Z']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 07:24:43,227:INFO:Complex /home/dsoler/repos/pele_platform/tests/API_Pele_11/refinement_simulation/epoch0_trajectory_2.1_BindingEnergy0.294288_processed.pdb prepared
+
+
+2020-03-30 07:24:43,228:INFO:Setting metrics
+2020-03-30 07:24:43,232:INFO:Metrics set
+
+
+2020-03-30 07:24:43,233:INFO:Creating template for residue API
+2020-03-30 07:24:45,353:INFO:Template apiz created
+
+
+2020-03-30 07:24:45,354:INFO:Generating exploration box
+2020-03-30 07:24:45,355:INFO:Box [58.46355848210691,7.33174024600783,-24.401180347171945] generated
+
+
+2020-03-30 07:24:45,356:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 07:24:45,356:INFO:Implicit solvent set
+
+
+2020-03-30 07:24:45,357:INFO:Running Simulation
+2020-03-30 07:25:24,608:INFO:Simulation run succesfully (:
+
+
