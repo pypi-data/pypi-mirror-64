@@ -1,0 +1,3 @@
+python-rocksdb
+grpcio
+protobuf
