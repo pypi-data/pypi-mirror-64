@@ -1,0 +1,13 @@
+cobib/__init__.py,sha256=o46Lm62c3qTZVxOhyeYK9KsD_YyVV5tTP2oZYTif4eI,272
+cobib/__main__.py,sha256=26wfzXoxnZ1wDDHi4AwI_l5vHL64V5M5QL5eIc-MmVI,1607
+cobib/cobib.py,sha256=QyI3eyG13hhmdsy_6R0TlQrwbwBhYT4DD_swQxkuz4Q,11972
+cobib/config.py,sha256=ZhtoSzXtH1r7etJjuGAGvOl4DO1Ql9Ql5BT3vA9JmMA,829
+cobib/parser.py,sha256=Rw7YmWlIqewVeeoXDJe-5zgHxnVaCLeFBtc4dJx08I4,8027
+cobib/zsh_helper.py,sha256=V9AediH6tCDaFBKDUz7nV0e34WO9L4_CPv3JedVLZ3A,966
+cobib/docs/default.ini,sha256=37HcSe5xYzyU5GJoTLqXRZz4WCkLXX79iHHmfeyxpIY,73
+cobib-1.1.0.dist-info/LICENSE.txt,sha256=YCLwz9hgNjyz_Sfm0daNlQlPvHayXIRnh-IvHfsnmlw,1058
+cobib-1.1.0.dist-info/METADATA,sha256=JarzpmsWZs-468tm8xHl-P-Bjdw1BQ68qu8ivj9mbqI,2559
+cobib-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cobib-1.1.0.dist-info/entry_points.txt,sha256=NffXFBU6KdxhlQDtzompW0yXS0us515j9tLB20tYpf8,47
+cobib-1.1.0.dist-info/top_level.txt,sha256=NjsfOiqIEokzrT6MQoiSsahpguISGWnTpWvRlhao7HU,6
+cobib-1.1.0.dist-info/RECORD,,
