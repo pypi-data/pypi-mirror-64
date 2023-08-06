@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: edblpy
+Version: 1.3.0
+Summary: A simple and easy-to-use unofficial python wrapper around the Electro discord bot list api
+Home-page: https://github.com/Jakeisbored/edblpy
+Author: Jake
+Author-email: jstyle07072004@gmail.com
+License: MIT
+Download-URL: https://github.com/Jakeisbored/edblpy
+Keywords: edbl,discord,botlist
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Edblpy
+
+Edblpy is an unofficial python module utilizing the electro discord bot list [api](https://www.edbl.xyz/api) . Easy to use and well documented!
+
+# Getting started
+
+- You must have ython 3*
+- A bot's / user's id
+- Install the module using pip : `pip install edblpy`
+- Import what you need : `from edblpy import Bot` or `from edblpy import User`
+- View more about usage in the docs section
+
+# Docs
+
+## Class : Bot
+
+### Params ( name , description , type , default )
+**id** : **The bot's id (Required)** : **integer** : `None`
+### Methods ( name , description , params , returns)
+**get_info** : **Gets the bot's info** : `None` : `Dict`
+
+## Class : User
+
+### Params ( name , description , type , default )
+**id** : **The user's id (Required)** : **integer** : `None`
+### Methods ( name , description , params , returns)
+**get_info** : **Gets the user's info** : `None` : `Dict`
+
+# Examples
+Getting a user's info
+```py
+from edblpy import User
+jake = User(480407581085532180)
+print(jake.get_info())
+```
+Getting a bot's info
+```py
+from edblpy import User
+mika = Bot(631669116926820353)
+print(mika.get_info())
+```
+
+
