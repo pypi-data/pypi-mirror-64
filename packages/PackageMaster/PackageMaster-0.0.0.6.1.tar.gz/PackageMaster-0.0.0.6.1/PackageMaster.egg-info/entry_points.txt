@@ -1,0 +1,3 @@
+[console_scripts]
+PackageMaster = PackageMaster.PackageMaster:main
+
