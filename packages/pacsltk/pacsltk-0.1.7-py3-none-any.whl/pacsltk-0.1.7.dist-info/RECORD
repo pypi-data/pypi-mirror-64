@@ -1,0 +1,9 @@
+pacsltk/__init__.py,sha256=w97aPYa5_88jV_zQNpQldU27NRd0EggV7zVhsRWNU0U,195
+pacsltk/client.py,sha256=saqttcu62GDTpvWpv70FdY2MtFP4jS_YSqkMvw1iahY,2831
+pacsltk/deployer.py,sha256=23UePmJxTBpj0b69aoDcSfx9_cUohcIHOtzprngNEJg,2952
+pacsltk/pacs_util.py,sha256=NqQkqV5jTKD9HGuGhwFo5mYrBLLBM5xEeLUplS8thJI,2132
+pacsltk/perfmodel.py,sha256=AYktFqNUv1pqbagS1Wf8YuY4HHLV_qh0iN6kyD_mptI,6904
+pacsltk-0.1.7.dist-info/METADATA,sha256=saAlE2nakiI-l0QR47O840Rb3iN_m0uFd5d8R02xLLo,1194
+pacsltk-0.1.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pacsltk-0.1.7.dist-info/top_level.txt,sha256=BdEfTpBNxBYREep8mQ7vatFAlm7z2FLGj6zaGawatOM,8
+pacsltk-0.1.7.dist-info/RECORD,,
