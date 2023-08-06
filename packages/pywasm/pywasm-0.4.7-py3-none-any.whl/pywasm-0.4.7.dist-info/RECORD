@@ -1,0 +1,12 @@
+pywasm/__init__.py,sha256=o33AusDNlDiuyCflenlUD-MSSkAyhK_nxc-sitt72PM,3774
+pywasm/common.py,sha256=dVzrKPWLGg0ZHbTi37qtdoCkNyzsgJ-xRU9HK_BTDn8,275
+pywasm/convention.py,sha256=QsDFWu_a6Prk6fYxT-f9GG2b0tHuRlSx5pLQUO4qLaI,8645
+pywasm/execution.py,sha256=MJum44EUORmRW34NtcwFq9oEJCHmuWcO4w_43h4NzYg,50674
+pywasm/log.py,sha256=yZWMWKxygEjTU98rr5IhPNwgXKsGEqnLAXc7IbU3hOk,442
+pywasm/num.py,sha256=hrJF106T-wG2IzvTVwL5kFH3PC55QH3QtottghpPCDw,5544
+pywasm/structure.py,sha256=a0qeehGzVYTB9Eh2bWyvYOSV6RmKohMGqX4zrkJPL94,31827
+pywasm-0.4.7.dist-info/LICENSE,sha256=lvF4V_PrKKfZPa2TC8CZo8tlqaKvs3Bpv9G6XsWWQ4k,483
+pywasm-0.4.7.dist-info/METADATA,sha256=l572dTCNNAjCoDoq1yk0G8rCTtWpP7k62f7unOiGr5k,2098
+pywasm-0.4.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pywasm-0.4.7.dist-info/top_level.txt,sha256=-lfK3NaahoDU_3zHWcnPdt5l1_Lf1liO8jDLZxfsgNg,7
+pywasm-0.4.7.dist-info/RECORD,,
