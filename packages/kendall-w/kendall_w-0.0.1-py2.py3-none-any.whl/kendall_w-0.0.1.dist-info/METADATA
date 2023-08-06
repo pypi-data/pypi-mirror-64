@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: kendall-w
+Version: 0.0.1
+Summary: Computes Kendall's coefficient of concordance
+Home-page: https://github.com/ugolbck/kendall-w
+Author: Ugo Loobuyck
+Author-email: ugo.loobuyck@gmail.com
+License: BSD
+Download-URL: https://github.com/ugolbck/kendall-w/tarball/0.0.1
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+kendall-w
+===============================
+
+version number: 0.0.1
+author: Ugo Loobuyck
+
+Overview
+--------
+
+Computes Kendall's coefficient of concordance for inter-annotator agreement
+in the case of item ranking.
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install kendall-w
+
+
+Or clone the repo:
+
+    $ git clone https://github.com/ugolbck/kendall-w.git
+    $ python setup.py install
+
+Contributing
+------------
+
+TBD
+
+Example
+-------
+
+```python
+from kendall_w.kendall_w import compute_w
+
+annotations = [
+        [1, 1, 1, 2],
+        [2, 2, 2, 3],
+        [3, 3, 3, 1],
+    ]
+
+W = compute_w(annotations) # returns 0.4375 (fair overall agreement)
+```
+
