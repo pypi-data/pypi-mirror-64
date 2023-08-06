@@ -1,0 +1,14 @@
+cython
+git+https://github.com/philferriere/cocoapi.git#egg=pycocotools&subdirectory=PythonAPI
+tensorflow-gpu
+Pillow
+h5py
+numpy
+opencv-python
+scikit-learn
+tqdm
+beautifulsoup4
+matplotlib
+protobuf
+imutils
+attributedict
