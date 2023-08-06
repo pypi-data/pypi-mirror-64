@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: custos-logger
+Version: 1.0.0
+Summary: A customisable console logging package with colours and much more!
+Home-page: https://github.com/milasoftwaregroup/custos
+Author: Mila Software Group
+Author-email: jack@mila-software.group
+License: MIT
+Download-URL: https://github.com/milasoftwaregroup/custos/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: Logging,Termcolor,Ayana/logger,Console,Custom
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
