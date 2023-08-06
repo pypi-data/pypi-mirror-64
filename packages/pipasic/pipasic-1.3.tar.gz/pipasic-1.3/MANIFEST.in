@@ -1,0 +1,7 @@
+graft tests
+recursive-include *.py
+recursive-include src/config_files *
+recursive-include src/inspect *
+recursive-include data/spectra *
+recursive-include data/reference *
+global-exclude *.index *.trie

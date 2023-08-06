@@ -1,0 +1,5 @@
+Biopython==1.76
+Numpy==1.16.6
+matplotlib==1.4.3
+scipy==1.2.3
+six==1.14.0
