@@ -1,0 +1,129 @@
+Metadata-Version: 2.1
+Name: iterm2magic
+Version: 0.1.0
+Summary: t is for terminal. iTerm2 automated configuration
+Home-page: https://github.com/michakfromparis/iterm2magic
+Author: michaK
+Author-email: t@michak.net
+License: UNKNOWN
+Project-URL: Source, https://github.com/michakfromparis/iterm2magic/
+Project-URL: Bug Reports, https://github.com/michakfromparis/iterm2magic/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/michel.courtine%40docker.com
+Keywords: terminal iterm iterm2 setup magic         development administration build test
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Topic :: Terminals
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: System :: Installation/Setup
+Classifier: Topic :: Terminals
+Classifier: Topic :: System :: Systems Administration
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: iterm2
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# iterm2magic: **t** is for terminal
+
+**iTerm2** automated configuration. Stop configuring your terminals or setting up your environment.
+
+**iterm2magic** is a very simple utility that allows you to define your terminal configurations and layout for a specific project and run **specific commands** in each **properly named tabs**. **t** keeps track of terminals and processes it creates and allows you to shut everything down **gracefully** or **forcefully**.
+
+Be in control of your setup, trust it, forget about it and **focus on your tasks**.
+
+## Usage
+
+```
+Usage: iterm2magic [OPTIONS] COMMAND
+
+iTerm2 automated configuration
+
+Commands:
+  start		Start commands in named tabs or named configuration
+  stop		Stop commands and close opened tabs / windows
+  help		display this page
+```
+
+## Example
+
+```bash
+$ t start "docker-compose up@docker" "cd front;yarn start@front" "cd back;yarn start@back"
+```
+
+Will create a new iTerm window with 3 tabs:
+
+- The first tab will be named **docker** and will run **docker-compose up**
+- The second tab will be named **front** and will go to the front subdirectory and run **yarn start**
+- The third tab will be named **back** and will go to the back subdirectory and run **yarn start**
+
+## Say Thanks!
+
+[![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/michel.courtine@docker.com)
+
+Simply **click on the icon above** to let me know you like it. Takes less than a minute.<br/>
+This is simple and keeps me motivated to make improvements
+
+## System Dependencies
+
+**iterm2magic** relies on the [iterm2](https://pypi.org/project/iterm2/) python package<br/>
+iterm2 relies on [iTerm](https://www.iterm2.com/) **3.3.10** or higher<br/>
+iTerm [python scripting API](https://www.iterm2.com/python-api/) must be enabled<br/>
+Follow [the tutorial here](https://www.iterm2.com/python-api/tutorial/index.html#tutorial-index) that will guide you to enable it<br/>
+
+## Installation
+
+**t** can be installed with [pip](https://pip.pypa.io/):
+
+```bash
+$ pip install iterm2magic
+```
+
+Alternatively, you can grab the latest source code from [GitHub](https://github.com/michakfromparis/iterm2magic):
+
+```bash
+$ git clone git://github.com/michakfromparis/iterm2magic.git
+$ cd iterm2magic
+$ python setup.py install
+```
+
+### Documentation
+
+[![Documentation Status](https://readthedocs.org/projects/iterm2magic/badge/?version=latest)](https://iterm2magic.readthedocs.io/en/latest/?badge=latest)
+
+iterm2magic has usage and reference documentation at [iterm2magic.readthedocs.io](https://iterm2magic.readthedocs.io/).<br/>
+Say Thanks! This is simple and keeps me motivated to make improvements
+
+### Contributing
+
+**iterm2magic** happily accepts contributions. Please see our [contributing documentation](https://iterm2magic.readthedocs.io/en/latest/contributing.html) for some tips on getting started.
+
+### Security Disclosures
+
+To report a security vulnerability, please use the [Tidelift security contact](https://tidelift.com/security).<br/>
+Tidelift will coordinate the fix and disclosure with maintainers.
+
+### Maintainers
+
+- [@michakfromparis](https://github.com/michakfromparis) (Michel Courtine)
+
+### Credits
+
+Infinite thanks to George Nachman ([@gnachman](https://github.com/gnachman)) for brewing OSX's favorite terminal for so many years and opening the scripting API to python after years of solid AppleScripting (not sure solid was the right word).
+
+
