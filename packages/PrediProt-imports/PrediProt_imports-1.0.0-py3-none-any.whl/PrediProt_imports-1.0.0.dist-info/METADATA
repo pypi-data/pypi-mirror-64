@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PrediProt-imports
+Version: 1.0.0
+Summary: Additional files for PrediProt
+Home-page: UNKNOWN
+Author: The Dream Team
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: Bio
+
+UNKNOWN
+
+
