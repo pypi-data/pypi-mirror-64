@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: nyckelmastaren-casahl
+Version: 1.1.2
+Summary: A fun retro adventure game.
+Home-page: https://github.com/CaspianA1/Nyckelmastaren
+Author: Caspian Ahlberg
+Author-email: caspianahlberg@gmail.com
+License: UNKNOWN
+Description: # Nyckelmästaren
+          
+        (this means Keymaster in Swedish.)
+        
+        A text-based action-RPG game. Developed by Adam Winograd and I.
+        
+        Inspired by games like Zork, A Link To The Past, Dragon Warrior and Mother.
+        
+        ![Game Poster](https://i.imgur.com/XUv2UnH.png)
+        
+        ## PyPi link:
+        https://pypi.org/project/nyckelmastaren-casahl/
+        
+        ## Dependencies:
+        - Simpleaudio: https://github.com/hamiltron/py-simple-audio
+        - Viu: https://github.com/atanunq/viu
+        - Pillow: https://github.com/python-pillow/Pillow
+        - An installation of Rust: https://www.rust-lang.org/learn/get-started
+        - Python, 3.7 or above.
+        
+        All in-game graphics were made without any external libraries, which I'm really happy about. It looks like an Atari 2600 game!
+        
+        ## Commands:
+        - w / north / go north
+        - d / east / go east
+        - s / south / go south
+        - a / west / go west
+        - words of encouragement
+        - use / item
+        - inventory
+        - location
+        - settings / options
+        - help
+        
+        ## Tips:
+        - To start a new game:
+        - Select "reset game" from settings.
+        - If you installed the game from source, enter "python3 adventuregame.py new"
+        - There's a hidden weapon in the wizard Salazar's lair...
+        - Set the game to full screen, and zoom out your terminal window a bit, to see all of the graphics as intended.
+        
+        ## Installation:
+        - Enter the following commands in your terminal.
+        - pip install nyckelmastaren-casahl==1.1.2
+        - curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+        - cargo install viu
+        
+        ## Run:
+        - Enter these commands:
+        - python3
+        - import nyckelmastaren
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
