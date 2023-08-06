@@ -1,0 +1,4 @@
+[console_scripts]
+ipexpand = ipwrangle:expand_main
+ipreduce = ipwrangle:reduce_main
+
