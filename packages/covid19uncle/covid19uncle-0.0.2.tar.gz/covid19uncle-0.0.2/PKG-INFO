@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: covid19uncle
+Version: 0.0.2
+Summary: Information of COVID-19 [Global] and [Thailand]
+Home-page: https://github.com/UncleEngineer/covid19
+Author: Loong Wissawakorn
+Author-email: loong.wissawakorn@gmail.com
+License: MIT
+Download-URL: https://github.com/UncleEngineer/covid19/archive/0.0.2.zip
+Description: please read in: https://github.com/UncleEngineer/covid19
+Keywords: COVID-19,CORONA VIRUS,Uncle Engineer,UncleEngineer
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
