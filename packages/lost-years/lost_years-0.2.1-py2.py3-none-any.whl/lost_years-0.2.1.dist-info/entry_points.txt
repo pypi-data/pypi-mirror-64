@@ -1,0 +1,4 @@
+[console_scripts]
+lost_years_hld = lost_years.hld:main
+lost_years_ssa = lost_years.ssa:main
+
