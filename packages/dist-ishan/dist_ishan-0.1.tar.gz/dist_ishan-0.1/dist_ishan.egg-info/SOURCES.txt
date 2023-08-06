@@ -1,0 +1,10 @@
+setup.py
+dist_ishan/Binomialdistribution.py
+dist_ishan/Gaussiandistribution.py
+dist_ishan/Generaldistribution.py
+dist_ishan/__init__.py
+dist_ishan.egg-info/PKG-INFO
+dist_ishan.egg-info/SOURCES.txt
+dist_ishan.egg-info/dependency_links.txt
+dist_ishan.egg-info/not-zip-safe
+dist_ishan.egg-info/top_level.txt
