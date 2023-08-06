@@ -1,0 +1,72 @@
+Metadata-Version: 1.1
+Name: ml4
+Version: 0.0.2
+Summary: TechYoung Machine Learning ToolKit
+Home-page: http://ml4.techyoung.cn
+Author: Jiao Shuai
+Author-email: jiaoshuaihit@gmail.com
+License: UNKNOWN
+Description: # ML4
+        -----
+        
+        Introduction
+        ------------
+        
+        ML4是TechYoung课程辅助工具包.
+        
+        +-------------------------------+
+        | ## Distribution               |
+        +-------------------------------+
+        | Run the following commands to |
+        | register, build and upload    |
+        | the package to PYPI.          |
+        +-------------------------------+
+        | python3 setup.py sdist upload |
+        +-------------------------------+
+        | The home page on PYPI is:     |
+        | https://pypi.org/project/wcc/ |
+        +-------------------------------+
+        
+        Install
+        -------
+        
+        ::
+        
+            sudo pip3 install ml4
+        
+        --------------
+        
+        Usage
+        -----
+        
+        methods:
+        ~~~~~~~~
+        
+        ml4.getWindowData(data, x, y, windowSize=300, steps=300):
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        
+        -  ***data:*** dataframe
+        
+        -  ***x:*** x-axis column name , 例如 "ctime"
+        
+        -  ***y:*** column name, 例如 "hr"
+        
+        -  ***window:*** window size (s)
+        
+        -  ***steps:*** window steps (s)
+        
+        Note
+        ----
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
