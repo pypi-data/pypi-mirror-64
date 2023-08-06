@@ -1,0 +1,9 @@
+﻿'''__init__.py'''
+
+
+from mastapy._internal.dummy_base_class_importer import _DummyBaseClassImport
+
+
+with _DummyBaseClassImport():
+    from ._1331 import ColumnTitle
+    from ._1332 import TextFileDelimiterOptions
