@@ -1,0 +1,11 @@
+README.md
+setup.py
+alfalfa_client/__init__.py
+alfalfa_client/alfalfa_client.py
+alfalfa_client/historian.py
+alfalfa_client/lib.py
+alfalfa_client.egg-info/PKG-INFO
+alfalfa_client.egg-info/SOURCES.txt
+alfalfa_client.egg-info/dependency_links.txt
+alfalfa_client.egg-info/requires.txt
+alfalfa_client.egg-info/top_level.txt
