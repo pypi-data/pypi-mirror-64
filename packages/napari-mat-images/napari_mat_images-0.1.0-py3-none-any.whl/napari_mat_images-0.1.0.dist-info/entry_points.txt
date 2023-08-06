@@ -1,0 +1,3 @@
+[napari.plugin]
+mat-images = napari_mat_images
+
