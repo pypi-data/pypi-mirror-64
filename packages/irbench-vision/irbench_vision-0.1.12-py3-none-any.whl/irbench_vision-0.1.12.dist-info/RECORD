@@ -1,0 +1,15 @@
+irbench/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+irbench/irbench.py,sha256=-OSKVEy-7QygezLU6kAXAuq5dcY94m7OJFb6OhEVd10,9086
+irbench/evals/__init__.py,sha256=HfbqgHtgG6zTP6HEQOi9q_z7ryXP2ool8BbC7HaGi6U,27
+irbench/evals/eval_helper.py,sha256=znJQ381fyLzF7k6CSvUuYYOtSVnLiWUU3soO7bwvngQ,4832
+irbench/evals/evaluate.py,sha256=5qAILKM2uiHGFsnAei1APBy8PoOAUihyJioWZHv4qmU,11855
+irbench/irsys/__init__.py,sha256=xlWfFosPCfZictmA7aEgZlMZ7y0QYhkIpnm5YPEfr_Y,97
+irbench/irsys/feature_store.py,sha256=Ak0GF3F2GMAiAaoL9lhsd4sy4tn4GSJHc9JbEKrJNTk,4543
+irbench/irsys/global_descriptor.py,sha256=myxr8KoHb4OKmx2Wa3ldU8ol1uKXLk0hn-ouzdxa5BE,14294
+irbench/irsys/local_descriptor.py,sha256=2Mkc-KAYHZ2gWgZG88X__YTKATRDK1v7ARapR7UtBII,2016
+irbench/utils/__init__.py,sha256=alIDGBnxWH4JvP-UW-7N99seBBi0r1GV1h8f1ERFBec,21
+irbench/utils/utils.py,sha256=rxNUn1VmRFDJ7k-OqQIf3xrCRwVW-rfiFyELOVhKWEY,4243
+irbench_vision-0.1.12.dist-info/METADATA,sha256=ObndzZ5iy6EwdWeAKnRC8y8k7Rl_nYTFpdbkY80CV_k,251
+irbench_vision-0.1.12.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+irbench_vision-0.1.12.dist-info/top_level.txt,sha256=Zvm-CXZMEgHsZhTQhzfck4zAMiLOYCRqipKYcMf2ZCk,8
+irbench_vision-0.1.12.dist-info/RECORD,,
