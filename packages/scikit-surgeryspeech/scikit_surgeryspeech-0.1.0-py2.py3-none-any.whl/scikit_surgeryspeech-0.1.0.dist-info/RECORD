@@ -1,0 +1,14 @@
+sksurgeryspeech/__init__.py,sha256=kTUf4fs9HAklX2LEo6Oenct2wOza7-DX0SqBfQtsq2Y,135
+sksurgeryspeech/__main__.py,sha256=Bk9_gfoOzvaqS8DjsZwvXTk-EALhKTCHkzOTUXv_FL0,752
+sksurgeryspeech/_version.py,sha256=msT0OmhJepBE3EFHslWMO4uszN9HYipwL0WlfPuKiYQ,18470
+sksurgeryspeech/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sksurgeryspeech/algorithms/voice_recognition_service.py,sha256=ZxFqnrXQNKVz2YTdmurH5_CVBMqkSkKMhmNAUaY7_QA,7057
+sksurgeryspeech/ui/__init__.py,sha256=uvI8YTgIvL9ADVfxRnifWeRKjfwnuf1WhqhxXuzUbS0,43
+sksurgeryspeech/ui/sksurgeryspeech_command_line.py,sha256=BPpetBN9CQ_jrM0KXiF31qaPA2QIof7CRg741lyraAU,823
+sksurgeryspeech/ui/sksurgeryspeech_demo.py,sha256=H8ij4bSa35lwkevvAny0motEefIUvZ0WC26XUAHyVfI,5810
+scikit_surgeryspeech-0.1.0.dist-info/LICENSE,sha256=7wpfDletNujEyNBU-yonB3tdpYYZFHbksv88t4RzgfI,1519
+scikit_surgeryspeech-0.1.0.dist-info/METADATA,sha256=y6XuhR6VrDXHOrlaE2Qa-eBabS1T0S14X2lbFGuLOAc,8117
+scikit_surgeryspeech-0.1.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+scikit_surgeryspeech-0.1.0.dist-info/entry_points.txt,sha256=E-y4jGugtH5mQUhOz1dFaBJOLtjqmhD7khTUeY3M9u8,67
+scikit_surgeryspeech-0.1.0.dist-info/top_level.txt,sha256=nQYRoJsFjYrmF3f3lYkUj5zf0jeeuKXaSmy0ZBLDJVQ,16
+scikit_surgeryspeech-0.1.0.dist-info/RECORD,,
