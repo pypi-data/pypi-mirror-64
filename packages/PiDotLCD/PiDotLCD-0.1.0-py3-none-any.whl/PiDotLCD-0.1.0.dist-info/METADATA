@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: PiDotLCD
+Version: 0.1.0
+Summary: Python driver for using a 128x64 dot LCD display on a Raspberry Pi
+Home-page: https://github.com/stanthesoupking/PiDotLCD
+Author: Stanley Fuller
+Author-email: stanthesoupking@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# PiDotLCD
+Python driver for using a 128x64 dot LCD display on a Raspberry Pi
+
+## Basic Usage
+```python3
+import PiDotLCD
+
+# Create display
+display = PiDotLCD.display()
+
+display.set_pixel(16, 16) # Set pixel
+
+display.set_pixel(16, 16, False) # Clear pixel
+```
+
+
