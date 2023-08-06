@@ -1,0 +1,10 @@
+README.md
+setup.py
+clubs/__init__.py
+clubs/configs.py
+clubs/error.py
+clubs.egg-info/PKG-INFO
+clubs.egg-info/SOURCES.txt
+clubs.egg-info/dependency_links.txt
+clubs.egg-info/requires.txt
+clubs.egg-info/top_level.txt
