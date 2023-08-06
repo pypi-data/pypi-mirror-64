@@ -1,0 +1,111 @@
+- job:
+    name: storyboard-tox-sqlite
+    parent: openstack-tox
+    description: |
+      Run tests using sqlite instead of mysql.
+    vars:
+      tox_envlist: sqlite
+
+- secret:
+    name: storyboard-opendev-dockerhub
+    data:
+      username: opendevzuul
+      password: !encrypted/pkcs1-oaep
+        - TLIOKBC/P2pYpJc/UKFBxJx+Q11yrVKrT99pqwMM5IbUgPGIu1ssA90QUn1DAo8My+m/V
+          975X1roqtSvnab/gvR7YDmb3GPv6KMgM2K35kFFhFCy5RdOaEuOTJxM/Y8edXjvObkOj1
+          O6j1Fo0jJ07dVcJ/dFBIPXpN2yQl4s3SLbHLTL6c1KpngUz+lYPBLWTJXaXuFyeT4ZmRT
+          iRq3e9Tt4RYjda4Gjra/6dDBSRHbEuTf+HLX4mCnvHvrYUsM//oRJs3FVvQ8oRZu+qrvl
+          Gc+tDW+cJn430BRN1LYwLwkG+8R/raF+aPYNtQRUfjOd83MFY7+G8kU3Gt+O8lgzgj9TU
+          pMzAF0z4Cy9j47Dt/QeeybJeecKpa5d2qEkVnWF76ru+gMoSt0jRhhu9MQWhmtcKc0G+B
+          oIUjfnkyOq/t/+qF1SEjGbw5evAFQ1F90JhsdDI34lTHTNWBkVa1vxNI+MObn/t6cvEKX
+          PWfo5jhc/CYn7gIp4PJNMBTX3lB8qCczTX07zpSYFfwK1Bh2ih8jmID9iOwkMGppX2qBP
+          l5LDMnbDOmgg4XYbGDOz92pbxcWHxPxS1JAV6SXqWZQCbOHUfItfw4ZQ1DbQmD/yQG4YS
+          rnytd/TRKBTVUaLxrzkOMQVIgReuE8U8pkyCYktWryGIjFI2PF45wtVCA5XGZA=
+
+- job:
+    name: storyboard-build-opendev-image
+    parent: opendev-build-docker-image
+    dependencies: opendev-buildset-registry
+    description: Build OpenDev Docker images for storyboard
+    requires:
+      - python-base-container-image
+      - python-builder-container-image
+    provides: storyboard-container-image
+    vars: &storyboard_opendev_image_vars
+      zuul_work_dir: src/opendev.org/opendev/storyboard
+      docker_images:
+        - context: .
+          repository: opendevorg/storyboard
+          target: storyboard
+        - context: .
+          repository: opendevorg/storyboard-api
+          target: storyboard-api
+        - context: .
+          repository: opendevorg/storyboard-subscriber
+          target: storyboard-subscriber
+        - context: .
+          repository: opendevorg/storyboard-worker-daemon
+          target: storyboard-worker-daemon
+        - context: .
+          repository: opendevorg/storyboard-db-manage
+          target: storyboard-db-manage
+        - context: .
+          repository: opendevorg/storyboard-migrate
+          target: storyboard-migrate
+        - context: .
+          repository: opendevorg/storyboard-cron
+          target: storyboard-cron
+
+- job:
+    name: storyboard-upload-opendev-image
+    parent: opendev-upload-docker-image
+    description: Build OpenDev storyboard Docker images and upload to Docker Hub.
+    requires:
+      - python-base-container-image
+      - python-builder-container-image
+    provides: storyboard-container-image
+    vars: *storyboard_opendev_image_vars
+    secrets:
+      - name: docker_credentials
+        secret: storyboard-opendev-dockerhub
+        pass-to-parent: true
+
+- job:
+    name: storyboard-promote-opendev-image
+    parent: opendev-promote-docker-image
+    description: Promote previously uploaded storyboard Docker images.
+    vars: *storyboard_opendev_image_vars
+    secrets:
+      - name: docker_credentials
+        secret: storyboard-opendev-dockerhub
+        pass-to-parent: true
+
+- project:
+    check:
+      jobs:
+        - tox-cover:
+            timeout: 6000
+        - storyboard-tox-sqlite
+        - tox-pep8
+        - tox-py27:
+            timeout: 6000
+        - tox-py36:
+            timeout: 6000
+        - opendev-buildset-registry
+        - storyboard-build-opendev-image
+    gate:
+      jobs:
+        - storyboard-tox-sqlite
+        - tox-pep8
+        - tox-py27:
+            timeout: 6000
+        - tox-py36:
+            timeout: 6000
+        - opendev-buildset-registry
+        - storyboard-upload-opendev-image
+    post:
+      jobs:
+        - publish-openstack-python-branch-tarball
+    promote:
+      jobs:
+        - storyboard-promote-opendev-image
