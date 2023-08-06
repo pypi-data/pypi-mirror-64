@@ -1,0 +1,15 @@
+tax2proteome/Accession.py,sha256=MX_VVOKoNoJxC97HiQJ8xXLLe_88mOWTkMgfpWB6TNI,5173
+tax2proteome/DatabaseCleaner.py,sha256=w0OCzoFmeO4nw2iwIEaxK-9IvMGQpdjmlcyuKSn1lvk,3449
+tax2proteome/Download.py,sha256=hCbzWE0RTPTyl4xshYWiY5lfVwgPl8ql_Ml1j-ReWNs,7088
+tax2proteome/Output.py,sha256=dQZAvw0XUUULBPllwoKVbtJBGnrlJN9pDWW-3rcHCEQ,3852
+tax2proteome/TaxonGraph.py,sha256=gLuafnFI7BIldu0OG7SZ_bYakYQQbEbQesmD83QRvOk,9926
+tax2proteome/TestFile.py,sha256=AkNzltVm5tafdYfMvVJVmSq6cwdQPpos5I0a1XQasIg,1850
+tax2proteome/WriteCustomDB.py,sha256=bs0w_KzF_wQay0nPK6RyjefBVf-lrA4fMAC2ivFZmOk,10134
+tax2proteome/__init__.py,sha256=OQNgjNSCBbyFnmnotTxdFqzZV50tbtrIe7lYWTkVfEU,44
+tax2proteome/__main__.py,sha256=o9v8HKqoxL-299NPi98k1GKMTWhBnv7TkU8nDYXjtag,24905
+tax2proteome/version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+tax2proteome-0.0.1.dist-info/LICENSE,sha256=Y44iYmoVX3fb4fvI0_iJ26xVsZgMK3jP9k_NWvRXV9w,1083
+tax2proteome-0.0.1.dist-info/METADATA,sha256=daf2k6_yvJjZV3YQW6Am9eMvqAVgIj9i5wMLkn3bcjw,8773
+tax2proteome-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tax2proteome-0.0.1.dist-info/top_level.txt,sha256=TmzdIsVS913IkMLeWLZPA9LFIWxI_5jDII8ZUhg_E8A,13
+tax2proteome-0.0.1.dist-info/RECORD,,

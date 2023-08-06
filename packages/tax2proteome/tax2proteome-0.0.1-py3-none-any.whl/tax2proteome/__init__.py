@@ -1,0 +1,1 @@
+from tax2proteome.version import __version__
