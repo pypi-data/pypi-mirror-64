@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pytojsonschema
+Version: 1.0.1
+Summary: A package to convert Python type annotations into JSON schemas
+Home-page: https://github.com/Osirium/pytojsonschema
+Author: Osirium
+Author-email: support@osirium.com
+Maintainer: Carlos Ruiz Lantero
+Maintainer-email: carlos.ruiz.lantero@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: test
+Requires-Dist: black (==19.10b0) ; extra == 'test'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'test'
+Requires-Dist: pytest (==5.4.1) ; extra == 'test'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'test'
+
+UNKNOWN
+
+
