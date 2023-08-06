@@ -1,0 +1,9 @@
+numpy
+biopython
+progressbar2
+sphinx==1.6.7
+sphinx-argparse==0.1.15
+sphinx-rtd-theme
+sphinxcontrib-napoleon
+urllib3
+versioneer
