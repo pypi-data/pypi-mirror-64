@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+flaskscaffold/__init__.py
+flaskscaffold/flaskscaffold.py
+flaskscaffold.egg-info/PKG-INFO
+flaskscaffold.egg-info/SOURCES.txt
+flaskscaffold.egg-info/dependency_links.txt
+flaskscaffold.egg-info/entry_points.txt
+flaskscaffold.egg-info/not-zip-safe
+flaskscaffold.egg-info/requires.txt
+flaskscaffold.egg-info/top_level.txt
+flaskscaffold/complimentary_files/.gitignore
+flaskscaffold/complimentary_files/app.py
