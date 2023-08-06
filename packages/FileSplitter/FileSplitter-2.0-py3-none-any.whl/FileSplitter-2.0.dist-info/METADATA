@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: FileSplitter
+Version: 2.0
+Summary: File splitter is a tool that split large file into multiple small file
+Home-page: https://github.com/asrmarco13/the-file-splitter
+Author: Marco Orfei
+Author-email: marcoasrorfei@gmail.com
+License: UNKNOWN
+Project-URL: Bug tracker, https://github.com/asrmarco13/the-file-splitter/issues
+Project-URL: Documentation, https://github.com/asrmarco13/the-file-splitter/blob/master/README.md
+Project-URL: Source code, https://github.com/asrmarco13/the-file-splitter
+Keywords: file splitter fs
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# The File Splitter (FS)
+
+File splitter is a tool that split large file into multiple small file. Often in test or production environments it happens that you have to manage very heavy text files and opening them could take a long time.
+
+FS allows you to split a heavy file into many small, small files. FS is easy to use. To launch it, just use the following command:
+```python
+filesplitter -f <filename>
+```
+FS by default creates 1 small single file every 1000 lines. If you want to increase or decrease the number of lines use the command **-r**.
+
+If you want to change the encoding type of the source file, just use the command **-e**.
+
+For help:
+```python
+filesplitter -h
+```
+Good use :smile:
+
+Enjoy :beers:
+
+
