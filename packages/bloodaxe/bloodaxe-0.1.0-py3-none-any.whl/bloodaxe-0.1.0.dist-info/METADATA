@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bloodaxe
+Version: 0.1.0
+Summary: bloodaxe is the nice way to testing and metrifying api flows.
+Author: rfunix
+Author-email: rafinha.unix@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: httpx (>=0.12.1,<0.13.0)
+Requires-Dist: jinja2 (>=2.11.1,<3.0.0)
+Requires-Dist: tabulate (>=0.8.7,<0.9.0)
+Requires-Dist: toml (>=0.10.0,<0.11.0)
+Requires-Dist: typer[all] (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+![bloodaxe logo](/images/logo.png)
+
+`bloodaxe` is the nice way to testing and metrify api flows.
+
