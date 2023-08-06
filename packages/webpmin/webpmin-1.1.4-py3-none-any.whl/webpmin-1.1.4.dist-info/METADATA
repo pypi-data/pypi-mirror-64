@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: webpmin
+Version: 1.1.4
+Summary: A small tool that strips out useless data out of a WebP file.
+Home-page: UNKNOWN
+Author: Shantanu Biswas
+Author-email: bsantanu381@gmail.com
+License: Unlicense
+Project-URL: Github, https://github.com/tripulse/webpmin
+Keywords: webp,vp8,image format,file,minifier,webpmin,webpminifier,webpmin,google webp,minify webp
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# [webpmin][1]
+[![PyPI](https://img.shields.io/pypi/v/webpmin?style=flat-square)](https://pypi.org/project/webpmin/)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/webpmin?style=flat-square)
+[![Discord](https://img.shields.io/discord/678263205562286112?style=flat-square)](https://discord.gg/n63frQQ)
+
+WebPMinifier is a small tool written in pure Python to minify WebP files by stripping out ancillary data, this is similar to the tool: [pngminifier][2] but it operates on WebP instead of PNG files. `VP8 `, `VP8L`, `VP8X`, `ANIM`, `ANMF`,
+`ALPH` chunks escape this filter as these are essential for a
+WebP file to work as intended.
+
+Some included chunks which fall in extended format section are considered semi-optional because they play the role to make the WebP file function correctly. These are â€” `VP8X`, `ANIM`, `ANMF`, `ALPH`.
+
+#### Installation
+Python must be installed whose version should be over 3.5. On GNU/Linux systems pip not installed by default, make sure that PIP 3 is installed.
+
+```sh
+# replace: pip with pip3, if required.
+pip install webpmin
+```
+
+---
+
+```
+usage: webpmin.__main__ [-h] [--include  | --exclude ] input output
+
+...
+
+positional arguments:
+  input       Input file to read WebP data from
+  output      Output file to write WebP data to
+
+optional arguments:
+  -h, --help  show this help message and exit
+  --include   Include user-defined chunks separted with commas. If chunk
+              names are over four bytes, latter ones are excluded. By default
+              ANIM, ANMF, ALPH (semi essential chunks) will escape this filter.
+  --exclude   Exclude user-defined chunks separte with commas.
+              Still, essential chunks will escape this filter.
+```
+
+Some examples of using this tool:
+```sh
+$ webpmin in.webp out.webp
+
+# Include embedded color profile and XMP data.
+$ webpmin in.webp --include "ICCP,XMP " out.webp
+
+# Exclude EXIF tags, syntax is same as --include.
+$ webpmin in.webp --exclude "EXIF" out.webp
+```
+
+[1]: https://github.com/tripulse/webpmin
+[2]: https://github.com/tripulse/pngminifier
+
