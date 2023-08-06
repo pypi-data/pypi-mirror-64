@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: wd-crawler-client
+Version: 6.0.2
+Summary: spider framework for winndoo.
+Home-page: http://git.winndoo.cn:82/python/download_center/downloader_client.git
+Author: mingwei.jie baozhu.zhang
+Author-email: baozhu.zhang@winndoo.com
+License: UNKNOWN
+Keywords: crawler,wendao
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: mysqlclient (>=1.4.6)
+Requires-Dist: Twisted (>=18.9.0)
+Requires-Dist: treq (>=18.6.0)
+
+
+爬虫端部署说明
+## 一、概述
++ 爬虫框架分三个部分：调度中心、爬虫端、ADSL端。调度中心负责调度任务，爬虫端将任务发送给调度中心，调度中心存储在Redis里面；
++ ADSL端向调度中心取任务，然后负责下载；
++ 下载完成后将任务结果送到调度中心，调度中心存储在Redis里面；
++ 最后爬虫端从调度中心获取结果。
+
+## 二、爬虫端
+爬虫端的部署主要是环境的搭建，具体分两步：
+### 1.Python环境
+用pip安装Twisted 18.9.0，treq 18.6.0以及别的依赖包
+手动安装MySQL-python包
+### 2.爬虫端框架代码
+将dmhe目录下面的crawler和lib目录里面的代码放到服务器上，并将dmhe路径加入Python的根路径里面
+如果使用virtualenv，可以把client_demo/.spider/dmhe目录放到指定的virtualenv下面。比如有一个spider的虚环境，把dmhe目录拷贝到~/.spider/下面
+
+## 三、接口说明
+
+### 1.连接服务器：/connect/
+### 2.断开服务器：/disconnect/
+### 3.发送任务：/task/
+
+## 四、参数说明
+### 1.Crawler对象参数
+>名称	含义
+user_id	用户名
+name	任务名称
+priority	任务优先级
+        1：低优先级
+        2：中优先级
+        3：高优先级
+db_params	数据库参数
+user_agent	user_agent
+
+###  2.Request对象参数
+#### 名称	含义
++  task_id	任务id
++ url	待抓取URL
++ headers	请求头（dict）
++ data	请求数据，POST请求有效
++ redirect	是否支持跳转，默认支持(1)
++ verify	是否做https验证，默认支持(1)
++ is_head	是否发送HEAD请求，默认不发送(0)
++ return_header	是否返回响应头，默认不返回(0)
++ encoding	页面编码，默认不指定
++ timeout	超时时间，默认30s
++ retry_times	抓取失败重试，默认3
++ extract_type 	解析类型
+>0：不解析 (获取纯页面)
+- response 返回的主要内容： {'body': '', 'code': , 'url_real': '', 'uid': '', 'success': , 'url': '', 'tid': ''}
+>1：解析百度PC排名结果   
+- response 返回的主要内容： {'domain': '', 'title': '', 'url': '', 'url_bd': '', 'rank': , 'id': , 'alading': }
+>2：解析百度移动排名结果
+- response 返回的主要内容： {'domain': '', 'title': '', 'url': '', 'url_bd': '', 'rank': , 'id': , 'alading': }
+>3：解析百度真实URL ---  说明: 获取百度百度真实url时，需设置 is_head=1
+-
+>4：解析百度PC URL是否收录
+
+>5：解析360PC排名结果
+
+>6：解析360移动排名结果
+
+>7：解析搜狗PC排名结果
+
+>8：解析搜狗移动排名结果
+
+>9：解析网页TDK
+- response 返回的主要内容： {'keywords': '', 'keywords': '', 'title': ''}
++ priority: int， 	请求优先级（只有页面抓取支持）：
+>2：中优先级
+3：高优先级
++ kwargs	其他参数 字典
+resp会返回这个参数，如果需要根据不同页面做不同的解析处理，可以使用这个字段
+
+****************************
+参考脚本阅读：
+    1. sample 文件下 insert_sample.py 
+    2. 主目录下的 demo.py  demo2.py
+
+
