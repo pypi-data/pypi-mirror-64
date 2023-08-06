@@ -1,0 +1,95 @@
+Checkmk Commander
+=================
+
+Curses interface to Checkmk / Checkmk raw.
+
+![Logo](/images/logo_256.png)
+
+The goal is not to completly avoid the web interface, but to speed up common day-to-day tasks. Simple ack, downtime, reinventorize requires several clicks and mouse interaction. With this tool, it should be done in seconds.
+
+Alpha quality, should not be used yet.
+
+Screenshots
+-----------
+
+![Details v.6](/images/Screenshot v.6.png)
+
+![Overview v.3](/images/Screenshot v.3.png)
+
+![Ack pop-up v.3](/images/Screenshot v.3 ack.png)
+
+Installation
+------------
+
+From PIP:
+
+```bash
+pip3 install checkmk-commander
+```
+
+Run command: chkcom
+
+Hot-keys
+--------
+
+Press ? in app to get an overview.
+
+Implementation details and limitations
+--------------------------------------
+
+Uses CheckMK's web API. You need an "machine" account with a secret. A normal user won't work.
+
+High pri features
+-----------------
+
+* [x] list service problems from several checkmk instances
+* [ ] list (distributed monitoring) site statuses
+* [v] ack service problems
+  * [x] Show popup to add comment
+  * [x] Parse time from comment
+  * [x] ack service problems on all sites, not just main host
+* [ ] ack host problems
+* [ ] downtime service problems
+* [x] comment service problems
+* [x] show down hosts
+* [ ] show service problem count
+
+Medium pri features
+----------------
+
+* [x] Reinventorize a host
+* [v] Make actions async
+* [ ] Add logging
+
+Low pri features
+----------------
+
+* [x] Ability to run remotely (without being on checkmk host)
+* [ ] Reschedule check
+* [ ] Add new host?
+* [ ] Search in alert list
+* [ ] Sort alert list
+* [ ] Act on more than one alert at a time?
+* [ ] if running locally, fetch secret from var/check_mk/web/USER/automation.secret
+* [ ] Show in overview that comments on a service exists
+
+TODO
+----
+
+* Installer
+* Improve readability, colors.
+* Clean up code.
+* Find down time for down-alerts.
+* Fetch host comments for down hosts.
+* Status bar at bottom should perhaps be switched for a scrolling textview with "Host- and Service events"
+
+Inspirations and help
+---------------------
+
+* Icon made by RallyPointComic <https://anus.no/>
+* <https://github.com/aranair/rtscli/>
+* <https://github.com/tskirvin/omdclient>
+* <https://github.com/brennerm/check-mk-web-api>
+* <https://forum.checkmk.com/t/writing-to-nagios-cmd-in-distributed-monitoring/17616>
+* <https://checkmk.com/cms_legacy_multisite_automation.html>
+* <https://manytools.org/hacker-tools/convert-image-to-ansi-art/go/>
