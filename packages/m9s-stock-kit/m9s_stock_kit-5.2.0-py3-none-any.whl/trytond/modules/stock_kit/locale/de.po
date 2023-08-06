@@ -1,0 +1,23 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:product.product:"
+msgid ""
+"The product \"%s\" is configured as a kit with \"Stock Depends on Components\".\n"
+"Its template must be configured as a Service or Consumable."
+msgstr ""
+"Die Variante \"%s\" ist als Kit mit  \"Lagerbestand basiert auf Komponenten\" konfiguriert.\n"
+"Der Artikel muss als Dienstleistung oder Verbrauchsmaterial konfiguriert sein."
+
+msgctxt "field:product.product,stock_depends_on_kit_components:"
+msgid "Stock Depends on Components"
+msgstr "Lagerbestand basiert auf Komponenten"
+
+msgctxt "help:product.product,stock_depends_on_kit_components:"
+msgid ""
+"Indicates whether the stock of the current kit should depend on its "
+"components or not."
+msgstr ""
+"Bei Aktivierung wird der verfügbare Lagerbestand auf der Basis der "
+"Komponenten berechnet."
