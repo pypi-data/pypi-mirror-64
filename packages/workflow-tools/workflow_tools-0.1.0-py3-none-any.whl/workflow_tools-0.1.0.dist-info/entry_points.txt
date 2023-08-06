@@ -1,0 +1,4 @@
+[console_scripts]
+workflow_generator = workflow_tools.cli:generator
+workflow_secret = workflow_tools.cli:secret
+
