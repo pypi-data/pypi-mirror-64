@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+gluepy/__init__.py
+gluepy.egg-info/PKG-INFO
+gluepy.egg-info/SOURCES.txt
+gluepy.egg-info/dependency_links.txt
+gluepy.egg-info/top_level.txt
