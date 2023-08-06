@@ -1,0 +1,3 @@
+pyglet==1.3.2
+leapserver>=2020.3.27
+leaptask>=2020.3.27
