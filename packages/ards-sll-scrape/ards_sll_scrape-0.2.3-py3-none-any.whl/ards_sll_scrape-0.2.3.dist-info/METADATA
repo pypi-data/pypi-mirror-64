@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ards-sll-scrape
+Version: 0.2.3
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: shinhwagk
+Author-email: shinhwagk@outlook.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: aliyun-python-sdk-rds
+Requires-Dist: aliyun-python-sdk-core
+Requires-Dist: mysql-connector-python
+Requires-Dist: peewee
+
+UNKNOWN
+
+
