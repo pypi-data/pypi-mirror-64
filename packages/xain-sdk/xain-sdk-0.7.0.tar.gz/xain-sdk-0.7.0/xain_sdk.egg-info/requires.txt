@@ -1,0 +1,15 @@
+numpy
+requests
+
+[dev]
+black
+isort
+mypy
+pip-licenses
+pylint
+pytest
+
+[docs]
+
+[test]
+pytest
