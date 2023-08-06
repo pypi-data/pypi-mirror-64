@@ -1,0 +1,14 @@
+groups_sync/__init__.py,sha256=LFlnqAK9zuGvQt-26E-hI0ELFFBQRpJ-ll-RZ77UqtM,56
+groups_sync/__settings.py,sha256=GBZjiUWnvwCu0hTFX9BihzuxuIXhFddXS4ebNrOYakU,127
+groups_sync/apps.py,sha256=rU0vVeHLI6WKT_TFjOTYpiTmn235o4rIR584jq-49Qw,285
+groups_sync/settings.py,sha256=GBZjiUWnvwCu0hTFX9BihzuxuIXhFddXS4ebNrOYakU,127
+groups_sync/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+groups_sync/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+groups_sync/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+groups_sync/management/commands/export_groups_permissions.py,sha256=GLKOeGdgLiyzyaQ4h9LqchF-rIjwwLajDoRblpvgdjM,2210
+groups_sync/management/commands/sync_groups_permissions.py,sha256=3B4d-2_UyCkhdKDEfW0AswGEMTG9UFZO7KkA1RsXnVc,6054
+django_groups_sync-0.0.4.dist-info/LICENSE,sha256=2wikIhFVu6uNL5M8DxuVXVCp3LyCDPBvW5MLX9XVlv8,1066
+django_groups_sync-0.0.4.dist-info/METADATA,sha256=UyTSXLk-PPTsztKYgzS4lclYiigK3t_6Wb6LmCHkf8Q,2613
+django_groups_sync-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_groups_sync-0.0.4.dist-info/top_level.txt,sha256=nQfGXjguzh99LFxN0_XpAKW7q_lgSHoCpstKwFo9f1g,12
+django_groups_sync-0.0.4.dist-info/RECORD,,
