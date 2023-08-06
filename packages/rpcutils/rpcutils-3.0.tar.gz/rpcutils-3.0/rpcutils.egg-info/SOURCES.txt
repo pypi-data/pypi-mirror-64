@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+__init__.py
+brokerRPC.py
+setup.cfg
+setup.py
+rpcutils.egg-info/PKG-INFO
+rpcutils.egg-info/SOURCES.txt
+rpcutils.egg-info/dependency_links.txt
+rpcutils.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: rpcutils
+Version: 3.0
+Summary: RPC Utilities
+Home-page: http://github.com/Caregraf/rpcutils
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Description: A set of utilities for using VistA's RPC Broker Interface
+Keywords: VistA,RPC
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.3, <4
