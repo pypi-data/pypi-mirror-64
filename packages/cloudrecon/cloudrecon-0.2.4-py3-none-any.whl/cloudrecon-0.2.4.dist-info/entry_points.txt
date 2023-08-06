@@ -1,0 +1,3 @@
+[console_scripts]
+cloudrecon = cloudrecon.cloudrecon:cli
+
