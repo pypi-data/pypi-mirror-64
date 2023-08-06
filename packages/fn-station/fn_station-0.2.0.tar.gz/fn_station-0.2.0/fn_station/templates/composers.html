@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+  {% for composer in station.composers.values() %}
+    {% if search(composer.title, composer.description) %}
+      <div>
+        <h3><a href="{{ composer.url }}">{{ composer.title }}</a></h3>
+        <p>{{ composer.description }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}Composer Station{% endblock %}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <style>
+    .api-tab iframe {
+      width: 100%;
+      height: 85vh;
+    }
+  </style>
+
+</head>
+<body class="container">
+<p></p>
+<ul class="nav nav-tabs">
+  {% for tab in tabs.values() %}
+    <li class="nav-item">
+      <a class="nav-link {% if tab == current_tab %}active{% else %}{% endif %}"
+         href="{{ tab.url }}">
+        {{ tab.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
+<h1>{{ current_tab.title }}</h1>
+
+{% if provide_search %}
+  <form action="{{ current_tab.url }}" method="get">
+    <input type="text" name="search" placeholder="Search"/>
+  </form>
+{% endif %}
+
+<div class="{{ current_tab.slug }}-tab">
+  {% block body %}
+  {% endblock %}
+</div>
+
+</body>
+</html>
