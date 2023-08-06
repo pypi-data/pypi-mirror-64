@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-sourcerer
+Version: 1.0
+Summary: Django app that import and correlating data from external sources.
+Home-page: https://github.com/nokia-wroclaw/innovativeproject-django-sourcerer
+Author: nokia
+Author-email: cmarslan06@gmail.com
+License: UNKNOWN
+Description: # innovativeproject-django-sourcerer
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
