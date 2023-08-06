@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/grocery_helpers/__init__.py
+src/grocery_helpers/_version.py
+src/grocery_helpers.egg-info/PKG-INFO
+src/grocery_helpers.egg-info/SOURCES.txt
+src/grocery_helpers.egg-info/dependency_links.txt
+src/grocery_helpers.egg-info/requires.txt
+src/grocery_helpers.egg-info/top_level.txt

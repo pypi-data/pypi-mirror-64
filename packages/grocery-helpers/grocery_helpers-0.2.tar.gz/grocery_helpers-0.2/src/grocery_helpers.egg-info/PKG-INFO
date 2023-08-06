@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: grocery-helpers
+Version: 0.2
+Summary: Selenium-based Python API for online grocery retailers.
+Home-page: https://github.com/ryanfobel/grocery-helpers
+Author: Ryan Fobel
+Author-email: ryan@fobel.net
+License: BSD-3
+Description: # Online grocery stores
+        
+        * [x] https://www.walmart.ca/en/grocery/
+        * [x] https://realcanadiansuperstore.ca/
+        * [x] https://www.loblaws.ca/
+        * [x] https://www.zehrs.ca/
+        * [x] https://www.valumart.ca/
+        * [ ] https://www.wholesaleclub.ca/
+        * [ ] https://www.instacart.ca/
+        * [ ] https://www.grocerygateway.com/
+        * [ ] https://www.metro.ca/
+Keywords: selenium grocery groceries food
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

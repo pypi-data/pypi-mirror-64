@@ -1,0 +1,3 @@
+include setup.py
+include versioneer.py
+include src/grocery_helpers/_version.py
