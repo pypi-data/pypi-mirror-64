@@ -1,0 +1,11 @@
+uci/__init__.py,sha256=I5OmDqdOj3zAzTt9-r0QZdtr2Oz_PR1DvVN3WC--9us,414
+uci/datasets.py,sha256=YlcdCDInepXrZss94LkPtIj5WaA0DB5EUbN0PmHHgKM,18157
+uci/helpers.py,sha256=sE_OsEKjimvscgSHPL_VDwcWT_OGIpFxR-BgDw6Mo_s,2378
+ucimlr/__init__.py,sha256=NiuvbsI0Tt6qGhCWFbfzR0vb4uLHdLOmUp97J0FfUd4,487
+ucimlr/datasets.py,sha256=MY5PcVPSu7KF90r_P5XNEp0PmaAbyyz-Hs5SGS0PsAU,20576
+ucimlr/helpers.py,sha256=xcmHw1oCQjoPZta9T6iEDP7V22OiGBLTN__LhQuJld8,4581
+ucimlr-0.0.5.dist-info/LICENSE,sha256=ZgaStRYlCeh-QKZTWIoLDnVszL2N7bwsDoBP7obUKrc,1057
+ucimlr-0.0.5.dist-info/METADATA,sha256=QGKNz6Eyvy3UoBH_eI0nRTDKhYVqRiqIY2SzohPw0vA,1556
+ucimlr-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ucimlr-0.0.5.dist-info/top_level.txt,sha256=K0h1ktpcZn7th8zO54C2e4UAW5wq0sxzUPCnssH_4BM,7
+ucimlr-0.0.5.dist-info/RECORD,,
