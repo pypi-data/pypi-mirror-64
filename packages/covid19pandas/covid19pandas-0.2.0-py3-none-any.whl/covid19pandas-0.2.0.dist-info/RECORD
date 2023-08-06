@@ -1,0 +1,10 @@
+covid19pandas/__init__.py,sha256=CZUhPWPtLMU3ZXdxgnFCJiIBXCW6gEjreJOkMkdsj34,3586
+covid19pandas/download.py,sha256=hrPotH_h-XZ1XrDiU7fhpEeD-gNo34aWFm_TRMIslnc,2010
+covid19pandas/exceptions.py,sha256=IjnqbJa-UCLlptDdtdxPbhP9GmxQjmRgRqFqYMJ79vw,1503
+covid19pandas/getters.py,sha256=JbH642Gmjuy2smC0cXKUVi9BChKjjOppEiiJTh6yU4E,9154
+covid19pandas/version.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+covid19pandas-0.2.0.dist-info/LICENSE.md,sha256=gZMud_70zsMG2lTK99TSId_Q9vttohTHEuNsuVrEeQY,10108
+covid19pandas-0.2.0.dist-info/METADATA,sha256=BpgO7FbwAQVi83dnL3qgNsp-i5fb5-DSVVn0n47C2WU,1629
+covid19pandas-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+covid19pandas-0.2.0.dist-info/top_level.txt,sha256=XFQjvPw1UTst2dNgOuPv6GX_bcYXBBhWC0JixF6NnsQ,14
+covid19pandas-0.2.0.dist-info/RECORD,,
