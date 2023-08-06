@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: wagtail-meilisearch
+Version: 0.1.0
+Summary: A MeiliSearch backend for Wagatil
+Author: Hactar
+Author-email: systems@hactar.is
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: meilisearch (>=0.9.0,<0.10.0)
