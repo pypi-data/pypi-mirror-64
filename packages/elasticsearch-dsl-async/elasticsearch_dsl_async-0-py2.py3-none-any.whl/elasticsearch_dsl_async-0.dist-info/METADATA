@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: elasticsearch-dsl-async
+Version: 0
+Summary: Future home for the async Elasticsearch DSL library for Python
+Home-page: https://github.com/elastic/elasticsearch-dsl-py
+License: UNKNOWN
+Author: Seth Michael Larson
+Author-email: seth.larson@elastic.co
+Classifier: License :: OSI Approved :: Apache Software License
