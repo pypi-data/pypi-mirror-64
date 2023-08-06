@@ -1,0 +1,13 @@
+dbsink/__init__.py,sha256=5MBl3zqfboI3CL1Ibng6puI_9n9FoSee-b5SWjVPNQI,372
+dbsink/listen.py,sha256=JbP_6H8-SQGocqDb4OP-f-GNApS4-qbY-4S_LJG-FJI,7891
+dbsink/maps.py,sha256=3DSBOG3D4Oc5VC4HcQq95rb8awGKF_InG2ms1IS4wMQ,4313
+dbsink/tables.py,sha256=HU49SO6PbLOG15r6oeNcunAdzhdE4Kjt4_VfsH5N02s,21928
+dbsink/utils.py,sha256=3XnZd-xkJZny2igbXnPTq5eL5fLSPVIHscLbPS2eP1s,2718
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_dbsink.py,sha256=eyuBMRBufM_MHcJHyEnoN9HZYorBCiwIH5sk8fhhuIE,38728
+dbsink-2.5.0.dist-info/LICENSE.txt,sha256=q4jG1MZCHf8Z-2ZDQP64OQ-m9XqWsqv4lD5BIOmNo_c,1085
+dbsink-2.5.0.dist-info/METADATA,sha256=doVKtmE4DwPfXypYozhGW-AmlZ4_QsqRk_QXS7I2dnA,8429
+dbsink-2.5.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dbsink-2.5.0.dist-info/entry_points.txt,sha256=08Dl7ZMl_LLuQA6iOfIY4D3YlBanmTd5Ghl4xnJsWjA,447
+dbsink-2.5.0.dist-info/top_level.txt,sha256=9GxOvxEr8TnGJ9iZSn_VnxZBdxc2t6BjeTyzcyRIZR8,13
+dbsink-2.5.0.dist-info/RECORD,,
