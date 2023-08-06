@@ -1,0 +1,3 @@
+pyyaml
+tqdm
+portalocker>=1.6.0
