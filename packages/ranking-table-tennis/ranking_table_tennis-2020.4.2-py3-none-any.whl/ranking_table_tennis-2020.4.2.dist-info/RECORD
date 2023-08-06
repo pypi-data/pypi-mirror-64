@@ -1,0 +1,17 @@
+ranking_table_tennis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ranking_table_tennis/compute_rankings.py,sha256=sL21K9HfdA0tDxk6RnpUZfVkXsCR02fGV7g1P0_g2yE,2655
+ranking_table_tennis/models.py,sha256=jcMN1A0KGciGrR1ZnhHjAvxf_415Icg4NgiNr2cIyFw,31807
+ranking_table_tennis/preprocess.py,sha256=wyicuFUjhgcxRMQUzt6tjN1lsMkj6tsHIshqYRgI7KU,4161
+ranking_table_tennis/publish.py,sha256=by7uaeukTMcV5wW98ikP19npucQs0oMObjMDixJ-imw,2533
+ranking_table_tennis/utils.py,sha256=zLrN00rhhjC8tbcD4x4gGViTo7ce7fov45KobIcF9ms,27294
+ranking_table_tennis/config/config.yaml,sha256=JAHbPm6rxDTRMeVfNwzLgjDukvD0GdeYUfXgXs-t9F0,3395
+ranking_table_tennis/config/expected_result.csv,sha256=M6DlNtdKGEKLeq9pMn2106xwgOyXtkIFAwens_7yfkY,123
+ranking_table_tennis/config/participation_points.csv,sha256=RSMOpeVo6mXixMZ2e5RBRBe7NEwX54wcxBJ7hqmJ-_c,48
+ranking_table_tennis/config/points_per_round.csv,sha256=i0eWLj3Ts-FpSROVccpirGnoymXIhQ6SeZsRSzb0Zlk,375
+ranking_table_tennis/config/unexpected_result.csv,sha256=SEIL8nfg-_0qsQoIMV-s6zFO7jRk-O3h_AyhywtfzGI,142
+ranking_table_tennis-2020.4.2.data/scripts/rtt,sha256=E_vjpLXuv8c1CgwltDfh-7izvahVOV-VbvmfmkgYwso,1132
+ranking_table_tennis-2020.4.2.dist-info/LICENSE,sha256=2ylvL381vKOhdO-w6zkrOxe9lLNBhRQpo9_0EbHC_HM,18046
+ranking_table_tennis-2020.4.2.dist-info/METADATA,sha256=hj6EKKDMHG5k-1ZbiORazOPemuNyMFpRpQKhY09C3j0,2936
+ranking_table_tennis-2020.4.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ranking_table_tennis-2020.4.2.dist-info/top_level.txt,sha256=wXyIlhtaVq3dVbbfM40hDE9D337XqWNJUPT6j6K4tgk,21
+ranking_table_tennis-2020.4.2.dist-info/RECORD,,
