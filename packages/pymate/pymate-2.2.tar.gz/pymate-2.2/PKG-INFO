@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: pymate
+Version: 2.2
+Summary: Outback MATE python interface
+Home-page: https://github.com/jorticus/pymate
+Author: Jared
+Author-email: jared@jared.geek.nz
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: outback,mate,pymate
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7,!=3.*
