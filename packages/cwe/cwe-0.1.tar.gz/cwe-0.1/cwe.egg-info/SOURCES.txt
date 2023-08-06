@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+cwe/__init__.py
+cwe/categories.py
+cwe/database.py
+cwe/weakness.py
+cwe.egg-info/PKG-INFO
+cwe.egg-info/SOURCES.txt
+cwe.egg-info/dependency_links.txt
+cwe.egg-info/top_level.txt
+tests/__init__.py
+tests/test_cwe.py
