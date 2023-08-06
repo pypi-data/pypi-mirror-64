@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: csv-too-json
+Version: 0.0.5
+Summary: This package basically take an input CSV file and then instead of creating a new file give directly json output.
+Home-page: https://github.com/SJ029626/csv_too_json
+Author: Sanyam Jain
+Author-email: sanyam.jain2602@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+This package basically take an input CSV file and then instead of creating a new file give directly json output.
+
+
