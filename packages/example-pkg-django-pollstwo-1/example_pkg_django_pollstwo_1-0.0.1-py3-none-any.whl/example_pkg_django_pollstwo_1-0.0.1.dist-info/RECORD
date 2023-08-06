@@ -1,0 +1,14 @@
+pollstwo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pollstwo/admin.py,sha256=JDp99lZ8pHtUtakhA_I5vhNAfcfon3_meJWnXUua_Lo,531
+pollstwo/apps.py,sha256=bn__31x1GoOMDcy6f9Xi8y960ZJljwA-_b8jR7ciRmk,96
+pollstwo/models.py,sha256=7xDsDtVgLQIeByNC8mL6viqj7g74yntaAelC0XQo1cM,665
+pollstwo/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+pollstwo/urls.py,sha256=eM-7t527TNeICMShjyNG7TLGBkxOR5xJz3K8lGV7Nuc,346
+pollstwo/views.py,sha256=U-gsMHfsAeIcwYlxfly5PSQkXDXE4H-qkIojEKtfr-Q,1957
+pollstwo/migrations/0001_initial.py,sha256=IoQIoNLqQ9BLzKbAV7-kGcp2MQRUWND8WmIKTMYlszA,1110
+pollstwo/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example_pkg_django_pollstwo_1-0.0.1.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+example_pkg_django_pollstwo_1-0.0.1.dist-info/METADATA,sha256=IVUsWykn2irbCMn-h4Z3ozOdyZSeGJEOPwzIh6Z1L3U,1209
+example_pkg_django_pollstwo_1-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+example_pkg_django_pollstwo_1-0.0.1.dist-info/top_level.txt,sha256=-l6sbOcXmRRPRTdZq8Fr6U-T8s8NKo3QWE0AsLzZ5FI,9
+example_pkg_django_pollstwo_1-0.0.1.dist-info/RECORD,,
