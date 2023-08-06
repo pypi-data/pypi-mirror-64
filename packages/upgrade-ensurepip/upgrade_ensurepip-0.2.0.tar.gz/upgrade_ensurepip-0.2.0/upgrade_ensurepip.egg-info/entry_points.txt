@@ -1,0 +1,3 @@
+[console_scripts]
+upgrade_ensurepip = upgrade_ensurepip.__main__:main
+
