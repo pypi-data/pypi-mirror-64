@@ -1,0 +1,1 @@
+A small example about virtual assitant like Siri/ Google assistant. By using wolframalpha and wikipedia as references so that please visit  wolframalpha and create application to using it. Be focus on how to use speech_recognition and UI text-to-spech, I hope you can familar with python syntax and love python more.

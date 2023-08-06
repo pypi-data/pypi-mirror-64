@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: covid-vir-assistant
+Version: 0.0.1
+Summary: A small example about virtual assitant like Siri/ Google assistant
+Home-page: https://github.com/TrinhAnBinh/covid_vir_assistant
+Author: TrinhAnBinh
+Author-email: binhta1995@gmail.com
+License: UNKNOWN
+Description: A small example about virtual assitant like Siri/ Google assistant. By using wolframalpha and wikipedia as references so that please visit  wolframalpha and create application to using it. Be focus on how to use speech_recognition and UI text-to-spech, I hope you can familar with python syntax and love python more.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
