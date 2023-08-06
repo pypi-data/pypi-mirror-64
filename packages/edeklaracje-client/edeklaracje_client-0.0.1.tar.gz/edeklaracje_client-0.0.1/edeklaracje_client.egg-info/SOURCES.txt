@@ -1,0 +1,14 @@
+LICENSE.md
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+edeklaracje_client/__init__.py
+edeklaracje_client/client.py
+edeklaracje_client/console.py
+edeklaracje_client.egg-info/PKG-INFO
+edeklaracje_client.egg-info/SOURCES.txt
+edeklaracje_client.egg-info/dependency_links.txt
+edeklaracje_client.egg-info/entry_points.txt
+edeklaracje_client.egg-info/requires.txt
+edeklaracje_client.egg-info/top_level.txt

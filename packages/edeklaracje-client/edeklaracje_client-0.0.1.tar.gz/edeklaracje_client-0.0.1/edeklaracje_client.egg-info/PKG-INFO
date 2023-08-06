@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: edeklaracje-client
+Version: 0.0.1
+Summary: Library to simplify building Plotly Dash applications
+Home-page: https://github.com/rtshadow/simple-dash
+Author: Przemyslaw Pastuszka
+Author-email: pastuszka.przemyslaw@gmail.com
+License: MIT
+Description: # E-Deklaracje client
+        
+        ## How to
+        1) Znajdź interaktywny formularz PDF na [stronie ministerstwa](https://www.podatki.gov.pl/e-deklaracje/zloz-e-deklaracje-pit/) dla PITu, który chcesz złożyć.
+        2) Wypełnij formularz.
+        3) Przygotuj plik XML na podstawie [przykładu](examples/deklaracja_pit36.xml). Wpisz wartości z interaktywnego formularza, który właśnie wypełniłeś.
+        4) Zainstaluj klient edeklaracji: `pip install edeklaracje_client`
+        5) Wyślij deklarację z pliku XML: `edeklaracje send_document twoj_plik.xml`
+        
+        Więcej informacji o działaniu klienta można uzyskać.
+Platform: UNKNOWN
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown

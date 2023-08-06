@@ -1,0 +1,3 @@
+[console_scripts]
+edeklaracje = edeklaracje_client.console:main
+
