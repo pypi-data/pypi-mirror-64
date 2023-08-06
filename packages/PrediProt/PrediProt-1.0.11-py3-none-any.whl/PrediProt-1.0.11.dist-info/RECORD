@@ -1,0 +1,16 @@
+PrediProt-1.0.11.data/scripts/PrediProt,sha256=a25nrr9Cs3EPSDt83yKg6577sr9gFE2pRclcseocJhc,7987
+PrediProt-1.0.11.data/scripts/PrediProt_GUI,sha256=nYl0nkq7qNYs7SIjTsbvzR-3N8kzPfTQfC5WN6yXyzE,14504
+PrediProt-1.0.11.data/scripts/PrediProt_getfasta,sha256=hCvCvVatkCiq6UIdEg_GzAZdRuDgiogyd8jOSwhIj-8,2445
+prediprot/PrediProt,sha256=4Glrc-9NSlMCl4oiXkZw8IQYV4y6LbfMEev4LqTDO9s,7997
+prediprot/PrediProt_GUI,sha256=7Jf_q1yKUJfhLoF8O7BqXyGN4xHUhp5xKIdz4Emo7Mw,14514
+prediprot/PrediProt_getfasta,sha256=-ej4p6ONCdyNZhMF1sLbH-eT2_sJzEtqpNDLNoyVVQw,2455
+prediprot/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prediprot/imports/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prediprot/imports/prediprot_classes.py,sha256=kndCI6mLQ7fodXYFj8CBJLxkyn7_P87hTbXHbQHqKj4,2424
+prediprot/imports/prediprot_functions.py,sha256=9xhfB_S5-zcv7VP09MizofPeEgKMxJl3QtIJ2hmf39I,25640
+prediprot/imports/prediprot_optimize.py,sha256=FQO0LB0Oj-ul9h_U0X4AmR1ECBiqm0rGs0M439S4aoc,1728
+PrediProt-1.0.11.dist-info/LICENSE,sha256=uAbaLrnf3hAsqmtNKej1r5dxeypevXXgViOSJnY2yw8,1066
+PrediProt-1.0.11.dist-info/METADATA,sha256=G7UY5YbrgeZxiV8Zr0NdDZ1ioIyB_8Zuc91gt6kW1T0,425
+PrediProt-1.0.11.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+PrediProt-1.0.11.dist-info/top_level.txt,sha256=eZcY23Hs_bxYhwQI_DP34tTT9Kxk15M8bOw2jQTVRYg,10
+PrediProt-1.0.11.dist-info/RECORD,,

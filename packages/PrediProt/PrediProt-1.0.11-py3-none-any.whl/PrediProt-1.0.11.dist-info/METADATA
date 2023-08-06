@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: PrediProt
+Version: 1.0.11
+Summary: Protein complex structure predictor
+Home-page: https://pypi.org/project/PrediProt/
+Author: The Dream Team
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+
+Protein complex structure predictor. From a set of PDB chain pairs,
+PrediProt builds a complete PDB models according various parameters.
+
+
