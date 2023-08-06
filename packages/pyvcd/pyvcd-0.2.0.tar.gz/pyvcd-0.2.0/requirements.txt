@@ -1,0 +1,6 @@
+flake8
+isort
+pytest
+pytest-cov
+setuptools_scm
+tox
