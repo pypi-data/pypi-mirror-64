@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: bitcoinUsingIFTTT
+Version: 1.4
+Summary: A package that allows to sent bitcoin alerts throgh IFTTT
+Home-page: https://github.com/praveenNagaraj97-au7/bitcoinAlertWithTelegram
+Author: Praveen
+Author-email: praveenacchusn123@gmail.com
+License: UNKNOWN
+Description: ## bitcoinAlertWithTelegram
+        
+        This is Python based Bitcoin alert system .
+        
+        github link : https://github.com/praveenNagaraj97-au7/Bitcoin-Alert-Based-on-Python
+        
+        Create IFTTT service using IFTTT app or website 
+        
+        use webhooks and telegram service
+        
+        
+        How to run the code
+        
+        this line will run the code : 
+        
+        import bitcoin
+        
+        To link Your IFTTT Key and Event name 
+        
+        bitcoin.link_telegram()
+        
+        to get the latest bitcoin price with respect to country 
+        
+        bitcoin.getPrice()
+        
+        to get Indian bitcoin updates 
+        
+        bitcoin.joinChannel()
+        
+        join the channel here : Telegram link: http://t.me/praveenNagaraj to get notified!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
