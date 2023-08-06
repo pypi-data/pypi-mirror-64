@@ -1,0 +1,7 @@
+pythonnet
+numpy
+pandas
+
+[dev]
+pytest
+black
