@@ -1,0 +1,17 @@
+whatlies/__init__.py,sha256=wRW1xrE06p6oQp6PVSaJscgi9EydtSPMb6etZjshcCM,114
+whatlies/common.py,sha256=dHiQSENg4djpmEnOiv5t4sEfw_3sgvYvZ1GQy7s99E0,2556
+whatlies/embedding.py,sha256=odVM1lybMxsBcg0LPxefZfoM7Sie2bL6KExurmZGiK0,5035
+whatlies/embeddingset.py,sha256=Ue8LVtjS9bfLjLXP3vlQ2m178CMLI6LeGSEUeCNWUgg,15268
+whatlies/language.py,sha256=xy12gy2HYPMS42O3LG76Hw7UZG_A0CA3kQ7pfG2h5UQ,4991
+whatlies/plotting.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+whatlies/transformers.py,sha256=yZrXD96IcfYAOt1NOLp0aF6_-0boxF7v4i6cx0LJPUQ,5560
+whatlies/transformers/__init__.py,sha256=YuBNYPB5TUHgNNLDqVWbdhR8MfFdusvSAgMlHBE06-E,186
+whatlies/transformers/addrandom.py,sha256=aSRUquEdy29i97kE8SxIFjyDzyQNRjREVrs5knM_-Go,1638
+whatlies/transformers/common.py,sha256=CSoUNOzhJN3TyIq_JcYgwM6wXmtxyozttRdf__Rkplc,180
+whatlies/transformers/noise.py,sha256=oqR3bkxqgTdUUepp50K5SHzdIa077L0aaUG9uK0Ypo8,1676
+whatlies/transformers/pca.py,sha256=P8lS-WlDqW8fojZR6qEYuqz5S8S2o33ZXZdVLIm_S5o,2098
+whatlies/transformers/umap.py,sha256=qBf4wTgJ69lzplNWhTAdhokGv1Il8U_vXkiyli25rbo,2024
+whatlies-0.2.0.dist-info/METADATA,sha256=u42v5ke4LUA-6V6bzFq0-Kn1TyZIP5i8ZrlqY2UAgLs,2251
+whatlies-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+whatlies-0.2.0.dist-info/top_level.txt,sha256=psR4cR0WdqeOiBksesgva_8NlvJOU0DT2AE7ZDq6N30,9
+whatlies-0.2.0.dist-info/RECORD,,
