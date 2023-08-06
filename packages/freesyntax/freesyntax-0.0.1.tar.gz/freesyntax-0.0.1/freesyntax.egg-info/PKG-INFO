@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: freesyntax
+Version: 0.0.1
+Summary: Syntactically Free Python
+Home-page: https://github.com/isidentical/freesyntax
+Author: isidentical
+License: UNKNOWN
+Description: # FreeSyntax
+        Syntactically Free Python
+        
+        ```py
+        from freesyntax.factory import RuleFactory
+        from freesyntax.grammar import Optional, Token, Rule, Match
+        from freesyntax.structs import AutoLeaf
+        factory = RuleFactory()
+        
+        @factory.funcdef(
+            Match["def"],
+            Token["NAME"],
+            Rule["parameters"],
+            Optional[Match["->"], Rule["test"]],
+            Match["YES"],
+            Rule["suite"],
+        )
+        def fixer(node):
+            node.children[3].replace(AutoLeaf.COLON)
+        
+        
+        print(factory.transform("""
+        def a() YES
+            pass
+        """))
+        
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
