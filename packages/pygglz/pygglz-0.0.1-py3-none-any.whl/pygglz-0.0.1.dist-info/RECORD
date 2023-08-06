@@ -1,0 +1,11 @@
+pygglz/__init__.py,sha256=nX_ejGMbEtia-ZLCVY8saaSLmC7Dvwrf8_ibDIHs-mc,86
+pygglz/context_locator.py,sha256=sWc3WO5paXkSS_IAbpTDSxItpThtVMZ2eqMGc_YxYLY,891
+pygglz/feature_context.py,sha256=zs7L-lDgFGNShVDV8skcpfuq5tYXJ60dtDxra-7jl3I,1956
+pygglz/feature_state.py,sha256=9ZwJcwnD0XPSwhqPUVVvhRUPlhlfvVBg0OP9gLIArS0,142
+pygglz/features.py,sha256=QYCfK2Z38GJIx6G2g2hipT9OgvOZrNZyhTJJrPF0wOU,1612
+pygglz/file_repository.py,sha256=VBcYgbWzDMIDwd93dTkPTAK80BSHjxdNXk_yhdg5toA,722
+pygglz/state_repository.py,sha256=4rAidnFHno1XkVSwZrcihCku0Qyz8B4juQ1Fda-wcdY,869
+pygglz-0.0.1.dist-info/METADATA,sha256=AsmayOHep9q2vzX0qVNFBcBxgRRoy0H15EjG4pi7jAU,1306
+pygglz-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pygglz-0.0.1.dist-info/top_level.txt,sha256=V18jl9fI3ueXJX38KLVkVfaEmK6wq4aLZz_FyuZbzqU,7
+pygglz-0.0.1.dist-info/RECORD,,
