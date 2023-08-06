@@ -1,0 +1,8 @@
+matplotlib>=2.2pydot
+tensorflow<2.0,>=1.7
+keras==2.1
+scanpy<1.4.4,>=1.3.6
+louvain
+python-igraph
+h5py
+pandas>=0.21
