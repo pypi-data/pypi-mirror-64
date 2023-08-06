@@ -1,0 +1,74 @@
+---
+config:
+  timeout: 1
+  markers:
+    - "internet: test requires Internet"
+    - "slow: test duration over 1s"
+tests:
+  - exe: '/bin/true'
+  - exe: '/bin/false'
+    retcode: 0
+    markers:
+      - 'xfail'  # expected failure
+  - exe: '/bin/echo'
+    name: "test echo stdout substring"
+    args:
+      - '-n'
+      - 'coincoin'
+
+    retcode: 0
+    partstdout: 'inco'
+    stderr: ''
+  - exe: '/bin/echo'
+    name: "test echo stdout equality with carriage return"
+    args:
+      - "with carriage return - actually it's yaml thing"
+    retcode: 0
+    stdout: |
+            with carriage return - actually it's yaml thing
+    stderr: ''
+  - exe: '/bin/sleep'
+    args:
+      - '200'
+    retcode: 0
+    stdout:
+    stderr:
+    expect_too_long: true
+    markers:
+      - "slow"
+  - exe: '/bin/sleep'
+    args:
+      - '2'
+    retcode: 0
+    timeout: 2.5
+    markers:
+      - "slow"
+  - exe: '/usr/bin/wget'
+    args:
+      - '-O'
+      - '-'
+      - 'https://www.perdu.com/'
+    retcode: 0
+    partstdout: 'Perdu'
+    markers:
+      - "internet"
+  - exe: '/usr/bin/curl'
+    args:
+      - 'https://www.bortzmeyer.org/'
+    retcode: 0
+    partstdout: 'Blog Bortzmeyer'
+    timeout: 5
+    markers:
+      - "internet"
+      - "slow"
+  - exe: '/bin/echo'
+    name: "test newline with echo"
+    args:
+      - 'Hello world'
+    partstdout: "\n"
+  - exe: '/bin/echo'
+    name: "test no newline with echo -n"
+    args:
+      - '-n'
+      - 'Hello world'
+    notinstdout: "\n"

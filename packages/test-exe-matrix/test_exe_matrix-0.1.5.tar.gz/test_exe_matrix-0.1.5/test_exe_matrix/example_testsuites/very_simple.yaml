@@ -1,0 +1,12 @@
+---
+tests:
+  - exe: '/bin/echo'
+    name: "test echo stdout equality without carriage return"
+    args:
+      - '-n'
+      - 'coincoin'
+    retcode: 0
+    partstdout: 'inco'
+    stdout: 'coincoin'
+    stderr: ''
+    notinstdout: 'kroaa'

@@ -1,0 +1,248 @@
+Metadata-Version: 2.1
+Name: test-exe-matrix
+Version: 0.1.5
+Summary: Toy project to test executables defined in a yaml file
+Home-page: https://framagit.org/feth/test_exe_matrix
+Author: Feth AREZKI
+Author-email: text_exe_matrix@tuttu.info
+Requires-Python: >=3.6
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Framework :: Pytest
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML (>=5.2)
+Requires-Dist: pytest (==5.3.1)
+Project-URL: Bug Tracker, https://framagit.org/feth/test_exe_matrix/issues
+Project-URL: Repository, https://framagit.org/feth/test_exe_matrix.git
+Description-Content-Type: text/x-rst
+
+=======================================================
+Toy project to test executables defined in a yaml file
+=======================================================
+
+A wrapper around py.test to run UNIX commands and check some of their behaviour.
+
+.. |made-with-python| image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+   :target: https://www.python.org/
+
+.. |master-pipeline| image:: https://framagit.org/feth/test_exe_matrix/badges/master/pipeline.svg
+   :target: https://framagit.org/feth/test_exe_matrix/pipelines/
+
+.. |license-GPL-2| image::  https://img.shields.io/badge/license-GPL%202-informational
+   :target: https://framagit.org/feth/test_exe_matrix/-/blob/master/LICENSE_GPL_2.txt
+
+.. |license-CeCILL-2.1| image::  https://img.shields.io/badge/license-CeCILL--2.1-informational
+   :target: https://framagit.org/feth/test_exe_matrix/-/blob/badges/LICENSE_CeCILL_2.1.txt
+
+.. |project-url| image:: https://img.shields.io/badge/homepage-framagit-blue
+   :target: https://framagit.org/feth/test_exe_matrix
+
+.. |repository-url| image:: https://img.shields.io/badge/repository-git%2Bhttps-blue
+   :target: https://framagit.org/feth/test_exe_matrix.git
+
+|made-with-python| |master-pipeline| |license-GPL-2| |license-CeCILL-2.1| |project-url| |repository-url|
+
+.. contents::
+
+
+Installation and running
+-------------------------
+
+Main requirements
+.................
+
+- UNIX like
+- Python 3.6, 3.7 or 3.8
+
+From PyPA (pip install)
+........................
+
+Install
+:::::::::
+
+The most recent packaged version can be installed with ``pip`` with options relevant to your usecase [#]_.
+
+.. [#] For instance ``pip{3} install --user test_exe_matrix``, or install in a virtualenv.
+
+.. code-block:: console
+
+    pip install test_exe_matrix
+
+
+Run
+::::::
+
+.. code-block:: console
+    
+    test_exe_matrix [arguments...]
+
+From source with poetry
+........................
+
+Install
+:::::::::
+
+Note on poetry: you can install it from pip (``pip install --user poetry``) [#]_ or follow
+`the instructions <https://python-poetry.org/docs/>`_
+on the `official Web site <https://python-poetry.org/>`_.
+
+.. [#] They say::
+    Be aware that it will also install Poetry's dependencies which might cause conflicts with other packages.
+
+.. code-block:: console
+    
+    git clone https://framagit.org/feth/test_exe_matrix.git
+    cd test_exe_matrix
+    poetry install
+
+Run
+::::::
+
+.. code-block:: console
+    
+    poetry run test_exe_matrix [arguments...]
+
+Command line options
+.....................
+
+Typical use:
+
+.. code-block:: console
+
+    [poetry run] test_exe_matrix 
+
+Synopsys:
+
+.. code-block:: console
+
+    usage: test_exe_matrix [-h] [-V] [--collect-only] [-v] [--markers]
+                           [-m PYTEST_ARGS]
+                           [testsuite [testsuite ...]]
+    
+    Test command lines listed in yaml files.
+    
+    positional arguments:
+      testsuite       testsuite yaml file -see example
+                      test_exe_matrix/matrix.yaml.
+                      Argument can be specified multiple times
+    
+    optional arguments:
+      -h, --help      show this help message and exit
+      -V, --version   show program's version number and exit
+      --collect-only  Only collect tests, without running them.
+      -v              Increase verbosity.
+      --markers       Lists registered test markers.
+      -m PYTEST_ARGS  Only run tests that match selection expression, ie. '-m "not
+                      internet"'
+    
+    test_exe_matrix is mainly a Py.test wrapper
+
+
+-v adds very nice colors, thanks to py.test.
+
+Parametrizing tests
+-------------------
+
+Put your test suites in a yaml, like matrix.yaml (provided), or in several. Every yaml file will have a separate global config (markers declaration and general timeout).
+
+Minimum viable test
+....................
+
+.. code-block:: console
+
+    - exe: /path/to/exe
+
+The test will succeed if default values are met: see below (optional values).
+
+Optional values
+...............
+
+*timeout*
+  Allowed running time in seconds. Program will be killed after this delay. Default to config/timeout or 1.
+*retcode*
+  Expected return code.
+*stdout*
+  Expected standard output (full match)
+*stderr*
+  Expected standard error (full match)
+*partstdout*
+  Substring expected in standard output.
+*partstderr*
+  Substring expected in standard error.
+*notinstdout*
+  Substring is not expected in standard output.
+*notinstderr*
+  Substring is not expected in standard error.
+*args*
+  List of arguments to your program.
+*name*
+  Description of the test being made.
+*expect_too_long*
+  Boolean: whether the program is expected to run over the time limit.
+*markers*
+  List of markers for the test. You can use standard py.test markers (especially 'xfail': indicating 'expected failure') or custom markers, that _must_ be declared in the config section.
+
+Example
+---------
+
+A complete (hopefully) example file is provided as "matrix.yaml".
+
+Given the examples, you may run 
+
+.. code-block:: console
+
+    test_exe_matrix matrix.yaml --collect-only
+
+to list the tests, and
+
+.. code-block:: console
+
+    test_exe_matrix matrix.yaml -v -m "not internet and not slow"
+
+to deselect all tests requiring Internet and slow tests.
+
+.. image:: doc/Screenshot_markers.png
+    :alt: screenshot of the above command and output.
+
+Dev: Build the package
+-----------------------
+
+The project uses poetry. Do
+
+.. code-block:: console
+
+    poetry build
+
+And a pip installable wheel package will appear under dist/. For
+instance, you can install with:
+
+.. code-block:: console
+
+     pip3 install dist/test_exe_matrix-0.0.18-py3-none-any.whl
+
+
+Other packaging
+................
+
+Debian/Fedora/Conda packages would be a good thing, but I don't know where to start. If I have to drop Poetry, let it be. Help welcome.
+
+Licence
+-------
+
+Dual licensed (at your option) to the public under CeCILL 2.1 and GPL 2, see files LICENSE_CeCILL_2.1.txt and LICENSE_GPL_2.txt.
+
+Those are compatible copyleft licenses; CeCILL 2.1 is better suited for France at least.
+
+Other needs: contact me.
+
+Thank you
+----------
+
+Stéphane Bortzmeyer, who once asked if a simple tool testing the result of commands existed, and then reported bugs/wrote helpful tickets on framagit/gitlab to guide the development.
+
