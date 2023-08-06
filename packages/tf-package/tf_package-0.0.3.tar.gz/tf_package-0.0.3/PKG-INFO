@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: tf_package
+Version: 0.0.3
+Summary: 增加TensorFlow没有的功能函数
+Home-page: https://github.com/yuhe-tf/tf_package
+Author: YuHe
+Author-email: yuying11130108@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

@@ -1,0 +1,3 @@
+[console_scripts]
+attention_layer = tf_package.attention:attention_layer
+
