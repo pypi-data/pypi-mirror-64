@@ -1,0 +1,8 @@
+pyParz/__init__.py,sha256=Mq-fYvynZGoKQszIjghT6UrlbS8TXsLfHVydVlv8C2c,402
+pyParz/parallelize.py,sha256=WJxSzXAa8sJrPKnyEkk3HSp-UP45uld81_Ji2th9ZZ4,2905
+pyParz/pyParz.py,sha256=DkR3KgdjOrOQGBd2jfwyXQg4xCFgUKdzv5Xyvc7CD4o,2131
+pyParz/test_pyparz.py,sha256=psP9dRqHISo8a8cziny4tHhVz2oo0lzHOttewTtZ4_U,782
+pyParz-1.0.0.dist-info/METADATA,sha256=nFpa3mcXOAtjOMi6Y6AJZGO3W7xOQsItclLAqhDlong,268
+pyParz-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyParz-1.0.0.dist-info/top_level.txt,sha256=BzOAOnkDyB_tzCF7UOg_4cDSKa9q5SX-ho8vGIYZqVQ,7
+pyParz-1.0.0.dist-info/RECORD,,
