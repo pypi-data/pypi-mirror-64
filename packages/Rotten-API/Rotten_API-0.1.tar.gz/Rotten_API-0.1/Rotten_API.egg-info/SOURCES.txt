@@ -1,0 +1,10 @@
+README.md
+setup.py
+RottenPy/Critiq.py
+RottenPy/Movie.py
+RottenPy/__init__.py
+RottenPy/main.py
+Rotten_API.egg-info/PKG-INFO
+Rotten_API.egg-info/SOURCES.txt
+Rotten_API.egg-info/dependency_links.txt
+Rotten_API.egg-info/top_level.txt
