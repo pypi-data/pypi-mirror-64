@@ -1,0 +1,3 @@
+[console_scripts]
+bitcoin-notification-f = bitcoin_notification_f.bitcoin_price_notification:cli
+
