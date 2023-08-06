@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: scikit-eLCS
+Version: 1.0
+Summary: Educational Learning Classifier System
+Home-page: https://github.com/UrbsLab/scikit-eLCS
+Author: Robert Zhang, Ryan J. Urbanowicz
+Author-email: robertzh@seas.upenn.edu,ryanurb@upenn.edu
+License: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Download-URL: https://github.com/UrbsLab/scikit-eLCS/archive/v_1.tar.gz
+Description: UNKNOWN
+Keywords: machine learning,data analysis,data science,learning classifier systems
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
