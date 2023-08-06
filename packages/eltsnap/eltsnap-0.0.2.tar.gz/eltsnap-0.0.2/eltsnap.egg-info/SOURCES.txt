@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+PyADSNewVersionAlpha/__init__.py
+PyADSNewVersionAlpha/create.py
+PyADSNewVersionAlpha/eltPackage.py
+PyADSNewVersionAlpha/eltProject.py
+PyADSNewVersionAlpha/eltSnap_Project_HTML.py
+eltsnap.egg-info/PKG-INFO
+eltsnap.egg-info/SOURCES.txt
+eltsnap.egg-info/dependency_links.txt
+eltsnap.egg-info/requires.txt
+eltsnap.egg-info/top_level.txt
