@@ -1,0 +1,8 @@
+numpy
+scipy
+matplotlib
+scikits-learn
+astropy
+scikit-image
+mahotas
+h5py
