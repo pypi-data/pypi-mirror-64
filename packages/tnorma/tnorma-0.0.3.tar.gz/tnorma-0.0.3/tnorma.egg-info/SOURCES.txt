@@ -1,0 +1,8 @@
+README.md
+setup.py
+tnorma/__init__.py
+tnorma/tnorma.py
+tnorma.egg-info/PKG-INFO
+tnorma.egg-info/SOURCES.txt
+tnorma.egg-info/dependency_links.txt
+tnorma.egg-info/top_level.txt
