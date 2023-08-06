@@ -1,0 +1,11 @@
+stockmanager/Manager.py,sha256=521UPJt07A2s_5tppJ-NIfjD7SlL-zJ1Yg4OIHB2y9k,4630
+stockmanager/Ticker.py,sha256=w-S2Ge-0_N_Av17_6U4dxl0tmi-RU3GFUxGI9FWN1Ig,14562
+stockmanager/__init__.py,sha256=jgadVzBInHUAQA-F2Mg-rrJz5dLQJrMgKslgbPRhHp4,390
+stockmanager/base.py,sha256=1YHCrWy0FY0iJZdIAlBkgWU0LIBEi0b9wWP8vfkDA8c,13984
+stockmanager/helpers.py,sha256=S5DM3B72iiVFrKKewaC2iLFmO6XZDvJkI3wcGFCm2oc,1931
+stockmanager-0.0.6.dist-info/AUTHORS.rst,sha256=UKle7rtN3Ed9WxkdsTGwMtT8pDKnMyPeqFB4eI3ohwE,75
+stockmanager-0.0.6.dist-info/LICENSE.txt,sha256=hekp23yO5hUWFfA90dQ66HH5TDxNzwjEZi8X-_HNXx8,1078
+stockmanager-0.0.6.dist-info/METADATA,sha256=FsYHh-tfGXE612uxoPddklSlmFeOzk76cmC_Q7baG5w,2227
+stockmanager-0.0.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+stockmanager-0.0.6.dist-info/top_level.txt,sha256=2LnvvkahelqLqGakum2lAGwAfqh_5vVkesbJD9QHyCw,13
+stockmanager-0.0.6.dist-info/RECORD,,
