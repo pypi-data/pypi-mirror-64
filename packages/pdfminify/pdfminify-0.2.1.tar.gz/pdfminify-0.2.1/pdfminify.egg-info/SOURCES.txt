@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+pdfminify/FilesizeFormatter.py
+pdfminify/FriendlyArgumentParser.py
+pdfminify/__init__.py
+pdfminify/__main__.py
+pdfminify.egg-info/PKG-INFO
+pdfminify.egg-info/SOURCES.txt
+pdfminify.egg-info/dependency_links.txt
+pdfminify.egg-info/entry_points.txt
+pdfminify.egg-info/requires.txt
+pdfminify.egg-info/top_level.txt
