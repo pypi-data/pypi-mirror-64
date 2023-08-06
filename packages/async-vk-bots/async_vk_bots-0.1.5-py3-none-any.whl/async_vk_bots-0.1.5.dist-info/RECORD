@@ -1,0 +1,15 @@
+async_vk_bots/__init__.py,sha256=HViU_LetdsDJY3a0QNx9qff3k65ZFHQszE8HOIsOY4s,55
+async_vk_bots/api/__init__.py,sha256=i2JeAiC3E2Qt_o6PG7UGDkncP8LBC-R5yjbgCPh19mA,170
+async_vk_bots/api/API.py,sha256=kamupq0HUnF0vGqxOwoOR7yyyWMOsJI7OxZ13g7Z7xw,2049
+async_vk_bots/api/APIError.py,sha256=duOW4jnkuD3UZYCnwfVoEEPGEdU8L1namQbGquUuPVs,84
+async_vk_bots/api/CarouselMaker.py,sha256=r8_I1FLFP9hP94OPV0unnX-86ou5a7mbR6dCNABAXIU,1066
+async_vk_bots/api/KeyboardMaker.py,sha256=vwWTLAggIEvUoG_aoJugd2cEV8u4zI0wqbO8ID25HKM,1369
+async_vk_bots/api/LongPoll.py,sha256=wcKg4GFr4T-6w6SjT1Q2UMkfFpmz0wyzS38u643x_ps,1876
+async_vk_bots/Bot.py,sha256=0X2OdO4FFOeg7ZIeaGcJj0kGoMg4jX36l6xn3DgJp48,4576
+async_vk_bots/ext/commands.py,sha256=wpkDLOVim0UqfHG0nCO1Vm_M7dZ03tCUGnL6Yp-pkUo,726
+async_vk_bots/ext/Context.py,sha256=NI0c5wPi37aOGrcO1w-32jndK6XJTXUdJ3TLHoMB_tg,331
+async_vk_bots/ext/Scenario.py,sha256=mtsX6DmzdkbzeWpmtdni8t_ByjEsHKpceccNLBdJx9U,1400
+async_vk_bots-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+async_vk_bots-0.1.5.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+async_vk_bots-0.1.5.dist-info/METADATA,sha256=daFhEP6pqbXsSdepFvcFNLlCNqKCWf3o4ZYro76pCCk,320
+async_vk_bots-0.1.5.dist-info/RECORD,,
