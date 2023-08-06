@@ -1,0 +1,7 @@
+async-timeout
+dataclasses_json
+heapq_max
+pytest-asyncio
+pytest
+requests
+toolz
