@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: slovo
+Version: 2020.3.25
+Summary: Making words
+Home-page: https://github.com/butuzov/slovo
+Author: Oleg Butuzov
+Author-email: butuzov@made.ua
+License: Apache License 2.0
+Description: # slovo (wip)
+        
+        Slovo (slo-vo, Ukrainian for "word"). Tiny lib for making words into... well into something.
+        
+        ## Examples
+        
+        ### Creating Langauge Class Instance
+        
+        ```python3
+        from slovo import Word, Gender, Term
+        
+        
+        # New usage Class can be created via instantiation
+        class Castellano(Word):
+          lang = "es"
+        print(Castellano("verde"))
+        >> (es) verde
+        
+        
+        # Or Using class methods
+        Eng = Word.constr("Eng", "en")
+        print(Eng("Hello"))
+        > (en) Hello
+        ```
+        
+        ### Combining Words
+        
+        ```python3
+        words = Eng("Hello")+Eng("There")
+        print(words, words.)
+        > (en) Hello There
+        ```
+        
+        ### TODO
+        ....
+        
+Keywords: words,dictionalies
+Platform: OS Independent
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Education
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
