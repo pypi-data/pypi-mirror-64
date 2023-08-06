@@ -1,0 +1,8 @@
+README.md
+setup.py
+CvaReader/CvaReader.py
+CvaReader/__init__.py
+cvareader_veejey6.egg-info/PKG-INFO
+cvareader_veejey6.egg-info/SOURCES.txt
+cvareader_veejey6.egg-info/dependency_links.txt
+cvareader_veejey6.egg-info/top_level.txt
