@@ -1,0 +1,12 @@
+serveml/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+serveml/api.py,sha256=K04e29es8RkCcs8n-N9m_LAIVOsUikHSvR8Mjre96O8,4031
+serveml/inputs.py,sha256=6umnYjJ20qy28bkz_In5nt3ASrcYwlMQ_G85kRjzmI4,211
+serveml/loader.py,sha256=EwsZHZUasBHVVOOzFAcYtKxkfECvvnGOx5TAy6sbzTA,850
+serveml/outputs.py,sha256=jl5P7CgNfQ0YoP_vTMr4maxsYGJ9bX1zuxhWmAEvxbg,297
+serveml/predictions.py,sha256=_P_DiPxUvbh6KxCYcmMBhwZFkBYFm8H1LsQO2_-VCOs,4250
+serveml/utils.py,sha256=wNX7hUPy3VbyX0j_Mur8WesrtYr3S5acvKFR78MS_-k,777
+serveml-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+serveml-0.3.0.dist-info/METADATA,sha256=MWFv5HZaOU0Kwp9B7TWE7GMFSBcLM4OPGI0GqV7svYQ,6631
+serveml-0.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+serveml-0.3.0.dist-info/top_level.txt,sha256=Diu59Omj9ktjUXO2nNtTzqOtmS17NfLYh2Y4g8i5rwg,8
+serveml-0.3.0.dist-info/RECORD,,
