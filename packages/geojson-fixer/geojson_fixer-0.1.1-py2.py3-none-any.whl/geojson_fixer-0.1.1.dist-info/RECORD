@@ -1,0 +1,10 @@
+geojson_fixer/__init__.py,sha256=E-4O6L5-N6zc32IIiXV504vjyNmrYEgiROuyX51MmbI,146
+geojson_fixer/errors.py,sha256=HDQT-Mvewp6M1QRpRzatr4P0vzp1pCirK-4zHj9wXHk,175
+geojson_fixer/geojson_fixer.py,sha256=GXlkFctZD0SqPWOnrB-WNqtHHWhcxjLhr9hCvfVgPp8,6952
+geojson_fixer/schemas.py,sha256=ow5FuNCzLYkcvTcz6dsnnBy4P1Ok76JbBtwxQ29nY1E,3385
+geojson_fixer-0.1.1.dist-info/AUTHORS.rst,sha256=U1Tdsx7r0PAyF96Sjfl6N6XZHQn3N6hzti53qAitNS8,179
+geojson_fixer-0.1.1.dist-info/LICENSE,sha256=Vo0I6olc17vbYHm4OilJGxUPN-g5INwoCX0RIhzfE5c,1096
+geojson_fixer-0.1.1.dist-info/METADATA,sha256=v3HL_g5el9ZhnGEDH4RoD_Mz0e4qA7U5vxs4C6Vtw6o,2126
+geojson_fixer-0.1.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+geojson_fixer-0.1.1.dist-info/top_level.txt,sha256=_i2teac5wORB_N3H1nrk4xz7lCNnnuXWdepgSnxcDoM,14
+geojson_fixer-0.1.1.dist-info/RECORD,,
