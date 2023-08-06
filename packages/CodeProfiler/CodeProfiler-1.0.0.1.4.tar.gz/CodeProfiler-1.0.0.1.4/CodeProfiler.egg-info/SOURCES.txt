@@ -1,0 +1,7 @@
+README.md
+setup.py
+CodeProfiler.egg-info/PKG-INFO
+CodeProfiler.egg-info/SOURCES.txt
+CodeProfiler.egg-info/dependency_links.txt
+CodeProfiler.egg-info/top_level.txt
+profiler/__init__.py
