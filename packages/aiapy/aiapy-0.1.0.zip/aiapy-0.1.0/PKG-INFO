@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: aiapy
+Version: 0.1.0
+Summary: Python package for AIA analysis
+Home-page: https://gitlab.com/LMSAL_HUB/aia_hub/aiapy
+Author: AIA Instrument Team
+Author-email: cheung@lmsal.com
+License: BSD 3-Clause
+Description: "aiapy is a Python package for analyzing data from the Atmospheric Imaging Assembly (AIA) instrument onboard NASA's Solar Dynamics Observatory spacecraft."
+Keywords: solar physics,solar,science,sun,sdo,aia,solar dynamics observatory,atmospheric imaging assembly
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Requires-Python: >=3.6
