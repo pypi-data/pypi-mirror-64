@@ -1,0 +1,12 @@
+msgpack
+pendulum>=2.0.1
+grpcio
+blinker
+protobuf
+google-cloud-bigtable==1.2.1
+google-cloud-core==1.2.0
+click
+cmake
+
+[rest]
+Flask>=1.1.1
