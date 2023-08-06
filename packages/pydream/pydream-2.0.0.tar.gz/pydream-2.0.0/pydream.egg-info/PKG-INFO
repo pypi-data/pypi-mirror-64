@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pydream
+Version: 2.0.0
+Summary: A Python implementation of the MT-DREAM(ZS) algorithm from Laloy and Vrugt 2012.
+Home-page: https://github.com/LoLab-VU/PyDREAM
+Author: Erin Shockley
+Author-email: erin.shockley@vanderbilt.edu
+License: UNKNOWN
+Description: PyDREAM
+        -------
+        
+        A Python implementation of the MT-DREAM(ZS) algorithm presented in `Laloy and Vrugt 2012 <http://faculty.sites.uci.edu/jasper/files/2016/04/72.pdf>`_.
+        
+        For example usage, see the examples folder.  Two of the examples, CORM and Robertson, require the Python modeling framework `PySB <https://github.com/LoLab-VU/pysb>`_.
+        
+        Documentation is available at `Read the Docs <http://pydream.readthedocs.io>`_.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
