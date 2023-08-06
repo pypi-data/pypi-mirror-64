@@ -1,0 +1,9 @@
+README.md
+setup.py
+ass2srt/__init__.py
+ass2srt/ass2srt.py
+ass2srt.egg-info/PKG-INFO
+ass2srt.egg-info/SOURCES.txt
+ass2srt.egg-info/dependency_links.txt
+ass2srt.egg-info/entry_points.txt
+ass2srt.egg-info/top_level.txt
