@@ -1,0 +1,3 @@
+[console_scripts]
+aws2-wrap2 = aws2wrap:main
+

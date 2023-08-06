@@ -1,0 +1,8 @@
+README.md
+setup.py
+aws2_wrap2.egg-info/PKG-INFO
+aws2_wrap2.egg-info/SOURCES.txt
+aws2_wrap2.egg-info/dependency_links.txt
+aws2_wrap2.egg-info/entry_points.txt
+aws2_wrap2.egg-info/top_level.txt
+aws2wrap/__init__.py
