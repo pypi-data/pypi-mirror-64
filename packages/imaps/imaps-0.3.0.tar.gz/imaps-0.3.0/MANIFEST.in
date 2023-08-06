@@ -1,0 +1,12 @@
+# Include meta data.
+include LICENSE
+
+recursive-include src *.R *.sh
+
+# Include documentation and files needed by documentation.
+recursive-include docs docs/images *.py *.rst
+
+# Include tests and files needed by tests.
+recursive-include tests *.py
+include pyproject.toml
+include tox.ini
