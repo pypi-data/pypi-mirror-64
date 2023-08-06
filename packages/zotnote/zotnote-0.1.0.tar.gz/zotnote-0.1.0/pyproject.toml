@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "zotnote"
+version = "0.1.0"
+description = "Streamlining reading notes with Zotero"
+authors = [
+    "Asura Enkhbayar <asura.enkhbayar@gmail.com>"
+]
+license = "MIT"
+packages = [
+    { include = "zotnote" }
+]
+include = ["templates/*"]
+
+keywords = ['zotero', 'literature-review', 'reading-notes']
+readme = 'README.md'
+repository = "https://github.com/bubblbu/zotnote"
+homepage = "https://github.com/bubblbu/zotnote"
+
+[tool.poetry.plugins."console_scripts"]
+"zotnote" = "zotnote.__main__:main"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^7.1.1"
+jinja2 = "^2.11.1"
+python-dotenv = "^0.12.0"
+xdg = "^4.0.1"
+tomlkit = "^0.5.11"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.7.9"
+autopep8 = "^1.5"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
