@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: torchbenchmark
+Version: 0.0.7
+Summary: Pytorch Benchmark Suite
+Home-page: https://github.com/vibhatha/torchbenchmark
+Author: Vibhatha Abeykoon
+Author-email: vibhatha@gmail.com
+License: UNKNOWN
+Keywords: pytorch,benchmark,gpu,performance
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: termtables
+Requires-Dist: numpy
+
+UNKNOWN
+
+
