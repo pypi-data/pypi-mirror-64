@@ -1,0 +1,3 @@
+[console_scripts]
+glx-md2html = GLXDocs.__main__:md2html
+
