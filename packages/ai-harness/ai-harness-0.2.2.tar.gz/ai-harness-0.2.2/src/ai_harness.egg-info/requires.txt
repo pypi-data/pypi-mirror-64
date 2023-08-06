@@ -1,0 +1,9 @@
+pyyaml>=3.12
+dataclasses>=0.7
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest
