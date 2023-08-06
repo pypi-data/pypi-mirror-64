@@ -1,0 +1,10 @@
+systemair/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+systemair/savecair/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+systemair/savecair/command.py,sha256=wTyDcdbZzE1yEEfMtYTBLUs96Dm1WzENT8FR24Ge4ug,916
+systemair/savecair/const.py,sha256=RQxMqh8-u658SGtRl6DoU5M-69dUxfahV1aqr_Ajxuc,9057
+systemair/savecair/systemair.py,sha256=x8qELyHLyikJPObYcdB8Dq3fMkaAoVR4-nKQb-ePQBc,12600
+python_systemair_savecair-2.0.1.dist-info/LICENSE.txt,sha256=czyAsTr6U7j2SECN2vil1kGQLoOuC9Bk5_uJzZvSIuQ,1056
+python_systemair_savecair-2.0.1.dist-info/METADATA,sha256=P289UXQ9U9yJzrGzueAPW9L18Jmj_Fi-osF0AeSG7uw,1386
+python_systemair_savecair-2.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+python_systemair_savecair-2.0.1.dist-info/top_level.txt,sha256=JwZEkQIBQ2a19JPEC-5NQ0aC-qDEODU6Kg7_-sVZWTg,10
+python_systemair_savecair-2.0.1.dist-info/RECORD,,
