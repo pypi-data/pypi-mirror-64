@@ -1,0 +1,9 @@
+README.md
+setup.py
+scrapy_sqspipeline.egg-info/PKG-INFO
+scrapy_sqspipeline.egg-info/SOURCES.txt
+scrapy_sqspipeline.egg-info/dependency_links.txt
+scrapy_sqspipeline.egg-info/requires.txt
+scrapy_sqspipeline.egg-info/top_level.txt
+sqspipeline/__init__.py
+sqspipeline/pipelines.py
