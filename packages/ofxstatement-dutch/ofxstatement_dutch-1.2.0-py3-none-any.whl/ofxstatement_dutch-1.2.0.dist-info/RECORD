@@ -1,0 +1,14 @@
+ofxstatement_dutch-1.2.0-py3.8-nspkg.pth,sha256=_KjO6Cug2guaia44wgWxchIkQ093BqfLESrr12UogS4,1809
+ofxstatement/plugins/nl/__init__.py,sha256=97jNS4WZG7fnhey6vcTdSUFyhHC4qQ5xfMlXjlH6Gbw,57
+ofxstatement/plugins/nl/degiro.py,sha256=_YR5FWcf8I89E7YEdCUOOnnaB2vaUChOdiQ4RFAUsEM,7640
+ofxstatement/plugins/nl/icscards.py,sha256=SBnn_rNqkOdhA1WDjPZcuoldoyQzB8CuaGKFAAION1w,8448
+ofxstatement/plugins/nl/ing.py,sha256=vLVikJMBTnNKi0Ro1IODZbVQWdsaDPsbbjOz4AeRuhg,7308
+ofxstatement/plugins/nl/knab.py,sha256=79Dh9U4wmNAyXRr7vjWbX_csdv1YGBBWmd7eiKhDHLg,8239
+ofxstatement/plugins/nl/statement.py,sha256=2wMw3DPifyTnT9M_O4_IALgoYib-g23IaYQEqeiWDCw,1613
+ofxstatement_dutch-1.2.0.dist-info/METADATA,sha256=PYhjAznl8p1kAlmSDPJxi3qNE04jOTz8njfLnxAJt60,6700
+ofxstatement_dutch-1.2.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+ofxstatement_dutch-1.2.0.dist-info/entry_points.txt,sha256=SVlunwYg9lAkQeW41dfimB_7JiQKurvRSZzyMSfWtZU,210
+ofxstatement_dutch-1.2.0.dist-info/namespace_packages.txt,sha256=i29PY9ieDhHxwObljMcvZNQ_PHxIyAHVbzFlzcpcHn4,34
+ofxstatement_dutch-1.2.0.dist-info/top_level.txt,sha256=QULlVVrNlYwAPeKqH5xw5QYTOH04LNlME6axewv7XDs,13
+ofxstatement_dutch-1.2.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+ofxstatement_dutch-1.2.0.dist-info/RECORD,,
