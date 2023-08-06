@@ -1,0 +1,11 @@
+README.md
+setup.py
+githunt/__init__.py
+githunt/__main__.py
+githunt/utils.py
+githunt.egg-info/PKG-INFO
+githunt.egg-info/SOURCES.txt
+githunt.egg-info/dependency_links.txt
+githunt.egg-info/entry_points.txt
+githunt.egg-info/requires.txt
+githunt.egg-info/top_level.txt

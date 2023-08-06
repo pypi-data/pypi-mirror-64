@@ -1,0 +1,3 @@
+[console_scripts]
+githunt = githunt.__main__:search
+
