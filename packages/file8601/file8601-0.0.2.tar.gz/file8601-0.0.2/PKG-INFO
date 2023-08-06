@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: file8601
+Version: 0.0.2
+Summary: A library for working with ISO 8601 in file names.
+Home-page: https://gitlab.com/brian_pond/file8601
+Author: Brian Pond
+Author-email: brian@pondconsulting.net
+License: MIT
+Description: Adds ISO 8601 datetime to file names as a suffix.Given a list/directory of such files, generates useful metadata about the files.  Including sort codes, for determining the chronological order of files in the directory(s)
+Keywords: datetime
+Platform: Linux
+Requires-Python: >= 3.7.5
