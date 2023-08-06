@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+photostats/__init__.py
+photostats/__main__.py
+photostats/camera.py
+photostats/get_exif.py
+photostats/lenses.py
+photostats.egg-info/PKG-INFO
+photostats.egg-info/SOURCES.txt
+photostats.egg-info/dependency_links.txt
+photostats.egg-info/requires.txt
+photostats.egg-info/top_level.txt
+photostats/tests/__init__.py
+photostats/tests/test_get_exif.py
+photostats/utils/__init__.py
+photostats/utils/create_plot.py
