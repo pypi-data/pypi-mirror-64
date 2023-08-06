@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "django111_test_project"
+version = "1.0.0"
+description = "Django 1.11 Test project for sargilo"
+authors = ["Nick Lehmann <nick@lehmann.sh>"]
+
+[tool.poetry.dependencies]
+python = ">=3.5"
+sargilo = { path = "../../.." }
+django = "^1.11"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
