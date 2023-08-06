@@ -1,0 +1,17 @@
+social_distancing_sim/__init__.py,sha256=mgoZVdlR_INjL1ocdu-RC-V1wynvAasMTbam-jMkG4Q,93
+social_distancing_sim/disease/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social_distancing_sim/disease/disease.py,sha256=CIwp2sO6wlqMzZWeOuvHS3Ty9-O6wl4uiTfEkK7wjnc,208
+social_distancing_sim/population/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social_distancing_sim/population/history.py,sha256=eU6eSGGvWy4hJ_7V2n9hNAyM1hX-PMH3x3T3Z_jJT4A,2792
+social_distancing_sim/population/population.py,sha256=dAAqrW2wRKB9xe6v6L8E5O9L8dpoH8Xke17i2ma5Dv8,16406
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/disease/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/disease/test_disease.py,sha256=32tb5rDBxzm36qWX9KU59-vD0Yybt1gonZha8GFPm3o,292
+tests/unit/population/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/population/test_history.py,sha256=gkW__Wk_LAq9DDIVpAgEALm8L6TYd0_QO4WLNDHldQ4,367
+tests/unit/population/test_population.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+social_distancing_sim-0.0.4.dist-info/METADATA,sha256=7s1NSIlt1wIKOzUqIEpuZxFEaerzNfW0CAHnMVFMj9A,505
+social_distancing_sim-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+social_distancing_sim-0.0.4.dist-info/top_level.txt,sha256=cy2XNB-jy6NCtj46VsxVaTJAaEmj1dmgPZdGvoz4ke0,28
+social_distancing_sim-0.0.4.dist-info/RECORD,,
