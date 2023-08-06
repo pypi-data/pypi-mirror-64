@@ -1,0 +1,17 @@
+README.rst
+setup.py
+src/kanapy/__init__.py
+src/kanapy/analyze_texture.py
+src/kanapy/cli.py
+src/kanapy/collision_detect_react.py
+src/kanapy/entities.py
+src/kanapy/input_output.py
+src/kanapy/packing.py
+src/kanapy/util.py
+src/kanapy/voxelization.py
+src/kanapy.egg-info/PKG-INFO
+src/kanapy.egg-info/SOURCES.txt
+src/kanapy.egg-info/dependency_links.txt
+src/kanapy.egg-info/entry_points.txt
+src/kanapy.egg-info/not-zip-safe
+src/kanapy.egg-info/top_level.txt
