@@ -1,0 +1,14 @@
+sslmqs/__init__.py,sha256=sMlvOEkn_WhROLqgMPXCpwLK2GVVJ-c8Vjg3RqzmckE,114
+sslmqs/mqs.py,sha256=uf5wn4nDR1WNSdKMXadtZy4iOmRYSKcomFp1FpCTlzE,3856
+sslmqs/mqs_async.py,sha256=d2_NXTvn8Hl4gaWp3FEDx_H8MA_RNwCSwFQsRakQgMs,8644
+sslmqs/mqs_publisher.py,sha256=TsI_oOXArhRbkjQZsP6aXeuUckWMjqQulDEPz2qSRGs,2688
+sslmqs/mqs_subscriber.py,sha256=jMIkeis9FVcdpEGS8OtVItuoy9qc1yy8SCImeDwEMsw,4564
+sslmqs/multiprocessing_tools.py,sha256=E-h8FZuSYoCTHSdyryvAPEjSgd6ADvPen2Nwvt8Pv30,826
+sslmqs/retry.py,sha256=sIhMXIe5l7fdXvT17gjcT-68IrtMDHutDEaICC2VWMM,1796
+sslmqs/sigterm.py,sha256=NMQKIZE6taVMbILktcBw-DkcP0cFWCNd-zMaDw9CPH4,387
+sslmqs-2.1.3.dist-info/DESCRIPTION.rst,sha256=hbbIzKgfgoBp8ExUNvy4kBggZgm-AYMu86MenP9EpIg,861
+sslmqs-2.1.3.dist-info/METADATA,sha256=sNRFTj29BGxr4A1TidTnB4BjeWfC1UsDx-Ht9soVobg,1214
+sslmqs-2.1.3.dist-info/RECORD,,
+sslmqs-2.1.3.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+sslmqs-2.1.3.dist-info/metadata.json,sha256=QkfAbNXcb5z28g07lPTLfnipbqnUxDMw8fQ3qPZl_LQ,591
+sslmqs-2.1.3.dist-info/top_level.txt,sha256=4zlhR4Y9AMbkHMn_-i9LrY7_1SXi_ZPLmy3v7_VaQ54,7
