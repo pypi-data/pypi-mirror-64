@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: nyan
+Version: 0.4.0
+Summary: The easiest way to transition from Scratch to Python
+Author: ducaale
+Author-email: sharaf.13@hotmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: pefile (>=2019.4.18,<2020.0.0)
+Requires-Dist: pygame (>=1.9.6,<2.0.0)
+Requires-Dist: pyinstaller (>=3.6,<4.0)
+Requires-Dist: pypiwin32 (>=223,<224)
+Requires-Dist: pytest (>=5.2,<6.0)
+Requires-Dist: pywin32-ctypes (>=0.2.0,<0.3.0)
