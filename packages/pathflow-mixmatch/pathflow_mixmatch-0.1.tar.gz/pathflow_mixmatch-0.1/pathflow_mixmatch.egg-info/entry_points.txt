@@ -1,0 +1,3 @@
+[console_scripts]
+pathflow-mixmatch = pathflow_mixmatch.cli:main
+

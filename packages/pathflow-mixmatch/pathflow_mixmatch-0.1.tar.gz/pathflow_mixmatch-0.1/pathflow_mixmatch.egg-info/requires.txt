@@ -1,0 +1,11 @@
+numpy
+opencv-python
+scikit-image
+scipy
+pandas
+scikit-learn
+SimpleITK
+matplotlib
+torch
+airlab
+fire
