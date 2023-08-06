@@ -1,0 +1,4 @@
+[sphinx.html_themes]
+sphinx_django_base = web_templates.sphinx.django.base
+sphinx_django_skeleton = web_templates.sphinx.django.skeleton
+

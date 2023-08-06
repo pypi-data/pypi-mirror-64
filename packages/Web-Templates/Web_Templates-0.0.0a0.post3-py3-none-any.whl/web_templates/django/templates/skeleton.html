@@ -1,0 +1,139 @@
+{# The Django Skeleton                                                                                       #}
+{#                                                                                                           #}
+{# The structure is flattened to some degree by ignoring the HTML,HEAD, FOOT and BODY elements. The nesting  #}
+{# Starts at META,RSS,CSS,PAGE and SECTION for the HEAD and HEADER,FOOTER,NAV,MAIN, and FOOTER for the BODY. #}
+{# Indentation is based upon a single indent per HTML tag. I suppose indents are acceptable but are avoided. #}
+{#                                                                                                           #}
+{# There is an inherint hierarchy in the blocks, the order is SITE>PAGE>VIEW. If you need more granularity I #}
+{# would use PART over say SECTION or SUBSECTION. as it's 4 letters long, as an added level resulting in the #}
+{# following hierarchy SITE>PAGE>PART>VIEW                                                                   #}
+{#                                                                                                           #}
+{# Specify the following default context in your views.py                                                    #}
+{# context = {'site' : {'title' : 'SITE'},'page' : {'title' : 'PAGE'}}                                       #}
+
+{% block dtd %}<!DOCTYPE html>{% endblock dtd %}
+{% block html %}
+{% block html_init %}<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="{{ LANGUAGE_CODE }}" lang="{{ LANGUAGE_CODE }}">{% endblock html_init %}
+ {% block head %}
+ {% block head_init %}<head>{% endblock head_init %}
+  {% block browser %}
+   {% block IE %}<!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->{% endblock IE %}
+  {% endblock browser %}
+  {% block meta %}
+   {% block meta_prefix %}{% endblock meta_prefix %}
+   {% block meta_content %}
+    {% block meta_favicon %}{% endblock meta_favicon %}
+    {% block meta_author%}{% endblock meta_author %}
+    {% block meta_charset %}<meta charset="UTF-8">{% endblock meta_charset %}
+    {% block meta_content_type %}{% endblock meta_content_type %}
+    {% block meta_language %}{% endblock meta_language %}
+    {% block meta_description %}{% endblock meta_description %}
+    {% block meta_browser %}{% endblock meta_browser %}
+    {% block meta_viewport %}<meta name="viewport" content="width=device-width, initial-scale=1.0">{% endblock meta_viewport %}
+    {% block meta_devices %}{% endblock meta_devices %}
+    {% block meta_generator %}{% endblock meta_generator %}
+    {% block meta_application %}{% endblock meta_application %}
+    {% block meta_keywords %}{% endblock meta_keywords %}
+    {% block meta_othertags %}{% endblock meta_othertags %}
+    {% block meta_refresh %}<!-- meta http-equiv="refresh" content="10" -->{% endblock meta_refresh %}
+    {% block meta_robots %}{% endblock meta_robots %}
+   {% endblock meta_content %}
+   {% block meta_suffix %}{% endblock meta_suffix %}
+  {% endblock meta %}
+  {% block links %}
+  {% endblock links %}
+  {% block rss %}
+  {% endblock rss %}
+  {% block css %}
+   {% block css_prefix %}{% endblock css_prefix %}
+   {% block css_content %}
+    {% block css_libs %}
+    {% block css_layout %}{% endblock css_layout %}
+    {% block css_fonts %}{% endblock css_fonts %}
+    {% block css_style %}{% endblock css_style %}
+    {% endblock css_libs %}
+    {% block css_site %}{% endblock css_site %}
+    {% block css_page %}{% endblock css_page %}
+    {% block css_view %}{% endblock css_view %}
+   {% endblock css_content %}
+   {% block css_suffix %}{% endblock css_suffix %}
+  {% endblock css %}
+  {% block js %}
+   {% block js_prefix %}{% endblock js_prefix %}
+   {% block js_content %}
+    {% block js_libs %}{% endblock js_libs %}
+    {% block js_site %}{% endblock js_site %}
+    {% block js_page %}{% endblock js_page %}
+    {% block js_view %}{% endblock js_view %}
+   {% endblock js_content %}
+   {% block js_suffix %}{% endblock js_suffix %}
+  {% endblock js %}
+  {% block site %}
+   {% block site_prefix %}{% endblock site_prefix %}
+   {% block site_content %}
+    {% block site_icon %}{% endblock site_icon %}
+    {% block site_title %}{% endblock site_title %}
+    {% block site_search %}{% endblock site_search %}
+   {% endblock site_content %}
+   {% block site_suffix %}{% endblock site_suffix %}
+  {% endblock site %}
+  {% block page %}{% endblock page %}
+  {% block view %}{% endblock view %}
+ {% block head_term %}<head>{% endblock head_term %}
+ {% endblock head %}
+ {% block body %}
+ {% block body_init %}<body>{% endblock body_init %}
+  {% block header %}
+  {% block header_init %}<header>{% endblock header_init %}
+   {% block header_head %}{% endblock header_head %}
+   {% block header_body %}
+    {% block header_banner %}{# DEPRECATED : This block should be removed since header/header_body really constitute the banner #}{% endblock header_banner %}
+    {% block header_title %}{% endblock header_title %}
+    {% block header_route %}{% block header_breadcrumb %}{% endblock header_breadcrumb %}{% endblock header_route %}
+   {% endblock header_body %}
+   {% block header_foot %}{% endblock header_foot %}
+  {% block header_term %}</header>{% endblock header_term %}
+  {% endblock header %}
+  {% block nav %}
+  {% block nav_init %}<nav>{% endblock nav_init %}
+   {% block nav_head %}{% endblock nav_head %}
+   {% block nav_body %}{% endblock nav_body %}
+   {% block nav_foot %}{% endblock nav_foot %}
+  {% block nav_term %}</nav>{% endblock nav_term %}
+  {% endblock nav %}
+  {% block main %}
+  {% block main_init %}<main>{% endblock main_init %}
+   {% block main_head %}{% endblock main_head %}
+   {% block main_body %}{% block content %}{% endblock content %}{% endblock main_body %} {# It is more common to have CONTENT blocks versus MAIN_CONTENT in Django templates #}
+   {% block main_foot %}{% endblock main_foot %}
+  {% block main_term %}</main>{% endblock main_term %}
+  {% endblock main %}
+  {% block aside %}
+  {% block aside_init %}{% endblock aside_init %}
+   {% block aside_head %}{% endblock aside_head %}
+   {% block aside_body %}{% block aside_content %}{% endblock aside_content %}{% endblock aside_body %}
+   {% block aside_foot %}{% endblock aside_foot %}
+  {% block aside_term %}{% endblock aside_term %}
+  {% endblock aside %}
+  {% block footer %}
+  {% block footer_init %}<footer>{% endblock footer_init %}
+   {% block footer_head %}{% endblock footer_head %}
+   {% block footer_body %}
+    {% block footer_breadcrumb %}{% endblock footer_breadcrumb %}
+    {% block footer_legal %}{% endblock footer_legal %}
+   {% endblock footer_body %}
+   {% block footer_foot %}{% endblock footer_foot %}
+  {% block footer_term %}</footer>{% endblock footer_term %}
+  {% endblock footer %}
+ {% block body_term %}</body>{% endblock body_term %}
+ {% endblock body %}
+ {% block foot %}
+  {% block foot_js %}
+   {% block foot_js_libs %}{% endblock foot_js_libs %}
+   {% block foot_js_site %}{% endblock foot_js_site %}
+   {% block foot_js_page %}{% endblock foot_js_page %}
+   {% block foot_js_view %}{% endblock foot_js_view %}
+  {% endblock foot_js %}
+ {% endblock foot %}
+{% block html_term %}</html>{% endblock html_term %}
+{% endblock html %}
