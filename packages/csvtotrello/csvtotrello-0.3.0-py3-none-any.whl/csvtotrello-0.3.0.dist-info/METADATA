@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: csvtotrello
+Version: 0.3.0
+Summary: A package to bulk import csv backlog into Trello
+Home-page: https://github.com/qeude/csvtotrello
+Author: Quentin Eude
+Author-email: quentineude@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: py-trello
+
+# csvtotrello
+
+💻 Basic Python script to bulk import CSV backlog into Trello
+
+## 🛠 Install
+`pip install csvtotrello`
+
+## 🎉 Get started
+- Get your trello API key from [here](https://trello.com/app-key).
+- Get your board id.
+- `csvtotrello <trello_api_key> <trello_api_token> <board_id> <file_path_to_csv>`
+
+
