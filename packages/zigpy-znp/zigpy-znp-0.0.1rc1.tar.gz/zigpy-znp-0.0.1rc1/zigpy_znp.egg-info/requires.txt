@@ -1,0 +1,4 @@
+async_timeout
+attrs
+pyserial-asyncio
+zigpy-homeassistant>=0.10.0
