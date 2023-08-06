@@ -1,0 +1,9 @@
+README.md
+README.rst
+setup.py
+httperrors/__init__.py
+httperrors/errors.py
+httperrors.egg-info/PKG-INFO
+httperrors.egg-info/SOURCES.txt
+httperrors.egg-info/dependency_links.txt
+httperrors.egg-info/top_level.txt
