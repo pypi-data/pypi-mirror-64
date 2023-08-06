@@ -1,0 +1,11 @@
+README.md
+setup.py
+invisibleroads_macros_descriptor/__init__.py
+invisibleroads_macros_descriptor/properties.py
+invisibleroads_macros_descriptor.egg-info/PKG-INFO
+invisibleroads_macros_descriptor.egg-info/SOURCES.txt
+invisibleroads_macros_descriptor.egg-info/dependency_links.txt
+invisibleroads_macros_descriptor.egg-info/entry_points.txt
+invisibleroads_macros_descriptor.egg-info/not-zip-safe
+invisibleroads_macros_descriptor.egg-info/requires.txt
+invisibleroads_macros_descriptor.egg-info/top_level.txt
