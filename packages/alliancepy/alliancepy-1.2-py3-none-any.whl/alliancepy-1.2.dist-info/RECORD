@@ -1,0 +1,14 @@
+alliancepy/__init__.py,sha256=navapRPK0jBZBJ2Zph2ZrjAgL9z1NgxcYKStPVeH1fM,95
+alliancepy/client.py,sha256=VaXqeUd5oNuRYtJZlnSSWArWCZyd4hquk5bSRk14M3s,1112
+alliancepy/http.py,sha256=3TCZ2Uh6bOpakuzKfsYmXVW038q4zwqSpGMmHpLEEUI,442
+alliancepy/season.py,sha256=gpcRknN9eDdUWEwZLg6J-jV9rc97O-mbeOkWeVucmpk,233
+alliancepy/team.py,sha256=1EgUfnufXPL7vLTUqzc52qzXWw4scgidILjcVgqPp3c,7250
+alliancepy/ext/aio/__init__.py,sha256=ebxhO9uRcdhmoVqn9BSCudDwDlTfWWDoVjLsUeAWu8k,192
+alliancepy/ext/aio/async_client.py,sha256=KokWkO4I8WAOOwcP59i9C59bUunXHXhGrs6FD-Y5gaA,1158
+alliancepy/ext/aio/async_http.py,sha256=zZaBIomoURp_Y357dhyLEfwm4FcbAzJQ81kjZhVRQl0,442
+alliancepy/ext/aio/async_team.py,sha256=g9dClBcdA6G9esxWkzIED4vUbUkUdyrDhrj2858bwso,7515
+alliancepy-1.2.dist-info/LICENSE,sha256=IYglPTK0c-naC3xamJCL4Jae7BAFmM2Jvx381ez11zw,1072
+alliancepy-1.2.dist-info/METADATA,sha256=VaEoTakooV8rBkUK8TFH_sL4HHMy1eTVzx2S7xiSbyI,1761
+alliancepy-1.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+alliancepy-1.2.dist-info/top_level.txt,sha256=lvHWGR4DFI7L8lXjJO6r1G0_Uw6QyWf5Hr2nR4Aub5M,11
+alliancepy-1.2.dist-info/RECORD,,
