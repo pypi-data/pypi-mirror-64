@@ -1,0 +1,5 @@
+SQLAlchemy
+SQLAlchemy-Utils
+mysql-connector-python
+factory-boy
+SQLAlchemy-serializer
