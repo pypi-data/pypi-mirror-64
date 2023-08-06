@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: skt-hello-world
+Version: 0.0.1
+Summary: Prints skt hello world!
+Home-page: https://github.com/yumenoshima/skt-hello-world
+Author: Yumenoshima
+Author-email: skt.tofuya@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Freely Distributable
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Print SKT Hello World!
+Python script that prints skt hello world on terminal
+
+### Install using source code
+To download the app generator, you can clone this repository to your local machine.
+```
+$ git clone https://github.com/yumenoshima/skt-hello-world
+$ cd skt-hello-world
+```
+
+### Install using pip3
+```
+$ pip3 install skt-hello-world
+```
+Package @ PyPI repository: https://pypi.org/project/skt-hello-world/
+
+### Usage
+```
+$ skt-hello-world
+```
+
+
+
+Tutorial for package [here](https://askyourcode.blogspot.com/2020/01/uploading-your-python-project-to-pypi.html)!
+
