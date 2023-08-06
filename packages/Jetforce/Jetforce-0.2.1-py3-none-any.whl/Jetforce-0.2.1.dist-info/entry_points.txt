@@ -1,0 +1,5 @@
+[console_scripts]
+jetforce = jetforce:run_server
+jetforce-client = jetforce_client:run_client
+jetforce-diagnostics = jetforce_diagnostics:run
+
