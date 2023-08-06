@@ -1,0 +1,8 @@
+uvutils/__init__.py,sha256=RLBISUNi2JzMXx1r6rh7I62TuYdW-vCJF1EzlQUmEKI,30
+uvutils/image_processing/__init__.py,sha256=4knvhTcCOm1PcAQ_17D3UFRPPWmXT9RUEVdVIxuyuws,43
+uvutils/image_processing/resize.py,sha256=3akoZdbQqKnwLC62_bY7aaIfCFlVU4CK_UzFJBqC6_4,1343
+uvutils/image_processing/utils.py,sha256=j6V-Hgu_pYoZzUGDjAvDt5Gj6uW47CBF7oGudk6_hVw,1992
+uvutils-0.0.1.dist-info/METADATA,sha256=lKgmWpRNOtKujM_p8mqpO0qV52WastJAJi_l4PqWVng,370
+uvutils-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+uvutils-0.0.1.dist-info/top_level.txt,sha256=_ZmlQLI_87VZL0gdvmXQ9kZi_HZItqUFA264doMKntA,8
+uvutils-0.0.1.dist-info/RECORD,,

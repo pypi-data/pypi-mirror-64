@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uvutils
+Version: 0.0.1
+Summary: Utility functions for various Uvulab projects
+Home-page: UNKNOWN
+Author: Jerry Duncan
+Author-email: mikeynjerry@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6
+Requires-Dist: numpy
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+
+# uvutils
+Utility functions for various Uvulab projects
+
+
