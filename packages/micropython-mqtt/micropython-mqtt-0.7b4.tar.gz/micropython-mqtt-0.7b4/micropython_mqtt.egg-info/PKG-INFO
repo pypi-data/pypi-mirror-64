@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: micropython-mqtt
+Version: 0.7b4
+Summary: Reliable MQTT client for MicroPython using asyncio
+Home-page: https://github.com/tve/micropython-mqtt
+Author: Thorsten von Eicken
+Maintainer: Thorsten von Eicken
+License: MIT
+Description: MQTT client for Micropython using asyncio.
+        The implementation requires the new (in 2020) uasyncio built into Micropython. It provides
+        an MQTTClient class that operates in the background (using the asyncio loop) and makes
+        callbacks for incoming messages. MQTTClient supports QoS 0 and QoS messages, and it supports
+        non-blocking publishing of messages to improve streaming performance.
+        MQTTClient automatically reconnects if the connection to the broker fails and also
+        automatically connects and reconnects Wifi should it drop.
+        The API is largely compatible with Peter Hinch's mqtt_as.
+Platform: UNKNOWN
