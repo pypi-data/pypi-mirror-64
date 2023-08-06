@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: mathmodule_pkg
+Version: 0.0.3
+Summary: Just another Python package with math stuff
+Home-page: https://github.com/Retr0MrWave/MathModule
+Author: Ilia Zhuravok
+Author-email: ilia.zhuravok@gmail.com
+License: MIT
+Download-URL: https://github.com/Retr0MrWave/mathModule/archive/v_003.tar.gz
+Description: UNKNOWN
+Keywords: MATH
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
