@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: throttler
+Version: 1.0
+Summary: Zero-dependency Python package for simple throttling with asyncio support
+Home-page: https://github.com/uburuntu/throttler
+Author: uburuntu
+Author-email: bekbulatov.ramzan@ya.ru
+License: UNKNOWN
+Download-URL: https://github.com/uburuntu/throttler/archive/master.zip
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+
+# Throttler
+
+[![Python](https://img.shields.io/badge/Python-3.6%20%7C%203.7%20%7C%203.8-blue.svg?longCache=true)]()
+[![PyPI](https://img.shields.io/pypi/v/throttler.svg)](https://pypi.python.org/pypi/throttler)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/uburuntu/throttler/blob/master/LICENSE)
+
+[![Build Status](https://travis-ci.org/uburuntu/throttler.svg?branch=master)](https://travis-ci.org/uburuntu/throttler)
+[![codecov](https://codecov.io/gh/uburuntu/throttler/branch/master/graph/badge.svg)](https://codecov.io/gh/uburuntu/throttler)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/82679eb03912475c8f7d14ee76ebf96e)](https://app.codacy.com/manual/uburuntu/throttler?utm_source=github.com&utm_medium=referral&utm_content=uburuntu/throttler&utm_campaign=Badge_Grade_Dashboard)
+
+Zero-dependency Python package for simple throttling with asyncio support.
+
+## рџЋ’ Install
+
+Just
+```sh
+pip install throttler
+```
+
+## рџ›  Usage
+
+TODO
+
+## рџ‘ЁрџЏ»вЂЌрџ’» Author
+
+**Ramzan Bekbulatov**:
+* Telegram: [@rm_bk](https://t.me/rm_bk)
+* Github: [@uburuntu](https://github.com/uburuntu)
+* LinkedIn: [@rmbk](https://linkedin.com/in/rmbk)
+
+## рџ’¬ Contributing
+
+Contributions, issues and feature requests are welcome! 
+
+## рџ“ќ License
+
+This project is [MIT](https://github.com/uburuntu/throttler/blob/master/LICENSE) licensed.
+
+
