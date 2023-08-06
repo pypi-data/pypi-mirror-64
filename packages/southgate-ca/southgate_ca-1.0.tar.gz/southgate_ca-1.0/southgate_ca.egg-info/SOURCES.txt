@@ -1,0 +1,9 @@
+README.md
+setup.py
+southgate_ca/__init__.py
+southgate_ca/sg2image.py
+southgate_ca/sg2text.py
+southgate_ca.egg-info/PKG-INFO
+southgate_ca.egg-info/SOURCES.txt
+southgate_ca.egg-info/dependency_links.txt
+southgate_ca.egg-info/top_level.txt
