@@ -1,0 +1,14 @@
+README.md
+comicom
+setup.py
+comicom.egg-info/PKG-INFO
+comicom.egg-info/SOURCES.txt
+comicom.egg-info/dependency_links.txt
+comicom.egg-info/top_level.txt
+modules/__init__.py
+modules/arguments.py
+modules/comgui.py
+modules/compiler.py
+modules/entities.py
+modules/imgmag.py
+modules/logger.py
