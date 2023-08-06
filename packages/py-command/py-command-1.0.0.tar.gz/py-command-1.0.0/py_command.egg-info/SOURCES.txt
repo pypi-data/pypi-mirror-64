@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+README.rst
+setup.py
+py_command/__init__.py
+py_command/base.py
+py_command/entry.py
+py_command.egg-info/PKG-INFO
+py_command.egg-info/SOURCES.txt
+py_command.egg-info/dependency_links.txt
+py_command.egg-info/top_level.txt
+test/__init__.py
+test/test_command.py
+test/subcommand/__init__.py
+test/subcommand/hellocommand.py

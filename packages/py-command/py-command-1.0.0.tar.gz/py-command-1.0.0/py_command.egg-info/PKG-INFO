@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: py-command
+Version: 1.0.0
+Summary: A small tool for python command and sub command.
+Home-page: https://github.com/zhd785576549/py-command
+Author: SnoopyBoy
+Author-email: 785576549@qq.com
+License: MIT
+Description: A simple command tool
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
