@@ -1,0 +1,3 @@
+[console_scripts]
+inisync = inisync.inisync:main
+
