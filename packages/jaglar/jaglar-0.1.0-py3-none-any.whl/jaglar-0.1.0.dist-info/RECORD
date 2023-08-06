@@ -1,0 +1,11 @@
+README.org,sha256=jo9WJ1fNoFZVcl2iKloeqUqlNrNT-GnghVFhWn7nxPo,940
+jaglar/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jaglar/cli.py,sha256=jwPvX-bni9AZu9GRHDOkGn7_L3EgWfh_ZqEkx5vWsXs,99
+jaglar/ganttpro.py,sha256=lxZFrR_LTds7PD3ChPjlst1b4TdmgLYTvfJfCYkZ4cI,4204
+jaglar/tj.py,sha256=0vl7hQt9_G91Vd4-LkBtH3IWfO5zkT_LfIEvczA0bgY,5018
+jaglar/types.py,sha256=mJsitWfRTEFvIlvLS09At0EfZ0X6sIM4JHL4fgWN5ys,270
+jaglar/utils.py,sha256=_6NAjjCj5kkADN9il-WmXkX12kZhdWzXfJrVZjLkauA,371
+jaglar-0.1.0.dist-info/entry_points.txt,sha256=yAJD_U54_mb8REMnciJmzmpOcZ7BnX5Zuw8W4pPfYIw,42
+jaglar-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+jaglar-0.1.0.dist-info/METADATA,sha256=ABjMwda-z_wKsXfvPfVVZHKIn75ngEg_4O5_9fir3w8,704
+jaglar-0.1.0.dist-info/RECORD,,
