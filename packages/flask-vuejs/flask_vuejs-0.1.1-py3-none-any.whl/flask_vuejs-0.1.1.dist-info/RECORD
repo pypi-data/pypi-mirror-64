@@ -1,0 +1,11 @@
+flask_vuejs/__init__.py,sha256=wZa-l0NdyrM0d7V5GbeQlNlF2lYGLKXz_k0eT-uOe30,1156
+flask_vuejs/__version__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+flask_vuejs/environs.py,sha256=73xU0SbekapHp61lNQjzAtx1PcoGTs38QSxSlmr9Yh0,289
+flask_vuejs/static/core/axios.js,sha256=bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg,46205
+flask_vuejs/static/core/config.js,sha256=Mb2Tfal9PBQ9geOwr6l01FB1M-xb-OJUJHjmAwHREqs,189
+flask_vuejs/static/core/vue.js,sha256=NSuqgY2hCZJUN6hDMFfdxvkexI7-iLxXQbL540RQ_c4,342146
+flask_vuejs/static/main.js,sha256=0rjQVOOKfZSRZFBBIjBJt9ee0_NuYEbzipCh4m2PYCs,388542
+flask_vuejs/templates/vue/base.html,sha256=p8jLlcd5DdAIMJDahPoYlG4BqJfD8CICKbq8OuQtM-s,820
+flask_vuejs-0.1.1.dist-info/WHEEL,sha256=VN2eEg4PHbTOniXb-cCYQPc6zUTS4dAcATjlgU3q-Lo,83
+flask_vuejs-0.1.1.dist-info/METADATA,sha256=vu5cZdaOURQ6GUnFtrVi9LGXSu4rGUPLiF2IWYnixxk,1446
+flask_vuejs-0.1.1.dist-info/RECORD,,
