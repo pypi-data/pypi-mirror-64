@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: redis_distributed_lock
+Version: 1.1
+Summary: Redis distributed lock for python
+Home-page: http://github.com/halukshan/redis-distributed-lock
+Author: halukshan
+Author-email: halukshan@gmail.com
+License: MIT
+Description: Redis distributed lock for python, using setnx and getset, provide block and no-block funtion
+Keywords: redis distributed lock
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.7
