@@ -1,0 +1,15 @@
+numpy==1.18.1
+pandas==1.0.1
+scipy==1.4.1
+opencv-python==4.1.2.30
+moviepy==1.0.1
+imageio==2.6.1
+PyYAML>=5.1
+
+[dev]
+pygame==1.9.6
+pytest==5.4.1
+sphinx==2.4.4
+sphinx_rtd_theme==0.4.3
+numpydoc==0.9.2
+sphinx-napoleon==0.7
