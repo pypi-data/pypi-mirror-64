@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: opyrators
+Version: 0.0.1
+Summary: Manipulate quantum many-body operators
+Home-page: https://github.com/everthemore/opyrators
+Author: Evert van Nieuwenburg
+Author-email: evert.v.nieuwenburg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+Opyrators (pronounced the same way as the word 'operators') is a lightweight python package that represents many-body fermionic and spin operators as strings. Complex commutators can easily be computed with opyrators, see the github repository for examples.
+
+

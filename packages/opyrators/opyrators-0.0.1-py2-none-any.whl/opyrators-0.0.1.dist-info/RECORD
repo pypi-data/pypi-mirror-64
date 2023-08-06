@@ -1,0 +1,11 @@
+opyrators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+opyrators/fermions.py,sha256=5aU1vtHGZ42rBJYRYGi5lMeySHtJjzmpYcVdzshNjAA,8279
+opyrators/spins.py,sha256=kSWhv90VLeTQaxemen1r6FLrZ1lFUsjR9CTirkGPCRU,7034
+opyrators-0.0.1.dist-info/DESCRIPTION.rst,sha256=p9QgZSLNSAjmrjSr50G46ip8ZVnwp1wKe-P5t8nTNMs,260
+opyrators-0.0.1.dist-info/METADATA,sha256=yx9Ecv9Ox8nBnIfNqMeybnRh0JRewCDqtI4Mo09V3Fk,845
+opyrators-0.0.1.dist-info/RECORD,,
+opyrators-0.0.1.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+opyrators-0.0.1.dist-info/metadata.json,sha256=aCc2LhpEicKrqMdDfH6GUqBsRx2AdANgqDPqdIX6Emc,767
+opyrators-0.0.1.dist-info/top_level.txt,sha256=1bpwQQPogvDjd2--ptyeg2hTikzTjg_2t5E7j5vLsjE,16
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_operators.py,sha256=asoTTsNvbR7HZ-IM8s9s-JGPYoIqV4ppSHsFjkBD1p4,5455
