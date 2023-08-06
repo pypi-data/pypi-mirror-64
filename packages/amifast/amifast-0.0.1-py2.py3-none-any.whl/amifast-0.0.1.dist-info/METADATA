@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: amifast
+Version: 0.0.1
+Summary: amifast: simple powerful benchmarking with Python
+Home-page: https://github.com/sleighsoft/amifast
+Author: Julian Niedermeier
+Author-email: jpniedermeier@gmail.com
+License: MIT license
+Project-URL: Source, https://github.com/sleighsoft/amifast
+Project-URL: Tracker, https://github.com/sleighsoft/amifast/issues
+Keywords: test,unittest
+Platform: unix
+Platform: linux
+Platform: osx
+Platform: cygwin
+Platform: win32
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: py-cpuinfo
+
+<h2 algin="center"> amifast: simple powerful benchmarking with Python</h2>
+
+---
+
+_Contents:_ **[Installation and usage](#installation-and-usage)** |
+**[Contributing](#contributing)** | **[Change Log](#change-log)** |
+**[Authors](#authors)**
+
+---
+
+## Installation and Usage
+
+### Installation
+
+
+### Usage
+
+```python
+```
+
+### Examples
+
+Examples can be found in the [Examples](examples/) directory.
+
+### Command line options
+
+Will be added at a later date.
+
+## License
+
+MIT
+
+## Contributing
+
+More details can be found in [CONTRIBUTING](CONTRIBUTING.md)
+
+## Change Log
+
+Nothing has been recorded here so far...
+
+## Authors
+
+Developed by [Julian Niedermeier](mailto:jpniedermeier@gmail.com)
+
+

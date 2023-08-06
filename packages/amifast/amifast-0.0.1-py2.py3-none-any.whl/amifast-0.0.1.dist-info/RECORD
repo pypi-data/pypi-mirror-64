@@ -1,0 +1,14 @@
+amifast/__init__.py,sha256=gMqsxBjxCDK5mU-OTYePmBTTTRx-IauQx4cgglqjXJI,1176
+amifast/_version.py,sha256=GeQJ6v6kIYu04StiMqGXv1ELJiVrS0wVU6vXpIBTRTo,120
+amifast/bench.py,sha256=FGSgPwdP2j5Crnh9zhUZvgQosV97lXi1LmP1cAHdPbE,7459
+amifast/dtypes.py,sha256=xybVdR67NejQR-aGaaTR8o0eyLSmk_nFMCRAI_GpZqY,20055
+amifast/format.py,sha256=StcZfY-YTqaUHAzZBxX2FAglF8bOI8Y_BHQAJ2SyxSo,13120
+amifast/main.py,sha256=DkeLUlrb7rGx3nZ04aADU9HXXu5mZTf_DBwT0xhzIv4,7
+amifast/system.py,sha256=wxiGuaO4mzuygwnTCGwe9o0un6ZPCvptNo0qxrTqmY0,6217
+amifast/utils.py,sha256=tYzpl7kf2-SEMotGRozdD8CsqNSmp2p8HYles3FH4qQ,1227
+amifast-0.0.1.dist-info/LICENSE,sha256=kR2gW6iCYjEVWtblEVoAJuUf3HyUSidMphb4IcxfESE,1106
+amifast-0.0.1.dist-info/METADATA,sha256=_3RgRByGEQN207J2OkMn2Sg2dfi0ZHVYlFGhL2UGDdk,1916
+amifast-0.0.1.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+amifast-0.0.1.dist-info/entry_points.txt,sha256=zLelEd7Mx8Be_YlPgiKKwDbCPdArVFt3iTfHq1XudA4,42
+amifast-0.0.1.dist-info/top_level.txt,sha256=VipfiN5Nl-qTfkc6DV1axuqVQ0VxttO52vJ2qmMqtLU,8
+amifast-0.0.1.dist-info/RECORD,,
