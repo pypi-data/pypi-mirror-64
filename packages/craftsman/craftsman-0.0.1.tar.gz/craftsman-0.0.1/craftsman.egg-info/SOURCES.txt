@@ -1,0 +1,7 @@
+README.md
+setup.py
+craftsman/__init__.py
+craftsman.egg-info/PKG-INFO
+craftsman.egg-info/SOURCES.txt
+craftsman.egg-info/dependency_links.txt
+craftsman.egg-info/top_level.txt
