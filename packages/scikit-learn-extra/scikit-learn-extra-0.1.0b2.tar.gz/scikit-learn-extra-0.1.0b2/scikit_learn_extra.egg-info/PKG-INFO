@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: scikit-learn-extra
+Version: 0.1.0b2
+Summary: A set of tools for scikit-learn.
+Home-page: https://github.com/scikit-learn-contrib/scikit-learn-extra
+Maintainer: G. Lemaitre
+Maintainer-email: g.lemaitre58@gmail.com
+License: new BSD
+Download-URL: https://github.com/scikit-learn-contrib/scikit-learn-extra
+Description: .. -*- mode: rst -*-
+        
+        |Travis|_ |Codecov|_ |CircleCI|_ |ReadTheDocs|_
+        
+        .. |Travis| image:: https://travis-ci.org/scikit-learn-contrib/scikit-learn-extra.svg?branch=master
+        .. _Travis: https://travis-ci.org/scikit-learn-contrib/project-template
+        
+        .. |Codecov| image:: https://codecov.io/gh/scikit-learn-contrib/project-template/branch/master/graph/badge.svg
+        .. _Codecov: https://codecov.io/gh/scikit-learn-contrib/scikit-learn-extra
+        
+        .. |CircleCI| image:: https://circleci.com/gh/scikit-learn-contrib/scikit-learn-extra.svg?style=shield&circle-token=:circle-token
+        .. _CircleCI: https://circleci.com/gh/scikit-learn-contrib/scikit-learn-extra/tree/master
+        
+        .. |ReadTheDocs| image:: https://readthedocs.org/projects/scikit-learn-extra/badge/?version=latest
+        .. _ReadTheDocs: https://sklearn-template.readthedocs.io/en/latest/?badge=latest
+        
+        scikit-learn-extra - A set of useful tools compatible with scikit-learn
+        =======================================================================
+        
+        .. _scikit-learn: https://scikit-learn.org
+        
+        scikit-learn-extra is a Python module for machine learning that extends scikit-learn. It includes algorithms that are useful but do not satisfy the scikit-learn `inclusion criteria <https://scikit-learn.org/stable/faq.html#what-are-the-inclusion-criteria-for-new-algorithms>`_, for instance due to their novelty or lower citation number.
+        
+        Installation
+        ------------
+        
+        Dependencies
+        ^^^^^^^^^^^^
+        
+        scikit-learn-extra requires,
+         
+        - Python (>=3.5)
+        - scikit-learn (>=0.21), and its dependencies
+        - Cython (>0.28)
+        
+        
+        User installation
+        ^^^^^^^^^^^^^^^^^
+        
+        Latest development version can be installed with,
+        
+        .. code::
+        
+            pip install https://github.com/scikit-learn-contrib/scikit-learn-extra/archive/master.zip
+        
+        
+        License
+        -------
+        
+        This package is released under the 3-Clause BSD license.
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Provides-Extra: tests
+Provides-Extra: docs
