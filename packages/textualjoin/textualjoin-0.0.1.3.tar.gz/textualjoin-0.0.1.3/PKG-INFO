@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: textualjoin
+Version: 0.0.1.3
+Summary: TextualJoin is a python package for join dataframes based on text data.
+Home-page: UNKNOWN
+Author: Giulio Cesare Mastrocinque Santo
+Author-email: giuliosanto@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.7

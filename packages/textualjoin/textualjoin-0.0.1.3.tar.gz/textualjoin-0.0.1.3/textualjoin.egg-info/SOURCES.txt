@@ -1,0 +1,11 @@
+.gitignore
+README.md
+setup.py
+textualjoin/__init__.py
+textualjoin/textualjoin.py
+textualjoin.egg-info/PKG-INFO
+textualjoin.egg-info/SOURCES.txt
+textualjoin.egg-info/dependency_links.txt
+textualjoin.egg-info/not-zip-safe
+textualjoin.egg-info/requires.txt
+textualjoin.egg-info/top_level.txt
