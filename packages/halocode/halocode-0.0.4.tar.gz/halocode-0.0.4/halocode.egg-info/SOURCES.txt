@@ -1,0 +1,7 @@
+setup.py
+halocode/__init__.py
+halocode.egg-info/PKG-INFO
+halocode.egg-info/SOURCES.txt
+halocode.egg-info/dependency_links.txt
+halocode.egg-info/requires.txt
+halocode.egg-info/top_level.txt
