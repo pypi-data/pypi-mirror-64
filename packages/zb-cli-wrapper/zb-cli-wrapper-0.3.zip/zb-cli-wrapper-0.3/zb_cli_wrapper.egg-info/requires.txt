@@ -1,0 +1,4 @@
+pynrfjprog~=10.3.0
+pyserial
+pyyaml
+numpy
