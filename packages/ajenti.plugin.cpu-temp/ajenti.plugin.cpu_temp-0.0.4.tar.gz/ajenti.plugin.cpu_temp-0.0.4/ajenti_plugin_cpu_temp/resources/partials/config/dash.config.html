@@ -1,0 +1,18 @@
+<div ng:controller="CPUTempDashConfigController">
+    <div>
+        <h2>CPU Temperature Setting</h2>
+        <h3>Chart Setting</h3>
+        <label>Chart Max Value ({{unit}})</label>
+        <input type="number" ng:model="configuredWidget.config.tempchart.tempmax" class="form-control" />
+        <label>Chart Min Value ({{unit}})</label>
+        <input type="number" ng:model="configuredWidget.config.tempchart.tempmin" class="form-control" />
+        <h3>Temperature Display Setting</h3>
+        <label>Unit</label>
+        <select ng:model="configuredWidget.config.temp.unit" class="form-control" >
+			<option value="C">℃</option>
+			<option value="F">℉</option>
+		</select>
+        <label>Temperature Read File (/sys/class/thermal/)</label>
+        <input type="text" ng:model="configuredWidget.config.temp.file" class="form-control" />
+    </div>
+</div>

@@ -1,0 +1,3 @@
+recursive-include ajenti_plugin_cpu_temp * *.*
+include ajenti_plugin_cpu_temp/plugin.yml
+include MANIFEST.in

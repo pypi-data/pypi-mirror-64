@@ -1,0 +1,32 @@
+name: cpu_temp
+author: TiferKing
+email: tiferking@tiferking.cn
+url: https://www.tiferking.cn
+version: '0.1'
+title: 'CPU Temperature Monitor'
+icon: temperature-high
+dependencies:
+    - !!python/object:aj.plugins.PluginDependency {
+        plugin_name: core
+    }
+    - !!python/object:aj.plugins.PluginDependency {
+        plugin_name: dashboard
+    }
+resources:
+    # js
+    - resources/js/module.coffee
+    - resources/js/module/dash.controller.coffee
+    # partials
+    - 'resources/partials/dash.html'
+    - 'resources/partials/config/dash.config.html'
+    # css
+    # vender-js
+    - path: resources/extra-vendor/chart.js/Chart.min.js
+      vendor: true
+    - path: resources/extra-vendor/chart.js/Chart.bundle.min.js
+      vendor: true
+    # vender-css
+    - path: resources/extra-vendor/chart.js/Chart.min.css
+      vendor: true
+    # tag
+    - 'ng:ajenti.cpu_temp'
