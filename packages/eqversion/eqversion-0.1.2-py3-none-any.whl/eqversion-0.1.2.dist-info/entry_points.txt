@@ -1,0 +1,3 @@
+[console_scripts]
+eqversion=eqversion.eqversion:main
+
