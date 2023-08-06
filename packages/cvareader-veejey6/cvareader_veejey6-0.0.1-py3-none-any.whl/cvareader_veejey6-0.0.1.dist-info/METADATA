@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: cvareader-veejey6
+Version: 0.0.1
+Summary: to read the cva file
+Home-page: https://github.com/pypa/sampleproject
+Author: veejey
+Author-email: manivj06@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6.6
+Description-Content-Type: text/markdown
+
+# Cva Reader
+
+This is a simple package to read the cva file.
+
+Arguments: path - path of the cva file
+		   filename - CVA filename
+		   *args - parameters1, parameters2 .... parameters(N)
+
+Return:    Dict
+		   (ex: {
+					"parameters1": "value(s)",
+					"parameters1": "value(s)"
+				}
+
