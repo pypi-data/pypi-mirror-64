@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: schemadict
+Version: 0.0.1
+Summary: Schema dictionaries
+Home-page: UNKNOWN
+Author: Aaron Dettmann
+Author-email: dettmann@kth.se
+License: Apache License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=3.6.0
+
+Schema dictionaries
+
+
