@@ -1,0 +1,1 @@
+from pingmeen import Pingmeen
