@@ -1,0 +1,15 @@
+pysonofflanr3/__init__.py,sha256=a-pVNOifeWKPR7eQkdtu6445pikTc41zuuflvE9mBDU,2210
+pysonofflanr3/cli.py,sha256=y2NWBOqptAM7XAorBL2uaiRu8kZDzpVXZI0bOkJhRYk,7080
+pysonofflanr3/client.py,sha256=C-8zHMeNO79Syd-rD33yPlMHINshw623m5JgpE0JEPs,12850
+pysonofflanr3/discover.py,sha256=ok3d1fD2a6_65BDzVo6o5l5boQ04RlmAuvJmJ-Zx6To,1240
+pysonofflanr3/sonoffcrypto.py,sha256=Nfs9gtXOj2dNjQhDwKptd7SrCosGfL3qwDiOyokR_rs,2130
+pysonofflanr3/sonoffdevice.py,sha256=JdiIAFF7RadHgfi5yLHfnzsuwlDtBTzFu-KULbbjz-c,15961
+pysonofflanr3/sonoffswitch.py,sha256=HD_S6cjpZ6B1wSFV5H9rI5DVAu3TYTQoxEbr4KzpT0w,5604
+pysonofflanr3/utils.py,sha256=LCwBVg0SereQvIgGGxzBOq7hsIJh_GaqK9XYKGbRx0U,668
+pysonofflanr3-1.1.4.dist-info/AUTHORS.rst,sha256=8qum5uxQaaiV9VZtSoh0M4-9f12BHR6JemwyXwvR1Zg,531
+pysonofflanr3-1.1.4.dist-info/LICENSE,sha256=ZpUJHfTG3P9cEYowwgDXsmdv4fUi04rVJjaFPIzeTks,1111
+pysonofflanr3-1.1.4.dist-info/METADATA,sha256=q1t2026bRxVdfM8t0KUDiCx2AXrzQN4IqvFFjKd54tA,8642
+pysonofflanr3-1.1.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pysonofflanr3-1.1.4.dist-info/entry_points.txt,sha256=OJtdaHFg0cJ4T5z3dRAmwaV6wQx9OZfLRbYl2qk7L2w,57
+pysonofflanr3-1.1.4.dist-info/top_level.txt,sha256=7C1Dut8KfpFuSoN_kv0PqWJmdw093PYafuDv84BoHV4,14
+pysonofflanr3-1.1.4.dist-info/RECORD,,
