@@ -1,0 +1,10 @@
+README.md
+setup.py
+serial_tool/__init__.py
+serial_tool/serial.py
+serial_tool.egg-info/PKG-INFO
+serial_tool.egg-info/SOURCES.txt
+serial_tool.egg-info/dependency_links.txt
+serial_tool.egg-info/entry_points.txt
+serial_tool.egg-info/requires.txt
+serial_tool.egg-info/top_level.txt
