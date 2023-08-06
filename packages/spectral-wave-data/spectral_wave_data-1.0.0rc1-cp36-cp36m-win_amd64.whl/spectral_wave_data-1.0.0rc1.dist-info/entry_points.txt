@@ -1,0 +1,3 @@
+[console_scripts]
+swd_meta = spectral_wave_data.scripts.swd_meta:main
+
