@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: cbcov
+Version: 0.2
+Summary: Simple models for covid prediction
+Home-page: https://plmlab.math.cnrs.fr/atrouve/cb-epid-covid.git
+Author: CB
+Author-email: alain.trouve@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# CB-Epid-Covid
+
+Implementation d'un modèle simple de prévision du nombre de décès 
+journaliers en fonction des données de mortalité journalières reportées. 
+
+Le modèle d'évolution du nombre de cas est juste un modèle d'EDO qui 
+estime la dynamique du paramêtre de la variable de Poisson sous-jacent au 
+nombre de morts cumulés en fonction du temps. Le systeme contient deux 
+équations, la première pour le nombre de mort (cumulé) $`t\to m(t)`$ et l'autre 
+pour l'évolution du taux d'accroissement $`\alpha`$ journalier du nombre de morts
+
+```math
+\left\{\begin{array}{rcl}
+\dot{m} & = & \alpha m \\
+\dot{\alpha} &= &-\rho\alpha
+\end{array}\right.
+```
+
+On suppose ici que $`\rho`$ est constant en temps (modélisation de l'effet du 
+confinement) à estimer sur les données. Ce type de comportement est bien 
+corroboré sur les données de la région de Hubei et de l'Italie) 
+
+La solution est donnée par 
+
+```math
+\left\{
+\begin{array}{rcl}
+\alpha(t) & = & \alpha(t_0)\exp(-\rho(t-t_0))\\
+& &\\
+m(t)&= & m(t_0)\exp(\frac{\alpha(t_0)}{\rho}(1-\exp(-\rho(t-t_0))
+\end{array}\right.
+```
+
+Dans l'implémentation actuelle, nous avons comme paramètre 
+$`\theta=(m_0,\alpha_0,\rho)`$ et implicitement $`t_0`$ qui est fixé à la main. 
+On suppose que les données observées sont i.i.d et que 
+$`\mathbf{m}_i\sim\mathcal{P}(m(t_i))`$ pour 
+$`i=0,\cdots,n-1`$ (modèle de bruit Poissonien). 
+L'estimation est faite par max de vraisemblance par un algorithme L-BFGS.
+
+

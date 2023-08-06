@@ -1,0 +1,16 @@
+cbcov-0.2.data/scripts/cbcov,sha256=os-S34yu1W-L6lZPJQm-yk3L_nZyrmr7SKbuBBl8SZ4,55
+covid_predict/__init__.py,sha256=SXJtwTOHtX0knAZkvSr6G1f8_MXff6JoB1LZ5hK7cYQ,35
+covid_predict/io/Csse_data.py,sha256=1203n8VBzVBrCaA8k35JybiS9icNzCcWqP7ja9BIm8Y,709
+covid_predict/io/DataGouvFr.py,sha256=LeiboKcP-hE6_TBFAsb_kxUWy5HVsVQh6COH7T3Rvcw,1733
+covid_predict/io/OpenCovid19.py,sha256=3Bw8gvJf9BlZ2RE0j8UnQsCUebl4_O-VLfN0FXYH4Dg,8999
+covid_predict/io/__init__.py,sha256=mck6broa9SakqIq2lTUVLXqOncgM7Hq-PwZQJCby2wk,176
+covid_predict/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covid_predict/models/visu.py,sha256=G5La96VwKp7T0u8p-lglICMNHWMCb9OnsykxxqxLMvo,3507
+covid_predict/models/zm.py,sha256=BUqS7KOn3N9QAX6gma0ZgQCiAD1z0eK3v4-oU0ExZ5k,13178
+covid_predict/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covid_predict/util/math_util.py,sha256=FFYq8FgD8_CQ5Np0_CNYBy3dUxMqIhP9TiFdsuX1DPs,1338
+covid_predict/util/plot_util.py,sha256=R7NaxJNuIkzz43xM-dU9EIuh9VTCxtDxSn2tdUPRIcY,1348
+cbcov-0.2.dist-info/METADATA,sha256=nrLi-2335VHxqpPCyEOfmzI3gKhuTffKiFFyGKPm-fs,1906
+cbcov-0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cbcov-0.2.dist-info/top_level.txt,sha256=jZonltILAqsvjTfy8_wbahqqQXC4Sxi8j_O5xVKPPbk,14
+cbcov-0.2.dist-info/RECORD,,
