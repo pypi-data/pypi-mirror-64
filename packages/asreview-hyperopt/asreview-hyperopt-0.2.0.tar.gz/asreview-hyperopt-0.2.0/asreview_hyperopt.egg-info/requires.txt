@@ -1,0 +1,11 @@
+asreview>=0.7.0
+numpy
+tqdm
+hyperopt
+sklearn
+
+[all]
+mpi4py
+
+[mpi]
+mpi4py
