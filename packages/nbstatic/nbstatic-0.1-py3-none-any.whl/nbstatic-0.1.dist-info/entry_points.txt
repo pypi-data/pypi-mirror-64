@@ -1,0 +1,3 @@
+[console_scripts]
+nbstatic = nbstatic.__main__:main
+

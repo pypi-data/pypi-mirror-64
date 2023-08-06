@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: nbstatic
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/adrn/nbstatic
+Author: adrn,eteq
+Author-email: adrianmpw@gmail.com
+License: MIT
+Platform: UNKNOWN
+Provides: nbstatic
+Requires-Python: >=3.6
+Requires-Dist: nbconvert
+Requires-Dist: jupyter-client
+
+UNKNOWN
+
+
