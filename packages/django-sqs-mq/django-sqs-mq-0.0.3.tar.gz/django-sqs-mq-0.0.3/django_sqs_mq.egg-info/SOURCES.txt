@@ -1,0 +1,12 @@
+README.md
+setup.py
+django_sqs/__init__.py
+django_sqs/runtime_config.py
+django_sqs/utils.py
+django_sqs/launcher/__init__.py
+django_sqs_mq.egg-info/PKG-INFO
+django_sqs_mq.egg-info/SOURCES.txt
+django_sqs_mq.egg-info/dependency_links.txt
+django_sqs_mq.egg-info/requires.txt
+django_sqs_mq.egg-info/top_level.txt
+django_sqs_mq.egg-info/zip-safe
