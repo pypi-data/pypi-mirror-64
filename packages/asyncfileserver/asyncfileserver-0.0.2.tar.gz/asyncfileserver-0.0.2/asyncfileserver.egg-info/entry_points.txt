@@ -1,0 +1,3 @@
+[console_scripts]
+asyncfileserver = asyncfilserserver.app.main:main
+
