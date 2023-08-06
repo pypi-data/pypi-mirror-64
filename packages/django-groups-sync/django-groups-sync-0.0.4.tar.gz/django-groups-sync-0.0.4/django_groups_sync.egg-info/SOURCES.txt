@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_groups_sync.egg-info/PKG-INFO
+django_groups_sync.egg-info/SOURCES.txt
+django_groups_sync.egg-info/dependency_links.txt
+django_groups_sync.egg-info/top_level.txt
+groups_sync/__init__.py
+groups_sync/apps.py
+groups_sync/utils.py
+groups_sync/management/__init__.py
+groups_sync/management/commands/__init__.py
+groups_sync/management/commands/export_groups_permissions.py
+groups_sync/management/commands/sync_groups_permissions.py
