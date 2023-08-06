@@ -1,0 +1,147 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: {{ description }}
+Parameters:
+  ENVIRONMENT:
+    Type: String
+    Default: test
+  {% for variable in environment_variables %}
+  {{ variable.alpha_name }}:
+    Type: {{ variable.type }}
+  {% endfor %}
+Globals:
+  Api:
+    # enable CORS; to make more specific, change the origin wildcard
+    # to a particular domain name, e.g. "'www.example.com'"
+    Cors:
+      AllowMethods: "'*'"
+      AllowHeaders: "'*'"
+      AllowOrigin: "'*'"
+Resources:
+  {% for table in dynamo_tables %}
+  {{ table.name }}:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName:
+        Fn::Join:
+          - "-"
+          - - {{ table.name }}
+            - Ref: ENVIRONMENT
+      AttributeDefinitions:
+        - AttributeName: {{ table.primary_key }}
+          AttributeType: S
+      KeySchema:
+        - AttributeName: {{ table.primary_key }}
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+      SSESpecification:
+        SSEEnabled: True
+  {% endfor %}
+  CustomerManagedPolicy:
+      Type: AWS::IAM::ManagedPolicy
+      Properties:
+        PolicyDocument:
+          Version: 2012-10-17
+          Statement:
+            - Sid: DynamoDB
+              Action:
+                - 'dynamodb:*'
+              Effect: Allow
+              Resource:
+                - "*"
+  APIDomainName:
+    Type: AWS::ApiGateway::DomainName
+    Properties:
+      CertificateArn: arn:aws:acm:us-east-1:267653903190:certificate/6ed4866c-16dd-4db8-81cf-fb1316227679
+      DomainName:
+        Fn::Join:
+          - ""
+          - - {{ subdomain }}
+            - "-"
+            - Ref: ENVIRONMENT
+            - .alexwiss.com
+  APIBasePathMapping:
+    Type: AWS::ApiGateway::BasePathMapping
+    Properties:
+      DomainName:
+        Fn::Join:
+          - ""
+          - - {{ subdomain }}
+            - "-"
+            - Ref: ENVIRONMENT
+            - .alexwiss.com
+      RestApiId:
+        Ref: ServerlessRestApi
+      Stage: Prod
+    DependsOn:
+      - APIDomainName
+      - ServerlessRestApiProdStage
+  APIDomain:
+    Type: AWS::Route53::RecordSetGroup
+    Properties:
+      HostedZoneName: alexwiss.com.
+      RecordSets:
+      - Name:
+          Fn::Join:
+            - ""
+            - - {{ subdomain }}
+              - "-"
+              - Ref: ENVIRONMENT
+              - .alexwiss.com
+        Type: A
+        AliasTarget:
+          DNSName:
+            Fn::GetAtt: [ APIDomainName, DistributionDomainName ]
+          HostedZoneId: Z2FDTNDATAQYW2 # static ID for CloudFront aliases
+  {% for function in api_functions %}
+  {{ function.name }}:
+    Type: AWS::Serverless::Function
+    Properties:
+      Policies:
+        Ref: CustomerManagedPolicy
+      CodeUri: .
+      Handler: api.{{ function.name }}Handler
+      Timeout: 300
+      Runtime: python3.8
+      Environment:
+        Variables:
+          ENVIRONMENT:
+            Ref: ENVIRONMENT
+          {% for variable in environment_variables %}
+          {{ variable.name }}:
+            Ref: {{ variable.alpha_name }}
+          {% endfor %}
+      Events:
+        {% for method in function.methods %}
+        {{ method }}Endpoint:
+          Type: Api
+          Properties:
+            Path: {{ function.endpoint }}
+            Method: {{ method }}
+        {% endfor %}
+        CorsEndpoint:
+          Type: Api
+          Properties:
+            Path: {{ function.endpoint }}
+            Method: options
+  {% endfor %}
+  {% for function in functions %}
+  {{ function.name }}:
+    Type: AWS::Serverless::Function
+    Properties:
+      Policies:
+        Ref: CustomerManagedPolicy
+      CodeUri: .
+      Handler: function.{{ function.name }}Handler
+      Timeout: 900
+      Runtime: python3.8
+      Environment:
+        Variables:
+          ENVIRONMENT:
+            Ref: ENVIRONMENT
+      Events:
+        ScheduleEvent:
+          Type: Schedule
+          Properties:
+            Schedule: rate(1 hour)
+  {% endfor %}
