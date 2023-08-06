@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyffmpeg
+Version: 0.0.2
+Summary: FFmpeg wrapper for python
+Home-page: https://github.com/deuteronomy-works/pyffmpeg
+Author: Amoh - Gyebi Godwin Ampofo Michael
+Author-email: amohgyebigodwin@gmail.com
+License: UNKNOWN
+Description: FFmpeg wrapper for python
+            
+Keywords: ffmpeg,audio
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
