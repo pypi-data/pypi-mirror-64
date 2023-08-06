@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: sppush
+Version: 1.0.4
+Summary: sdk for sppush
+Home-page: https://github.com/baidu-spp/spp-sdk-python
+Author: baidu-sppush
+Author-email: liangjunyu@baidu.com
+License: MIT
+Keywords: sppush
+Platform: any
+Requires-Dist: requests
+Requires-Dist: six
+
+sdk for sppush
+
+
