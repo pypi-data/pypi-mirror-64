@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+Example_kishor.egg-info/PKG-INFO
+Example_kishor.egg-info/SOURCES.txt
+Example_kishor.egg-info/dependency_links.txt
+Example_kishor.egg-info/entry_points.txt
+Example_kishor.egg-info/requires.txt
+Example_kishor.egg-info/top_level.txt
+example_kishor/addTwoNumbers.py

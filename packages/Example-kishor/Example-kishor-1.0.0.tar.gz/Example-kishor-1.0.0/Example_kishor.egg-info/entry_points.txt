@@ -1,0 +1,3 @@
+[console_scripts]
+Example-kishor = example_kishor.addTwoNumbers:main
+
