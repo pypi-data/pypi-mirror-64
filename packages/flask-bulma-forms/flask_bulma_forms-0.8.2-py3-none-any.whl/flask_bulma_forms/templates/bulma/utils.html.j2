@@ -1,0 +1,34 @@
+{% macro flashed_messages(messages=none, container=true, transform={
+    'error': 'danger',
+    'info': 'link',
+    'warning': 'warning',
+    'debug': 'primary',
+    'notset': 'warning',
+    'message': 'info',
+    'success': 'success',
+  }, default_category=none, dismissible=false, is_light=false) %}
+  {% with messages = messages or get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+      {% if container %}
+        <!-- begin notification block -->
+        <div class="container is-fluid">
+          <div class="columns is-multiline">
+            <div class="column is-12">
+      {% endif %}
+              {% for cat, msg in messages %}
+                <div class="notification is-{{ transform.get(cat.lower(), default_category or cat) }}{% if is_light %} is-light{% endif %}" role="alert">
+                {% if dismissible %}
+                  <button class="delete" type="button" aria-label="Close"></button>
+                {% endif %}
+                  {{ msg }}
+                </div>
+              {% endfor %}
+      {% if container %}
+            </div>
+          </div>
+        </div>
+        <!-- end notification block -->
+      {% endif %}
+    {% endif %}
+  {% endwith %}
+{% endmacro %}

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: flask-bulma-forms
+Version: 0.8.2
+Summary: WTF Forms with Bulma Styling
+Keywords: flask,flask-extension,bulma,flask-bulma,flask-wtf
+Author: Jeremy Bolding
+Author-email: cyberchefjay@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: flask (>=1.1.1,<2.0.0)
+Requires-Dist: flask-wtf (>=0.14.3,<0.15.0)
+Project-URL: Bug Tracker, https://www.github.com/thecodechef/flask_bulma_forms/issues
+Project-URL: Documentation, https://www.github.com/thecodechef/flask_bulma_forms.git
+Project-URL: Homepage, https://www.github.com/thecodechef/flask_bulma_forms.git
+Project-URL: Repository, https://www.github.com/thecodechef/flask_bulma_forms.git
+Description-Content-Type: text/markdown
+
+# Flask Bulma Forms
+
