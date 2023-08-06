@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: npP2NVM
+Version: 0.2.dev1
+Summary: NumPy Persistence to Non-Volatile Memory
+Home-page: https://github.com/bsc-dom/npp2nvm
+Author: Alex Barcelo
+Author-email: alex.barcelo@bsc.es
+License: UNKNOWN
+Keywords: pynvm nvm persistence numpy
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pynvm
+
+UNKNOWN
+
+
