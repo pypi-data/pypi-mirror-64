@@ -1,0 +1,6 @@
+*.pyc
+.snakemake/
+build/
+dist/
+*.egg
+*.egg-info
