@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: passwordmaker-pkg-leonardomartelli
+Version: 1.2.0
+Summary: A Password Maker
+Home-page: https://github.com/leonardomartelli/passwordmaker_package
+Author: Leonardo Martelli Oliveira
+Author-email: lmartellioliveira@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+---
+title: "Untitled"pASSWORD mAKER"
+author: leonardomartelli
+date: 3/21/20
+output: rmarkdown::html_vignette
+---
+
+
+
