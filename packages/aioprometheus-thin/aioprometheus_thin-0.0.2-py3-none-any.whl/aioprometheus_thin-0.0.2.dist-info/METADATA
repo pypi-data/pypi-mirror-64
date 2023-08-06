@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aioprometheus-thin
+Version: 0.0.2
+Summary: Python asyncIO Prometheus package - using aioprometheus, but simpler !
+Home-page: https://github.com/RazcoDev/aioprometheus-thin
+Author: Raz Co.
+Author-email: razchn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aioprometheus
+Requires-Dist: asyncio
+
+# aioprometheus-thin 
+This package wraps the aioprometheus package and gives the developer the way of easy writing AsyncIO Prometheus custom collectors, without the need of any AsyncIO deep knowledge.
+# Hi !
+Hello there.
+ This is my first python package, it's pretty small but has a big impact on my way of working.
+ I would like you guys to help me improve my Python skills with some issues/ implemntations improvments.
+Thank you 
+
+# Usage Examples
+Will be added soon.
+
