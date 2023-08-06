@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cinestats/VERSION
+cinestats/__init__.py
+cinestats/movie.py
+cinestats.egg-info/PKG-INFO
+cinestats.egg-info/SOURCES.txt
+cinestats.egg-info/dependency_links.txt
+cinestats.egg-info/requires.txt
+cinestats.egg-info/top_level.txt
+cinestats/data/example.csv
+cinestats/tests/__init__.py
+cinestats/tests/test_movie.py
