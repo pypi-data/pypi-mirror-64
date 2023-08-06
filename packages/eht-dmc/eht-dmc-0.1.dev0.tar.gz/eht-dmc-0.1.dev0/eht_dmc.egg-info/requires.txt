@@ -1,0 +1,8 @@
+ehtim
+pymc3
+future
+matplotlib
+numpy
+scipy
+corner
+ehtplot
