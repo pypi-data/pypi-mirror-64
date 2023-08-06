@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+autolatex/__init__.py
+autolatex/table.py
+autolatex.egg-info/PKG-INFO
+autolatex.egg-info/SOURCES.txt
+autolatex.egg-info/dependency_links.txt
+autolatex.egg-info/entry_points.txt
+autolatex.egg-info/requires.txt
+autolatex.egg-info/top_level.txt

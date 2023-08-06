@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: autolatex
+Version: 0.1.3
+Summary: Generate LaTeX code by Python.
+Home-page: https://github.com/Benature/AutoLaTeX
+Author: Benature Wang
+Author-email: wbenature@163.com
+License: UNKNOWN
+Description: # AutoLaTeX
+        
+        Generate LaTeX code by Python for experiment report.
+        
+        用Python生成LaTeX代码写实验报告。  
+        
+        ## Features
+        
+        - [读取excel等表格文件转为latex表格](table.py)
+        - [线性拟合等数学处理](math/)
+        - [(假的)word讲义转tex报告](word2tex/)
+        
+        >如果有帮助就点个star呗  
+        >欢迎Pull Request, fork, issue.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
