@@ -1,0 +1,9 @@
+daily_reflection-0.0.4.data/scripts/daily-reflection,sha256=hatYAmbTjMaXCnKdOMfivRHuWdxYa-yCCEjJCiZk-9U,81
+reflect/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+reflect/daily_reflection.py,sha256=81VsnmXWr0E3ZbkcKKtErcq88oKHMl1y48kYd4qoJNk,12086
+reflect/encrypted_json_storage.py,sha256=tFiZlCfUOT5MjUjkx9JFBSVDa8s_Tt4cVyuCEgY_rks,3600
+daily_reflection-0.0.4.dist-info/LICENSE,sha256=f80CO01RPFLHE1DskPuQ42zUcwXfqAuqrlRuaj2QFwY,1070
+daily_reflection-0.0.4.dist-info/METADATA,sha256=_g1qZOVeqTnvUArpm54L3Akehu2R_go8PxpOiuW1wL4,1998
+daily_reflection-0.0.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+daily_reflection-0.0.4.dist-info/top_level.txt,sha256=94-w2qcA4n7-nzrBb8ncTWVLDSaz_Bg-Xns1gYxLIzc,8
+daily_reflection-0.0.4.dist-info/RECORD,,
