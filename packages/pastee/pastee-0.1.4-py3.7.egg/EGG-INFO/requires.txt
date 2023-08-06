@@ -1,0 +1,4 @@
+aiohttp>=3.3
+
+[docs]
+sphinxcontrib_trio==1.1.0
