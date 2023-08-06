@@ -1,0 +1,11 @@
+trytond/modules/party_address_type_strict/__init__.py,sha256=qvVwKVVrSVvm1zpBXwNZbn-10GGtP8um7t1SO1JQk_M,307
+trytond/modules/party_address_type_strict/party.py,sha256=5FmMKuJ3njQ30rYh_0RDxRK0NytBWuZs-CT_47onuQM,1641
+trytond/modules/party_address_type_strict/tryton.cfg,sha256=4tH96TPBBmZKglcgQcXN-TZJgyjTcmT8WPuszwCljpQ,92
+trytond/modules/party_address_type_strict/tests/__init__.py,sha256=kXpGNNwaGgdzHYgQqeuz3tJrVGyr7izRJEBNsmzFwAA,316
+trytond/modules/party_address_type_strict/tests/test_party_address_type_strict.py,sha256=LZodVn-bxlKhbgQMCqeoIkz4Nd9_hOv6NA8MifCRTTo,619
+m9s_party_address_type_strict-5.2.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+m9s_party_address_type_strict-5.2.0.dist-info/METADATA,sha256=5N8OXJMLDFNAl7rR-KBXSGlfqFjWYyYyLH1pWdOa2EU,3314
+m9s_party_address_type_strict-5.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+m9s_party_address_type_strict-5.2.0.dist-info/entry_points.txt,sha256=UoUasEgTXKW_Z60mrYT7P8JgYJDs2hL-TxGUzuwmpK8,101
+m9s_party_address_type_strict-5.2.0.dist-info/top_level.txt,sha256=1UNriCfRfjRjutJbJ_B8i13huVUoV_Otp9RlW3mCfw4,8
+m9s_party_address_type_strict-5.2.0.dist-info/RECORD,,
