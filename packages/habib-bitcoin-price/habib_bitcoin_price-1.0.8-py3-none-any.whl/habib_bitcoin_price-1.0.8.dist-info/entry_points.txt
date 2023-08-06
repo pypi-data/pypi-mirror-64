@@ -1,0 +1,3 @@
+[console_scripts]
+habib-bitcoin-price = habib_bitcoin_m.bitcoin_price_alert:arg_main
+
