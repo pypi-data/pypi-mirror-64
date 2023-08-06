@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PyTLSSniff
+Version: 0.0.5
+Summary: Python TLS handshake sniffer to extract domain names
+Home-page: https://github.com/DNS-Privacy-Security/PyTLSSniff
+Author: M4t7e
+License: MIT License
+Description: # PyTLSSniff
+        
+        PyTLSSniff - Python TLS handshake sniffer to extract domain names
+        
+Platform: Any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
