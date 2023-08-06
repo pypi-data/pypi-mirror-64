@@ -1,0 +1,12 @@
+%include /path/to/clone/of/py-heptapod/heptapod/required.hgrc
+
+[heptapod]
+repositories-root=/path/to/repositories
+gitlab-shell=/path/to/clone/of/gitlab-shell
+
+[logging]
+# see https://dev.heptapod.net/heptapod/hgext-loggingmod/blob/branch/default/README.md
+# Heptapod still being in its infancy, a rather verbose
+# default level is appropriate
+level = info
+file = /tmp/mercurial.log
