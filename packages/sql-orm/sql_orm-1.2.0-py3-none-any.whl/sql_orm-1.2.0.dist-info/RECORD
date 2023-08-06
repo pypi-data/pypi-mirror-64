@@ -1,0 +1,11 @@
+sql_orm/__init__.py,sha256=LCwnz_6jOmoXVaUXBmmEJiqLzq0EM4HUww4SVOlyrtw,1893
+sql_orm/postgresql/__init__.py,sha256=4mX_LQzECsBJI-n_wGSwmm5OWa84vYz6uqF4nRksoJo,2655
+sql_orm/postgresql/datatypes.py,sha256=8eatVkNfsfDVG7fmAa9EDG0AuQ5eUdpU8aOKibACFT4,4134
+sql_orm/postgresql/objects.py,sha256=tjWJ2y3AMPCdlTXtTa3F1ed_qBis4kMLx5DU9wCv0zU,8956
+sql_orm/postgresql/tables.py,sha256=voF7r31oSTTbaYzvj3N7El9wdiahWVSldZScH2FofrU,5706
+sql_orm/postgresql/sql/__init__.py,sha256=mAcLDevqyt6Q0majy5V0Z4XIhdMyqSP66gdlvC4THA0,10934
+sql_orm-1.2.0.dist-info/LICENSE,sha256=N09z58SoYLA-xaa9yL9SICoBJlOzHVS5AUvE7zZ3DJA,1073
+sql_orm-1.2.0.dist-info/METADATA,sha256=cXwSnIQQj5rJpaWP652-kimPxMAgYcfCKlDqXv1yE18,3860
+sql_orm-1.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sql_orm-1.2.0.dist-info/top_level.txt,sha256=hndatV1AiJldeGEReX7C_Knj6wm2k4AGoqSBFpIJu_w,8
+sql_orm-1.2.0.dist-info/RECORD,,
