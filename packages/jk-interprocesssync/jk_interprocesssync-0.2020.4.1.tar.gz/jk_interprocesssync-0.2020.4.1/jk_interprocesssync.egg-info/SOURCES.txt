@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+jk_interprocesssync/__init__.py
+jk_interprocesssync.egg-info/PKG-INFO
+jk_interprocesssync.egg-info/SOURCES.txt
+jk_interprocesssync.egg-info/dependency_links.txt
+jk_interprocesssync.egg-info/not-zip-safe
+jk_interprocesssync.egg-info/top_level.txt
+jk_interprocesssync/fs/Event.py
+jk_interprocesssync/fs/JSONDataEvent.py
+jk_interprocesssync/fs/JSONDataQueue.py
+jk_interprocesssync/fs/__init__.py
