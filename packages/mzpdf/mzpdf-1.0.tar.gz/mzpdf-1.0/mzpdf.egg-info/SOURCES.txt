@@ -1,0 +1,9 @@
+README.md
+setup.py
+mzpdf/__init__.py
+mzpdf/pdf2image.py
+mzpdf/pdf2text.py
+mzpdf.egg-info/PKG-INFO
+mzpdf.egg-info/SOURCES.txt
+mzpdf.egg-info/dependency_links.txt
+mzpdf.egg-info/top_level.txt
