@@ -1,0 +1,11 @@
+README.md
+setup.py
+PackageMaster/PackageMaster.py
+PackageMaster/__init__.py
+PackageMaster.egg-info/PKG-INFO
+PackageMaster.egg-info/SOURCES.txt
+PackageMaster.egg-info/dependency_links.txt
+PackageMaster.egg-info/entry_points.txt
+PackageMaster.egg-info/top_level.txt
+PackageMaster/resources/geckodriver
+PackageMaster/resources/geckodriver.exe
