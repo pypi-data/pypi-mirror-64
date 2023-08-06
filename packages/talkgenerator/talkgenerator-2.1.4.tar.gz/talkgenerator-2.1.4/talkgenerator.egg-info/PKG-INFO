@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: talkgenerator
+Version: 2.1.4
+Summary: Automatically generating presentation slide decks based on a given topic for improvised presentations
+Home-page: https://github.com/korymath/talk-generator
+Author: Thomas Winters, Kory Mathewson
+Author-email: info@thomaswinters.be
+License: MIT License
+Description: Check our GitHub repository on https://github.com/korymath/talk-generator for more information!
+Platform: Windows
+Platform: Mac
+Platform: Linux

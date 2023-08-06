@@ -1,0 +1,16 @@
+beautifulsoup4
+cachier==1.4.2
+environs
+inflect
+lxml==4.5.0
+nltk
+pexels-api
+Pillow==7.0.0
+praw
+pyparsing==2.4.6
+python-pptx==0.6.18
+python-pixabay
+pyunsplash
+requests==2.23.0
+safygiphy
+tracery
