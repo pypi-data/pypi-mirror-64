@@ -1,0 +1,8 @@
+README.md
+setup.py
+csvquery/__init__.py
+csvquery/csvquery.py
+csvquery.egg-info/PKG-INFO
+csvquery.egg-info/SOURCES.txt
+csvquery.egg-info/dependency_links.txt
+csvquery.egg-info/top_level.txt
