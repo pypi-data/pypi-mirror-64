@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+autocontainer.egg-info/PKG-INFO
+autocontainer.egg-info/SOURCES.txt
+autocontainer.egg-info/dependency_links.txt
+autocontainer.egg-info/top_level.txt
+src/__init__.py
+src/autocontainer.py
