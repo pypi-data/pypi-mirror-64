@@ -1,0 +1,9 @@
+_pyift.cpython-37m-darwin.so,sha256=CnfImMDKfQz7thGBv6YdNNc1NlrlEAQTxtZMybPQyBI,26148
+pyift/__init__.py,sha256=ZygAIkX6Nbjag1czWdQa-yP-GM1mBE_9ss21Xh__JFc,34
+pyift/_version.py,sha256=q7NmeEt_OaglWvJyrW1SEGDzzgx4WItzEyHUgHh48Rc,26
+pyift/shortestpath.py,sha256=SXfGNpoexhBJZeyfDMBilB9531QIJ1JfLLfRdIogV1Q,4423
+pyift-0.0.1.dev1.dist-info/LICENSE,sha256=zBH9kzjzoSOsGlkLvEbfJhS4OzLFMHol9bFTODUHTNA,1101
+pyift-0.0.1.dev1.dist-info/METADATA,sha256=fuVq2VLMrpwjPhvu3kytPS2vGxX0FBPRKRiH_UECc70,1543
+pyift-0.0.1.dev1.dist-info/WHEEL,sha256=ePSmKDYpHLRUYc6QuHiYMO-IoN8XmQMJmY2AHxzV4Bc,110
+pyift-0.0.1.dev1.dist-info/top_level.txt,sha256=Qylh_dSgg1VHWx4hWU5NgyWRzSV-5SSJsxeRCv1pFUE,13
+pyift-0.0.1.dev1.dist-info/RECORD,,
