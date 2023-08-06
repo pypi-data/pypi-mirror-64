@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: covid-vir-assistant
+Version: 0.0.2
+Summary: A small example about virtual assitant like Siri/ Google assistant
+Home-page: https://github.com/TrinhAnBinh/covid_vir_assistant
+Author: TrinhAnBinh
+Author-email: binhta1995@gmail.com
+License: UNKNOWN
+Description: A small example about virtual assistant like Siri/ Google assistant. By using wolframalpha and wikipedia as references so that please visit  wolframalpha and create application to using it. Be focus on how to use speech_recognition and UI text-to-spech, I hope you can familar with python syntax and love python more.
+        How to use it?
+        1. Please  run pip install covid-vir-assistant
+        2. Run file __init__.py / covid_vir_assistant.py 
+        3. Leave anything what you need help 
+            ex: I want to search 'Thomas Edison'. So you can type 'Thomas Edison' on this box or Press enter and say 'Thomas Edison'. 
+        4. Please wait and see what covid virtual assistant can do for you.
+        
+        Visit my github and do not hesitate to leave me comment via email.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

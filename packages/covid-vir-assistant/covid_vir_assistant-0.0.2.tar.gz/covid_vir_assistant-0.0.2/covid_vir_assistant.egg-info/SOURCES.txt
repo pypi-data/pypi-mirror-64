@@ -1,0 +1,7 @@
+README.md
+setup.py
+covid_vir_assistant/__init__.py
+covid_vir_assistant.egg-info/PKG-INFO
+covid_vir_assistant.egg-info/SOURCES.txt
+covid_vir_assistant.egg-info/dependency_links.txt
+covid_vir_assistant.egg-info/top_level.txt
