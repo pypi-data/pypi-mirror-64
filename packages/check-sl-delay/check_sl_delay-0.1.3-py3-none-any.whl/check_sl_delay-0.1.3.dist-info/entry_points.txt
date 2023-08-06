@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        check_sl_delay=check_sl_delay.check_sl_delay:cli
+    
