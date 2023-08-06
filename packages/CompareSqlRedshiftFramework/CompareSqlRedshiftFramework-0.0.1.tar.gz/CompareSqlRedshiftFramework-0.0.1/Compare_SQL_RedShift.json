@@ -1,0 +1,32 @@
+{
+  "TicketNumber":"DMA-9999",
+  "GeneralParameters": {
+    "ProjectName": "ILMAST",
+    "RunType": "Debug"
+  },
+  "SqlParameters": {
+    "ReadingFrom": "SQL",
+    "SqlTable": "ILMASTAccount2_2010",
+    "SqlSchema": "wrkCsc",
+    "SqlServer": "ACAQADW2",
+    "SqlDB": "ACA_DW",
+    "SqlIndexColumn": "ILMASTAccount2Key"
+  },
+  "RedShiftParameters": {
+    "ReadingFrom": "RedShift",
+    "RedShiftUsername": "skanjarla",
+    "RedShiftPassword": "sucharitA01$",
+    "RedShiftTable": "ilmastaccount2_2010",
+    "RedShiftSchema": "stgtbl",
+    "RedShiftDB": "acaedw",
+    "RedShiftIndexColumn": "ilmastaccount2key"
+
+  },
+  "EmailParameters": {
+    "EmailFrom": "rajnish.kumar@acacceptance.com",
+    "EmailTo": "rajnish.kumar@acacceptance.com"
+  }
+}
+
+
+
