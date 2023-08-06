@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymug/__init__.py
+pymug/__main__.py
+pymug.egg-info/PKG-INFO
+pymug.egg-info/SOURCES.txt
+pymug.egg-info/dependency_links.txt
+pymug.egg-info/entry_points.txt
+pymug.egg-info/top_level.txt
