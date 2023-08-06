@@ -1,0 +1,6 @@
+pydawa/__init__.py,sha256=iq_M57SFemRYeWUwkaZ98kcjkEeR4CMZhOWfrNTy-Nc,102
+pydawa/dawa.py,sha256=ECi5kMQtdg2uBdCoPENmgsng2M5XsDhBdnHCFjG06xo,4833
+pydawa/geokoder.py,sha256=cUhbZRPs52yhWQkjhylB6Qj-RcDT3swU9cRCaZ9LR1A,3283
+pydawa-0.5.0.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pydawa-0.5.0.dist-info/METADATA,sha256=t_-cPWpoaIPT0xMCZgxoZ2PnnQvfA7kPeU43A3EyfuE,3823
+pydawa-0.5.0.dist-info/RECORD,,
