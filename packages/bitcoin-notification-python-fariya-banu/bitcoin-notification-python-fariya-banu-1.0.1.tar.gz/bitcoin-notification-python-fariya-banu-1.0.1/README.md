@@ -1,0 +1,46 @@
+## BITCOIN NOTIFICATION ALERT APP
+
+This is a python script package, bitcoin price notification to get notified for the regular updates of bitcoin price on slack, gmail and telegram. 
+The aim is to push notifications when the price of bitcoin changes at certain time interval, user can specify the time interval. By default time interval and threshold are set to 0.1 in minutes and $10000 respectively.
+When the conditions in the program are satisfied the trigger is fired and user will recieve notifications on slack, gmail and telegram.
+
+## Installation
+
+Following command on terminal will install bitcoin-notifier package/module from PIP
+```bash
+pip install bitcoin-notification-project==1.0.0
+```
+## Usage
+
+Following query on terminal will provide you with all the help options available
+
+### Input 
+
+```bash
+bitcoin_notification -h
+```
+### Output 
+
+```bash
+usage: bitcoin_notification.py [-h] [--d decision] [--i interval]
+                               [--u upper threshold]
+
+Bitcoin Notification Alert
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --d decision         Enter (Yes/No) - Yes will run the program
+  --i interval         Enter time interval
+  --u upper threshold  Set upper threshold limit in USD for notification
+```
+### Following query on terminal will provide you five prices of Bitcoin at a time at one min interval and whenever it falls below $10000 and emergency notification will be sent.
+
+```bash
+bitcoin_notification --d=Yes --i=0.1 --u=10000
+```
+## Join this telegram channel to get the updates :
+
+Following is the invite link
+```bash
+    https://t.me/Bitcoin_alert_attainU_fariya
+```
