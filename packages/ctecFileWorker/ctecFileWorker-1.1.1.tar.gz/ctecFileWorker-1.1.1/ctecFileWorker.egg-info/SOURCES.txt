@@ -1,0 +1,8 @@
+setup.py
+ctecFileWorker/__init__.py
+ctecFileWorker/ctecFileWorker.py
+ctecFileWorker.egg-info/PKG-INFO
+ctecFileWorker.egg-info/SOURCES.txt
+ctecFileWorker.egg-info/dependency_links.txt
+ctecFileWorker.egg-info/requires.txt
+ctecFileWorker.egg-info/top_level.txt
