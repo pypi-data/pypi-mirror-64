@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: eltsnap
+Version: 0.0.2
+Summary: Third version test
+Home-page: UNKNOWN
+Author: Jim Miller
+Author-email: UNKNOWN
+License: MIT license
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pyodbc
+Requires-Dist: jinja2
+Requires-Dist: tabulate
+
+UNKNOWN
+
+
