@@ -1,0 +1,9 @@
+setup.py
+create_django_react_app/__init__.py
+create_django_react_app/create_django_react_app.py
+create_django_react_app.egg-info/PKG-INFO
+create_django_react_app.egg-info/SOURCES.txt
+create_django_react_app.egg-info/dependency_links.txt
+create_django_react_app.egg-info/entry_points.txt
+create_django_react_app.egg-info/not-zip-safe
+create_django_react_app.egg-info/top_level.txt

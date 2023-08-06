@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: create-django-react-app
+Version: 0.0.2
+Summary: A simple script to create a Django-backed React app, all in one.
+Home-page: https://github.com/mattburlage/create-django-react-app
+Author: Matthew Smith Burlage
+Author-email: matt@msb.dev
+License: MIT
+Description: A simple script to create a Django-backed React app, all in one.
+Keywords: django react jwt create-django-react-app create-react-django-app
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
