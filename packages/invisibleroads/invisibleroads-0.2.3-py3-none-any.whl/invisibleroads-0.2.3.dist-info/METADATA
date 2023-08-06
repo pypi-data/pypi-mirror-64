@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: invisibleroads
+Version: 0.2.3
+Summary: Simple framework for extensible command line scripts
+Home-page: https://github.com/invisibleroads/invisibleroads
+Author: Roy Hyunjin Han
+Author-email: rhh@crosscompute.com
+License: UNKNOWN
+Keywords: invisibleroads
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: invisibleroads-macros-log
+Requires-Dist: stevedore
+
+# InvisibleRoads
+
+Here is a simple framework for extensible command line scripts.
+
+# 0.2
+- Drop support for Python 2
+
+# 0.1
+- Prepare for public release
+
