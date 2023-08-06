@@ -1,0 +1,4 @@
+Django<2.2,>=1.11
+djangorestframework<3.10,>=3.8
+py-buzz>=0.3.6
+requests>=2.21.0
