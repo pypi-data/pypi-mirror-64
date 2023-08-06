@@ -1,0 +1,10 @@
+setup.py
+udmlprob_distributions/Binomialdistribution.py
+udmlprob_distributions/Gaussiandistribution.py
+udmlprob_distributions/Generaldistribution.py
+udmlprob_distributions/__init__.py
+udmlprob_distributions.egg-info/PKG-INFO
+udmlprob_distributions.egg-info/SOURCES.txt
+udmlprob_distributions.egg-info/dependency_links.txt
+udmlprob_distributions.egg-info/not-zip-safe
+udmlprob_distributions.egg-info/top_level.txt
