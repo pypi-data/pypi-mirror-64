@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: jaxrk
+Version: 0.1.1
+Summary: JaxRK is a library for working with (vectors of) RKHS elements and RKHS operators using JAX for automatic differentiation.
+Home-page: https://github.com/zalandoresearch/jaxrk
+Author: Ingmar Schuster
+Author-email: ingmar.schuster@zalando.de
+License: MIT
+Download-URL: https://github.com/zalandoresearch/jaxrk/v_01.tar.gz
+Description: UNKNOWN
+Keywords: Jax,RKHS,kernel
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
