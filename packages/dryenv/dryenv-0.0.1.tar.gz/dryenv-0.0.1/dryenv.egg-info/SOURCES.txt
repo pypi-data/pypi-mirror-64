@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+dryenv.py
+setup.py
+dryenv.egg-info/PKG-INFO
+dryenv.egg-info/SOURCES.txt
+dryenv.egg-info/dependency_links.txt
+dryenv.egg-info/requires.txt
+dryenv.egg-info/top_level.txt
