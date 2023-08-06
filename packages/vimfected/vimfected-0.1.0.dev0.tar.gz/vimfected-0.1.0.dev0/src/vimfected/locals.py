@@ -1,0 +1,2 @@
+TILE_SIZE = 16
+COLOR_KEY = (0, 0, 0)
