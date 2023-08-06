@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xain-sdk
+Version: 0.7.0
+Summary: XAIN is an open source framework for federated learning.
+Home-page: https://github.com/xainag/xain-sdk
+Author: ['XAIN AG']
+Author-email: engineering@xain.io
+License: Apache License Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pip-licenses ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: docs
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+UNKNOWN
+
+
