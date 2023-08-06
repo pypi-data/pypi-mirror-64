@@ -1,0 +1,10 @@
+README.md
+setup.py
+vsipc_tools/__init__.py
+vsipc_tools/base_rest_client.py
+vsipc_tools/utils.py
+vsipc_tools.egg-info/PKG-INFO
+vsipc_tools.egg-info/SOURCES.txt
+vsipc_tools.egg-info/dependency_links.txt
+vsipc_tools.egg-info/requires.txt
+vsipc_tools.egg-info/top_level.txt
