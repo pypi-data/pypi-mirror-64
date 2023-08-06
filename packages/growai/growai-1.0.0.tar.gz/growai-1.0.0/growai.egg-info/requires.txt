@@ -1,0 +1,6 @@
+keras
+tensorflow
+matplotlib
+prody
+tqdm
+scikit-learn
