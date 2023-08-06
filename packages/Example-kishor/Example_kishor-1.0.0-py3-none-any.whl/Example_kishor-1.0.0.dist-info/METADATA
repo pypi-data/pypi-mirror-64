@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: Example-kishor
+Version: 1.0.0
+Summary: A Python package to add two numbers.
+Home-page: UNKNOWN
+Author: Nandakishor Reddy
+Author-email: pulagamnkr@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Example Kishor
+
+A Python package to add two numbers.
+
+## Usage
+
+You can add Two Numbers
+
+```
+Example-kishor 
+```
+
