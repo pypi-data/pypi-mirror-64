@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+imageai
+opencv-python>=3.4.6.27
+tensorflow==1.14.0
