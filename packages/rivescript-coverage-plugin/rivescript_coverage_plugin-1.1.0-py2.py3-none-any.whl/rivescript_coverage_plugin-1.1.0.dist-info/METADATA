@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: rivescript-coverage-plugin
+Version: 1.1.0
+Summary: A plug-in to measure code coverage in RiveScript with python
+Home-page: https://github.com/snoopyjc/rivescript_coverage_plugin
+Author: Joe Cool
+Author-email: snoopyjc@gmail.com
+License: MIT
+Keywords: rivescript_coverage_plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Dist: coverage (>=5.0)
+Requires-Dist: rivescript (>=1.14.9)
+
+=============================
+RiveScript Coverage Plugin
+=============================
+
+.. image:: https://badge.fury.io/py/rivescript_coverage_plugin.png
+    :target: http://badge.fury.io/py/rivescript_coverage_plugin
+
+.. image:: https://travis-ci.org/snoopyjc/rivescript_coverage_plugin.png?branch=master
+    :target: https://travis-ci.org/snoopyjc/rivescript_coverage_plugin
+
+A plug-in to measure code coverage in RiveScript with python
+
+
+Features
+--------
+
+The RiveScript Coverage Plugin is a plugin for Coverage.py which extends that package to measure code coverage for RiveScript files.  It uses code analysis tools and debug hooks provided by the RiveScript interpreter to determine which lines are executable, and which have been executed.  It supports CPython version 3.6 and above and plugs into Coverage.py version 5.0 and above.  It requires RiveScript 1.14.9 or above.
+
+Documentation is on `Read The Docs`_. Code repository and issue tracker are on
+`GitHub`_.
+
+.. _Read The Docs: https://rivescript-coverage-plugin.readthedocs.io/
+.. _GitHub: https://github.com/snoopyjc/rivescript_coverage_plugin
+
+Getting Started
+---------------
+
+#. Use pip to install::
+
+          $ pip install rivescript_coverage_plugin
+
+#. Create or edit your ``.coveragerc`` file and add this::
+
+    [run]
+    plugins = rivescript_coverage_plugin
+
+#. Run the ``coverage`` command or ``pytest`` with the ``--cov`` option and your RiveScript files will automatically be included in the coverage analysis and subsequent report generation.
+
+Note that just like with Python coverage, RiveScript files that are not executed at all will not be part of your coverage report.  To add them, use the ``source = .`` or other more specific source specifier in the ``[run]`` section of your ``.coveragerc`` file or the ``--source`` command line option.  See the `Coverage Documentation`_ section "Specifying source files" for more information on this.
+
+.. _Coverage Documentation: https://coverage.readthedocs.io/
+
+
+
+Documentation
+-------------
+
+The full documentation is at http://rivescript_coverage_plugin.rtfd.org.
+
+
+
+History
+-------
+
+0.1.0 (2020-01-16)
+++++++++++++++++++
+
+* First release on PyPI.
+
+0.2.0 (2020-01-17)
+++++++++++++++++++
+
+* Fix Issues #1-#4
+
+0.2.1 (2020-01-19)
+++++++++++++++++++
+
+* Fix Issue #5
+
+0.2.2 (2020-01-19)
+++++++++++++++++++
+
+* Fix Issue #6
+
+0.2.3 (2020-02-23)
+++++++++++++++++++
+
+* Fix Issue #7, #8
+
+
+1.0.0 (2020-02-28)
+++++++++++++++++++
+
+* Add syntax highlighting, fixup some documentation issues, and fix issues #9-#14.
+
+1.1.0 (2020-03-29)
+++++++++++++++++++
+
+* Fix issues #15-#18 and #21.
+
+
