@@ -1,0 +1,13 @@
+colorama
+importlib_metadata
+matplotlib
+mutagen
+numpy
+pydub
+scipy
+
+[all]
+matplotlib
+
+[png]
+matplotlib
