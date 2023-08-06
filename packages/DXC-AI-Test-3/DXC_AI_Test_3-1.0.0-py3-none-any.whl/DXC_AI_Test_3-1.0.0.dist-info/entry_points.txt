@@ -1,0 +1,3 @@
+[console_scripts]
+DXC-AI-Test3 = DXC_AI_Test_3.ai:main
+
