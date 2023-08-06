@@ -1,0 +1,3 @@
+[console_scripts]
+openapidiff=openapidiff.OpenApiSpecDiff:main
+
