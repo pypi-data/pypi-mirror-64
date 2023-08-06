@@ -1,0 +1,12 @@
+pandas
+tensorflow
+numpy
+tqdm
+matplotlib
+plotly
+pandas
+seaborn
+sklearn
+
+[test]
+pytest
