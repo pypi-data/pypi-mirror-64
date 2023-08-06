@@ -1,0 +1,15 @@
+dnsrobocert/__init__.py,sha256=_kMQXNw5V6YfyNWyNpE4xuyyF9xdvZVLTpmq5K5yI_E,259
+dnsrobocert/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dnsrobocert/core/certbot.py,sha256=tyPX2TRD64lSGXgWCiCH4PyzuB-_rNmepueSrvrCckk,4248
+dnsrobocert/core/config.py,sha256=Oj45ffqEWxlG4BixUpgiT1Ml0wJHWzvwXV4QjuHb2Zc,5692
+dnsrobocert/core/hooks.py,sha256=cs1i4YqFOVB4TG6UE7e8yT8JxZxp0NG7vSo8UTn4tDA,8165
+dnsrobocert/core/legacy.py,sha256=5C4Mub39fsehulU3Ln1kXR0IKhC2FzLCw3UJOEDeVAA,9828
+dnsrobocert/core/main.py,sha256=1rwqGq9_yad8g1k3npEfjUiYVvc9QgcfJAbTqep05Co,5348
+dnsrobocert/core/utils.py,sha256=CDVkrHq3NbkoFOmZywpQBmW6gFYnD7BE-Hm40nfIPPk,2746
+dnsrobocert/schema.yml,sha256=GSznCkgbs4fScbY_nsEaknXC8Up0bHB4a9jfL9kn43Y,3107
+src/dnsrobocert/schema.yml,sha256=GSznCkgbs4fScbY_nsEaknXC8Up0bHB4a9jfL9kn43Y,3107
+dnsrobocert-3.1.2.dist-info/entry_points.txt,sha256=RcQvWCf4sZg26UM9U5D5jGxfo2urykZwKt4HYRQnT1I,58
+dnsrobocert-3.1.2.dist-info/LICENSE,sha256=eRJMn52PFUkfAjgmWG-dFyk4q4Llyn1U1KQEDVq8FC4,1071
+dnsrobocert-3.1.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+dnsrobocert-3.1.2.dist-info/METADATA,sha256=bV4Od6uCqr9YOp80Jza1edqwBcbseKkArx30-bnEts0,7175
+dnsrobocert-3.1.2.dist-info/RECORD,,
