@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: excel2rdf
+Version: 0.1.0
+Summary: Generate RDF from Excel spreadsheets.
+Home-page: https://github.com/edmondchuc/excel2rdf
+Author: Edmond Chuc
+Author-email: edmond.chuc@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: rdflib
+Requires-Dist: click
+Requires-Dist: pandas
+Requires-Dist: xlrd
+
+# Python excel2rdf
+
+
+
