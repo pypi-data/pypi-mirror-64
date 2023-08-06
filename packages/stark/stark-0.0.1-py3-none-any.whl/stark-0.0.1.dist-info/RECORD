@@ -1,0 +1,11 @@
+stark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stark/app.py,sha256=-QMiIgkaMDElNE6k8FHN8cYBk6mpFxZJqglT2g9vejE,1362
+stark/args.py,sha256=o0zPSpXDxGcUvOQaywqqAwjC7o9rni0wcvnWKzU-X3Q,1768
+stark/password.py,sha256=8TIc9ngbeZo5ycXqTF77_TdkhKj-_X5y_cY7LVpolvA,4249
+stark/validate.py,sha256=pkbFcO0ovvIgjaFcS06KgML5a5YHqreVw2DuiRrm9nY,613
+stark-0.0.1.dist-info/LICENSE,sha256=sDju76pjMq0Lf-OU_v_aO5dAM2AnZwFptHcku1ipW80,1090
+stark-0.0.1.dist-info/METADATA,sha256=yUKisKLulH9FCnPhaA0RqaotZb4a6UCE1ZaWL76vJsA,257
+stark-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+stark-0.0.1.dist-info/entry_points.txt,sha256=rgRTQXoCetEFCVPQfmk9UKFceMyHMmQYF8A0aEzQPYI,42
+stark-0.0.1.dist-info/top_level.txt,sha256=xt_x97AxMswh42fuAbI1fJcby2QaaGS9NwA5poWEnyw,6
+stark-0.0.1.dist-info/RECORD,,
