@@ -1,0 +1,48 @@
+from setuptools import setup, find_packages
+
+__version__ = '0.1.3'
+url = 'https://github.com/kwotsin/mimicry'
+
+install_requires = [
+    'numpy==1.15.4',
+    'scipy==1.0.1',
+    'requests==2.22.0',
+    'tensorflow==1.14.0',
+    'torchvision==0.4.0',
+    'six==1.12.0',
+    'matplotlib==3.1.1',
+    'torch==1.2.0',
+    'Pillow==6.2.0',
+    'scikit-image==0.15.0',
+    'pytest==5.3.2',
+    'scikit-learn==0.20.1',
+    'future==0.17.1',
+    'pytest-cov==2.8.1',
+    'pandas==0.25.3',
+    'psutil==5.7.0',
+    'yapf==0.29.0',
+]
+
+setup_requires = ['pytest-runner']
+tests_require = ['pytest', 'pytest-cov', 'mock']
+
+setup(
+    name='torch_mimicry',
+    version=__version__,
+    description='Mimicry: Towards the Reproducibility of GAN Research',
+    author='Kwot Sin Lee',
+    author_email='ksl36@cam.ac.uk',
+    url=url,
+    download_url='{}/archive/{}.tar.gz'.format(url, __version__),
+    keywords=[
+        'pytorch',
+        'generative-adversarial-networks',
+        'gans',
+        'GAN',
+    ],
+    python_requires='>=3.6',
+    install_requires=install_requires,
+    setup_requires=setup_requires,
+    tests_require=tests_require,
+    packages=find_packages(),
+)

@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: torch-mimicry
+Version: 0.1.3
+Summary: Mimicry: Towards the Reproducibility of GAN Research
+Home-page: https://github.com/kwotsin/mimicry
+Author: Kwot Sin Lee
+Author-email: ksl36@cam.ac.uk
+License: UNKNOWN
+Download-URL: https://github.com/kwotsin/mimicry/archive/0.1.3.tar.gz
+Description: UNKNOWN
+Keywords: pytorch,generative-adversarial-networks,gans,GAN
+Platform: UNKNOWN
+Requires-Python: >=3.6
