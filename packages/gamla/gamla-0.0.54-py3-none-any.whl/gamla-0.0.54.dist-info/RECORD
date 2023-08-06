@@ -1,0 +1,11 @@
+gamla/__init__.py,sha256=d95rT2Kuj_2AA98V2SNpZpbtScHG43Z7TP7vsfyzgTo,87
+gamla/functional.py,sha256=6nX-bMpDviHsYcsxO_nFs4PFOREJQok7g6hKbJzWvUU,9180
+gamla/graph.py,sha256=MnyAIaV6Sf4OHblMhBorbZcBMGbGMFjAmzhNUPULsd0,3820
+gamla/graph_test.py,sha256=Jb_LDXidEbffCJ-LOQr1CDEIbu76Nus7Qs6RCmDsCBc,723
+gamla/io_utils.py,sha256=jJxPgWvrYFlDe6crEwQJz4CbM9hN2zsr09iAlnVuXHE,4616
+gamla/io_utils_test.py,sha256=I8Ibrgxpk7usfp-uV7kHbp4Qb44nLPuKt8bVX9lohWg,1968
+gamla-0.0.54.dist-info/LICENSE,sha256=qIhQpZIFhAR5Yh4T1CTuuLczYrJynZedRyEFK2V5kwg,1062
+gamla-0.0.54.dist-info/METADATA,sha256=S4q1Vj4uWZZK1wcF89fEgq5i1LqXJP0gh9UrfHdqGm0,738
+gamla-0.0.54.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gamla-0.0.54.dist-info/top_level.txt,sha256=RTeUIvVjQtR5U9c1y3s2FVKL_NjYJ_VToe13m0QhbMM,6
+gamla-0.0.54.dist-info/RECORD,,
