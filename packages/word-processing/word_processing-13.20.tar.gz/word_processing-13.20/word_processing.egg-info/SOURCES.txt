@@ -1,0 +1,9 @@
+setup.py
+word_processing/__init__.py
+word_processing/analyze.py
+word_processing/process.py
+word_processing.egg-info/PKG-INFO
+word_processing.egg-info/SOURCES.txt
+word_processing.egg-info/dependency_links.txt
+word_processing.egg-info/not-zip-safe
+word_processing.egg-info/top_level.txt
