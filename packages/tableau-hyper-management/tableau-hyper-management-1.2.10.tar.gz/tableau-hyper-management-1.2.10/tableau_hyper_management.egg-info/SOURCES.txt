@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+tableau_hyper_management/BasicNeeds.py
+tableau_hyper_management/CommandLineArgumentsManagement.py
+tableau_hyper_management/LoggingNeeds.py
+tableau_hyper_management/TableauHyperApiExtraLogic.py
+tableau_hyper_management/TableauServerCommunicator.py
+tableau_hyper_management/TypeDetermination.py
+tableau_hyper_management/__init__.py
+tableau_hyper_management.egg-info/PKG-INFO
+tableau_hyper_management.egg-info/SOURCES.txt
+tableau_hyper_management.egg-info/dependency_links.txt
+tableau_hyper_management.egg-info/requires.txt
+tableau_hyper_management.egg-info/top_level.txt
