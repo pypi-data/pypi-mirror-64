@@ -1,0 +1,6 @@
+numpy
+setuptools
+dgl>=0.4.3
+
+[docs]
+Sphinx
