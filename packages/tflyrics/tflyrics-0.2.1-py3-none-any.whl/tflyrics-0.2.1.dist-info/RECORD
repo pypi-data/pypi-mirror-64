@@ -1,0 +1,10 @@
+tflyrics/__init__.py,sha256=AKlipFWVVvdK4o9LXWYCtZPVfh6UZjhFQZI9_VDjfec,123
+tflyrics/constants.py,sha256=mWLyJvI3FIY8acUHtMMRN7uDFsqZniNJypQgFw0exgY,735
+tflyrics/genius.py,sha256=PtnOX7bTMkgEpBEq5bzVPtey9oAaeXZYD19DqvGnnBM,8034
+tflyrics/lyrics_ds.py,sha256=WlqmOm33_SouuHr8Q1km-gBcgoaGSDtYAgKoq0c1BZ0,5767
+tflyrics/poet.py,sha256=qxttTFkceZpOelebHSguTFjVPiK834fHdrFBk4osl9Y,7705
+tflyrics-0.2.1.dist-info/LICENSE,sha256=mhidJFxIvfGVA_MvvY09Wj0PxIOIDCvPCnJSU4IucwA,1073
+tflyrics-0.2.1.dist-info/METADATA,sha256=4SLcNj1WwUhl8N2JXPqxXdc5P59yW5HzbHdVfxfQ9Vw,2720
+tflyrics-0.2.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+tflyrics-0.2.1.dist-info/top_level.txt,sha256=6lSiEkHG-1FVuOdW8CSEF-7K3C-KHQEvSFi_li_ggdg,9
+tflyrics-0.2.1.dist-info/RECORD,,
