@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: MakeMe
+Version: 0.1.1
+Summary: Easing the usage of Makefiles
+Home-page: http://packages.python.org/makeme
+Author: Esse Woods
+Author-email: esse.woods@gmail.com
+License: UNKNOWN
+Keywords: Makefile MakeMe MM
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Requires-Dist: questionary
+
+Easing the usage of makefiles
+
+
