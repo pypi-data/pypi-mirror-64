@@ -1,0 +1,12 @@
+LICENSE,sha256=yP0GpPqpXKVpLiEoJWeizM6VUGey9MjM3jQT33CFgU0,1075
+dotctrl/__init__.py,sha256=fpFyv2PfGuztj4zDn8iSXzzlbZiIobXITCZ3eboWzqA,1345
+dotctrl/cli.py,sha256=Ha1LrJ2WFJKdltHUkbMcbdnOiO1aWKEe_rsnmIVjY4Q,1454
+dotctrl/config.py,sha256=dTAhu9i9RSfHd9kSiJ6eKAij12ibL6Dts0ch4z5MUS0,1397
+dotctrl/decorators.py,sha256=QZaQSV8cCR0TEarFSXupkIlwhyJ9mDhLksYJtunq9pQ,365
+dotctrl/dotctrl.py,sha256=FQxzVnc5z02LXZyoX-W_BizRZ3ACK6VtOgKPUf1A1_k,13497
+dotctrl/utils.py,sha256=j3RBVoQjA7A4tifeIhhBI-G_nXEDwpFi5ulPrZ5PhAw,4366
+dotctrl-1.0.0.dist-info/entry_points.txt,sha256=hQdQclSg6U-Gvc3mihMvo9L1EGszwZurzv_uG0v7tok,44
+dotctrl-1.0.0.dist-info/LICENSE,sha256=yP0GpPqpXKVpLiEoJWeizM6VUGey9MjM3jQT33CFgU0,1075
+dotctrl-1.0.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+dotctrl-1.0.0.dist-info/METADATA,sha256=ASRVC6EW_-fCSbVoWSbu4zab1qr-kyF7y3cSGBDxMNg,3879
+dotctrl-1.0.0.dist-info/RECORD,,
