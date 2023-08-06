@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+regex_string.cpp
+regex_string.h
+regstring.cpp
+setup.py
+regstring.egg-info/PKG-INFO
+regstring.egg-info/SOURCES.txt
+regstring.egg-info/dependency_links.txt
+regstring.egg-info/top_level.txt
