@@ -1,0 +1,7 @@
+README.md
+setup.py
+alphareader/__init__.py
+alphareader.egg-info/PKG-INFO
+alphareader.egg-info/SOURCES.txt
+alphareader.egg-info/dependency_links.txt
+alphareader.egg-info/top_level.txt
