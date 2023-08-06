@@ -1,0 +1,8 @@
+README.md
+setup.py
+picture_cutter/__init__.py
+picture_cutter/cutter.py
+picture_cutter.egg-info/PKG-INFO
+picture_cutter.egg-info/SOURCES.txt
+picture_cutter.egg-info/dependency_links.txt
+picture_cutter.egg-info/top_level.txt

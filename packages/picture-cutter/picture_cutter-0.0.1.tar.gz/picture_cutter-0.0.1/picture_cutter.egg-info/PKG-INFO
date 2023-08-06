@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: picture-cutter
+Version: 0.0.1
+Summary: Package to cut picture
+Home-page: https://github.com/debuglevel/picture_cutter
+Author: debuglevel
+Author-email: debuglevel@gmail.com
+License: UNKNOWN
+Description: # Picture Cutter
+        
+        This library reads an PIL Image and returns some Images (defined by some boundaries).
+        
+        # Remarks
+        
+        Pre-Alpha. Do not use it.
+        
+        # Reminder for myself on how to package and upload a python package
+        
+        [https://packaging.python.org/tutorials/packaging-projects/]
+        
+        It's probably editing the version in setup.py and then
+        
+        ```
+        python3 setup.py sdist bdist_wheel
+        python3 -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+        ```
+        
+        Should then be installable via `pip install picture_cutter`
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
