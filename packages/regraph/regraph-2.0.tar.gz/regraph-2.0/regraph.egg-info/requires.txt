@@ -1,0 +1,8 @@
+matplotlib
+networkx
+numpy
+pyparsing
+lrparsing
+sympy
+greenery
+neo4j-driver
