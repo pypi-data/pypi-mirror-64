@@ -1,0 +1,12 @@
+README.md
+setup.py
+nameko_kafka/__init__.py
+nameko_kafka/constants.py
+nameko_kafka/dependency.py
+nameko_kafka/entrypoint.py
+nameko_kafka/version.py
+nameko_kafka.egg-info/PKG-INFO
+nameko_kafka.egg-info/SOURCES.txt
+nameko_kafka.egg-info/dependency_links.txt
+nameko_kafka.egg-info/requires.txt
+nameko_kafka.egg-info/top_level.txt
