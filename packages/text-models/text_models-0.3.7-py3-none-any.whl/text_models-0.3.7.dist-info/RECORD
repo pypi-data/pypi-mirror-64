@@ -1,0 +1,13 @@
+text_models/__init__.py,sha256=DHI3U4-cl3nilVXeFin8ZMSOy-vDiSu2KG8nAz8dHmQ,603
+text_models/dataset.py,sha256=CszJvrzETmbfMAMDPb3_edrrFPb0aWjrD4LCbctcx8I,7252
+text_models/model_selection.py,sha256=58xXmTHLPVfNp-CmuTGgDZ5lHNnEpgVxp7Ql9dZOYNI,10290
+text_models/utils.py,sha256=P2v9tJGV5gn47oGbXHJwjaC__eWmeE87YIsRxipjhVY,2843
+text_models/vocabulary.py,sha256=7bSlklNUtSCyhOn63GrNVnkaI32AJW3yRfxnJPhfSwA,7661
+text_models/tests/test_dataset.py,sha256=9VG0Fpjv2idcTTkZLTE8Q9-LNdFa-68IdHGTCwR2B_o,2816
+text_models/tests/test_model_selection.py,sha256=oHxxuar9iTpIBQLRy26UpVijsZcJQHsawcp1LZRzSh8,3223
+text_models/tests/test_vocabulary.py,sha256=sx6xaye1TjZRR0G75eJ82JKs2Wrtw-M1AyTuyd-jZRY,2476
+text_models-0.3.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+text_models-0.3.7.dist-info/METADATA,sha256=vlrOL78C8Epond0DXutP6wmc8fX1l39zMMCe3hI3XF0,1800
+text_models-0.3.7.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+text_models-0.3.7.dist-info/top_level.txt,sha256=iRLy8QOlaDesV7dOZid77xPhblR94RzC6VhQLvJB90s,30
+text_models-0.3.7.dist-info/RECORD,,
