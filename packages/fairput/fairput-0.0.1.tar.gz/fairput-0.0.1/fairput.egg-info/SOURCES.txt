@@ -1,0 +1,9 @@
+README.md
+setup.py
+fairput/__init__.py
+fairput.egg-info/PKG-INFO
+fairput.egg-info/SOURCES.txt
+fairput.egg-info/dependency_links.txt
+fairput.egg-info/not-zip-safe
+fairput.egg-info/requires.txt
+fairput.egg-info/top_level.txt
