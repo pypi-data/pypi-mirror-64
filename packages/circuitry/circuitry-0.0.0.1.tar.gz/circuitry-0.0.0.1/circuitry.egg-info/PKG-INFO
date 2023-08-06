@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: circuitry
+Version: 0.0.0.1
+Summary: Embedded domain-specific combinator library for assembling abstract definitions of logic circuits.
+Home-page: https://github.com/nthparty/circuitry
+Author: Andrei Lapets
+Author-email: a@lapets.io
+License: MIT
+Description: =========
+        circuitry
+        =========
+        
+        Embedded domain-specific combinator library for assembling abstract definitions of logic circuits.
+        
+        Purpose
+        -------
+        This embedded domain-specific language (DSL) makes it possible to write an algorithm in Python that operates over bit vectors, and then to interpret that algorithm implementation as a circuit definition.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
