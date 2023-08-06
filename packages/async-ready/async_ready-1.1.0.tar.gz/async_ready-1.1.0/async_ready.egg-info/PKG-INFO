@@ -1,0 +1,9 @@
+Metadata-Version: 1.2
+Name: async-ready
+Version: 1.1.0
+Summary: Primitives to simplify writing code that works in both sync and async environments
+Home-page: UNKNOWN
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
