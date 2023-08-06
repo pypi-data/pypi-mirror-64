@@ -1,0 +1,10 @@
+README.md
+setup.py
+openCSG/__init__.py
+openCSG/geom.py
+openCSG.egg-info/PKG-INFO
+openCSG.egg-info/SOURCES.txt
+openCSG.egg-info/dependency_links.txt
+openCSG.egg-info/entry_points.txt
+openCSG.egg-info/requires.txt
+openCSG.egg-info/top_level.txt

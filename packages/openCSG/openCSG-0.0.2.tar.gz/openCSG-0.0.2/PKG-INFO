@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: openCSG
+Version: 0.0.2
+Summary: Automatically register models in the admin interface in a smart way.
+Home-page: https://github.com/xuwei13253838782/hn_test_sum
+Author: Dejun E
+Author-email: 1307926582@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: python CSG project
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: test
