@@ -1,0 +1,8 @@
+LICENSE.txt
+setup.py
+append_db/__init__.py
+append_db.egg-info/PKG-INFO
+append_db.egg-info/SOURCES.txt
+append_db.egg-info/dependency_links.txt
+append_db.egg-info/top_level.txt
+append_db.egg-info/zip-safe
