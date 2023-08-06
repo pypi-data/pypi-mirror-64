@@ -1,0 +1,7 @@
+README.md
+pg_task_queue.egg-info/PKG-INFO
+pg_task_queue.egg-info/SOURCES.txt
+pg_task_queue.egg-info/dependency_links.txt
+pg_task_queue.egg-info/not-zip-safe
+pg_task_queue.egg-info/requires.txt
+pg_task_queue.egg-info/top_level.txt
