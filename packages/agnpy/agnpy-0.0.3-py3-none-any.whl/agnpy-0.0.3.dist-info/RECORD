@@ -1,0 +1,13 @@
+agnpy/__init__.py,sha256=wbqDzKoQsBD__aEwI3K_SBrj9XsJBIN_viW94ILYprc,154
+agnpy/absorption.py,sha256=UXBpkVviEvH4waM8QdSurYdcR5c-B1EW03pYxFNUkQQ,8198
+agnpy/compton.py,sha256=E66gjqw92jcBnrG-aPXT8dDGWZevmWfOOYBwUnxC8GE,18732
+agnpy/emission_regions.py,sha256=HNmvgUXXHGBbRber72TTvkTGK9dQR-37hQ5Vs_7dT6Q,7783
+agnpy/spectra.py,sha256=z3LTZS4q7pReWV6mTgMdAwZC8h9OME8TsvgvWxN2VWU,13713
+agnpy/synchrotron.py,sha256=kiDRh00M3NHdRF55mp_DR0J_-nyCfHTQA7yGLs5RYZU,7226
+agnpy/targets.py,sha256=PDhHz58cB0Sb3ljclZxEBUzFKerk9CMVuyTZuZ3izoc,10080
+agnpy/tau.py,sha256=aGYp3892q7LNq4vh-C6xVHIq9H4o4N_PuJtrNhgndgE,4991
+agnpy-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+agnpy-0.0.3.dist-info/METADATA,sha256=M1Jv9RqUz8SBSJKpSxYMK5DzL2b8I4DmQdd6jvvpzgM,1501
+agnpy-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+agnpy-0.0.3.dist-info/top_level.txt,sha256=25v5s_28BGBJz_-1427l06Ny2sOICyWsObxxsFgAgzI,6
+agnpy-0.0.3.dist-info/RECORD,,
