@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PrediProt
+Version: 1.0.7
+Summary: Protein complex structure predictor
+Home-page: UNKNOWN
+Author: The Dream Team
+License: GPL
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: argparse
+
+UNKNOWN
+
+
