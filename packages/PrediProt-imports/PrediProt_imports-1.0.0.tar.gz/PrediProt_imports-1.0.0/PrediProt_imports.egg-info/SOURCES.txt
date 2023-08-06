@@ -1,0 +1,12 @@
+README.md
+setup.py
+PrediProt_imports.egg-info/PKG-INFO
+PrediProt_imports.egg-info/SOURCES.txt
+PrediProt_imports.egg-info/dependency_links.txt
+PrediProt_imports.egg-info/not-zip-safe
+PrediProt_imports.egg-info/requires.txt
+PrediProt_imports.egg-info/top_level.txt
+prediprot_imports/__init__.py
+prediprot_imports/prediprot_classes.py
+prediprot_imports/prediprot_functions.py
+prediprot_imports/prediprot_optimize.py
