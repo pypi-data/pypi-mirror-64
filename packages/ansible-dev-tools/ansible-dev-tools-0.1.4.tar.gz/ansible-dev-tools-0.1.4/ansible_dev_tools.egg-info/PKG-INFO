@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: ansible-dev-tools
+Version: 0.1.4
+Summary: various tools for debuggers of ansible
+Home-page: https://github.com/jctanner/ansible-tools
+Author: James Tanner
+Author-email: tanner.jc@gmail.com
+License: Apache
+Description: see https://github.com/jctanner/ansible-tools/blob/master/README.md
+Platform: UNKNOWN
+Requires-Python: >=2.7
