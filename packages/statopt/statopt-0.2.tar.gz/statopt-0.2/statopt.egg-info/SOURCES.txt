@@ -1,0 +1,14 @@
+README.md
+setup.py
+statopt/__init__.py
+statopt/bucket.py
+statopt/qhm.py
+statopt/salsa.py
+statopt/sasa.py
+statopt/slope.py
+statopt/ssls.py
+statopt.egg-info/PKG-INFO
+statopt.egg-info/SOURCES.txt
+statopt.egg-info/dependency_links.txt
+statopt.egg-info/requires.txt
+statopt.egg-info/top_level.txt
