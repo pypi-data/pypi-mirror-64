@@ -1,0 +1,12 @@
+README.md
+setup.py
+visar/VISAR_model.py
+visar/__init__.py
+visar/deepchem_regressor.py
+visar/param_demo.py
+visar/pytorch_regressor.py
+visar.egg-info/PKG-INFO
+visar.egg-info/SOURCES.txt
+visar.egg-info/dependency_links.txt
+visar.egg-info/requires.txt
+visar.egg-info/top_level.txt
