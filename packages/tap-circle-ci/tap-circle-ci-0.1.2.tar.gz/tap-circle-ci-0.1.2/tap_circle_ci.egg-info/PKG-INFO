@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tap-circle-ci
+Version: 0.1.2
+Summary: Singer.io tap for extracting data from circle ci
+Home-page: http://sisu.ai
+Author: Sisu Data
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev

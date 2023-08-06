@@ -1,0 +1,7 @@
+singer-python>=5.0.12
+requests
+pytest
+mock
+
+[dev]
+pylint==2.4.4
