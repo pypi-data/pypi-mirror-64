@@ -1,0 +1,2 @@
+include stx/resources/*/**
+prune stx/resources/__pycache__
