@@ -1,0 +1,9 @@
+README.md
+setup.py
+shammipdf/__init__.py
+shammipdf/pdf2image.py
+shammipdf/pdf2text.py
+shammipdf.egg-info/PKG-INFO
+shammipdf.egg-info/SOURCES.txt
+shammipdf.egg-info/dependency_links.txt
+shammipdf.egg-info/top_level.txt
