@@ -1,0 +1,74 @@
+Metadata-Version: 1.2
+Name: routeros-telegraf-exporter
+Version: 0.1.8
+Summary: RouterOS metrics exporter enables metrics export to Telegraf
+Home-page: https://github.com/kepsic/routeros_telegraf_exporter
+Author: Andres Kepler
+Author-email: andres@kepler.ee
+License: MIT license
+Description: =====================================
+        RouterOS Telegraf metrics exporter
+        =====================================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/routeros_telegraf_exporter.svg
+                :target: https://pypi.python.org/pypi/routeros_telegraf_exporter
+        
+        .. image:: https://img.shields.io/travis/kepsic/routeros_telegraf_exporter.svg
+                :target: https://travis-ci.com/kepsic/routeros_telegraf_exporter
+        
+        .. image:: https://readthedocs.org/projects/routeros-telegraf-exporter/badge/?version=latest
+                :target: https://routeros-telegraf-exporter.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        RouterOS metrics exporter enables metrics export to Telegraf
+        
+        
+        * Free software: MIT license
+        * Documentation: https://routeros-telegraf-exporter.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * metrics http service with influx inline protocol
+        * cli utilities: rte and rte_probe
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-03-10)
+        ------------------
+        
+        * First release on PyPI.
+        
+        0.1.2 (2020-03-24)
+        ------------------
+        
+        * First release on Read The Docs
+        
+Keywords: routeros_telegraf_exporter,web service
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
