@@ -1,0 +1,13 @@
+riskfolio/AuxFunctions.py,sha256=LxlDM2U3CmRos1J7Xwqp0XaX7D_d_NiFR4yBL1tAYTA,3933
+riskfolio/ConstraintsFunctions.py,sha256=zqE5ZXgZWam6KDaO8oYXXnZIpLkpWLYehxeyXsZa4LI,20702
+riskfolio/ParamsEstimation.py,sha256=yQOBevCoTNiCaZ2OTooAiJ3LloOZjwF8g7lY_W1YGDs,17502
+riskfolio/PlotFunctions.py,sha256=Do_8MMnmjZM4o4etguG9_WNkOxnDYFJOfouaPhj9lNQ,22507
+riskfolio/Portfolio.py,sha256=zuAJt3tb4hA_nUH6AWVTal3Qndf0p4S9mf7O2pbsdyQ,36796
+riskfolio/Prueba.py,sha256=ALwKJXjzbm5ltu1_IzZlfXJfJgdk8DGGHHwaJct89PA,3759
+riskfolio/RiskFunctions.py,sha256=SfQ8Rv3mCQhlsyM8soFjdg2Nv-6GLlEaPY4pT_5fa9o,22840
+riskfolio/__init__.py,sha256=BW5Ho3Bd8Bh3fMgXmrU5lj1mGcNJNUVgubr89ghU1Rc,377
+Riskfolio_Lib-0.0.3.dist-info/LICENSE.txt,sha256=YwUe1wNJRT3Co7J0lrPTMZGbQMc93JpWGhseTgdfCQs,1508
+Riskfolio_Lib-0.0.3.dist-info/METADATA,sha256=lVG3cwcZvktxXrrVclZgyAj5_1Qb7DYf5CZDPgxfehI,3662
+Riskfolio_Lib-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+Riskfolio_Lib-0.0.3.dist-info/top_level.txt,sha256=-Tc-igiNXniQkr1rMndcn3-VT2wgdRdavZv0xAExuw0,10
+Riskfolio_Lib-0.0.3.dist-info/RECORD,,
