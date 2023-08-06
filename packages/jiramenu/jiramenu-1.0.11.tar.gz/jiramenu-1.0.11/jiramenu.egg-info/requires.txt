@@ -1,0 +1,5 @@
+jira
+python-rofi
+requests
+Click
+keyring
