@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+version.py
+sqlalchemy_qubole/__init__.py
+sqlalchemy_qubole/common.py
+sqlalchemy_qubole/hivedialect.py
+sqlalchemy_qubole/prestodialect.py
+sqlalchemy_qubole.egg-info/PKG-INFO
+sqlalchemy_qubole.egg-info/SOURCES.txt
+sqlalchemy_qubole.egg-info/dependency_links.txt
+sqlalchemy_qubole.egg-info/entry_points.txt
+sqlalchemy_qubole.egg-info/requires.txt
+sqlalchemy_qubole.egg-info/top_level.txt
