@@ -1,0 +1,8 @@
+README.md
+setup.py
+aiowebhdfs/__init__.py
+aiowebhdfs.egg-info/PKG-INFO
+aiowebhdfs.egg-info/SOURCES.txt
+aiowebhdfs.egg-info/dependency_links.txt
+aiowebhdfs.egg-info/requires.txt
+aiowebhdfs.egg-info/top_level.txt
