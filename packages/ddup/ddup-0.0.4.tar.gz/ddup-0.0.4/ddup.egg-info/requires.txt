@@ -1,0 +1,5 @@
+torch
+pillow
+numpy
+imagehash
+h5py
