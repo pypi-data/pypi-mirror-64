@@ -1,0 +1,1 @@
+from assnake_core_preprocessing.trimmomatic.result import result

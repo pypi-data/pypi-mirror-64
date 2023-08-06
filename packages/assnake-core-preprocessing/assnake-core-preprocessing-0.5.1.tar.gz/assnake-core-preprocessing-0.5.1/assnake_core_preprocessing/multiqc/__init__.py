@@ -1,0 +1,1 @@
+from assnake_core_preprocessing.multiqc.result import result
