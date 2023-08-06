@@ -1,0 +1,113 @@
+safe_redis_lock
+~~~~~~~~~~~~~~~
+
+项目描述
+
+-  一个单机版的redis分布式锁( A single redis distributed lock)
+-  项目使用set命令来加锁
+-  使用lua脚本来释放锁以保证原子性
+-  注意事项,传入的redis连接池需要必须参数一样,同一个redis数据库
+-  当block=False的时候如果没有获得锁则返回一个AcquireFailException异常
+-  acquire方法返回True时候则说明获得锁成功
+
+使用方法一
+
+-  装饰器使用方法
+
+-  新建一个RedisLock对象.使用RedisLock的lock装饰器来装饰需要保证原子性的函数
+
+-  注意该函数不能是阻塞的
+
+-  .. code:: python
+
+      import threading
+      import redis
+
+      from safe_redis_lock import RedisLock
+      pool = redis.ConnectionPool(host='127.0.0.1', port=6379, password='lyc', db=0)
+
+      conn = redis.Redis(connection_pool=pool)
+
+      conn.set('producer', 10000)
+      redis_lock_ = RedisLock(lock_timeout=5, pool=pool, block=True)
+
+
+      @redis_lock_.lock
+      def consumer_pp(conn):
+          num = int(conn.get('producer'))
+          if num == 0:
+              return True
+          else:
+              print(f'we consumer one left --> {num}')
+              conn.set('producer', num - 1)
+
+
+      def consumer():
+          pool = redis.ConnectionPool(host='127.0.0.1', port=6379, password='lyc', db=0)
+          while True:
+              conn = redis.Redis(connection_pool=pool)
+              if consumer_pp(conn):
+                  break
+
+
+      def consumer_thread():
+          from threading import Thread
+          for i in range(20):
+              Thread(target=consumer).start()
+
+
+      consumer_thread()
+
+使用方法二:
+
+-
+
+.. code:: python
+
+   from safe_redis_lock import RedisLock,AcquireFailException
+
+   import redis
+   import threading
+   import os
+   pool = redis.ConnectionPool(host='127.0.0.1', port=6379, password='lyc', db=0)
+
+   conn = redis.Redis(connection_pool=pool)
+
+   conn.set('producer', 10000)
+   redis_lock_ = RedisLock(lock_timeout=5, pool=pool, block=True)
+
+
+   def consumer_pp(conn):
+       num = int(conn.get('producer'))
+       if num == 0:
+           return True
+       else:
+           print(f'we consumer one left --> {num}')
+           conn.set('producer', num - 1)
+
+
+   def consumer():
+       pool = redis.ConnectionPool(host='127.0.0.1', port=6379, password='lyc', db=0)
+       while True:
+           conn = redis.Redis(connection_pool=pool)
+           value = f'{threading.current_thread().ident}-{os.getpid()}'
+           get_lock = False
+           try:
+               get_lock = redis_lock_.acquire(value = value)
+               if get_lock:
+                   if consumer_pp(conn):
+                       break
+           except AcquireFailException:
+               print('can not get the lock')
+           finally:
+               if get_lock:
+                   redis_lock_.release(value)
+
+
+   def consumer_thread():
+       from threading import Thread
+       for i in range(20):
+           Thread(target=consumer).start()
+
+
+   consumer_thread()
