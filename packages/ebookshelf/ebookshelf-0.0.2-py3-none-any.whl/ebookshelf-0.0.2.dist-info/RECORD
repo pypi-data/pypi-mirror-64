@@ -1,0 +1,13 @@
+ebookshelf/__init__.py,sha256=miSsqPy2PFJ18TW9kocQJLcv4HFpkfQhcTzgAO-GTVE,22
+ebookshelf/__main__.py,sha256=w_cvjQzHIVzasBpoY6-mwewvCcxylkzTy4NZQhxs8Fg,151
+ebookshelf/book.py,sha256=0zSNEv8SSt2e4O4BFJ86bJiivyWaRk2SuWzrrwmBb24,4340
+ebookshelf/case.py,sha256=GMehxa0G3sq1kaFHnNoHfs3q1IMNY4mY3g-AU-FEnYE,973
+ebookshelf/ebookshelf.py,sha256=3Rg0BRgiv3Yva200oMXXHtWud1NWEok_MZWSjZe9a6U,401
+ebookshelf/library.py,sha256=jn9qwDzhPuU5IMj5f9UYbwr5kcpGXIFv2iKaKeUcy7E,1198
+ebookshelf/shelf.py,sha256=UYCj3C6CX4DJy8_sDKoAyFH4007CIBVt-WJQSODq2uI,750
+ebookshelf-0.0.2.dist-info/LICENSE-APACHE,sha256=PepjvSP-KRUPl576Um9BSNJ4iCnhC-uf3IWeQsg71Lg,9749
+ebookshelf-0.0.2.dist-info/LICENSE-MIT,sha256=BGX9XG-FDaZxMP2OsmgxR_BlH5AT9mC-gqW0TeQCmxE,1066
+ebookshelf-0.0.2.dist-info/METADATA,sha256=ptTM1oPGM8LLrOuLbGdJ-usUtxGQvLlQR1wZrzKXLiA,1420
+ebookshelf-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ebookshelf-0.0.2.dist-info/top_level.txt,sha256=BkNe9VX61V1dSubNOl9nplrrCt-AtJ_n7kGUGU_qjsc,11
+ebookshelf-0.0.2.dist-info/RECORD,,
