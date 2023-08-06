@@ -1,0 +1,11 @@
+qjdltools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qjdltools/dlbasic.py,sha256=wXyFWJVaDTf2NVDU9V8lwz4LfI-7OchGk5WfaWmzunI,5453
+qjdltools/dldata.py,sha256=anlp0aWLQYncsQS4UkmkdYbR7Q9pURYzjID__XuH8qc,9669
+qjdltools/dlimage.py,sha256=d-PIcRqCUqmMXt-W2ud18Puw7BUPN8CzV3zHsYGmJwg,41877
+qjdltools/dltrain.py,sha256=kIvhM2Eyzf47O2B4QVLBD0oVC9NoWDioOaagGtRVdB8,33137
+qjdltools/fileop.py,sha256=n_fRF_HTsfRbKcrs68cEnqbzmoyqACQ256HDfKfyR2U,5151
+qjdltools-0.2.6.dist-info/LICENSE,sha256=6ObnUr6HyFSfY9h0y3wXaoRlcCzlaPUbOnAUNobmY8c,1066
+qjdltools-0.2.6.dist-info/METADATA,sha256=O8MabWgO5jYqO4SthsRWMGaGhAHno9nPuA65_L6GGLc,706
+qjdltools-0.2.6.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+qjdltools-0.2.6.dist-info/top_level.txt,sha256=kcElaoPqZl2hcXGvJaknBQ_N2JgZgd8A-vmorp-eIBI,10
+qjdltools-0.2.6.dist-info/RECORD,,
