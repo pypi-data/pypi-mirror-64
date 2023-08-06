@@ -1,0 +1,17 @@
+build/lib/gamla/__init__.py,sha256=d95rT2Kuj_2AA98V2SNpZpbtScHG43Z7TP7vsfyzgTo,87
+build/lib/gamla/functional.py,sha256=6nX-bMpDviHsYcsxO_nFs4PFOREJQok7g6hKbJzWvUU,9180
+build/lib/gamla/graph.py,sha256=MnyAIaV6Sf4OHblMhBorbZcBMGbGMFjAmzhNUPULsd0,3820
+build/lib/gamla/graph_test.py,sha256=Jb_LDXidEbffCJ-LOQr1CDEIbu76Nus7Qs6RCmDsCBc,723
+build/lib/gamla/io_utils.py,sha256=jJxPgWvrYFlDe6crEwQJz4CbM9hN2zsr09iAlnVuXHE,4616
+build/lib/gamla/io_utils_test.py,sha256=I8Ibrgxpk7usfp-uV7kHbp4Qb44nLPuKt8bVX9lohWg,1968
+gamla/__init__.py,sha256=d95rT2Kuj_2AA98V2SNpZpbtScHG43Z7TP7vsfyzgTo,87
+gamla/functional.py,sha256=6nX-bMpDviHsYcsxO_nFs4PFOREJQok7g6hKbJzWvUU,9180
+gamla/graph.py,sha256=MnyAIaV6Sf4OHblMhBorbZcBMGbGMFjAmzhNUPULsd0,3820
+gamla/graph_test.py,sha256=Jb_LDXidEbffCJ-LOQr1CDEIbu76Nus7Qs6RCmDsCBc,723
+gamla/io_utils.py,sha256=jJxPgWvrYFlDe6crEwQJz4CbM9hN2zsr09iAlnVuXHE,4616
+gamla/io_utils_test.py,sha256=I8Ibrgxpk7usfp-uV7kHbp4Qb44nLPuKt8bVX9lohWg,1968
+gamla-0.0.53.dist-info/LICENSE,sha256=qIhQpZIFhAR5Yh4T1CTuuLczYrJynZedRyEFK2V5kwg,1062
+gamla-0.0.53.dist-info/METADATA,sha256=tChMcPoAcNT0JJdY9QBpZXlZ2TVEp6w5KRLq6p4jKF0,738
+gamla-0.0.53.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gamla-0.0.53.dist-info/top_level.txt,sha256=wNoBVPdAZfhzhH3xoJ5J9l6I0_DwPqxH-n6AEWjT_sg,17
+gamla-0.0.53.dist-info/RECORD,,
