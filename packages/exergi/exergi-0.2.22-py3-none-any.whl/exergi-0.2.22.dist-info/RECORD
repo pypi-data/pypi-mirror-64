@@ -1,0 +1,8 @@
+exergi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exergi/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exergi/AWS/S3.py,sha256=lc3VaRUjjm3uQLFv4Eui9ZTT4wO7nALodRT849DeGkE,3008
+exergi/AWS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exergi-0.2.22.dist-info/METADATA,sha256=iJPwB_K3gXUGnzR57KKJM_tbjgwG3eAhUC7RzjRyH0w,2466
+exergi-0.2.22.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+exergi-0.2.22.dist-info/top_level.txt,sha256=ayugHFhwszCP5DWFdH3ZAMHWSSFohor6P3KFRT7_Ie4,7
+exergi-0.2.22.dist-info/RECORD,,
