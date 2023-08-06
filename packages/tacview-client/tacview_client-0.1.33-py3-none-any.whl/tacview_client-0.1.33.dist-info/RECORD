@@ -1,0 +1,11 @@
+tacview_client/__init__.py,sha256=R3uNdqV01WbWxMJI7C5KBrLN4-Q2g-auqrSXDNyPFI0,23
+tacview_client/cli.py,sha256=3WE5WNhK1My4ywduVEJ5v6n9kkMDxg1MTg_yhridMP0,4134
+tacview_client/client.py,sha256=iEumTjayB9Woy9rhsz5tBzH0sJivFTbEM5t_ZT6Fnzg,28933
+tacview_client/config.py,sha256=Tl76FKLh_jJ6EkDaJKNKD7YFHU96XvJf0qxBTqDKPlw,899
+tacview_client/db.py,sha256=tDGcOw6ZgqrkHuJ3lPBeA3hHk1T1tuZc-a48y_cwvoE,7384
+tacview_client/serve_file.py,sha256=UOqOJ18gRTdlAf8rQPRys1I0_3YxNoPRhGQmGbp-iow,2446
+tacview_client-0.1.33.dist-info/entry_points.txt,sha256=Ui01mwxWpUCiZ-yD5vyxxlI3JfpjmZGtR48yAjXkWIQ,51
+tacview_client-0.1.33.dist-info/LICENSE,sha256=klOWONnk8OKJaayOxADE0RBzPAgt0ZkLUY27rg_EpZE,1069
+tacview_client-0.1.33.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+tacview_client-0.1.33.dist-info/METADATA,sha256=LfKyvw2k_NCA-GMbRBbBY9YhVIO93R2gfq1OLbsrlEM,637
+tacview_client-0.1.33.dist-info/RECORD,,
