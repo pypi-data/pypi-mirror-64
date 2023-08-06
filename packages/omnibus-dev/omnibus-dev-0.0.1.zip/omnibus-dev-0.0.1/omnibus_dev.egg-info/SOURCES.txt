@@ -1,0 +1,7 @@
+setup.py
+omnibus_dev/__about__.py
+omnibus_dev/__init__.py
+omnibus_dev.egg-info/PKG-INFO
+omnibus_dev.egg-info/SOURCES.txt
+omnibus_dev.egg-info/dependency_links.txt
+omnibus_dev.egg-info/top_level.txt
