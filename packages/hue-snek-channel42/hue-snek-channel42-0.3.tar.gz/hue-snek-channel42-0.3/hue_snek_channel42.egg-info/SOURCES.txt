@@ -1,0 +1,9 @@
+README.md
+setup.py
+hue_snek_channel42.egg-info/PKG-INFO
+hue_snek_channel42.egg-info/SOURCES.txt
+hue_snek_channel42.egg-info/dependency_links.txt
+hue_snek_channel42.egg-info/requires.txt
+hue_snek_channel42.egg-info/top_level.txt
+hue_snek_pkg/__init__.py
+hue_snek_pkg/hue_snek.py
