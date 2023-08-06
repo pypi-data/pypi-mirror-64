@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: custos-logger
+Version: 1.0.4
+Summary: A customisable console logging package with colours and much more!
+Home-page: https://github.com/milasoftwaregroup/custos
+Author: Mila Software Group
+Author-email: jack@mila-software.group
+License: MIT
+Download-URL: https://github.com/milasoftwaregroup/custos/archive/v1.0.0.tar.gz
+Description: <h1>The blueprint class</h1>
+        <hr>
+        
+        This function comes along with a basic blueprint class that's intended to debugging tools to any deriving classes automatically. Originally, this was never intended to be made publicly available, but there really is no need to hide it as all the child class has to do is derive from it.
+        
+        The tools installed in your classes by this blueprint include:
+        <br> a detailed repr override (any <code>__repr__</code> functions in the child class will override this one);
+        <br> a class_name property that returns the name of the deriving class;
+        <br> a class_properties() function that returns a {name: value} list of class members that aren't methods;
+        <br> an <code>__iter__</code> override that yields from class_properties()
+        
+        <img src="https://i.imgur.com/WsFCkKs.png" alt="Example">
+Keywords: Logging,Termcolor,Ayana/logger,Console,Custom
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.8
