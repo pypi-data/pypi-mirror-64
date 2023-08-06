@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: function-ext-monitor
+Version: 0.0.3
+Summary: This package provides a decorator to wrap around a function so that a report is sent to external server every time function runs.
+Home-page: https://github.com/sopherapps/function-ext-monitor
+Author: Martin Ahindura
+Author-email: team.sopherapps@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# function-ext-monitor
+
+This package provides a decorator to wrap around a function so that a report is sent to external server every time function runs.
+__under heavy development__
+## Dependencies
+
+- [Requests]()
+
+## How to install
+
+    ```bash
+    pip install function-ext-monitor
+    ```
+
+## License
+
+Copyright (c) 2020 Martin Ahindura Licensed under the [MIT License](./LICENSE)
+
+
+
