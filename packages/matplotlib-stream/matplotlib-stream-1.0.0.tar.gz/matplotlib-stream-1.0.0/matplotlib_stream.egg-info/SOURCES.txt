@@ -1,0 +1,7 @@
+setup.py
+matplotlib_stream/__init__.py
+matplotlib_stream/figure.py
+matplotlib_stream.egg-info/PKG-INFO
+matplotlib_stream.egg-info/SOURCES.txt
+matplotlib_stream.egg-info/dependency_links.txt
+matplotlib_stream.egg-info/top_level.txt
