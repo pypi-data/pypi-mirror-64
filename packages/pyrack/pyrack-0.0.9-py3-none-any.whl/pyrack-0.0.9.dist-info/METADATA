@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyrack
+Version: 0.0.9
+Summary: A python package to analyze different types of documents
+Home-page: https://github.com/kr-sundaram/pyrack
+Author: Siddharth Venkateswaran, Kumar Sundaram, Aravindhan Dhanaraj, Sreenath Gopi
+Author-email: kumarsund3@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: imageai
+Requires-Dist: opencv-python (>=3.4.6.27)
+Requires-Dist: tensorflow (==1.14.0)
+
+A python package to analyze different types of documents.
+
+
