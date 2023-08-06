@@ -1,0 +1,9 @@
+setup.py
+mpyconfigbase/__init__.py
+mpyconfigbase/mpyconfigbase.py
+mpyconfigbase/sample.py
+mpyconfigbase.egg-info/PKG-INFO
+mpyconfigbase.egg-info/SOURCES.txt
+mpyconfigbase.egg-info/dependency_links.txt
+mpyconfigbase.egg-info/requires.txt
+mpyconfigbase.egg-info/top_level.txt
