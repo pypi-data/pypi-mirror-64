@@ -1,0 +1,17 @@
+django_kubernetes_manager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kubernetes_manager/admin.py,sha256=MFzVCV3rSXt58_ToSGULWRLwiMr_TKNJrMjG0BdQyco,519
+django_kubernetes_manager/serializers.py,sha256=M_-M7ACmD05F1Z14E9VOObzxHEXvwL80J8dmHX0fjAc,3438
+django_kubernetes_manager/urls.py,sha256=vkyDNQSUfxy1t6lVEXNVTYsdi_d9VxzxnjGIF_tiYzk,1824
+django_kubernetes_manager/utils.py,sha256=yIRDhzE5yV5L0y7GMFBDdi0YiJixdXodNLJwUm2brhs,3589
+django_kubernetes_manager/migrations/0001_initial.py,sha256=xdMrqQ8yIPTOxyj_INAitGAaNaosQr3mr4RV_ybOkDQ,18017
+django_kubernetes_manager/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_kubernetes_manager/models/__init__.py,sha256=KtnlDEdb0okEBMeYakgZ20PZBhRFYZZKRcTbcJYpKyQ,448
+django_kubernetes_manager/models/base.py,sha256=BH_n9b269FPS-zp_rmqYYrkRWMkyCQeW9D6J34fDmmU,17135
+django_kubernetes_manager/models/target_cluster.py,sha256=4RKWFhbjsGB3PLf3wOCEzCCrH8P0nJC1zswsV0kT93g,2554
+django_kubernetes_manager/views/__init__.py,sha256=d2Ieul_8N1Ts4uhwBOx39_CXZxxOLQgpy7VUz67gcQM,54
+django_kubernetes_manager/views/model_views.py,sha256=ZrcTG-uCGLsb5HJpNJ51kVRf3EtwSxuwDsEd4Inl5E8,7379
+django_kubernetes_manager-0.2.4.dist-info/LICENSE,sha256=7JPSqJNSrpQbE5YvlTfIhZGU6L1aFvyeOSUSCjiuKrE,1071
+django_kubernetes_manager-0.2.4.dist-info/METADATA,sha256=9OhVhlYvSM-PXaPTu33vk018hrojYExra2lPd3ypej8,2488
+django_kubernetes_manager-0.2.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_kubernetes_manager-0.2.4.dist-info/top_level.txt,sha256=nNgdN-mZUkUU4jg-_m4gtnMGdvy1JEN01i8SQfFGeHA,26
+django_kubernetes_manager-0.2.4.dist-info/RECORD,,
