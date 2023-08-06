@@ -1,0 +1,13 @@
+LICENSE-APACHE
+LICENSE-MIT
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.py
+bookshelf/__init__.py
+bookshelf/__main__.py
+bookshelf/bookshelf.py
+ebookshelf.egg-info/PKG-INFO
+ebookshelf.egg-info/SOURCES.txt
+ebookshelf.egg-info/dependency_links.txt
+ebookshelf.egg-info/top_level.txt
