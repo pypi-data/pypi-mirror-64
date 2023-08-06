@@ -1,0 +1,8 @@
+json_datetime/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+json_datetime/consts.py,sha256=4db9LbIGgnnX_vJhoFbS_vRDMshhv9Mk1iZetWQ8xHs,260
+json_datetime/decoder.py,sha256=A1pG8hTwPZLKctYXjTjKJwMS-vgaMLPFSq9x-HNZ60c,891
+json_datetime/encoder.py,sha256=rYh13HGA4HG4f-NalaFV9n4EIPCCJ32X3EAH9Y9tBjg,433
+json_datetime_noamfisher-0.0.22.dist-info/METADATA,sha256=9t3ZXSRJGGNjkoolEyxHXst0JmoOYEM_BI2zyqKAT6E,221
+json_datetime_noamfisher-0.0.22.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+json_datetime_noamfisher-0.0.22.dist-info/top_level.txt,sha256=TtXc2-LTD1UIfwGp2QjkH_NOGgUPH4SZOkov4OMSc48,14
+json_datetime_noamfisher-0.0.22.dist-info/RECORD,,
