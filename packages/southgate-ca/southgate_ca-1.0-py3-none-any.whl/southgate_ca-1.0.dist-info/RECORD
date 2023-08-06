@@ -1,0 +1,8 @@
+southgate_ca/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+southgate_ca/sg2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+southgate_ca/sg2text.py,sha256=95T_FNjQUwiioETIoS6fmpSGB44UcsLyY4gEkIY8sKA,36
+southgate_ca-1.0.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+southgate_ca-1.0.dist-info/METADATA,sha256=qZVqCeInmrlN3973PMUtOK7g30XW1p9yVCgzmG7GFAg,203
+southgate_ca-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+southgate_ca-1.0.dist-info/top_level.txt,sha256=NRHiTPzw4g7nP8jS1iJHk9SorU34hxLgD8YbCtBOBAU,13
+southgate_ca-1.0.dist-info/RECORD,,
