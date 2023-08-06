@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+example_component/ExampleComponent.py
+example_component/__init__.py
+example_component/_imports_.py
+example_component/example_component.min.js
+example_component/example_component.min.js.map
+example_component/metadata.json
+example_component/package-info.json
+example_component.egg-info/PKG-INFO
+example_component.egg-info/SOURCES.txt
+example_component.egg-info/dependency_links.txt
+example_component.egg-info/top_level.txt

@@ -1,0 +1,7 @@
+include example_component/example_component.min.js
+include example_component/example_component.min.js.map
+include example_component/metadata.json
+include example_component/package-info.json
+include README.md
+include LICENSE
+include package.json
