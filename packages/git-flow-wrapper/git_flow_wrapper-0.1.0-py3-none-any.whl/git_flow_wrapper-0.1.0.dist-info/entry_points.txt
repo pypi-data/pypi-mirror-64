@@ -1,0 +1,3 @@
+[console_scripts]
+flow=git_flow_wrapper.cli:main
+
