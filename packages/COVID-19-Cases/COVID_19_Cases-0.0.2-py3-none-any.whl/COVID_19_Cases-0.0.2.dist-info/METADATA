@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: COVID-19-Cases
+Version: 0.0.2
+Summary: A python script that generates latest data set of COVID-19 cases around the globe.
+Home-page: https://github.com/jrclarete/COVID-19-Cases
+Author: Jhon Rommel Clarete
+Author-email: rommel.clarete18@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: astroid (==2.3.3)
+Requires-Dist: autopep8 (==1.5)
+Requires-Dist: beautifulsoup4 (==4.8.2)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.9)
+Requires-Dist: isort (==4.3.21)
+Requires-Dist: lazy-object-proxy (==1.4.3)
+Requires-Dist: lxml (==4.5.0)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: pycodestyle (==2.5.0)
+Requires-Dist: pylint (==2.4.4)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: soupsieve (==2.0)
+Requires-Dist: urllib3 (==1.25.8)
+Requires-Dist: wrapt (==1.11.2)
+
+# COVID-19 Cases
+
+A python script that generates latest data set of COVID-19 cases around the globe.
+
+## Setup
+
+```
+pip install COVID-19-Cases
+```
+
+## Usage
+
+The script will return a dictionary for the Global and Total cases and/or list of dictionaries for the Country cases
+
+```
+import covid19cases as covid
+```
+
+```
+# Get the latest cases around the globe
+print(covid.get_global_cases())
+
+Sample output:
+{'Cases': '590,424', 'Deaths': '26,950', 'Recovered': '132,458'}
+```
+
+```
+# Get the latest cases of all affected Countries
+print(covid.get_country_cases())
+
+Sample output:
+[{'Country': 'USA', 'TotalCases': '104,256', 'NewCases': '+130', 'TotalDeaths': '1,704', 'NewDeaths': '+8', 'TotalRecovered': '2,525', 'ActiveCases': '100,027', 'Critical': '2,494', 'CasesPerOneMillion': '315', 'DeathsPerOneMillion': '5', 'FirstCase': 'Jan 20'}, {'Country': 'Italy', 'TotalCases': '86,498', 'NewCases': '', 'TotalDeaths': '9,134', 'NewDeaths': '', 'TotalRecovered': '10,950', 'ActiveCases': '66,414', 'Critical': '3,732', 'CasesPerOneMillion': '1,431', 'DeathsPerOneMillion': '151', 'FirstCase': 'Jan 29'}]
+```
+
+```
+# Get the latest case of specific country
+print(get_country_cases("USA"))
+
+Sample output:
+{'Country': 'USA', 'TotalCases': '104,256', 'NewCases': '+130', 'TotalDeaths': '1,704', 'NewDeaths': '+8', 'TotalRecovered': '2,525', 'ActiveCases': '100,027', 'Critical': '2,494', 'CasesPerOneMillion': '315', 'DeathsPerOneMillion': '5', 'FirstCase': 'Jan 20'}
+```
+
+```
+# Get the total data in more informative way
+print(get_total_cases())
+
+Sample output:
+{'Country': 'Total:', 'TotalCases': '613,828', 'NewCases': '+17,516', 'TotalDeaths': '28,229', 'NewDeaths': '+888', 'TotalRecovered': '137,223', 'ActiveCases': '448,376', 'Critical': '23,995', 'CasesPerOneMillion': '78.7', 'DeathsPerOneMillion': '3.6', 'FirstCase': ''}
+```
+
+The data will change from time to time.
+
+## Source
+
+I get the data on this site https://www.worldometers.info/coronavirus/ via Web scraping.
+
+
