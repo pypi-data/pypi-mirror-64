@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+pyslr.egg-info/PKG-INFO
+pyslr.egg-info/SOURCES.txt
+pyslr.egg-info/dependency_links.txt
+pyslr.egg-info/top_level.txt
