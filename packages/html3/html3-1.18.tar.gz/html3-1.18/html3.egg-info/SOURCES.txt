@@ -1,0 +1,8 @@
+README.md
+setup.py
+html3/__init__.py
+html3/html3.py
+html3.egg-info/PKG-INFO
+html3.egg-info/SOURCES.txt
+html3.egg-info/dependency_links.txt
+html3.egg-info/top_level.txt
