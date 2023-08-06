@@ -1,0 +1,7 @@
+pyrclone/__init__.py,sha256=PVqiDfQR9UEOnNrZNGYpO3g8I00gpzHFMZQY-RQGJI8,90
+pyrclone/rclone.py,sha256=wzUkLbFf-fd6kEqHbL8BW_POEb0eeWYXknhLCRFOqTI,9303
+pyrclone/rclone_config.py,sha256=cmLsgK246WMUOkl4IvP6XzgKW6rj8EBMEFLUme5aS2E,1928
+pyrclone-1.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pyrclone-1.0.1.dist-info/WHEEL,sha256=V7iVckP-GYreevsTDnv1eAinQt_aArwnAxmnP0gygBY,83
+pyrclone-1.0.1.dist-info/METADATA,sha256=Qorovko9cydzrL3zBsqBC714uTMazb7byoxT2QyjRdw,3230
+pyrclone-1.0.1.dist-info/RECORD,,
