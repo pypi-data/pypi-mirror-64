@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: scikit-highs
+Version: 0.0.5
+Summary: Cython interface to HiGHS.
+Home-page: https://github.com/mckib2/HiGHS
+Author: Nicholas McKibben
+Author-email: nicholas.bgp@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
