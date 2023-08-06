@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: loquat
+Version: 0.1.0
+Summary: A simple web framework based on Tornado.
+Home-page: https://github.com/guanzhenxing/loquat.git
+Author: Jesen Kwan
+Author-email: guan.zhenxing@foxmail.com
+License: MIT
+Description: 
+        # lettuce
+        
+        A simple web framework based on Tornado.
+        
+        ## Introduce
+        
+        Loquat is a web framework based on Tornado.
+        
+        ## Installation
+        
+        ## Simple uses
+        
+        ```python
+        import loquat
+        from loquat import web
+        from loquat.handlers.base import BaseHandler
+        
+        
+        class IndexHandler(BaseHandler):
+            def get(self):
+                print(">>>")
+                self.render('index.html')
+        
+        
+        class UntitledApplication(loquat.web.Application):
+        
+            def __init__(self):
+                handlers = [
+                    (r"/", IndexHandler)
+                ]
+                app_settings = {
+                }
+                super().__init__(port=8000, handlers=handlers, **app_settings)
+        
+        
+        def main():
+            app = UntitledApplication()
+            web.run(application=app)
+        
+        if __name__ == "__main__":
+            main()
+        ```
+Keywords: tornado,web framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
