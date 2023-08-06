@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Google Talent Wrapper Katon_Direct
+Version: 0.0.1
+Summary: Simple way to use google talent cloud for basic functionality
+Home-page: https://github.com/pypa/sampleproject
+Author: Alex VanLaningham
+Author-email: alexv@katondirect.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
