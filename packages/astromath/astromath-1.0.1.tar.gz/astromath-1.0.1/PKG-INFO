@@ -1,0 +1,58 @@
+Metadata-Version: 1.2
+Name: astromath
+Version: 1.0.1
+Summary: Library for mathematical astronomy
+Home-page: https://github.com/qxlsz/astromath
+Author: Rajasekhar Josyula
+Author-email: rajasekhar.josyula@gmail.com
+License: MIT license
+Description: =========
+        astromath
+        =========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/astromath.svg
+                :target: https://pypi.python.org/pypi/astromath
+        
+        .. image:: https://img.shields.io/travis/qxlsz/astromath.svg
+                :target: https://travis-ci.com/qxlsz/astromath
+        
+        .. image:: https://readthedocs.org/projects/astromath/badge/?version=latest
+                :target: https://astromath.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        .. image:: https://pyup.io/repos/github/qxlsz/astromath/shield.svg
+             :target: https://pyup.io/repos/github/qxlsz/astromath/
+             :alt: Updates
+        
+        
+        
+        Library for mathematical astronomy
+        
+        
+        * Free software: MIT license
+        * Documentation: https://astromath.readthedocs.io.
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2020-04-01)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: astromath
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
