@@ -1,0 +1,8 @@
+include README.md LICENSE
+recursive-include groups_sync *
+
+exclude .flake8
+exclude CHANGELOG.md
+exclude makefile
+exclude mypy.ini
+exclude noxfile.py
