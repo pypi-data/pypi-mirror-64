@@ -1,0 +1,3 @@
+[console_scripts]
+rnbgrader-exe-check = rnbgrader.execheck:main
+
