@@ -1,0 +1,9 @@
+README.md
+setup.py
+savager/__init__.py
+savager/element.py
+savager/file.py
+savager.egg-info/PKG-INFO
+savager.egg-info/SOURCES.txt
+savager.egg-info/dependency_links.txt
+savager.egg-info/top_level.txt
