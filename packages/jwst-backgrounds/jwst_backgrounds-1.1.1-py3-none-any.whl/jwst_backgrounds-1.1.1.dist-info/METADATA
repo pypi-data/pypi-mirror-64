@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: jwst-backgrounds
+Version: 1.1.1
+Summary: Retrieve and plot JWST background information
+Home-page: http://jwst.stsci.edu/
+Author: Jane Rigby (GSFC) and Klaus Pontoppidan (STScI)
+Author-email: Jane.Rigby@nasa.gov
+License: UNKNOWN
+Download-URL: https://github.com/spacetelescope/jwst_backgrounds/
+Platform: UNKNOWN
+Requires-Dist: healpy (>=1.10)
+Requires-Dist: matplotlib (==3.1.1)
+Requires-Dist: numpy (==1.17.0)
+Requires-Dist: scipy (==1.1.0)
+
+UNKNOWN
+
+
