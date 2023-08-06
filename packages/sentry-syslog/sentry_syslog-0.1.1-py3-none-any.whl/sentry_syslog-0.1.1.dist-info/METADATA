@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: sentry-syslog
+Version: 0.1.1
+Summary: Send syslog messages to Sentry as events
+Home-page: https://github.com/rpatterson/sentry-syslog
+Author: Ross Patterson
+Author-email: me@rpatterson.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: syslog-rfc5424-parser
+Requires-Dist: sentry-sdk
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: autoflake ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: flake8-black ; extra == 'dev'
+
+================================================
+sentry-syslog
+================================================
+Send Syslog RFC 5424 Messages to Senty as Events
+------------------------------------------------
+
+.. image:: https://github.com/rpatterson/sentry-syslog/workflows/Run%20linter,%20tests%20and,%20and%20release/badge.svg
+
+The `sentry-syslog` command-line script sends `RFC 5424 IETF Syslog Protocol`_
+message to Sentry as events as follows:
+
+#. Re-configures `Python's logging facility`_ to closer match Syslog
+#. Initializes `Sentry's Python logging integration`_
+#. Accepts one message per-line
+#. Converts each message into a Python `logging` message
+#. Logs the Python message to be handled by the `Sentry's Python logging integration`_
+
+This can be used, for example, with `Rsyslog's omprog output module`_ as the `binary` to
+selectively forward a system's syslog messages to Sentry as events.  See the `example
+omprog configuration`_.
+
+
+.. _RFC 5424 IETF Syslog Protocol: https://tools.ietf.org/html/rfc5424
+.. _Sentry's Python logging integration: https://docs.sentry.io/platforms/python/logging/
+.. _Python's logging facility: https://docs.python.org/3/library/logging.html
+.. _Rsyslog's omprog output module:
+   https://www.rsyslog.com/doc/v8-stable/configuration/modules/omprog.html
+.. _example omprog configuration: ./src/sentry_syslog/etc/rsyslog.d/99-sentry.conf
+
+
