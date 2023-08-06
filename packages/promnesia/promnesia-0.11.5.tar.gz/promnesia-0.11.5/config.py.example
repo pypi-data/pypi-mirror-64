@@ -1,0 +1,21 @@
+'''
+Index (database) will be dumped to OUTPUT_DIR/promnesia.sqlite
+'''
+OUTPUT_DIR = '/tmp'
+
+
+
+from promnesia import Indexer
+from promnesia.indexers import auto
+
+
+'''
+List of indexers to use
+'''
+INDEXERS = [
+    Indexer(
+        auto.index,
+        '/usr/share/doc/python3/html/faq',
+        src='python-faq',
+    )
+]
