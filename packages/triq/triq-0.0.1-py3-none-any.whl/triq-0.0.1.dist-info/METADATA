@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: triq
+Version: 0.0.1
+Summary: Trickery to use trio async framework with PySide/PyQt
+Home-page: https://github.com/innodatalabs/triq/
+Author: Mike Kroutikov
+Author-email: mkroutikov@innodata.com
+License: MIT
+Keywords: pyqt pyside async trio
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: trio (~=0.13.0)
+
+See https://github.com/innodatalabs/triq/
+
+
