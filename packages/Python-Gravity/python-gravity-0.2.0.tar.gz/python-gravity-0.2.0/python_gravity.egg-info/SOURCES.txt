@@ -1,0 +1,12 @@
+setup.py
+pygravity/__init__.py
+pygravity/math.c
+pygravity/two_d/vector.c
+pygravity/two_d/__init__.py
+pygravity/two_d/_core.py
+pygravity/two_d/vector.c
+python_gravity.egg-info/PKG-INFO
+python_gravity.egg-info/SOURCES.txt
+python_gravity.egg-info/dependency_links.txt
+python_gravity.egg-info/not-zip-safe
+python_gravity.egg-info/top_level.txt
