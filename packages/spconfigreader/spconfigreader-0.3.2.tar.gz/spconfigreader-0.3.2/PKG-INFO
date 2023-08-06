@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spconfigreader
+Version: 0.3.2
+Summary: A utitlity to read config from yaml-files and environment (like Spring for Java)
+Home-page: https://github.com/Momper14/configreader
+Author: Moritz Momper
+Author-email: moritz.momper@gmail.com
+License: UNKNOWN
+Description: # TODO
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
