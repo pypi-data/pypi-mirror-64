@@ -1,0 +1,6 @@
+README.md
+setup.py
+classkit.egg-info/PKG-INFO
+classkit.egg-info/SOURCES.txt
+classkit.egg-info/dependency_links.txt
+classkit.egg-info/top_level.txt
