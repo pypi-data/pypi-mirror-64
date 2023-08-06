@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lmdb-dataset
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Ziyang Hu
+Author-email: hu.ziyang@cantab.net
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: lmdb (>=0.94.0)
+Requires-Dist: pyarrow (>=0.13.0)
+
+UNKNOWN
+
+
