@@ -1,0 +1,5 @@
+sphinx
+
+[dev]
+sphinxcontrib-httpdomain
+transifex-client
