@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rpg-dice
+Version: 0.1.0
+Summary: A simple dice roller
+Home-page: https://github.com/pfertyk/rpg-dice
+Author: Paweł Fertyk
+Author-email: pfertyk@pfertyk.me
+License: UNKNOWN
+Description: # RPG Dice
+        
+        [![Build Status](https://travis-ci.org/pfertyk/rpg-dice.svg?branch=master)](https://travis-ci.org/pfertyk/rpg-dice)
+        
+        A simple dice parser for RPG sessions. Currently only handles dice of the same
+        kind.
+        
+        ## Usage
+        
+        ```python
+        from rpg_dice import roll
+        value = roll("2d6")
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
