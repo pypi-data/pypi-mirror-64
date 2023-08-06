@@ -1,0 +1,8 @@
+README.md
+setup.py
+snreval/__init__.py
+snreval.egg-info/PKG-INFO
+snreval.egg-info/SOURCES.txt
+snreval.egg-info/dependency_links.txt
+snreval.egg-info/requires.txt
+snreval.egg-info/top_level.txt
