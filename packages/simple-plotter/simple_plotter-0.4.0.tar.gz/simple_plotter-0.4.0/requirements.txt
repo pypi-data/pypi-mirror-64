@@ -1,0 +1,7 @@
+# requirements for CI system (tests)
+numpy
+matplotlib
+kivy
+pytest
+pytest-cov
+jinja2
