@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: dict-typer
+Version: 0.1.0
+Summary: A simple library to take data and turn it into python typing definitions.
+License: MIT
+Author: Axel
+Author-email: dict.typer@absalon.is
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: typing_extensions (>=3.7.4,<4.0.0)
