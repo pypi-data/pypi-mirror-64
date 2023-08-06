@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: catnip
+Version: 0.0.1
+Summary: Standalone dashboard for Cloudkitty
+Home-page: https://github.com/ObjectifLibre/ckui
+Author: Julien Pinchelimouroux
+Author-email: julien.pinchelimouroux@objectif-libre.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+
