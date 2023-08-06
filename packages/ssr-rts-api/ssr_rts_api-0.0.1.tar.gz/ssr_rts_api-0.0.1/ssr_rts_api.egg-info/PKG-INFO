@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ssr-rts-api
+Version: 0.0.1
+Summary: Connect with ease to the public rts/ssr public API.
+Home-page: https://github.com/rerouj/ssr_rts_api
+Author: Renato Diaz (rouj)
+Author-email: renatojour@gmail.com
+License: UNKNOWN
+Description: # ssr_rts_api
+        
+        Connect with ease to the public rts/ssr public API.  
+        
+        That package is only for accessing the RTS Archives v3 (broadcast) endpoint
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
