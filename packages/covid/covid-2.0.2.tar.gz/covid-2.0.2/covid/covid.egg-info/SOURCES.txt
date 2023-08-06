@@ -1,0 +1,16 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+covid/covid.egg-info/PKG-INFO
+covid/covid.egg-info/SOURCES.txt
+covid/covid.egg-info/dependency_links.txt
+covid/covid.egg-info/not-zip-safe
+covid/covid.egg-info/requires.txt
+covid/covid.egg-info/top_level.txt
+covid/john_hopkins/__init__.py
+covid/john_hopkins/covid.py
+covid/john_hopkins/models.py
+covid/worldometers/__init__.py
+covid/worldometers/covid.py
+covid/worldometers/models.py
