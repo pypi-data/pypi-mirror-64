@@ -1,0 +1,5 @@
+[console_scripts]
+fetch_all = fetching.fetch:fetch_all
+fetch_images = fetching.fetch:fetch_images
+fetch_models = fetching.fetch:fetch_models
+

@@ -1,0 +1,6 @@
+scikit-image
+
+[dev]
+scikit-learn
+dlib~=19.0
+opencv-python-headless~=3.4
