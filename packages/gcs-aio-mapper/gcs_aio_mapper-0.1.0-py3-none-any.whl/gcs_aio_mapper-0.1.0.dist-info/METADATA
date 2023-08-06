@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: gcs-aio-mapper
+Version: 0.1.0
+Summary: An mutable mapping interface to GCS leveraging asyncio
+Home-page: https://github.com/nbren12/gcs_aio_mapper
+License: MIT
+Author: Noah D. Brenowitz
+Author-email: nbren12@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp (>=3.6.2,<4.0.0)
+Requires-Dist: gcloud-aio-storage (>=5.2.2,<6.0.0)
+Requires-Dist: google-cloud-storage (>=1.26.0,<2.0.0)
+Requires-Dist: pylint (>=2.4.4,<3.0.0)
+Project-URL: Repository, https://github.com/nbren12/gcs_aio_mapper
+Description-Content-Type: text/x-rst
+
+Async GCS Mapper
+================
+
+Example::
+
+    import zarr
+    from gcs_aio_mapper import GCSMapperAio
+    from gcsfs import GCSMap
+    import logging
+
+    logging.basicConfig(level=logging.DEBUG)
+    n = 25
+
+    def build_gs_async():
+        store = GCSMapperAio("gs://bucket/tmp/test.zarr", cache_size=n)
+        g = zarr.open_array(store, shape=(n,), chunks=(3,), mode="w")
+        for i in range(n):
+            g[i] = i
+        store.flush()
+
+
+    def build_gs():
+        store = GCSMap("gs://bucket/tmp/test.zarr")
+        g = zarr.open_array(store, shape=(n,), chunks=(3,), mode="w")
+        for i in range(n):
+            g[i] = i
+
