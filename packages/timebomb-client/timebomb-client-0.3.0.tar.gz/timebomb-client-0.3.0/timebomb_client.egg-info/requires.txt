@@ -1,0 +1,3 @@
+npyscreen
+python-socketio[client]
+numpy
