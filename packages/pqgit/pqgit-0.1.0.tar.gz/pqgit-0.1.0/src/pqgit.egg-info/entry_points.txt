@@ -1,0 +1,3 @@
+[gui_scripts]
+pqgit = pqgit:run_pqgit
+

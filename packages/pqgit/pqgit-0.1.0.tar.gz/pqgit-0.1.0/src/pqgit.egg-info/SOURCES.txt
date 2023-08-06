@@ -1,0 +1,14 @@
+README.md
+setup.py
+src/pqgit/Git-Icon-White.png
+src/pqgit/__init__.py
+src/pqgit/model.py
+src/pqgit/pqgit.py
+src/pqgit/ui.py
+src/pqgit/util.py
+src/pqgit.egg-info/PKG-INFO
+src/pqgit.egg-info/SOURCES.txt
+src/pqgit.egg-info/dependency_links.txt
+src/pqgit.egg-info/entry_points.txt
+src/pqgit.egg-info/requires.txt
+src/pqgit.egg-info/top_level.txt
