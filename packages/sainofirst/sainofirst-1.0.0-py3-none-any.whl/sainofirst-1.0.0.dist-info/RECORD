@@ -1,0 +1,10 @@
+sainofirst/__init__.py,sha256=00J-sq730Zdkp2OLv8YaW6UeJE5XB9CK9NaUaZFTmWw,1632
+sainofirst/config.json,sha256=b1YGsama7plj4v3GV1ARaUNJWGUD1vR4Uw6ZLnoHAVI,273
+sainofirst/errors.json,sha256=j6NQBv2Bm2lbjuYSpsigQYQH3mrUGNGeryhGx6p1mcQ,4824
+sainofirst/services/sms/__init__.py,sha256=IpXM5b70NGv57MiQ6FUSXcHOv5Ir146Q6hcVsK_lDVU,8954
+sainofirst/services/voice/__init__.py,sha256=KISmyts1vggFloAedXW2e1gM86TO8tfu8dXGKMwElRc,15269
+sainofirst-1.0.0.dist-info/LICENSE,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+sainofirst-1.0.0.dist-info/METADATA,sha256=Ua5MdxEa8TShJ-CLb8yBoE4RRNqvpHFG-90n8eykAXo,23106
+sainofirst-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sainofirst-1.0.0.dist-info/top_level.txt,sha256=8X1emSeDANe301HVDqjgsNyVnbdYj_LhGB1pFU3w8WA,11
+sainofirst-1.0.0.dist-info/RECORD,,
