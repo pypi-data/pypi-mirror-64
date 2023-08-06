@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: jigglypuff-rl
+Version: 0.0.2.dev1
+Summary: PyTorch implementations of reinforcement learning algorithms.
+Home-page: https://github.com/SforAiDl/JigglypuffRL
+Author: Society for Artificial Intelligence and Deep Learning
+Author-email: ajaysubramanian110@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/SforAiDl/JigglypuffRL
+Keywords: reinforcement learning,pytorch,neuroscience,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# JigglypuffRL
+
+## Installation
+We suggest creating a conda virtual environment before installing our package.
+```
+conda create -n JgRL_env python=3.6 pip
+conda activate JgRL_env
+pip install jigglypuff-rl
+```
+
+## Usage
+```python
+from jigglypuffRL import PPO1
+import gym
+
+env = gym.make('CartPole-v0')
+agent = PPO1('MlpPolicy', 'MlpValue', env, epochs=500, tensorboard_log='./runs/')
+
+agent.learn()
+```
+
