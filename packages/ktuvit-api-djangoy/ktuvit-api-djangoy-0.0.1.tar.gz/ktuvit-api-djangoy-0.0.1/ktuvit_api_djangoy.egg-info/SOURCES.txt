@@ -1,0 +1,8 @@
+README.md
+setup.py
+ktuvit/__init__.py
+ktuvit/ktuvit.py
+ktuvit_api_djangoy.egg-info/PKG-INFO
+ktuvit_api_djangoy.egg-info/SOURCES.txt
+ktuvit_api_djangoy.egg-info/dependency_links.txt
+ktuvit_api_djangoy.egg-info/top_level.txt
