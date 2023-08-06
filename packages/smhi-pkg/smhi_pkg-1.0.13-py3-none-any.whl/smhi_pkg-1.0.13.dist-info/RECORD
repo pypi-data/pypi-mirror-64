@@ -1,0 +1,8 @@
+smhi/__init__.py,sha256=0r1N_EKfHzB6Ire3VFFTzXznceEvpZ0ZyW9Rr0TsJ88,163
+smhi/smhi_lib.py,sha256=pF8w-rHlfngiP-MWiK8ah4oXcGebA-eLVhaTx4QFQEQ,12516
+smhi/test_smhi_lib.py,sha256=nopi2-rhlv8uQBtVcoHPLGQN11bdBRhNiYkHCsBKhgg,389447
+smhi_pkg-1.0.13.dist-info/LICENSE,sha256=7EVBsT6ulTDPRGhuD1rm3A-f_8uaWXOQXwiOEPqzq1s,1094
+smhi_pkg-1.0.13.dist-info/METADATA,sha256=vQPNKjKlO6Mt-vTB5uGapro2zGaiyHfwC89sIAAZpC4,1137
+smhi_pkg-1.0.13.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+smhi_pkg-1.0.13.dist-info/top_level.txt,sha256=KufNLo_qa6509DlxwJImLlF9AMqU3OuwqhTQF1_zs_Q,5
+smhi_pkg-1.0.13.dist-info/RECORD,,
