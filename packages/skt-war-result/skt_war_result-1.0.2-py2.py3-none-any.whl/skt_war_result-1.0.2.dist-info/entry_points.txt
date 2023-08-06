@@ -1,0 +1,3 @@
+[console_scripts]
+skt-war-result = sktwar.main:main
+
