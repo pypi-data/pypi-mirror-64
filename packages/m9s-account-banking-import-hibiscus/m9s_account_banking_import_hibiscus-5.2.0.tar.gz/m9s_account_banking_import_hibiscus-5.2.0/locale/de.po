@@ -1,0 +1,51 @@
+#
+msgid ""
+msgstr "Content-Type: text/plain; charset=utf-8\n"
+
+msgctxt "error:banking.import.configuration:"
+msgid ""
+"Authorization to the Hibiscus server failed.\n"
+"Please check your credentials in the Tryton Server configuration."
+msgstr ""
+"Die Autorisierung am Hibiscus Server ist fehlgeschlagen.\n"
+"Bitte überprüfen Sie die Zugangsdaten in der Tryton Server Konfigurationsdatei."
+
+msgctxt "error:banking.import.configuration:"
+msgid "Invalid date (%s) on import line with Hibiscus ID %s."
+msgstr "Ungültiges Datum (%s) auf Importzeile mit Hibiscus ID %s."
+
+msgctxt "error:banking.import.configuration:"
+msgid ""
+"Missing configuration for the Hibiscus server. Please configure it according"
+" to the documentation."
+msgstr ""
+"Fehlende Konfiguration für den Hibiscus Server. Bitte konfigurieren Sie "
+"diesen entsprechend der Dokumentation."
+
+msgctxt "error:banking.import.configuration:"
+msgid "The connection to the Hibiscus server failed with status code %s."
+msgstr "Die Verbindung zum Hibsicusserver scheiterte mit Statuscode %s."
+
+msgctxt "field:banking.import.configuration,hibiscus_account:"
+msgid "Hibiscus Bank Account"
+msgstr "Hibiscus Bankkonto"
+
+msgctxt "field:banking.import.configuration,paypal:"
+msgid "PayPal"
+msgstr "PayPal"
+
+msgctxt "field:banking.import.line,hibiscus_id:"
+msgid "Hibiscus ID"
+msgstr "Hibiscus ID"
+
+msgctxt "help:banking.import.configuration,paypal:"
+msgid ""
+"Activate this box if this Hibiscus account is a Paypal account provided by "
+"the hibiscus.mashup-Plugin (Richter)."
+msgstr ""
+"Diese Checkbox muss aktiviert werden, wenn dieses Hibicuskonto durch das "
+"hibiscus.mashup-Plugin von Richter bereitgestellt wird."
+
+msgctxt "selection:banking.import.configuration,import_method:"
+msgid "Hibiscus"
+msgstr "Hibiscus"
