@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: persty
+Version: 0.2.2
+Summary: Implementation of Minibox and Delauany edges algorithms.
+Home-page: https://github.com/gbeltramo/persty
+Author: Gabriele Beltramo
+Author-email: gabri.beltramo@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: topology data analysis,minibox graph,delaunay graph
+Platform: UNKNOWN
