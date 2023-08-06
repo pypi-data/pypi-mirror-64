@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: ddup
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Description: [toc]
+        # dedup
+        
+        Compare images in two image lists and find dulplicate ones. <br/>
+        
+        ## Install
+        
+        - Clone the repo
+        - Install with
+        ```bash
+        python setup.py install
+        ```
+        
+        ## Usage
+        
+        - Use it in command line
+        ```bash
+        dedup path1 path2 save_dir [--log]
+        ```
+        Compare result will be sved in `dedup.json` in the specified `save_dir`
+        
+        ## Example
+        
+        ### Input
+        - `path1` <br/>
+        imglist1.txt
+        ```
+        /mnt/Storage/test1/000001.jpg
+        /mnt/Storage/test1/000002.jpg
+        ```
+        - `path2` <br/>
+        imglist2.txt
+        ```
+        /mnt/Storage/test2/000001.jpg
+        /mnt/Storage/test2/000002.jpg
+        /mnt/Storage/test2/000003.jpg
+        ```
+        - `save_dir`
+        ```
+        /mnt/Storage
+        ```
+        
+        ### Output
+        - `imglist1_phash.hdf5` <br/>
+        Store the phashes of images in imglist1 in .hdf5 format. <br/>
+        - `imglist2_phash.hdf5` <br/>
+        Store the phashes of images in imglist2 in .hdf5 format. <br/>
+        - `dedup.json` <br/>
+        Store the comparision results in json format. Each image in list1 will correspond to one or more images in list2 if they are similar.
+        ```json
+        {
+            "/mnt/Storage/test1/000001.jpg":[
+                "/mnt/Storage/test2/000001.jpg"
+            ],
+            "/mnt/Storage/test1/000002.jpg":[
+                "/mnt/Storage/test2/000002.jpg"
+            ]
+        }
+        ```
+        
+        ## Parameters
+        - `path1` <br/>
+        Path of the first image list. <br/>
+        Image paths in the list should be **Absolute path**. <br/>
+        - `path2` <br/>
+        Path of the second image list. <br/>
+        Image paths in the list should be **Absolute path**. <br/>
+        - `save_dir` <br/>
+        Folder path to save the results. <br/>
+        - `--log`[optional] <br/>
+        With this option added, the program will print detail log for each thread and each dulplicate image pair.
+        This may cause message flush on screen so it is recommended to pipe it in to a log file.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
