@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: SOAPpy
+Version: 0.12.23.dev0
+Summary: SOAP Services for Python
+Home-page: https://github.com/kiorky/SOAPpy.git
+Maintainer: Gregory Warnes, kiorky
+Maintainer-email: Gregory.R.Warnes@Pfizer.com, kiorky@cryptelium.net
+License: UNKNOWN
+Description: SOAPpy provides tools for building SOAP clients and servers.  For more information see https://github.com/kiorky/SOAPpy.git
+Platform: UNKNOWN
