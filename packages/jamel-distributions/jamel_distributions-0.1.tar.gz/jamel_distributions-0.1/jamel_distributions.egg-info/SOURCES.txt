@@ -1,0 +1,10 @@
+setup.py
+jamel_distributions/Binomialdistribution.py
+jamel_distributions/Gaussiandistribution.py
+jamel_distributions/Generaldistribution.py
+jamel_distributions/__init__.py
+jamel_distributions.egg-info/PKG-INFO
+jamel_distributions.egg-info/SOURCES.txt
+jamel_distributions.egg-info/dependency_links.txt
+jamel_distributions.egg-info/not-zip-safe
+jamel_distributions.egg-info/top_level.txt
