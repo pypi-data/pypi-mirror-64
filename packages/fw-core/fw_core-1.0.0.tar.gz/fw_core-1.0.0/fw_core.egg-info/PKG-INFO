@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: fw-core
+Version: 1.0.0
+Summary: Helper add another description
+Home-page: https://github.com/wilsonmoraes/fw_core
+Author: Felipe Leonhardt, Wilson Moraes
+Author-email: wilsontads@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/wilsonmoraes/fw_core/issues
+Project-URL: Source, https://github.com/wilsonmoraes/fw_core
+Description: # fw_core
+Keywords: latex yaml
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: LaTeX
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

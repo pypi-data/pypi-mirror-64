@@ -1,0 +1,3 @@
+[console_scripts]
+fw_core = fw_core.main:main
+
