@@ -1,0 +1,3 @@
+[gui_scripts]
+simple-plotter-qt = simple_plotter_qt.gui:main
+
