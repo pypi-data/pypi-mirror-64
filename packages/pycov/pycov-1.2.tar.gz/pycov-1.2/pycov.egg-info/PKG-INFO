@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pycov
+Version: 1.2
+Summary: A library getting how many people are now ill with coronavirus
+Home-page: https://pypi.org/project/pycov/
+Author: kewldan
+Author-email: kewldanil1@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6.0
