@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: torchtraps
+Version: 0.1.1
+Summary: Python package for computer vision on camera trap images.
+Home-page: https://github.com/winzurk/torchtraps
+Author: Zac Winzurk
+Author-email: zwinzurk@asu.edu
+License: MIT license
+Keywords: torchtraps
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+
+===========
+Torch Traps
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/torchtraps.svg
+        :target: https://pypi.python.org/pypi/torchtraps
+
+.. image:: https://img.shields.io/travis/winzurk/torchtraps.svg
+        :target: https://travis-ci.com/winzurk/torchtraps
+
+.. image:: https://readthedocs.org/projects/torchtraps/badge/?version=latest
+        :target: https://torchtraps.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Python package for running computer vision models on wildlife camera trap images.
+
+
+* Free software: MIT license
+* Documentation: https://torchtraps.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2020-03-30)
+------------------
+
+* First release on PyPI.
+
+
