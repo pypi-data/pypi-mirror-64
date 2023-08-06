@@ -1,0 +1,13 @@
+faiss_cpu-1.6.3.dist-info/top_level.txt,sha256=nr2S-1YAhqAuAlFJukntDvRGXfI1KmwnUNs_iFlNiig,6
+faiss_cpu-1.6.3.dist-info/RECORD,,
+faiss_cpu-1.6.3.dist-info/METADATA,sha256=-H-bgTVvr31jsoExoz0-t8Uj8KmnA9yu9gfdubw6cM4,715
+faiss_cpu-1.6.3.dist-info/LICENSE,sha256=UkEte8fOQVfqYou6rLiCngqcs8WPV_mRdhJryM8r_IU,1086
+faiss_cpu-1.6.3.dist-info/WHEEL,sha256=ou0-hBHfmU_kpHcfKM0I4VAb3l_IyfLzdQNy2VUzD9g,112
+faiss/_swigfaiss.cpython-35m-x86_64-linux-gnu.so,sha256=ZLUwiIVSslGouu6SBum-Lz5jMApEIKgr61OEnU-QqRw,30100432
+faiss/swigfaiss.py,sha256=rDE5lUAS3l-Jv8SpyJEYSrDh1iZYSX4gfZWGnxVnhfo,210559
+faiss/__init__.py,sha256=OvlJSee25keFWHSC9_HjskP6hXXJ7hHdj26ylP5K9_s,26311
+faiss/setup.py,sha256=HF9sl8RxkGLBm9oRMm-lUknxISYh_v1Gd3gtKeWhunw,1734
+faiss_cpu.libs/libgfortran-2e0d59d6.so.5.0.0,sha256=OQtYDdlUZVbi5DHUQw1I05DophqJIWmYARfRsln_A5M,2260064
+faiss_cpu.libs/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+faiss_cpu.libs/libquadmath-2d0c479f.so.0.0.0,sha256=g8d1Q6wb-l1PyXLgA_cZKE8hd8k7QIMcW25wR3TDsGE,263992
+faiss_cpu.libs/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
