@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: yogaflo
+Version: 0.1.0
+Summary: Yoga Flow Generator
+Home-page: https://github.com/tyehle/yogaflo
+Author: Tobin Yehle
+Author-email: tobinyehle@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+Requires-Dist: markovify
+
+# yogaflo
+
+This package generates random yoga flows using a markov model
+
+## Usage
+
+```
+yogaflo
+```
+
+
