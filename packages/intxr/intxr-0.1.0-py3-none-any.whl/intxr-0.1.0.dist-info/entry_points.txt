@@ -1,0 +1,8 @@
+[console_scripts]
+connector = connector.run:entry_point
+intxr = gui.ui_run:entry_point
+
+[libtbx.dispatcher.script]
+connector = connector
+intxr = intxr
+
