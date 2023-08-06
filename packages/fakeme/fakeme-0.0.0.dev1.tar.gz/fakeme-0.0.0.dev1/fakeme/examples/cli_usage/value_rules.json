@@ -1,0 +1,20 @@
+[
+  {
+    "generator": "person.email()",
+    "field": "email"
+  },
+  {
+    "generator": "person.name().split()[0]",
+    "field": "name"
+  },
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "user_id"
+  },
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "id"
+  }
+]
