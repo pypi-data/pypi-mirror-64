@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ccautil
+Version: 0.1.0
+Summary: a set of utilities
+Home-page: https://github.com/ccdale/ccautil
+License: GPL-3.0-or-later
+Author: Chris Allison
+Author-email: chris.charles.allison+ccautil@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Repository, https://github.com/ccdale/ccautil
+Description-Content-Type: text/markdown
+
+
