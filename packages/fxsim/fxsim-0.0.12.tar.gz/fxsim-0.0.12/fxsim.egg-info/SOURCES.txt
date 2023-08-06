@@ -1,0 +1,8 @@
+setup.py
+fxsim/__init__.py
+fxsim/simulator.py
+fxsim.egg-info/PKG-INFO
+fxsim.egg-info/SOURCES.txt
+fxsim.egg-info/dependency_links.txt
+fxsim.egg-info/entry_points.txt
+fxsim.egg-info/top_level.txt
