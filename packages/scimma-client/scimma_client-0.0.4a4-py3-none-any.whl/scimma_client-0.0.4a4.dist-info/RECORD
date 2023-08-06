@@ -1,0 +1,15 @@
+scimma_client-0.0.4a4-py3.6-nspkg.pth,sha256=3hsbRnkKlJ12gLmidPjTk9hKwwjWIuN8EAz1mitB8tQ,539
+scimma/client/__init__.py,sha256=37RBOxRlLe7_3NLzN7sBHnSuBTgAxXD7V8MBW6OIjoA,126
+scimma/client/__main__.py,sha256=GPcZTHFMgwCWO-_0FCSnm5wF3cWDnRZfSkOuY7Ok1fs,1474
+scimma/client/_version.py,sha256=R8NSy-SDCVVYQ6nKt6QJzxTWGdySyacuaU4-nQ_s9T4,118
+scimma/client/io.py,sha256=whcIgqqhKbDoktr29P1RZtoQzwAVA2JtMq0IHEVUU-k,1376
+scimma/client/models.py,sha256=NG8WQPqYilcy8jp69Gt09-H70IiNsLHQOtrMAdsuGTE,1789
+scimma/client/publish.py,sha256=4gkS-3PouWxZaD63oCPDRHoZ5StCEEBU4lkUmfFFm-A,2565
+scimma/client/subscribe.py,sha256=zYTEtsf76x7IWfWM4FzMNvXB2AylwDMxdJdMAwaAcQk,2802
+scimma_client-0.0.4a4.dist-info/LICENSE,sha256=KsOa77WXYkFvRppcZesu4OLGeW-LSCC8uERf_rb_tY0,1506
+scimma_client-0.0.4a4.dist-info/METADATA,sha256=_UrWuxoCSh3GCpnovNnk0ex2lGfcQ6rDCYjBmO0XBns,3295
+scimma_client-0.0.4a4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+scimma_client-0.0.4a4.dist-info/entry_points.txt,sha256=yLoLD87eGQXgjVuyFaMBW5aFDidlkeic6M6WiTwnf9g,56
+scimma_client-0.0.4a4.dist-info/namespace_packages.txt,sha256=vtWEXVnO4DYZGmAf0jCcyXpIclvUx3XyCYaVASzbyJk,7
+scimma_client-0.0.4a4.dist-info/top_level.txt,sha256=vtWEXVnO4DYZGmAf0jCcyXpIclvUx3XyCYaVASzbyJk,7
+scimma_client-0.0.4a4.dist-info/RECORD,,
