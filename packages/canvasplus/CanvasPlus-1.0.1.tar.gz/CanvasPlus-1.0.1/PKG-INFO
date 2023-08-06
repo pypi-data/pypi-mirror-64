@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: CanvasPlus
+Version: 1.0.1
+Summary: Improved Canvas widget for tkinter with more functionality to display graphical elements like lines or text. 
+Home-page: https://github.com/Luke-zhang-04/CanvasPlus
+Author: Luke Zhang
+Author-email: luke.zhang2004@gmail.com
+License: UNKNOWN
+Description: # Canvas Plus #
+        An improved Canvas widget for tkinter with more functionality to display graphical elements like lines or text. 
+        
+        Tkinter's Canvas widget has some limitations which are adressed in this package.
+        
+        Simmilar to the default tkinter Canvas widget, e.g canvas.create_rectangle, other canvas objects can be created.
+        
+        ## Availability ##
+        ### Option 1: Github ###
+        Download a zip file containing all files.
+        ```
+        git clone https://github.com/Luke-zhang-04/CanvasPlus.git
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Tcl
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.3
+Description-Content-Type: text/markdown
