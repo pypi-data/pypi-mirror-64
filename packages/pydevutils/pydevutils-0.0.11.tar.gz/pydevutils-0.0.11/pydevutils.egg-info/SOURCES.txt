@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+pydevutils/__init__.py
+pydevutils/commands.py
+pydevutils/gittools.py
+pydevutils/wingdbstub.py
+pydevutils.egg-info/PKG-INFO
+pydevutils.egg-info/SOURCES.txt
+pydevutils.egg-info/dependency_links.txt
+pydevutils.egg-info/entry_points.txt
+pydevutils.egg-info/top_level.txt
