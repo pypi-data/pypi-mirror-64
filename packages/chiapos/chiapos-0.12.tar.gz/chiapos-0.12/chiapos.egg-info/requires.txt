@@ -1,0 +1,4 @@
+pytest
+cppimport
+bitstring
+flake8
