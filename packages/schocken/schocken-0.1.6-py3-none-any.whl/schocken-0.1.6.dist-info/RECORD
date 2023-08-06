@@ -1,0 +1,15 @@
+schocken/__init__.py,sha256=2-Bj3TunFK3EtMY0n4c-_uwtyQ5T_eDdIp1nrb24UBc,85
+schocken/__main__.py,sha256=PlUqD5o2xIpwmUBwLJac_4TohByyKhS1PYg2yipSj48,1362
+schocken/bot.py,sha256=56XP60uSdIFeNYsNfeavePULsXAWvBtVeE-enYMYUUI,11273
+schocken/deckel_management.py,sha256=xUaT7SDa-BNCpTrD0wSI-17L7sr3E2kuSNmYMdlhJoI,4708
+schocken/events.py,sha256=7troLki1-i5vG1csJvl6RwON1oc7ErwuY3krqXCURFA,59
+schocken/exceptions.py,sha256=mePWAUqOLcq_qesO7D3jJ3z73jpOgIGrbw5tbLL0oBA,645
+schocken/spiel.py,sha256=M_sXla0KRpfPQedkTXjOgW8PLK691bnHL8oyPdL0aqU,12078
+schocken/spieler.py,sha256=TyOrVy7APWToI-lvei-NziCsKJqhmgMW-3gcFjXzBhc,356
+schocken/wuerfel.py,sha256=U7GkutGJf1w_SlXRuTx6TWvSEBNQAVL0ux5bOfQ2wRE,321
+schocken/wurf.py,sha256=dC22jmsteXC6GfMABz_lwoeFQBK9mSoIFi3ITadtUac,2327
+schocken-0.1.6.dist-info/METADATA,sha256=rNfWIeLWkfaX6pQ8pp6SMxqcMdpXRkI2c0VPKx0XyEI,406
+schocken-0.1.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+schocken-0.1.6.dist-info/entry_points.txt,sha256=1OeKdJfAyAxSfQJP2u64Ids4Ik_to_xV5VBrLGbDmdE,56
+schocken-0.1.6.dist-info/top_level.txt,sha256=hT2W5BoPFwvdyziT9_ZhdWbCDuyRcyyetkIyB1QnleU,9
+schocken-0.1.6.dist-info/RECORD,,
