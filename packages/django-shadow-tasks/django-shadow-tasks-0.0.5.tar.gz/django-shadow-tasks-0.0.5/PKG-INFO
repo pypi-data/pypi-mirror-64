@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: django-shadow-tasks
+Version: 0.0.5
+Summary: Run tasks in background workers
+Home-page: https://github.com/suplbiz/django-shadow-tasks
+Author: Andrei Loskutov
+Author-email: andrewloscutov@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
