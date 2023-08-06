@@ -1,0 +1,5 @@
+[run]
+source = wtdpy
+
+[report]
+omit = test*, .eggs*

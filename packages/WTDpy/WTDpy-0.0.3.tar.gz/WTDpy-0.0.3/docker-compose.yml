@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  main:
+    build: .
+    container_name: wtdpy
+    command: sleep 9999d
+    environment:
+      - api_key=${api_key}
