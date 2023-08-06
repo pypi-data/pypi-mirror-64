@@ -1,0 +1,17 @@
+cmmnbuild-dep-manager>=2.4.0
+jpype1>=0.7.1
+
+[all]
+cmmnbuild-dep-manager>=2.4.0
+jpype1>=0.7.1
+pytest
+
+[core]
+cmmnbuild-dep-manager>=2.4.0
+jpype1>=0.7.1
+
+[dev]
+pytest
+
+[test]
+pytest
