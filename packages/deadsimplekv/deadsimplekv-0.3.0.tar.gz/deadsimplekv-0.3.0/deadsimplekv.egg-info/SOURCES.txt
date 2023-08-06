@@ -1,0 +1,7 @@
+README.md
+setup.py
+deadsimplekv/__init__.py
+deadsimplekv.egg-info/PKG-INFO
+deadsimplekv.egg-info/SOURCES.txt
+deadsimplekv.egg-info/dependency_links.txt
+deadsimplekv.egg-info/top_level.txt
