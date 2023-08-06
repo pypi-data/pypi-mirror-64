@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: CEP-por-endereco-completo
+Version: 0.1.2
+Summary: Encontrando CEP a partir de endereços completos
+Home-page: https://github.com/rodrigobercini/CEP-por-endereco-completo
+Author: Rodrigo Bercini Martins
+Author-email: rodrigobercinimartins@gmail.com
+License: MIT License
+Description: Find an english version of this README file [here](https://github.com/rodrigobercinimartins/CEP-por-endereco/blob/master/EN_README.md).
+        
+        ## Encontrando CEP a partir de endereÃ§os completos
+        
+        ```
+        "CEP Ã© a sigla de CÃ³digo de EndereÃ§amento Postal, criado e utilizado pelos Correios para facilitar o encaminhamento
+        e a entrega das correspondÃªncias aos destinatÃ¡rios. O CEP Ã© uma informaÃ§Ã£o indispensÃ¡vel na correspondÃªncia,
+        pois identifica todos os detalhes do endereÃ§o."
+        
+        ```
+        [Significados](https://www.significados.com.br/cep/)
+        
+        HÃ¡ diversos serviÃ§os e repositÃ³rios que retornam um determinado endereÃ§o a partir do CEP. Este pacote faz o caminho contrÃ¡rio: encontra CEPs a partir de endereÃ§os completos.
+        
+        ## Como usar
+        
+        Para instalar basta usar o pip:
+        
+        ```
+        pip install cep-por-endereco-completo
+        ```
+        
+        A funÃ§Ã£o toma endereÃ§o, nÃºmero, cidade e UF como argumentos.
+        
+        ```
+        cep_finder(address, number, city, uf)
+        ```
+        ## Exemplo:
+        
+        ```
+        cep_finder('avenida protasio alves', '1889', 'Porto Alegre', 'RS')
+        ```
+        
+        Retorna:
+        ```
+        '90450-190'
+        ```
+        
+        ## Bibliotecas utilizadas
+        ``` 
+        beautifulsoup4
+        requests
+        unicodedata
+        ```
+Keywords: cep endereço completo zip code brazil address correios
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
