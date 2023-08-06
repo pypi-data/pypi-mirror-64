@@ -1,0 +1,13 @@
+README.md
+setup.py
+django_dynamic_field.egg-info/PKG-INFO
+django_dynamic_field.egg-info/SOURCES.txt
+django_dynamic_field.egg-info/dependency_links.txt
+django_dynamic_field.egg-info/top_level.txt
+dynamicfield/__init__.py
+dynamicfield/admin.py
+dynamicfield/apps.py
+dynamicfield/example.py
+dynamicfield/forms.py
+dynamicfield/models.py
+dynamicfield/migrations/__init__.py
