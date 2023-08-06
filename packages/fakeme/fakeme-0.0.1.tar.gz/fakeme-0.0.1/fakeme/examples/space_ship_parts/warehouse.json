@@ -1,0 +1,77 @@
+[
+ {
+  "warehouse_id": "1cd0408c3e33",
+  "count": "4815",
+  "part_id": "9acb64e3926a"
+ },
+ {
+  "warehouse_id": "ffa6d7ff84a9",
+  "count": "2292",
+  "part_id": "51307c722d4d"
+ },
+ {
+  "warehouse_id": "918edab58bbf",
+  "count": "3638",
+  "part_id": "98e34790a211"
+ },
+ {
+  "warehouse_id": "5d206a5b36d3",
+  "count": "2618",
+  "part_id": "a9248a7e7266"
+ },
+ {
+  "warehouse_id": "bbac046c7440",
+  "count": "1603",
+  "part_id": "13ff5f37082b"
+ },
+ {
+  "warehouse_id": "c177be55e81d",
+  "count": "301",
+  "part_id": "6c8921f39575"
+ },
+ {
+  "warehouse_id": "97c52e194b90",
+  "count": "5201",
+  "part_id": "a2d4b4f5bb6a"
+ },
+ {
+  "warehouse_id": "cac952854d16",
+  "count": "1182",
+  "part_id": "87a81c831343"
+ },
+ {
+  "warehouse_id": "d89d0cb93158",
+  "count": "4473",
+  "part_id": "54887c47366f"
+ },
+ {
+  "warehouse_id": "94527e15ef61",
+  "count": "509",
+  "part_id": "8ec2f7ec4a61"
+ },
+ {
+  "warehouse_id": "a5a0dcb03ca4",
+  "count": "1835",
+  "part_id": "8f95b318f203"
+ },
+ {
+  "warehouse_id": "a900cebeafe8",
+  "count": "3158",
+  "part_id": "0a27d1d1491e"
+ },
+ {
+  "warehouse_id": "767b5e25c032",
+  "count": "4315",
+  "part_id": "568c5a3acdec"
+ },
+ {
+  "warehouse_id": "9844213c1452",
+  "count": "5221",
+  "part_id": "5dc6b7e25d1b"
+ },
+ {
+  "warehouse_id": "70d229b0b76e",
+  "count": "643",
+  "part_id": "4849d84323df"
+ }
+]

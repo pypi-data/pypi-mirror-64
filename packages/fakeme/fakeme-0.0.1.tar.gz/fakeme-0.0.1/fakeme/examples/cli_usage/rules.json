@@ -1,0 +1,28 @@
+[
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "user_id"
+  },
+  {
+    "generator": "person.email()",
+    "field": "email"
+  },
+  {
+    "generator": "choice(countries.codes)",
+    "field": "country_code"
+  },
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "id"
+  },
+  {
+    "generator": "choice(countries.names)",
+    "field": "country"
+  },
+  {
+    "generator": "person.name().split()[0]",
+    "field": "name"
+  }
+]

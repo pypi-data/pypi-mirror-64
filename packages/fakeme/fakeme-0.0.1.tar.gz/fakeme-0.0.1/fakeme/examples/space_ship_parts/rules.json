@@ -1,0 +1,21 @@
+[
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "warehouse_id"
+  },
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "part_identification"
+  },
+  {
+    "generator": "uuid4().hex",
+    "len": 12,
+    "field": "part_id"
+  },
+  {
+    "generator": "round(random(), 2)",
+    "field": "price"
+  }
+]
