@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-enhanced-settings
+Version: 0.1.0
+Summary: Allow for more complex and dynamic settings for Django
+License: MIT
+Author: Nihaal Sangha
+Author-email: 18350092+OrangutanGaming@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: cloud-secret-manager
+Requires-Dist: google-cloud-secret-manager (>=0.2.0,<0.3.0); extra == "cloud-secret-manager"
