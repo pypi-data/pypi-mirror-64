@@ -1,0 +1,3 @@
+[console_scripts]
+focusstack = focus_stack.run:main
+
