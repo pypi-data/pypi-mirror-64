@@ -1,0 +1,3 @@
+[console_scripts]
+csvtotrello = csvtotrello.bulk_import:main
+
