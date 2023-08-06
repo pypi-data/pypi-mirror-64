@@ -1,0 +1,6 @@
+arrow
+beautifulsoup4
+numpy
+pandas
+pdfminer
+selenium

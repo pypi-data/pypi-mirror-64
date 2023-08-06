@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: utility_bill_scraper
+Version: 0.1.1
+Summary: Extract utility usage from pdfs, website scrapers, etc.
+Home-page: https://github.com/ryanfobel/utility-bill-scraper
+Author: Ryan Fobel
+Author-email: ryan@fobel.net
+License: BSD-3
+Description: # Utility bill scraper for extracting energy usage from pdfs
+        
+        Extract data from a series of monthly utility bills. Currently, this library
+        supports:
+        
+         * [Kitchener Utilities (gas & water)](https://www.kitchenerutilities.ca)
+         * [Kitchener-Wilmot Hydro (electricity)](https://www.kwhydro.on.ca)
+        
+        # Setup
+        
+        The following instructions assume that you have
+        [Anaconda](https://www.anaconda.com/distribution/) or
+        [Miniconda](https://docs.conda.io/en/latest/miniconda.html) installed.
+        
+        ```
+        pip install utility-bill-scraper
+        ```
+Keywords: utility gas electricity hydro water selenium pdfminer
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
