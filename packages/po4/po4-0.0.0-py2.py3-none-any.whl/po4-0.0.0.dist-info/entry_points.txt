@@ -1,0 +1,9 @@
+[console_scripts]
+po4=po4.cli.main:main
+
+[po4.databases]
+excel=po4.loaders.excel
+
+[stepwise.protocols]
+protocols=po4.stepwise:Plugin
+

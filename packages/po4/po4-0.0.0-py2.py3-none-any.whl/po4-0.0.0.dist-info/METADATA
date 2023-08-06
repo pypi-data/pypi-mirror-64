@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: po4
+Version: 0.0.0
+Summary: Database of DNA sequences.
+Home-page: https://github.com/kalekundert/po4
+License: UNKNOWN
+Author: Kale Kundert
+Author-email: kale@thekunderts.net
+Requires-Python: ~=3.8
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: appdirs
+Requires-Dist: autoprop
+Requires-Dist: autosnapgene
+Requires-Dist: Biopython
+Requires-Dist: configurator
+Requires-Dist: docopt
+Requires-Dist: inform
+Requires-Dist: more_itertools>=8.0
+Requires-Dist: pandas
+Requires-Dist: setuptools
+Requires-Dist: tabulate
+Requires-Dist: toml
+Requires-Dist: voluptuous
+Requires-Dist: xlrd>=1.0
+Project-URL: Bug Tracker, https://github.com/kalekundert/po4/issues
+Project-URL: Continuous Integration, https://travis-ci.org/kalekundert/po4
+Project-URL: Documentation, https://po4.readthedocs.io/en/latest/
+Project-URL: Test Coverage, https://coveralls.io/github/kalekundert/po4
+Project-URL: Version Control, https://github.com/kalekundert/po4
