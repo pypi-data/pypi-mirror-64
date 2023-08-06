@@ -1,0 +1,8 @@
+README.md
+setup.py
+Complex_Number_Encryptor/ComplexNumber.py
+Complex_Number_Encryptor/__init__.py
+Complex_Number_Encryptor_Janderion.egg-info/PKG-INFO
+Complex_Number_Encryptor_Janderion.egg-info/SOURCES.txt
+Complex_Number_Encryptor_Janderion.egg-info/dependency_links.txt
+Complex_Number_Encryptor_Janderion.egg-info/top_level.txt
