@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: luigi-k8s-jobs-runner
+Version: 2.8.12.0b4
+Summary: 
+Workflow mgmgt + task scheduling + dependency resolution.
+
+Home-page: https://github.com/frogcam/luigi
+Author: The Luigi Authors at Smartfrog GmbH
+License: Apache License 2.0
+Description: .. note::
+        
+           For the latest source, discussion, etc, please visit the
+           `GitHub repository <https://github.com/spotify/luigi>`_
+        
+        
+        .. figure:: https://raw.githubusercontent.com/spotify/luigi/master/doc/luigi.png
+           :alt: Luigi Logo
+           :align: center
+        
+        Luigi is a Python (2.7, 3.6, 3.7 tested) package that helps you build complex
+        pipelines of batch jobs. It handles dependency resolution, workflow management,
+        visualization, handling failures, command line integration, and much more.
+        
+        Getting Started
+        ---------------
+        
+        Run ``pip install luigi-k8s-jobs-runner`` to install the latest stable version from `PyPI
+        <https://pypi.python.org/pypi/luigi>`_. `Documentation for the latest release
+        <https://luigi.readthedocs.io/en/stable/>`__ is hosted on readthedocs.
+        
+        Run ``pip install luigi-k8s-jobs-runner[toml]`` to install Luigi with `TOML-based configs
+        <https://luigi.readthedocs.io/en/stable/configuration.html>`__ support.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Monitoring
+Provides-Extra: toml
+Provides-Extra: prometheus
