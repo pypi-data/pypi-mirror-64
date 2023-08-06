@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pycovid19
+Version: 0.1.2
+Summary: Protect you jupyter notebook from COVID19
+Home-page: https://github.com/sobir-git/covid19
+Author: Sobir Bobiev
+Author-email: sobir.bobiev@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/pycovid19/
+Keywords: Jupyter Notebook,COVID19,Protective Masks
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: ipython (>=5.0.0)
+
+# PyCOVID19
+
+PyCOVID19 is a package that helps you protect your jupyter notebooks from COVID19.
+
+
