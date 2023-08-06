@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: Orange3-Text-zh
+Version: 0.9.1
+Summary: 橙现智能文本挖掘插件.
+Home-page: http://zhaoyang.org.cn
+Author: Bioinformatics Laboratory, FRI UL
+Author-email: info@biolab.si
+License: UNKNOWN
+Keywords: orange3-text-zh,data mining,orange3 add-on
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: LTTL (>=2.0.9)
+Requires-Dist: Orange3-zh (>=3.21.0)
+Requires-Dist: beautifulsoup4
+Requires-Dist: biopython
+Requires-Dist: chardet
+Requires-Dist: docutils (<0.16)
+Requires-Dist: docx2txt (>=0.6)
+Requires-Dist: future
+Requires-Dist: gensim (>=0.12.3)
+Requires-Dist: jieba
+Requires-Dist: lxml
+Requires-Dist: nltk (>=3.0.5)
+Requires-Dist: numpy
+Requires-Dist: odfpy (>=1.3.5)
+Requires-Dist: paddlepaddle-tiny (==1.6.1)
+Requires-Dist: pdfminer3k (>=1.3.1)
+Requires-Dist: pkuseg
+Requires-Dist: python-dateutil (<2.8.1)
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: setuptools-git
+Requires-Dist: simhash
+Requires-Dist: tweepy
+Requires-Dist: ufal.udpipe (>=1.2.0.3)
+Requires-Dist: wikipedia
+
+橙现智能文本挖掘 Orange3 Text
+===================================
+
+橙现智能文本挖掘插件, 基于原生插件开发. 提供大量公开数据接口,如NY Times, Twitter 和 PubMed. 
+此插件还提供诸如文本预处理, 基本词向量方法及可视化组件. 所有功能都可以与橙现智能的其他组件结合使用.
+
+
