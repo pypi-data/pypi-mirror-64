@@ -1,0 +1,6 @@
+torch
+torchvision
+numpy
+ax-platform
+mlflow
+haikunator
