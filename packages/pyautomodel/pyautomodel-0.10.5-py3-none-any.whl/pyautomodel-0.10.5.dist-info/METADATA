@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pyautomodel
+Version: 0.10.5
+Summary: Automatic Machine Learning Model training
+Home-page: https://github.com/kaimo455/Auto_model.git
+Author: Kai Mo
+Author-email: kam455@pitt.edu
+Maintainer: Kai Mo
+Maintainer-email: kam455@pitt.edu
+License: UNKNOWN
+Download-URL: https://github.com/kaimo455/Auto_model.git
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown
+
+# Auto_model
+
+This is a automatic popular machine learning model training tools repository.
+
+## Models
+
+Here is the list of support models
+
+- LightGBM
+- Logistic Regression
+- Random Forest
+- Support Vector Machine
+
+## Todo
+
+Improving model methods
+
+
