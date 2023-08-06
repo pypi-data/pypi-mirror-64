@@ -1,0 +1,12 @@
+tests/__init__.py,sha256=9_8wL9Scv8_Cs8HJyJHGvx1vwXErsuvlsAqNZLcJQR0,8
+tests/test_unplate.py,sha256=ApEGz7HytmlsWU8pwlLas4lU3YDFd_g3PptWuvItNj8,3315
+unplate/__init__.py,sha256=WanpTUv_dnYj3oYFn9GGi2a0a_r15ooJoW4ephB7G4w,1095
+unplate/compile.py,sha256=3m4qNsL_TXcd-1zjyuiGVxnA-U9mH6x0IJavgT4NZhg,12152
+unplate/options.py,sha256=kDSSFoAewK3aF_5sTCfMKVmEUwhOfySdgkv7DPlTAcU,1722
+unplate/tokenize_util.py,sha256=Qrnh9adCrY-RQAd8ppwPH1xIUiIaQluHfBrfn1u779U,3003
+unplate/util.py,sha256=c0R5rZ_ld5Q6XA6bwR9TqWjfvGkIaf1A-jtsEvQedKU,956
+unplate-0.2.8.dist-info/LICENSE,sha256=PufEtkm3g2iPEYbJqg2lDjMQJ1FMm_oUPyeYPiN4PHE,1056
+unplate-0.2.8.dist-info/METADATA,sha256=ZXS9piH5tXWzgX1y-H1TyG6BPxP2ZBTGf7Gkq0l-Ihk,9311
+unplate-0.2.8.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+unplate-0.2.8.dist-info/top_level.txt,sha256=A4JbbErUBb3zwH1TemQdLM-Zs4W6UTv5GtrnUJsndJE,14
+unplate-0.2.8.dist-info/RECORD,,
