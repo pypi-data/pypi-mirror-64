@@ -1,0 +1,3 @@
+[console_scripts]
+deep_animate = deep_animator.cli:deep_animate
+
