@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: bitcoin-notification-f
+Version: 1.0.3
+Summary: BITCOIN PRICE NOTIFICATION
+Home-page: https://github.com/fariya-banu234-au7/python_project
+Author: Fariya Banu
+Author-email: fariyabanu234@gmail.com
+License: MIT
+Description: ## BITCOIN NOTIFICATION ALERT APP
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        This is a python script package, bitcoin price notification to get notified for the regular updates of bitcoin price on slack, gmail and telegram. 
+        The aim is to push notifications when the price of bitcoin changes at certain time interval, user can specify the time interval. By default time interval and threshold are set to 0.1 in minutes and $10000 respectively.
+        When the conditions in the program are satisfied the trigger is fired and user will recieve notifications on slack, gmail and telegram.
+        
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        ## Installation
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        
+        1. Install python version 3
+        
+        This website will help you find all the versions available as per your system requirments.Install python3.
+        
+        https://www.python.org/downloads/
+        
+        2. Installation for PIP for windows
+        
+        Command : pip install 
+        
+        Refer this website for further read
+        
+        https://pip.pypa.io/en/stable/installing/
+        
+        
+        3. Dependencies
+        The only dependency is on the requests library. 
+        Use the following command: pip install requests==2.18.4
+        
+        
+        4. Following command on terminal will install bitcoin-notifier package/module from PIP
+        
+        pip install bitcoin....................----<<<<>>>>
+        
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        ## Usage
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        Following query on terminal will provide you with all the help options 
+        
+        ### Input 
+        bitcoin_notification -h
+        
+        ### Output 
+        usage: bitcoin_notification.py [-h] [--d decision] [--i interval]
+                                       [--u upper threshold]
+        
+        Bitcoin Notification Alert
+        
+        optional arguments:
+          -h, --help           show this help message and exit
+          --d decision         Enter (Yes/No) - Yes will run the program
+          --i interval         Enter time interval
+          --u upper threshold  Set upper threshold limit in USD for notification
+        
+        
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        ### Following query on terminal will provide you five prices of Bitcoin at a time at one minute interval and whenever it falls below $10000 emergency notification will be sent.
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        
+        bitcoin_notification --d=Yes --i=0.1 --u=10000
+        
+        
+        
+        ## To download or clone this repository
+        
+        1. Download this repository by git clone command or by using the git clone feature on github 
+        
+        2. Open directory 
+            - 
+            -
+        
+        3. Edit environment varibales path 
+            - add the path as system path in system variables
+        
+        4. Open command prompt or bash and run "xyz.py............... -h" 
+        
+        
+        
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        ## Join this telegram channel to get the updates :
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        
+        Following is the invite link
+        
+            https://t.me/Bitcoin_alert_attainU_fariya
+        
+        
+        -----------------------------------------------------------------------------------------------------------------------------------------------
+        
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
