@@ -1,0 +1,9 @@
+salesforce_dbsync/__init__.py,sha256=u47HwOUfAzy-SiRJ07vmB7SiUX6766rfmrfp328rB-0,212
+salesforce_dbsync/class_MySQL_Helper.py,sha256=DzbBrOKTgw8ngyk6hHE49TE_bDUwVyd9g17JGnOOneE,4407
+salesforce_dbsync/class_SFDC_Helper.py,sha256=FFFBKhljcWSHVG99R19QN5C0c_cxKvqNTNwlFgo-0XY,5170
+salesforce_dbsync/class_Sync_Manager.py,sha256=S-uIVNDUjayhDX24u25yNpBVeaTj5l8eYA67-w8rx-I,4685
+salesforce_dbsync-1.4.4.dist-info/LICENSE,sha256=mTCY8o659MxSMsoywaIyLZt7KDGsuu48hr9FbMnINDI,1068
+salesforce_dbsync-1.4.4.dist-info/METADATA,sha256=qrw8ui6SqWqnRlx95oJg0XEhijvdcfeB85wriv9q414,2188
+salesforce_dbsync-1.4.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+salesforce_dbsync-1.4.4.dist-info/top_level.txt,sha256=x2RRK08j_5yRN4yZ2h2r5vkglEzq4_Vqmthk4_pZApg,18
+salesforce_dbsync-1.4.4.dist-info/RECORD,,
