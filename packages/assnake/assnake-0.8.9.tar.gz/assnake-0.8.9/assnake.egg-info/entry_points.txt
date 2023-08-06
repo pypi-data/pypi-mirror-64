@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        assnake=assnake.cli.assnake_cli:main
+    

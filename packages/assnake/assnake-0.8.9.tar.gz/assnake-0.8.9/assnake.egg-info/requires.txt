@@ -1,0 +1,13 @@
+numpy
+Click
+pyyaml>=5
+pandas
+tabulate
+snakemake
+drmaa
+parse
+pycallgraph
+tqdm
+scipy
+plotly
+matplotlib
