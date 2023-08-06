@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: astarte-device-sdk
+Version: 0.10.0a5
+Summary: Astarte Device SDK for Python
+Home-page: https://github.com/astarte-platform/astarte-device-sdk-python
+Author: Dario Freddi
+Author-email: dario.freddi@ispirata.com
+License: License :: OSI Approved :: Apache Software License
+Description: # Astarte Python Device SDK
+        
+        Python Device SDK for [Astarte](https://github.com/astarte-platform/astarte). Create Astarte Devices and Simulators with Python3.
+        It integrates with asyncio to ensure a smooth developer experience and to hide complex details regarding threading and MQTT
+        interactions.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
