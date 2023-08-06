@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: async-task-queue
+Version: 0.1.2
+Summary: In-memory FIFO queue for concurrent task execution
+Home-page: https://github.com/NarrativeScience/async-task-queue
+Author: Celestine Kao
+Author-email: ckao@narrativescience.com
