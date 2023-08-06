@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cnt.rulebase
+Version: 0.12.0
+Summary: None
+Home-page: https://github.com/cnt-dev/cnt.rulebase
+Author: Hunt Zhan
+Author-email: huntzhan.dev@gmail.com
+License: MIT license
+Keywords: cnt.rulebase
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pyahocorasick (==1.4.0)
+Provides-Extra: test
+Requires-Dist: pip (==20.0.2) ; extra == 'test'
+Requires-Dist: wheel (==0.32.3) ; extra == 'test'
+Requires-Dist: bumpversion (==0.5.3) ; extra == 'test'
+Requires-Dist: Sphinx (==2.4.4) ; extra == 'test'
+Requires-Dist: sphinx-autodoc-typehints (==1.10.3) ; extra == 'test'
+Requires-Dist: watchdog (==0.10.2) ; extra == 'test'
+Requires-Dist: twine (==3.1.1) ; extra == 'test'
+Requires-Dist: tox (==3.14.6) ; extra == 'test'
+Requires-Dist: yapf (==0.29.0) ; extra == 'test'
+Requires-Dist: pylint (==2.4.4) ; extra == 'test'
+Requires-Dist: mypy (==0.770) ; extra == 'test'
+Requires-Dist: pytest (==5.4.1) ; extra == 'test'
+Requires-Dist: pytest-runner (==5.2) ; extra == 'test'
+Requires-Dist: coverage (==5.0.4) ; extra == 'test'
+Requires-Dist: numpy (==1.18.2) ; extra == 'test'
+Requires-Dist: invoke (==1.4.1) ; extra == 'test'
+
+UNKNOWN
+
+
