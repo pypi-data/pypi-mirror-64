@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: CEP-por-endereco-completo
+Version: 0.1.1
+Summary: Encontrando CEP a partir de endereços completos
+Home-page: https://github.com/rodrigobercini/CEP-por-endereco-completo
+Author: Rodrigo Bercini Martins
+Author-email: rodrigobercinimartins@gmail.com
+License: MIT License
+Keywords: cep endereço completo zip code brazil address correios
+Platform: UNKNOWN
+Requires-Dist: beautifulsoup4
+
+Encontrando CEP a partir de endereços completos usando o Site Oficial dos Correios como fonte
+
+
