@@ -1,0 +1,17 @@
+archicad/__init__.py,sha256=VCOiOqA3WuO6-e2k37lXqw2GRgu55C-kJFIWLCBIn0U,82
+archicad/acbasetype.py,sha256=jZF_cuCzLjsDrxVsVc3OPl6JXeevGIoHFiSAKbOsw0w,7228
+archicad/commands.py,sha256=BhkFE85M7HYbDoVlfMcqYqgWT8FlfZ3cNVt59TJT3Y4,1526
+archicad/connection.py,sha256=UAf4q_O4fYtLnJlRdNuKH80elZrtCOCrrKVE18FkMeg,2570
+archicad/validators.py,sha256=M-W_ZJjR1w8T0fO5YzMbrkln3gyhohSIBBWNs3Qk-OU,1300
+archicad/versioning.py,sha256=wasmelt0GaxfZjhCH6jDOjY-8YmkLqG5fCwiJYq9_bc,1429
+archicad/releases/__init__.py,sha256=fx2-3guvJOnwWxHV_sssSdhITgzvIZt7c2cJScx4jxw,50
+archicad/releases/ac24/__init__.py,sha256=1i5miuk7RsgAYEgaFESsYjGmPF28Goi1_1IQ7Mobp4M,110
+archicad/releases/ac24/b1601commands.py,sha256=EcbkjncHgY1m52cQvfvaKzaY9pxltkHVBHskC0WK0_g,34424
+archicad/releases/ac24/b1601types.py,sha256=I8Z2DxeQiZSp4akq2qHQtoOsNPgWZanLfrjrmpQfoNM,51088
+archicad/releases/ac24/b2300commands.py,sha256=VR2_-SmeZ-QBYft6bSgbePAc4Yg6YTRHEyGPYDooNVg,36198
+archicad/releases/ac24/b2300types.py,sha256=E6U574CEh2tSB2UHr_h2mN-oKZALu9w3nMZHig0rJeg,63954
+archicad-24.2300b1.dist-info/LICENSE,sha256=OnGGWESqHekB2vjhNlsYwjc9uvsmWaKAjSB7mX1IAKo,10174
+archicad-24.2300b1.dist-info/METADATA,sha256=KsCcWKiaa0smV_VkVQx0B1PQXGpuw0do5ZjCsSsknXA,1500
+archicad-24.2300b1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+archicad-24.2300b1.dist-info/top_level.txt,sha256=OwoEu2fLqfz6sGCjO7Wxpn9J48X9HMnuPB4AuBlYxWQ,9
+archicad-24.2300b1.dist-info/RECORD,,
