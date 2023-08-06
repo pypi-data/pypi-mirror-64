@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: qcloud-cos-python3
+Version: 3.3.6
+Summary: python sdk for tencent qcloud cos
+Home-page: UNKNOWN
+Author: songjian
+Author-email: jian.song@nexttao.com
+License: MIT License
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Requires-Dist: requests
+
+UNKNOWN
+
+
