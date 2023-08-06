@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tdlogging
+Version: 0.0.1
+Summary: Classed based logger for Python
+Home-page: https://github.com/troppydash/tdlogging
+Author: Terry Qi
+Author-email: troppydash.developer@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/tdlogging/
+Description: Class Based Logger for Python
+        
+        # Installation
+        
+        ```bash
+        pip install tdlogging
+        ```
+        
+        # Change log
+        
+        
+        ## [0.0.1] - 2020-04-01
+        
+        ### Added
+        - `@class_logger`
+        - `HISTORY.md`
+        - `README.md`
+Keywords: Logger,Class
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
