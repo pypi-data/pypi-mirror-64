@@ -1,0 +1,4 @@
+BaseSpacePy~=0.3
+fs~=2.4
+six~=1.14
+smart-open~=1.9
