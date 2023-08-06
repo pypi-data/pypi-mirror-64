@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: gitAutoUpdate
+Version: 1.0.1
+Summary: A tool for Developers publishing software in python to automatically detect and update their projects
+Home-page: https://github.com/48panda48/Self-Update
+Author: 48panda
+Author-email: george.48panda@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/48panda48/Self-Update/releases/tag/v1.0.1
+Description: UNKNOWN
+Keywords: git,github,update
+Platform: UNKNOWN
