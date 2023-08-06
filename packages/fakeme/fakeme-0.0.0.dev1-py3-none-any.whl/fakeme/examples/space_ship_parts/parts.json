@@ -1,0 +1,77 @@
+[
+ {
+  "ship_type": "Ship denied",
+  "price": "0.74",
+  "part_identification": "ef4ac9b48fc8"
+ },
+ {
+  "ship_type": "Ship administrator",
+  "price": "0.44",
+  "part_identification": "992e817f3a54"
+ },
+ {
+  "ship_type": "Ship bob",
+  "price": "0.82",
+  "part_identification": "e07bf5c2e76d"
+ },
+ {
+  "ship_type": "Ship ian",
+  "price": "0.18",
+  "part_identification": "b8e6d8f6c858"
+ },
+ {
+  "ship_type": "Ship deliver",
+  "price": "0.0",
+  "part_identification": "9e751cc16769"
+ },
+ {
+  "ship_type": "Ship coffee",
+  "price": "0.43",
+  "part_identification": "6630b97a76e8"
+ },
+ {
+  "ship_type": "Ship nokia",
+  "price": "0.33",
+  "part_identification": "ab111a3af084"
+ },
+ {
+  "ship_type": "Ship ing",
+  "price": "0.67",
+  "part_identification": "23c87ee5da05"
+ },
+ {
+  "ship_type": "Ship resume",
+  "price": "0.86",
+  "part_identification": "47f8b2fd46d7"
+ },
+ {
+  "ship_type": "Ship composition",
+  "price": "0.53",
+  "part_identification": "9e6afe65aadb"
+ },
+ {
+  "ship_type": "Ship nutten",
+  "price": "0.38",
+  "part_identification": "2a05469c5e4d"
+ },
+ {
+  "ship_type": "Ship team",
+  "price": "0.08",
+  "part_identification": "643bec3c695a"
+ },
+ {
+  "ship_type": "Ship lighting",
+  "price": "0.27",
+  "part_identification": "02f7c8144479"
+ },
+ {
+  "ship_type": "Ship sexo",
+  "price": "0.29",
+  "part_identification": "6ee76eaea47e"
+ },
+ {
+  "ship_type": "Ship tall",
+  "price": "0.05",
+  "part_identification": "cd3bb5ab122f"
+ }
+]
