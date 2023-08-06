@@ -1,0 +1,4 @@
+importlib_metadata
+numpy
+pykry
+scipy
