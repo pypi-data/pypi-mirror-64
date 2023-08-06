@@ -1,0 +1,7 @@
+README.md
+setup.py
+auxous/__init__.py
+auxous.egg-info/PKG-INFO
+auxous.egg-info/SOURCES.txt
+auxous.egg-info/dependency_links.txt
+auxous.egg-info/top_level.txt
