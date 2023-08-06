@@ -1,0 +1,3 @@
+[console_scripts]
+pandas_connect = pandas_connect.cli:main
+
