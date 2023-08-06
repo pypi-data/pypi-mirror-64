@@ -1,0 +1,3 @@
+[console_scripts]
+ohmyddl = ohmyddl.__main__:main
+
