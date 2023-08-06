@@ -1,0 +1,13 @@
+scrape_it.py,sha256=2ET-cyXD4WBRXoYK6uZ1qep8NS38oFtPEsEdym1cRbk,18387
+scrape_it/__init__.py,sha256=1Ju714If2LliNkYa7Hbmx3dZJ9zRa0fEocpv3FR1xlU,1763
+scrape_it/correct_base.py,sha256=_iNbHih9G9_lGXvVMJPbseLILdaG1DiP-X-YhpzvBgA,3377
+scrape_it/models.py,sha256=hMSEJrWWwli8MoIHXXgsEk4OhwLGrHFUdINQO_MPE0Q,1641
+scrape_it/regex.py,sha256=9gcouSN6-uSRAi_4z_QdmxClDj108hJ0o3RMcq4Gvqg,11665
+scrape_it/run.py,sha256=u3ggJsLiGayEAbBS4DIQC7UooDtquv09nY2gnttCemc,140
+scrape_it/scrape_it.py,sha256=QVNasG5eD0Vr9uel_dDHaU3anNwHREcPXAJ4lr6lsig,28378
+scrape_it/scrape_it_experimental.py,sha256=TKl2wttQcrj4Nh-A_UQit8qv9SkDxOCg8EuBkdYnfyM,24504
+scrape_it/scrape_policy_text.py,sha256=y-VGB4rYLhfW1C953AoYA5UC89Cxj_X0BG5rCtlYeDA,20328
+scrape_it-0.3.8.dist-info/METADATA,sha256=6I7F22eBnyOQNDsozs7pZAHZCvyyuSn4HttYiDmm0OI,4112
+scrape_it-0.3.8.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+scrape_it-0.3.8.dist-info/top_level.txt,sha256=Dmmseln4743tdw3RItDdyA5y1VYMewNygiT1Jz1_ShM,10
+scrape_it-0.3.8.dist-info/RECORD,,
