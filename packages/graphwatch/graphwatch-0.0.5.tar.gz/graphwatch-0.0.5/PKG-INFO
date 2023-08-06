@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: graphwatch
+Version: 0.0.5
+Summary: A web app showing a dot graph evolutions.
+Home-page: UNKNOWN
+Author: Samuel Loury
+Author-email: konubinixweb@gmail.com
+License: UNKNOWN
+Description: # A simple web app to see an evolving medium sized graph written in graphviz' dot
+        
+        	$ pip install git+https://github.com/Konubinix/graphwatch
+        	$ python -m graphwatch graph.dot
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
