@@ -1,0 +1,12 @@
+.DS_Store,sha256=8KKaUa9doHQfAlc147XJVqkGeAeRFvvRm4Hy6MH5Igc,6148
+CartoCosmos/CartoCosmos.py,sha256=FSlPeWzUQDmtt7QjN0Z5UBrQfpeHoGGm0MnKAiHbAuM,17312
+CartoCosmos/__init__.py,sha256=Rz49dqOosoNtV_leOfoqDR7LH_ODG5CSMewXFc-6Bj4,107
+CartoCosmos/geoServerLayers.json,sha256=2dn_8ruMMOEiXZTO9FVkOKenh9E2COcyM7VhO2QG_es,160093
+CartoCosmos/planetary_gui.py,sha256=Jc5T2mv3tXF3vcgdOpxB7XuLB_x4w9w0Nhuokrjha_4,3431
+CartoCosmos/planetary_maps.py,sha256=YuljIbRPjqlyhzTFQIKGnV92V9Ukms2Nci6o8OLsesE,17379
+CartoCosmos-1.0.1.data/data/geoServerLayers/geoServerLayers.json,sha256=2dn_8ruMMOEiXZTO9FVkOKenh9E2COcyM7VhO2QG_es,160093
+CartoCosmos-1.0.1.dist-info/LICENSE,sha256=edD8RHFgB93cN1YBvKiHmtRbwRZb-TQrehZXK09Bq-g,1209
+CartoCosmos-1.0.1.dist-info/METADATA,sha256=cU1KFI0qBW0xMaTZeBFinoacJ3_gFmR5hGTMlwrtXK4,595
+CartoCosmos-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+CartoCosmos-1.0.1.dist-info/top_level.txt,sha256=JNQ0m6GGteDbRqXc9r7YMkAMlggyxDIjLYJCvpWVj_c,12
+CartoCosmos-1.0.1.dist-info/RECORD,,
