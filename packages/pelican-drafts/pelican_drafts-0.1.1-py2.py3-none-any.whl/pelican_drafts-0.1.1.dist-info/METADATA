@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: pelican-drafts
+Version: 0.1.1
+Summary: Add a browsable drafts listing to your Pelican website
+Home-page: https://github.com/noirbizarre/pelican-drafts
+Author: Axel Haustant
+Author-email: noirbizarre+github@gmail.com
+License: MIT
+Keywords: pelican,draft
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Software Distribution
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pelican (>=4.2.0)
+Provides-Extra: qa
+Requires-Dist: pytest-cov ; extra == 'qa'
+Requires-Dist: flake8 ; extra == 'qa'
+Provides-Extra: test
+Requires-Dist: pytest (<5.4) ; extra == 'test'
+
+# Pelican Drafts
+
+
+Add a browsable drafts listing fr your Pelican website
+
+
+## Requirements
+
+Pelican Drafts works with Pelican 4.2+ and Python 3.7+
+
+## Getting started
+
+Install `pelican-drafts` with pip:
+
+```shell
+pip install pelican-drafts
+```
+
+And enable the plugin in you `pelicanconf.py` (or any configuration file you want to use):
+
+```Python
+PLUGINS = [
+    '...',
+    'drafts',
+    '...',
+]
+```
+
+## Settings
+
+### `SHOW_DRAFTS`
+
+Wether or not to show the drafts page (**default**:  `True`, set it to `False` in your `publishconf.py`)
+
+### `DRAFTS_URL`
+
+URL on which you can consult the drafts page (**default**: `'drafts/'`)
+
+### DRAFTS_SAVE_AS
+
+Path to save the drafts page. It should be consistent with the `DRAFTS_URL` setting (**default**: `'drafts/index.html'`)
+
+## Theming
+
+# Changelog
+
+## 0.1.1 (2020-03-26)
+
+- Fix the `SHOW_DRAFTS` parameter being ignored
+
+## 0.1.0 (2020-03-26)
+
+- Nothing Initial release
+
+
