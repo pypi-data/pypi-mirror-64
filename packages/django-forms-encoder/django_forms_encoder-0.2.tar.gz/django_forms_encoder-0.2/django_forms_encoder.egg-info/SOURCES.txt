@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+django_forms_encoder/__init__.py
+django_forms_encoder/encoder.py
+django_forms_encoder.egg-info/PKG-INFO
+django_forms_encoder.egg-info/SOURCES.txt
+django_forms_encoder.egg-info/dependency_links.txt
+django_forms_encoder.egg-info/not-zip-safe
+django_forms_encoder.egg-info/requires.txt
+django_forms_encoder.egg-info/top_level.txt
+django_forms_encoder/tests/__init__.py
+django_forms_encoder/tests/settings.py
+django_forms_encoder/tests/test_encoder.py

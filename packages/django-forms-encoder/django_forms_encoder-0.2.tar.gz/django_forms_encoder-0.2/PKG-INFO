@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: django_forms_encoder
+Version: 0.2
+Summary: Encode django forms to JSON
+Home-page: UNKNOWN
+Author: Jan Musílek
+Author-email: jan.musilek@nic.cz
+License: UNKNOWN
+Description: ======================
+         django-forms-encoder
+        ======================
+        
+        Encode django forms to JSON.
+        
+        Encoded forms follow the structure described in `schema.json <schema.json>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Provides-Extra: quality
