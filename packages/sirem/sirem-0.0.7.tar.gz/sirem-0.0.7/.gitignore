@@ -1,0 +1,6 @@
+*.pyc
+dist/
+build/
+sirem.egg-info/
+__pycache__
+.eggs/
