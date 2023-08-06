@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hyperkite
+Version: 0.1
+Summary: Hyperkite is a parameter optimization tool inspired by the way you train your machine learning models. From academia to industry, the tool is designed to optimize hyper-parameters and manage machine learning training experiments, using the most powerful algorithms in the most simple way.
+Home-page: UNKNOWN
+Author: Hyperkite
+Author-email: admin@hyperkite.ai
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
