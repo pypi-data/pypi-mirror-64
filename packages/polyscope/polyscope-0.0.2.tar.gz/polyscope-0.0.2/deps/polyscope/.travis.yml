@@ -1,0 +1,31 @@
+branches:
+  only:
+  - master
+
+language: cpp
+
+os:
+ - linux
+ - osx
+
+compiler:
+  - gcc
+  - clang
+  
+addons:
+  apt:
+    packages:
+    - xorg-dev  
+
+before_script:
+  - if [ "$TRAVIS_OS_NAME" = "linux" ]; then sudo apt-get install -y xpra xserver-xorg-video-dummy freeglut3-dev; fi
+  - cd test 
+  - mkdir build
+  - cd build
+  - cmake -DCMAKE_BUILD_TYPE=Debug -DPOLYSCOPE_BACKEND=MOCK_OPENGL ..
+
+script: 
+  - make 
+  - ./bin/polyscope-test --gtest_catch_exceptions=0 
+  - cmake -DCMAKE_BUILD_TYPE=Debug -DPOLYSCOPE_BACKEND=OPENGL3_GLFW ..
+  - make 
