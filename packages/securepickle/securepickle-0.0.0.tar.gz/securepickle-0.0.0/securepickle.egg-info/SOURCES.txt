@@ -1,0 +1,8 @@
+README.md
+setup.py
+securepickle/__init__.py
+securepickle/securepickle.py
+securepickle.egg-info/PKG-INFO
+securepickle.egg-info/SOURCES.txt
+securepickle.egg-info/dependency_links.txt
+securepickle.egg-info/top_level.txt
