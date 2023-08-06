@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/irbench/irbench_vision.egg-info/PKG-INFO
+src/irbench/irbench_vision.egg-info/SOURCES.txt
+src/irbench/irbench_vision.egg-info/dependency_links.txt
+src/irbench/irbench_vision.egg-info/not-zip-safe
+src/irbench/irbench_vision.egg-info/top_level.txt
