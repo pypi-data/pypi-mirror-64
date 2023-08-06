@@ -1,0 +1,7 @@
+opencv-python
+lxml
+Pillow
+boto3
+tqdm
+pyyaml
+scipy
