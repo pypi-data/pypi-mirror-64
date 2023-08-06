@@ -1,0 +1,3 @@
+[console_scripts]
+rplidar_mqtt_bridge = rplidar_mqtt_bridge.main:main
+
