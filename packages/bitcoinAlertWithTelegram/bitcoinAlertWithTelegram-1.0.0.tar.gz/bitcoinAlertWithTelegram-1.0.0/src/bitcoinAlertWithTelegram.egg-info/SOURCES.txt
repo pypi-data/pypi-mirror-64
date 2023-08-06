@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/bitcoinalert.py
+src/bitcoinAlertWithTelegram.egg-info/PKG-INFO
+src/bitcoinAlertWithTelegram.egg-info/SOURCES.txt
+src/bitcoinAlertWithTelegram.egg-info/dependency_links.txt
+src/bitcoinAlertWithTelegram.egg-info/top_level.txt

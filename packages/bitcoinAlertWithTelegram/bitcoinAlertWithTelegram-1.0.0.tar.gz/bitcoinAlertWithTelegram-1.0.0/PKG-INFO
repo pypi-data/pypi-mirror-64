@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: bitcoinAlertWithTelegram
+Version: 1.0.0
+Summary: A package that allows to sent bitcoin alerts throgh IFTTT
+Home-page: UNKNOWN
+Author: Praveen
+Author-email: praveenacchusn123@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/praveenNagaraj97-au7/bitcoinAlertWithTelegram/archive/0.1.tar.gz
+Description: ## bitcoinAlertWithTelegram
+        This is the starter text for a python package.
+        github link : https://github.com/praveenNagaraj97-au7/Bitcoin-Alert-Based-on-Python
+        
+        How to run the code
+        
+        from bitcoinalert import run()
+        run()
+        
+        
+        join the channel here : Telegram link: http://t.me/praveenNagaraj to get notified!
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
