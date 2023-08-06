@@ -1,0 +1,10 @@
+jumbo/__init__.py,sha256=NqxlI28PGDiSCTRN-tm8CVx5oRgb5r5OgKjv2z49zmk,87
+jumbo/config.py,sha256=FumMddm-PBV8zWWTbYjg3HbOTfrXkvCjhiG9jtRDMsQ,2675
+jumbo/database.py,sha256=oudljIRHaXSw_O6D1G6gAYlKbWHNWF0Q2r-5xoBgfoI,18265
+jumbo/handlers.py,sha256=xXHBlNMdzvpxHMt0zzfjTwxXaodNyDGTBzK70N0SKCQ,15601
+jumbo/utils.py,sha256=RQMFrO7EVR-GE2R2XBAm70MkTozkTSjcNub0r_O9aBs,688
+jumbo-0.0.2b0.dist-info/COPYING,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+jumbo-0.0.2b0.dist-info/METADATA,sha256=XHz6WfTw3_dYqcuEpNufJhJvIDapuBd0ZYyoTCVe1bE,892
+jumbo-0.0.2b0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+jumbo-0.0.2b0.dist-info/top_level.txt,sha256=4hiXFN5EOdGh0nposRy9xsJBrZiQQQNxhg5PC1pbJ7s,6
+jumbo-0.0.2b0.dist-info/RECORD,,
