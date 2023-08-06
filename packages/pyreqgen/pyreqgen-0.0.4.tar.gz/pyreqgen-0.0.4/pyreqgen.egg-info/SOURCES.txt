@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyreqgen/ReqParser.py
+pyreqgen/__init__.py
+pyreqgen.egg-info/PKG-INFO
+pyreqgen.egg-info/SOURCES.txt
+pyreqgen.egg-info/dependency_links.txt
+pyreqgen.egg-info/top_level.txt
