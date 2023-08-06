@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyreqgen
+Version: 0.0.3
+Summary: Creates a requirements.txt file for a project solely from source files, given a root directory
+Home-page: https://github.com/malanb5/py_requirements_installer
+Author: Matthew Bladek
+Author-email: malanb5@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
