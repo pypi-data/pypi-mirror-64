@@ -1,0 +1,13 @@
+gaga/__init__.py,sha256=RgSgh6cTcQ6_Y5UxjYHlkyFm6Qc7XznombxhcgXMOto,65
+gaga/gaga.py,sha256=f88aKKWfXFdR76VnC9DA68utLHz0POM2arfHSMsVkjc,26231
+gaga/gaga_helpers.py,sha256=6vi-2R80_C61JtOr_Sp5-ILNUqYr_D5TfVJ0kXQah4g,13168
+gaga_phsp-0.5.2.data/scripts/gaga_convert_pth_to_pt,sha256=2ehET9-5jT_ZSGfAhxlmK5VzEWUNGshH3DPpLjX2Ysc,2059
+gaga_phsp-0.5.2.data/scripts/gaga_generate,sha256=V_262EC4omZDvq03_kEdhqlq5hR7pFZsQSHg4xNlOI8,1882
+gaga_phsp-0.5.2.data/scripts/gaga_info,sha256=HHJTIkSoeMY7Rc2-xvJuh-YBTGrRwlEMDhrwtHruJVs,1688
+gaga_phsp-0.5.2.data/scripts/gaga_plot,sha256=oFYLsqjs4mY36xby4v1DnyT5yiajEEVialM2DrVf1v4,3880
+gaga_phsp-0.5.2.data/scripts/gaga_train,sha256=EP2S9umo5XNkzfVAGX2qZHn7L9Vfl-oSDy4fNRvXG0Q,5008
+gaga_phsp-0.5.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gaga_phsp-0.5.2.dist-info/METADATA,sha256=mDKHaNUgMkwoJi4-YcVLR2P2aARyhrdsVTY_cgajUvk,2291
+gaga_phsp-0.5.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gaga_phsp-0.5.2.dist-info/top_level.txt,sha256=B-SAUUUtbpM1Mdw7vWlWv-0t9un4XgW8d80_9-1PEOQ,5
+gaga_phsp-0.5.2.dist-info/RECORD,,
