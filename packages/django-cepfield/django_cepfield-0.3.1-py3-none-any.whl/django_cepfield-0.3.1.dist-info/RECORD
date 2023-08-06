@@ -1,0 +1,13 @@
+cep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cep/forms.py,sha256=eNkBBgUHe-HxpRrWeZmm-1rfoo0iQsmGiuqWRcSE9i4,2390
+cep/models.py,sha256=2xKyGgB0ngfEMxQvHEpaCGhP6u5rjnkht7NMMe2dLxs,843
+cep/parser.py,sha256=6p9jTHXcl-YJf3CuwxAIWr8PJJSoD5tnsHoaqXluOeY,3063
+cep/locale/pt_BR/LC_MESSAGES/django.po,sha256=3m0Zk9aoYZDvwcliOSArVndhByazAQ6rHdz3LPKMvAs,794
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/settings.py,sha256=F49G-S0fF8COwUFgDDTwr5PmOuiBYW-24UQyUP3uaB0,377
+tests/tests.py,sha256=1CIQ3wwmJf79eGu3pRX6o14GNW6BxKdJyyHrznIn16M,9545
+django_cepfield-0.3.1.dist-info/LICENSE,sha256=BtGOTWpmvQICLYDwB88t6wV3438VxNPRlfooAbS2LCE,1081
+django_cepfield-0.3.1.dist-info/METADATA,sha256=OK-l9qVnY-bhrs4Ec5aT4Sxi5ctx2hcpiVFV0pBjTxc,966
+django_cepfield-0.3.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_cepfield-0.3.1.dist-info/top_level.txt,sha256=hnD_nVyeD6E_8HR_tQqfr9-NeqLRw8kW58PwTuCsJ5E,10
+django_cepfield-0.3.1.dist-info/RECORD,,
