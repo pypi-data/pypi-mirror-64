@@ -1,0 +1,3 @@
+[console_scripts]
+yengde = yengde.cli:main
+

@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: yengde
+Version: 1.0
+Summary: A Python package to get number table.
+Home-page: UNKNOWN
+Author: Shubham Yengde
+Author-email: shubhamyengde@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# yengde
+
+A Python package to get number table.
+
+## Usage
+
+Following query on terminal will provide you the table of number 9
+
+```
+yengde no 9
+```
+
