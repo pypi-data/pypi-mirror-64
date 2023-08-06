@@ -1,0 +1,25 @@
+astroplan
+astropy==4.0
+astroquery
+django-bootstrap4
+django-contrib-comments>=1.9.2
+django-crispy-forms
+django-extensions
+django-filter
+django-gravatar2
+django-guardian
+django>=2.2
+fits2image
+matplotlib
+numpy
+pillow
+plotly
+python-dateutil
+requests
+specutils==0.7
+
+[:python_version < "3.7"]
+dataclasses
+
+[test]
+factory_boy
