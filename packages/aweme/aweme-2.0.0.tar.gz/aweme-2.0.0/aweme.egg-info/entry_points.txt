@@ -1,0 +1,3 @@
+[console_scripts]
+aweme = aweme.aweme:main
+

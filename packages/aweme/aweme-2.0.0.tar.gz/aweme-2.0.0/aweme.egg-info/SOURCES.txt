@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+aweme/__init__.py
+aweme/aweme.py
+aweme.egg-info/PKG-INFO
+aweme.egg-info/SOURCES.txt
+aweme.egg-info/dependency_links.txt
+aweme.egg-info/entry_points.txt
+aweme.egg-info/requires.txt
+aweme.egg-info/top_level.txt
