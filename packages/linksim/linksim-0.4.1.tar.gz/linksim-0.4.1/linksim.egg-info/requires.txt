@@ -1,0 +1,7 @@
+requests
+pyquery
+xlutils
+termcolor
+python-docx
+pillow
+xlrd
