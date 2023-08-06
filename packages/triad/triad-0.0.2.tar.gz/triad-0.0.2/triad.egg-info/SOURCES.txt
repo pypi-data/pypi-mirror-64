@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+tests/__init__.py
+tests/test_dummy.py
+triad/__init__.py
+triad.egg-info/PKG-INFO
+triad.egg-info/SOURCES.txt
+triad.egg-info/dependency_links.txt
+triad.egg-info/requires.txt
+triad.egg-info/top_level.txt
