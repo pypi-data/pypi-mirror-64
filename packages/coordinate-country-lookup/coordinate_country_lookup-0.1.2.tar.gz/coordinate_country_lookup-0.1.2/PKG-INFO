@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: coordinate_country_lookup
+Version: 0.1.2
+Summary: Returns the country of the latitude longitude tuple offline
+Home-page: https://github.com/eddbrown/coodinate_country_lookup
+Author: Edward Brown
+Author-email: edward.j.e.brown@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: COORIDNATES,COUNTRY,LOOKUP
+Platform: UNKNOWN
