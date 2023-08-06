@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: viewmask
+Version: 0.1.10
+Summary: A Python package and CLI to view XML annotations and NumPy masks.
+Home-page: https://github.com/sumanthratna/viewmask
+License: MIT
+Author: sumanthratna
+Author-email: sumanthratna@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: Pillow (>=7.0.0,<8.0.0)
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Requires-Dist: napari (>=0.2.12,<0.3.0)
+Requires-Dist: numpy (>=1.18.1,<2.0.0)
+Requires-Dist: opencv-python-headless (>=4.2.0,<5.0.0)
+Project-URL: Documentation, https://viewmask.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/sumanthratna/viewmask
+Description-Content-Type: text/x-rst
+
+viewmask
+========
+A Python package and CLI to view XML annotations and NumPy masks.
+
+|made-with-python|
+|made-with-sphinx-doc|
+|PyPI license|
+|PyPI version fury.io|
+|Documentation Status|
+
+.. |made-with-python| image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+   :target: https://www.python.org/
+
+.. |made-with-sphinx-doc| image:: https://img.shields.io/badge/Made%20with-Sphinx-1f425f.svg
+  :target: https://www.sphinx-doc.org/
+
+.. |PyPI version fury.io| image:: https://badge.fury.io/py/viewmask.svg
+   :target: https://pypi.python.org/pypi/viewmask/
+
+.. |PyPI license| image:: https://img.shields.io/pypi/l/viewmask.svg
+  :target: https://pypi.python.org/pypi/viewmask/
+
+.. |Documentation Status| image:: https://readthedocs.org/projects/viewmask/badge/?version=latest
+   :target: https://viewmask.readthedocs.io/?badge=latest
+
