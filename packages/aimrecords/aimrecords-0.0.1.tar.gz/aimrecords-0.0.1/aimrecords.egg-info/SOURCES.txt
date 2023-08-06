@@ -1,0 +1,11 @@
+README.md
+setup.py
+aimrecords/__init__.py
+aimrecords/__version__.py
+aimrecords/reader.py
+aimrecords/writer.py
+aimrecords.egg-info/PKG-INFO
+aimrecords.egg-info/SOURCES.txt
+aimrecords.egg-info/dependency_links.txt
+aimrecords.egg-info/requires.txt
+aimrecords.egg-info/top_level.txt
