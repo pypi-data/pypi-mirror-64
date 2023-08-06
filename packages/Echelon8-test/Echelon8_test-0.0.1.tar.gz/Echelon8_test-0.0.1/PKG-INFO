@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: Echelon8_test
+Version: 0.0.1
+Summary: Backtesting Engine
+Home-page: https://github.com/sking8484/echelon
+Author: Darst King
+Author-email: sking8484@gmail.com
+License: UNKNOWN
+Description: #Echelon  
+        
+        This is the first test for getting Echelon8 up and running live on PyPI.
+        
+        #Installation
+        
+        Run the following to install
+        
+        """Python
+        pip install echelon  
+        """
+        
+        #Usage
+        This will come later
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

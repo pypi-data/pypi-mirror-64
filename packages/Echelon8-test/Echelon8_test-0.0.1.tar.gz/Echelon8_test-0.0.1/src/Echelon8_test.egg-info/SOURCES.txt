@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+src/echelon.py
+src/requirements.txt
+src/Echelon8_test.egg-info/PKG-INFO
+src/Echelon8_test.egg-info/SOURCES.txt
+src/Echelon8_test.egg-info/dependency_links.txt
+src/Echelon8_test.egg-info/requires.txt
+src/Echelon8_test.egg-info/top_level.txt
