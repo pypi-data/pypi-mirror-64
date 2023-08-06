@@ -1,0 +1,9 @@
+README.md
+setup.py
+covid19icu/__init__.py
+covid19icu/sirdbase.py
+covid19icu.egg-info/PKG-INFO
+covid19icu.egg-info/SOURCES.txt
+covid19icu.egg-info/dependency_links.txt
+covid19icu.egg-info/requires.txt
+covid19icu.egg-info/top_level.txt
