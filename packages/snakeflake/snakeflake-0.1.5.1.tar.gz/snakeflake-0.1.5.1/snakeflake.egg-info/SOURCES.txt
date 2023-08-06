@@ -1,0 +1,11 @@
+README.md
+setup.py
+snakeflake/__init__.py
+snakeflake/config.py
+snakeflake/exceptions.py
+snakeflake/snakeflake.py
+snakeflake/utils.py
+snakeflake.egg-info/PKG-INFO
+snakeflake.egg-info/SOURCES.txt
+snakeflake.egg-info/dependency_links.txt
+snakeflake.egg-info/top_level.txt
