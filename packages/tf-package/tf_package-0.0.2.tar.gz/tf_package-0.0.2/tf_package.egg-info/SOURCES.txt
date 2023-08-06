@@ -1,0 +1,14 @@
+setup.py
+tf_package/__init__.py
+tf_package/attention.py
+tf_package/gan_loss.py
+tf_package/instancenorm.py
+tf_package/make_tfrecord.py
+tf_package/spectral_norm.py
+tf_package/test_data.py
+tf_package/utils.py
+tf_package.egg-info/PKG-INFO
+tf_package.egg-info/SOURCES.txt
+tf_package.egg-info/dependency_links.txt
+tf_package.egg-info/entry_points.txt
+tf_package.egg-info/top_level.txt
