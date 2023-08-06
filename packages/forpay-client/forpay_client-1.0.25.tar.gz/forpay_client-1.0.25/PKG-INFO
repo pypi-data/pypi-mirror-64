@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: forpay_client
+Version: 1.0.25
+Summary: The client module of Forpay Python sdk
+Home-page: https://github.com/hacfox/forpay_client.git
+Author: bozimeile
+Author-email: zz.hacfox@gmail.com
+License: MIT License
+Description: # forpay_client  
+        SDK For Forpay  
+        API Link: [Forpay](https://api.forpay.pro/docs/overview)  
+          
+        ## Install
+          
+        ```
+        pip install forpay-client
+        ```
+          
+        ## Usage  
+        
+        ```
+        from forpay_client.forpay import ForPayClient  
+        
+        client = ForPayClient(app_id='app_id', key_id='key_id', private_key='private_string')  
+        reply, ok = client.get_currencies()  
+        print(reply, ok)  
+        
+        ```  
+          
+        ## License  
+        
+        MIT © bozimeile  
+        
+Keywords: forpay,forpay-client,sdk
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
