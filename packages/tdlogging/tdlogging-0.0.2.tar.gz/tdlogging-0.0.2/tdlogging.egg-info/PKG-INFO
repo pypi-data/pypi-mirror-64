@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tdlogging
+Version: 0.0.2
+Summary: Classed based logger for Python
+Home-page: https://github.com/troppydash/tdlogging
+Author: Terry Qi
+Author-email: troppydash.developer@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/tdlogging/
+Description: b'Class Based Logger for Python\r\n\r\n# Installation\r\n\r\n```bash\r\npip install tdlogging\r\n```\r\n\r\n## Usage\r\ntdlogger.txt\r\n- `exception` log exceptions\r\n- `count` log count\r\n- `time` log time elapsed\r\n- `return` log return value\r\n- `exec` log count, time, and return\r\n\r\n\r\n\r\n```python\r\n# fib.py\r\n\r\nfrom tdlogging.tdlogger import create_logger\r\n\r\nlogger = create_logger(path="/path/to/tdlogger.txt/")\r\n\r\n@logger.get_logger()\r\nclass Fib:\r\n    @staticmethod\r\n    def get_n(n):\r\n        a = 0\r\n        b = 1\r\n\r\n        if n == 0:\r\n            return a\r\n        elif n == 1:\r\n            return b\r\n        else:\r\n            for i in range(2, n):\r\n                c = a + b\r\n                a = b\r\n                b = c\r\n            return b\r\n\r\nFib.get_n(9)\r\n```\r\n```bash\r\n> python fib.py\r\n\r\n\xe2\x94\x8e\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80TDLogger\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x92\r\n\xe2\x94\x83  --Method get_n Executed-- \xe2\x94\x83\r\n\xe2\x94\x83 Arguments: {               \xe2\x94\x83\r\n\xe2\x94\x83     \'n\': 9,                \xe2\x94\x83\r\n\xe2\x94\x83 }                          \xe2\x94\x83\r\n\xe2\x94\x83 Times Executed: 1          \xe2\x94\x83\r\n\xe2\x94\x83 Execution Time: 0.000s     \xe2\x94\x83\r\n\xe2\x94\x83 Return Value: 21           \xe2\x94\x83\r\n\xe2\x94\x83 Return Type: <class \'int\'> \xe2\x94\x83\r\n\xe2\x94\x96\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x80\xe2\x94\x9a\r\n```'
+        
+        b'# Change log\r\n\r\n## [0.0.2] - 2020-04-02\r\n\r\n### Added\r\n- `tdprinter.py`\r\n\r\n### Edited\r\n- `tdprinter.py`\r\n- `tdlogger.py`\r\n\r\n## [0.0.1] - 2020-04-01\r\n\r\n### Added\r\n- `tdlogger.py`\r\n- `HISTORY.md`\r\n- `README.md`'
+Keywords: Logger,Class
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
