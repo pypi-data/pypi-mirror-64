@@ -1,0 +1,9 @@
+CHANGELOG.md,sha256=vAqptKyipo9QWzQ6Py7odkL5MFPRn8qerqK1RnnMsYQ,2217
+LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cloudmage/jinjautils/__init__.py,sha256=bHUTUITnt9QjvbJP3fZf6zAumctB6tPramcNLLr7uuY,50
+cloudmage/jinjautils/jinja.py,sha256=tZtVukHkbZDRRAJXFFr1cXShKYubvJbpY1l1BuZRRV4,30707
+cloudmage_jinjautils-1.0.5.dist-info/entry_points.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudmage_jinjautils-1.0.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cloudmage_jinjautils-1.0.5.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+cloudmage_jinjautils-1.0.5.dist-info/METADATA,sha256=UrEVf-f2yt9uulVylyqo9kE5yzdM0rEJmSdhfH9NCzw,25519
+cloudmage_jinjautils-1.0.5.dist-info/RECORD,,
