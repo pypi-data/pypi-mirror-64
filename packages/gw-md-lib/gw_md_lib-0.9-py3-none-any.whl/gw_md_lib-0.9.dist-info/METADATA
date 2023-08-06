@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gw-md-lib
+Version: 0.9
+Summary: Common lib to GW project
+Home-page: UNKNOWN
+Author: Auriz
+Author-email: edominguez@auriz.biz
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Flask-SQLAlchemy (==2.4.0)
+
+# GroundWorx Library 
+Common packages to use in GroundWorx project
+
