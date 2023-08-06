@@ -1,0 +1,5 @@
+include LICENSE
+include README.md
+recursive-include django_simulated_inlines/static *
+recursive-include django_simulated_inlines/templates *
+recursive-include docs

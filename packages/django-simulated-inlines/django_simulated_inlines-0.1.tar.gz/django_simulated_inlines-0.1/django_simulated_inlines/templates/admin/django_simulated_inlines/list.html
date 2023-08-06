@@ -1,0 +1,84 @@
+<div id="{{ s_inline.name }}-list" class="group {{ s_inline.classes }}">
+    <div class="tabular inline-related">
+        <fieldset class="module">
+            <h2 style="cursor: pointer;"> {{ s_inline.verbose_name }} </h2>
+            {% if s_inline.subtitle %}
+                <p id="{{ s_inline.name }}-subtitle">{{ s_inline.subtitle }}</p>
+            {% endif %}
+            {% if s_inline.buttons %}
+            <div id="{{ s_inline.name }}-action_buttons">
+                {% for name, button in s_inline.buttons %}
+                <a href="?button={{ button }}" class="button" style="margin:5px">{{name}}</a>
+                {% endfor %}
+            </div>
+            {% endif %}
+            <table id="{{ s_inline.name }}-table">
+                <thead>
+                    <tr>
+                        {% for header in s_inline.table_headers %}
+                        <th>{{ header }}</th>
+                        {% endfor %}
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in s_inline.rows %}
+                    <tr>
+                        {% for field in row %}
+                        <td title="{{ field.label }}">
+                            {% if field.link %}
+                                <a href="{{ field.link }}">
+                                    {{ field.text }}
+                                </a>
+                            {% else %}
+                                {{ field.text }}
+                            {% endif %}
+                        </td>
+                        {% endfor %}
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% if s_inline.page_obj %}
+            {% with s_inline.page_obj as page_obj %}
+            <p id="{{ s_inline.name }}-paginator" class="paginator">
+                {% if s_inline.page_obj.has_previous %}
+                <a href="?{{ s_inline.name }}-page={{ s_inline.page_obj.previous_page_number }}">Anterior</a>
+                {% endif %}
+
+                {% if s_inline.page_obj.number|add:"-5" > 0 %}
+                <a href="?{{ s_inline.name }}-page=1"></a>
+                {% endif %}
+
+                {% if s_inline.page_obj.number|add:"-5" > 1 %}
+                <span>&hellip;</span>
+                {% endif %}
+
+                {% for page_num in s_inline.page_obj.paginator.page_range %}
+                {% if s_inline.page_obj.number == page_num %}
+                    <span class="this-page">{{ page_num }}</span>
+                {% else %}
+                    {% if page_num > s_inline.page_obj.number|add:"-5" and page_num < page_obj.number|add:"5" %}
+                    <a href="?{{ s_inline.name }}-page={{ page_num }}">{{ page_num }}</a>
+                    {% endif %}
+                {% endif %}
+                {% endfor %}
+
+                {% if s_inline.page_obj.number|add:"5" < page_obj.paginator.num_pages %}
+                <span>&hellip;</span>
+                {% endif %}
+
+                {% if s_inline.page_obj.number|add:"4" < page_obj.paginator.num_pages %}
+                    <a href="?{{ s_inline.name }}-page={{ s_inline.page_obj.paginator.num_pages }}">
+                        {{ page_obj.paginator.num_pages }}
+                    </a>
+                {% endif %}
+
+                {% if s_inline.page_obj.has_next %}
+                <a href="?{{ s_inline.name }}-page={{ s_inline.page_obj.next_page_number }}">Seguinte</a>
+                {% endif %}
+            </p>
+            {% endwith %}
+            {% endif %}
+        </fieldset>
+    </div>
+</div>
