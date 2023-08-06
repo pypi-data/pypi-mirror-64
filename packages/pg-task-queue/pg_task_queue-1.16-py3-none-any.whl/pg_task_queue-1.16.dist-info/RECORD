@@ -1,0 +1,11 @@
+Modules/TestTasks.py,sha256=0dtLz_aMXUnh4XQo1MkmOQESuJse2rlBhw43PjiUKFs,1632
+Modules/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pg_tasks_queue/Database.py,sha256=cUWhAjsJMUvXVnZeLFvBWY2zUN-qA5u4vr9JQeTqOhE,34983
+pg_tasks_queue/Kthread.py,sha256=cYXETJstFCtDEHkvySoIifGhuTMH1udG45LI2Go7v4Y,2222
+pg_tasks_queue/TaskManager.py,sha256=jnnpN1CITPl0GnzCHLZV2mdi5ZdBdVPzTe7hQB_bcq4,2521
+pg_tasks_queue/Worker.py,sha256=n296mJVarWBPAwZJ3bJYpNPOZ1B0XZKvi4WEDxi1_9Y,11586
+pg_tasks_queue/__init__.py,sha256=Ig3gGnNsVJDrcIjUa3F2_62UbfXFxiPh3LpfJE7KXBg,21
+pg_task_queue-1.16.dist-info/METADATA,sha256=BLxnJ0uH_hQIzcKqajoVt5kQpkRJtwgBtbqXoFyTPic,508
+pg_task_queue-1.16.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pg_task_queue-1.16.dist-info/top_level.txt,sha256=VfwKGTFOfcm95QhRKBFt7s8MQwjgcPZNZ4jbvePEDRs,23
+pg_task_queue-1.16.dist-info/RECORD,,
