@@ -1,0 +1,8 @@
+README.md
+setup.py
+polyscope.egg-info/PKG-INFO
+polyscope.egg-info/SOURCES.txt
+polyscope.egg-info/dependency_links.txt
+polyscope.egg-info/not-zip-safe
+polyscope.egg-info/requires.txt
+polyscope.egg-info/top_level.txt
