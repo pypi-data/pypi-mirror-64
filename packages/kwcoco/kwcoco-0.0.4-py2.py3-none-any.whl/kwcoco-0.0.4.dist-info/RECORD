@@ -1,0 +1,15 @@
+kwcoco/__init__.py,sha256=76t_JgK7C7rL4ySC7Xtvuu-gB2IapJ6YNIKhVnxtncU,232
+kwcoco/__main__.py,sha256=QyWycKOxDu_eHY4YE5jcD4aOzcuuuc66Ev1TNB8GCAg,230
+kwcoco/coco_dataset.py,sha256=S4VN12BSESNQNlUlQ8grk4PNO1O5z5ov_Zq23I5gTfc,151707
+kwcoco/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kwcoco/cli/__main__.py,sha256=nA1HjJ3dhokp-8pw9cHbu2VcNI26EYOYhfHIa5Fa95Q,1836
+kwcoco/cli/coco_show.py,sha256=lpL9u-8LAiv6rZWccbri82e96ySZJUuaE3OTUDBIpQ0,1919
+kwcoco/cli/coco_split.py,sha256=T8jaUW1oHL6-aO2NP73y78WqzgE5B1Hta1uPPAoZ2VY,2456
+kwcoco/cli/coco_stats.py,sha256=cs__PwZWPOd2QHS0UmD8KcAzRcsepV8YV7lLL9rEm7Y,2165
+kwcoco/cli/coco_toydata.py,sha256=jt3h13TxyLWcy7mhhQ3Q7BiG3UUtprKKsPEigZ-D6po,978
+kwcoco/cli/coco_union.py,sha256=HxkVwgh5bMcSNKW2m3PB_iOPlskzEI45bDNxGtuTvwk,1880
+kwcoco-0.0.4.dist-info/METADATA,sha256=y5IY_UJADO4Z7coHspZQN3lpJRBYKU2dmmfhbzDpWXE,14029
+kwcoco-0.0.4.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+kwcoco-0.0.4.dist-info/entry_points.txt,sha256=bmygbcIucQ_posITdNiKe1cgWHseA8Ov5kzIma_gGzI,53
+kwcoco-0.0.4.dist-info/top_level.txt,sha256=FF5fjYq6LQmz4M65lprxFeIIvSFc4sVuVqGqyrpjyjo,7
+kwcoco-0.0.4.dist-info/RECORD,,
