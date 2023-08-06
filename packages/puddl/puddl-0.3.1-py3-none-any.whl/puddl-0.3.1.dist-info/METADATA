@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: puddl
+Version: 0.3.1
+Summary: UNKNOWN
+Home-page: https://puddl.org
+Author: Felix Hummel
+Author-email: puddl-dev@felixhummel.de
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django
+Requires-Dist: requests
+Requires-Dist: psycopg2-binary
+Requires-Dist: tinytag
+Requires-Dist: supervisor
+Requires-Dist: Click
+Requires-Dist: ffmpeg-python
+Requires-Dist: filetype
+
+UNKNOWN
+
+
