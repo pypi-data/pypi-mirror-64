@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: Compare-SQL-Redshift-Framework
+Version: 0.0.2
+Summary: Compare_SQL_Redshift_Framework Test Upload
+Home-page: https://acapgit.acacceptance.com/projects/AWA/repos/libraries/browse
+Author: Rajnish
+Author-email: rajnish.kumar@acacceptance.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest (>=3.7) ; extra == 'dev'
+
+#Hello World
+This is an example project demonstrating how to publish a python module to PyPI.
+
+##Installation
+Run the following to install:
+```python pip install hello_world```
+
+##Usage
+```python from hello_world import say_hello
+
+#Generate "Hello World"
+say_hello()
+#Generate "Hello Raj"
+say_hello("Raj)
+```
+
+#Developing Hello World
+To install helloworld, along with the tools you need to develop and run tests, run the following in your virtualenv:
+```bash
+$ pip install -e .[dev]
+```
+
+
