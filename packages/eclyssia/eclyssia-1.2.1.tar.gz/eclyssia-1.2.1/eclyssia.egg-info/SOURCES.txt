@@ -1,0 +1,10 @@
+README.md
+setup.py
+eclyssia/__init__.py
+eclyssia/eclyssia.py
+eclyssia/errors.py
+eclyssia.egg-info/PKG-INFO
+eclyssia.egg-info/SOURCES.txt
+eclyssia.egg-info/dependency_links.txt
+eclyssia.egg-info/requires.txt
+eclyssia.egg-info/top_level.txt
