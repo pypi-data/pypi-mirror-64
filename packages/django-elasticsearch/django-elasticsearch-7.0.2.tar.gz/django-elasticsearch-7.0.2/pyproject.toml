@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "django-elasticsearch"
+version = "7.0.2"
+description = "Wrapper around elasticsearch-dsl for django models"
+authors = [
+  "Sabricot",
+  "Safwan Rahman <safwan.rahman15@gmail.com>",
+  "Marko Tibold <marko@tibold.nl>",
+  "Hans Adema",
+  "Artur Barseghyan",
+  "Andreas Nüßlein <andreas@nuessle.in>",
+]
+include = ["CONTRIBUTING.rst", "HISTORY.rst"]
+license = "Apache-2.0"
+readme = "README.md"
+keywords = ["django", "elasticsearch", "elasticsearch-dsl"]
+classifiers = [
+  "Framework :: Django",
+  "Framework :: Django :: 1.11",
+  "Framework :: Django :: 2.2",
+  "Framework :: Django :: 3.0",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+]
+packages = [
+  {include = "django_elasticsearch"}
+]
+[tool.poetry.dependencies]
+python = "^3.6"
+django = ">=1.11"
+"elasticsearch-dsl" = ">=7.0.0,<8.0.0"
+
+[tool.poetry.dev-dependencies]
+psycopg2-binary = "*"
+Pillow= "*"
+
+ipdb = "*"
+coverage = "*"
+tox = "*"
+mock = "*"
+flake8 = "*"
+pytest-django = "*"
+pytest-cov = "*"
+
+#sphinx
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | migrations
+  | static-collected
+  | node_modules
+)/
+'''
+
+[tool.isort]
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = false
+line_length = 88
+known_first_party = 'apps'
+default_section = 'THIRDPARTY'
+sections = 'FUTURE,STDLIB,THIRDPARTY,FIRSTPARTY,LOCALFOLDER'
+no_lines_before = 'LOCALFOLDER'
