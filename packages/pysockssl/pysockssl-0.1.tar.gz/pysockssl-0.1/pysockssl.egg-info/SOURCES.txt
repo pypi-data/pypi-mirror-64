@@ -1,0 +1,17 @@
+README.md
+setup.py
+pysockssl.egg-info/PKG-INFO
+pysockssl.egg-info/SOURCES.txt
+pysockssl.egg-info/dependency_links.txt
+pysockssl.egg-info/entry_points.txt
+pysockssl.egg-info/requires.txt
+pysockssl.egg-info/top_level.txt
+sockssl/__init__.py
+sockssl/certstore.py
+sockssl/cli.py
+sockssl/myfactory.py
+sockssl/mylog.py
+sockssl/myservice.py
+sockssl/mysocks4.py
+sockssl/mysocks5.py
+sockssl/tls_client_hello.py
