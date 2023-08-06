@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pyDLO
+Version: 0.0.7
+Summary: Some stuff to simulate a DLO
+Home-page: https://github.com/alfonsoletizia1/pyDLO
+Author: Alfonso Letizia
+Author-email: letizia.lns@gmail.com
+License: MIT
+Download-URL: https://github.com/alfonsoletizia1/pyDLO/archive/v0.0.7.tar.gz
+Description: UNKNOWN
+Keywords: DLO,Deformable linear objects
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
