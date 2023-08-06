@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+file_hasher.egg-info/PKG-INFO
+file_hasher.egg-info/SOURCES.txt
+file_hasher.egg-info/dependency_links.txt
+file_hasher.egg-info/entry_points.txt
+file_hasher.egg-info/top_level.txt
