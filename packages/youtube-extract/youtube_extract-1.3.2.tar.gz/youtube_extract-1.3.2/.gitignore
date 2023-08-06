@@ -1,0 +1,8 @@
+.venv/
+*.csv
+*.xlsx
+tags
+dist/
+*.egg-info/
+*.sh
+__pycache__/
