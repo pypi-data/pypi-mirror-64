@@ -1,0 +1,3 @@
+m9s_account_batch<5.3,>=5.2
+trytond<5.3,>=5.2
+trytond_bank<5.3,>=5.2

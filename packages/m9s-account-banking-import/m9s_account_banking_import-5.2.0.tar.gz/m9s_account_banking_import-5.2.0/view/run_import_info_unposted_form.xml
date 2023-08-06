@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!-- The COPYRIGHT file at the top level of this repository contains the full
+copyright notices and license terms. -->
+<form col="2">
+    <image name="tryton-dialog-information"/>
+    <group col="1" id="labels">
+	<label string="There are unposted batch lines for one of the accounts "
+	    xalign="0.0" id="info_unposted1"/>
+	<label string="used in the journal of this Bank Import Configuration."
+	    xalign="0.0" id="info_unposted2"/>
+	<label string=" "
+	    xalign="0.0" id="info_unposted3"/>
+	<label string="You must proceed these batch lines before being able "
+	    xalign="0.0" id="info_unposted4"/>
+	<label string="to import further transactions."
+	    xalign="0.0" id="info_unposted5"/>
+    </group>
+</form>
