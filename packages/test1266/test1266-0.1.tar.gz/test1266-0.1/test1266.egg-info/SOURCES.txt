@@ -1,0 +1,11 @@
+MANIFEST.in
+setup.py
+test1266/__init__.py
+test1266/live-scraping-firebase-adminsdk-gck9g-011e4f00e1.json
+test1266/script_tracker.py
+test1266.egg-info/PKG-INFO
+test1266.egg-info/SOURCES.txt
+test1266.egg-info/dependency_links.txt
+test1266.egg-info/not-zip-safe
+test1266.egg-info/requires.txt
+test1266.egg-info/top_level.txt
