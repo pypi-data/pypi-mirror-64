@@ -1,0 +1,3 @@
+[console_scripts]
+count_fgs_sam = count_fgs_sam.count_fgs_sam:main
+
