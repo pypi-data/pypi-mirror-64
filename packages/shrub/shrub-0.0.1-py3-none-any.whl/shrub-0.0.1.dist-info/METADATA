@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: shrub
+Version: 0.0.1
+Summary: Toys to play around with machine learning
+Home-page: https://jackwish.net/shrub
+Author: 王振华（Zhenhua WANG）
+Author-email: i@jackwish.net
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jackwish/shrub/issues
+Project-URL: Source, https://github.com/jackwish/shrub
+Keywords: machine learning,tflite,onnx
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow
+Requires-Dist: tflite
+Requires-Dist: onnxruntime
+
+## Shrub - toys to play around with machine learning
+
+Everything TODO...
+
+

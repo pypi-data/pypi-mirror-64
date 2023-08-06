@@ -1,0 +1,12 @@
+shrub/__init__.py,sha256=T-DbmqAyg1VM_ZPJC2Eg9mHHUSHKxrP-JUfp5N29rAk,100
+shrub/common.py,sha256=pQZALD7qBi7Mn7Lfl0yrqwGFiItGg3_oLfDwz4I7UH0,52
+shrub/network.py,sha256=rHir-L3-KLFBZc4KdVgx88a-CZd7Hf1BbCo-4Iw0Rus,9565
+shrub/onnx.py,sha256=eTI3SXu0fVBrdMlgsKiX-9bvRefLJi8JFJ7vH1-7mK4,1542
+shrub/tflite.py,sha256=4EUYWIanSpz4cNeKT4Y4VwMUdKK3vGppHseIBzQcUyQ,2378
+shrub/tvm.py,sha256=QLTCy3XlU18kVN6_URv6DjYyReexRNmwZqXZiqwNY_E,10571
+shrub/util.py,sha256=k7oyKpWfAH2jF6maXVCYGHD7zqJT25Y-9N9iFXSjk_Q,1260
+shrub-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+shrub-0.0.1.dist-info/METADATA,sha256=QJoZSh0Fx4wN354Aa5MrgX6OWo1IMkwu7FVeep9PlQg,1185
+shrub-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+shrub-0.0.1.dist-info/top_level.txt,sha256=LLgoQ9lJC_yj-DMJtqFMuKgOWmKd2Q8TcS6oc0Fz7nc,6
+shrub-0.0.1.dist-info/RECORD,,
