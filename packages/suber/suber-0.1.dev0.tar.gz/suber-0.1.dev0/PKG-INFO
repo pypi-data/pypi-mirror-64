@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: suber
+Version: 0.1.dev0
+Summary: Tool to find subtitles
+Home-page: https://github.com/Suparno1998/subd
+Author: Suparno Karmakar
+Author-email: ssuparno1998@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: opensubtitles python api
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Provides-Extra: Support for encoding detection on downloaded subtitle
