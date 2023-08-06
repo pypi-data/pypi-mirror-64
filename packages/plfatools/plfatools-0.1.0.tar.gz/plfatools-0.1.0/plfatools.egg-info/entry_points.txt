@@ -1,0 +1,3 @@
+[console_scripts]
+plfatools = plfatools.__main__:main
+

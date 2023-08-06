@@ -1,0 +1,13 @@
+README.md
+setup.py
+plfatools/__init__.py
+plfatools/__main__.py
+plfatools/aggregator.py
+plfatools.egg-info/PKG-INFO
+plfatools.egg-info/SOURCES.txt
+plfatools.egg-info/dependency_links.txt
+plfatools.egg-info/entry_points.txt
+plfatools.egg-info/requires.txt
+plfatools.egg-info/top_level.txt
+tests/__init__.py
+tests/test_aggregator.py
