@@ -1,0 +1,6 @@
+colored
+seaborn
+tailf
+psutil
+humanize
+typeguard
