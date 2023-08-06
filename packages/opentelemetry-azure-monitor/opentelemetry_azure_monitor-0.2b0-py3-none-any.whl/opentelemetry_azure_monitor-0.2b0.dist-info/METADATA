@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: opentelemetry-azure-monitor
+Version: 0.2b0
+Summary: Azure Monitor integration for OpenTelemetry
+Home-page: https://github.com/microsoft/opentelemetry-azure-monitor-python
+Author: Microsoft
+Author-email: appinsightssdk@microsoft.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst
+Requires-Dist: opentelemetry-api (>=0.5b0)
+Requires-Dist: opentelemetry-sdk (>=0.5b0)
+Requires-Dist: psutil (>=5.6.3)
+Requires-Dist: requests (~=2.0)
+
+UNKNOWN
+
+
