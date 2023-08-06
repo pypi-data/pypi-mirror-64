@@ -1,0 +1,6 @@
+include conf/*
+include html/*
+include januscloud/certs/*
+include CHANGES.md
+include LICENSE
+include README.md
