@@ -1,0 +1,21 @@
+networkx
+tex2pix
+pypdt
+
+[complete]
+check-manifest
+pre-commit
+pyflakes
+twine
+
+[complete:python_version >= "3.6"]
+black
+
+[develop]
+check-manifest
+pyflakes
+pre-commit
+twine
+
+[develop:python_version >= "3.6"]
+black

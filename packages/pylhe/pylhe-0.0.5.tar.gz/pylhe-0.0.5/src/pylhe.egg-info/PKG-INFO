@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pylhe
+Version: 0.0.5
+Summary: small package to get structured data out of Les Houches Event files
+Home-page: UNKNOWN
+Author: Lukas Heinrich
+Author-email: lukas.heinrich@cern.ch
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: complete
+Provides-Extra: develop
