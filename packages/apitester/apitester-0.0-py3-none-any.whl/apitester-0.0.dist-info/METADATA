@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: apitester
+Version: 0.0
+Summary: A Test Generating Framework for RESTful APIs based on Open API Specification
+Home-page: https://github.com/nandal/apitester
+Author: Sandeep Nandal
+Author-email: sandeep@nandal.in
+License: UNKNOWN
+Keywords: apitester testapis testgenerator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+#apitester
+- an api test generating tool by referencing Open API Documentation
+- input - OpenAPI Spec Document (Formats Supported - .yaml & .json)
+- output - pytest cases covering all the combinations of inputs as per Spec Document
+
+
+###process
+1. Read OpenAPI Spec
+2. Generate Meta Information about the Complete API Spec
+3. List out Test Suite for each URI
+4. List out Input Variables for each API Request
+5. List out Input Variables Test Values for Arguments
+6. Generate the TestCases considering all Permutation n Combinations of the Input Values
+7. Generate pytest suites for Each API
+
