@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: pickle_cacher
+Version: 0.3.2
+Summary: Pickle-based caching.
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: Bao Wei
+Author-email: baowei.ur521@gmail.com
+Requires-Dist: atomic_write_path >= 1.0
