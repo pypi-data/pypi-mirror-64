@@ -1,0 +1,15 @@
+django_path2css-0.2.3.dist-info/DESCRIPTION.rst,sha256=e70IsyUFwxTGCzDWlvdV2ETmaUmUkTUSPvJ3m5wUWXY,5910
+django_path2css-0.2.3.dist-info/LICENSE.txt,sha256=2IO43uqkzNeeCoVUnvI0Lv0L8BMhyuEhqvYaMeQyJpw,1291
+django_path2css-0.2.3.dist-info/METADATA,sha256=526vRH-PWvCcZbHdEhI0F7z-Qpzu6J_3LHwNRFJKaNU,6880
+django_path2css-0.2.3.dist-info/RECORD,,
+django_path2css-0.2.3.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+django_path2css-0.2.3.dist-info/metadata.json,sha256=xvm7Q7IhD4Y2-Sj3zuNWM2jL0Jf86TcOBgpQpJgetiM,1298
+django_path2css-0.2.3.dist-info/top_level.txt,sha256=zU-zbbFhi_A4TPuEgAMnqquwGUEnf-DJ0h29aqtuB0g,9
+path2css/__init__.py,sha256=frRxz0oiPDeQ7ytdRrT7cjY4inkpxd1LdTK1OIBMPiE,5663
+path2css/templatetags/__init__.py,sha256=tonEllIEg-lQdY7P1BXAzujZ9mLhoyuMksrQFyUeZNo,81
+path2css/templatetags/path2css.py,sha256=A4jyUi68JpxgYOibx4GurtVzUFeWNquLtPhz_bVzhV0,1294
+path2css/tests/__init__.py,sha256=WScRbh-P6fl9En7aaOmcqFf3tOvVDdLy6fuPsyf0O4A,94
+path2css/tests/test_context_processor.py,sha256=K2g9v8pKOTjHx_8hiDkBlqwHDvcvAxaN_INUQc9pXY8,350
+path2css/tests/test_deprecations.py,sha256=5tbAcD7N7EmOnfAGVpPRJ5Mjc-bciKcZznCwiC7N2Ho,269
+path2css/tests/test_templatetag_css4path.py,sha256=-7xFX_LsgDaA_K_p3XBZAIUYFlsRhaU9HK6qF_-13_M,5321
+path2css/tests/test_templatetag_path2css.py,sha256=NArsLglJE03pu--bJAJSLURGI-lHWjJzr0s1YrCaKQ0,2693
