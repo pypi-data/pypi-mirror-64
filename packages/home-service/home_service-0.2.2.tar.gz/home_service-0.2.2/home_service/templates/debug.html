@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>API Debug tool</title>
+    <style>
+      html {
+        color: #a2aabc;
+        font-family: monaco;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+      }
+      body {
+        background-color: #171c28;
+        color: #a2aabc;
+        margin: 0px;
+      }
+
+      h1 {
+        margin: 0px;
+        font-size: 20px;
+        color: #ffcc66;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-top: 10px;
+        color: #ef6b73;
+      }
+
+      p {
+        font-size: 12px;
+      }
+
+      a {
+        color: #ffae57;
+      }
+
+      #buttons {
+        clear: left;
+      }
+
+      button {
+        font-size: 12px;
+        background-color: #171c28;
+        color: #ffae57;
+        margin-top: 10px;
+        border-width: 1px;
+        border-style: solid;
+      }
+
+      input {
+        font-size: 12px;
+        background-color: #1d2433;
+        color: #bae67e;
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-color: initial;
+        padding: 2px;
+        padding-left: 4px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+      }
+
+      form {
+        width: 500px;
+        padding: 20px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+      }
+
+      .ace_editor {
+        margin: auto;
+        height: 200px;
+        width: 100%;
+      }
+      .ace-monokai {
+        background-color: #1d2433;
+        color: #a2aabc;
+      }
+      .ace-monokai .ace_gutter {
+        background: #1d2433;
+        color: #ffae57;
+      }
+
+      .ace-monokai {
+        background-color: #1d2433;
+        color: #f8f8f2;
+      }
+
+      .ace-monokai .ace_marker-layer .ace_active-line {
+        background: #1d2433;
+      }
+    </style>
+  </head>
+
+  <body>
+    <form name="commandform">
+      <h1>API Debugger</h1>
+      <h2>URL:</h2>
+      <input name="commandurl" type="text" size="60" value="/home_api/" />
+      <div id="buttons">
+        <button type="button" onclick="getHTML('GET')">GET</button>
+        <button type="button" onclick="getHTML('PUT')">PUT</button>
+        <button type="button" onclick="getHTML('POST')">POST</button>
+        <button type="button" onclick="getHTML('DELETE')">DELETE</button>
+      </div>
+      <h2>Message Body:</h2>
+      <pre id="editor"></pre>
+
+      <h2>Command Response:</h2>
+      <pre id="editor2"></pre>
+    </form>
+  </body>
+</html>
+
+<script
+  src="https://pagecdn.io/lib/ace/1.4.7/ace.js"
+  type="text/javascript"
+  charset="utf-8"
+></script>
+<script language="JavaScript">
+  var editor = ace.edit("editor", {
+    theme: "ace/theme/monokai",
+    mode: "ace/mode/json",
+    maxLines: 30,
+    minLines: 3,
+    wrap: false,
+    autoScrollEditorIntoView: true
+  });
+
+  var editor2 = ace.edit("editor2", {
+    theme: "ace/theme/monokai",
+    mode: "ace/mode/json",
+    maxLines: 30,
+    minLines: 2,
+    wrap: false,
+    autoScrollEditorIntoView: true
+  });
+
+  function getHTML(command) {
+    if (window.XMLHttpRequest) {
+      var http = new XMLHttpRequest();
+      http.open(command, document.commandform.commandurl.value, true);
+
+      http.onreadystatechange = function() {
+        if (http.readyState == 4) {
+          editor2.setValue(
+            JSON.stringify(JSON.parse(http.responseText), null, "\t"),
+            -1
+          );
+        }
+      };
+      http.send(editor.getValue());
+    }
+    return false;
+  }
+</script>
