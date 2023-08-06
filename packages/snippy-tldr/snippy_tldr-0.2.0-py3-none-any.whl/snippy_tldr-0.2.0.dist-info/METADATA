@@ -1,0 +1,162 @@
+Metadata-Version: 2.1
+Name: snippy-tldr
+Version: 0.2.0
+Summary: Snippy plugin to import tldr man pages.
+Home-page: https://github.com/heilaaks/snippy-tldr
+Author: Heikki J. Laaksonen
+Author-email: laaksonen.heikki.j@gmail.com
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/x-rst
+Requires-Dist: requests
+Requires-Dist: jsonschema (==3.2.0)
+Requires-Dist: snippy (>=0.11.0)
+Provides-Extra: devel
+Requires-Dist: sphinx-rtd-theme (==0.4.3) ; extra == 'devel'
+Requires-Dist: sphinx-autobuild (==0.7.1) ; extra == 'devel'
+Requires-Dist: flake8 (==3.7.9) ; extra == 'devel'
+Requires-Dist: pluggy (==0.13.1) ; extra == 'devel'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'devel'
+Requires-Dist: pytest-mock (==2.0.0) ; extra == 'devel'
+Requires-Dist: pytest-xdist (==1.31.0) ; extra == 'devel'
+Requires-Dist: responses (==0.10.12) ; extra == 'devel'
+Requires-Dist: importlib-metadata ; (python_version != "3.4") and extra == 'devel'
+Requires-Dist: sphinx (==1.8.5) ; (python_version <= "3.4") and extra == 'devel'
+Requires-Dist: pytest (==4.6.9) ; (python_version <= "3.4") and extra == 'devel'
+Requires-Dist: mock (==3.0.5) ; (python_version <= "3.5") and extra == 'devel'
+Requires-Dist: pylint (==1.9.5) ; (python_version == "2.7.*") and extra == 'devel'
+Requires-Dist: tox (==3.14.5) ; (python_version == "2.7.*" or python_version >= "3.5") and extra == 'devel'
+Requires-Dist: importlib-metadata (==0.23) ; (python_version == "3.4") and extra == 'devel'
+Requires-Dist: pylint (==2.3.1) ; (python_version == "3.4.*") and extra == 'devel'
+Requires-Dist: tox (==3.14.0) ; (python_version == "3.4.*") and extra == 'devel'
+Requires-Dist: black ; (python_version > "3.5") and extra == 'devel'
+Requires-Dist: sphinx (==2.4.4) ; (python_version >= "3.5") and extra == 'devel'
+Requires-Dist: pylint (==2.4.4) ; (python_version >= "3.5") and extra == 'devel'
+Requires-Dist: pytest (==5.3.5) ; (python_version >= "3.5") and extra == 'devel'
+Requires-Dist: mock (==4.0.1) ; (python_version >= "3.6") and extra == 'devel'
+Provides-Extra: tests
+Requires-Dist: flake8 (==3.7.9) ; extra == 'tests'
+Requires-Dist: pluggy (==0.13.1) ; extra == 'tests'
+Requires-Dist: pytest-cov (==2.8.1) ; extra == 'tests'
+Requires-Dist: pytest-mock (==2.0.0) ; extra == 'tests'
+Requires-Dist: pytest-xdist (==1.31.0) ; extra == 'tests'
+Requires-Dist: responses (==0.10.12) ; extra == 'tests'
+Requires-Dist: importlib-metadata ; (python_version != "3.4") and extra == 'tests'
+Requires-Dist: pytest (==4.6.9) ; (python_version <= "3.4") and extra == 'tests'
+Requires-Dist: mock (==3.0.5) ; (python_version <= "3.5") and extra == 'tests'
+Requires-Dist: pylint (==1.9.5) ; (python_version == "2.7.*") and extra == 'tests'
+Requires-Dist: tox (==3.14.5) ; (python_version == "2.7.*" or python_version >= "3.5") and extra == 'tests'
+Requires-Dist: importlib-metadata (==0.23) ; (python_version == "3.4") and extra == 'tests'
+Requires-Dist: pylint (==2.3.1) ; (python_version == "3.4.*") and extra == 'tests'
+Requires-Dist: tox (==3.14.0) ; (python_version == "3.4.*") and extra == 'tests'
+Requires-Dist: pylint (==2.4.4) ; (python_version >= "3.5") and extra == 'tests'
+Requires-Dist: pytest (==5.3.5) ; (python_version >= "3.5") and extra == 'tests'
+Requires-Dist: mock (==4.0.1) ; (python_version >= "3.6") and extra == 'tests'
+
+|badge-pypiv| |badge-pys| |badge-pyv| |badge-cov| |badge-docs| |badge-build| |badge-black|
+
+Snippy-tldr
+===========
+
+Snippy_ plugin to import tldr_ man pages.
+
+Installation
+============
+
+To install, run:
+
+.. code:: text
+
+    pip install snippy-tldr --user
+
+Usage
+=====
+
+To import one tldr page from GitHub, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file https://github.com/tldr-pages/tldr/blob/master/pages/linux/alpine.md
+
+To import all English translated tldr pages for Linux from GitHub, run:
+
+.. code:: text
+
+    snippy import --plugin tldr
+
+To import all tldr pages from one platform from GitHub, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file https://github.com/tldr-pages/tldr/tree/master/pages/osx
+
+To import all Chinese translated tldr pages from GitHub, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file https://github.com/tldr-pages/tldr/tree/master/pages.zh
+
+To import one tldr page from local file system, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file ./tldr/pages/linux/apk.md
+
+To import all Linux platform tldr pages from a local file system, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file ./tldr/pages/linux
+
+To import all platforms tldr pages from a local file system, run:
+
+.. code:: text
+
+    snippy import --plugin tldr --file ./tldr/pages
+
+.. _Snippy: https://github.com/heilaaks/snippy
+
+.. _tldr: https://github.com/tldr-pages/tldr
+
+.. |badge-pypiv| image:: https://img.shields.io/pypi/v/snippy-tldr.svg
+   :target: https://pypi.python.org/pypi/snippy-tldr
+
+.. |badge-pys| image:: https://img.shields.io/pypi/status/snippy-tldr.svg
+   :target: https://pypi.python.org/pypi/snippy-tldr
+
+.. |badge-pyv| image:: https://img.shields.io/pypi/pyversions/snippy-tldr.svg
+   :target: https://pypi.python.org/pypi/snippy-tldr
+
+.. |badge-cov| image:: https://codecov.io/gh/heilaaks/snippy-tldr/branch/master/graph/badge.svg
+   :target: https://codecov.io/gh/heilaaks/snippy-tldr
+
+.. |badge-docs| image:: https://readthedocs.org/projects/snippy-tldr/badge/?version=latest
+   :target: http://snippy-tldr.readthedocs.io/en/latest/?badge=latest
+
+.. |badge-build| image:: https://travis-ci.org/heilaaks/snippy-tldr.svg?branch=master
+   :target: https://travis-ci.org/heilaaks/snippy-tldr
+
+.. |badge-black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/python/black
+
+
