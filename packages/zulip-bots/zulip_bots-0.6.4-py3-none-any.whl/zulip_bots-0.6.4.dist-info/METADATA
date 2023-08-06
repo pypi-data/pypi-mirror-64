@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: zulip-bots
+Version: 0.6.4
+Summary: Zulip's Bot framework
+Home-page: https://www.zulip.org/
+Author: Zulip Open Source Project
+Author-email: zulip-devel@googlegroups.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Communications :: Chat
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: pip
+Requires-Dist: zulip
+Requires-Dist: html2text
+Requires-Dist: lxml
+Requires-Dist: BeautifulSoup4
+
+UNKNOWN
+
+
