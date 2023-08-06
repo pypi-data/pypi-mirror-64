@@ -1,0 +1,7 @@
+README.md
+setup.py
+xslearn.egg-info/PKG-INFO
+xslearn.egg-info/SOURCES.txt
+xslearn.egg-info/dependency_links.txt
+xslearn.egg-info/requires.txt
+xslearn.egg-info/top_level.txt
