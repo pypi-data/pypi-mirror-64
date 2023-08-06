@@ -1,0 +1,5 @@
+setup.py
+schemadict.egg-info/PKG-INFO
+schemadict.egg-info/SOURCES.txt
+schemadict.egg-info/dependency_links.txt
+schemadict.egg-info/top_level.txt
