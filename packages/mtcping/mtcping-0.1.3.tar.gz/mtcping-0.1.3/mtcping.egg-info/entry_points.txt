@@ -1,0 +1,3 @@
+[console_scripts]
+mtcping = mtcping:do_mtcping
+
