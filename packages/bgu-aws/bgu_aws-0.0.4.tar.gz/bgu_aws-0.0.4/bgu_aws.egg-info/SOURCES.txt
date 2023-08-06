@@ -1,0 +1,10 @@
+README.md
+setup.py
+bgu_aws/__init__.py
+bgu_aws/launch_aws.py
+bgu_aws/manage_instance.py
+bgu_aws.egg-info/PKG-INFO
+bgu_aws.egg-info/SOURCES.txt
+bgu_aws.egg-info/dependency_links.txt
+bgu_aws.egg-info/requires.txt
+bgu_aws.egg-info/top_level.txt
