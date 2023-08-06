@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+dispatch/__init__.py
+dispatch/_base.py
+dispatch/_meta.py
+dispatch/dispatch.py
+dispatch/exceptions.py
+dispatch/flags.py
+dispatch/types.py
+py_dispatch.egg-info/PKG-INFO
+py_dispatch.egg-info/SOURCES.txt
+py_dispatch.egg-info/dependency_links.txt
+py_dispatch.egg-info/requires.txt
+py_dispatch.egg-info/top_level.txt
