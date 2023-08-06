@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-runscript
+Version: 0.1.0
+Summary: Django command for running custom scripts with django environment.
+Home-page: https://github.com/retxxxirt/django-runscript
+Author: retxxxirt
+Author-email: retxxirt@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: django runscript,django,django scripts,django management
+Platform: UNKNOWN
