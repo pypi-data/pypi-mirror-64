@@ -1,0 +1,8 @@
+README.md
+setup.py
+paceutils/__init__.py
+paceutils.egg-info/PKG-INFO
+paceutils.egg-info/SOURCES.txt
+paceutils.egg-info/dependency_links.txt
+paceutils.egg-info/requires.txt
+paceutils.egg-info/top_level.txt
