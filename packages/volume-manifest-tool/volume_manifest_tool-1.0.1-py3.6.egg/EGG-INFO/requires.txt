@@ -1,0 +1,6 @@
+boto3
+requests
+lxml
+pillow
+s3transfer
+botocore
