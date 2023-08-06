@@ -1,0 +1,4 @@
+anyio==1.*
+
+[:python_version < "3.8"]
+typing-extensions==3.7.*
