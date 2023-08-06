@@ -1,0 +1,7 @@
+include CHANGELOG.txt
+include LICENSE.txt
+include MANIFEST.in
+include README.md
+
+include doc/*.ipynb
+include RigolWFM/wfmconvert
