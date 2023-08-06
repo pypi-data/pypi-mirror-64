@@ -1,0 +1,10 @@
+README.md
+setup.py
+inisync/__init__.py
+inisync/__main__.py
+inisync/inisync.py
+inisync.egg-info/PKG-INFO
+inisync.egg-info/SOURCES.txt
+inisync.egg-info/dependency_links.txt
+inisync.egg-info/entry_points.txt
+inisync.egg-info/top_level.txt
