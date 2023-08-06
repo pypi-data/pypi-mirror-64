@@ -1,0 +1,13 @@
+muid/__init__.py,sha256=Pi-XOZKNUIs9LKUOWP4nF7rBFRmFNvneoVWDVYx3lFU,218
+muid/animals.json,sha256=aB7OfKmt-NtnQdUJ7r3GjmxS2j3BWsCZj7YNDzTg4pg,10141026
+muid/corpus.py,sha256=zEYxgBfs9TO0bi-yNiD7PVAkIhnDSExvOGcOzODRDI4,1417
+muid/crypto.py,sha256=Z1gy_KOUmm3B1uway-kUfzVDPUx9lBlPft-KYxEHUe0,536
+muid/explanation.py,sha256=RxUeEA4xAPou8xbagjQMnFIs1eiHONS2RMR_JFUyqLE,24674
+muid/mining.py,sha256=ElRZdO4Xiv8m853lqJpeCXStoxtzmXL20HWlSep3Xko,4622
+muid/stupid_dog_tricks.py,sha256=JEg8Hb6LTR34ZBDSjDiGzh8OKfPypWArqZVS5FTohjk,556
+muid/validation.py,sha256=4acBc2ssJy0lxjbbSjLpB1sdeV-hdTHplRfl1QjNSv0,338
+muid-0.4.4.dist-info/METADATA,sha256=gOGe6hE8MxxOA1StqRWbz5sMTGT6hehctqSaVR8xqmc,3602
+muid-0.4.4.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+muid-0.4.4.dist-info/entry_points.txt,sha256=8TARaD5ygbWPE7cEU_xFv8WxANurjmh1ylavk9obubs,45
+muid-0.4.4.dist-info/top_level.txt,sha256=MZrgmWTdG-siWGRwfqrV-wsUgZIe5dGYgnpKL_j8es0,5
+muid-0.4.4.dist-info/RECORD,,
