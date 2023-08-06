@@ -1,0 +1,12 @@
+memory_profiler
+numpydoc
+pytest
+pytest-cov
+pytest-flake8
+pytest-pylint
+pytest-watch
+sphinx
+sphinx-autoapi
+sphinx_rtd_theme
+sphinxcontrib-versioning
+yapf>=0.29.0
