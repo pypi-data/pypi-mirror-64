@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ass2srt
+Version: 0.0.2
+Summary: A small example package
+Home-page: https://github.com/zcq100/ass2srt
+Author: zcq100
+Author-email: zcq100@gmail.com
+License: UNKNOWN
+Description: ## ass2srt
+        
+        
+        $ python ass2srt.py -h
+        ```
+        usage: ass2srt.py [-h] [-s {zh,en,fr,de}] [-l {0,1,2}] [-i] file
+        
+        positional arguments:
+          file                  .ass file to convert
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -s {zh,en,fr,de}, --suffix {zh,en,fr,de}
+                                add suffix to subtitles name
+          -l {0,1,2}, --line {0,1,2}
+                                keep double subtitles
+          -i, --info            display subtitles infomation
+        
+        ```
+        
+        ### Example :
+        ```
+        python ass2srt.py Movies.S01.E01.Name.ass
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
