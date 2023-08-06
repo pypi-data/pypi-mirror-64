@@ -1,0 +1,8 @@
+README.md
+setup.py
+personal_grimoire/__init__.py
+personal_grimoire/debug.py
+personal_grimoire.egg-info/PKG-INFO
+personal_grimoire.egg-info/SOURCES.txt
+personal_grimoire.egg-info/dependency_links.txt
+personal_grimoire.egg-info/top_level.txt
