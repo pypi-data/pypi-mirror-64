@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_wjn/Binomialdistribution.py
+distributions_wjn/Gaussiandistribution.py
+distributions_wjn/Generaldistribution.py
+distributions_wjn/__init__.py
+distributions_wjn.egg-info/PKG-INFO
+distributions_wjn.egg-info/SOURCES.txt
+distributions_wjn.egg-info/dependency_links.txt
+distributions_wjn.egg-info/not-zip-safe
+distributions_wjn.egg-info/top_level.txt
