@@ -1,0 +1,7 @@
+keras
+tensorflow>=1.12
+numpy>=1.12
+pandas
+sklearn
+PyQt5==5.10
+ete3
