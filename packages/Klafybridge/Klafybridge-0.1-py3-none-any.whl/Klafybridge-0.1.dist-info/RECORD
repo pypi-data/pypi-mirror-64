@@ -1,0 +1,17 @@
+Klafybridge-0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+Klafybridge-0.1.dist-info/METADATA,sha256=TQ0UPGbGuOukB61X7V4HppkD9yWzjp2xxGbqml73_MM,1378
+Klafybridge-0.1.dist-info/RECORD,,
+Klafybridge-0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+Klafybridge-0.1.dist-info/entry_points.txt,sha256=SykggrWGAZoOzW0KwL0yRsMIKq_SpekT2llvQfopiF4,50
+Klafybridge-0.1.dist-info/metadata.json,sha256=Fe_wZ4FnlAdu1ypHPDEi2rmMy_KQScdBiL1BdDFzrLU,1516
+Klafybridge-0.1.dist-info/top_level.txt,sha256=QsML9cxevBOrKwzmiIbTKBmnVjJyLLxFt62h7BzE99Q,12
+klafybridge/__init__.py,sha256=SqcIOyPtl6_RX2IwxC8pdL6iPm24amBhNlZhwOiVBl0,25
+klafybridge/__main__.py,sha256=ubt6XyZvcHwdjCQ90B_U4MeP-3YJduz5GWUC9yOgkrg,27
+klafybridge/bridge.py,sha256=ylVrIFbjd-ixsynquQ5mFFMjkR5rpX9JRrW_Uvh4NSY,763
+klafybridge/messages.py,sha256=H8pmOUxNTVB_y0gMcqR2mW7QEysUHeMs9dlAE7V9Y9Q,764
+klafybridge/irc_bot/__init__.py,sha256=jIB_A21BGC5AzbHLPMvWIWXNiwGf0NZP3t0w2gmtitA,27
+klafybridge/irc_bot/__main__.py,sha256=gwrSTznOG_LNwwbz8aYR7Rx3SCmCOqzezd9Ygj_I10A,99
+klafybridge/irc_bot/bot.py,sha256=TjfSMnvBDlTQ-ul73Ho-OjK00TGCpgdZCSbbhlEj8Fs,6396
+klafybridge/tg_bot/__init__.py,sha256=jIB_A21BGC5AzbHLPMvWIWXNiwGf0NZP3t0w2gmtitA,27
+klafybridge/tg_bot/__main__.py,sha256=gwrSTznOG_LNwwbz8aYR7Rx3SCmCOqzezd9Ygj_I10A,99
+klafybridge/tg_bot/bot.py,sha256=ceXDxWAPGLfA4BtoaEcWnnKEr1kdn-8_hj9YfE_M5bc,8262
