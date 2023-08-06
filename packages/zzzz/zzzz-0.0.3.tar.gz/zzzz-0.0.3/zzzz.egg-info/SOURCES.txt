@@ -1,0 +1,7 @@
+setup.py
+zzzz.py
+zzzz.egg-info/PKG-INFO
+zzzz.egg-info/SOURCES.txt
+zzzz.egg-info/dependency_links.txt
+zzzz.egg-info/entry_points.txt
+zzzz.egg-info/top_level.txt
