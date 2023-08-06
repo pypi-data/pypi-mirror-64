@@ -1,0 +1,9 @@
+filter_illumina_index/__init__.py,sha256=z5zk2MJ2uaKiFDv7cGb12EMTRJGMdoPUOKgAeKM7byQ,30
+filter_illumina_index/filter_illumina_index.py,sha256=ew760vEBjuRNeWY8z4I_oHerjkxDzIHaIghIC3f_SQA,8684
+filter_illumina_index-1.0.3.post2.data/data/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+filter_illumina_index-1.0.3.post2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+filter_illumina_index-1.0.3.post2.dist-info/METADATA,sha256=2JL2GtDKlmXUXXSm9n_H40Cz3fLYfxnfJdxTQ2Hh7is,5161
+filter_illumina_index-1.0.3.post2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+filter_illumina_index-1.0.3.post2.dist-info/entry_points.txt,sha256=OUNLZ0_5GR2hnJbronUGWkE8h5uhLVy9-9Ghwns3xRc,92
+filter_illumina_index-1.0.3.post2.dist-info/top_level.txt,sha256=G8-5nJB78debQKSaQdZ2ihq1IBt0tSrEkUpof78pz2g,22
+filter_illumina_index-1.0.3.post2.dist-info/RECORD,,
