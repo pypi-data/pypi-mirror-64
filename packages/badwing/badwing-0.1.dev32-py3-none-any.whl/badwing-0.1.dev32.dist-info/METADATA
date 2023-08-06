@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: badwing
+Version: 0.1.dev32
+Summary: Skateboarder/Platformer/Lepidopterist Game using Arcade & Pymunk
+Home-page: https://github.com/kfields/badwing
+Author: Kurtis Fields
+Author-email: kurtisfields@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (==7.0.0)
+Requires-Dist: PyGLM (==1.1.8)
+Requires-Dist: arcade (==2.3.9)
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: cffi (==1.14.0)
+Requires-Dist: click (==7.1.1)
+Requires-Dist: numpy (==1.18.2)
+Requires-Dist: pycparser (==2.20)
+Requires-Dist: pyglet (==1.5.1)
+Requires-Dist: pymunk (==5.6.0)
+Requires-Dist: pytiled-parser (==0.9.3)
+
+# BadWing :butterfly:
+
+Skateboarder/Platformer/Lepidopterist Game using Arcade & Pymunk
+
+## Installation
+
+### From PyPI
+
+#### TLDR - do this at your own risk
+
+        pip install badwing
+
+#### Recommended - pipX
+
+If you don't already have it installed go to https://pypi.org/project/pipx/ for instructions
+
+        pipx install badwing
+
+#### And then run it!
+
+        badwing run
+
+
+### From GitHub
+
+Navigate to a directory where you keep your software projects
+
+        cd <myprojects>
+
+Clone the repository
+
+        git clone https://github.com/kfields/badwing.git
+
+Navigate to the new directory which contains the repository
+
+        cd badwing
+
+Create a Python 3 virtual environment called `env`
+
+        python3 -m venv env
+
+Activate the environment
+
+        source env/bin/activate
+
+Install required packages
+
+        pip install -r requirements.txt
+
+
+## Run
+
+Activate the virtual environment, if not already active
+
+        cd badwing
+        source env/bin/activate
+
+Run the game
+
+        python run_game.py
+
+## Controls
+
+WASD + cursor keys.  Press up to do an Ollie! :)
+
