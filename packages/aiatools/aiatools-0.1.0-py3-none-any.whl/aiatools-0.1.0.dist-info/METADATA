@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aiatools
+Version: 0.1.0
+Summary: Tools for extracting information from App Inventor AIA files
+Home-page: https://github.com/mit-cml/aiatools
+Author: Evan W. Patton
+Author-email: ewpatton@mit.edu
+License: GPLv3+
+Keywords: App Inventor AIA extraction analysis toolkit
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Requires-Dist: jprops (>=2.0.2)
+
+UNKNOWN
+
+
