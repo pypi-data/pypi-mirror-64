@@ -1,0 +1,13 @@
+paddle_serving_app/__init__.py,sha256=RpX7OZN_27yPdDGEzWF72-PzcBqMDPmWXE88RjalWC4,670
+paddle_serving_app/version.py,sha256=e6jJosA2T9g0WpOjeRWUdgra1v4cm_A_vUDGxc2mAWc,681
+paddle_serving_app/reader/__init__.py,sha256=nuJpzcbJHZUDUU55dnUqBHYSKYx06gWDUNlYjLEvW0M,612
+paddle_serving_app/reader/batching.py,sha256=dCKS0Fj4_bctiErPDf8eiH41TDBBo1ZwEjgqDQrjOO0,4339
+paddle_serving_app/reader/bert_base_reader.py,sha256=RZRODeTNLKq4AKDGay7B1G9LArEbQpthnSVNYC8c42E,856
+paddle_serving_app/reader/chinese_bert_reader.py,sha256=ObLALtjrWWNQEwUpHA2KMGV4j8pqzE_0tqfdjagS6tU,4690
+paddle_serving_app/reader/reader.py,sha256=ML-cuIhbY-aUHD-jP_nUbTar-JjlEBoMKmzh5UIGhVw,818
+paddle_serving_app/reader/tokenization.py,sha256=OmrqDJdp-7bVhhl00oLZJV8DQHHapwicedLroJaD73I,15285
+paddle_serving_app/utils/__init__.py,sha256=nuJpzcbJHZUDUU55dnUqBHYSKYx06gWDUNlYjLEvW0M,612
+paddle_serving_app-0.0.1.dist-info/METADATA,sha256=6_Zu5n2GGWWLnJa9TxqVS6BggT9E_dPiSEtbcRXyixw,1262
+paddle_serving_app-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+paddle_serving_app-0.0.1.dist-info/top_level.txt,sha256=9IP90cBhGzkaKNZQIf42G0uvC7SUzW-I0_dTd3d3iI0,19
+paddle_serving_app-0.0.1.dist-info/RECORD,,
