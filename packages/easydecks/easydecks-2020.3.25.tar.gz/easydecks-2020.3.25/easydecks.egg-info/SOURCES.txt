@@ -1,0 +1,13 @@
+setup.cfg
+setup.py
+easydecks/__init__.py
+easydecks/deck.py
+easydecks/version.py
+easydecks.egg-info/PKG-INFO
+easydecks.egg-info/SOURCES.txt
+easydecks.egg-info/dependency_links.txt
+easydecks.egg-info/requires.txt
+easydecks.egg-info/top_level.txt
+easydecks/cards/__init__.py
+easydecks/cards/default/__init__.py
+easydecks/cards/verbs/__init__.py

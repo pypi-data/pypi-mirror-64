@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: easydecks
+Version: 2020.3.25
+Summary: Wrapper for the genanki (with benefits).
+Home-page: UNKNOWN
+Author: Oleg Butuzov
+Author-email: butuzov@made.ua
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: OS Independent
+Classifier: Intended Audience :: Education
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: Education
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
