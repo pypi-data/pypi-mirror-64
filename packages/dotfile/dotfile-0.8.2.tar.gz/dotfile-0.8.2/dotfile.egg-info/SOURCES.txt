@@ -1,0 +1,11 @@
+README.md
+setup.py
+dotfile/__init__.py
+dotfile/config.py
+dotfile/dot.py
+dotfile.egg-info/PKG-INFO
+dotfile.egg-info/SOURCES.txt
+dotfile.egg-info/dependency_links.txt
+dotfile.egg-info/entry_points.txt
+dotfile.egg-info/requires.txt
+dotfile.egg-info/top_level.txt
