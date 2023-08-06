@@ -1,0 +1,9 @@
+aws_iam_tester/__init__.py,sha256=9mDxgYuFf5UT4uF3FXB0RY_W0oImm3EKSvsWwmv0rtQ,249
+aws_iam_tester/__main__.py,sha256=VlwlDPUFQme_ppKS7d1cN-_ww3xpMR2WGOPVqVUcMZo,29
+aws_iam_tester/cli.py,sha256=jSFS-7fWgG6s1hpQXhyFiwST4hwtlDJLbwBZBSZ65Io,16879
+pyproject.toml,sha256=OAcMUoKa7ImKKtzmE9vcGWNc3rOyNhfMnsJ-amTzDrE,1067
+aws_iam_tester-0.1.2.dist-info/entry_points.txt,sha256=rOMPwELhP1Eq87IJQGZG8_2AJDmEGTwlsDFdO_oDr5o,58
+aws_iam_tester-0.1.2.dist-info/LICENSE,sha256=SQ7Nc3B6fBsIw4mKK5fLG3OBS7l9mBbXg1nHggW5bqE,1069
+aws_iam_tester-0.1.2.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+aws_iam_tester-0.1.2.dist-info/METADATA,sha256=69vGFxJU9y14SwGdRq2W8Qo4RHBk5aIdhwCpG6_utqs,7172
+aws_iam_tester-0.1.2.dist-info/RECORD,,
