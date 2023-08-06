@@ -1,0 +1,14 @@
+include README
+include setup.py
+include src/exiv2wrapper.hpp
+include src/exiv2wrapper.cpp
+include src/exiv2wrapper_python.cpp
+include src/pyexiv2/__init__.py
+include src/pyexiv2/exif.py
+include src/pyexiv2/iptc.py
+include src/pyexiv2/metadata.py
+include src/pyexiv2/preview.py
+include src/pyexiv2/utils.py
+include src/pyexiv2/xmp.py
+exclude test/*
+
