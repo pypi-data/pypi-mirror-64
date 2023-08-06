@@ -1,0 +1,3 @@
+[console_scripts]
+fxsim = fxsim.simulator:imp
+
