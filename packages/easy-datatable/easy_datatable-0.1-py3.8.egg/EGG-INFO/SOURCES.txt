@@ -1,0 +1,6 @@
+easy_datatable.py
+setup.py
+easy_datatable.egg-info/PKG-INFO
+easy_datatable.egg-info/SOURCES.txt
+easy_datatable.egg-info/dependency_links.txt
+easy_datatable.egg-info/top_level.txt
