@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+twitchAPI.egg-info/PKG-INFO
+twitchAPI.egg-info/SOURCES.txt
+twitchAPI.egg-info/dependency_links.txt
+twitchAPI.egg-info/top_level.txt
+twitchAPI.egg-info/zip-safe
