@@ -1,0 +1,3 @@
+[console_scripts]
+run_graph_studio=fn_graph_studio.cli:run_studio_command
+
