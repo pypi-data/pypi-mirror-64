@@ -1,0 +1,8 @@
+README.md
+setup.py
+xtproductjson/__init__.py
+xtproductjson/xtproductjson.py
+xtproductjson.egg-info/PKG-INFO
+xtproductjson.egg-info/SOURCES.txt
+xtproductjson.egg-info/dependency_links.txt
+xtproductjson.egg-info/top_level.txt
