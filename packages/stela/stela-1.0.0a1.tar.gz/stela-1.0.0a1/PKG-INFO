@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: stela
+Version: 1.0.0a1
+Summary: Find and read your project configuration files easily
+License: GPL-3.0
+Author: Chris Maillefaud
+Author-email: chrismaillefaud@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: dataclasses; python_version >= "3.6" and python_version < "4.0"
+Requires-Dist: loguru
+Requires-Dist: pyyaml
+Requires-Dist: rootpath
+Requires-Dist: scalpl
+Requires-Dist: toml
