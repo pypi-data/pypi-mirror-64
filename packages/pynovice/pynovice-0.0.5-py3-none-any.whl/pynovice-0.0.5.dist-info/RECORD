@@ -1,0 +1,9 @@
+pynovice/__init__.py,sha256=OJQunZfSWkBwHHYKFDo_SZVU32as2JT2XNHdfwKCZIs,166
+pynovice/util.py,sha256=hKjQu7Wz_VOl2EySuYuFuR31m0bktNaTFaz6rtQOIiE,665
+pynovice/bert_extracter/__init__.py,sha256=9dJqfPpAvuk4ifo0c41zxDpm17kxrLEPTf2n1Bc-jpc,185
+pynovice/bert_extracter/bert_extracter.py,sha256=AxR5F_wCIP7gDb-DWjS_A6su-KMJLx0hOttwIT2PuTU,2799
+pynovice-0.0.5.dist-info/LICENSE,sha256=P1BkiWgPfQ07e8gA_wxi2Vzlp7n_9so3RrN9nU7O1cM,1074
+pynovice-0.0.5.dist-info/METADATA,sha256=2zcHEoqSZSpZHo81bHHI_veWcF3uOB8RqO_lbqyGuJs,531
+pynovice-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pynovice-0.0.5.dist-info/top_level.txt,sha256=LJ1j6AYM1XIFOFogVh6NT9GzsR30svsecJbHdX_ol8A,9
+pynovice-0.0.5.dist-info/RECORD,,
