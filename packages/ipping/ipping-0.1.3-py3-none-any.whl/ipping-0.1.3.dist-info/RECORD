@@ -1,0 +1,11 @@
+ipping/__init__.py,sha256=KLOqgnMCwwsoQ3Rf_EqtFzQhCXn4spMVtdzQVrevBDo,48
+ipping/__main__.py,sha256=oOONLMKCsj9OcHxmBJjf7JklkP2RSP7S0MwS8uCNLYA,1754
+ipping/__meta__.py,sha256=FEnQOrqjqVCnwLMGBoqvBrr5pRo4bFEJy1JiznJldTo,104
+ipping/protocol.py,sha256=5gXZgE5c7f9yHWvXoXlTQBmaQ2e5GfyQsC_yMBRYIqI,443
+ipping/udp.py,sha256=CLpiSCobPyh58aWxNZUPAbOd2vwXyn-IVt2cqNS-0K4,5332
+ipping-0.1.3.dist-info/LICENSE,sha256=mkCVmL-KiAlt7LHLwndxzKFJJgr8pMCmokh2c6OYhU4,1063
+ipping-0.1.3.dist-info/METADATA,sha256=Me1NgFZbXWx1u1dQ1bnELkI9hpYx8iKXk00H9akQ2TI,2108
+ipping-0.1.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+ipping-0.1.3.dist-info/entry_points.txt,sha256=bX1JgQNsLVzKOsmSirEaf4KebeMF7hy89WE2ASZeXtc,49
+ipping-0.1.3.dist-info/top_level.txt,sha256=1TbnB-6fUNQsexULBxpXDAxkUiIUHdWtZicdSLUGRMo,7
+ipping-0.1.3.dist-info/RECORD,,
