@@ -1,0 +1,11 @@
+README.md
+setup.py
+cachedcomplete/__init__.py
+cachedcomplete/main_script.py
+cachedcomplete/parser_cache.py
+cachedcomplete.egg-info/PKG-INFO
+cachedcomplete.egg-info/SOURCES.txt
+cachedcomplete.egg-info/dependency_links.txt
+cachedcomplete.egg-info/not-zip-safe
+cachedcomplete.egg-info/requires.txt
+cachedcomplete.egg-info/top_level.txt
