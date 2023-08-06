@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: carbspec
+Version: 0.0.1
+Summary: Tools for calculating pH and Alkalinity from spectrophotometric data.
+Home-page: https://github.com/oscarbranson/carbspec
+Author: Oscar Branson
+Author-email: ob266@cam.ac.uk
+License: MIT
+Keywords: science,chemistry,oceanography,carbon
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: uncertainties
+
+UNKNOWN
+
+
