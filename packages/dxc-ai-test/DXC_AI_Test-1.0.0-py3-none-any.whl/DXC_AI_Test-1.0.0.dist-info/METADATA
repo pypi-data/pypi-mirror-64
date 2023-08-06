@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: DXC-AI-Test
+Version: 1.0.0
+Summary: A Python package to add two numbers.
+Home-page: UNKNOWN
+Author: DXC
+Author-email: pulagamnkr@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: json
+Requires-Dist: pandas
+Requires-Dist: doctest
+Requires-Dist: requests
+Requires-Dist: datetime
+Requires-Dist: pymongo
+Requires-Dist: auto-ml
+Requires-Dist: sklearn
+Requires-Dist: os
+Requires-Dist: pickle
+Requires-Dist: Algorithmia
+Requires-Dist: shutil
+Requires-Dist: urllib
+Requires-Dist: flatten-json
+Requires-Dist: janitor
+Requires-Dist: ftfy
+Requires-Dist: nltk
+Requires-Dist: scrubadub
+Requires-Dist: arrow
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: math
+Requires-Dist: datacleaner
+Requires-Dist: JIRA
+Requires-Dist: gitpython
+Requires-Dist: pyjanitor
+Requires-Dist: yellowbrick
+Requires-Dist: missingno
+
+# DXC AI Package
+
+A Python package for DXC AI projects .
+
+## Usage
+
+DXC AI projects package
+
+```
+pip install DXC_AI_Test
+```
+
