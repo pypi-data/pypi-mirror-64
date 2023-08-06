@@ -1,0 +1,9 @@
+numpy
+pandas
+scipy
+
+[dev]
+hypothesis
+pre-commit
+pylint
+mypy
