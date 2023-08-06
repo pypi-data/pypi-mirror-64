@@ -1,0 +1,8 @@
+README.md
+setup.py
+pipmap/__init__.py
+pipmap/mapper.py
+pipmap.egg-info/PKG-INFO
+pipmap.egg-info/SOURCES.txt
+pipmap.egg-info/dependency_links.txt
+pipmap.egg-info/top_level.txt
