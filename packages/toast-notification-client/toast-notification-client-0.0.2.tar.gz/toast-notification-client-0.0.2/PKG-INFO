@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: toast-notification-client
+Version: 0.0.2
+Summary: Toast cloud Notification RESTful API Client for Python User.
+Home-page: https://github.com/dohyungp/toast-notification-client
+Author: Dohyung Park
+Author-email: dohyung.prk@gmail.com
+License: UNKNOWN
+Description: # Toast Notification REST Client
+        
+        Toast cloud Notification RESTful API Client for Python User.
+        
+        - Not supported SLA
+        - Current only supported SMS/MMS yet
+        - Default REST API Version is V2.2
+        
+        
+        ## Install
+        
+        ```py
+        pip install toast-notification-client
+        ```
+        
+        ## Function
+        
+        ### Initalize
+        
+        ```python
+        from toast import ToastSMS
+        tos = ToastSMS("<API-KEY>")
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
