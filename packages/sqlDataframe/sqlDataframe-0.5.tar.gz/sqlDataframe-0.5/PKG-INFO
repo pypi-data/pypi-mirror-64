@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: sqlDataframe
+Version: 0.5
+Summary: This is an idea to further simplify the process of fetching/storing data into structured databases using pandas
+Home-page: https://github.com/sehan10/SQL_Pandas.git
+Author: Arsal Rahim | Sehan Ahmed Farooqui
+Author-email: arsalrahim1994@gmail.com
+License: MIT
+Download-URL: https://github.com/sehan10/SQL_Pandas/archive/0.1.tar.gz
+Description: README.md
+Keywords: Pandas,Dataframe,Structured databases,SQL query
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
