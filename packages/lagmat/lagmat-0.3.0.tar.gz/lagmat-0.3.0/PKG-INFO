@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: lagmat
+Version: 0.3.0
+Summary: Lagmatrix. Create array with time-lagged copies of the features
+Home-page: http://github.com/ulf1/lagmat
+Author: Ulf Hamster
+Author-email: 554c46@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
