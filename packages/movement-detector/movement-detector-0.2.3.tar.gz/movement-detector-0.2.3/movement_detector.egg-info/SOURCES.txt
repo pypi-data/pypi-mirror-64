@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+movement_detector/__init__.py
+movement_detector/analysis.py
+movement_detector/detectors.py
+movement_detector/np_utils.py
+movement_detector/utils.py
+movement_detector/video.py
+movement_detector.egg-info/PKG-INFO
+movement_detector.egg-info/SOURCES.txt
+movement_detector.egg-info/dependency_links.txt
+movement_detector.egg-info/requires.txt
+movement_detector.egg-info/top_level.txt
