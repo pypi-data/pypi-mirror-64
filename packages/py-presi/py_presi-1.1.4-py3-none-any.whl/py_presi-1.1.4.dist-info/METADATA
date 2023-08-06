@@ -1,0 +1,381 @@
+Metadata-Version: 2.1
+Name: py-presi
+Version: 1.1.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: click (==7.1.1)
+Requires-Dist: coverage (==5.0.3)
+Requires-Dist: darkslide (==5.1.0)
+Requires-Dist: docutils (==0.16)
+Requires-Dist: entrypoints (==0.3)
+Requires-Dist: flake8 (==3.7.9)
+Requires-Dist: importlib-metadata (==1.5.0)
+Requires-Dist: jinja2 (==2.11.1)
+Requires-Dist: markdown (==3.2.1)
+Requires-Dist: markupsafe (==1.1.1)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: more-itertools (==8.2.0)
+Requires-Dist: packaging (==20.3)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pycodestyle (==2.5.0)
+Requires-Dist: pyflakes (==2.1.1)
+Requires-Dist: pygments (==2.6.1)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pytest-cov (==2.8.1)
+Requires-Dist: pytest (==5.3.5)
+Requires-Dist: qrcode (==6.1)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: zipp (==3.1.0)
+
+[![pipeline status](https://gitlab.com/delijati/py-presi/badges/master/pipeline.svg)](https://gitlab.com/delijati/py-presi/commits/master)
+[![coverage report](https://gitlab.com/delijati/py-presi/badges/master/coverage.svg)](https://gitlab.com/delijati/py-presi/commits/master)
+
+# Python best practice
+
+- [Pypacking](https://packaging.python.org)
+- [PEP8](https://www.python.org/dev/peps/pep-0008/)
+- [GitlabCI/CD](https://docs.gitlab.com/ee/ci/)
+
+---
+
+# Import this
+
+    !python
+    >>> import this
+    The Zen of Python, by Tim Peters
+
+    Beautiful is better than ugly.
+    Explicit is better than implicit.
+    Simple is better than complex.
+    Complex is better than complicated.
+    Flat is better than nested.
+    Sparse is better than dense.
+    Readability counts.
+    Special cases aren't special enough to break the rules.
+    Although practicality beats purity.
+    Errors should never pass silently.
+    Unless explicitly silenced.
+    In the face of ambiguity, refuse the temptation to guess.
+    There should be one-- and preferably only one --obvious way to do it.
+    Although that way may not be obvious at first unless you're Dutch.
+    Now is better than never.
+    Although never is often better than *right* now.
+    If the implementation is hard to explain, it's a bad idea.
+    If the implementation is easy to explain, it may be a good idea.
+    Namespaces are one honking great idea -- let's do more of those!
+
+---
+
+# setup.py
+
+Why should you use a setup.py?
+
+    !python
+    from setuptools import find_packages, setup
+
+    version = "0.0.1"
+
+    setup(
+        name="py_presi",
+        version=version,
+        packages=find_packages(),
+        include_package_data=True,
+        zip_safe=True,
+        install_requires=["pytest", "click", "darkslide"],
+        entry_points={"console_scripts": [
+            "pp-build = py_presi.__main__:build"
+        ]},
+    )
+
+Usage:
+
+    !python
+    import py_presi.build
+    py_presi.build.build()
+
+---
+
+# Structure
+
+How is a package structured?
+
+    !bash
+    % tree
+    .
+    ├── CHANGES.md
+    ├── Dockerfile
+    ├── LICENSE
+    ├── py_presi
+    │   ├── build.py
+    │   ├── __init__.py
+    │   └── __main__.py
+    ├── README.md
+    ├── requirements.in
+    ├── requirements.txt
+    ├── setup.py
+    └── test
+        └── test_me.py
+
+---
+
+# Building && uploading
+
+What is virtualenv, pip, pipenv, setuptools, pypi?
+
+    !bash
+    $ virtualenv env
+    $ source env/bin/activate
+
+    $ python setup.py install
+    $ python setup.py develop
+    $ pip install .
+    $ pip install -e .
+
+    # console_script
+    $ pp-build
+
+    # create egg sdist wheel and upload
+    $ python setup.py sdist bdist_wheel bdist_egg
+    $ twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+
+---
+
+# Versioning
+
+How should package be versioned?
+
+[Semantic Versioning](https://semver.org/)
+
+    !bash
+    $ bumpversion [major|minor|patch]
+    $ cat .bumpversion.cfg 
+    [bumpversion]
+    current_version = 0.0.1
+    commit = True
+    tag = True
+
+    [bumpversion:file:setup.py]
+
+Example:
+
+    !bash
+    # add --dry-run to test
+    $ bump2version --verbose patch --tag-name "{new_version}"
+    $ git push && git push --tags
+
+---
+
+# CHANGES
+
+How to track changes?
+
+    !bash
+    % cat CHANGES.md 
+    **unreleased**
+
+    - Update docs reflect new structure
+    - Add a CHANGES.md
+
+    **0.0.2**
+
+    - Added Dockerfile [jod]
+    - Added pip-tools
+    - Added gitlab registry
+
+---
+
+# Libraries
+
+Why use libraries and not put all code into the repo?
+
+- [Do one thing and do it well](https://en.wikipedia.org/wiki/Unix_philosophy#Do_One_Thing_and_Do_It_Well)
+- DRY. Don't repeat yourself!
+- Scope is much smaller and tailored to usecase
+- Self sustained tests
+
+e.g. [marshmallow](https://github.com/marshmallow-code/marshmallow)
+
+---
+
+# PEP8
+
+Why should all code look the same?
+
+One of Guido's key insights is that code is **read much more often** than it is
+written. The guidelines provided here are intended to improve the readability
+of code and make it consistent across the wide spectrum of Python code. As PEP
+20 says, "Readability counts".
+
+[PEP8](https://www.python.org/dev/peps/pep-0008/)
+
+---
+
+# Autoformatter
+
+- Autopep8
+- Black (we decided to use that one)
+- Yapf
+
+Example:
+
+    !bash
+    % black py-presi 
+    reformatted /py-presi/py-presi/test/test_me.py
+    reformatted /py-presi/py-presi/setup.py
+    reformatted /py-presi/py-presi/py_presi/__main__.py
+    All done! ✨ 🍰 ✨
+    3 files reformatted, 1 file left unchanged.
+
+---
+
+# Flake8
+
+Tool For Style Guide Enforcement
+
+    !bash
+    $ pip install flake8
+    $ flake8 check.py
+    $ cat .flake8
+    [flake8]
+    ignore = E501 W503 W504
+    max-line-length = 88
+
+Add ignore to code
+
+    !python
+    import superlonguglything # noqa
+
+Add add git pre-commit-hook
+
+    !bash
+    $ flake8 --install-hook git
+    $ git config --bool flake8.strict true
+
+---
+
+# Test && Coverage
+
+Run test and create coverage report as html
+
+    !bash
+    $ pip install pytest pytest-cov
+    $ pytest test --cov py_presi --cov-report html --cov-report term
+    $ firefox htmlcov/index.html
+
+[Coverage](https://delijati.gitlab.io/py-presi/htmlcov)
+
+---
+
+# GitlabCI/CD
+
+Gitlab hooks `.gitlab-ci.yml` to test and deploy code
+
+    !yaml
+    test:
+      script:
+        - pytest test --cov py_presi --cov-report term --cov-report html
+        - flake8 test py_presi
+      coverage: '/^TOTAL\s+\d+\s+\d+\s+(\d+\%)$/'
+
+    deploy-pypi:
+      script:
+        - pip install twine
+        - twine upload --repository-url https://NOT_EXISTING_YET dist/*
+      when: manual
+
+    deploy-docker:
+      only:
+        - tags
+
+---
+
+# README
+
+- Add real description of the service
+- Add gitlab badges
+- Add install, deployment instruction
+- If a library add sphinx documentation
+
+Sphinx e.g.
+
+- [requests/sphinx/source](https://github.com/psf/requests/tree/master/docs)
+- [request/sphinx](https://requests.readthedocs.io/en/master/)
+- [sphinx/documentation](http://www.sphinx-doc.org/en/master/)
+
+---
+
+# Dependencies
+
+Pin all dependencies also inherited one
+
+    !bash
+    $ pip install pip-tools
+    $ # manage here your direct dependencies
+    $ vim requirements.in
+    $ # run pip-compile to generate requirements.txt or add remove dependencies
+    $ pip-compile
+    $ # upgrade all dependencies
+    $ pip-compile --upgrade
+
+Excerpt from `requirements.txt`
+
+    # This file is autogenerated by pip-compile
+    attrs==19.3.0             # via pytest
+    click==7.1.1              # via -r requirements.in
+    coverage==5.0.3           # via pytest-cov
+    darkslide==5.1.0          # via -r requirements.in
+
+---
+
+# Docker health check
+
+How to run docker health checks?
+
+    !docker
+    HEALTHCHECK --interval=5s --timeout=3s \
+      CMD curl -f http://0.0.0.0:8080/ || exit 1
+
+Check health:
+
+    !bash
+    $ docker inspect --format "{{json .State.Health }}" <CID> | jq
+    {
+      "Status": "unhealthy",
+      "FailingStreak": 65,
+      "Log": [
+    ...
+
+---
+
+# Build presentation
+
+Install && build:
+
+    !bash
+    $ pip install -e .
+    $ pp-build
+    $ firefox index.html
+
+Or in docker:
+
+    !bash
+    $ docker build -t app .
+    $ docker run -ti --rm -p 8080:8080 app
+    $ firefox http://0.0.0.0:8080
+
+---
+
+# Thanks
+
+Josip Delić
+
+[repository](https://gitlab.com/delijati/py-presi)
+[presentation](https://delijati.gitlab.io/py-presi)
+
+
