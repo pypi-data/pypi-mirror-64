@@ -1,0 +1,3 @@
+[console_scripts]
+rw_calibration = rw_calibration.cli:main
+
