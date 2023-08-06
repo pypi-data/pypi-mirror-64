@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/DatasetBuilder.py
+src/ImgDatasetBuilder.egg-info/PKG-INFO
+src/ImgDatasetBuilder.egg-info/SOURCES.txt
+src/ImgDatasetBuilder.egg-info/dependency_links.txt
+src/ImgDatasetBuilder.egg-info/requires.txt
+src/ImgDatasetBuilder.egg-info/top_level.txt
