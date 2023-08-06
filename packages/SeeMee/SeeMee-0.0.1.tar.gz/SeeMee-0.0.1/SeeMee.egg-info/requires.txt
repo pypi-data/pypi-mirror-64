@@ -1,0 +1,5 @@
+tensorflow
+pygame
+
+[:sys_platform == "win32"]
+opencv-python
