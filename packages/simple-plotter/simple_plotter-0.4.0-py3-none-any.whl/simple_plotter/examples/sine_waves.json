@@ -1,0 +1,38 @@
+{
+    "file_format_version": "1.0",
+    "export_csv": false,
+    "formula": {
+        "constants": [
+            {
+                "Comment": "",
+                "Unit": "",
+                "Value": "2",
+                "Const. name": "amp"
+            }
+        ],
+        "equation": "amp * np.sin(2* freq * np.pi * t)",
+        "explicit_set_values": "None",
+        "function_name": "y",
+        "function_unit": "",
+        "no_sets": "5",
+        "set_max_val": "5",
+        "set_min_val": "1",
+        "set_var_name": "freq",
+        "set_var_unit": "Hz",
+        "var_name": "t",
+        "var_unit": "s"
+    },
+    "plot_data": {
+        "end_val": "1",
+        "grid": true,
+        "no_pts": "500",
+        "plot_title": "",
+        "start_val": "0",
+        "swap_xy": false,
+        "user_data": [],
+        "x_log": false,
+        "y_log": false,
+        "y_max": "None",
+        "y_min": "None"
+    }
+}
