@@ -1,0 +1,11 @@
+README.md
+setup.py
+partialtesting/partialtesting.py
+partialtesting/partialtesting_cleanup.py
+partialtesting.egg-info/PKG-INFO
+partialtesting.egg-info/SOURCES.txt
+partialtesting.egg-info/dependency_links.txt
+partialtesting.egg-info/entry_points.txt
+partialtesting.egg-info/not-zip-safe
+partialtesting.egg-info/requires.txt
+partialtesting.egg-info/top_level.txt
