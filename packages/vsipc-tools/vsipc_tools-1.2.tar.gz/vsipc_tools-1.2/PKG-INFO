@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vsipc_tools
+Version: 1.2
+Summary: Useful tools implemented by Vitalii Sipchenko
+Home-page: https://bitbucket.org/vsipchenko/vsipc_tools/
+Author: Vitalii Sipchenko
+Author-email: vitaliisipchenko@gmail.com
+License: MIT
+Download-URL: https://bitbucket.org/vsipchenko/vsipc_tools/
+Description: Useful tools for work
+        
+        1.0
+        initial version
+        
+        1.1
+        Tests added
+        
+        1.2 Base rest client added
+Keywords: VsipcTools,vsipctools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
