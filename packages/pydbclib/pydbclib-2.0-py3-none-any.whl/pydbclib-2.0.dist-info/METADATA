@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pydbclib
+Version: 2.0
+Summary: Python Database Connectivity Lib
+Home-page: https://github.com/taogeYT/pydbclib
+Author: yatao
+Author-email: li_yatao@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Utilities
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Requires-Dist: sqlalchemy (>=1.1.14)
+Requires-Dist: sqlparse
+Requires-Dist: log4py (>=2.0)
+
+UNKNOWN
+
+
