@@ -1,0 +1,159 @@
+Metadata-Version: 2.1
+Name: prot
+Version: 2.1.0
+Summary: A Simple Tool That Contains Advance Functions.
+Home-page: https://www.pypi.org/user/Ali_p1986
+Author: Alireza Poodineh
+Author-email: pa789892@gmail.com
+License: UNKNOWN
+Description: Pro Tools for Python 2 and 3
+        ============================
+        
+        Modules
+        -------
+        
+         * **classes**
+         * **functions**
+         * **converters**
+         * **settings**
+        
+        classes Module
+        --------------
+        
+         * **Database**
+         * **OptionsDatabase**
+         * **Progress**
+         * **ProgressBar** (from **Progress** and **BarWidget**)
+         * **LockedDict**
+         * **Str**
+         * **Widget**
+        
+         >* **TimeWidget**
+         >* **BarWidget**
+         >* **TaskWidget**
+         >* **CallWidget**
+         >* **ValueWidget**
+         >* **LoadingWidget**
+        
+        functions Module
+        ----------------
+        
+         * **verifyColor**
+         * **insertColor**
+         * **getRandomPassword**
+         * **testSpeed**
+         * **getVarFromFile**
+         * **checkMethods**
+         * **callMethods**
+         * **callMethodsWithArg**
+         * **checkFileSame**
+         * **splitStr**
+         * **runAsMain**
+         * **printMsg**
+         * **printErr**
+         * **printWarn**
+        
+        converters Module
+        -----------------
+        
+         * **rst2html**
+         * **dict2matrix**
+         * **str2list**
+         * **list2str**
+         * **matrix2str**
+        
+        Packages
+        --------
+        
+         * **color**
+         * **pip**
+         * **progress**
+        
+        pip Package
+        -----------
+        
+         >this is a Advanced pip Tool, this Package has a List of all pip Packages that you can Search, Download and Install them and you can Update this List anytime you want
+        
+         **Features**
+        
+         >* it has built in Packages List
+         >* you can do an Offline Search
+         >* can Create Offline Repositiry
+         >* can do Batch Install or Download with built in List or use Custom List
+         >* and more...
+        
+        Changelog
+        ---------
+        
+        **1.0.0**
+        
+         * initial release
+        
+        **1.1.0**
+        
+         * bug fixes
+        
+        **1.2.0**
+        
+         * added convertUpdatePackage function
+        
+        **1.3.0**
+        
+         * updated build and release platform
+         * bugs in version 1.2.0 fixed
+        
+          **NOTE:** version 1.2.0 is not excutable
+        
+        **1.3.1**
+        
+         * fixed few small bugs
+        
+        **1.4.0**
+        
+         * fixed many bugs
+         * built in package list updated
+        
+        **1.5.0**
+        
+         * bug fixes
+         * built in list updated
+         * added progress package for future uses
+         * improved double search function in for install and download commands
+        
+        **1.6.0**
+        
+         * progress package removed beceause is not usable
+         * added **Progress** class
+         * you can see progress of download/install actions
+         * bug fixes
+        
+        **1.7.0**
+        
+         * added **converters** module
+        
+        **All Versions Older Than 2.0.0 Removed.**
+        
+        **2.0.0**
+        
+         * all known bugs are fixed
+         * built in list updated
+         * added **Widget API** for use in **Progress** instance
+         * **color** package added for changing text color
+         * error and warning messages are colored
+         * added some parameters to **printMsg** function, color for set color of text, file to change streem file, end for change endline character
+         * added **settings** module for storing configurations
+         * **testSpeed** function added for test processor speed
+         * **progress** package with few corrections readded
+        
+        **2.0.1**
+        
+         * install/download command in **pip** package improved
+        
+        **2.1.0**
+        
+         * bugs fixed
+         * **getRandomPassword** function added
+         * **LoadingWidget** added
+Keywords: ptools protools pip
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

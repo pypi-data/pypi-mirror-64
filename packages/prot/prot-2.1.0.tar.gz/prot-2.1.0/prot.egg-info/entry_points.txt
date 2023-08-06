@@ -1,0 +1,6 @@
+[console_scripts]
+prot = prot:prot
+prot.pip = prot.pip:pip
+ptools = prot:prot
+ptools.pip = prot.pip:pip
+
