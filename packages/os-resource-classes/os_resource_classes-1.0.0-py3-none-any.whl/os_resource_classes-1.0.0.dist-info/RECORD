@@ -1,0 +1,11 @@
+os_resource_classes/__init__.py,sha256=p7nTOoBqu6GB6gO62vx5i-tZEB8WEqb8StjwOhi9vqQ,4213
+os_resource_classes/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os_resource_classes/tests/base.py,sha256=pgyHZ0FqhTANZcVw8CLiu2p0cBuRgPbB3ByyBavDu8c,794
+os_resource_classes/tests/test_os_resource_classes.py,sha256=T9KFnFdfXLtuL9p_VLj6f4AO6HRr_avL2oFwcsPX5DI,2714
+os_resource_classes-1.0.0.dist-info/AUTHORS,sha256=Y6gxXpkXmYX2PkYIrbui3aP7LV22Ea7UunLoDRlA9SQ,494
+os_resource_classes-1.0.0.dist-info/LICENSE,sha256=XfKg2H1sVi8OoRxoisUlMqoo10TKvHmU_wU39ks7MyA,10143
+os_resource_classes-1.0.0.dist-info/METADATA,sha256=XSIjYwxuWKOpXVMeeqGXlKWrZqyyJKIeexfN_LBpDs0,1945
+os_resource_classes-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+os_resource_classes-1.0.0.dist-info/pbr.json,sha256=8gBfGS8DfV6nIfmvRIq36X1aFJaO__Uvpld0UZBH41A,46
+os_resource_classes-1.0.0.dist-info/top_level.txt,sha256=zzqag2JCThH8q1Vgrg9a9V78cy3VaR5jruDCy6nGauI,20
+os_resource_classes-1.0.0.dist-info/RECORD,,
