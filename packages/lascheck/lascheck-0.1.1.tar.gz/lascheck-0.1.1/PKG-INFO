@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: lascheck
+Version: 0.1.1
+Summary: checking conformity of Log ASCII Standard (LAS) files to LAS 2.0 standard
+Home-page: https://github.com/MandarJKulkarni/lascheck
+Author: Mandar J Kulkarni.
+Author-email: mjkool@gmail.com
+License: MIT
+Description: # lascheck
+        Python library for checking conformity of Log ASCII Standard (LAS) files to standards
+        
+        (Derived from lasio)
+        
+        Currently supports checking against LAS 2.0 standard only
+        
+        http://www.cwls.org/wp-content/uploads/2014/09/LAS_20_Update_Jan2014.pdf
+        
+        Simple example
+        
+        ```
+         >>> las = lascheck.read('sample.las')
+         >>> las.check_conformity()
+         >>> las.get_non_conformities()
+        ```
+        
+Keywords: las geophysics version
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Other Audience
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Description-Content-Type: text/markdown
