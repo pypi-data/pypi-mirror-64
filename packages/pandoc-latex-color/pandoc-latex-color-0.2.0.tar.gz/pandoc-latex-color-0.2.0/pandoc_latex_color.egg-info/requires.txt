@@ -1,0 +1,16 @@
+panflute<1.12
+pypandoc>=1.4
+
+[dev]
+check-manifest
+
+[test]
+black
+tox
+coverage
+pylint
+Pygments
+flake8
+radon
+mypy
+pytest-cov
