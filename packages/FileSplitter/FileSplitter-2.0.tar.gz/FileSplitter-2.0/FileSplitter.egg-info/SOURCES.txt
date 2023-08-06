@@ -1,0 +1,11 @@
+README.md
+app.py
+setup.py
+FileSplitter.egg-info/PKG-INFO
+FileSplitter.egg-info/SOURCES.txt
+FileSplitter.egg-info/dependency_links.txt
+FileSplitter.egg-info/entry_points.txt
+FileSplitter.egg-info/top_level.txt
+resources/__init__.py
+resources/filesplitter.py
+resources/splitter.py
