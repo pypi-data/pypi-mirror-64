@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: napari-aicsimageio
+Version: 0.1.0
+Summary: AICSImageIO bindings for napari
+Home-page: https://github.com/AllenCellModeling/napari-aicsimageio
+Author: Jackson Maxfield Brown
+Author-email: jacksonb@alleninstitute.org
+License: BSD-3-Clause
+Keywords: napari,aicsimageio,imaging
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aicsimageio (>=3.1.4)
+Provides-Extra: all
+Requires-Dist: aicsimageio (>=3.1.4) ; extra == 'all'
+Requires-Dist: codecov ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-raises ; extra == 'all'
+Requires-Dist: pytest-runner ; extra == 'all'
+Requires-Dist: black (>=19.10b0) ; extra == 'all'
+Requires-Dist: bumpversion (>=0.5.3) ; extra == 'all'
+Requires-Dist: coverage (>=5.0a4) ; extra == 'all'
+Requires-Dist: flake8 (>=3.7.7) ; extra == 'all'
+Requires-Dist: ipython (>=7.5.0) ; extra == 'all'
+Requires-Dist: napari (>=0.2.12) ; extra == 'all'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'all'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'all'
+Requires-Dist: pytest-raises (>=0.10) ; extra == 'all'
+Requires-Dist: pytest-runner (>=4.4) ; extra == 'all'
+Requires-Dist: tox (>=3.5.2) ; extra == 'all'
+Requires-Dist: twine (>=1.13.0) ; extra == 'all'
+Requires-Dist: wheel (>=0.33.1) ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: black (>=19.10b0) ; extra == 'dev'
+Requires-Dist: bumpversion (>=0.5.3) ; extra == 'dev'
+Requires-Dist: coverage (>=5.0a4) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.7.7) ; extra == 'dev'
+Requires-Dist: ipython (>=7.5.0) ; extra == 'dev'
+Requires-Dist: napari (>=0.2.12) ; extra == 'dev'
+Requires-Dist: pytest (>=4.3.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.6.1) ; extra == 'dev'
+Requires-Dist: pytest-raises (>=0.10) ; extra == 'dev'
+Requires-Dist: pytest-runner (>=4.4) ; extra == 'dev'
+Requires-Dist: tox (>=3.5.2) ; extra == 'dev'
+Requires-Dist: twine (>=1.13.0) ; extra == 'dev'
+Requires-Dist: wheel (>=0.33.1) ; extra == 'dev'
+Provides-Extra: setup
+Requires-Dist: pytest-runner ; extra == 'setup'
+Provides-Extra: test
+Requires-Dist: codecov ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: black ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+Requires-Dist: pytest-raises ; extra == 'test'
+
+# napari-aicsimageio
+
+[![Build Status](https://github.com/AllenCellModeling/napari-aicsimageio/workflows/Build%20Master/badge.svg)](https://github.com/AllenCellModeling/napari-aicsimageio/actions)
+[![Code Coverage](https://codecov.io/gh/AllenCellModeling/napari-aicsimageio/branch/master/graph/badge.svg)](https://codecov.io/gh/AllenCellModeling/napari-aicsimageio)
+
+AICSImageIO bindings for napari
+
+---
+
+## Features
+* Supports reading metadata and imaging data for:
+    * `CZI`
+    * `OME-TIFF`
+    * `TIFF`
+    * Any additional format supported by [`imageio`](https://github.com/imageio/imageio)
+* Two variants of the AICSImageIO bindings:
+    * `aicsimageio`, which reads the image fully into memory
+    * `aicsimageio-delayed`, which delays reading YX planes until requested for large file support
+
+## Installation
+**Stable Release:** `pip install napari-aicsimageio`<br>
+**Development Head:** `pip install git+https://github.com/AllenCellModeling/napari-aicsimageio.git`
+
+## Development
+See [CONTRIBUTING.md](CONTRIBUTING.md) for information related to developing the code.
+
+***Free software: BSD-3-Clause***
+
+
