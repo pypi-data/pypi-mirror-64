@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: webpmin
+Version: 1.1.2
+Summary: A small tool that strips out useless data out of a WebP file.
+Home-page: UNKNOWN
+Author: Shantanu Biswas
+Author-email: bsantanu381@gmail.com
+License: Unlicense
+Project-URL: Github, https://github.com/tripulse/webpmin
+Keywords: webp,vp8,image format,file,minifier,webpmin,webpminifier,webpmin,google webp,minify webp
+Platform: UNKNOWN
+Requires-Python: >=3.5
+
+file: README.md
+
+
