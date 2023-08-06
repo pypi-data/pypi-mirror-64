@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "./static/css/main.b6a50606.chunk.css",
+    "main.js": "./static/js/main.ce071c34.chunk.js",
+    "main.js.map": "./static/js/main.ce071c34.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.5c99a0fb.js",
+    "runtime-main.js.map": "./static/js/runtime-main.5c99a0fb.js.map",
+    "static/css/2.520b5698.chunk.css": "./static/css/2.520b5698.chunk.css",
+    "static/js/2.a15eb6d4.chunk.js": "./static/js/2.a15eb6d4.chunk.js",
+    "static/js/2.a15eb6d4.chunk.js.map": "./static/js/2.a15eb6d4.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.584866f0409c0a79d02688186821a1a4.js": "./precache-manifest.584866f0409c0a79d02688186821a1a4.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/2.520b5698.chunk.css.map": "./static/css/2.520b5698.chunk.css.map",
+    "static/css/main.b6a50606.chunk.css.map": "./static/css/main.b6a50606.chunk.css.map",
+    "static/js/2.a15eb6d4.chunk.js.LICENSE": "./static/js/2.a15eb6d4.chunk.js.LICENSE",
+    "static/media/DragAndDrop.scss": "./static/media/draggable_icon.8ad8988c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c99a0fb.js",
+    "static/css/2.520b5698.chunk.css",
+    "static/js/2.a15eb6d4.chunk.js",
+    "static/css/main.b6a50606.chunk.css",
+    "static/js/main.ce071c34.chunk.js"
+  ]
+}
