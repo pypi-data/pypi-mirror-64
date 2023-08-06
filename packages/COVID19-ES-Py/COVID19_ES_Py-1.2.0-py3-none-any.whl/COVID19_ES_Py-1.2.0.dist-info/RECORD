@@ -1,0 +1,17 @@
+COVID19_ES_Py/__init__.py,sha256=o_W1r1OBfuzLeu5i_aUWRmgs93v3wE4-TlB-wE8lXfA,464
+COVID19_ES_Py/boletim.py,sha256=p2KvTaWyhqHBnTZ08V5CGELFwFbi1I-2vTCjKWFKhRg,16052
+COVID19_ES_Py/boletim_para_csv_ignore_me.py,sha256=NIXIyC13A58EFXOOGSIh37ncWS2G_HXliUeEHnV-nB0,970
+COVID19_ES_Py/exceptions.py,sha256=kBifsd5vjPdbefsOdAr18L0kvpB7CvB4aTjhMVEry5U,122
+COVID19_ES_Py/utils.py,sha256=dm2wdYN7wqEXFemJlNgRx1gP9lLJLEjchgpf3a_7mDU,2004
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_carrega_casos_boletim.py,sha256=yOWql_ACbZVLWicNx0KDGwVuTTxJ25-Rf50HfX-YlF0,11998
+tests/test_conta_municipios_com_casos.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_conta_municipios_infectados.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pesquisa_boletim_data.py,sha256=EReZ2jAq_55KvuE9YLZWQCbe-g0tV3evSNoG247Sft8,2931
+tests/test_pesquisa_casos_municipio.py,sha256=InrZe0vHHwuaMe7r6JZ-yg7InSI6ThJm0f6LU4Rr7MI,3919
+tests/test_url_ultimo_boletim.py,sha256=IFRYg7QvpKDKFzaesfB3vUIJQhfgavIFxaxraOcixlE,809
+COVID19_ES_Py-1.2.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+COVID19_ES_Py-1.2.0.dist-info/METADATA,sha256=hNug9gHm2hgEvlGrUQqzTPdM7Pit_GKV-fCpmLvyMds,4745
+COVID19_ES_Py-1.2.0.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+COVID19_ES_Py-1.2.0.dist-info/top_level.txt,sha256=l48dZxRvUndZkfqIA_brEwzsKLy1W0mvzpBHRwqtXHQ,20
+COVID19_ES_Py-1.2.0.dist-info/RECORD,,
