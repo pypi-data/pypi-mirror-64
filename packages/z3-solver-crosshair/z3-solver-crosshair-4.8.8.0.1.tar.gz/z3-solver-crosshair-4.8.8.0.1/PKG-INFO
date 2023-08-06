@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: z3-solver-crosshair
+Version: 4.8.8.0.1
+Summary: A fork of the Z3 SMT solver library for use in CrossHair.
+Home-page: https://github.com/Z3Prover/z3
+Author: The Z3 Theorem Prover Project
+Maintainer: Phillip Schanely
+Maintainer-email: pschanely@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: z3,smt,sat,prover,theorem
+Platform: UNKNOWN
