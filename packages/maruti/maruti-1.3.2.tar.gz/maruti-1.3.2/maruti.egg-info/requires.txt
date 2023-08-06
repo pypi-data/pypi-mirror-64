@@ -1,0 +1,3 @@
+tqdm==4.40.2
+opencv-python
+facenet_pytorch
