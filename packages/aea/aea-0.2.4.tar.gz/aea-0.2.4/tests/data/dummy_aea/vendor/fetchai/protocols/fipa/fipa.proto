@@ -1,0 +1,66 @@
+syntax = "proto3";
+
+package fetch.aea.Fipa;
+
+message FipaMessage{
+
+    // Custom Types
+    message Description{
+        bytes description = 1;
+    }
+
+    message Query{
+        message Nothing {
+        }
+        oneof query{
+            bytes bytes = 1;
+            Nothing nothing = 2;
+            bytes query_bytes = 3;
+        }
+    }
+
+
+    // Performatives and contents
+    message Cfp{
+        Query query = 1;
+    }
+
+    message Propose{
+        Description proposal = 1;
+    }
+
+    message Accept_W_Inform{
+        map<string, string> info = 1;
+    }
+
+    message Match_Accept_W_Inform{
+        map<string, string> info = 1;
+    }
+
+    message Inform{
+        map<string, string> info = 1;
+    }
+
+    message Accept{}
+
+    message Decline{}
+
+    message Match_Accept{}
+
+
+    // Standard FipaMessage fields
+    int32 message_id = 1;
+    string dialogue_starter_reference = 2;
+    string dialogue_responder_reference = 3;
+    int32 target = 4;
+    oneof performative{
+        Accept accept = 5;
+        Accept_W_Inform accept_w_inform = 6;
+        Cfp cfp = 7;
+        Decline decline = 8;
+        Inform inform = 9;
+        Match_Accept match_accept = 10;
+        Match_Accept_W_Inform match_accept_w_inform = 11;
+        Propose propose = 12;
+    }
+}
