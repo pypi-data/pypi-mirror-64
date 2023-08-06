@@ -1,0 +1,11 @@
+xml_dataclasses/__init__.py,sha256=wzjdAbpEkzr_p_gH-MT2zJpuC6ZXZIms9qv_rAdzlio,569
+xml_dataclasses/exceptions.py,sha256=rdqFd9TwOMhsthMbHYJaTLweVdtR5DEjRPzL8U72yCM,680
+xml_dataclasses/lxml_utils.py,sha256=VUCivfea29FqCA5roqNU_AIPARPkBBcN6ER3SLfJPVo,405
+xml_dataclasses/modifiers.py,sha256=5JuCFXgRRwLiQVyuy--1HQXRXjtV4aHOpHdPIRZ_Fuk,1859
+xml_dataclasses/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xml_dataclasses/resolve_types.py,sha256=E1_szna2HZoPxmo-w4XRbpYg-QYv3Y9eLwqMj4BgXGU,8952
+xml_dataclasses/serde.py,sha256=QwtLe1gr8q8z7YuR_NvFLo2JQQCvjk2LQ12F850DbtQ,6506
+xml_dataclasses-0.0.6.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+xml_dataclasses-0.0.6.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+xml_dataclasses-0.0.6.dist-info/METADATA,sha256=4jLA2xVTyhlLv2Z0tUjhoQk71Rl3ti1GoE_wn4HifxI,12014
+xml_dataclasses-0.0.6.dist-info/RECORD,,
