@@ -1,0 +1,11 @@
+labelme2coco/__init__.py,sha256=MYkogf2ksGSHzOYiBini2u-6dVtcT2-Jw7stPIjfy0s,382
+labelme2coco/image_utils.py,sha256=QKSk5g2dstzP7IN7DO3USUcoN-7jXtTDwB3gR1qSDAk,2274
+labelme2coco/labelme2coco.py,sha256=QOeFpZNveMvHd87MxTsncwMXifiVMphSEpdTR6hdaNI,5675
+labelme2coco/utils.py,sha256=F6rkUGFPK4lie7_F24nb2VAV74CYW5r3iDriumvGBD8,3386
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_unit.py,sha256=2VzPAQYttgMkHd1_j_FEk_hrtIAWXWWZZUK39B34DVs,1758
+labelme2coco-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+labelme2coco-0.1.1.dist-info/METADATA,sha256=JyEz4AKABN93O7oQGLaMr3Py-mnO_VpZzEYcON5ApZA,1824
+labelme2coco-0.1.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+labelme2coco-0.1.1.dist-info/top_level.txt,sha256=UMkBEU8NF3ucX3fWtQ5sw2-VC-Veg1LcSGUWOKnw9dc,19
+labelme2coco-0.1.1.dist-info/RECORD,,
