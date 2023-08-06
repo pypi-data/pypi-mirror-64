@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: some_package_andre_317
+Version: 1.0.0
+Summary: Package to demonstrate how to use pypi, pytest, GitHub and         CircleCI
+Home-page: http://andrefellipe.com
+Author: Andre Fellipe
+Author-email: andrefellipern@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
