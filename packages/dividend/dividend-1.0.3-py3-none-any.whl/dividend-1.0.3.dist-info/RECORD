@@ -1,0 +1,13 @@
+dividend/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dividend/async_requests.py,sha256=2rsF0wqe8_lHmy3VzI6hU3OQdq3JZZSdQbfyPUuHG6E,1969
+dividend/errors.py,sha256=AzfVrfoLQjDUOGqVjfjqr5ILKH0AneoE91NtXt5wZGI,450
+dividend/screener.py,sha256=ak3ZPUX87obzpejYKe6aLhbsrgkA4hJMTp84jb_1ugM,1114
+dividend/parsers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dividend/parsers/attributes.py,sha256=lUeKfJ1M4nYxssV8kFTg-M5DFkCU1GvlXdltt32RkGQ,631
+dividend/parsers/dividend_growth.py,sha256=m63nwOIfFO8g0hH-Y4dXsKp1W8OSPtCVNxL53P_JCjo,495
+dividend/parsers/overview.py,sha256=NFzCN96xcfT3Bhn-Kn_lscGglnWTb-hEzvZusScUnMQ,592
+dividend/parsers/parse_table.py,sha256=-baodFTzH8gcbT8_I5tguBDNXWLXofm8sBXnCwol4Ag,531
+dividend-1.0.3.dist-info/METADATA,sha256=tFRyAt2GuS9KwIsip7xj0J2DTV_CabsXXiryojTyKUE,2339
+dividend-1.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dividend-1.0.3.dist-info/top_level.txt,sha256=1I74yB6IZabPkQPO0lTMmi8ZyLPXwry3pDUHaujAt8Y,9
+dividend-1.0.3.dist-info/RECORD,,
