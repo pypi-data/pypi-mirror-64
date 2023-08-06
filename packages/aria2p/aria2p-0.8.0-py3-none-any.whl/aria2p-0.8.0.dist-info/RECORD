@@ -1,0 +1,17 @@
+README.md,sha256=sIy3Itd3TCdpe5LWpqAe2hxJFrB8A9XpDKdRr2W9CFM,14996
+aria2p/__init__.py,sha256=-IHia8Z3_zaNBHTR4HTGvqbVf8_ek_ogml2PFv1S33Q,1239
+aria2p/__main__.py,sha256=wYb3NC3flJ2Rdjb1oqf4XJvQ5IKsQI8ZD3pNIUMRfss,395
+aria2p/api.py,sha256=IVT4uZubbLSoS4Y-1hqofF2GdqMYXtRR-Q3KgT3oE7U,24478
+aria2p/cli.py,sha256=6X4g1LkJHOS2QgD53qnQ6feZnikgro-EfvO3xpL0JAQ,24186
+aria2p/client.py,sha256=FRXDKC02sdSUY55LhMG9ByqWhtFohESY8cbd5_pTUb8,74000
+aria2p/downloads.py,sha256=LGjTEkCTQMTdcnA4bnjB0ISEQVHxPcb2_vJ6wVBfCCA,25928
+aria2p/interface.py,sha256=LsSvSqg7JzEkdiZ4nEj1tHQJKYmXCQWYDdDKeFgr12E,33456
+aria2p/options.py,sha256=eh-YSnFdOpx_X3eNVCmrF8gDpT_KfycNksBrIO-dIwc,108560
+aria2p/stats.py,sha256=qrxZLweZo7DlARM2qcjBA_xRCC47RUmXANGSz4EeELQ,2496
+aria2p/utils.py,sha256=cDsIXLQ99wYY9FNoVXgqKYbZP9fDAZab4kR3ZGhHstc,3557
+pyproject.toml,sha256=_qHKL_9dDj-AeCVrcwbM-xp_-rElK1tFjsZ41yNRnR0,1864
+aria2p-0.8.0.dist-info/entry_points.txt,sha256=le-CIGTasXcqLrQtxXVfRUYd6_tcLFDYCojt84iQ2Cw,42
+aria2p-0.8.0.dist-info/LICENSE,sha256=WuP_x7zwcQY-DG_AOwAd1m90lO7fEDu8Qm32YMFU9Rc,759
+aria2p-0.8.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+aria2p-0.8.0.dist-info/METADATA,sha256=FiI72Xal9xAeqrjeXsGUZWzHydlAoqS4bH9W5cPv1TY,15796
+aria2p-0.8.0.dist-info/RECORD,,
