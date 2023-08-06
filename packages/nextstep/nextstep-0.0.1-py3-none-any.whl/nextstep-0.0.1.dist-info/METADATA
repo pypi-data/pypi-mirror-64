@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: nextstep
+Version: 0.0.1
+Summary: USEP price prediction
+Home-page: https://github.com/YangYuesong0323/EMC
+Author: Yang Yuesong
+Author-email: yangyuesongyys@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# nextstep
+
+this is package for EMC.
+
