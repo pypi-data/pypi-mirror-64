@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dxc-ai-test
+Version: 1.0.0
+Summary: A Python package for DXC AI work
+Home-page: https://github.com/npulagam/DXC-AI-Library
+Author: DXC
+Author-email: npulagam2@dxc.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: JIRA
+Requires-Dist: auto-ml
+Requires-Dist: Algorithmia
+Requires-Dist: gitpython
+Requires-Dist: flatten-json
+Requires-Dist: pyjanitor
+Requires-Dist: ftfy
+Requires-Dist: arrow
+Requires-Dist: scrubadub
+Requires-Dist: yellowbrick
+Requires-Dist: datacleaner
+Requires-Dist: missingno
+
+# DXC AI Package
+
+A Python package for DXC AI projects .
+
+## Usage
+
+This package is used in DXC for AI projects.
+
+```
+pip install dxc_ai_test
+```
+
