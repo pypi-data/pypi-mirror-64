@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: siphash-lite
+Version: 0.1.5
+Summary: Siphash calculation
+Home-page: https://github.com/cordalace/siphash-lite
+Author: Azat Kurbanov
+Author-email: cordalace@gmail.com
+License: MIT
+Description: # SipHash Lite
+        
+        [SipHash](https://en.wikipedia.org/wiki/SipHash) implementation ported from [redis](https://github.com/antirez/redis/blob/e8afadd52c32c656d56ea9d5b235881f04c9bd8a/src/siphash.c).
+        
+        ![Python package](https://github.com/cordalace/siphash-lite/workflows/Python%20package/badge.svg)
+        [![pypi](https://img.shields.io/pypi/v/siphash-lite)](https://pypi.python.org/pypi/siphash-lite)
+        
+        ## Installation
+        
+        Install using [pip](https://pypi.org/project/siphash-lite/) with:
+        ```
+        pip install siphash-lite
+        ```
+        
+        ## Usage
+        
+        ```python
+        >>> import siphash
+        
+        >>> siphash.siphash(b'hello world', b'1234567812345678')
+        9929133401751744512
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown

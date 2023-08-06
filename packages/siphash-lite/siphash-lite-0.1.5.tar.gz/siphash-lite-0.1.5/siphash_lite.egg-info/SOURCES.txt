@@ -1,0 +1,9 @@
+README.md
+py.c
+setup.py
+siphash.c
+siphash_lite.egg-info/PKG-INFO
+siphash_lite.egg-info/SOURCES.txt
+siphash_lite.egg-info/dependency_links.txt
+siphash_lite.egg-info/top_level.txt
+siphash_lite.egg-info/zip-safe
