@@ -1,0 +1,11 @@
+benchmarks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benchmarks/datasets.py,sha256=6hVJ6w0eQSi6JluibPl4eACs4bkgZI9qr2GgeIt70W4,3874
+benchmarks/ops.py,sha256=PEwC1-zEXpnvwAocLEDx3k0smtXwHDlZtzF3PleuGG0,503
+benchmarks/utils.py,sha256=TlfNXVo7Gt-jr1lZog06n2OdIm9_eCX7RrP8mVVVaZw,8229
+benchmarks/version.py,sha256=rezCUpnGEuYMLx79NUeg5YbxM9b7-xyKniKXwnzig0I,120
+pangeobench-0.0.1.data/scripts/pangeobench,sha256=25uqGnzO7UWH3f5tF327x4R7Uxe0ZP508t3eWZCZh60,249
+pangeobench-0.0.1.dist-info/LICENSE,sha256=_3mtcd2AHQOX06mFQjx2DUVoWgyCogXEKRuGUO8KkSQ,1068
+pangeobench-0.0.1.dist-info/METADATA,sha256=wD_Xp2V6PS8qG0ZmWaMasZSmvqM5pXEenujM0Zf5APM,3459
+pangeobench-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pangeobench-0.0.1.dist-info/top_level.txt,sha256=LRXajnb-2PU7PMhC4lNJpRaGBp5o40Fg4dwMv6w3OzE,11
+pangeobench-0.0.1.dist-info/RECORD,,
