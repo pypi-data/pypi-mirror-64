@@ -1,0 +1,8 @@
+README.md
+setup.py
+pylez/__init__.py
+pylez.egg-info/PKG-INFO
+pylez.egg-info/SOURCES.txt
+pylez.egg-info/dependency_links.txt
+pylez.egg-info/top_level.txt
+tests/__init__.py

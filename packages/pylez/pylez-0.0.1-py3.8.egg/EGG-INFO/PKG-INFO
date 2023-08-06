@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pylez
+Version: 0.0.1
+Summary: Rules Engine
+Home-page: https://github.com/alxfed/pylez
+Author: Alex Fedotov
+Author-email: alex.fedotov@aol.com
+License: UNKNOWN
+Description: # pylez
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
