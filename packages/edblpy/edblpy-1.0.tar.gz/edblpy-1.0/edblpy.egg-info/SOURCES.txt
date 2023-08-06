@@ -1,0 +1,10 @@
+README.md
+setup.py
+edblpy/__init__.py
+edblpy/bots.py
+edblpy/users.py
+edblpy.egg-info/PKG-INFO
+edblpy.egg-info/SOURCES.txt
+edblpy.egg-info/dependency_links.txt
+edblpy.egg-info/requires.txt
+edblpy.egg-info/top_level.txt
