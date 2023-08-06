@@ -1,0 +1,10 @@
+djangoldp_dashboard/__init__.py,sha256=KuUFYqBoXXUcuxZ0emqHVnvKWZv_xm0eAZNkLJg5LfA,51
+djangoldp_dashboard/admin.py,sha256=aZ-IY5dqAN_tDQSAJ9qOmG6ckPpLCqjxJCIBiPHYSOc,95
+djangoldp_dashboard/apps.py,sha256=8JNxZipjpulWMJXdDGpqT9V4hMbkmhrO2co38s8eFeA,111
+djangoldp_dashboard/models.py,sha256=rzQkKIwdHZKWVYevSf4oHCkyLamd_LSirZJo7vRvRPw,103
+djangoldp_dashboard/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangoldp_dashboard-0.1.0.dist-info/LICENSE,sha256=dVVLomZbbA2XsG8hGdyWLYIw7JsJaPSKCqW3DSiwN58,1069
+djangoldp_dashboard-0.1.0.dist-info/METADATA,sha256=zcXCzM259jhZnmaSxSflHpr10ZA4OmuFy_oLfrTkug4,335
+djangoldp_dashboard-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+djangoldp_dashboard-0.1.0.dist-info/top_level.txt,sha256=MAQSAIlfvMFkX5Vi05f3yGYkTVLyoYhTv9mzh1PXihY,20
+djangoldp_dashboard-0.1.0.dist-info/RECORD,,
