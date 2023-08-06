@@ -1,0 +1,10 @@
+totvsecm/BaseService.py,sha256=D0vp4405alxjNs3wDRYfpeDKtBr_zNdI-zux-6iRnwM,10523
+totvsecm/CardService.py,sha256=WCVF-qD_XZojQgpqgdJ1Pqa_HH7w13OmIAJX1EWIgiw,1614
+totvsecm/DocumentService.py,sha256=K6JF94Pt2qECTLeP3-8AngzSrd2bKxr3NdAlwuCfKAg,1822
+totvsecm/WorkflowEngineService.py,sha256=J6qTotLwcHRezhPNJWyyyOaHdWUKVSRaTEZ2FH0pamY,10303
+totvsecm/__init__.py,sha256=C8N94lnSjRFvApUDVlrtFC-ggpgECcRcETg7Rl6xSF8,29
+totvsecm-1.1.0.dist-info/LICENSE,sha256=r7EUJuCdpAoa5Pj6F93Ma2pS0U3wTCm8W80G64cwYk0,1057
+totvsecm-1.1.0.dist-info/METADATA,sha256=Rb-WuXv0jJ7eGcfzRu24GVs1t4SU75tm3vFjH5gDddk,254
+totvsecm-1.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+totvsecm-1.1.0.dist-info/top_level.txt,sha256=2y5kGfhBoSlQH4IzhUNF06QOXZyCpyh11-1KhZBIN_0,9
+totvsecm-1.1.0.dist-info/RECORD,,

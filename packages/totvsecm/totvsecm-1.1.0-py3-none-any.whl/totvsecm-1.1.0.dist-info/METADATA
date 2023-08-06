@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: totvsecm
+Version: 1.1.0
+Summary: API para webservices do TOTVS ECM.
+Home-page: http://github.com/soslaio/totvsecm
+Author: soslaio
+Author-email: rogeriorp@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: zeep
+
+UNKNOWN
+
+
