@@ -1,0 +1,8 @@
+README.md
+setup.py
+ezdict/__init__.py
+ezdict/ezdict.py
+ezdict.egg-info/PKG-INFO
+ezdict.egg-info/SOURCES.txt
+ezdict.egg-info/dependency_links.txt
+ezdict.egg-info/top_level.txt
