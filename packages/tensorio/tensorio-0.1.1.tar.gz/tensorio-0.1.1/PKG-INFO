@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: tensorio
+Version: 0.1.1
+Summary: Tensor/IO python utilities
+Home-page: https://github.com/doc-ai/tensorio-python-package
+Author: doc.ai
+Author-email: philip@doc.ai
+License: Apache License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
