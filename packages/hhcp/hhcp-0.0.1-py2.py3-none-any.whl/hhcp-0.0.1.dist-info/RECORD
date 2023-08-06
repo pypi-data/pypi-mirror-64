@@ -1,0 +1,11 @@
+hhcp/__init__.py,sha256=TO2knl8iw4lu12SnjfAlLgYszMQWF8tIb3882yMZy0Q,95
+hhcp/cp_dir_multi.py,sha256=Gv4VWcduQU5zFi7yIx8ndSprOTixP8BiEX6PTGgxL34,3733
+hhcp/cp_list_multi.py,sha256=04APf7E50jPImvCh68Ee7lvXeqytdy6LaD9A_2156Bc,1661
+hhcp/version.py,sha256=9LSdKAq1hGzfGFsWUFD2Kjcg8Qrr5k-0oM9xXqmn4qU,118
+hhcp/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hhcp/utils/chunks.py,sha256=gLymbz6eRlPwvb1bx3EfDItaC7IIL51QNp0UPoXE76E,322
+hhcp-0.0.1.dist-info/METADATA,sha256=aANwFQHX9bQin8VrkvXAG2v_7NifRXdGqkqzfinb9w4,1276
+hhcp-0.0.1.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+hhcp-0.0.1.dist-info/entry_points.txt,sha256=gj4Hf79NoqM0T64TCO4bmZcUyruFyRjjo0i4Kq6CW1U,45
+hhcp-0.0.1.dist-info/top_level.txt,sha256=wjI7lbdhUGvkoqWZNg48WDTz5_atiMaqSA5EAPVL4U4,5
+hhcp-0.0.1.dist-info/RECORD,,
