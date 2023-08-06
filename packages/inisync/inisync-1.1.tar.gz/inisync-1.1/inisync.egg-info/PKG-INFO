@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: inisync
+Version: 1.1
+Summary: Sync value from one INI file to others
+Home-page: UNKNOWN
+Author: Constantin Gruber
+Author-email: constantin.gruber@sixsentix.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
