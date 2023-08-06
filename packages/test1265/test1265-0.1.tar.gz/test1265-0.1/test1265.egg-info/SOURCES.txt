@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+test1265/__init__.py
+test1265/script_tracker.py
+test1265.egg-info/PKG-INFO
+test1265.egg-info/SOURCES.txt
+test1265.egg-info/dependency_links.txt
+test1265.egg-info/not-zip-safe
+test1265.egg-info/requires.txt
+test1265.egg-info/top_level.txt
