@@ -1,0 +1,10 @@
+xdgenvpy/__init__.py,sha256=BN1NorTdm0ZMzkH0FCnNQcLdDyW0wDMUSJXDOOLCDtg,239
+xdgenvpy/__main__.py,sha256=du6YD13y2Ye6nM7XNmxzFvzuKjjB9plG36wvaHgvgys,5536
+xdgenvpy/_defaults.py,sha256=6rIQC8qjdDoxW4bMB66O52UGa46geFJIfwcbHiZMrWA,6209
+xdgenvpy/xdgenv.py,sha256=GyCj53GoMChy3dZvC-hHQPtCN2MuxRbLM5zCsepKOvM,14112
+xdgenvpy-2.3.0.dist-info/LICENSE,sha256=yMN6sLx4glXlXjIfk90OaidwMy_lKzvOEPnVYx9Adzg,35051
+xdgenvpy-2.3.0.dist-info/METADATA,sha256=ns3WVejOBIrLny6WuFCeXoPXe_ztZ5WdPcFpTn52eHI,7427
+xdgenvpy-2.3.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+xdgenvpy-2.3.0.dist-info/entry_points.txt,sha256=VW6s-nycRsT9kyWkRs9DXNT-0rxUhvj4JZ290yX-FdI,52
+xdgenvpy-2.3.0.dist-info/top_level.txt,sha256=4VDUKYBDwTlQkgD7RaAAdbCFX-vRLUvPcVS-VDAEiuY,9
+xdgenvpy-2.3.0.dist-info/RECORD,,
