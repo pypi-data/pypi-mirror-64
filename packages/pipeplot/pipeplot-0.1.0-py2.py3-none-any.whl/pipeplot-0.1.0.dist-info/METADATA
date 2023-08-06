@@ -1,0 +1,42 @@
+Metadata-Version: 2.0
+Name: pipeplot
+Version: 0.1.0
+Summary: displays a graph based on data from the pipe.
+Home-page: UNKNOWN
+Author: Ilya Chistyakov
+Author-email: ilchistyakov@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/MyGodIsHe/pipeplot
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+
+#Pipe Plot
+pipeplot draws a graph in a terminal based on data from pipe. 
+
+##Installation
+```bash
+pip install pipeplot
+```
+
+## Examples of using
+### Ping like gping:
+```bash
+ping ya.ru | grep --line-buffered time | sed -u -e 's#.*time=\([^ ]*\).*#\1#' | pipeplot
+```
+### Chart of deaths per minute from coronavirus:
+```bash
+while true; do curl -s https://coronavirus-19-api.herokuapp.com/all | jq '.deaths'; sleep 60; done | pipeplot
+```
+
+
