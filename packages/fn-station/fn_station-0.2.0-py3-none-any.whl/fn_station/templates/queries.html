@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block body %}
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>Client ID</th>
+      <th>User</th>
+      <th>Timestamp</th>
+      <th>Composer Title</th>
+    </tr>
+
+    {% for query in station.history %}
+      <tr>
+        <td>{{ query.id }}</td>
+        <td>{{ query.client_id }}</td>
+        <td>{{ query.user }}</td>
+        <td>{{ query.timestamp }}</td>
+        <td>{{ query.composer.title }}</td>
+      </tr>
+    {% endfor %}
+
+  </table>
+{% endblock %}

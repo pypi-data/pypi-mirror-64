@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block body %}
+  {% for dash in station.dashboards %}
+    {% if search(dash.title, dash.description) %}
+      <div>
+        <h3><a href="{{ dash.url }}">{{ dash.title }}</a></h3>
+        <p>{{ dash.description }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endblock %}
