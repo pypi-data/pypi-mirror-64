@@ -1,0 +1,3 @@
+[console_scripts]
+convert-csv-to-xlsx = convert_csv_to_xlsx:do_convert
+

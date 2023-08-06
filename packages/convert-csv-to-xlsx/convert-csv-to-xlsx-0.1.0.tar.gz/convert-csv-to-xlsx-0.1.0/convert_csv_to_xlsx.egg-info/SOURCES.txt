@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+convert_csv_to_xlsx.py
+requirements.txt
+setup.py
+convert_csv_to_xlsx.egg-info/PKG-INFO
+convert_csv_to_xlsx.egg-info/SOURCES.txt
+convert_csv_to_xlsx.egg-info/dependency_links.txt
+convert_csv_to_xlsx.egg-info/entry_points.txt
+convert_csv_to_xlsx.egg-info/not-zip-safe
+convert_csv_to_xlsx.egg-info/requires.txt
+convert_csv_to_xlsx.egg-info/top_level.txt
