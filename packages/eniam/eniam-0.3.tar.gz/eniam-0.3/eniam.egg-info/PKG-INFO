@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: eniam
+Version: 0.3
+Summary: Cross-platform python wrapper around ENIAM (http://eniam.nlp.ipipan.waw.pl/)
+Home-page: http://styczynski.in
+Author: styczynski
+Author-email: piotr@styczynski.in
+License: MIT
+Description: README.md
+Platform: UNKNOWN
