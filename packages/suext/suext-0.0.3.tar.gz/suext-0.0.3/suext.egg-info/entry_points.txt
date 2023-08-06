@@ -1,0 +1,3 @@
+[console_scripts]
+suext = suext:_main
+
