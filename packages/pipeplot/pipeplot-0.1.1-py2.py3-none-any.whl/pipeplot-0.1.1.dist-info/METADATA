@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: pipeplot
+Version: 0.1.1
+Summary: displays an interactive graph based on data from pipe
+Home-page: https://github.com/MyGodIsHe/pipeplot
+Author: Ilya Chistyakov
+Author-email: ilchistyakov@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/MyGodIsHe/pipeplot
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+
+UNKNOWN
+
+
