@@ -1,0 +1,11 @@
+examples/OptimizeCNNExample.py,sha256=j3gvRM4d2PgaA25yaJ02Mh3nTOX97AtdbrpljM6K_NE,1405
+examples/PlantDiseaseDetectionCNN.py,sha256=r99uc0Q51MGETJfqDEqH68PKCMAJZrxVmiUXcb87pKM,3545
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optimizer/KerasOptimizer.py,sha256=mz78cbiP__-UzN_FHetOubdyaT3nmWjdjvPv7Jv9380,6957
+optimizer/Strategy.py,sha256=ZYgazTb4o_PgTs8S-ekccQVxTe-MKyhDLumb4MdkXe8,74
+optimizer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pykopt-0.0.1.dist-info/LICENSE.txt,sha256=PoxXLVVHGrGGIMtl889Wrv5gyi0_cuyxIShZiyCcCvk,1068
+pykopt-0.0.1.dist-info/METADATA,sha256=6d515txYBJUCdPOY1HPfy4lMZGD9CAIKj3-DFcp3_ps,525
+pykopt-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pykopt-0.0.1.dist-info/top_level.txt,sha256=suUwdIjrdJpvE02ltebLFsZgFZARdMQE576ITJf9A58,19
+pykopt-0.0.1.dist-info/RECORD,,
