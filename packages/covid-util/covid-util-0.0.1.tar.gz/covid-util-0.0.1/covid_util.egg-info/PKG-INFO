@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: covid-util
+Version: 0.0.1
+Summary: CLI tool for uploading data to the European COVID-19 data platform
+Home-page: https://github.com/ebi-ait/hca-util
+Author: hca-ingest-dev
+Author-email: hca-ingest-dev@ebi.ac.uk
+License: Apache License
+Description: README
+Platform: MacOS X
+Platform: Posix
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
