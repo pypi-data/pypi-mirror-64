@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: bb-hooks-router
+Version: 0.0.3
+Summary: Routes bitbucket webhook API event payloads to easily consumable decorators.
+Home-page: https://github.com/mukund-murali/bitbucket-webhooks-router
+Author: Mukund Muralikrishnan
+Author-email: mukund.muralikrishnan@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/mukund-murali/bitbucket-webhooks-router/issues
+Project-URL: Source, https://github.com/mukund-murali/bitbucket-webhooks-router
+Keywords: bitbucket webhooks development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: marshmallow-objects (>=2.2.2)
+Requires-Dist: marshmallow (>=3.0.0)
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+
+# bitbucket-webhooks-router
+
+[![Build Status](https://travis-ci.com/mukund-murali/bitbucket-webhooks-router.svg?branch=master)](https://travis-ci.com/mukund-murali/bitbucket-webhooks-router)
+
+Routes bitbucket webhook [event payloads](https://confluence.atlassian.com/bitbucket/event-payloads-740262817.html) to easily consumable decorators.
+
+Checkout the [example](https://github.com/mukund-murali/bitbucket-webhooks-router/tree/master/examples/sample_flask_app) flask app that handles bitbucket hooks using this library.
+
+
