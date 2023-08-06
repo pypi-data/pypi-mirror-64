@@ -1,0 +1,13 @@
+acclimatise/__init__.py,sha256=bIbFKdwygBEIoOcbZdAdd5MVWtPrhllb_BDH5uexxIU,144
+acclimatise/cli.py,sha256=_xRQ3LM7pnFTUowxY6fmHHR-TDA6khkLkYvjODcWhGs,3617
+acclimatise/cli_types.py,sha256=ronkm-tJVjQ1zIwzwugYh_evMVMwmFLhY31u02gauOo,1549
+acclimatise/jinja.py,sha256=sh__tw3PoGjZH39KyWlnlpGk1DWKuSG2Tn8VoUQDUbs,422
+acclimatise/model.py,sha256=IcMCZYzj6Ss42_K5pfgFi3iy7B2BLqTU23Yxsq8TsIQ,11964
+acclimatise/parser.py,sha256=11OCs1-s71h2lS9aKRh-UE856Mh6C5K81ujo018zoJU,1396
+acclimatise/yaml.py,sha256=oUNIuYMfBjlpXq2L8YuWGrCADe3HOaWKgGzWY-6RICY,57
+acclimatise-0.0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+acclimatise-0.0.2.dist-info/METADATA,sha256=votyiHtSN43BrG0u274SGQ_ojnBsAEWy-5l01Pqk5qM,3591
+acclimatise-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+acclimatise-0.0.2.dist-info/entry_points.txt,sha256=5VrYSPzvNHqdCRb__FaKOoGzun733-TnVyd_gzLtoxc,54
+acclimatise-0.0.2.dist-info/top_level.txt,sha256=4I1yEWs1Ob7iyXENXCGtcAFb3cp21A_osIKJMYY0a7E,12
+acclimatise-0.0.2.dist-info/RECORD,,
