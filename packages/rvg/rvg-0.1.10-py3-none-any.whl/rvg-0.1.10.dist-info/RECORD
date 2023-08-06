@@ -1,0 +1,11 @@
+rvg/__init__.py,sha256=R1NF6uL3vdt6M-Offu_cUpo2JffG8tZ8lQxMGDD4pjw,55
+rvg/cli.py,sha256=JToPN80y7OM9ly-LFt3xyOY1xpGt6_CxzadCf8yLxuI,1979
+rvg/numpyrvg/__init__.py,sha256=R1NF6uL3vdt6M-Offu_cUpo2JffG8tZ8lQxMGDD4pjw,55
+rvg/numpyrvg/numpyrvg.py,sha256=T3psjRsFP3SFob-ViiSyv5wuMXay09JYSyo9Y_AMeP4,4095
+rvg/numpyrvg/utils.py,sha256=gpjCAMRZUrNgFxwhaT8nfQlWNA0STuOckeq36BKNhCk,1587
+rvg-0.1.10.dist-info/LICENSE,sha256=1AySJMvJmz4dX3uEbLCnJeEboD3th2wUv7r1Nn0HT-Q,1073
+rvg-0.1.10.dist-info/METADATA,sha256=6teeueR6FY-FIeCGsqTfYlpzkWFiBT6MEQGEXQFL1eQ,5699
+rvg-0.1.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+rvg-0.1.10.dist-info/entry_points.txt,sha256=HElaEuOekuPnn-YLBwhhIuDsKcumOWoXsNTiS7-DTyM,37
+rvg-0.1.10.dist-info/top_level.txt,sha256=Y4bj7t_z81Gc526-bI-49vTHa1a7gAXbOZp9vmxpRAQ,4
+rvg-0.1.10.dist-info/RECORD,,
