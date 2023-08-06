@@ -1,0 +1,12 @@
+anonymization/Anonymization.py,sha256=FdOTGMdW5LVE_0hKgYBHSCERJEum6UeYPom0rL8mOcg,2486
+anonymization/__init__.py,sha256=tLQXZmidv6uV2YbKOO2Ze16J39u6lLHamGElFcfWnIU,55
+anonymization/anonymizers/__init__.py,sha256=Ha-VxBY9mw08fwiMfCdH8cshzqSfuRkNNwmFqzsqhNY,135
+anonymization/anonymizers/fileAnonymizers.py,sha256=RXUTwIwDxBFfpMLhzRZkNf2-tyivTBNwiZ0d50LEK-M,407
+anonymization/anonymizers/internetAnonymizers.py,sha256=l5-f4q8kkKo-MkoBDk0so4JGyvw14ZGfSjHW_UJISCc,2513
+anonymization/anonymizers/phoneNumberAnonymizers.py,sha256=NaygxE9HAI-TSUnu-e-XMfyzVx9AfGZFTzo-Mlhr0_c,1713
+anonymization/anonymizers/spacyAnonymizers.py,sha256=dmwyhH62EVSHHrzwf3Fkjf54LXr3Z7N04qKyZAo0b_Y,1035
+anonymization-0.1.dist-info/LICENSE,sha256=yjL01opjLPR01HafdoI381VBoyPYYBY_oUrN0Iv5eR4,1069
+anonymization-0.1.dist-info/METADATA,sha256=LCuCEBryV4T2aCnklzGha3wLvVQNQmoK3AA6tKc0T3k,4125
+anonymization-0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+anonymization-0.1.dist-info/top_level.txt,sha256=21sKX3N7ExwqhkGcE25uzrR_U3nDmSUA1XgKy9d70LA,14
+anonymization-0.1.dist-info/RECORD,,
