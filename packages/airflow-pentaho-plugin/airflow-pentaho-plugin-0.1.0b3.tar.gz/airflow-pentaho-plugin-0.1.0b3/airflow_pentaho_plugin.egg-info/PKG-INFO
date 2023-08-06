@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: airflow-pentaho-plugin
+Version: 0.1.0b3
+Summary: UNKNOWN
+Home-page: https://damavis.com
+Author: Damavis
+Author-email: info@damavis.com
+License: UNKNOWN
+Description: Pentaho pan and kitchen plugin for Apache Airflow
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Requires-Python: >=3.6
