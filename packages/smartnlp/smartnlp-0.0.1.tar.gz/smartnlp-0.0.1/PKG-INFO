@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: smartnlp
+Version: 0.0.1
+Summary: Easy-to-use and Extendable package of deep learning based smartnlp (Natural Language Processing) tools with tensorflow 2.x .
+Home-page: https://github.com/msgi/nlp-journey.git
+Author: msgi(慢时光)
+Author-email: mayuan120226@sina.cn
+License: Apache-2.0
+Description: ### nlp任务基线代码
+        
+        > 可以直接拿来用到生产中的代码。崇尚clean code, 因此代码需要一直精简并优化，随着学习的深入，代码会越来越clean。
+Keywords: nlp,natural language processing,nlu,natural language understandingdeep learning,tensorflow,keras
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: cpu
+Provides-Extra: gpu
