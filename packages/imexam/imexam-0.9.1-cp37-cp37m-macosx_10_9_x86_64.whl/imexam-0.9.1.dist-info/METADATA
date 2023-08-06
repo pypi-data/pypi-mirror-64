@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: imexam
+Version: 0.9.1
+Summary: Astropy affiliated package
+Home-page: http://imexam.readthedocs.io/
+Author: Megan Sosey
+Author-email: help@stsci.edu
+License: BSD
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides: imexam
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: scipy (>=0.18)
+Requires-Dist: astropy (>=3.0)
+Requires-Dist: matplotlib
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-automodapi ; extra == 'docs'
+Requires-Dist: sphinx-astropy ; extra == 'docs'
+Requires-Dist: graphviz ; extra == 'docs'
+Provides-Extra: photometry
+Requires-Dist: photutils ; extra == 'photometry'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+
+A package to help perform command-line image examination and plotting
+
+
