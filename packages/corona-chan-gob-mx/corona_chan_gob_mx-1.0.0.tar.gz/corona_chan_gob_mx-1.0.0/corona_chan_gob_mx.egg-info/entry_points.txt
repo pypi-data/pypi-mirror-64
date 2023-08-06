@@ -1,0 +1,3 @@
+[console_scripts]
+corona_chan_gob_mx = corona_chan_gob_mx.cli:main
+
