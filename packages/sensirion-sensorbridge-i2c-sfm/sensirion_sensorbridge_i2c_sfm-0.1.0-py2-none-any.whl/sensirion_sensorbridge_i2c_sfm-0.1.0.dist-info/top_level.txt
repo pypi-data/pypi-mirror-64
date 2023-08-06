@@ -1,0 +1,1 @@
+sensirion_sensorbridge_i2c_sfm
