@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: oep-client
+Version: 0.0.0
+Summary: client side tool for openenergy platform
+Home-page: https://github.com/wingechr/oep-client
+Author: Christian Winger
+Author-email: c.winger@oeko.de
+License: UNKNOWN
+Description: # oep-client
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
