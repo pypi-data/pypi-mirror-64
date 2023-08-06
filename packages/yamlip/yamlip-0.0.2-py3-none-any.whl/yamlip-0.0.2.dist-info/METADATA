@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: yamlip
+Version: 0.0.2
+Summary: A yaml interpolation tool
+Home-page: http://github.com/jjmurre/yamlip
+Author: Jan Murre
+Author-email: jan.murre@catalyz.nl
+License: MIT
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyYAML
+Requires-Dist: click
+Requires-Dist: attrdict
+
+A yaml interpolation tool
+
+
