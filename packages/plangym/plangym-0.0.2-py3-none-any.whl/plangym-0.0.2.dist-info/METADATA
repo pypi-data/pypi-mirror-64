@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: plangym
+Version: 0.0.2
+Summary: OpenAI gym environments adapted for planning.
+Home-page: https://github.com/FragileTech/plangym
+Author: Guillem Duran Ballester
+Author-email: guillem.db@fragile.tech
+License: MIT
+Download-URL: https://github.com/FragileTech/plangym
+Keywords: gym,reinforcement learning,artificial intelligence,monte carlo,planning,atari games
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: gym (>=0.10.9)
+Requires-Dist: Pillow (>=7.0.0)
+Requires-Dist: opencv-python (>=4.2.0.32)
+Requires-Dist: pytest (>=4.0.1)
+Requires-Dist: atari-py (==0.1.1)
+
+UNKNOWN
+
+
