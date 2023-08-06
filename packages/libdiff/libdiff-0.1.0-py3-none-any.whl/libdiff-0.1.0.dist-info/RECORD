@@ -1,0 +1,11 @@
+libdiff/__init__.py,sha256=Dbw0DQDQM9RnBNXllwav-T2ohqkX3MD1yxfWV0l1uP0,423
+libdiff/api/__init__.py,sha256=wzNoYRSvsJrL06M2uzKVw57cdnx5YWh9-vAJ3DZYTAU,27
+libdiff/api/diff.py,sha256=AqaPH2cd8gZdZDV37pmtDTwDXr2VYQJicWVNxc1RqmA,217
+libdiff/bin/__init__.py,sha256=5GhG3RrRiMB0-I27GzZLOlhjUbZNnwMTtW2xR15ZToI,258
+libdiff/core/__init__.py,sha256=X1IdMz0cqDYRhfM48NB0BUDxlQiRPxaa4lTrtB1dYik,33
+libdiff/core/core.py,sha256=ecYqqDGdSLZJ4p8gN6VgclrLPDom7lDg7LxYeWJwk-M,1858
+libdiff/utils/__init__.py,sha256=EcgYfaArjWbkBU_xt4DKhuQaIDuh8Kb-xnLY6Ia5BK4,36
+libdiff/utils/utils.py,sha256=eHLrr7F6szI3ZBVdrHTmg3-V4urnZEwatnBNM8FJxLg,216
+libdiff-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+libdiff-0.1.0.dist-info/METADATA,sha256=5nCLlbRrkJLDjA8H4MOQgwtCzEsDQTEQQl_5hYbXVCY,341
+libdiff-0.1.0.dist-info/RECORD,,
