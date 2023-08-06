@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: llpdf
+Version: 0.0.1
+Summary: Low-level PDF library
+Home-page: https://github.com/johndoe31415/llpdf
+Author: Johannes Bauer
+Author-email: joe@johannes-bauer.com
+License: gpl-3.0
+Download-URL: https://github.com/johndoe31415/llpdf/archive/0.0.1.tar.gz
+Description: file: README.md
+Keywords: pdf,reader,writer,document,parser
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
