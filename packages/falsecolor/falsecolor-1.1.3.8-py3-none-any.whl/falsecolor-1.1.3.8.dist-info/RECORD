@@ -1,0 +1,13 @@
+FalseColor/FCdataobject.py,sha256=loLnYN2YTqLOugL3jQU8-KzKvBmTA7acMCSKlZUNBWE,7904
+FalseColor/__init__.py,sha256=mN2ZASZc6W4DgiJuzv1M4SjbLURB2j8hdGWAAA3YgrQ,101
+FalseColor/color.py,sha256=pHWq1pwk0JgUFxaoV-_ON7s16SndCUlOTSx_Q-UtTYw,27733
+FalseColor/coloring.py,sha256=Ey-VDh7ichRg1JUpK-i1nXNeTNSrSUQXJJF2RbxV450,27026
+FalseColor/dataobject.py,sha256=LhVhD3HqPW5QilKAI07e6Cxm41-nGK4nA07MFBqq7qQ,7904
+FalseColor/dataqueue.py,sha256=Md8CzMkbtJTA5SmCZL2WrDC5f52kMN-XBeNG07DoLFA,1339
+FalseColor/process.py,sha256=FokVR4rQgiCmUBkoLT171gFvbhyS5csmqM2DWJM6KPE,9892
+FalseColor/savethread.py,sha256=ScpZjvsvAZLUZC1DEh4ikwjQgWDBIDeGjhZfdXQyxpo,2719
+falsecolor-1.1.3.8.dist-info/LICENSE.txt,sha256=E_tIpsMacuDitpZQsc6-iVT3tzRJhISS3P0islvZGvo,35182
+falsecolor-1.1.3.8.dist-info/METADATA,sha256=-7Z2RKibDl7LnqseCh00oV1J9CBPDlOUzDiMYR1VjJE,911
+falsecolor-1.1.3.8.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+falsecolor-1.1.3.8.dist-info/top_level.txt,sha256=qSlr1u-s71dbIEbSBs6rlUegJwp_NjJGAGEb6aExvh0,11
+falsecolor-1.1.3.8.dist-info/RECORD,,
