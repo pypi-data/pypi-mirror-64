@@ -1,0 +1,3 @@
+#!python
+
+print("BioNAS main program")
