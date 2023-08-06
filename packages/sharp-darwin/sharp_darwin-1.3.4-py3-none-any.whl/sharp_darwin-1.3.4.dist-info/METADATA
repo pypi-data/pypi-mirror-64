@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: sharp-darwin
+Version: 1.3.4
+Summary: Spotify Playlist Manager
+Home-page: https://github.com/rmrfslashbin/sharp-darwin
+Author: Robert Sigler
+Author-email: sigler@improvisedscience.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: spotipy (>=2.10)
+Requires-Dist: python-dotenv (>=0.12)
+
+# Sharp-Darwin
+Python CLI Spotify utility.
+
+## Why?
+Why "sharp-darwin"? Why not? I have huge creativity when naming things, so I picked two incredible words to pair for your enjoyment.
+
+## Purpose
+This project started with a need to consolidate my Spotify playlists. I keep monthly playlists of the things I like. After three years of Spotify monthly playlist making... I have a lot of playlists. My goal was to consolidate the lists into quarterly (most recent lists), half year, and year playlists (oldest lists).
+
+## Getting Started
+This app requires a bit of set up. I've provided ```requirements.txt``` for Pip users and ```environment.yml``` for Anaconda users.
+1. Clone/fork your own local copy.
+2. Set up the environmant using [https://pipenv.readthedocs.io/en/latest/](pipenv) to set up a Python 3.7.x environment. Or use [https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file](Anaconda).
+3. Next, you'll need to set up your own Spotify app: https://developer.spotify.com/my-applications
+4. Create a new app, or reuse an existing. If creating a new app, provide at least the required fields.. whatever you want. After creation, click *Edit Settings*. In the *Redirect URIs* field, simply enter `https://localhost`.
+5. On the main app page, you'll need to fetch the *Client ID* and *Client Secret*.
+6. Back to the cloned code, `cp env.dist .env`
+7. Edit *.env* and fill in fields with your username and the data fetched from the previously created/view Spotify App.
+8. With all those steps complete, run the app!
+
+
+

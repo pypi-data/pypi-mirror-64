@@ -1,0 +1,3 @@
+[console_scripts]
+sharp-darwin = sharp_darwin.sharp_darwin_cli:main
+
