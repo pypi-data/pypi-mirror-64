@@ -1,0 +1,6 @@
+[console_scripts]
+create-docs = business_theme.__main__:create
+
+[sphinx.html_themes]
+business_theme = business_theme
+
