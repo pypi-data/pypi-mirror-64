@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+nd_primer/Binomialdistribution.py
+nd_primer/Gaussiandistribution.py
+nd_primer/Generaldistribution.py
+nd_primer/__init__.py
+nd_primer.egg-info/PKG-INFO
+nd_primer.egg-info/SOURCES.txt
+nd_primer.egg-info/dependency_links.txt
+nd_primer.egg-info/not-zip-safe
+nd_primer.egg-info/top_level.txt
