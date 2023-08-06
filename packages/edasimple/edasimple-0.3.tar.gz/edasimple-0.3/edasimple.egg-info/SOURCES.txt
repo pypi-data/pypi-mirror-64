@@ -1,0 +1,9 @@
+setup.py
+edasimple/Generaldistribution.py
+edasimple/__init__.py
+edasimple/eda.py
+edasimple.egg-info/PKG-INFO
+edasimple.egg-info/SOURCES.txt
+edasimple.egg-info/dependency_links.txt
+edasimple.egg-info/not-zip-safe
+edasimple.egg-info/top_level.txt
