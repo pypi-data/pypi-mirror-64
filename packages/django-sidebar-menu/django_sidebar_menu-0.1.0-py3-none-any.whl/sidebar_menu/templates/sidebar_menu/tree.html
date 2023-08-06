@@ -1,0 +1,8 @@
+<li {% if class_name %}class="{{ class_name }}"{% endif %}>
+  <p>{{ text }}</p>
+  <ul class="tree-menu">
+    {% for menu in menus %}
+      {{ menu }}
+    {% endfor %}
+  </ul>
+</li>

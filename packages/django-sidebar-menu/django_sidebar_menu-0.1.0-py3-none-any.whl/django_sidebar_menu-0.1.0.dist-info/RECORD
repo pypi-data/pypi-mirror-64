@@ -1,0 +1,9 @@
+sidebar_menu/__init__.py,sha256=q34OYAVRVK7hOs6DljPMbHxuOQHznoHv6BB2I_55yG8,2334
+sidebar_menu/apps.py,sha256=24TcX5zb_e3Seem8C5Q4U7K2APLSDQvJAOXdTkeW-r8,98
+sidebar_menu/templates/sidebar_menu/link.html,sha256=fugi_H6mk8V-W4O53m32O4DbTjZDXPLxoExon2ao0cc,103
+sidebar_menu/templates/sidebar_menu/plain.html,sha256=8uTLaOxslMHGOKLdiCti6r2PauEkHIXcpv6Ah8sACLs,75
+sidebar_menu/templates/sidebar_menu/root.html,sha256=mRxBD-uCIkSPqWuyZndZFO8BAJHXQQQsbLUUwnzVeqI,124
+sidebar_menu/templates/sidebar_menu/tree.html,sha256=HJXwzPS0_aMq6hGaOzT7K7XLp0AF3iYEwQI42f8FsZI,181
+django_sidebar_menu-0.1.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+django_sidebar_menu-0.1.0.dist-info/METADATA,sha256=LlZ3WiJsX3xHk6rK8sJTLjFE9gzu2K4moC-s8EtwZ8A,1091
+django_sidebar_menu-0.1.0.dist-info/RECORD,,

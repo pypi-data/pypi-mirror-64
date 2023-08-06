@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: django-sidebar-menu
+Version: 0.1.0
+Summary: Create sidebar menu easily
+Home-page: https://github.com/CleitonDeLima/django-easy-tenants
+License: MIT
+Author: Cleiton Lima
+Author-email: cleiton.limapin@gmail.com
+Requires-Python: >=3.7
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django (>=2)
+Project-URL: Repository, https://github.com/CleitonDeLima/django-easy-tenants
+Description-Content-Type: text/markdown
+
+# django-sidebar-menu
+
+[![Coverage Status](https://coveralls.io/repos/github/CleitonDeLima/django-sidebar-menu/badge.svg?branch=master)](https://coveralls.io/github/CleitonDeLima/django-sidebar-menu?branch=master)
+
