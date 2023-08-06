@@ -1,0 +1,41 @@
+# ASSNAKE CONFIGURATION
+assnake_db: '' # Here assnake stores information about datasets, runs, parameters and stuff. Plain old folders and text files as of now, may become sqlite db in future versions
+fna_db_dir: '' # This is the place, were all the fasta goes. Single place as of now, should become a list of folders where to search for fasta files.
+bwa_index_dir: '' # Where to store indexed fasta files for bwa. Should become list of places.
+assnake_install_dir: '' # OH SHIT!!! This is scary... As of now we need this to properly find and `include` all the snakemake modules. This MUST be changed with a better plugin architecture.
+
+conda_dir: '' # Where to store created conda environments
+drmaa_log_dir: '' # Where to store drmma log files
+
+config_location: '' # This guy should go to internal_config.ini
+
+debug: True # For print messages
+
+
+# DATABSES
+BLAST_NCBI_NT: '/data5/bio/runs-jeniaole/tools/NCBI_nt'
+NCBI_TAX: '/data5/bio/runs-jeniaole/tools/NCBI_tax'
+CHECKM: '/data5/bio/databases/checkm'
+QIIME2_SILVA99: '/data5/bio/databases/qiime2/silva-132-99-nb-classifier.qza'
+QIIME2_GG99: '/data5/bio/databases/qiime2/gg-13-8-99-nb-classifier.qza'
+CAT_BAT_DB: '/data5/bio/databases/CAT_BAT/CAT_prepare_20190108/2019-01-08_CAT_database'
+CAT_BAT_TAXA: '/data5/bio/databases/CAT_BAT/CAT_prepare_20190108/2019-01-08_taxonomy'
+picrust2_pro: '/data5/bio/databases/picrust2/default_files/prokaryotic/pro_ref'
+cogs_dir : '/data5/bio/databases/ANVIO-COGs/'
+
+centrifuge:
+    index : '/data5/bio/databases/centrifuge/p+h+v/p+h+v'
+kraken:
+    v1.1: '/data6/bio/TFM/soft/bioinf/taxa/kraken-1.1/kraken'
+    db:
+        minikraken4GB: '/data6/bio/TFM/databases/kraken/minikraken_20171013_4GB'
+
+kraken.db.human: '/data7a/bio/BacGenomeSoft/tmp/metagenome/human_db'
+kraken.db.gb: '/data5/bio/runs-jeniaole/kraken/kr.db'    
+MetaPhlAn2:
+    mpa_v29: '/data5/bio/databases/MetaPhlAn2/mpa_v29_CHOCOPhlAn_201901/mpa_v29_CHOCOPhlAn_201901.pkl'
+    mpa_v29_bt: '/data5/bio/databases/MetaPhlAn2/mpa_v29_CHOCOPhlAn_201901'
+
+
+    # mpa_v20_m200: '/data5/bio/databases/MetaPhlAn2/mpa_v20_m200/mpa_v20_m200.pkl'
+    # BOWTIE2DB: '/data5/bio/databases/MetaPhlAn2/mpa_v20_m200'
