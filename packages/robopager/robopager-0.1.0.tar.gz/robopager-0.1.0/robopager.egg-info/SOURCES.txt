@@ -1,0 +1,11 @@
+README.rst
+setup.py
+robopager/__init__.py
+robopager/__version__.py
+robopager/config_wrapper.py
+robopager/robopager.py
+robopager.egg-info/PKG-INFO
+robopager.egg-info/SOURCES.txt
+robopager.egg-info/dependency_links.txt
+robopager.egg-info/requires.txt
+robopager.egg-info/top_level.txt
