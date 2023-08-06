@@ -1,0 +1,66 @@
+# hhcp
+
+Copy a large number of files with multi thread to speed up normal cp.
+
+## Install
+
+```bash
+pip install hhcp
+```
+
+## Usage
+
+Copy a list of files with a filelist to a specified folder.
+
+```bash
+hhcp -f path_of_file_list -d destination_folder [--pre root_of_all_files] [--force]
+```
+
+Copy a dir to a specified folder
+
+```bash
+hhcp -p path_of_dir_to_be_copied -d destination_folder [--force]
+```
+
+Only one of `-p` and `-f` can be used at the same time.
+
+## Example
+
+Copy a list of files with a filelist called `list.txt` to a specified
+folder `/mnt/lustre/share` with root path `/mnt/hh` and force
+overwrite files with same name.
+
+```bash
+hhcp -f list.txt -d /mnt/lustre/share --pre /mnt/hh --force
+```
+
+Copy the dir `dir1` in current path to another folder `hh` in the
+current path without overwrite.
+
+```bash
+hhcp -p ./dir1 -d ./hh
+```
+
+## Parameters
+
+- p
+
+  Path of the directory to be copied.
+
+- f
+
+  Path of the file list.
+
+- d
+
+  Path of the destination
+
+- force
+
+  Add this to allow force overwrite
+
+- pre
+
+  The path prefix of the files in the filelist.
+
+  Can only be used with `-f`.
