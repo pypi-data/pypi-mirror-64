@@ -1,0 +1,10 @@
+windbreads/__init__.py,sha256=TFzUGiLgcnQEY8sZ1b6DXayCXL30SM4_yT1sXhz1KLo,132
+windbreads/auto.py,sha256=D-Wiksuw1QieTF2MNv-muAjDn1p2q6KWURxQ5JtX48w,4743
+windbreads/common_i18n.py,sha256=R1AlrwhlgPgTJ9GZpFFP2C_3Fv-GjgnmOjtahVnwet4,3773
+windbreads/security.py,sha256=0HnEghIS7UjigdGHM2Jq40A7M2uqimONu0zyrPSEn3Q,728
+windbreads/utils.py,sha256=bYZ4EQm_sYiJCKrbrSeLUVnvL70nIZGsjUltlIgmdGo,4958
+windbreads-0.5.5.dist-info/LICENSE,sha256=hh7pPWpcA7r4BrRFckIf5JVwnikhlMaXTOepRf109dA,1501
+windbreads-0.5.5.dist-info/METADATA,sha256=G2QOaAyRIXkyUdtHokG32kHgjzwfr2ryxLyuZIMg5XM,705
+windbreads-0.5.5.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+windbreads-0.5.5.dist-info/top_level.txt,sha256=YkASluKt77SbBsjN1PazRY_zMbNLcXIaA3rbN1o1wWs,11
+windbreads-0.5.5.dist-info/RECORD,,
