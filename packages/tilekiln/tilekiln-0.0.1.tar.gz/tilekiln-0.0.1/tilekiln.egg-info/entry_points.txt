@@ -1,0 +1,3 @@
+[console_scripts]
+tilekiln-generate = tilekiln.scripts.generate:cli
+
