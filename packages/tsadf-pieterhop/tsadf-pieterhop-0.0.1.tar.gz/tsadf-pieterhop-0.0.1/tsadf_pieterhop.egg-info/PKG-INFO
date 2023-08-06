@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tsadf-pieterhop
+Version: 0.0.1
+Summary: A framework for detecting anomalies in time-series
+Home-page: https://bitbucket.org/rakibulmdalam/time-series-anomaly-detection-framework/src/master/
+Author: Pieter Hoppenbrouwers
+Author-email: pieterhoppenbrouwers@hotmail.com
+License: UNKNOWN
+Description: # TSADF
+        
+        A framework for detecting anomalies in time-series.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
