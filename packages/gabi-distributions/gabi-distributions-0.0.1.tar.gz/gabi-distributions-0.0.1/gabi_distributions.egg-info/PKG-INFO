@@ -1,0 +1,22 @@
+Metadata-Version: 1.2
+Name: gabi-distributions
+Version: 0.0.1
+Summary: Package for Gaussian and Bionomial Distributions
+Home-page: UNKNOWN
+Author: Ahmed Gamaleldin
+Author-email: ahmedgamal1496@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # gabi-distributions package
+        
+        This package has implementation for Bionomial and Gaussian distributions including calculating mean, standard deviation,
+        plotting PDF and histogram, and many more.
+        
+        # installation
+        
+        pip install gabi-distribution
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
