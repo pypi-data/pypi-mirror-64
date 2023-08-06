@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schemalist>
+    <schema id="nl.brixit.wiremapper" path="/nl/brixit/wiremapper/">
+        <key type="s" name="wire-colors">
+            <choices>
+                <choice value="T568 A"/>
+                <choice value="T568 B"/>
+            </choices>
+            <default>"T568 B"</default>
+            <summary>Wire colors</summary>
+            <description>The color scheme to use for wire pairs in the UI</description>
+        </key>
+        <key type="s" name="units">
+            <choices>
+                <choice value="Meters"/>
+                <choice value="Feet"/>
+            </choices>
+            <default>"Meters"</default>
+            <summary>Distance unit</summary>
+            <description>The unit to display length measurements in the UI</description>
+        </key>
+    </schema>
+</schemalist>
