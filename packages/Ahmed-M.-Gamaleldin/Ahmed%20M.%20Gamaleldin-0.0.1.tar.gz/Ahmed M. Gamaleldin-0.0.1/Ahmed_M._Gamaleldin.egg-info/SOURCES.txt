@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+Ahmed_M._Gamaleldin.egg-info/PKG-INFO
+Ahmed_M._Gamaleldin.egg-info/SOURCES.txt
+Ahmed_M._Gamaleldin.egg-info/dependency_links.txt
+Ahmed_M._Gamaleldin.egg-info/top_level.txt
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
