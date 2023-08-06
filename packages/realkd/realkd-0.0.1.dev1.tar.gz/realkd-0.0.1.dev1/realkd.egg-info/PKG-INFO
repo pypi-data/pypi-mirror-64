@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: realkd
+Version: 0.0.1.dev1
+Summary: Python implementation of knowledge discovery methods
+Home-page: https://github.com/marioboley/realkd.py
+Author: Mario Boley
+Author-email: mario.boley@gmail.com
+License: MIT
+Description: # realkd.py
+        Python implementation of knowledge discovery methods
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
