@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: ass2srt
+Version: 0.0.4
+Summary: A tool that convert .ass subtitles to .srt
+Home-page: https://github.com/zcq100/ass2srt
+Author: zcq100
+Author-email: zcq100@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Text Processing
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+## ass2srt
+
+A tool that convert .ass subtitles to .srt
+
+### Install
+```
+pip install ass2srt
+```
+
+### Usage
+```
+$ ass2srt -h
+
+usage: ass2srt.py [-h] [-s {zh,en,fr,de}] [-l {0,1,2}] [-i] file
+
+positional arguments:
+  file                  .ass file to convert
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -s {zh,en,fr,de}, --suffix {zh,en,fr,de}
+                        add suffix to subtitles name
+  -l {0,1,2}, --line {0,1,2}
+                        keep double subtitles
+  -i, --info            display subtitles infomation
+  -o OUT, --out OUT     output file name
+
+```
+
+### Example :
+```
+ass2srt Movies.S01.E01.Name.ass
+```
+
+
+
+
+
