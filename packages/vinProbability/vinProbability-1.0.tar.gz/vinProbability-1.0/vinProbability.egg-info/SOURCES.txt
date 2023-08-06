@@ -1,0 +1,10 @@
+setup.py
+vinProbability/Binomialdistribution.py
+vinProbability/Gaussiandistribution.py
+vinProbability/Generaldistribution.py
+vinProbability/__init__.py
+vinProbability.egg-info/PKG-INFO
+vinProbability.egg-info/SOURCES.txt
+vinProbability.egg-info/dependency_links.txt
+vinProbability.egg-info/not-zip-safe
+vinProbability.egg-info/top_level.txt
