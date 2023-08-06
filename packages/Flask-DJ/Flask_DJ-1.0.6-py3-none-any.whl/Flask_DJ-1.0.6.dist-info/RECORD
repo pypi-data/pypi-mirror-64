@@ -1,0 +1,15 @@
+flask_dj/__init__.py,sha256=rCwzaxMJccZKQrEQGwapydO6X96gupikaj50xCceVU0,229
+flask_dj/__project_info__.py,sha256=YIJb18Cig9J6A6bTTVPYVeSnsbdMyRuGq7ctvmFqHLU,330
+flask_dj/app_init.py,sha256=lWIEU1W9ZGJdf53TAwKz9COshoFYHEvn-dec1bmVM5Q,850
+flask_dj/exceptions.py,sha256=Mb5EFUmQJx4dJyH9ifnlLZbIHoN2sW90cWI_4x_XE3Q,43
+flask_dj/manage.py,sha256=_-tpH90DdlrLxS7QVa2jo48UDQhKmETYXncUsjjAl0I,1718
+flask_dj/project_creator.py,sha256=fCEsHErPHcCKh85x73KZMfV7g9IidDfWKY5plE5GlZ4,4002
+flask_dj/templates.py,sha256=zfyCz8BXLisYNenup1q6CTJTzJhKGJV_QZEqBKlKiuE,2302
+flask_dj/urls.py,sha256=DTttCX622-skB5WbVTZ_u_8fjfs2rQp0jBBhy-X5j50,2049
+flask_dj/utils.py,sha256=nPOKX_5w2-YaMmuiK4gb5CnaWC_XQuuuncyJBm_hgu0,874
+Flask_DJ-1.0.6.dist-info/LICENSE,sha256=dugxEDYupcHMmqHFXshiME0mjarngVNJqcwY4gtwKcs,1072
+Flask_DJ-1.0.6.dist-info/METADATA,sha256=hwMA4nsXJcyIF2oz7tVPzx6DuATVTm-uNV4o1jQZwFs,2007
+Flask_DJ-1.0.6.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Flask_DJ-1.0.6.dist-info/entry_points.txt,sha256=ge9SO-Oy7mMRDdEbKNeOUByBqw4TYS0_LDFdMMaZkkE,47
+Flask_DJ-1.0.6.dist-info/top_level.txt,sha256=kvr9C0jioZDNjsPXR-3_jrx9gCFINv1JjkOKLPy8Y9A,9
+Flask_DJ-1.0.6.dist-info/RECORD,,
