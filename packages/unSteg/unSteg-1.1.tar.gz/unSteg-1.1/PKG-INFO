@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: unSteg
+Version: 1.1
+Summary: Project for finding hidden files and fixing file headers.
+Home-page: https://github.com/Kevin4562
+Author: Kevin
+Author-email: email@domain.com
+License: MIT
+Download-URL: https://github.com/Kevin4562/unSteg/archive/v1.1.zip
+Description: UNKNOWN
+Keywords: File Headers,Magic Numbers,steganography
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
