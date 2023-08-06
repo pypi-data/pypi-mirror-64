@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+chimera_client/__init__.py
+chimera_client/environ.py
+chimera_client/reader.py
+chimera_client/schema.py
+chimera_client/writer.py
+chimera_client.egg-info/PKG-INFO
+chimera_client.egg-info/SOURCES.txt
+chimera_client.egg-info/dependency_links.txt
+chimera_client.egg-info/requires.txt
+chimera_client.egg-info/top_level.txt
