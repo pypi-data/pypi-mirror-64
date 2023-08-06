@@ -1,0 +1,8 @@
+configsuite
+numpy
+pandas
+six>=1.12.0
+scipy
+xlrd
+stea
+pyscal>=0.4.0
