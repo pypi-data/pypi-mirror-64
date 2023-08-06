@@ -1,0 +1,3 @@
+src/ball_sort_puzzle
+src/nonogram
+src/sudoku
