@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: whapi
+Version: 0.5.3
+Summary: An unofficial WikiHow API
+Home-page: https://github.com/killhamster/WHAPI
+Author: killhamster
+Author-email: killhamster@gmail.com
+License: MIT
+Description: # WHAPI
+        
+        An unofficial WikiWow API. Uses BeautifulSoup to scrape WikiHow and return the data you want.
+        
+        - [Installation](#install)
+        - [Usage](#usage)
+          * [Random How To](#random-how-to)
+          * [Searching](#searching)
+          * [Parsing](#parsing)
+        
+        
+        ## Installation
+        ```bash
+        pip install whapi
+        ```
+        
+        ## Usage
+        
+        ### Random How To
+        
+        Learn random stuff! Retuns a random WikiHow article. Sometimes they're weird. Sometimes they're really weird.
+        
+        ```python
+        from whapi import RandomHowTo
+        
+        how_to = RandomHowTo()
+        how_to.print()
+        
+        ```
+        
+        ### Searching
+        
+        ```python
+        from whapi import WikiHow, search_wikihow
+        
+        
+        max_results = 1  # default for optional argument is 10
+        how_tos = search_wikihow("how to learn programming", max_results)
+        assert len(how_tos) == 1
+        how_tos[0].print()
+        
+        
+        # for efficiency and to get unlimited entries, the best is to use the generator
+        for how_to in WikiHow.search("how to learn python"):
+            how_to.print()
+        
+        ```
+        
+        ### Parsing
+        
+        Manipulate HowTo objects
+        
+        ```python
+        from whapi import HowTo
+        
+        how_to = HowTo("https://www.wikihow.com/Train-a-Dog")
+        
+        data = how_to.as_dict()
+        
+        print(how_to.url)
+        print(how_to.title)
+        print(how_to.intro)
+        print(how_to.n_steps)
+        print(how_to.summary)
+        
+        first_step = how_to.steps[0]
+        first_step.print()
+        data = first_step.as_dict()
+        
+        how_to.print(extended=True)
+        
+        ```
+        
+        ### ToDo
+        
+        - Many WikiHow articles also contain "Parts" which break down further into sub-steps. Write a function to parse these additional divisions.
+        - Add parser for tips
+        - Add parser for warnings
+        - Add function to cycle through useragent strings
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
