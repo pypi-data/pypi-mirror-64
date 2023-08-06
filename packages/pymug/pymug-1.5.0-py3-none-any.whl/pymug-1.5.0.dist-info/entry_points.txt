@@ -1,0 +1,3 @@
+[console_scripts]
+pymug = pymug.__main__:main
+
