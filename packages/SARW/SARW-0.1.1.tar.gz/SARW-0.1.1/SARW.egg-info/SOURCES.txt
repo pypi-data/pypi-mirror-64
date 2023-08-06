@@ -1,0 +1,12 @@
+README.md
+setup.py
+SARW/__init__.py
+SARW/calculator.py
+SARW/glove.py
+SARW/parser.py
+SARW.egg-info/PKG-INFO
+SARW.egg-info/SOURCES.txt
+SARW.egg-info/dependency_links.txt
+SARW.egg-info/requires.txt
+SARW.egg-info/top_level.txt
+SARW.egg-info/zip-safe
