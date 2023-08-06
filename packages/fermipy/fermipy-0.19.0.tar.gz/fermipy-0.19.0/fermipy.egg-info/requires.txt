@@ -1,0 +1,7 @@
+numpy
+pyyaml
+scipy
+astropy
+matplotlib
+healpy
+gammapy
