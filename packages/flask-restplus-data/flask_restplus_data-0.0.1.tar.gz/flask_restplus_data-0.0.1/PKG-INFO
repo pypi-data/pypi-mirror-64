@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: flask_restplus_data
+Version: 0.0.1
+Summary: Library inspired by Spring Data to perform Operations on datastores
+Home-page: https://github.com/nucklehead/python-data
+Author: nucklehead
+Author-email: pierevans@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/nucklehead/python-data/tarball/1.0.0
+Description: UNKNOWN
+Keywords: datastore,sql,nosql,postgres,mysql,sqlite,obdc,oracle database,mongodb,orm,flask,flask_restplus,rest,restplus
+Platform: UNKNOWN
