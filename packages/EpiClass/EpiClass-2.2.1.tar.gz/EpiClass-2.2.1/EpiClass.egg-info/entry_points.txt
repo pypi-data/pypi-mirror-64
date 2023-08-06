@@ -1,0 +1,3 @@
+[console_scripts]
+epiclass = epiclass.__main__:main
+
