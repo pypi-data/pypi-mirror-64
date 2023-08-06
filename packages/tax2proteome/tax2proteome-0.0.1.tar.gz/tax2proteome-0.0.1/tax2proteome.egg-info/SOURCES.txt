@@ -1,0 +1,17 @@
+README.md
+setup.py
+tax2proteome/Accession.py
+tax2proteome/DatabaseCleaner.py
+tax2proteome/Download.py
+tax2proteome/Output.py
+tax2proteome/TaxonGraph.py
+tax2proteome/TestFile.py
+tax2proteome/WriteCustomDB.py
+tax2proteome/__init__.py
+tax2proteome/__main__.py
+tax2proteome/version.py
+tax2proteome.egg-info/PKG-INFO
+tax2proteome.egg-info/SOURCES.txt
+tax2proteome.egg-info/dependency_links.txt
+tax2proteome.egg-info/requires.txt
+tax2proteome.egg-info/top_level.txt
