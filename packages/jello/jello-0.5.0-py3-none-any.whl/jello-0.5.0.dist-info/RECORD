@@ -1,0 +1,14 @@
+jello/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jello/cli.py,sha256=M8pLgizzaYjXF3-m5IDItEmfwWgatJqNYSzgX6r4w2E,11276
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_create_json.py,sha256=cGnM2RQyUU0FYqRzkIAZUBRiplktCTfppm2UegwW_mg,38000
+tests/test_main.py,sha256=kMBNhVPBuodqjRqOj_wpBMNjhAM-LfthcD88H6GfoGg,78637
+tests/fixtures/.DS_Store,sha256=1lFlJ5EFymdzGAUAaI30vcaaLHt3F1LwpG7xILf9jsM,6148
+tests/fixtures/twitter-table-output.jlines,sha256=aKlA1e2D7xxZ0Y36o8qHsLfLOr7eZEJ4TQ0FTuF5Xlg,15054
+tests/fixtures/twitterdata.jlines,sha256=MgVUOk5qKLQMhsS_hQn7dnJCiD4-0HE6YZ1UMuMIrhY,738160
+jello-0.5.0.dist-info/LICENSE,sha256=GkBMl969MsgABXNr02gHjMyPhYyOuvoldrDDkZr7ksQ,1069
+jello-0.5.0.dist-info/METADATA,sha256=ZkmnN3AtS7F5d8cxevZ04ZYCmRE47eH1YtlxlvtrPXk,6832
+jello-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+jello-0.5.0.dist-info/entry_points.txt,sha256=2-C1K7MhTdMEMpr6Z-MU7yBWT1HVj-CA4vogUT0a29k,42
+jello-0.5.0.dist-info/top_level.txt,sha256=32BXra1iQB220t36BMKfMO4olt3q8FRJVRXSsLLYOlU,12
+jello-0.5.0.dist-info/RECORD,,
