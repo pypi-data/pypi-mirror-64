@@ -1,0 +1,3 @@
+[console_scripts]
+hexlet-python-package=hexlet_python_package.scripts.hexlet_python_package:main
+
