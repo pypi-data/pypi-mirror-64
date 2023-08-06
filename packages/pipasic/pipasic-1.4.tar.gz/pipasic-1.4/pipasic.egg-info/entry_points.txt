@@ -1,0 +1,3 @@
+[console_scripts]
+pipasic = src.__init__:main
+
