@@ -1,0 +1,28 @@
+2020-03-30 08:03:37,385:INFO:System: AS4; Platform Functionality: Adaptive
+
+
+2020-03-30 08:03:37,971:INFO:Prepare complex /home/dsoler/repos/pele_platform/pele_platform/Examples/Msm/PR_AS4.pdb
+2020-03-30 08:03:39,679:INFO:
+	**Missing residues found [['AS4', 1, 'L']]
+	**Gaps found {}
+	**Metals found {}
+2020-03-30 08:03:39,687:INFO:Complex /home/dsoler/repos/pele_platform/tests/AS4_Pele_12/PR_AS4_processed.pdb prepared
+
+
+2020-03-30 08:03:39,688:INFO:Setting metrics
+2020-03-30 08:03:39,689:INFO:Metrics set
+
+
+2020-03-30 08:03:39,690:INFO:Creating template for residue AS4
+2020-03-30 08:03:42,042:INFO:Template as4z created
+
+
+2020-03-30 08:03:42,043:INFO:Generating exploration box
+2020-03-30 08:03:42,045:INFO:Box [-20.66, 59.868, 2.848] generated
+
+
+2020-03-30 08:03:42,046:INFO:Setting implicit solvent: VDGBNP
+2020-03-30 08:03:42,046:INFO:Implicit solvent set
+
+
+2020-03-30 08:03:42,047:INFO:Running Simulation
