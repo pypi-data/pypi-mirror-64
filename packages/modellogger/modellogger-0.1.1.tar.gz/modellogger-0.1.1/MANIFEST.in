@@ -1,0 +1,2 @@
+recursive-include modellogger/templates *
+recursive-include modellogger/static *
