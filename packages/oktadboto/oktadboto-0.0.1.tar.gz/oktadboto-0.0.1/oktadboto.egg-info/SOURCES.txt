@@ -1,0 +1,7 @@
+README.rst
+setup.py
+oktadboto.egg-info/PKG-INFO
+oktadboto.egg-info/SOURCES.txt
+oktadboto.egg-info/dependency_links.txt
+oktadboto.egg-info/requires.txt
+oktadboto.egg-info/top_level.txt
