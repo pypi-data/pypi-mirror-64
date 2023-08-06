@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kabaret.flow_contextaul_dict
+Version: 0.0.1
+Summary: kabaret.flow contextual dict
+Home-page: https://gitlab.com/kabaretstudio/kabaret.flow_contextual_dict
+Author: Damien "dee" Coureau
+Author-email: kabaret-dev@googlegroups.com
+License: LGPLv3+
+Description: # kabaret.flow_contextual_dict
+        
+        A set of flow.Object to add and manage a dict with overridable values at arbitrary points in your flow tree.
+Keywords: vfx animation pipeline asset library
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*,!=3.2.*
+Description-Content-Type: text/markdown
+Provides-Extra: dev
