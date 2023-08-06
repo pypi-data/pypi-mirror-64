@@ -1,0 +1,7 @@
+test_numpy_setuptools/__init__.py,sha256=lw0zN2yx-NwAt1vFX-zzHZdCDII2ZXlwG5ww_tTEd0Y,120
+test_numpy_setuptools/test_numpy_setuptools_main.py,sha256=YEiJ--6buYrLu69XJDSpJiwzHdOgv851YPo2etd3pa0,618
+test_numpy_setuptools/test_numpy_setuptools_multi.py,sha256=s8bqsn7_JNPNeHfXlT4reKaBhaHIaTOR1EB01weOLbg,101
+test_numpy_setuptools-1.3.dist-info/METADATA,sha256=8mAJdm9beCd69BM2ohfnBv5u1vfjswfNNrSJhp3Q7o8,236
+test_numpy_setuptools-1.3.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+test_numpy_setuptools-1.3.dist-info/top_level.txt,sha256=eWrA6RQxu9oPVp0k8RcZq_zJog-OPVYw5A_3Bkxr_CU,22
+test_numpy_setuptools-1.3.dist-info/RECORD,,
