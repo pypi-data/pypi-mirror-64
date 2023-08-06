@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: chimera-client
+Version: 0.0.1
+Summary: Client for communication using chimera channels.
+Home-page: https://gitlab.inspr.com/chimera/client
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: avro-python3
+Requires-Dist: confluent-kafka
+
+UNKNOWN
+
+
