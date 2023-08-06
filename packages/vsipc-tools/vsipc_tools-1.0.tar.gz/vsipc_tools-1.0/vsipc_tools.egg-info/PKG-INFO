@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vsipc-tools
+Version: 1.0
+Summary: Useful tools implemented by Vitalii Sipchenko
+Home-page: https://bitbucket.org/vsipchenko/vsipc_tools/
+Author: Vitalii Sipchenko
+Author-email: vitaliisipchenko@gmail.com
+License: MIT
+Download-URL: https://pypi.org/project/elastictools/
+Description: README.md
+        
+        HISTORY.md
+        
+Keywords: VsipcTools,vsipctools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
