@@ -1,0 +1,25 @@
+six~=1.13
+
+[:python_version < "3.4"]
+enum34
+
+[:python_version == "2.7"]
+typing~=3.7.4
+
+[arrow]
+arrow
+
+[filter_query]
+ply
+
+[inspect]
+humanfriendly
+
+[msgpack]
+msgpack
+
+[pint]
+pint
+
+[yaml]
+pyyaml
