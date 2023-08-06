@@ -1,0 +1,13 @@
+README.rst
+pyproject.toml
+setup.py
+src/folge_cli/__init__.py
+src/folge_cli/cmd.py
+src/folge_cli/documentation.py
+src/folge_cli.egg-info/PKG-INFO
+src/folge_cli.egg-info/SOURCES.txt
+src/folge_cli.egg-info/dependency_links.txt
+src/folge_cli.egg-info/entry_points.txt
+src/folge_cli.egg-info/not-zip-safe
+src/folge_cli.egg-info/requires.txt
+src/folge_cli.egg-info/top_level.txt

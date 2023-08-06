@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: folge-cli
+Version: 0.1.0
+Summary: Client for the folge project
+Home-page: https://github.com/labd/folge-cli
+Author: Lab Digital
+Author-email: opensource@labdigital.nl
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Provides-Extra: docs
+Provides-Extra: test

@@ -1,0 +1,3 @@
+[console_scripts]
+folge-cli = folge_cli.cmd:main
+
