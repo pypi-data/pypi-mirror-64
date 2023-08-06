@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.md
+req-test.txt
+req.txt
+setup.py
+test_vcache.py
+vcache/__init__.py
+vcache.egg-info/PKG-INFO
+vcache.egg-info/SOURCES.txt
+vcache.egg-info/dependency_links.txt
+vcache.egg-info/requires.txt
+vcache.egg-info/top_level.txt
