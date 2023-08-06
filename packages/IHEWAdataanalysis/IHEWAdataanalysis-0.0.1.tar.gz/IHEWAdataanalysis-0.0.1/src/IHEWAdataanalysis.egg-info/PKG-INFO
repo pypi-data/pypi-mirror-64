@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: IHEWAdataanalysis
+Version: 0.0.1
+Summary: Water Accounting Report Tools
+Home-page: https://github.com/wateraccounting/IHEWAdataanalysis
+Author: Quan Pan
+Author-email: quanpan302@hotmail.com
+License: GPLv3
+Project-URL: Documentation, https://ihewadataanalysis.readthedocs.io/en/latest/
+Description: .. -*- mode: rst -*-
+        
+        |CoverAlls|_ |Travis|_ |ReadTheDocs|_ |DockerHub|_ |PyPI|_
+        
+        .. |CoverAlls| image:: https://coveralls.io/repos/github/wateraccounting/IHEWAdataanalysis/badge.svg?branch=master
+        .. _CoverAlls: https://coveralls.io/github/wateraccounting/IHEWAdataanalysis?branch=master
+        
+        .. |Travis| image:: https://travis-ci.org/wateraccounting/IHEWAdataanalysis.svg?branch=master
+        .. _Travis: https://travis-ci.org/wateraccounting/IHEWAdataanalysis
+        
+        .. |ReadTheDocs| image:: https://readthedocs.org/projects/ihewadataanalysis/badge/?version=latest
+        .. _ReadTheDocs: https://ihewadataanalysis.readthedocs.io/en/latest/
+        
+        .. |DockerHub| image:: https://img.shields.io/docker/cloud/build/wateraccounting/ihewadataanalysis
+        .. _DockerHub: https://hub.docker.com/r/wateraccounting/ihewadataanalysis
+        
+        .. |PyPI| image:: https://img.shields.io/pypi/v/IHEWAdataanalysis
+        .. _PyPI: https://pypi.org/project/IHEWAdataanalysis/
+        
+        
+        IHEWAdataanalysis
+        =================
+        
+        IHE WaterAccounting Report Tool.
+        
+        Latex
+        -----
+        
+        List installed packages in miktex
+        
+        .. code-block:: console
+        
+            $ mpm --list >miktex_pkg.md
+        
+        
+        Products
+        --------
+        
+        
+        Note
+        ====
+        
+        For details, see https://www.wateraccounting.org/.
+        
+Keywords: GDAL,Water
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst; charset=UTF-8
+Provides-Extra: testing
