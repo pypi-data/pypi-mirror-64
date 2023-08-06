@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: fuelcell
+Version: 0.7
+Summary: fuel cell data processing
+Home-page: https://github.com/samaygarg/fuelcell
+Author: Samay Garg
+Author-email: samay.garg@berkeley.edu
+License: MIT
+Download-URL: https://github.com/samaygarg/fuelcell/archive/0.7.tar.gz
+Description: UNKNOWN
+Keywords: SOME,MEANINGFULL,KEYWORDS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
