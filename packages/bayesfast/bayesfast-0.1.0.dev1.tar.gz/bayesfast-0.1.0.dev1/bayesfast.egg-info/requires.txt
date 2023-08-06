@@ -1,0 +1,7 @@
+cython
+dask
+distributed
+numdifftools
+numpy
+scikit-learn
+scipy
