@@ -1,0 +1,15 @@
+numpy>=1.15.4
+h5py
+matplotlib
+seaborn
+statsmodels
+corner
+tables
+deepdish
+pandas
+pygments
+astropy>=3.2.3
+lalsuite
+gwpy
+configparser
+plotly
