@@ -1,0 +1,7 @@
+setup.py
+JsonFlatten/__init__.py
+JsonFlatten/flatten.py
+JsonFlatten_xh.egg-info/PKG-INFO
+JsonFlatten_xh.egg-info/SOURCES.txt
+JsonFlatten_xh.egg-info/dependency_links.txt
+JsonFlatten_xh.egg-info/top_level.txt
