@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: deadsimplekv
+Version: 0.3.1
+Summary: Very simple key-value store for Python
+Home-page: https://github.com/beardog108/deadsimplekv
+Author: Kevin Froman
+Author-email: beardog@mailbox.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
