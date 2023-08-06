@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: jmeterAPI
+Version: 0.8
+Summary: JMeter test plan builder
+Home-page: https://github.com/lanitgithub/jmeter_api
+Author: Alexey Svetlov
+Author-email: alexeysvetlov92@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/lanitgithub/jmeter_api
+Description: # JMeter API
+        Yet another HAR to JMX
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
