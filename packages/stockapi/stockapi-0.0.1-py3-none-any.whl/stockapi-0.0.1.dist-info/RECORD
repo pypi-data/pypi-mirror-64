@@ -1,0 +1,8 @@
+stockpy/__init__.py,sha256=ADZp2Qk2gLoBA-X5dvsVv7jfST4FtCbQ18Rc7PwfLEg,25
+stockpy/constants.py,sha256=3Yf8ZmVfb2ll36P3dfyvoUtblE_8BpkFu-KPyZKlN7M,23
+stockpy/errors.py,sha256=LY73JV-nqZ4-PHvffiPDwKOysHuNedYsqRUTPod9Dls,84
+stockpy/stockapi.py,sha256=wI5z1uIWDvX9r18Mxk_AdMh7LmUBLGSDJlHQv-HfovY,2534
+stockapi-0.0.1.dist-info/METADATA,sha256=KJfzDehHVQyoWvAXVyxacGF8zMfUGaLazY5G1Mx9GVc,957
+stockapi-0.0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+stockapi-0.0.1.dist-info/top_level.txt,sha256=37Tf9lloFk7aOLqHEWq_Q92RYM3LBnmn2Ckm53jpYqA,8
+stockapi-0.0.1.dist-info/RECORD,,
