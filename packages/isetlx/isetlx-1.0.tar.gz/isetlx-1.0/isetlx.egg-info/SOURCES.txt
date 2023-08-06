@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+isetlx/__init__.py
+isetlx/__main__.py
+isetlx/install.py
+isetlx/kernel.py
+isetlx/logo-32x32.png
+isetlx/logo-64x64.png
+isetlx.egg-info/PKG-INFO
+isetlx.egg-info/SOURCES.txt
+isetlx.egg-info/dependency_links.txt
+isetlx.egg-info/requires.txt
+isetlx.egg-info/top_level.txt
