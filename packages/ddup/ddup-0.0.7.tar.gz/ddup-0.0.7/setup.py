@@ -1,0 +1,80 @@
+import os
+import subprocess
+from setuptools import find_packages, setup
+
+# import tools
+
+
+def readme():
+    with open('README.md', encoding='utf-8') as f:
+        content = f.read()
+    return content
+
+
+def get_git_hash():
+
+    def _minimal_ext_cmd(cmd):
+        # construct minimal environment
+        env = {}
+        for k in ['SYSTEMROOT', 'PATH', 'HOME']:
+            v = os.environ.get(k)
+            if v is not None:
+                env[k] = v
+        # LANGUAGE is used on win32
+        env['LANGUAGE'] = 'C'
+        env['LANG'] = 'C'
+        env['LC_ALL'] = 'C'
+        out = subprocess.Popen(
+            cmd, stdout=subprocess.PIPE, env=env).communicate()[0]
+        return out
+
+    try:
+        out = _minimal_ext_cmd(['git', 'rev-parse', 'HEAD'])
+        sha = out.strip().decode('ascii')
+    except OSError:
+        sha = 'unknown'
+
+    return sha
+
+
+def get_hash():
+    if os.path.exists('.git'):
+        sha = get_git_hash()[:7]
+    else:
+        sha = 'unknown'
+
+    return sha
+
+
+def get_version():
+    version_file = 'ddup/version.py'
+    with open(version_file, 'r', encoding='utf-8') as f:
+        exec(compile(f.read(), version_file, 'exec'))
+    return locals()['__version__']
+
+
+def get_requirements(filename='requirements.txt'):
+    here = os.path.dirname(os.path.realpath(__file__))
+    with open(os.path.join(here, filename), 'r') as f:
+        requires = [line.replace('\n', '') for line in f.readlines()]
+    return requires
+
+
+if __name__ == '__main__':
+    setup(
+        name='ddup',
+        version=get_version(),
+        description='',
+        long_description=readme(),
+        long_description_content_type='text/markdown',
+        packages=find_packages(),
+        package_dir={'ddup': 'ddup'},
+        package_data={'ddup': ['utils/black.png']},
+        data_files=[
+            ('ddup/utils', ['ddup/utils/black.png']),
+        ],
+        setup_requires=['pytest-runner'],
+        tests_require=['pytest'],
+        install_requires=get_requirements(),
+        zip_safe=False,
+        entry_points={'console_scripts': ['ddup = tools.ddupsdk:main']})
