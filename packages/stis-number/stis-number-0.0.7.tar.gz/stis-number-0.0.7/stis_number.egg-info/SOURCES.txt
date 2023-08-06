@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+stis_number/__init__.py
+stis_number/_version.py
+stis_number/is_number.py
+stis_number.egg-info/PKG-INFO
+stis_number.egg-info/SOURCES.txt
+stis_number.egg-info/dependency_links.txt
+stis_number.egg-info/requires.txt
+stis_number.egg-info/top_level.txt

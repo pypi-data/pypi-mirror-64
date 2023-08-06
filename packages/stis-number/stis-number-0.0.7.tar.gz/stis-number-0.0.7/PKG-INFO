@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: stis-number
+Version: 0.0.7
+Summary: A Python library to determine if something is a number.
+Home-page: UNKNOWN
+Author: Steve
+Author-email: steve@gmail.com
+License: UNKNOWN
+Description: is-number
+        ==========
+        
+        .. image:: https://img.shields.io/pypi/v/stis-number
+           :alt: PyPi
+        
+        A Python library to determine if something is a number.
+        
+        Installation
+        -------------
+        
+        .. code-block:: bash
+           
+        	pip install stis-number
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst

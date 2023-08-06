@@ -1,0 +1,7 @@
+include README.rst
+include LICENSE
+include requirements.txt
+graft stis_number
+recursive-exclude * *.py[co]
+include versioneer.py
+include stis_number/_version.py
