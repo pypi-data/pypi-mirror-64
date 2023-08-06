@@ -1,0 +1,13 @@
+wikistream/__init__.py,sha256=2qybGX78l8r2BkCPgUozs2ZlcBAqLKeZHQtqW3kwkrA,60
+wikistream/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wikistream/aiosseclient/LICENSE,sha256=d51moOcdMydvY1nnAPe50EyUjxLjktHMYLXyJzbOGzw,1065
+wikistream/aiosseclient/MANIFEST.in,sha256=_3FXoZ1DxFiq5RAhF72rHrYU6n_eX76qddcZiBUMgsM,16
+wikistream/aiosseclient/README.md,sha256=fzT_9z8qtQFnIxPKk_eaeqzpT7VYF91xCLxpr76XFKM,809
+wikistream/aiosseclient/aiosseclient.py,sha256=MAPGuxiasGISLc2pl8VYDiSvaQFmWXQAwYDG9LOiF9Y,3101
+wikistream/aiosseclient/requirements.txt,sha256=L2ruDsv1O2s3YLoKFcXLxHiYvc2rHbUhpjrZmnvKPZg,7
+wikistream/aiosseclient/setup.py,sha256=BnfsW4Utre-EhHbidFowR17mQAO8jizl9JiwucZwYP4,585
+wikistream/client.py,sha256=xbSn0hp213KOmfhrFTpRvmJNoeafC6rMh2Bl2CgfnGU,10527
+wikistream-0.1.6.dist-info/LICENSE.md,sha256=YxiYkalEpl_tguAStUizP1NQMvwHCGRSfZA6wSTxTzY,1090
+wikistream-0.1.6.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+wikistream-0.1.6.dist-info/METADATA,sha256=oiPSM1ePuA6Iv8fGI_WtyZoV9plDUwZhAcFXTdcy0SE,557
+wikistream-0.1.6.dist-info/RECORD,,
