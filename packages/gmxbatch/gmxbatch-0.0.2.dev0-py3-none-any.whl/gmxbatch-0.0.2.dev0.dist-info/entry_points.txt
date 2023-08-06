@@ -1,0 +1,3 @@
+[console_scripts]
+top2itp = gmxbatch.utilities.top2itp:main
+
