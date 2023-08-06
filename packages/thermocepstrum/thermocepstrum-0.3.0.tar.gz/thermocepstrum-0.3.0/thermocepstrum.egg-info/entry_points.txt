@@ -1,0 +1,4 @@
+[console_scripts]
+thermocepstrum-analysis = thermocepstrum.analysis:main
+thermocepstrum-gui = thermocepstrum_gui.main:run
+
