@@ -1,0 +1,8 @@
+adc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adc/auth.py,sha256=LyxEY1RKQ8jtpFhwLK0ThR6_p6DN1t_AjpHmJxpBhMw,1687
+adc/streaming.py,sha256=wIMfDas5yAaFmHHRBZ5GaEOvstNK4CqFZthpdSCh27U,12690
+adc_streaming-0.1.0.dist-info/LICENSE,sha256=BzSloDstU84TGMF0A6S-daRS2sVHoDgo3e7yh666Hgg,1519
+adc_streaming-0.1.0.dist-info/METADATA,sha256=77dhcrd1YXImUfUR9gnHyC7lzkPL1eGLDqqUxW4vXDw,1977
+adc_streaming-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+adc_streaming-0.1.0.dist-info/top_level.txt,sha256=8quD7Fop9Wwsv5j59wJl1NsuB_dGLESpqC4Tk7V2Qew,4
+adc_streaming-0.1.0.dist-info/RECORD,,
