@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: geosoup
+Version: 0.1.0
+Summary: Geospatial data manipulation using GDAL in python
+Home-page: https://github.com/masseyr/geosoup
+Author: Richard Massey
+Author-email: rm885@nau.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Geosoup 0.1.0
+
+ Geospatial data manipulation using GDAL in python
+
+This library is a minimalistic software distribution for manipulation of geospatial data objects. All the heavy lifting is done by GDAL, numpy and, scipy. 
+
+Install using:
+
+`pip install geosoup`
+
+
+
+
