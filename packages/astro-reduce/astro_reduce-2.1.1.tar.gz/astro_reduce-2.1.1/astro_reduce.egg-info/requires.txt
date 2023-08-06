@@ -1,0 +1,6 @@
+click
+astropy
+scipy
+numpy
+matplotlib
+packaging
