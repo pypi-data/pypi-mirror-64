@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: asterism
+Version: 0.5
+Summary: Helpers for Project Electron infrastructure
+Home-page: http://github.com/RockefellerArchiveCenter/asterism
+Author: Rockefeller Archive Center
+Author-email: archive@rockarch.org
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: bagit
+Requires-Dist: django
+Requires-Dist: djangorestframework
+Requires-Dist: psycopg2
+Requires-Dist: odin
+
+UNKNOWN
+
+
