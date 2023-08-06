@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: canano
+Version: 0.0.1
+Summary: Python library for Canano Raspberry Pi add-on board
+Home-page: https://github.com/Tbruno25/canano
+Author: Tj Bruno
+Author-email: Tbruno25@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
