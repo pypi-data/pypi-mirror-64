@@ -1,0 +1,7 @@
+pyserial
+i2cdriver
+typing_extensions
+array_devices@ git+git://github.com/sacherjj/array_devices
+pyvisa
+pyvisa-py
+pyusb
