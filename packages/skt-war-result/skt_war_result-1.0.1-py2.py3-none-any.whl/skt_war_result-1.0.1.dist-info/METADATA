@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: skt-war-result
+Version: 1.0.1
+Summary: Lists war results for Japanese servers in Lineage Mobile game.
+Home-page: https://github.com/yumenoshima/skt-war-result
+Author: yumenoshima
+Author-email: skt.tofuya@gmail.com
+License: BSD
+Download-URL: https://github.com/yumenoshima/skt-war-result/tarball/1.0.1
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: nose
+Requires-Dist: coverage
+Requires-Dist: pypi-publisher
+
+SKT War Result
+===============================
+
+version number: 1.0
+author: yumenoshima
+
+Overview
+--------
+
+Lists war results for Japanese servers in Lineage Mobile game.
+
+Installation / Usage
+--------------------
+
+To install use pip:
+
+    $ pip install skt-war-result
+
+
+Or clone the repo:
+
+    $ git clone https://github.com/yumenoshima/skt-war-result.git
+    $ python setup.py install
+
+Contributing
+------------
+
+TBD
+
+Example
+-------
+
+TBD
+
