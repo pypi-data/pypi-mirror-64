@@ -1,0 +1,9 @@
+README.md
+setup.py
+shorten_url/__init__.py
+shorten_url/shorten_url.py
+shorten_url.egg-info/PKG-INFO
+shorten_url.egg-info/SOURCES.txt
+shorten_url.egg-info/dependency_links.txt
+shorten_url.egg-info/requires.txt
+shorten_url.egg-info/top_level.txt
