@@ -1,0 +1,4 @@
+django
+celery
+scrapy
+psycopg2
