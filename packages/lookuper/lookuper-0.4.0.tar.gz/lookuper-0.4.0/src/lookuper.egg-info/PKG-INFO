@@ -1,0 +1,122 @@
+Metadata-Version: 1.1
+Name: lookuper
+Version: 0.4.0
+Summary: Lookup nested data structures
+Home-page: https://github.com/cr3/lookuper
+Author: Marc Tardif
+Author-email: marc@interunion.ca
+License: MIT
+Description: .. image:: https://img.shields.io/pypi/v/lookuper.svg
+           :target: https://pypi.org/project/lookuper/
+           :alt: PyPI
+        .. image:: https://img.shields.io/pypi/pyversions/lookuper.svg
+           :target: https://pypi.org/project/lookuper/
+           :alt: Versions
+        .. image:: https://travis-ci.org/cr3/lookuper.svg?branch=master
+           :target: https://travis-ci.org/cr3/lookuper/
+           :alt: Travis
+        .. image:: https://codecov.io/github/cr3/lookuper/branch/master/graph/badge.svg
+           :target: https://codecov.io/github/cr3/lookuper/
+           :alt: Codecov
+        .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+           :target: https://github.com/psf/black/
+           :alt: Black
+        
+        ``lookuper`` makes it easy to lookup a target in nested data structures. A
+        lookup can return the values matching a target as a string or,
+        equivalently, as an arguments list:
+        
+        .. code-block:: python
+        
+            >>> from lookuper import lookup
+            >>> list(lookup({'a': [{'b': 1}]}, 'a.0.b'))
+            [1]
+            >>> list(lookup({'a': [{'b': 1}]}, 'a', 0, 'b'))
+            [1]
+        
+        As a string, a target can contain stars (``*``) to match anything and
+        globstars (``**``) to match anything recursively:
+        
+        .. code-block:: python
+        
+            >>> list(lookup({'a': {'b': 1, 'B': 2}}, 'a.*'))
+            [1, 2]
+            >>> list(lookup([{'b': 1}, {'a': {'b': 2}}], '**.b'))
+            [1, 2]
+        
+        Note that these special characters, including the dot (``.``), can be escaped:
+        
+            >>> list(lookup({'*': 1}, r'\*'))
+            [1]
+            >>> list(lookup({'a.b': 1}, r'a\.b'))
+            [1]
+        
+        As an arguments list, a target can also contain functions and regular
+        expressions:
+        
+        .. code-block:: python
+        
+            >>> from lookuper import match
+            >>> list(lookup({'a': {'b': 1, 'B': 2}}, 'a', match(str.islower)))
+            [1]
+            >>> import re
+            >>> list(lookup({'a': {'b': 1, 'B': 2}}, 'a', re.compile(r'[a-z]')))
+            [1]
+        
+        Recipes
+        -------
+        
+        ``lookuper`` can be combined with other libraries like
+        `more-itertools <https://pypi.org/project/more-itertools/>`_
+        to return only one value:
+        
+        .. code-block:: python
+        
+            >>> from more_itertools import only
+            >>> def lookup1(data, *targets, **kw):
+            ...     return only(lookup(data, *targets), **kw)
+            >>> lookup1({}, 'a')
+            >>> lookup1({'a': 1}, 'a')
+            1
+            >>> lookup1({'a': 1, 'b': 2}, '*')
+            Traceback (most recent call last):
+            ...
+            ValueError: Expected exactly one item in iterable, but got 1, 2, and perhaps more.
+        
+        Extensions
+        ----------
+        
+        By default, ``lookuper`` only supports nested data structures like
+        mappings, sequences and sets. It can extended to support other types:
+        
+        .. code-block:: python
+        
+            >>> from lookuper import lookup_data
+            >>> func = lookup_data.register(object, lambda data: (
+            ...     (name, getattr(data, name, None)) for name in dir(data)
+            ... ))
+            >>> list(lookup(object(), '__class__.__class__.__name__'))
+            ['type']
+        
+        Project information
+        ===================
+        
+        ``lookuper`` is released under the `MIT <https://choosealicense.com/licenses/mit/>`_ license,
+        the code on `GitHub <https://github.com/cr3/lookuper>`_,
+        and the latest release on `PyPI <https://pypi.org/project/lookuper/>`_.
+        
+Keywords: lookup nested
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
