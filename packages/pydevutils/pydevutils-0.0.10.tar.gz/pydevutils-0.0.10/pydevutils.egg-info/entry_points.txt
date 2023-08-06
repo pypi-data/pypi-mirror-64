@@ -1,0 +1,4 @@
+[console_scripts]
+bump_package_patch_version = pydevutils.commands:bump_package_patch_version
+make-github-repo = pydevutils.commands:make_github_repo
+
