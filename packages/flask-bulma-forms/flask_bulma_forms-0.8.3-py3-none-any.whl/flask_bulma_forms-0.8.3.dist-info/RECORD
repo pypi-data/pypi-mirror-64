@@ -1,0 +1,15 @@
+flask_bulma_forms/__init__.py,sha256=llSSrCilfcLbSkWctRzzDhiCpA6FA9ospeU4iPc5hgM,3419
+flask_bulma_forms/static/css/bulma.css,sha256=uByAjQgKh5__Z_gDvbL7MWsDcbwX7d_KizVil6On1dQ,229963
+flask_bulma_forms/static/css/bulma.css.map,sha256=ifmD9Pa7vX-559Zd5IQDmfsFKe9WiqWU8UsG3Ww6lbw,88705
+flask_bulma_forms/static/css/bulma.min.css,sha256=1nEaE91OpXJD7M6W5uSiqxhdmrY-lOOTHC1iUxU9Pds,194736
+flask_bulma_forms/static/js/jquery.js,sha256=WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU,280364
+flask_bulma_forms/static/js/jquery.min.js,sha256=CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo,88145
+flask_bulma_forms/static/js/jquery.min.map,sha256=216gdJ9jyl9OLrNNj28ZfQS92h9jPHKgx3y0us_UhLE,136397
+flask_bulma_forms/static/js/jquery.slim.js,sha256=BTlTdQO9_fascB1drekrDVkaKd9PkwBymMlHOiG-qLI,227022
+flask_bulma_forms/static/js/jquery.slim.min.js,sha256=pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8,71037
+flask_bulma_forms/static/js/jquery.slim.min.map,sha256=mkFzDPrhy67J6-u0ZJ5_YWI2tRKsN8EQepzr5Alu3jw,108757
+flask_bulma_forms/templates/bulma/base.html.j2,sha256=KLPRHUs4NYIgadZ9fMnUB69hRym1ITKIEzkyp1Lpf2U,1184
+flask_bulma_forms/templates/bulma/utils.html.j2,sha256=OlMd24VgKWusZmn0fgUBY3p6IMfVh9nhxMXsVSH-qto,1220
+flask_bulma_forms-0.8.3.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+flask_bulma_forms-0.8.3.dist-info/METADATA,sha256=WV7ClgkllACFh8edA3IyEOoMAHnJOsUTnJubrCFMI6E,1154
+flask_bulma_forms-0.8.3.dist-info/RECORD,,
