@@ -1,0 +1,10 @@
+responsemock/__init__.py,sha256=uFugCqggEvyk8-69b4aTMPd4-Vf0ivPoBdd0j3iGy3U,145
+responsemock/entry.py,sha256=trn9b5mbrCCCsCVXsfMBam5cs3SoXHGMGca9TICimW0,1148
+responsemock/utils.py,sha256=GKAgkZ_uAUPt2qgfImBS73ecUbgQM0xV9Y-v8vF4zCM,3080
+pytest_responsemock-0.2.0.dist-info/AUTHORS,sha256=gOziZCA7702wf72uU8amaBsi4Y0FADK0LVw51jdKRec,203
+pytest_responsemock-0.2.0.dist-info/LICENSE,sha256=F4QZFspX4VpVbQ72fLponaRO_A4gD9Lia8RM8lMB-Nw,1507
+pytest_responsemock-0.2.0.dist-info/METADATA,sha256=OxkOTrIQOeZ1wHNyp-wKEfEcbFGJSWROs4X64eW-sgU,3336
+pytest_responsemock-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pytest_responsemock-0.2.0.dist-info/entry_points.txt,sha256=8P3jFy_ehK2ur9G70fWvfE2jhN42G9zBdqrzb17UTv0,46
+pytest_responsemock-0.2.0.dist-info/top_level.txt,sha256=jXvU0c7uZ0zxb4lEIRShI6UJcfnKTyu4IZ9e6cNdxjE,13
+pytest_responsemock-0.2.0.dist-info/RECORD,,
