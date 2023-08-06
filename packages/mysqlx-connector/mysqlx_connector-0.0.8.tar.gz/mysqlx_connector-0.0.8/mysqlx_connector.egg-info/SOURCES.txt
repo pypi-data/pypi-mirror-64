@@ -1,0 +1,6 @@
+README.md
+setup.py
+mysqlx_connector.egg-info/PKG-INFO
+mysqlx_connector.egg-info/SOURCES.txt
+mysqlx_connector.egg-info/dependency_links.txt
+mysqlx_connector.egg-info/top_level.txt
