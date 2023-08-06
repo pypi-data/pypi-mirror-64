@@ -1,0 +1,8 @@
+README.rst
+setup.py
+suext.egg-info/PKG-INFO
+suext.egg-info/SOURCES.txt
+suext.egg-info/dependency_links.txt
+suext.egg-info/entry_points.txt
+suext.egg-info/requires.txt
+suext.egg-info/top_level.txt
