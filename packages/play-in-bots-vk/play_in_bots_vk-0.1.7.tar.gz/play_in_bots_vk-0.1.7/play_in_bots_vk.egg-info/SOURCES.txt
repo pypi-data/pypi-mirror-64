@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+play_in_bots_vk/__init__.py
+play_in_bots_vk/main_vk.py
+play_in_bots_vk.egg-info/PKG-INFO
+play_in_bots_vk.egg-info/SOURCES.txt
+play_in_bots_vk.egg-info/dependency_links.txt
+play_in_bots_vk.egg-info/not-zip-safe
+play_in_bots_vk.egg-info/top_level.txt
