@@ -1,0 +1,8 @@
+README.md
+setup.py
+walkman/__init__.py
+walkman/_impl.py
+walkman.egg-info/PKG-INFO
+walkman.egg-info/SOURCES.txt
+walkman.egg-info/dependency_links.txt
+walkman.egg-info/top_level.txt
