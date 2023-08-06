@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: flask-yoyo
+Version: 0.1.0
+Summary: Dead-simple database migration with Yoyo for your Flask app
+License: BSD-3-Clause
+Author: Étienne BERSAC
+Author-email: bersace03@cae.li
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: flask (>=1.1.1,<2.0.0)
+Requires-Dist: yoyo-migrations (>=7.0.2,<8.0.0)
