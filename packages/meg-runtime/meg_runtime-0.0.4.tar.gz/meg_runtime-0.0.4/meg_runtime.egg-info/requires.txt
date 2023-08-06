@@ -1,0 +1,8 @@
+kivy>=2.0rc
+kivy-deps.glew
+kivy-deps.sdl2
+pillow
+pygit2
+python-dateutil
+requests
+pypiwin32
