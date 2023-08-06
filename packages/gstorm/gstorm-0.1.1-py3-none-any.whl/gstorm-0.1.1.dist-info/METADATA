@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: gstorm
+Version: 0.1.1
+Summary: GraphQL ORM for python (based on pygqlc)
+Home-page: https://github.com/valiot/python-gstorm
+Author: Baruc Almaguer
+Author-email: baruc@valiot.io
+License: UNKNOWN
+Keywords: gstorm,orm,graphql,gql
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: pygqlc
+Requires-Dist: inflect
+Requires-Dist: pydash
+Requires-Dist: click
+
+# python-gstorm
+Graphql Simple Tiny Object Relational Mapping - Graphql ORM for python
+
+
