@@ -1,0 +1,15 @@
+sage_explorer/__init__.py,sha256=XKR7RhhYy7hPzumC490W8oaEeaj6zC-26XtD1iy9J2M,353
+sage_explorer/_catalogs.py,sha256=HsVt37Qa53hS3akQu4pdjWR-rq1F1VGmQsl-W37REoE,1960
+sage_explorer/_sage_catalog.py,sha256=R8pdrWea1u-CLThXsQPr9L-uG0Dsiqn4IoOLilI45k0,2364
+sage_explorer/_widgets.py,sha256=TNZEu3CTBUgera0IJ8d_Tb50ThbYbwU4YJ12ft4hpdM,4393
+sage_explorer/essai.py,sha256=HTNhE43FabFiWfBzOWck70MMJ3mCn1AHGxNc4oQB-0A,81
+sage_explorer/explored_member.py,sha256=Z1I-rg_Jfx0ipvMw458RqkFtqOWWwDW9Yo0hbtGfWh4,22528
+sage_explorer/flatsurf.yml,sha256=vm7MmEiEw0NehEHXvPh5P9z2dBYtSuJxmopnRs7bH_8,231
+sage_explorer/properties.yml,sha256=5o5KhxLGQac3kXAQ_tx2gR02YCPkmBMrcsqN1nYPbY8,2473
+sage_explorer/properties1.yml,sha256=QPHGiQmBvHqdj0LZAYnYJgnbuefD0g9FabzYvQpdFvo,2412
+sage_explorer/sage_explorer.py,sha256=iQyQh4TAnIuqY621IDDzHluJGXdhBj0jCUT1LcM2pe0,60831
+sage_explorer-0.5.2.dist-info/LICENSE,sha256=2ylvL381vKOhdO-w6zkrOxe9lLNBhRQpo9_0EbHC_HM,18046
+sage_explorer-0.5.2.dist-info/METADATA,sha256=hHQPqAdg9I4vl8DAAujyBo7WpRUvi2aJP6Xq8OK1-FY,2666
+sage_explorer-0.5.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+sage_explorer-0.5.2.dist-info/top_level.txt,sha256=pXUZpmUXHMIzWVaf1bw5FBn-Al8egk7nv18TPYSWyPc,14
+sage_explorer-0.5.2.dist-info/RECORD,,

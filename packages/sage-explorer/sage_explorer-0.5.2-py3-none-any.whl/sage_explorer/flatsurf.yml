@@ -1,0 +1,7 @@
+genus:
+  isinstance: flatsurf.geometry.similarity_surface.SimilaritySurface
+
+stratum:
+  isinstance: flatsurf.geometry.similarity_surface.TranslationSurface
+  isinstance: flatsurf.geometry.similarity_surface.HalfTranslationSurface
+

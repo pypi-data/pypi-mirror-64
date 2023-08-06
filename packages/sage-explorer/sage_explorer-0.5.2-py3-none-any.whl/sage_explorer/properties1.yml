@@ -1,0 +1,107 @@
+##############################################################################
+# Methods for categories
+
+properties:
+- property: an_instance
+  isinstance: type # For category classes, and possibly other categories
+  label: A [typical] instance
+
+- property: example
+  isinstance: Category
+
+- property: super_categories
+  isinstance: Category
+
+- property: axioms
+  isinstance: Category
+
+- property: structure
+  isinstance: Category
+
+##############################################################################
+# Methods for parents
+
+# - axioms and structure of the category?
+
+- property: base_ring
+  when: has_base
+
+- property: category
+  in: Sets
+
+- property: an_element
+  in: Sets
+
+- property: cardinality
+  in: EnumeratedSets.Finite
+
+- property: addition_table
+  in: AdditiveSemigroups.Finite
+  when: cardinality < 21
+
+- property: multiplication_table
+  in: Semigroups.Finite
+  when: cardinality < 21
+
+- property: characteristic
+  in: Fields
+
+- property: polynomial
+  in: Fields.Finite
+
+- property: genus
+  isinstance: sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic
+
+- property: cremona_label
+  isinstance: sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic
+
+- property: a_invariants
+  isinstance: sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic
+
+- property: b_invariants
+  isinstance: sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic
+
+- property: conductor
+  isinstance: sage.schemes.elliptic_curves.ell_generic.EllipticCurve_generic
+
+##############################################################################
+# Methods for elements
+
+# - category of the parent?
+
+- property: parent
+  isinstance: sage.structure.element.Element
+  label: Element of
+
+- property: conjugate
+  in: Partitions()
+
+- property: hook_lengths
+  in: Partitions()
+
+- property: evaluation
+  in: Tableaux()
+  not when: is_standard
+
+- property: is_standard
+  in: Tableaux()
+  not in: StandardTableaux()
+
+- property: conjugate
+  in: Tableaux()
+
+- property: charge
+  in: Tableaux()
+
+- property: cocharge
+  in: Tableaux()
+
+##############################################################################
+# Methods for homsets
+# - an_element (probably already derived from Parent)
+# - the category this is a morphism for
+
+##############################################################################
+# Methods for morphisms
+# - domain, codomain
+# - the category this is a morphism for
