@@ -1,0 +1,10 @@
+setup.py
+distributions_parvaresh/Binomialdistribution.py
+distributions_parvaresh/Gaussiandistribution.py
+distributions_parvaresh/Generaldistribution.py
+distributions_parvaresh/__init__.py
+distributions_parvaresh.egg-info/PKG-INFO
+distributions_parvaresh.egg-info/SOURCES.txt
+distributions_parvaresh.egg-info/dependency_links.txt
+distributions_parvaresh.egg-info/not-zip-safe
+distributions_parvaresh.egg-info/top_level.txt
