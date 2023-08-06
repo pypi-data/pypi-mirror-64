@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: thumborawesomehttploader
+Version: 0.0.1
+Summary: Thumbor Awesome HTTP loader
+Home-page: UNKNOWN
+Author: Alexandru Pinca
+Author-email: github@alexandru-pinca.me
+License: MIT
+Description: 
+        Simple HTTP loader for Thumbor
+        
+        This loader also allows passing querying strings to URL
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

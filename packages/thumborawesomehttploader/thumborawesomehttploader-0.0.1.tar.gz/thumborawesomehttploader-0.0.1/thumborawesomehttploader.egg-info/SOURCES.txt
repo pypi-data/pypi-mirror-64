@@ -1,0 +1,7 @@
+setup.cfg
+setup.py
+thumborawesomehttploader/__init__.py
+thumborawesomehttploader.egg-info/PKG-INFO
+thumborawesomehttploader.egg-info/SOURCES.txt
+thumborawesomehttploader.egg-info/dependency_links.txt
+thumborawesomehttploader.egg-info/top_level.txt
