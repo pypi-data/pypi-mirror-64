@@ -1,0 +1,3 @@
+[console_scripts]
+calculatortc2 = calculatortc2.cli:main
+
