@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: cerberus-list-schema
+Version: 1.0
+Summary: Cerburus based validation extended to support list schemas and list transposition to dictionary and python objects
+Home-page: https://github.com/Firepubes/cerberus-list-schema
+Author: Amy Summers
+Author-email: amy@sakuradigital.co.uk
+License: UNKNOWN
+Description: # Cerberus List Schema
+        Cerberus List Schema is a Cerberus based validation library with extended methods to support list schemas. 
+        
+        - List transposition to dict format according to schema
+        - Normalise documents to python objects
+        
+        More information about Cerberus and its validators can be found in their documentation @ https://github.com/pyeve/cerberus
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
