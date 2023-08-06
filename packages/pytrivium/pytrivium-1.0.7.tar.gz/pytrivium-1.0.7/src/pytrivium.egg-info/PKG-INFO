@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: pytrivium
+Version: 1.0.7
+Summary: Python bindings to a C implementation of Trivium
+Home-page: https://github.com/rbrenaget/trivium-sw/pytrivium
+Author: Romain Brenaget
+License: MIT
+Description: # Trivium - Python Implementation
+        
+        Here is a Python implementation of Trivium. It uses `cffi` to bind Python with the C implementation.
+        
+        This package provides short examples to learn about Python bindings and distributing packages.
+        
+        ## Installation
+        
+        I advise you to install it in a virtualenv.
+        
+        ```bash
+        $ pip install pytrivium
+        ```
+        
+        ## Demo
+        
+        ```python
+        from pytrivimum import Trivium
+        
+        # Set 6, vector# 3:
+        key = [0xfa, 0xa7, 0x54, 0x01, 0xae, 0x5b, 0x08, 0xb5, 0x62, 0x0f]
+        iv = [0xc7, 0x60, 0xf9, 0x92, 0x2b, 0xc4, 0x5d, 0xf6, 0x8f, 0x28]
+        
+        engine = Trivium()
+        engine.initialize(key, iv)
+        
+        engine.update(8)
+        
+        output = engine.finalize()
+        
+        print([hex(i) for i in output])
+        ```
+        
+        ```bash
+        # Require Python >= 3.6
+        python demo.py
+        ```
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Security :: Cryptography
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

@@ -1,0 +1,4 @@
+recursive-include src/_cffi_src *.py *.c *.h
+recursive-include tests *.py
+
+exclude pytrivium/trivium_old.py
