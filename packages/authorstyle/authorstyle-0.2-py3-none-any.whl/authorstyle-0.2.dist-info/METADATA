@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: authorstyle
+Version: 0.2
+Summary: Author Style Framework
+Home-page: https://github.com/mullerpeter/authorstyle
+Author: Peter Muller
+Author-email: pemuelle@student.ethz.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: scikit-learn
+Requires-Dist: textstat
+Requires-Dist: numpy
+Requires-Dist: nltk
+Requires-Dist: pandas
+Requires-Dist: cophi
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
