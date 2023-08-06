@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: loquat
+Version: 0.1.2
+Summary: A simple web framework based on Tornado.
+Home-page: https://github.com/guanzhenxing/loquat.git
+Author: Jesen Kwan
+Author-email: guan.zhenxing@foxmail.com
+License: MIT
+Keywords: tornado,web framework
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Database
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
+Requires-Dist: tornado
+
+
+# Loquat
+
+A simple web framework based on Tornado.
+
+## Introduce
+
+Loquat is a web framework based on Tornado.
+
+## Installation
+
+```shell
+pip install loquat
+```
+
+## Simple uses
+
+```python
+import loquat
+from loquat import web
+from loquat.handlers.base import BaseHandler
+from loquat.utils import utils
+
+class IndexHandler(BaseHandler):
+    def get(self):
+        self.render('index.html')
+
+def _init_handlers():
+    return [
+        (r"/", IndexHandler)
+    ]
+
+def _init_app_settings():
+    return {
+        'debug': True
+    }
+
+def main():
+    handlers = _init_handlers()
+    app_settings = _init_app_settings()
+    app_config = web.AppConfig(handlers=handlers, app_settings=app_settings, port=8080, env='DEV', app_name='untitled')
+    web.run(app_config=app_config)
+
+if __name__ == "__main__":
+    main()
+
+```
+
