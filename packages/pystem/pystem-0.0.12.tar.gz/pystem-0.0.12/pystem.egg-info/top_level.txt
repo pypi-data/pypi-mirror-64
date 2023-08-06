@@ -1,0 +1,7 @@
+_stemdescriptor
+stemclustering
+stemdescriptor
+stempower_spectrum
+stemreflection_symmetry_descriptors
+stemrotational_symmetry_descriptors
+stemsegmentation
