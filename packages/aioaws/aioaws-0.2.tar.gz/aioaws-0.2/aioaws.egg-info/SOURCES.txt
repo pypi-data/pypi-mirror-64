@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+aioaws/__init__.py
+aioaws/core.py
+aioaws/s3.py
+aioaws/utils.py
+aioaws/version.py
+aioaws.egg-info/PKG-INFO
+aioaws.egg-info/SOURCES.txt
+aioaws.egg-info/dependency_links.txt
+aioaws.egg-info/not-zip-safe
+aioaws.egg-info/requires.txt
+aioaws.egg-info/top_level.txt
