@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qb
+Version: 0.0
+Summary: SQL query builder
+Home-page: UNKNOWN
+Author: Miloslav Pojman
+Author-email: miloslav.pojman@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+
+# qb – SQL query builder
+
+Development in progress.
+
+
