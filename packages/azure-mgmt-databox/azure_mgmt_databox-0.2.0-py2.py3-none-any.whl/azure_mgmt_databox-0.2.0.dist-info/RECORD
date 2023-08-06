@@ -1,0 +1,17 @@
+azure/mgmt/databox/__init__.py,sha256=TNTtvN8Sff91jcLTnp3nAWZRXFbm6dgpGD_JOKkrmGY,736
+azure/mgmt/databox/_configuration.py,sha256=CQwH-2FFQ_0jguLsLjPCQTNwMCHzCKlQKuABxkPRkJo,1852
+azure/mgmt/databox/_data_box_management_client.py,sha256=R6ra2M9IaUp6UEa-hfoKFG7J6ddRIPYJqPrLaFL_1rI,2422
+azure/mgmt/databox/version.py,sha256=1OMXplpzqP1yfr2XeoE29bKuW6CvXHiayBy6t0iCaMg,492
+azure/mgmt/databox/models/__init__.py,sha256=6fW514XL1ogniPR0qhRuesVS0ixZ4zLjdF79sR_AYwM,11927
+azure/mgmt/databox/models/_data_box_management_client_enums.py,sha256=G9zXMrH3OkgYTJ-bwMg6zDmGsJVq6-ZmkrDdwI629Ww,6719
+azure/mgmt/databox/models/_models.py,sha256=TWH5XVPir8mwenIBR4zd3EpUkn-LWwrZGHFgv0Dlzlo,119927
+azure/mgmt/databox/models/_models_py3.py,sha256=mNwbvJddlPd-giQBWcGOcYNSe7iw1FYfjNpEGemSRuw,122572
+azure/mgmt/databox/models/_paged_models.py,sha256=76cdrst3dPkiW3rIIblGRfFgYMClZZKDnsD8A9EVKRU,2276
+azure/mgmt/databox/operations/__init__.py,sha256=XakoNNZkuiDqSK-fULEEqtjFH5JmFMSX-Dd84jsifxE,686
+azure/mgmt/databox/operations/_jobs_operations.py,sha256=XsFj2JPhmuGu179Cd1xUm8hJTBUeGKFHIY3AsDlaJjg,36145
+azure/mgmt/databox/operations/_operations.py,sha256=-OZWEUqrkIcFN0T_92vXMTOJdL1S49xhHTVXtdGMlEY,3885
+azure/mgmt/databox/operations/_service_operations.py,sha256=Uo_Bqm1_4Ap2GTYDVEA8GQXvJoz9IDdtCpwsqYEqZos,22247
+azure_mgmt_databox-0.2.0.dist-info/METADATA,sha256=qdJNTgdicqBQ4iluiKcalm4ldwM4qtpg5PAoIjOrRX0,4290
+azure_mgmt_databox-0.2.0.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+azure_mgmt_databox-0.2.0.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_mgmt_databox-0.2.0.dist-info/RECORD,,
