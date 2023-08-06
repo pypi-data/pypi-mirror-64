@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: vfc-services
+Version: 0.1.0
+Summary: Easily have access to all VFC microservices
+Home-page: https://github.com/kpnic-vfc/vfc-services
+Author: Robert Boes
+Author-email: robert.boes@kpn.com
+License: MIT
+Description: # vfc-services
+        
+Platform: UNKNOWN
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown

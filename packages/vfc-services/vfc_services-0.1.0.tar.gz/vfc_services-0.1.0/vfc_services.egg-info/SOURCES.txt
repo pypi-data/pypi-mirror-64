@@ -1,0 +1,9 @@
+README.md
+setup.py
+vfc_services/VFCMicroService.py
+vfc_services/__init__.py
+vfc_services.egg-info/PKG-INFO
+vfc_services.egg-info/SOURCES.txt
+vfc_services.egg-info/dependency_links.txt
+vfc_services.egg-info/not-zip-safe
+vfc_services.egg-info/top_level.txt
