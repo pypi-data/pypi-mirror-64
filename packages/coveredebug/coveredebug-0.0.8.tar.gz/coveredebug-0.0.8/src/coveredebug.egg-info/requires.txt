@@ -1,0 +1,6 @@
+folium
+scipy
+
+[testing]
+pytest
+pytest-cov
