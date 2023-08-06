@@ -1,0 +1,49 @@
+{% extends "base.html.j2" %}}
+
+{% block title %}
+  {{ title }}
+{% endblock %}
+
+
+{% block preheader %}
+    {{ cluster_name }} {{role}} node {{ action }} event 
+{% endblock %}
+
+{% block content %}
+
+    <h2><code>{{ cluster_name }}</code> event</h2>
+
+    <table>
+        <tr>
+            <th class="cell-left">Database system identifier</th>
+            <th class="cell-right">Master LSN</th>
+        </tr>
+        <tr>
+            <td class="cell-left">{{ database_id }}</td>
+            <td class="cell-right">{{ optime }}</td>
+        </tr>
+    </table>
+
+    <table class="content-block">
+        <tr>
+            <th class="cell-left">Host</th>
+            <th class="cell-center">Role</th>
+            <th class="cell-right">Action</th>
+        </tr>
+        <tr>
+            <td class="cell-left">{{ host }}</td>
+            <td class="cell-center">{{ role.capitalize() }}</td>
+            <td class="cell-right">{{ action.capitalize() }}</td>
+        </tr>
+    </table>
+
+
+    {% include 'sections/consul_state.html.j2' %}
+    {% include 'sections/haproxy_stats.html.j2' %}
+    {% include 'sections/timeline_history.html.j2' %}
+
+    <br>
+
+    <p>Generated at: <span title="time">{{ time }}</span></p>
+
+{% endblock %}}

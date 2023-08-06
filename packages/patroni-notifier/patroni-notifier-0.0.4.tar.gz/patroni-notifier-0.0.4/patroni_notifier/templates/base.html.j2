@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        {% include 'style.j2.css' %}
+    </style>
+</head>
+
+<body class="">
+    <span class="preheader">{% block preheader %}{% endblock %}</span>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+        <tr>
+            <td>&nbsp;</td>
+            <td class="container">
+                <div class="content">
+                    <a href="{{ logo_link_url }}">
+
+                        <img alt="Logo" width="80" height="30" border="0"
+                            style="border:0; outline:none; text-decoration:none; display:block; margin:auto; padding-right:30px; margin-bottom:15px; margin-top:15px;"
+                            src="cid:{{ logo_cid }}" >
+
+                    </a>
+
+                    <!-- START CENTERED WHITE CONTAINER -->
+                    <table role="presentation" class="main">
+
+                        <!-- START MAIN CONTENT AREA -->
+                        <tr>
+                            <td class="wrapper">
+                                <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                                    <tr>
+                                        <td>
+                                            {% block content %} {% endblock %}
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+
+                        <!-- END MAIN CONTENT AREA -->
+                    </table>
+                    <!-- END CENTERED WHITE CONTAINER -->
+
+                    <!-- START FOOTER -->
+                    <div class="footer">
+                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                                <td class="content-block">
+                                    Don't like these emails? <a href="mailto:admin@ptbnl.io">Email the admin</a>
+                                    <br>
+                                    <span class="apple-link">Chicago, IL USA</span>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="content-block powered-by">
+                                    monitoring <a href="https://ptbnl.io">PTBNL</a> backend services
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <!-- END FOOTER -->
+
+                </div>
+            </td>
+            <td>&nbsp;</td>
+        </tr>
+    </table>
+</body>
+
+</html>
