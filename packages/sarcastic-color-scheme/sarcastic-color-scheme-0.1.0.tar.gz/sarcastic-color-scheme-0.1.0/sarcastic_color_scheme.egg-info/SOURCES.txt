@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+sarcastic_color_scheme/__init__.py
+sarcastic_color_scheme/basic_rng.py
+sarcastic_color_scheme/get_random_style.py
+sarcastic_color_scheme/randomize_style.py
+sarcastic_color_scheme.egg-info/PKG-INFO
+sarcastic_color_scheme.egg-info/SOURCES.txt
+sarcastic_color_scheme.egg-info/dependency_links.txt
+sarcastic_color_scheme.egg-info/requires.txt
+sarcastic_color_scheme.egg-info/top_level.txt
