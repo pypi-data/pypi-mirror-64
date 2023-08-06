@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: aweme
+Version: 2.0.0
+Summary: Douyin Command Line Interface
+Home-page: https://github.com/maguowei/aweme
+Author: maguowei
+Author-email: imaguowei@gmail.com
+License: MIT
+Keywords: Douyin CLI,Douyin API
+Platform: any
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: fire (==0.2.1)
+
+# Aweme
+
+![Upload Python Package](https://github.com/maguowei/aweme/workflows/Upload%20Python%20Package/badge.svg)
+
+## 使用
+
+```bash
+$ pip install aweme
+
+# 用户搜索
+$ aweme search 张柏芝
+
+# 使用uid下载用户视频列表
+$ aweme download_user_videos 83204842726829
+
+# 使用视频ID下载视频
+$ aweme download_video 6612867311479033092
+```
+
+
