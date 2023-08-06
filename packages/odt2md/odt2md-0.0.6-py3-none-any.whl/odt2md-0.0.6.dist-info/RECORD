@@ -1,0 +1,13 @@
+odt2md/__init__.py,sha256=fdYb4jQN0Fk4yOnqsuDTpu_9UUYuft-SLjY4srExO0k,423
+odt2md/block.py,sha256=3VJ3CILlT92Z8HYhQoAnTNfnfHwgg2w1cdkhq-5hs-Q,5893
+odt2md/emphasis.py,sha256=e9ySJR6BRCgnA5OPL_wEIgbkHDrbaUnTRyAjbUsKsIQ,962
+odt2md/odt2md.py,sha256=5UyfughIC9NKtXJeQWS3BC0ivfaZZ2LWC86-1TiBH84,2022
+odt2md/show_styles.py,sha256=xDT00hqfJxv7hxpGtHy4x1M7Ik4BvQOxfLz4TVUJyJA,1618
+odt2md/style.py,sha256=UXgXQEWa-OyLu9XN7pwTmOekLqiREQEmT1VsCap7d-E,3006
+odt2md/styler.py,sha256=lM4QbGzIo8wbxop0-HhBSz6JjrnrzyuVJj8Fi-6pHws,4788
+odt2md/util.py,sha256=v8ozq-JKTIkN3BdElx-FX1otAW6kOIlJoOx_DGvPkJY,1683
+odt2md-0.0.6.dist-info/METADATA,sha256=9ntaeBuIw7v6lSQ6Sa6yiztcH03ZvPCBgIdvM20BE-A,742
+odt2md-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+odt2md-0.0.6.dist-info/entry_points.txt,sha256=UU2VEHCrrnTJZcdsc8ZHSR-WRiRE2DlkZxfrqC17Jw8,85
+odt2md-0.0.6.dist-info/top_level.txt,sha256=jxYLdIwA06JkWTcN2xsLEMvAXx3BHYXCe3zUZsxjQ8I,7
+odt2md-0.0.6.dist-info/RECORD,,
