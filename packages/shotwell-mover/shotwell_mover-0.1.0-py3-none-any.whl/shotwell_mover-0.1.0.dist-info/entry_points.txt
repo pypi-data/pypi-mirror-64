@@ -1,0 +1,3 @@
+[console_scripts]
+shotwell-mover=shotwell_mover.cli:main
+
