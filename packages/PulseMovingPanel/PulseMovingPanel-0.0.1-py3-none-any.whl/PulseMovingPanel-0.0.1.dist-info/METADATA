@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: PulseMovingPanel
+Version: 0.0.1
+Summary: Enable panel to move robot
+Home-page: UNKNOWN
+Author: Ostapets Vladislav
+Author-email: vlad12344444@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.18.1)
+Requires-Dist: PyQt5 (==5.14.1)
+Requires-Dist: requests (==2.22.0)
+
+UNKNOWN
+
+
