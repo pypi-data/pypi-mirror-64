@@ -1,0 +1,14 @@
+worker/VERSION,sha256=YYFlhf1EErSwKMacg4LeLTKda6eLMQyO6tJxk6tEVgE,5
+worker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worker/__main__.py,sha256=pMq0Zb_mWZPWAYg4ay8VQsqbpDakS2NIvoLCTbxsE-E,11692
+worker/action.py,sha256=HpbbVoybFZ-yP2MmYA-FqvC5UmFMz9DwtC8W8fsG78g,6610
+worker/api_client.py,sha256=zZYA_oomCyVPDMlNZCnUzBEtnm9G3e71YeyrnDBzsQg,3971
+worker/packinstall.py,sha256=1qPVe3-d_c9Elbg7v5O1DLz_9V2qlH0RwvJwR_GtnQ0,13963
+worker/postprocess.py,sha256=eLkulxByJp4MV4SD_y2TGCZCAVAUgd25Y1OlRqpAdUA,1825
+worker/tasks.py,sha256=HtEVQsHyuEKKThJvJe3NbuHBuXS2X0O7FUxK9MNrPuI,7973
+worker/utils.py,sha256=3gCZ5ecPUBw5c_ChpNVLpoV-VcKj5KmMlz3RXgNhbXU,639
+njinn_worker-0.8.5.dist-info/METADATA,sha256=8TLFDbyIYTZTBlNaBDvypGODLmURFMPsOfklNPVDqRk,1324
+njinn_worker-0.8.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+njinn_worker-0.8.5.dist-info/entry_points.txt,sha256=ZLTRvdfeYCwJbAl-PuwffS5vABFwmdwGxwIH_ME-haU,55
+njinn_worker-0.8.5.dist-info/top_level.txt,sha256=KrP-SOC-I1V0U33nVzMgkHR8wO-reJYASIvWVyLyFIY,7
+njinn_worker-0.8.5.dist-info/RECORD,,
