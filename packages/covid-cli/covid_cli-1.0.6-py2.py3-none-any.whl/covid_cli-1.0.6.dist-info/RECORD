@@ -1,0 +1,9 @@
+app/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+app/__main__.py,sha256=bYt9eEaoRQWdejEHFD8REx9jxVEdZptECFsV7F49Ink,30
+app/__version__.py,sha256=RPjQ5Y0AiaPLfWvQ71qrhQNq1NbU9aCHLb9B242Whhg,63
+app/cli.py,sha256=0Z8TbyibnKy60RODpR6Ozo9wsv7WNwfGPhcfcBRI4Cs,3488
+covid_cli-1.0.6.dist-info/METADATA,sha256=ENnJncWwmDCObQNVUEkjYbEeZMfE_CpAOrb-THc1Bo8,1801
+covid_cli-1.0.6.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+covid_cli-1.0.6.dist-info/entry_points.txt,sha256=vh0o1Oh0vRzjtZ7i2DcxM26bVO4ItHOb1mgNEeBekGY,40
+covid_cli-1.0.6.dist-info/top_level.txt,sha256=io9g7LCbfmTG1SFKgEOGXmCFB9uMP2H5lerm0HiHWQE,4
+covid_cli-1.0.6.dist-info/RECORD,,
