@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xvg
+Version: 2020.1.1
+Summary: A scriptable vector graphics library
+Home-page: https://github.com/lrgstu/xvgpy
+Author: Hayden McDonald
+Author-email: lrgstu@gmail.com
+License: UNKNOWN
+Description: # xvgpy
+        A scriptable vector graphics library
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

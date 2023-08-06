@@ -1,0 +1,8 @@
+README.md
+setup.py
+xvg/__init__.py
+xvg/xvg.py
+xvg.egg-info/PKG-INFO
+xvg.egg-info/SOURCES.txt
+xvg.egg-info/dependency_links.txt
+xvg.egg-info/top_level.txt
