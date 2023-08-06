@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+from wofy import wofy
+
+
+def main():
+    print(wofy())
+
+
+if __name__ == "__main__":
+    main()
