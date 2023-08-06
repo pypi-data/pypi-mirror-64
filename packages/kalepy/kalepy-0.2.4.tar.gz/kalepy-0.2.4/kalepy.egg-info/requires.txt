@@ -1,0 +1,14 @@
+numpy
+scipy
+codecov
+six
+future
+nose
+tqdm
+sphinx
+coverage
+memory_profiler
+jupyter
+nbconvert
+corner
+matplotlib>=3
