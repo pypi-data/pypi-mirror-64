@@ -1,0 +1,10 @@
+astromath/__init__.py,sha256=ZTUPoARpribbgZJVNPuCd0GCSg8dqo6WpTfcU3STBt8,143
+astromath/astromath.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+astromath/cli.py,sha256=xchdHEUAc-ehQU_KC4oN4l_pqnP0dBL14x1v-GwZrpk,442
+astromath-1.0.1.dist-info/AUTHORS.rst,sha256=SjyhEZPt-ke3glrpaUlRRoEfbCtiu7r9IoOxgm7tMg4,172
+astromath-1.0.1.dist-info/LICENSE,sha256=IqceS8uG2aW7a_H4KmVYePqavvxIWeCLek-WxQmfnM8,1077
+astromath-1.0.1.dist-info/METADATA,sha256=w3IXabokLpmoRFNXqzffjh2rLCGhNvXCsLHI3zibiXw,1534
+astromath-1.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+astromath-1.0.1.dist-info/entry_points.txt,sha256=17r1dL1oB1XxZURz5GVO3qDxweX1umpQ0Woe1fRXVAU,50
+astromath-1.0.1.dist-info/top_level.txt,sha256=tOQqfzK1PfKjQ8IBSVmmQdZDhMRKPWrfbkuy8vGx1LY,10
+astromath-1.0.1.dist-info/RECORD,,
