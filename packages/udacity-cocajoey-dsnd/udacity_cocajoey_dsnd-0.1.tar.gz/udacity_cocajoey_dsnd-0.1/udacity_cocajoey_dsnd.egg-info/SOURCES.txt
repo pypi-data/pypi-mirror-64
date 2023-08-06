@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+udacity_cocajoey_dsnd/Binomialdistribution.py
+udacity_cocajoey_dsnd/Gaussiandistribution.py
+udacity_cocajoey_dsnd/Generaldistribution.py
+udacity_cocajoey_dsnd/__init__.py
+udacity_cocajoey_dsnd.egg-info/PKG-INFO
+udacity_cocajoey_dsnd.egg-info/SOURCES.txt
+udacity_cocajoey_dsnd.egg-info/dependency_links.txt
+udacity_cocajoey_dsnd.egg-info/not-zip-safe
+udacity_cocajoey_dsnd.egg-info/top_level.txt
