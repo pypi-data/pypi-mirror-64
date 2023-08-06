@@ -1,0 +1,3 @@
+[flask.commands]
+yoyo=flask_yoyo:cli
+
