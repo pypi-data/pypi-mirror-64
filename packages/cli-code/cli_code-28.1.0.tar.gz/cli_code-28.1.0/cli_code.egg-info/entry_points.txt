@@ -1,0 +1,7 @@
+[console_scripts]
+cli_convert_ipny = cli_code.cli_convert_ipny:main
+cli_doc = cli_code.cli_doc_auto.main:main
+cli_env_autoinstall = cli_code.cli_env_autoinstall:main
+cli_repo_check = cli_code.cli_repo_check:main
+cli_repo_docs = cli_code.cli_docs:main
+
