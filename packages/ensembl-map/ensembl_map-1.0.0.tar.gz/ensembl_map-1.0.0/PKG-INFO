@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: ensembl_map
+Version: 1.0.0
+Summary: Convert between gene, transcript, exon, CDS, and protein coordinates using Ensembl.
+Home-page: https://github.com/mattdoug604/ensembl_map.git
+Author: mattdoug604
+Author-email: mattdoug604@gmail.com
+License: https://spdx.org/licenses/MIT.html
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3

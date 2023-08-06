@@ -1,0 +1,3 @@
+[console_scripts]
+ensembl_map = ensembl_map.shell:run
+
