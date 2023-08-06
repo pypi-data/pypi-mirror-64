@@ -1,0 +1,11 @@
+cinestats/VERSION,sha256=pd00ZUajhDYpNrl6TC9dotPSUwQ-qWeap7l9iVUN_b0,6
+cinestats/__init__.py,sha256=wbP24dwyU4p0JCBprDalekU_7Il5uvQY4YBcgUjROkE,257
+cinestats/movie.py,sha256=XmLHG1nlYFmEsXk0JxP8b26IjISKo1n2o_eGo-C637k,6905
+cinestats/data/example.csv,sha256=nYb-ubnC9EpAGI9aVTqWdZF-XROnpXd1154_rIQpoPw,83
+cinestats/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cinestats/tests/test_movie.py,sha256=zni6hu-kS7-2cLW0N2sGWB6MghAHe42ZRNACCl45gMg,1070
+cinestats-0.0.2.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+cinestats-0.0.2.dist-info/METADATA,sha256=VJKWitlZMThoWPLQfiFKF7XU3CWhNHBb0cEzQlApIQc,1949
+cinestats-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+cinestats-0.0.2.dist-info/top_level.txt,sha256=DDVEags36R_VXsUN4VYksWN1eqkrRMg7FtbKukbd1hg,10
+cinestats-0.0.2.dist-info/RECORD,,
