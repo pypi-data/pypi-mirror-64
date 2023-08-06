@@ -1,0 +1,10 @@
+# for cryptography
+cryptography
+
+# for testing
+pytest
+pytest-django
+pytest-cov
+coverage
+flake8
+tox
