@@ -1,0 +1,99 @@
+{
+  "_guiState": {},
+  "composite_filters": [
+    {
+      "name": "subGraph",
+      "nodes": [
+        {
+          "name": "CompositeInput",
+          "library": "composite://port",
+          "factoryFunction": "CompositeInput",
+          "dynamicInputPorts": [],
+          "staticInputPorts": [],
+          "dynamicOutputPorts": [
+            "graph_in"
+          ],
+          "staticOutputPorts": [],
+          "thread": "main",
+          "properties": {}
+        },
+        {
+          "name": "CompositeOutput",
+          "library": "composite://port",
+          "factoryFunction": "CompositeOutput",
+          "dynamicInputPorts": [
+            "graph_out"
+          ],
+          "staticInputPorts": [],
+          "dynamicOutputPorts": [],
+          "staticOutputPorts": [],
+          "thread": "main",
+          "properties": {}
+        },
+        {
+          "name": "filter",
+          "library": "pyfile://../interface/SimpleStaticFilter.py",
+          "factoryFunction": "SimpleStaticFilter",
+          "dynamicInputPorts": [],
+          "staticInputPorts": [
+            "inPort"
+          ],
+          "dynamicOutputPorts": [],
+          "staticOutputPorts": [
+            "outPort"
+          ],
+          "thread": "main",
+          "properties": {
+            "sleep_time": 0.25
+          }
+        }
+      ],
+      "connections": [
+        "CompositeInput.graph_in -> filter.inPort",
+        "filter.outPort -> CompositeOutput.graph_out"
+      ],
+      "_guiState": {}
+    }
+  ],
+  "applications": [
+    {
+      "name": "testApp",
+      "_guiState": {},
+      "nodes": [
+        {
+          "name": "source",
+          "library": "binary://../binary/${NEXXT_PLATFORM}/${NEXXT_VARIANT}/test_plugins",
+          "factoryFunction": "SimpleSource",
+          "dynamicInputPorts": [],
+          "staticInputPorts": [],
+          "dynamicOutputPorts": [],
+          "staticOutputPorts": [
+            "outPort"
+          ],
+          "thread": "thread-source",
+          "properties": {
+            "frequency": 2.0
+          }
+        },
+        {
+          "name": "filter",
+          "library": "composite://ref",
+          "factoryFunction": "subGraph",
+          "dynamicInputPorts": [],
+          "staticInputPorts": [
+            "graph_in"
+          ],
+          "dynamicOutputPorts": [],
+          "staticOutputPorts": [
+            "graph_out"
+          ],
+          "thread": "main",
+          "properties": {}
+        }
+      ],
+      "connections": [
+        "source.outPort -> filter.graph_in"
+      ]
+    }
+  ]
+}
