@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: peto
+Version: 0.1.0
+Summary: System for mass periodic infectious disease testing
+Home-page: https://github.com/johnbywater/peto
+Author: John Bywater
+Author-email: john.bywater@appropriatesoftware.net
+License: GNU General Public License v3 (GPLv3)
+Description: 
+        Event sourced system to support mass periodic testing for infectious disease
+        
+        `Please raise issues on GitHub <https://github.com/johnbywater/peto/issues>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Scientific/Engineering :: Medical Science Apps.
