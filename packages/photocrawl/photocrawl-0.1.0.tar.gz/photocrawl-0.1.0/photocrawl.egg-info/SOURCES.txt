@@ -1,0 +1,11 @@
+README.md
+setup.py
+photocrawl/__init__.py
+photocrawl/__main__.py
+photocrawl/photocrawl.py
+photocrawl/plotting_functions.py
+photocrawl.egg-info/PKG-INFO
+photocrawl.egg-info/SOURCES.txt
+photocrawl.egg-info/dependency_links.txt
+photocrawl.egg-info/requires.txt
+photocrawl.egg-info/top_level.txt

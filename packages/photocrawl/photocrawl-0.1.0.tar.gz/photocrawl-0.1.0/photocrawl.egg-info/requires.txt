@@ -1,0 +1,5 @@
+fsbox>=0.1.0
+matplotlib
+pandas
+pyexifinfo
+seaborn
