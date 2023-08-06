@@ -1,0 +1,11 @@
+keras_htr/__init__.py,sha256=zY-KSMiS0rPD3xg5i31LbBlSC-U4iXYE2RgPK35WZ1g,4338
+keras_htr/__version__.py,sha256=cfbepQ-o-bVqIiRwUO0ZLVvwZ33VZ-9CCpEnB4KiuEY,228
+keras_htr/edit_distance.py,sha256=pCWcF_6GQcxgqhn5H40yJg5SykY6jmxbHNk9TWTyfWQ,1282
+keras_htr/generators.py,sha256=fa1MJ00Xytd0WbWwB-4H5hdI5PrnwBG7egCM8FK0kUk,11011
+keras_htr/models.py,sha256=4V1lEFs4XrWk989I2Yu3z-tlJaFE_DQtX06SdjRS9yw,5905
+keras_htr/segmentation.py,sha256=4G3TD6l9-y8skDh42NSL6rEbjKVDmHUjH9San6PSJ68,6469
+keras_htr-0.0.1.dist-info/LICENSE,sha256=JimHAgLXN711NG9QGzdy7wScI0-5i26LC9I0G9Hxj4M,1058
+keras_htr-0.0.1.dist-info/METADATA,sha256=w4ZETEQ9f9WFVxuGWSNoQz6jc9rd1UM7j0tsWUByMDM,651
+keras_htr-0.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+keras_htr-0.0.1.dist-info/top_level.txt,sha256=FNF-DtKyXnO78zAbnijf0RCgt4hu_rkW3lB9x5vRFAQ,10
+keras_htr-0.0.1.dist-info/RECORD,,

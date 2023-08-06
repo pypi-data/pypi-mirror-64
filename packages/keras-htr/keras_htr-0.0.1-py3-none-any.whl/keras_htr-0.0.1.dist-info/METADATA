@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: keras-htr
+Version: 0.0.1
+Summary: A toolkit for developing handwritten text recognition (HTR) pipelines
+Home-page: UNKNOWN
+Author: Evgenii Dolotov
+Author-email: supernovaprotocol@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: tensorflow (>=2)
+Requires-Dist: Pillow
+Requires-Dist: scipy
+
+# A toolkit for developing handwritten text recognition (HTR) pipelines
+
+
