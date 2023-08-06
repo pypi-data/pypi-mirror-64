@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dynamic-unet
+Version: 0.0.2
+Summary: Dynamic U-Nets with PyTorch for image segmentation
+Home-page: https://github.com/dthiagarajan/dynamic_unet
+Author: Dilip Thiagarajan
+Author-email: dthiagarai@gmail.com
+License: Apache Software License 2.0
+Keywords: pytorch,unet,segmentation,deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: torch (>=1.4.0)
+Requires-Dist: torchvision
+Requires-Dist: matplotlib
+Requires-Dist: pillow
+Requires-Dist: opencv-python
+
+# Dynamic U-Nets with PyTorch
+> This package has some convenience functions for setting up U-Nets with pre-trained ResNets as the encoder.
+
+
+## Install
+
+`pip install dynamic_unet`
+
+## Later
+* Examples of how to use this package
+* Add-ons for having arbitrary image classification networks being used as encoders, not just ResNets (which are limited to 3 channel inputs, and need some ad-hoc work to set up as encoders)
+
+## Contact
+dthiagarai@gmail.com
+
+
