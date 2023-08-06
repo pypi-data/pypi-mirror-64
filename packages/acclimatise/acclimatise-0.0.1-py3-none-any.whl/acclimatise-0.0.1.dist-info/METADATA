@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: acclimatise
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyparsing
+Requires-Dist: jinja2
+Requires-Dist: spacy
+Requires-Dist: cwlgen
+Requires-Dist: dataclasses
+Requires-Dist: miniwdl
+Requires-Dist: wordsegment
+Requires-Dist: inflection
+Requires-Dist: illusional.wdlgen (~=0.2)
+Requires-Dist: ruamel.yaml
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
+UNKNOWN
+
+
