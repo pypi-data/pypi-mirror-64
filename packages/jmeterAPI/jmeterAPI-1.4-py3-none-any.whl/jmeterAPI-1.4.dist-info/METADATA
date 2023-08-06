@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: jmeterAPI
+Version: 1.4
+Summary: JMeter test plan builder
+Home-page: UNKNOWN
+Author: Alexey Svetlov
+Author-email: alexeysvetlov92@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/lanitgithub/jmeter_api
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: atomicwrites
+Requires-Dist: attrs
+Requires-Dist: colorama
+Requires-Dist: importlib-metadata
+Requires-Dist: Jinja2
+Requires-Dist: MarkupSafe
+Requires-Dist: more-itertools
+Requires-Dist: packaging
+Requires-Dist: pluggy
+Requires-Dist: py
+Requires-Dist: pytest
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: six
+Requires-Dist: wcwidth
+Requires-Dist: xmltodict
+Requires-Dist: zipp
+
+# JMeter API
+Yet another HAR to JMX
+
+
