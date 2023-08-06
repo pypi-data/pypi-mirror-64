@@ -1,0 +1,11 @@
+scrapy_podcast_rss/__init__.py,sha256=N_Nct9BYf_hAu3g0K8QvRgm4InK_5UyuFDUtFDAS6Ys,308
+scrapy_podcast_rss/__version__.py,sha256=D8uYI7gK-DBvtxUJiY6-nGphtugi91wVUFmBBb8V4cw,190
+scrapy_podcast_rss/exceptions.py,sha256=dqKbteeXLqYRocmY-jKtrxwALnzmqHhREXBMVbHdQag,184
+scrapy_podcast_rss/exporters.py,sha256=u8UgWWivEs2dpaUYT1KoAIkeI1vJ7pl4Y-Qkvsw74Rk,3834
+scrapy_podcast_rss/items.py,sha256=_PpMliXAFwgD5IT2Q0ye3EzMS2ZVewzFOO1XXTCsJMQ,924
+scrapy_podcast_rss/pipelines.py,sha256=7DRYzmPm2b8c2VRMtXd7aEmwi3gRvkY1DUVkAPJToJg,3797
+scrapy_podcast_rss-0.0.2.dist-info/LICENSE,sha256=tn7RyBPN-K-fKIUklryaSwv1Mc2uKpjwuIR-OmTjSno,1092
+scrapy_podcast_rss-0.0.2.dist-info/METADATA,sha256=m16o4my7R1uE5x5Gjy19gNBov2Oqs620geMJozCtf5w,3209
+scrapy_podcast_rss-0.0.2.dist-info/WHEEL,sha256=ekss6qCJcIZ1jvsOZb3ewnzAyJD9JSfQQg87sLq_G8M,97
+scrapy_podcast_rss-0.0.2.dist-info/top_level.txt,sha256=-z6AXZoY1XeCyMbWHWVZJA7lRJftPfmCya6rF-EjorU,19
+scrapy_podcast_rss-0.0.2.dist-info/RECORD,,
