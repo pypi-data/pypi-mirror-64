@@ -1,0 +1,12 @@
+default: &default
+    host: 'http://staging-api.sdpg.tv'
+    tenant_id: '1F8E8FEB-F77D-4ABA-9022-4EF0EAFFDE42'
+    platform_id: '39f16072-0351-4478-98d1-0b3c9f1a0db0'
+    data_id: 'a16f211a-e625-44b5-92f6-be034e0d3a82'
+    secret: 'KP>K5#sY~b2b'
+    content_ids: ["3323a283-29b7-4796-bca9-52a85a32e50c",
+                  "3323a283-29b7-4796-bca9-52a85a32e54e"]
+staging:
+  <<: *default
+qa:
+  <<: *default

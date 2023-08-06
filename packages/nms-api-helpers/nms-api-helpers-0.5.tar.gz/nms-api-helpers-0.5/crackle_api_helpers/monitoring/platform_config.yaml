@@ -1,0 +1,61 @@
+default: &default
+  ios:
+    host: 'https://ios-api-us.crackle.com'
+    partner_id: '22'
+    secret: 'KRYDXUKMPKTONARP'
+    geo_code: 'US'
+    affiliate_id: 'e2468342-3071-411c-9d3c-7eb8d7cd4d8c'
+  android:
+    host: 'https://android-v3-api-us.crackle.com'
+    partner_id: '113'
+    secret: 'OEQUYMXKJDYBOSHS'
+    geo_code: 'US'
+    affiliate_id: ''
+  roku:
+    host: 'https://roku-v2-api-us.crackle.com'
+    partner_id: '102'
+    secret: 'MKQUAQNUUWVHGSPG'
+    geo_code: 'US'
+    affiliate_id: 'e2468342-3071-411c-9d3c-7eb8d7cd4d8c'
+  html5:
+    host: 'https://ps4-api-us.crackle.com'
+    partner_id: '59'
+    secret: 'ANEPQFNKNFPOCJAJ'
+    geo_code: 'US'
+    affiliate_id: ''
+  web:
+    host: 'https://web-api-us.crackle.com'
+    partner_id: '117'
+    secret: 'ZTZMLSWQJPHEZWLF'
+    # secret: 'IGSLUQCBDFHEOIFM '
+    geo_code: 'US'
+    affiliate_id: ''
+staging: &staging
+  ios:
+    host: 'https://staging-v1-api-us.crackle.com'
+    partner_id: '22'
+    secret: 'KRYDXUKMPKTONARP'
+    geo_code: 'US'
+    affiliate_id: 'e2468342-3071-411c-9d3c-7eb8d7cd4d8c'
+  android:
+    host: 'https://staging-v1-api-us.crackle.com'
+    partner_id: '113'
+    secret: 'OEQUYMXKJDYBOSHS'
+    geo_code: 'US'
+    affiliate_id: ''
+  roku:
+    host: 'https://staging-v1-api-us.crackle.com'
+    partner_id: '102'
+    secret: 'MKQUAQNUUWVHGSPG'
+    geo_code: 'US'
+    affiliate_id: 'e2468342-3071-411c-9d3c-7eb8d7cd4d8c'
+  html5:
+    host: 'https://ps4-api-us.crackle.com'
+    partner_id: '59'
+    secret: 'ANEPQFNKNFPOCJAJ'
+    geo_code: 'US'
+    affiliate_id: ''
+production:
+  <<: *default
+qa:
+  <<: *staging
