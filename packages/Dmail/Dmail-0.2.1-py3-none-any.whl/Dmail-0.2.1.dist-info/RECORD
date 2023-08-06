@@ -1,0 +1,11 @@
+Dmail/__init__.py,sha256=IsLbWgo8S8gmRBgJRVqyHzAxwi0pu3jSC67-7YBjslg,57
+Dmail/email_.py,sha256=iIMh9hJcCZ88ZGTHidBQnGwMllc8lGlsW_W71CPkLiE,3162
+Dmail/email_base.py,sha256=jEToq7BsbaDGghVxASB5ed6sU7tfaAjjpFpiHfS2gPU,3801
+Dmail/esp/__init__.py,sha256=3vItjjoFTAjVfNYvUPNwzfknylDKKB1dy-I41eHZ1y0,74
+Dmail/esp/gmail.py,sha256=tFzlXzOnqMK5oPW03v7xobANi3vUj4MBII_bxc7t9Nw,285
+Dmail/esp/hotmail.py,sha256=Y7OtJ1KGW1y9ebzSEKXexNpdZa2T-Z3oisVnIjVPuyA,290
+Dmail-0.2.1.dist-info/LICENSE,sha256=ESiqWVMnxC9HVJi8PcQWE-aJJ9aWImZm06XzKIa1414,1088
+Dmail-0.2.1.dist-info/METADATA,sha256=YGBGia2G5NRDiPIBv4kD939auyePeFT8yjLy0sfXZmY,1842
+Dmail-0.2.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+Dmail-0.2.1.dist-info/top_level.txt,sha256=e15gCOcPqr4bTmUrFhBA92fjdQ11NqCPfEKVl6JGG60,6
+Dmail-0.2.1.dist-info/RECORD,,
