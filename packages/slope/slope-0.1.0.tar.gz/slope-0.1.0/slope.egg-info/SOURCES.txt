@@ -1,0 +1,8 @@
+README.md
+setup.py
+slope/__init__.py
+slope.egg-info/PKG-INFO
+slope.egg-info/SOURCES.txt
+slope.egg-info/dependency_links.txt
+slope.egg-info/requires.txt
+slope.egg-info/top_level.txt
