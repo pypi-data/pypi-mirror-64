@@ -1,0 +1,6 @@
+recursive-include rocket *.html *.so *.py *.bin
+recursive-include rocketlauncher Digger_Consumer_App
+recursive-include rocketlauncher *.sh *.service
+include README
+include README.md
+include LICENSE
