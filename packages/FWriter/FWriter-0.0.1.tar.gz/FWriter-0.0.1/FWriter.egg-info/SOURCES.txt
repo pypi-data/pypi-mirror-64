@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+FWriter.egg-info/PKG-INFO
+FWriter.egg-info/SOURCES.txt
+FWriter.egg-info/dependency_links.txt
+FWriter.egg-info/top_level.txt
+fwriter/__init__.py
+fwriter/fwriter.py

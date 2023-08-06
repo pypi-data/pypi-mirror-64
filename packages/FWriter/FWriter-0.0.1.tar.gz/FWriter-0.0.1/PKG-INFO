@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: FWriter
+Version: 0.0.1
+Summary: Easy logging for training NN
+Home-page: https://github.com/exfoxz/FWriter
+Author: Sam Nguyen
+Author-email: chanhnp@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/exfoxz/FWriter/archive/v0.0.1.tar.gz
+Description: # FWriter
+        Easy logging to file when training a neural network
+        
+Keywords: logging,neural networks
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
