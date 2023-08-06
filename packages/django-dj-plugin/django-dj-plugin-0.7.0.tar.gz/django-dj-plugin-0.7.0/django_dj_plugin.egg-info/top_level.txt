@@ -1,0 +1,2 @@
+custadmin
+django_dj_plugin
