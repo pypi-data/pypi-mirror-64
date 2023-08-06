@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: gerrit-sync
+Version: 0.1
+Summary: a command line tool to easilyclone gerrit repositories in bulk.
+Home-page: UNKNOWN
+Author: Fırat Civaner
+Author-email: fcivaner@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: repository gerrit git clone sync
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
