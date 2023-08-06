@@ -1,0 +1,14 @@
+django_tooling/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+django_tooling/db.py,sha256=Ao73r5WMAZOEymKQVoz4dpv3rWifj-fpgg8MB-ZODqk,543
+django_tooling/exceptions.py,sha256=T6MgvSSCwGne5tb9N-UcLGIG2jSbbaKDfHxBXObIVEM,296
+django_tooling/moduleloading.py,sha256=UOjZzga6fMLaU3eMfpxT0LdTjdcXVk0EVVTaWp0fmys,221
+django_tooling/preconditions.py,sha256=pWRPrC0XVpzySxEHwCqVqhxgz6x7Dxj4M-aO1hZwWtA,191
+django_tooling/registeradmin.py,sha256=dx9z6ayEOyIZWPde_BwxFaWfJ4tTsZyethkGZo_mC78,338
+django_tooling/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tooling/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_tooling/management/commands/resetdb.py,sha256=ZcDRWon2MsCmJl2s4U1O4UJvBW0PGP85dYNjiTGliFM,2430
+django_tooling-0.9.6.dist-info/LICENSE.md,sha256=DOzEAqRyHgGf4zbKYtIU-KD6ba_sgT4J6nBAFckgnIo,1088
+django_tooling-0.9.6.dist-info/METADATA,sha256=G87zp7juCrdaKrNiPgCvO0-C6VRt4kRuaBy2LVcHYkg,697
+django_tooling-0.9.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_tooling-0.9.6.dist-info/top_level.txt,sha256=5xmnODXhQSn_K_N3XO4XE5Unu-JRZsASrzDdsMKvOFo,15
+django_tooling-0.9.6.dist-info/RECORD,,
