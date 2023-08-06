@@ -1,0 +1,5 @@
+ProDy==1.10
+scipy
+biopython
+pyparsing
+pytest
