@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: get-prime-number
+Version: 0.1
+Summary: A prime number generator
+Home-page: https://github.com/naijopkr/get-prime-number
+Author: Ariel Barcellos
+Author-email: contact@arielbarcellos.com
+License: UNKNOWN
+Description: # GET PRIME NUMBER
+        
+        Python module that returns a generator of prime numbers.
+        
+        ## Instructions
+        
+        1. Install the module
+        ```
+        $ pip install get-prime-number
+        ```
+        
+        2. Import the function
+        ```
+        from get-prime-number import get_prime_number
+        ```
+        
+        3. Create the generator
+        ```
+        prime_numbers = get_prime_number()
+        ```
+        
+        4. Iterate through prime numbers
+        ```
+        print(next(prime_numbers))
+        ```
+        
+        Have fun! If you have any trouble, please, contact me.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

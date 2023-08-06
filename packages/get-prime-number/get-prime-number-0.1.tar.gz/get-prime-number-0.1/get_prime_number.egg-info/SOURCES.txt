@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+get_prime_number/__init__.py
+get_prime_number.egg-info/PKG-INFO
+get_prime_number.egg-info/SOURCES.txt
+get_prime_number.egg-info/dependency_links.txt
+get_prime_number.egg-info/top_level.txt
