@@ -1,0 +1,9 @@
+README.md
+setup.py
+fastTF/__init__.py
+fastTF/app.py
+fastTF.egg-info/PKG-INFO
+fastTF.egg-info/SOURCES.txt
+fastTF.egg-info/dependency_links.txt
+fastTF.egg-info/requires.txt
+fastTF.egg-info/top_level.txt
