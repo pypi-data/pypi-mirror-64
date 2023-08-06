@@ -1,0 +1,14 @@
+.gitignore
+VERSIONS.yaml
+build.sh
+setup.py
+bin/sirem
+sirem/__init__.py
+sirem/report.template.html
+sirem/report.template.md
+sirem/sirem.py
+sirem.egg-info/PKG-INFO
+sirem.egg-info/SOURCES.txt
+sirem.egg-info/dependency_links.txt
+sirem.egg-info/requires.txt
+sirem.egg-info/top_level.txt
