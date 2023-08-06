@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: pandas-connect
+Version: 0.3.0
+Summary: Pandas connection methods for multiple databases. SQL and NoSQL.
+Home-page: https://github.com/erichamers/pandas_connect
+Author: Eric Hamers
+Author-email: erichamers@gmail.com
+License: Apache Software License 2.0
+Keywords: pandas_connect
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: alabaster
+Requires-Dist: appdirs
+Requires-Dist: argh
+Requires-Dist: Babel
+Requires-Dist: bleach
+Requires-Dist: bump2version
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: Click
+Requires-Dist: coverage
+Requires-Dist: distlib
+Requires-Dist: docutils
+Requires-Dist: entrypoints
+Requires-Dist: filelock
+Requires-Dist: flake8
+Requires-Dist: idna
+Requires-Dist: imagesize
+Requires-Dist: importlib-metadata
+Requires-Dist: importlib-resources
+Requires-Dist: Jinja2
+Requires-Dist: MarkupSafe
+Requires-Dist: mccabe
+Requires-Dist: numpy
+Requires-Dist: packaging
+Requires-Dist: pandas
+Requires-Dist: pathtools
+Requires-Dist: pkg-resources
+Requires-Dist: pkginfo
+Requires-Dist: pluggy
+Requires-Dist: psycopg2-binary
+Requires-Dist: py
+Requires-Dist: pycodestyle
+Requires-Dist: pyflakes
+Requires-Dist: Pygments
+Requires-Dist: pymongo
+Requires-Dist: PyMySQL
+Requires-Dist: pyparsing
+Requires-Dist: python-dateutil
+Requires-Dist: pytz
+Requires-Dist: PyYAML
+Requires-Dist: readme-renderer
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: six
+Requires-Dist: snowballstemmer
+Requires-Dist: Sphinx
+Requires-Dist: sphinxcontrib-websupport
+Requires-Dist: toml
+Requires-Dist: tox
+Requires-Dist: tqdm
+Requires-Dist: twine
+Requires-Dist: urllib3
+Requires-Dist: virtualenv
+Requires-Dist: watchdog
+Requires-Dist: webencodings
+Requires-Dist: zipp
+
+==============
+Pandas Connect
+==============
+
+
+.. image:: https://img.shields.io/pypi/v/pandas_connect.svg
+        :target: https://pypi.python.org/pypi/pandas_connect
+
+.. image:: https://img.shields.io/travis/erichamers/pandas_connect.svg
+        :target: https://travis-ci.com/erichamers/pandas_connect
+
+.. image:: https://readthedocs.org/projects/pandas-connect/badge/?version=latest
+        :target: https://pandas-connect.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Pandas connection methods for multiple databases. SQL and NoSQL.
+
+
+* Free software: Apache Software License 2.0
+* Documentation: https://pandas-connect.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+
+
+=======
+History
+=======
+
+0.1.0 (2020-03-21)
+------------------
+
+* First release on PyPI.
+
+
