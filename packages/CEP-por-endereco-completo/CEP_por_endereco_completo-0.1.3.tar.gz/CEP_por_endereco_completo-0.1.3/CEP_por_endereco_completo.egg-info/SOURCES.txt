@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+CEP_por_endereco_completo/__init__.py
+CEP_por_endereco_completo/cep_finder.py
+CEP_por_endereco_completo.egg-info/PKG-INFO
+CEP_por_endereco_completo.egg-info/SOURCES.txt
+CEP_por_endereco_completo.egg-info/dependency_links.txt
+CEP_por_endereco_completo.egg-info/requires.txt
+CEP_por_endereco_completo.egg-info/top_level.txt
