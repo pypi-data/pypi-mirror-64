@@ -1,0 +1,15 @@
+README.md
+setup.py
+perfpy/__init__.py
+perfpy/picking_data_model/__init__.py
+perfpy/picking_data_model/using_attrs.py
+perfpy/picking_data_model/using_dicts.py
+perfpy/picking_data_model/using_named_tuples.py
+perfpy/picking_data_model/using_pydantic.py
+self_py.egg-info/PKG-INFO
+self_py.egg-info/SOURCES.txt
+self_py.egg-info/dependency_links.txt
+self_py.egg-info/entry_points.txt
+self_py.egg-info/not-zip-safe
+self_py.egg-info/requires.txt
+self_py.egg-info/top_level.txt
