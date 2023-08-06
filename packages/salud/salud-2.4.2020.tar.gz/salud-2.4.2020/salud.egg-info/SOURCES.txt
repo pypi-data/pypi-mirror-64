@@ -1,0 +1,11 @@
+README.md
+setup.py
+salud/PolarityAnalyzer.py
+salud/__init__.py
+salud/__main__.py
+salud.egg-info/PKG-INFO
+salud.egg-info/SOURCES.txt
+salud.egg-info/dependency_links.txt
+salud.egg-info/entry_points.txt
+salud.egg-info/requires.txt
+salud.egg-info/top_level.txt

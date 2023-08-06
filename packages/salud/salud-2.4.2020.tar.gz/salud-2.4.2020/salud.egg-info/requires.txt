@@ -1,0 +1,4 @@
+vaderSentiment
+nltk
+emoji
+textblob
