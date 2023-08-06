@@ -1,0 +1,3 @@
+[console_scripts]
+klafybridge = klafybridge:main
+
