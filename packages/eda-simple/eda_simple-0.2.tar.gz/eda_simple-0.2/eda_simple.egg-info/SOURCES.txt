@@ -1,0 +1,8 @@
+setup.py
+eda_simple/__init__.py
+eda_simple/eda.py
+eda_simple.egg-info/PKG-INFO
+eda_simple.egg-info/SOURCES.txt
+eda_simple.egg-info/dependency_links.txt
+eda_simple.egg-info/not-zip-safe
+eda_simple.egg-info/top_level.txt
