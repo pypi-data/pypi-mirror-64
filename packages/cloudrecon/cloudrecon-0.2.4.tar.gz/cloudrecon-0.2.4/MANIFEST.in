@@ -1,0 +1,1 @@
+include LICENSE README.md cloudrecon/cloudrecon.yml data/*.txt

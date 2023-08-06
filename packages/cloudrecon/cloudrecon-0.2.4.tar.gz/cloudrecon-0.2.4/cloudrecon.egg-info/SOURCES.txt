@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+cloudrecon/__init__.py
+cloudrecon/__main__.py
+cloudrecon/cloudrecon.py
+cloudrecon/cloudrecon.yml
+cloudrecon/constants.py
+cloudrecon/mongodb.py
+cloudrecon.egg-info/PKG-INFO
+cloudrecon.egg-info/SOURCES.txt
+cloudrecon.egg-info/dependency_links.txt
+cloudrecon.egg-info/entry_points.txt
+cloudrecon.egg-info/requires.txt
+cloudrecon.egg-info/top_level.txt
+data/words.txt
