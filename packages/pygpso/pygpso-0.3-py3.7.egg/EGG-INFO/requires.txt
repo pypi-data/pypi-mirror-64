@@ -1,0 +1,19 @@
+numpy
+json5
+anytree
+pathos
+scipy
+scikit-learn
+matplotlib
+flake8
+pytest
+black
+gast==0.2.2
+tensorflow>=2.1.0
+gpflow@ git+https://github.com/GPflow/GPflow.git@develop#egg=gpflow
+
+[plotting-extras]
+python-igraph
+
+[saving-helper]
+pandas
