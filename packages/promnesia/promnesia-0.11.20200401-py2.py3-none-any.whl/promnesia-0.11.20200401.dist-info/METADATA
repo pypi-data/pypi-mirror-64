@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: promnesia
+Version: 0.11.20200401
+Summary: TODO promnesia
+Home-page: https://github.com/karlicoss/promnesia
+Author: Dmitrii Gerasimov
+Author-email: karlicoss@gmail.com
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: cachew
+Requires-Dist: dateparser
+Requires-Dist: hug
+Requires-Dist: python-magic
+Requires-Dist: pytz
+Requires-Dist: sqlalchemy
+Requires-Dist: urlextract
+Provides-Extra: html
+Requires-Dist: beautifulsoup4 ; extra == 'html'
+Requires-Dist: lxml ; extra == 'html'
+Provides-Extra: linting
+Requires-Dist: mypy ; extra == 'linting'
+Requires-Dist: pylint ; extra == 'linting'
+Requires-Dist: pytest ; extra == 'linting'
+Provides-Extra: my
+Provides-Extra: optional
+Requires-Dist: logzero ; extra == 'optional'
+Provides-Extra: org
+Requires-Dist: orgparse ; extra == 'org'
+Provides-Extra: reddit
+Requires-Dist: pyjq ; extra == 'reddit'
+Provides-Extra: telegram
+Requires-Dist: dataset ; extra == 'telegram'
+Provides-Extra: testing
+Requires-Dist: click ; extra == 'testing'
+Requires-Dist: httpie ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-xdist ; extra == 'testing'
+Requires-Dist: selenium ; extra == 'testing'
+
+UNKNOWN
+
+
