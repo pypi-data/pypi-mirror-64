@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+deepevent/__init__.py
+deepevent/__main__.py
+deepevent/deepevent.py
+deepevent/utils.py
+deepevent.egg-info/PKG-INFO
+deepevent.egg-info/SOURCES.txt
+deepevent.egg-info/dependency_links.txt
+deepevent.egg-info/entry_points.txt
+deepevent.egg-info/requires.txt
+deepevent.egg-info/top_level.txt
+deepevent/data/DeepEventModel.json
