@@ -1,0 +1,8 @@
+README.md
+setup.py
+examplepkgtest.egg-info/PKG-INFO
+examplepkgtest.egg-info/SOURCES.txt
+examplepkgtest.egg-info/dependency_links.txt
+examplepkgtest.egg-info/top_level.txt
+exp_pack/__init__.py
+tests/__init__.py
