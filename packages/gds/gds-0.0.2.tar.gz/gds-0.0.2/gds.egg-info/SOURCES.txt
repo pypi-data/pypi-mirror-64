@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+gds/__init__.py
+gds/__version__.py
+gds/graph.py
+gds/stack.py
+gds.egg-info/PKG-INFO
+gds.egg-info/SOURCES.txt
+gds.egg-info/dependency_links.txt
+gds.egg-info/top_level.txt
