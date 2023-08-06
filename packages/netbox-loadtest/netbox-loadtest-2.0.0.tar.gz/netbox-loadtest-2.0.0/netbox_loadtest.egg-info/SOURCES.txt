@@ -1,0 +1,11 @@
+CHANGES.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+bin/netbox_loadtest.py
+netbox_loadtest.egg-info/PKG-INFO
+netbox_loadtest.egg-info/SOURCES.txt
+netbox_loadtest.egg-info/dependency_links.txt
+netbox_loadtest.egg-info/not-zip-safe
+netbox_loadtest.egg-info/top_level.txt
