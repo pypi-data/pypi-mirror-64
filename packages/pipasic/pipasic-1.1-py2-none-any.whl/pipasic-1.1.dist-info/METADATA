@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pipasic
+Version: 1.1
+Summary: pipasic - peptide intensity-weighted proteome abundance similarity correction
+Home-page: https://gitlab.com/wangxuesong29/pipasic/-/tree/master
+Author: Martin S. Lindner, LindnerM@rki.de, and Anke Penzlin, Robert Koch-Institut, Germany
+Author-email: LindnerM@rki.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Description-Content-Type: text/markdown
+Requires-Dist: Biopython (==1.76)
+Requires-Dist: Numpy (==1.16.6)
+Requires-Dist: matplotlib (==1.4.3)
+Requires-Dist: scipy (==1.2.3)
+Requires-Dist: six (==1.14.0)
+
+UNKNOWN
+
+
