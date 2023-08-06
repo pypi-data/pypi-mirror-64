@@ -1,0 +1,12 @@
+colorama
+importlib_metadata
+matplotlib
+numpy
+pydub
+scipy
+
+[all]
+matplotlib
+
+[png]
+matplotlib
