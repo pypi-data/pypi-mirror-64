@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+app/__init__.py
+app/__main__.py
+app/__version__.py
+app/cli.py
+covid_cli.egg-info/PKG-INFO
+covid_cli.egg-info/SOURCES.txt
+covid_cli.egg-info/dependency_links.txt
+covid_cli.egg-info/entry_points.txt
+covid_cli.egg-info/requires.txt
+covid_cli.egg-info/top_level.txt

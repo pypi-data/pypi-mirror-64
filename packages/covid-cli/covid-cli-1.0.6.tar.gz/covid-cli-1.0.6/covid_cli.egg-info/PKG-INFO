@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: covid-cli
+Version: 1.0.6
+Summary: Get the latest COVID-19 information via the command line. 
+Home-page: https://github.com/AnthonyBloomer/covid-cli
+Author: Anthony Bloomer
+Author-email: ant0@protonmail.ch
+License: UNKNOWN
+Description: covid-cli
+        =========
+        
+           Get the latest COVID-19 information via the command line.
+        
+        Installation
+        ------------
+        
+        ::
+        
+           pip install covid-cli
+        
+        Usage
+        -----
+        
+        ::
+        
+           usage: covid [-h] [-all] [-country COUNTRY] [-totals]
+                        [-sort-by [{Country,Active,Cases,Deaths,Recovered,Death Rate}]]
+        
+           optional arguments:
+             -h, --help            show this help message and exit
+             -all, -a              Get all countries totals
+             -country COUNTRY, -c COUNTRY
+                                   Get a specific country's totals.
+             -totals, -t           Get global stats: cases, deaths, recovered, time last
+                                   updated, and active cases
+             -sort-by [{Country,Active,Cases,Deaths,Recovered,Death Rate}], -s [{Country,Active,Cases,Deaths,Recovered,Death Rate}]
+                                   Sort data by column.
+        
+Keywords: coronavirus,covid19
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
