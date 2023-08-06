@@ -1,0 +1,126 @@
+Metadata-Version: 2.1
+Name: pioupiou
+Version: 0.5.1
+Summary: A generator of avatar optimised to generate or random avatars based on multiple image layers
+Home-page: https://framagit.org/inkhey/pioupiou
+Author: Guénaël Muller
+Author-email: inkey@inkey-art.net
+License: UNKNOWN
+Keywords: avatar
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >= 3.5
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+# PiouPiou
+![logo](pioupiou.png)
+
+![pipeline_build_status](https://framagit.org/inkhey/pioupiou/badges/master/build.svg)
+
+A generator of avatar optimised to generate or random avatars based on multiple image layers, able to return same image  from a string "seed".
+Heavily inspired by [David Revoy](http://www.peppercarrot.com)'s [cat avatar generator](https://framagit.org/Deevad/cat-avatar-generator/) and [MonsterID by Andreas Gohr's](https://www.splitbrain.org/blog/2007-01/20_monsterid_as_gravatar_fallback).
+
+This generator rely on Pillow library to do image processing.
+
+
+[Demo](https://pioupiou.inkey-art.net/) (running this [web site code](https://github.com/buxx/pioupiouweb))https://github.com/buxx/pioupiouweb
+
+## Install
+
+### From pypi
+
+~~~sh
+$ pip install pioupiou
+~~~
+
+### From source
+
+- clone this repository
+- `pip install -e "."`
+
+## Usage
+
+Easy way to use it, is to be based on FolderAvatarTheme. To do this, you should create many .png file of same image, all
+with transparency. You should allow follow similar naming pattern as for sample example.
+
+To test it, you can simply use sample in example:
+
+Cat avatar [by David Revoy](http://www.peppercarrot.com):
+
+~~~python
+from pioupiou import FolderAvatarTheme
+theme = FolderAvatarTheme(folder_path="sample/cat_revoy", layers_name=["body", "fur","eyes","mouth","accessorie"])
+avatar = theme.generate_avatar(token="just a random string")
+theme.save_on_disk(avatar, path="/tmp/saved_file.png")
+~~~
+
+Bird avatar [by David Revoy](http://www.peppercarrot.com):
+
+~~~python
+from pioupiou import FolderAvatarTheme
+theme = FolderAvatarTheme(
+    "sample/bird_revoy",
+    layers_name=["tail", "hoop", "body", "wing", "eyes", "bec", "accessorie"],
+)
+avatar = theme.generate_avatar(token="just a random string")
+theme.save_on_disk(avatar, path="/tmp/saved_file.png")
+~~~
+
+Monster avatar [by Andreas Gohr's](https://www.splitbrain.org/blog/2007-01/20_monsterid_as_gravatar_fallback):
+
+~~~python
+from pioupiou import FolderAvatarTheme
+theme = FolderAvatarTheme(
+    "sample/monster_id",
+    layers_name=["legs", "hair", "arms", "body", "eyes", "mouth"],
+)
+avatar = theme.generate_avatar(token="just a random string")
+theme.save_on_disk(avatar, path="/tmp/saved_file.png")
+~~~
+
+## Configure Chooser
+
+To generate avatar, pioupiou provide tools to help us use the algorithm you want.
+Default behaviour is to rely on `random.Random()`, but pioupiou is made to support any type of chooser.
+To do this you just need to configure chooser in your `AvatarTheme`:
+
+~~~python
+from pioupiou import FolderAvatarTheme
+from random import Random
+theme = FolderAvatarTheme(
+  folder_path="sample/cat_revoy",
+  layers_name=["body", "fur","eyes","mouth","accessorie"],
+  chooser=Random() # same as default, don't change anything
+)
+~~~
+
+You can use any hashlib algorithm you want from `hashlib` as chooser, using `pioupiou.chooser.HashLibChooser`.
+It will do choice using modulo.
+
+~~~python
+from pioupiou import FolderAvatarTheme
+import hashlib
+from pioupiou.chooser import HashLibChooser
+theme = FolderAvatarTheme(
+  folder_path="sample/cat_revoy",
+  layers_name=["body", "fur","eyes","mouth","accessorie"],
+  chooser=HashLibChooser(hashlib.sha256()) # hashlib.sha256() is just an example, hashlib.md5() should also work for example.
+)
+~~~
+
+You can also implement `pioupiou.chooser.Chooser` and use a custom chooser.
+
