@@ -1,0 +1,7 @@
+README.txt
+setup.py
+spepy/__init__.py
+spepy.egg-info/PKG-INFO
+spepy.egg-info/SOURCES.txt
+spepy.egg-info/dependency_links.txt
+spepy.egg-info/top_level.txt
