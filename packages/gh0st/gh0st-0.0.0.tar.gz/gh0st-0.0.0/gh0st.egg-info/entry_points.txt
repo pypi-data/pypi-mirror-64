@@ -1,0 +1,3 @@
+[console_scripts]
+gh0st = gh0st.__main__:main
+

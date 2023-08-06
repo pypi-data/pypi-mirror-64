@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: gh0st
+Version: 0.0.0
+Summary: Top down stealth & hacking game
+Home-page: https://gitlab.com/pyrogue6/gh0st
+Author: Sabrina Held
+Author-email: pyrogue6@gmail.com
+License: GPLV3
+Download-URL: https://gitlab.com/pyrogue6/gh0st/-/archive/0.0.0/gh0st-0.0.0.tar.gz
+Description: # `gh0st`
+        
+        ```
+           _____ _    _  ____   _____ _______ 
+          / ____| |  | |/ __ \ / ____|__   __|
+         | |  __| |__| | | /  | (___    | |   
+         | | |_ |  __  | |//| |\___ \   | |   
+         | |__| | |  | |  /_| |____) |  | |   
+          \_____|_|  |_|\____/|_____/   |_|   
+        ```
+        
+        A top-down stealth and hacking game implemented in python curses  
+        Playable in 256-color terminal emulators to monochrome tty and everything in between
+        
+        ## Files
+        
+        |                  File | Description |
+        |----------------------:|:------------|
+        | `gh0st/`              | gh0st package |
+        | coming soon			| published after restructuring |
+        
+        
+        ## Download and Play
+        
+        ```bash
+        $ pip install gh0st
+        $ gh0st
+        ```
+        
+        ## TODO
+        
+        ### Key
+        [**+**] feature to be added  
+        [**x**] change in code  
+        [**-**] bug to be removed  
+        [**?**] uncertain how to proceed  
+        
+        ### Tasks
+        
+        [**+**] add badges to gitlab <3  
+        [**+**] upload to PyPI  
+        `├──`   write working demo  
+        `└──`   tag first release  
+        [**+**] SE logic needs to be fuzzy, contradictable, and maybe not all revealed, but able to reveal by prodding/getting skill/familiarity?  
+        `└──`   SE demo?  
+        [**+**] Need to keep better track of window size to prevent errors from making and using windows that are larger  
+        [**+**] match window size on create&resize  
+        [**+**] use old option&menu as base class?  
+Keywords: stealth hacking puzzle game
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Environment :: Console :: Curses
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment :: Turn Based Strategy
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
+Description-Content-Type: text/markdown
