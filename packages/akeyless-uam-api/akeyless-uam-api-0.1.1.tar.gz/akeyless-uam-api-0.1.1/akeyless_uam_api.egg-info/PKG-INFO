@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: akeyless-uam-api
+Version: 0.1.1
+Summary: UAM - Application API
+Home-page: https://www.akeyless.io/
+Author: UNKNOWN
+Author-email: refael@akeyless-security.com
+License: UNKNOWN
+Description:     UAM manages client accounts and allows each client to define items, roles and auth methods. The core operations of UAM are as follows: Creating new accounts. For each account: Creating items. Adding new auth methods Adding new roles creating roles - auth methods association. Returning the key&#39;s metadata together with temporary access credentials in order to access the key fragments.  # noqa: E501
+            
+Keywords: Swagger,UAM - Application API
+Platform: UNKNOWN
