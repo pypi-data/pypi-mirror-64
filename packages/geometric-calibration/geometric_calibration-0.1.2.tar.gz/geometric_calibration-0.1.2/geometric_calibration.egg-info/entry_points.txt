@@ -1,0 +1,3 @@
+[console_scripts]
+geometric_calibration = geometric_calibration.cli:main
+
