@@ -1,0 +1,13 @@
+lesson/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lesson/const.py,sha256=tihdrZU72bwucHC2XsjPivAUig2Vqgnyj9qIKmGwpMg,148
+lesson/end.py,sha256=7io3NxMDG_pnPyL7EDNsv_91R_xfea7BrwFaUtcMtjQ,125
+lesson/lesson.py,sha256=a9ctfc4t0JnRp4EpiuUwri4rr8eSnGA5-HguQyi8oLA,1624
+lesson/start.py,sha256=HyHznfsN80NbjYAlB3wOiSbfA7pz-HWLoFDJ1C9V1a0,73
+lesson/utils.py,sha256=ZQuGvosHdONBQmKef9gdKxd6omYxw-aSNeGWRxu_0gQ,282
+lesson-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+lesson-0.0.1.dist-info/METADATA,sha256=F-rpp0o0539Mj1aU6avFj8MkaYbYRE906c3y0vxjpb4,246
+lesson-0.0.1.dist-info/RECORD,,
+lesson-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+lesson-0.0.1.dist-info/entry_points.txt,sha256=vlKWxybZ9OJKV_2LWS-pOeVECg9EoVaIjMU5zq4LTCw,49
+lesson-0.0.1.dist-info/metadata.json,sha256=_8KMWg8rHi4kFp-AuKnlokfeRRgpR6DTM93l9K8rwUI,570
+lesson-0.0.1.dist-info/top_level.txt,sha256=KTxcTNi5GsmiQ0OVOH_lwXBnbHMDHJAz_33JX6A4vl4,7
