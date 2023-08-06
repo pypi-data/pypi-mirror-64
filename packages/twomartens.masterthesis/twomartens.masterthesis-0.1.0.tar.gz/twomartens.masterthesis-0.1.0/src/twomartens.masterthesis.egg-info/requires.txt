@@ -1,0 +1,12 @@
+tensorflow
+Pillow
+h5py
+numpy
+opencv-python
+scikit-learn
+tqdm
+beautifulsoup4
+matplotlib
+protobuf
+imutils
+attributedict
