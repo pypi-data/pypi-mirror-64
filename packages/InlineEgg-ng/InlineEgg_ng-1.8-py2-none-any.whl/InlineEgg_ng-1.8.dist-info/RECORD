@@ -1,0 +1,10 @@
+inlineegg/WindowsSyscall.py,sha256=1DAN6cajKPX-aRvvwX-J04urJl2DvpMHH4DxB61i9gg,8248
+inlineegg/__init__.py,sha256=ia8ok-gBhojz_HEN-g2BbGl8BbHLS1AHFmOxAeQLQXY,2103
+inlineegg/exelib.py,sha256=6_1xO61JP0a6nEDECxQ_M62qknQh1gjHk7S8p2tcUJ4,40168
+inlineegg/inlineegg.py,sha256=-6V1Eoq3mgzib0y1fobI95UFNThIRmfEJN8faHbpv8Q,69635
+inlineegg/inlineegg_test.py,sha256=4Xe6HB8TChw5_6DL0O2SdstdR6wtrkqcrNWLqa_EtQs,10374
+inlineegg/inlineegg_win_test.py,sha256=jU-XqNLBZ80LMfdzop1RRdYVIZItryj0wgFq0ous8Gw,5761
+InlineEgg_ng-1.8.dist-info/METADATA,sha256=5uhvcGTIGT32BCDvapMB5ppLBDwDae2sSzlHFz1GmAI,351
+InlineEgg_ng-1.8.dist-info/WHEEL,sha256=CbUdLTqD3-4zWemf83rgR_2_MC4TeXw9qXwrXte5w4w,92
+InlineEgg_ng-1.8.dist-info/top_level.txt,sha256=ZVy02KUBwJjvfslOwh63y4LDxCe3RFK1pfL0r8t-Zbo,10
+InlineEgg_ng-1.8.dist-info/RECORD,,
