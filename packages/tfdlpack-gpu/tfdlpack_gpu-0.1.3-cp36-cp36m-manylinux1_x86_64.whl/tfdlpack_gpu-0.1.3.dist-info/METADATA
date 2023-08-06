@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tfdlpack-gpu
+Version: 0.1.3
+Summary: Tensorflow plugin for DLPack
+Home-page: UNKNOWN
+Author: Jinjing Zhou
+Author-email: allen.zhou@nyu.edu
+License: APACHE
+Platform: UNKNOWN
+
+
+The package adds interoperability of DLPack to Tensorflow. It contains straightforward
+and easy-to-use APIs to convert Tensorflow tensors from/to DLPack format.
+
+
