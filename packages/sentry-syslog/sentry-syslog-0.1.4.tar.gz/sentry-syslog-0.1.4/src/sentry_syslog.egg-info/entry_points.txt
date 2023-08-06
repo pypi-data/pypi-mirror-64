@@ -1,0 +1,3 @@
+[console_scripts]
+sentry-syslog = sentry_syslog:main
+
