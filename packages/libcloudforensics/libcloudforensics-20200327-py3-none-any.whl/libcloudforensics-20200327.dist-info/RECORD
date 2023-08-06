@@ -1,0 +1,14 @@
+libcloudforensics/__init__.py,sha256=8v5DAzr1np9ICC6clY3hRut5QKZzPLHJC5QgCuuuIxs,659
+libcloudforensics/gcp.py,sha256=zZGVO-OtteeM_E8BqFpEf6lA-aSoWxL1ktI1ry5LPb0,36514
+tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/e2e.py,sha256=5uQG32ElC7uCEeleeJOtP_hX2h2QY2Gk97THmldh7zU,7255
+tests/gcp_test.py,sha256=DyelggyALRK_r8OQoyZTGHlVzd7lfOLM3yzSXO-Ijnc,23205
+tests/e2e/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/e2e/gcp_e2e.py,sha256=JVyWJiZ1TVoueMNGsoZK9-6uFtE97V17C-1r2mHp6mI,10461
+tests/unittest/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+tests/unittest/gcp_test.py,sha256=xBZF0gCVPOZJ8PpVJ1mHRPuxOViGUh7aSnfVLo0VZYQ,25643
+libcloudforensics-20200327.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+libcloudforensics-20200327.dist-info/METADATA,sha256=gYync0l7xu-dnZCs0m8rc83gb2dV8UONHkndtsXThmI,753
+libcloudforensics-20200327.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+libcloudforensics-20200327.dist-info/top_level.txt,sha256=1uua30P7qP-M995_hWAcDSWtDp0eCoZUts8Z1YEuMUo,24
+libcloudforensics-20200327.dist-info/RECORD,,
