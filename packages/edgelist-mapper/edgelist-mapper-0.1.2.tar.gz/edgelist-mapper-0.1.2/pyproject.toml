@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "edgelist-mapper"
+version = "0.1.2"
+description = "Maps nodes and edges of a multi-relational graph to integer"
+authors = ["Simone Primarosa <simonepri@outlook.com>"]
+license = "MIT"
+homepage = "https://github.com/simonepri/edgelist-mapper#readme"
+repository = "https://github.com/simonepri/edgelist-mapper"
+readme = "readme.md"
+keywords = ["knowledge", "graph", "mapper", "edgelist", "converter"]
+
+packages = [
+  {include = "edgelist_mapper", from = "."},
+  {include = "tests", from = ".", format = "sdist"},
+]
+
+[tool.taskipy.tasks]
+lint = "python -m pylint edgelist_mapper tests --max-line-length 80 -v --output-format colorized --disable duplicate-code,bad-continuation,too-many-locals,too-many-arguments"
+types = "python -m mypy edgelist_mapper tests"
+format = "python -m black edgelist_mapper tests --line-length 80"
+test = "python -m pytest tests --showlocals --cov=edgelist_mapper --cov-report=term-missing:skip-covered"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.dev-dependencies]
+taskipy = "^1.2.0"
+black = "~19.10b0"
+pylint = "^2.4.4"
+mypy = "~0.770"
+pytest = "^5.4.1"
+pytest-cov = "^2.8.1"
+
+[build-system]
+requires = ["poetry >=1,<2"]
+build-backend = "poetry.masonry.api"
