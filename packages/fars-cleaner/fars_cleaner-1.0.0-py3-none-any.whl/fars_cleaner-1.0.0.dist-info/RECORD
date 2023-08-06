@@ -1,0 +1,10 @@
+fars-cleaner/__init__.py,sha256=5US0g67HIm5ZHd7dcDLzGGZIhKP1Y-EFmkU13BpIIlE,21
+fars-cleaner/builder.py,sha256=rCIbG-DzlLoVz6i_yGkD0UZq5RjhWJxIHbE1dfUaz9o,9386
+fars-cleaner/data_loader.py,sha256=58vembtdxOPL4Euoa7nClO6uu223CtKCL3UeiQWobA4,14561
+fars-cleaner/datasets.py,sha256=vrEjyzncOXjVgfIJ_-OBXSNEPqVIcX7Pu8UPNSxaaIw,1398
+fars-cleaner/extra_info.py,sha256=cXHODiVRiAxvZcdXlNnyFiRzsD53XP3ATooeND45SwA,17676
+fars-cleaner/fars_utils.py,sha256=yfcM0UfWSMKO9hGzV1QFoL0ARn45DMgp_e2jIlw5BTg,3669
+fars_cleaner-1.0.0.dist-info/METADATA,sha256=UzT601PV9jaqoqn3IV81p3c01glw7I7eLO6hdXszw3w,570
+fars_cleaner-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+fars_cleaner-1.0.0.dist-info/top_level.txt,sha256=0x18FQtdSiXukS_5y9YxloxZrHJBHpCt2EhY7y2C0eo,13
+fars_cleaner-1.0.0.dist-info/RECORD,,
