@@ -1,0 +1,100 @@
+Metadata-Version: 2.1
+Name: metawards
+Version: 0.2.0a0
+Summary: MetaWards disease metapopulation modelling
+Home-page: https://github.com/chryswoods/metawards
+Author: Leon Danon (original C code), Christopher Woods (Python port)
+Author-email: l.danon@bristol.ac.uk, Christopher.Woods@bristol.ac.uk
+License: GPL3
+Project-URL: Documentation, https://github.com/chryswoods/metawards
+Project-URL: Code, https://github.com/chryswoods/metawards
+Project-URL: Issue tracker, https://github.com/chryswoods/metawards/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Cython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygsl (>=2.3.0)
+Provides-Extra: dev
+Requires-Dist: pytest (>=5.1) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.7) ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+# MetaWards
+
+## References
+
+- _"Individual identity and movement networks for disease metapopulations"_
+Matt J. Keeling, Leon Danon, Matthew C. Vernon, Thomas A. House
+Proceedings of the National Academy of Sciences May 2010, 107 (19) 8866-8870; DOI: [10.1073/pnas.1000416107](https://doi.org/10.1073/pnas.1000416107)
+
+- _"A spatial model of CoVID-19 transmission in England and Wales: early spread and peak timing"_
+Leon Danon, Ellen Brooks-Pollock, Mick Bailey, Matt J Keeling
+medRxiv 2020.02.12.20022566; doi: [10.1101/2020.02.12.20022566](https://doi.org/10.1101/2020.02.12.20022566)
+
+## Summary
+
+This repository has the code used for the papers and preprints in the References section
+
+## Dependancies
+
+The code depends on the [GSL - the GNU Scientific Library](https://www.gnu.org/software/gsl/), install with your operating 
+system's package manager or load the appropriate module if you are on an HPC system.
+
+## Building
+
+Clone the repository 
+
+```ShellSession
+[user@host ~]$ git clone https://github.com/ldanon/MetaWards.git
+```
+
+Change in to the repository and run `make`
+
+```ShellSession
+[user@host ~]$ cd MetaWards
+[user@host MetaWards]$ make
+```
+
+This produces an executable named `wards.o`
+
+## Running
+
+MetaWards currently expects the data files to be found in a hard coded path under your home Directory 
+`~/GitHub/MetaWards/2011Data/`. If you don't have the cloned repository there you can create a symlink.
+
+### Running a single experiment
+
+```ShellSession
+[user@host MetaWards]$ mkdir expt
+[user@host MetaWards]$ cd expt
+[user@host MetaWards]$ ../wards.o 42 Testing/ncovparams.csv  4 1
+```
+
+Where the command line arguments are
+
+```
+./wards.o <RANDOM_SEED> <PARAMETER_FILE> <SOME_NUMBER> <SOME_OTHER_NUMBER>
+```
+
+### Running an ensemble
+
+To run multiple experiments use the driving shellscript `run_repeats.sh`
+
+
+
