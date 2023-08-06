@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: project_rename
+Version: 0.5
+Summary: ProjectRename is a Django app to renaming the project of boilerplate
+Home-page: https://github.com/jitender0514/djnago-rename
+Author: Jitender Singh
+Author-email: jitender0514@gmail.com
+License: BSD
+Download-URL: https://github.com/jitender0514/djnago-rename/archive/0.5.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
