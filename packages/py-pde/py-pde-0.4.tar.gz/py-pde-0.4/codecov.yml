@@ -1,0 +1,5 @@
+ignore:
+  - "**/tests/*"
+  - "**/tests/*.py"
+  - "*/tests/*.py"
+  - "test_*.py"
