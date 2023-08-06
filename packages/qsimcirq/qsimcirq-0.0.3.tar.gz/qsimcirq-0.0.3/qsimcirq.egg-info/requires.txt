@@ -1,0 +1,5 @@
+cirq==0.7.0
+numpy~=1.16
+pybind11
+pytest
+typing_extensions
