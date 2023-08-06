@@ -1,0 +1,3 @@
+include README.md
+include marvin_python_common/VERSION
+include tests/fixtures/config.sample
