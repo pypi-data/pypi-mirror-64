@@ -1,0 +1,1 @@
+Migrated to https://pypi.org/project/bitbucket-webhooks/
