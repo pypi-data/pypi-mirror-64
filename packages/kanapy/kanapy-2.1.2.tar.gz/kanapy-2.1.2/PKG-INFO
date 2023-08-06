@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: kanapy
+Version: 2.1.2
+Summary: A python package for generating complex synthetic polycrystalline microstructures.
+Home-page: https://github.com/mrgprasad/kanapy
+Author: Mahesh R.G Prasad
+Author-email: mahesh.prasad@rub.de
+License: MIT license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
