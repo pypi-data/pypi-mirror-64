@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: generate-systemd-timer
+Version: 0.1.1
+Summary: Generate a systemd unit.timer and unit.service pair
+Home-page: https://github.com/thomwiggers/systemd-timer-generator
+License: MIT
+Author: Thom Wiggers
+Author-email: thom@thomwiggers.nl
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: jinja2 (>=2.11,<3.0)
+Requires-Dist: python-editor (>=1.0,<2.0)
+Project-URL: Repository, https://github.com/thomwiggers/systemd-timer-generator
+Description-Content-Type: text/markdown
+
+# Systemd generator for timer units
+
+Generates systemd `.timer` and `.service` units to more easily add cron-like tasks to your system.
+
+You'll still have to copy them into the right place (either `/etc/systemd/system`
+or `$HOME/.config/systemd/user`) and reload systemd using `systemctl daemon-reload`.
+
+## Usage
+
+```sh
+generate-systemd-timer unit-name
+# Now two editors will pop up to allow you to customize
+# Afterwards you'll find unit-name.service and unit-name.timer in the current folder.
+```
+
