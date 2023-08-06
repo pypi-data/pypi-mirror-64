@@ -1,0 +1,12 @@
+azext_imagecopy/__init__.py,sha256=ZDlHJtZt2m0vVQc6pbD54lxAa1fr6fcQy4Z2MeXyDdY,3525
+azext_imagecopy/_help.py,sha256=EvBSppXOI0RIXGNnM9HqPYksAtPHhJtcUSjIqGXZjq8,1284
+azext_imagecopy/azext_metadata.json,sha256=C70AkpoiYfhTkXd4GvCJNOFWcMwWwOd1t2eIUVr_nfo,50
+azext_imagecopy/cli_utils.py,sha256=64DcMim9yOpM4WrLQDnYHQuJ0_kPw3YYQNWSJg9BbbU,3387
+azext_imagecopy/create_target.py,sha256=-bgVY8cj3Y6d5nHtN6dU8tu2Afx_E6OL9Z013FAip3g,9594
+azext_imagecopy/custom.py,sha256=E_2RrcuK5gxDHJTVGqHksxXqKMqqgLtS9gxSa0V9ytc,10178
+image_copy_extension-0.2.4.dist-info/DESCRIPTION.rst,sha256=-L7O5ay1H8E4YoMqE7C4jicU0DIm7UNjkL2l5v8mhE4,56
+image_copy_extension-0.2.4.dist-info/METADATA,sha256=9EroBFLL6gssYU1S5-E3Bw6ib63Ko7YBSMdyHByZohc,866
+image_copy_extension-0.2.4.dist-info/RECORD,,
+image_copy_extension-0.2.4.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+image_copy_extension-0.2.4.dist-info/metadata.json,sha256=OdvfDmnq2MTig-0LrlOkBe-KmMIY4CJAV4qny7uP-NU,914
+image_copy_extension-0.2.4.dist-info/top_level.txt,sha256=Bv7q0Fy0oU5Bqi6yccmDsW0oQejInPmxDBe0o5taQPk,16
