@@ -1,0 +1,4 @@
+webviz-config>=0.0.48
+
+[tests]
+black
