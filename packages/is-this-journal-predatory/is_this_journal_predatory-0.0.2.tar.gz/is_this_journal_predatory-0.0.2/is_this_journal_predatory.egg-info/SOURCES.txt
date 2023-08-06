@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+is_this_journal_predatory/__init__.py
+is_this_journal_predatory/predatory_journals.json
+is_this_journal_predatory.egg-info/PKG-INFO
+is_this_journal_predatory.egg-info/SOURCES.txt
+is_this_journal_predatory.egg-info/dependency_links.txt
+is_this_journal_predatory.egg-info/top_level.txt
