@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: SARW
+Version: 0.1.1
+Summary: Syntactic Attention-based Random Walk Model for Sentence Representation
+Home-page: https://github.com/JacksonWuxs/Syntactic-Attention-based-Random-Walk
+Author: Xuansheng Wu
+Author-email: wuxsmail@163.com
+Maintainer: Xuansheng Wu
+Maintainer-email: wuxsmail@163.com
+License: GPL v3
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Dist: sklearn (>=0.19.2)
+Requires-Dist: numpy (>=1.16.1)
+
+UNKNOWN
+
+
