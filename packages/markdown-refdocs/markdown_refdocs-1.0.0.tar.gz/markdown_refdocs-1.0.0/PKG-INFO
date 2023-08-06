@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: markdown_refdocs
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/creisle/markdown_refdocs
+Author: Caralyn Reisle
+Author-email: caralynreisle@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Provides-Extra: dev
+Provides-Extra: docs
+Provides-Extra: deploy
+Provides-Extra: test
