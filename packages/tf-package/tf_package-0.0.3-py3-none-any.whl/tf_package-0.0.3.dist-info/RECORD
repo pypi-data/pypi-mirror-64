@@ -1,0 +1,13 @@
+tf_package/__init__.py,sha256=szbqqLmIrEpHzGEclNanFliRYge5WkGCAQutY-thJn8,201
+tf_package/attention.py,sha256=T3RjhGPrw59qn_sVATLv2W0Ue1w8k6EgezCs7dIOql8,3676
+tf_package/gan_loss.py,sha256=TsJmGVIi-Dcv4dk7BGRblVow7JR-zfHag9KGCWwOLV8,3739
+tf_package/instancenorm.py,sha256=cLOPntPrH-hj33cQxYonR5l-GAjvm7asUUaalWzv0jc,2646
+tf_package/make_tfrecord.py,sha256=iDFLlu5eWw61SD7C9y5E6qf2nkC25FJwmZnL419Y_WA,8749
+tf_package/spectral_norm.py,sha256=IQ_Z_z3FjpWI_U6xbQw1qt7fKdViEFU9Qa8x0MqlRgw,2189
+tf_package/test_data.py,sha256=mEAc1AFMGJ_Hg1N_YsnEHqK5oKs8U398lnONz0wu8Pc,2907
+tf_package/utils.py,sha256=m5rjOmn7FDH7kdfrZGkmITTff9SHclS8e-FOXi6_lj8,2284
+tf_package-0.0.3.dist-info/METADATA,sha256=_SbOrXMWUOodKFtXbHQjKLBG_uer81UVk_bDNHtf5UE,271
+tf_package-0.0.3.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+tf_package-0.0.3.dist-info/entry_points.txt,sha256=3-JbG2WW_bv_JoUSuCm61ZO05ywtSxPtTGTc3avN-Ms,74
+tf_package-0.0.3.dist-info/top_level.txt,sha256=WRiNZbWC4dhz9N_PzOcS7yTIIcjDiy_nSnBU9aZeruk,11
+tf_package-0.0.3.dist-info/RECORD,,
