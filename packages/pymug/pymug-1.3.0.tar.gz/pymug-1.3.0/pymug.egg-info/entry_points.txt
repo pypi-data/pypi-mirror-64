@@ -1,0 +1,3 @@
+[console_scripts]
+requirements_txt = requirements_txt.__main__:main
+
