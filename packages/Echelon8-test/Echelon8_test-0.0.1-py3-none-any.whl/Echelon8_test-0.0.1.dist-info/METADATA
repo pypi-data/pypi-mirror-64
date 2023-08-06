@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: Echelon8-test
+Version: 0.0.1
+Summary: Backtesting Engine
+Home-page: https://github.com/sking8484/echelon
+Author: Darst King
+Author-email: sking8484@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas (~=0.22.0)
+Requires-Dist: numpy (~=1.18.2)
+Requires-Dist: dash-html-components (~=0.10.0)
+Requires-Dist: statsmodels (~=0.9.0)
+Requires-Dist: dash (~=0.21.0)
+Requires-Dist: plotly (~=2.5.1)
+Requires-Dist: dash-core-components (~=0.22.1)
+Requires-Dist: matplotlib (~=2.2.2)
+Requires-Dist: seaborn (~=0.8.1)
+
+#Echelon  
+
+This is the first test for getting Echelon8 up and running live on PyPI.
+
+#Installation
+
+Run the following to install
+
+"""Python
+pip install echelon  
+"""
+
+#Usage
+This will come later
+
+
