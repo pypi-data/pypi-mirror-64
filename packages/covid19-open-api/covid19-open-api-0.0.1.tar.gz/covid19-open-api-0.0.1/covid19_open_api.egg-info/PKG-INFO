@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: covid19-open-api
+Version: 0.0.1
+Summary: Thailand Covid-19 status.
+Home-page: https://github.com/rsxss/covid19-open-api
+Author: Natworpong Loyswai
+Author-email: Natworpong.Loyswai@mail.kmutt.ac.th
+License: UNKNOWN
+Description: # Covid19-Open-API
+        
+        
+        ## REFERENCES: https://covid19.th-stat.com/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
