@@ -1,0 +1,6 @@
+[probator.plugins.auth]
+auth_saml = probator_auth_saml:SAMLAuth
+
+[probator.plugins.commands]
+import-saml = probator_auth_saml.commands:ImportSAML
+
