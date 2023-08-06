@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: talisestools
+Version: 0.0.7
+Summary: Tools for handling TAELISES generated binary data
+Home-page: https://github.com/savowe/talisestools
+Author: Sascha Vowe
+Author-email: vowe@mail.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+# TALISES Tools
+Tools for handling TALISES generated binary data
+
