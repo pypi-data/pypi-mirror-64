@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Orange : Ai processing made easy</title>
+        <link rel="icon" type="image/png" href="images/logo-clear.ico" />
+
+
+
+
+        <!--Server CSS -->
+        <script type="text/javascript" src="protobuf.min.js"></script>
+        <script type="text/javascript" src="broadway/YUVCanvas.js"></script>
+        <script type="text/javascript" src="broadway/Decoder.js"></script>
+        <script type="text/javascript" src="broadway/Player.js"></script>
+        <script type="text/javascript" src="ws_client.js"></script>
+        <script src="js/jquery.js"></script>
+        <!--Core CSS -->
+        <link rel="stylesheet" href="css/orange-bulma.css">
+        <link rel="stylesheet" href="css/orange-core.css">
+        
+        <!-- Fonts
+        <link href="../fonts.googleapis.com/cssc19e.css?family=Alegreya+Sans+SC:100,400" rel="stylesheet">
+        <link href="../fonts.googleapis.com/csse379.css?family=Raleway:300,400,500" rel="stylesheet"> -->
+        
+      
+
+        <link rel="stylesheet" href="bulma.css">
+       
+
+    </head>
+    <body>
+        
+        <!-- Pageloader -->
+        <div class="pageloader"></div>
+       
+        <nav class="navbar mobile-navbar is-hidden-desktop is-hidden-tablet" aria-label="main navigation">
+            <!-- Brand -->
+            <div class="navbar-brand">
+                <a class="navbar>-item" href="home.html">
+                     <img src="images/logo/logo-white.svg" alt="">
+                </a>
+        
+                <!-- Sidebar mode toggler icon -->
+                <a id="sidebar-mode" class="navbar-item is-icon is-sidebar-toggler" href="javascript:void(0);">
+                    <i data-feather="sidebar"></i>
+                </a>
+        
+             
+            </div>
+         
+        </nav>
+        <!-- Main Sidebar-->
+        <div class="main-sidebar">
+            <div class="sidebar-brand">
+                <a href="#"><img src="images/logo/logo-white.svg" alt=""></a>
+            </div>
+            <div class="sidebar-inner">
+                <ul class="icon-menu">
+                  <!-- Shop sidebar trigger -->
+          
+                  <li>
+                    <a href="index.html" class="main_color eye-icon">
+                        <svg class="svg-inline--fa fa-video fa-w-18" aria-hidden="true" data-prefix="fas" data-icon="video" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" data-fa-i2svg=""><path fill="currentColor" d="M336.2 64H47.8C21.4 64 0 85.4 0 111.8v288.4C0 426.6 21.4 448 47.8 448h288.4c26.4 0 47.8-21.4 47.8-47.8V111.8c0-26.4-21.4-47.8-47.8-47.8zm189.4 37.7L416 177.3v157.4l109.6 75.5c21.2 14.6 50.4-.3 50.4-25.8V127.5c0-25.4-29.1-40.4-50.4-25.8z"></path></svg>
+
+                    </a>
+                  </li>
+          
+          
+                  <li>
+                    <a id="open-filters" href="settings.html" class="secondary_color">
+                        <svg class="svg-inline--fa fa-cog fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="cog" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path fill="currentColor" d="M444.788 291.1l42.616 24.599c4.867 2.809 7.126 8.618 5.459 13.985-11.07 35.642-29.97 67.842-54.689 94.586a12.016 12.016 0 0 1-14.832 2.254l-42.584-24.595a191.577 191.577 0 0 1-60.759 35.13v49.182a12.01 12.01 0 0 1-9.377 11.718c-34.956 7.85-72.499 8.256-109.219.007-5.49-1.233-9.403-6.096-9.403-11.723v-49.184a191.555 191.555 0 0 1-60.759-35.13l-42.584 24.595a12.016 12.016 0 0 1-14.832-2.254c-24.718-26.744-43.619-58.944-54.689-94.586-1.667-5.366.592-11.175 5.459-13.985L67.212 291.1a193.48 193.48 0 0 1 0-70.199l-42.616-24.599c-4.867-2.809-7.126-8.618-5.459-13.985 11.07-35.642 29.97-67.842 54.689-94.586a12.016 12.016 0 0 1 14.832-2.254l42.584 24.595a191.577 191.577 0 0 1 60.759-35.13V25.759a12.01 12.01 0 0 1 9.377-11.718c34.956-7.85 72.499-8.256 109.219-.007 5.49 1.233 9.403 6.096 9.403 11.723v49.184a191.555 191.555 0 0 1 60.759 35.13l42.584-24.595a12.016 12.016 0 0 1 14.832 2.254c24.718 26.744 43.619 58.944 54.689 94.586 1.667 5.366-.592 11.175-5.459 13.985L444.788 220.9a193.485 193.485 0 0 1 0 70.2zM336 256c0-44.112-35.888-80-80-80s-80 35.888-80 80 35.888 80 80 80 80-35.888 80-80z"></path></svg>
+
+                    </a>
+                  </li>
+          
+          
+          
+                  <!-- Search trigger -->
+          
+                  <!-- User account -->
+          
+              </div>
+        </div>
+        <!-- /Main Sidebar-->
+        
+    
+        
+       
+        
+        <!-- Main wrapper -->
+        <div class="shop-wrapper">
+      
+            <div class="search-overlay"></div>
+            
+            <!-- Search input -->
+            <div class="search-input-wrapper is-desktop is-hidden">
+                <div class="field">
+                    <div class="control">
+                        <input type="text" name="search" autofocus required>
+                        <span id="clear-search" role="button"><i data-feather="x"></i></span>
+                        <span class="search-help">Enter a search</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Main section -->
+            <div class="section">
+                <!-- Container -->
+                <div class="mainSection">
+        
+                    <!-- Account Layout -->
+                    <div class="columns account-header">
+                        <div class="column  is-tablet-landscape-padded">
+                            <!-- Title -->
+                            <div class="account-title">
+                                <h2>Camera Stream</h2>
+                                <img class="brand-filigrane" src="images/logo/logo-grey.svg" alt="">
+                            </div>
+        
+                             <!-- Account tabs -->
+                             <div class="tabs-wrapper underline-tabs animated-tabs">
+                                <div class="tabs">
+                                    <ul>
+                                        <li class="is-active" data-tab="t1"><a> Camera 1</a></li>
+                                        <li data-tab="t2"><a>Camera 2</a></li>
+                                        <li data-tab="t3"><a> Both </a></li>
+                                    </ul>
+                                </div>
+                                <div id="t1" data-content="t1" class="navtab-content is-active">
+                                    
+                                
+                                 
+                                        <!-- Chosen select -->
+                                        <div class="flat-card is-auto is-element-details">
+                                            <div class="columns  is-vcentered">
+                                                
+                                                <div class="column is-component no-pad">
+                                                  
+                                                      <div id="container"></div>
+                                                      
+                                                        <!-- begin svg overlay -->
+                                                      <div id="one"> <svg height='100%'  width="100%" preserveAspectRatio='none'>
+                                                        <rect id="first" stroke='black' fill='none'/>
+                                            
+                                            
+                                                        <rect id="first" stroke='black' fill='none' />
+                                                        <rect id="first_fill" stroke='black' fill='black' />
+                                                        <text id="first_text" fill="white"></text>
+                                            
+                                            
+                                                        <rect id="second" stroke='deepskyblue' fill='none'/>
+                                                        <rect id="second_fill"  fill='deepskyblue'/>
+                                                        <text id="second_text" fill="white"></text>
+                                            
+                                                        
+                                                        <rect id="third" stroke='orangered' fill='none'/>
+                                                        <rect id="third_fill" fill='orangered' />
+                                                        <text id="third_text" fill="black"></text>
+                                            
+                                            
+                                            
+                                                        <rect id="fourth" stroke='springgreen' fill='none' />
+                                                        <rect id="fourth_fill" fill='springgreen' />
+                                                        <text id="fourth_text" fill="white"></text>
+                                            
+                                            
+                                            
+                                                        <rect id="fifth" stroke='red' fill='none'/>
+                                                        <rect id="fifth_fill" fill='red' />
+                                                        <text id="fifth_text" fill="white"></text>
+                                            
+                                            
+                                                        <circle fill='blue' cx="-5" cy="-5" r='5' />
+                                                        <circle fill='red' cx="-5" cy="-5" r='5' /> </svg> </div>
+            
+            
+            
+            
+                                                        <!-- end svg overlay -->
+                        
+
+                                                </div>
+                                           
+                                            </div>
+                                        </div>
+                                
+                                
+                                
+                                </div>
+                                <div id="t2"   data-content="t2" class="navtab-content">
+                                    
+                                
+                                 
+                                    <!-- Chosen select -->
+                                    <div class="flat-card is-auto is-element-details">
+                                        <div class="columns  is-vcentered">
+                                            
+                                            <div class="column is-component no-pad">
+                                           
+                                                  <div id="container1"></div>
+                                                                      
+
+
+                                         
+                                            </div>
+                                       
+                                        </div>
+                                    </div>
+                            
+                            
+                            
+                            
+                            </div>
+                            
+
+                            <div id="t3"  data-content="t3" class="navtab-content">
+                                    
+                                
+                                 
+                                <!-- Chosen select -->
+                                <div class="flat-card is-auto is-element-details">
+                                    <div class="columns  is-vcentered">
+                                        
+                                        <div class="column is-component no-pad">
+                                            
+                                                <div id="container3"></div>
+                                                
+                                                  
+
+
+                                       
+                                        </div>
+                                        <div class="column is-component no-pad">
+                                            
+                                          <div id="container4"></div>
+                                              
+
+
+                                   
+                                    </div>
+
+                                   
+                                    </div>
+                                </div>
+                        
+                        
+                        
+                        
+                        </div>
+
+
+                                     
+                
+                  
+                
+                                
+                                
+                            </div>
+
+                           
+        
+                        </div>
+                    </div>
+
+
+
+                   
+                </div>
+                <!-- /Container -->
+            </div>
+            <!-- /Main section -->
+        </div>
+        <!-- /Main wrapper -->
+        <!-- Concatenated plugins -->
+
+    
+ 
+    </body>  
+<script>
+     $('[data-tab]').on('click', function (e) {
+      console.log(this)
+      $(this).addClass('is-active').siblings('[data-tab]').removeClass('is-active')
+    console.log($('[data-content=' + $(this).data('tab') + ']'))
+    var tabContent = $('[data-content=' + $(this).data('tab') + ']')
+    tabContent.addClass('hello').addClass('is-active').siblings('[data-content]').removeClass('is-active')
+   
+})
+
+
+
+</script>
+</html>
