@@ -1,0 +1,3 @@
+[console_scripts]
+autoguru = autoguru.__main__:autoguru
+
