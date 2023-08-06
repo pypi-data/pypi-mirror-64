@@ -1,0 +1,16 @@
+logodetect/__init__.py,sha256=ITrLrwC6vFUNnx-zGyNP59MCeo_BgvOTz_TECj6Ut_s,326
+logodetect/augmenters.py,sha256=NRBr2OlUlthxqjgrvedUDNDSsKoSt4wcVKWbgdpDBg0,1436
+logodetect/cli.py,sha256=CUzUS54S67L2MaAj6ZL3ZTkiKfaHXi5DzjZOvJVuc-Q,3657
+logodetect/recognizer.py,sha256=lEAoxSxROsNqk6LC0N5ZRKmvuVyaqJHk_TZSRFboqIw,7966
+logodetect/utils.py,sha256=Jygpzse6kevAkGtghYixzRiExzl1B0y1EJKsnDIbYJQ,2418
+logodetect/classifiers/__init__.py,sha256=EK0TQdWursIQesGpoFvN1UqNK4PAtL5d-mzzlfLpo3E,3538
+logodetect/classifiers/knn.py,sha256=pAACX_OzYCBNcjZ4CCSjGm729cxKfeFc14loBMwBtoE,6447
+logodetect/classifiers/siamese.py,sha256=TopSamfC8409cccXmf1ucAiW8q1fn0cBhcT-kFe--MA,4026
+logodetect/detectors/__init__.py,sha256=P8vqFOnzbiHNERICWffqXe2O_vMCJGbkiXsN9S555vk,1784
+logodetect/detectors/faster_rcnn.py,sha256=2YsDByPFmdsdcuMjPLzsGcT6Jn_an9oOVddfyqdNbpM,1781
+logodetect-0.1.1.dist-info/LICENSE,sha256=99ee4zhTjJtwCl8xUzgW9utE3xrB49_M26ZOhNZ1TMo,34576
+logodetect-0.1.1.dist-info/METADATA,sha256=7iK9_ueEvxIq5EWV-f3ce9i-BWMu-90H5RchYBopAL0,1389
+logodetect-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+logodetect-0.1.1.dist-info/entry_points.txt,sha256=1MelGRCpdwHhYjh8DcHRKFdaKEX8mEsKsnwc359td2Q,51
+logodetect-0.1.1.dist-info/top_level.txt,sha256=OH1Nin72AaxdhpBs20Ak0XBtSUrfsj3rkewNd1i5U6U,11
+logodetect-0.1.1.dist-info/RECORD,,
