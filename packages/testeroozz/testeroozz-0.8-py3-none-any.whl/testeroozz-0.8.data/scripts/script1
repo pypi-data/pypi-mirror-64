@@ -1,0 +1,4 @@
+#!python
+
+import testeroozz
+testeroozz.Summation.great_summation(1,2)
