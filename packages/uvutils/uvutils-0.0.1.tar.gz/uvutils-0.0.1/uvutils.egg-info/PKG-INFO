@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: uvutils
+Version: 0.0.1
+Summary: Utility functions for various Uvulab projects
+Home-page: UNKNOWN
+Author: Jerry Duncan
+Author-email: mikeynjerry@gmail.com
+License: UNKNOWN
+Description: # uvutils
+        Utility functions for various Uvulab projects
+        
+Platform: UNKNOWN
+Requires-Python: >3.6
