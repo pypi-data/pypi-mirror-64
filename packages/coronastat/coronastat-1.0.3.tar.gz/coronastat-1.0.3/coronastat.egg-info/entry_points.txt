@@ -1,0 +1,3 @@
+[console_scripts]
+coronastat = coronastat.driver:main
+
