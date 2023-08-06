@@ -1,0 +1,14 @@
+vsc/__init__.py,sha256=ByjLkfqWZTBwYCCxFecifGDLn0bxSRqRRqzyKqeEM7M,1882
+vsc/__main__.py,sha256=6aJ379hOCikfftTwvxPVPjFanHqAqfHBliuIMy9dRCs,902
+vsc/attrs.py,sha256=MK6J-0qDKahgTaWCh1MTn7wuE9Y1NgQgerQCh6Ivtec,1541
+vsc/constraints.py,sha256=Zv7svQxCmbXfA6mnyJnrJqNQNRknNQgGJ2lMH-E9CCA,5183
+vsc/coverage.py,sha256=El9jrHdaEqyevo-pZUiBxNA6dJTkRTgtRZgrZSDm2d0,17000
+vsc/methods.py,sha256=G2EXR-lp7DQW4BDMpbGq0dXSWPjcw5SxVzFMoQSEgrU,1736
+vsc/rand_obj.py,sha256=d14sfsg_g2I_1iGjtotJGEBhIpOzEh09wK3ALlf4JWA,12908
+vsc/types.py,sha256=G2TRguGLxsSCO2b5l_WuZhnKlDQRb1QBd_Mm58Rhyao,11158
+py_vsc-0.0.1.20200326.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+py_vsc-0.0.1.20200326.3.dist-info/METADATA,sha256=eRcZcRiUn7yj4j7cD7vC1VohfjjLpNdVIBEy_MJRK8k,464
+py_vsc-0.0.1.20200326.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+py_vsc-0.0.1.20200326.3.dist-info/entry_points.txt,sha256=Dbo9akIaPDhCtLwevcwH9qEFCt-lyDdfyLV2gyhD1Gs,43
+py_vsc-0.0.1.20200326.3.dist-info/top_level.txt,sha256=GgPgqj2KcQ-10o6VsQQY0JHQbvGF-3RkKO4Tm5qPN_Q,4
+py_vsc-0.0.1.20200326.3.dist-info/RECORD,,
