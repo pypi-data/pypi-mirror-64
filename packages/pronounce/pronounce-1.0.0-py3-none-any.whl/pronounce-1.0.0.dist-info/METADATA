@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pronounce
+Version: 1.0.0
+Summary: Generate the pronunciation code for the string
+Home-page: https://github.com/vish0709/pronounce/
+Author: Vishal Kumar
+Author-email: vtkumar022@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+﻿Package Description
+----------------------------
+
+Pronounce is a Python Package for generating the pronunciation code. 
+
+----------
+
+
+Documents
+-------------
+
+Pronounce requires Python 3.5, 3.6, or 3.7. 
+
+----------------
+
+
+```
+Syntax: 
+	pronounce.pronounce(name=str_object)
+
+# Generate the pronounce code from the string
+import pronounce as p
+
+s1 = p.pronounce('Hello')
+s2 = p.pronounce('Hailo')
+
+print('Hello',' : ',s1)
+print('Hailo',' : ',s2)
+
+Output: Hello : H400
+	Hailo : H400
+```
+
+
+
