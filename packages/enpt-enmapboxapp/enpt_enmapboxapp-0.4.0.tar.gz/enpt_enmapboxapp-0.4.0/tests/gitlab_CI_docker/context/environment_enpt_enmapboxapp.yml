@@ -1,0 +1,29 @@
+name: enpt_enmapboxapp
+
+channels: &id1
+  - http://conda.anaconda.org/conda-forge
+
+dependencies:
+  - python=3.*.*
+  - pip  # avoids that conda uses the wrong pip
+  - qgis
+
+  - pip:
+    - psutil
+    # - enmapbox  # not installable via PyPi
+
+    # docs
+    - sphinx-argparse
+
+    # linting
+    - pycodestyle
+    - flake8
+    - pylint
+    - pydocstyle
+
+    # tests
+    - nose
+    - nose2
+    - nose-htmloutput
+    - coverage
+    - rednose
