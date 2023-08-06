@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distribumath/Binomialdistribution.py
+distribumath/Gaussiandistribution.py
+distribumath/Generaldistribution.py
+distribumath/__init__.py
+distribumath.egg-info/PKG-INFO
+distribumath.egg-info/SOURCES.txt
+distribumath.egg-info/dependency_links.txt
+distribumath.egg-info/not-zip-safe
+distribumath.egg-info/top_level.txt
