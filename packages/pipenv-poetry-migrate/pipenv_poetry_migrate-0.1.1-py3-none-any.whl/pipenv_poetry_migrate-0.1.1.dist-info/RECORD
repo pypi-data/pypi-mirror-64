@@ -1,0 +1,8 @@
+pipenv_poetry_migrate/__init__.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+pipenv_poetry_migrate/cli.py,sha256=73fXuDql14IoVkXwRAoa45PpcKKruwF8Td2Fe2l1DWg,619
+pipenv_poetry_migrate/migrate.py,sha256=BeCpwrDYD3QjfMn8HzTtPvd8talu1NEkwi1yM9Qi2dw,2313
+pipenv_poetry_migrate-0.1.1.dist-info/entry_points.txt,sha256=m7-TBKmE1tXiEYxxu3Opt6Cw2sYlzHtyJSEDlMcUafM,72
+pipenv_poetry_migrate-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pipenv_poetry_migrate-0.1.1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+pipenv_poetry_migrate-0.1.1.dist-info/METADATA,sha256=BA_72vjpKODRq21_aLQEtrIIWH1T50S7u4AJqQN_P_s,1674
+pipenv_poetry_migrate-0.1.1.dist-info/RECORD,,
