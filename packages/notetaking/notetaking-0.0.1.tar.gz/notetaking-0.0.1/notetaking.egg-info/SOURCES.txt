@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+notetaking/__init__.py
+notetaking/daemon.py
+notetaking/notetaking.py
+notetaking.egg-info/PKG-INFO
+notetaking.egg-info/SOURCES.txt
+notetaking.egg-info/dependency_links.txt
+notetaking.egg-info/entry_points.txt
+notetaking.egg-info/not-zip-safe
+notetaking.egg-info/requires.txt
+notetaking.egg-info/top_level.txt
