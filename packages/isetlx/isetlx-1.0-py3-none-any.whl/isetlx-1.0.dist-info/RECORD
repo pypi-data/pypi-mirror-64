@@ -1,0 +1,11 @@
+isetlx/__init__.py,sha256=j06ViwKIUnI8SCzCN5ZF6cpNlOF9aKhUuxx0_CVTqvM,91
+isetlx/__main__.py,sha256=r-o7hfgWxBNiINGOgi73ac_O0rsJzp8yiwnDRl8VqgI,155
+isetlx/install.py,sha256=DuayNYz2w2s610XtZk7iqXLVrNV9rlQf81TwZA43hFM,3407
+isetlx/kernel.py,sha256=QGulfzoaBFs2XpcxcdCQV00xblx5035EVHMMV-Ega6s,3369
+isetlx/logo-32x32.png,sha256=Zoiiy1WLX-KCQQw5Pp0KBCmaR9hccDCKJuVkbxGsj6k,978
+isetlx/logo-64x64.png,sha256=a6E8S1dwesQIAG80XlbIbdHCT-R0b9hDi2Giig4rhYg,3347
+isetlx-1.0.dist-info/LICENSE,sha256=0wkqxBNrUfSpoeGOv5YKUpYMbLxLorUMcgMaitoP7ic,1067
+isetlx-1.0.dist-info/METADATA,sha256=kcz3bIHq6zfIDtJvTlpg5ETRzNpjoCxI08eB82dI8fs,440
+isetlx-1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+isetlx-1.0.dist-info/top_level.txt,sha256=h18gA4Hr1pfPKUvPjz7XT1BSSFDoU2WsarDjKMqnBZA,7
+isetlx-1.0.dist-info/RECORD,,
