@@ -1,0 +1,16 @@
+mdform Changelog
+=======================
+
+0.2 (2020-03-26)
+----------------
+
+- Implemented DateField
+- Implemented TimeField
+- Implemented TextAreaField
+- Implemented collapsable parts
+
+
+0.1 (2020-02-15)
+----------------
+
+- first public release.
