@@ -1,0 +1,10 @@
+Modules/TestTasks.py,sha256=0dtLz_aMXUnh4XQo1MkmOQESuJse2rlBhw43PjiUKFs,1632
+Modules/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pg_tasks_queue/Database.py,sha256=GHVTSRkxH6bM0u9ZZxUn3X3IUfrIY-wn5ihkg6gIzA0,35534
+pg_tasks_queue/TaskManager.py,sha256=XioFSz878RVO05RuAZ1-9yyAW8jry4KfflSY6P7G4rg,2100
+pg_tasks_queue/Worker.py,sha256=Y-LMhwPrOfqY4AmrjPFxkRiu5iV1Dv-D3x0JQXL3JGw,10151
+pg_tasks_queue/__init__.py,sha256=5ffIUftSxdvlYhVpF9WlKEQ5SKf-PN-aZAD0LfWeULI,21
+pg_task_queue-1.10.dist-info/METADATA,sha256=iXh7iImnCgcgFYEQq7gD70KYGxe5RHFU-u4BH11y_rU,508
+pg_task_queue-1.10.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pg_task_queue-1.10.dist-info/top_level.txt,sha256=VfwKGTFOfcm95QhRKBFt7s8MQwjgcPZNZ4jbvePEDRs,23
+pg_task_queue-1.10.dist-info/RECORD,,
