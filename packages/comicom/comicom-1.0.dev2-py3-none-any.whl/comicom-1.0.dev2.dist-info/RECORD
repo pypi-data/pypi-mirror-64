@@ -1,0 +1,12 @@
+comicom-1.0.dev2.data/scripts/comicom,sha256=Kc7H3ZwdP-xaiuOk5SdvQwBghPWtyp5MnsSLq___gzU,301
+modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modules/arguments.py,sha256=LU3bx52bLYvv7uahWZXos5IKL5oZUDvdXlNXYoKgyxw,5708
+modules/comgui.py,sha256=Ef8oXD5GJMeRMtPo8TmF74RUZh4rQt2Gx_Hxi-RZ0F0,2309
+modules/compiler.py,sha256=YtQOs44Ws6y9vIS_YUxsiEg4jWSmFf7p-jW9nHIElyM,8263
+modules/entities.py,sha256=wB9SF6dSO6nbXvF-eRSmCuw92izY_PVrkoCWxM3flZc,1768
+modules/imgmag.py,sha256=10CZ68VM-qhP-yTKbOaT2DMYNonpqTwEy73gbUl-wPY,8288
+modules/logger.py,sha256=Wj4VE6ZTZWA7_WoU9t6P8AD0nHCQnPyASk88gaErihA,704
+comicom-1.0.dev2.dist-info/METADATA,sha256=C30MHIOh2sEpofVQYbwFtrelRcc3uQBo3DSOm0Wwpgk,962
+comicom-1.0.dev2.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+comicom-1.0.dev2.dist-info/top_level.txt,sha256=F7U4jdIxH3MVMmyX9rbajWuG0bj5tcZN4L1DZSxW72E,8
+comicom-1.0.dev2.dist-info/RECORD,,
