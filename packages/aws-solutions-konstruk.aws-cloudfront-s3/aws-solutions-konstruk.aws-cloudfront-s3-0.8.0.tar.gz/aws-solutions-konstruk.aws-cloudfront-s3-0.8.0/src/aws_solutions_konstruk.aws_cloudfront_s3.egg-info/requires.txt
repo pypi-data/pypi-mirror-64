@@ -1,0 +1,6 @@
+jsii~=0.22.0
+publication>=0.0.3
+aws-cdk.aws-cloudfront<1.26.0,>=1.25.0
+aws-cdk.aws-s3<1.26.0,>=1.25.0
+aws-cdk.core<1.26.0,>=1.25.0
+aws-solutions-konstruk.core<0.9.0,>=0.8.0
