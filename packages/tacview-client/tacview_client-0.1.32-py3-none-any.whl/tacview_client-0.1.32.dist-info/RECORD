@@ -1,0 +1,11 @@
+tacview_client/__init__.py,sha256=DWBw8I9SD5KkMrZqk4-ef2gpzg1lNW3u38jNV7Bi5Fg,23
+tacview_client/cli.py,sha256=3WE5WNhK1My4ywduVEJ5v6n9kkMDxg1MTg_yhridMP0,4134
+tacview_client/client.py,sha256=NxfZkQjYpy_fP0CfsJs8jioWOe5TxDUnjvmVicd3wVU,28883
+tacview_client/config.py,sha256=Tl76FKLh_jJ6EkDaJKNKD7YFHU96XvJf0qxBTqDKPlw,899
+tacview_client/db.py,sha256=tDGcOw6ZgqrkHuJ3lPBeA3hHk1T1tuZc-a48y_cwvoE,7384
+tacview_client/serve_file.py,sha256=UOqOJ18gRTdlAf8rQPRys1I0_3YxNoPRhGQmGbp-iow,2446
+tacview_client-0.1.32.dist-info/entry_points.txt,sha256=Ui01mwxWpUCiZ-yD5vyxxlI3JfpjmZGtR48yAjXkWIQ,51
+tacview_client-0.1.32.dist-info/LICENSE,sha256=klOWONnk8OKJaayOxADE0RBzPAgt0ZkLUY27rg_EpZE,1069
+tacview_client-0.1.32.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+tacview_client-0.1.32.dist-info/METADATA,sha256=Z-qDxFso4OQh3vvw_KWUx-eFzRLZhMXH68rdIY0YmBE,637
+tacview_client-0.1.32.dist-info/RECORD,,
