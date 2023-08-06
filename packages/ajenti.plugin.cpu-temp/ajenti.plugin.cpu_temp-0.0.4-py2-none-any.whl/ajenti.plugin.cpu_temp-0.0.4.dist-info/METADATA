@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: ajenti.plugin.cpu-temp
+Version: 0.0.4
+Summary: A CPU temperature monitor plugin with chart for Ajenti dashboard.
+Home-page: https://www.tiferking.cn
+Author: Tifer King
+Author-email: tiferking@tiferking.cn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
