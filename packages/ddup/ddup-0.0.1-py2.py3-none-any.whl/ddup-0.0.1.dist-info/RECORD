@@ -1,0 +1,14 @@
+ddup-0.0.1.data/data/dedup/utils/black.png,sha256=Ctlb43bCdBL9WlZB8wP-XV0pf9ImQNJOd12p4kkigeE,594
+dedup/__init__.py,sha256=AQxNNkU4AhDKLBH_URMxYw9TVXYeuVQYQB0m60Zfs1I,92
+dedup/version.py,sha256=sJUyPG0B83MQpLVt4Fm6sc3GRnvjIs0vPv9oppVFm3w,105
+dedup/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dedup/utils/black.png,sha256=Ctlb43bCdBL9WlZB8wP-XV0pf9ImQNJOd12p4kkigeE,594
+dedup/utils/chunks.py,sha256=KFbqkSHds43d1KGgyh-n_R9PVoB5N8eqsuE-98FvXtA,307
+dedup/utils/hash.py,sha256=zMSu7jzLuFSsGKVnREbf7tJrYc3cUNrVVRWuoUn3Ah8,695
+tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tools/dedupsdk.py,sha256=QpTXLKPTGak6HpDoirsJftzPmtnnt6JueUnd_bGdfOc,7354
+ddup-0.0.1.dist-info/METADATA,sha256=FgNmOlHDpjIXCvXVkHnqZHb1ApB2V_zW3h3-SDjzaFA,1923
+ddup-0.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ddup-0.0.1.dist-info/entry_points.txt,sha256=hFNrkRF7tLZnSxyEJxdSaChCUvePIVdD9aAWHPwFLKk,47
+ddup-0.0.1.dist-info/top_level.txt,sha256=0UoRcryHPb65fmyfNtReYdx8eUt65setdOTFD4329eA,12
+ddup-0.0.1.dist-info/RECORD,,
