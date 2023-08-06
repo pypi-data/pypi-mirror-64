@@ -1,0 +1,10 @@
+lang_pref_middleware/__init__.py,sha256=c1fOf19liUxWPd4mUNHy5PRadjSmoLrSwbV5gue4kzE,109
+lang_pref_middleware/middleware.py,sha256=0x_E9AFuFdOp88OkbPqx-AHIaiFMTO8Q3_4IENULfZQ,849
+lang_pref_middleware/tests.py,sha256=C9ibuuJURpUF8oK0-ra7mtxqUQaN-iYl96Lm1kABsDo,2866
+django_lang_pref_middleware-0.2.0.dist-info/AUTHORS,sha256=tt9uyzmcbEV2VHbZTxpZn4ErBvkK2iEH9nz7OwCJhvM,98
+django_lang_pref_middleware-0.2.0.dist-info/LICENSE.txt,sha256=DVQuDIgE45qn836wDaWnYhSdxoLXgpRRKH4RuTjpRZQ,10174
+django_lang_pref_middleware-0.2.0.dist-info/METADATA,sha256=kKFJ6PDqfRfnxP5xj8mHP1fyo7qrmaheMF1hbldosCA,1774
+django_lang_pref_middleware-0.2.0.dist-info/NOTICE.txt,sha256=aEWFWXfteI99uwoxh6VFLX-ohDdwoksgXWSSyXUtsAQ,574
+django_lang_pref_middleware-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_lang_pref_middleware-0.2.0.dist-info/top_level.txt,sha256=Ghu-FI0vMImzBSvUAYZLn3Gd0p6t9hdKqYv0bfi1cxs,21
+django_lang_pref_middleware-0.2.0.dist-info/RECORD,,
