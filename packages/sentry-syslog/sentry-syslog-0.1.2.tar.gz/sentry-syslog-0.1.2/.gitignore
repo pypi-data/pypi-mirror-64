@@ -1,0 +1,12 @@
+# Project-specific variable data
+/var
+
+# Python build/packaging/distribution artifacts
+/.eggs
+/dist
+/build
+/src/sentry_syslog/version.py
+
+# Testing artifacts
+/.tox
+/.coverage
