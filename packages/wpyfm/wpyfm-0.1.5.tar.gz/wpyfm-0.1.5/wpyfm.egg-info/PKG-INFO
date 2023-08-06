@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: wpyfm
+Version: 0.1.5
+Summary: A pybind11 wrapper for libfm.
+Home-page: UNKNOWN
+Author: Karl Krauth
+Author-email: karl.krauth@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/Karl-Krauth/libfm/archive/v0.1.5.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
