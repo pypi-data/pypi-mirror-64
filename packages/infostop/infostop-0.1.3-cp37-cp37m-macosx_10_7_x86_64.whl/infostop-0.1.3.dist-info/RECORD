@@ -1,0 +1,13 @@
+cpputils.cpython-37m-darwin.so,sha256=tW1UvYqwvJ6oUCFGZ15QW436d1r5p5xkeV-fut5Pt0w,156276
+infostop/__init__.py,sha256=7ojCYurvrdjbNFLmJXqGnTLVU1NmTZWbUiwFpoxBhM0,432
+infostop/deprecated.py,sha256=FGFKXFn5dvvOXYw5FnXMyaXmZP1XEOe8wH80JaOBEhE,676
+infostop/metadata.py,sha256=k42g5BNjiB75CzN9OUx-aLgmPE_eup2Quro7h1EknBk,345
+infostop/models.py,sha256=mu3E9Fb-0tn-KF7IwFR7a_L5m0H5fsSru89KZxwo2L8,18002
+infostop/postprocess.py,sha256=elSUJ4CEJ1P0TXBzZEoE3cFN8OUt-8jZXO0hNUBMy9Y,2121
+infostop/utils.py,sha256=thn67sSvR0W3XnxV7BPeShtK1EkQQnzLqKAsIN-wreQ,7450
+infostop/visualize.py,sha256=lq0Z1PsV089E8IAlTaRuqIGD3Nd_UenlscWWQfEw8G0,9092
+infostop-0.1.3.dist-info/LICENSE,sha256=cK3d-YHIqz8_fYV7hRsZdabrfnqUv6om6a6Lcv6koRk,1065
+infostop-0.1.3.dist-info/METADATA,sha256=RckYVZitHJuSB5lhuXvgjXw45e3Y08fIMzcj7vxuCvI,3517
+infostop-0.1.3.dist-info/WHEEL,sha256=nYKY7aarFvRN_7R8NYnCesPqC9h4PzpMTx5EiRYRerg,110
+infostop-0.1.3.dist-info/top_level.txt,sha256=9hUK6dTMxqJPa3XLOv8K25VjgbrYiFkhsQijChpBmzE,18
+infostop-0.1.3.dist-info/RECORD,,
