@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/some_package/__init__.py
+src/some_package/some_module.py
+src/some_package_andre_317.egg-info/PKG-INFO
+src/some_package_andre_317.egg-info/SOURCES.txt
+src/some_package_andre_317.egg-info/dependency_links.txt
+src/some_package_andre_317.egg-info/top_level.txt
