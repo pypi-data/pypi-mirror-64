@@ -1,0 +1,9 @@
+git+git://github.com/gunthercox/chatterbot-corpus@master#egg=chatterbot_corpus
+mathparse
+nltk
+pint>=0.8.1
+python-dateutil>=2.7,<2.8
+pyyaml
+spacy
+sqlalchemy
+pytz
