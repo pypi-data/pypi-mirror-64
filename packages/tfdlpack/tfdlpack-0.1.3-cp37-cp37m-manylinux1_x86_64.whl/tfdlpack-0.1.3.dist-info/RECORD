@@ -1,0 +1,10 @@
+tfdlpack-0.1.3.data/purelib/tfdlpack/__init__.py,sha256=yX7OsoK8UJEF9KaFl4uhQfR5CdLRxOX9lX3xqAN-J1A,104
+tfdlpack-0.1.3.data/purelib/tfdlpack/capsule_api.py,sha256=SIC9wElRjixUR0MMJXZLWf3XbTcjYZmMrnjkfFm5gno,1918
+tfdlpack-0.1.3.data/purelib/tfdlpack/core.py,sha256=ijmdAX6p2iwrLPU3FQepWvghZBI2vKS9dnEMymxzk80,2131
+tfdlpack-0.1.3.data/purelib/tfdlpack/libinfo.py,sha256=M4hGja2Am8hUeZ6FlAeVdS0jFUKmn9XtXmrthQ7BKiw,3974
+tfdlpack-0.1.3.data/purelib/tfdlpack/libtfdlpack-tf-2.1.0.so,sha256=1iJ4yME5EqH0xPhVU5-CsqqsGb2MlH7B0cNOn2zgKP4,106200
+tfdlpack-0.1.3.data/purelib/tfdlpack/libtfdlpack-tf-2.2.0.so,sha256=7samZCzMjoP5rmoBN3V1-NMzijqRVNvHSd7veDR2Go8,114384
+tfdlpack-0.1.3.dist-info/METADATA,sha256=JfXc-aDUbOTjfUZOOl6qmNWtxGPZI6wuGeE0ZW8Bv5M,362
+tfdlpack-0.1.3.dist-info/WHEEL,sha256=x_vzcI4ZEGB3mgPWPKzGiYMKKJ7Ixf6JpcM2LwQveJI,109
+tfdlpack-0.1.3.dist-info/top_level.txt,sha256=710geHaLBvIkFcu2oWgXZcSM6my9rUPPzkNB3eTqV8s,9
+tfdlpack-0.1.3.dist-info/RECORD,,
