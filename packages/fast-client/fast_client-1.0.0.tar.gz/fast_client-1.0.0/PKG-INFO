@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: fast_client
+Version: 1.0.0
+Summary: FastDFS Server uploadtool
+Home-page: UNKNOWN
+Author: wanghuan
+Author-email: wanghuan0718@outlook.com
+License: MIT Licence
+Description: UNKNOWN
+Keywords: pip,fdfs,uploadtool,wanghuan
+Platform: any

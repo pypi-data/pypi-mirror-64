@@ -1,0 +1,5 @@
+setup.py
+fast_client.egg-info/PKG-INFO
+fast_client.egg-info/SOURCES.txt
+fast_client.egg-info/dependency_links.txt
+fast_client.egg-info/top_level.txt
