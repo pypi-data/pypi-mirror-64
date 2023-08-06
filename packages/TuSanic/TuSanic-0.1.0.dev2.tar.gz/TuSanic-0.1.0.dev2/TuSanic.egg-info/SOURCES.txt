@@ -1,0 +1,11 @@
+README.md
+setup.py
+TuSanic/__init__.py
+TuSanic/tus_file.py
+TuSanic/tusanic.py
+TuSanic.egg-info/PKG-INFO
+TuSanic.egg-info/SOURCES.txt
+TuSanic.egg-info/dependency_links.txt
+TuSanic.egg-info/not-zip-safe
+TuSanic.egg-info/requires.txt
+TuSanic.egg-info/top_level.txt
