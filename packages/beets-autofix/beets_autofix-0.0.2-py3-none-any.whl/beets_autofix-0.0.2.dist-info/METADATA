@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: beets-autofix
+Version: 0.0.2
+Summary: ('A beets plugin to execute repetitive tasks in one go.',)
+Home-page: https://github.com/adamjakab/BeetsPluginAutofix
+Author: Adam Jakab
+Author-email: adam@jakab.pro
+License: MIT
+Platform: ALL
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beets (>=1.4.9)
+Requires-Dist: alive-progress
+Provides-Extra: tests
+
+[![Build Status](https://travis-ci.org/adamjakab/BeetsPluginAutofix.svg?branch=master)](https://travis-ci.org/adamjakab/BeetsPluginAutofix)
+[![Coverage Status](https://coveralls.io/repos/github/adamjakab/BeetsPluginAutofix/badge.svg?branch=master)](https://coveralls.io/github/adamjakab/BeetsPluginAutofix?branch=master)
+[![PyPi](https://img.shields.io/pypi/v/beets-autofix.svg)](https://pypi.org/project/beets-autofix/)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE.txt)
+
+# Autofix (Beets Plugin)
+
+The *beets-autofix* plugin helps you to automate the tasks that you keep repeating to maintain your library. 
+
+It executes the following tasks:
+- check missing files and remove them from the library
+- run the convert plugin
+- run the zero plugin
+- run acousticbrainz plugin 
+- find genre from lastgenre and if it fails use the `genre_rosamerica`
+- use the xtractor plugin to extract low/high level audio data
+
+*NOTE: This plugin is highly unstable and not at all documented! Use it at your own risk*
+
+
+## Installation
+The plugin can be installed via:
+
+```shell script
+$ pip install beets-autofix
+```
+
+
+
