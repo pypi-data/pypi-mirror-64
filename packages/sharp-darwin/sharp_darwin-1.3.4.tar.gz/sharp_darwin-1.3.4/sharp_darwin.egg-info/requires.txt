@@ -1,0 +1,2 @@
+spotipy>=2.10
+python-dotenv>=0.12
