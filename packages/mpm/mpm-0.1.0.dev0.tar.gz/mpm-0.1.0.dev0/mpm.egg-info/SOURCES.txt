@@ -1,0 +1,12 @@
+README.rst
+setup.py
+mpm/__init__.py
+mpm/_version.py
+mpm/cli.py
+mpm/config.py
+mpm.egg-info/PKG-INFO
+mpm.egg-info/SOURCES.txt
+mpm.egg-info/dependency_links.txt
+mpm.egg-info/entry_points.txt
+mpm.egg-info/requires.txt
+mpm.egg-info/top_level.txt
