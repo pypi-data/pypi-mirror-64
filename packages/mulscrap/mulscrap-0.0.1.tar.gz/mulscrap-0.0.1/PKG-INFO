@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: mulscrap
+Version: 0.0.1
+Summary: NAV scrap
+Home-page: UNKNOWN
+Author: kongyot
+Author-email: kongyot@gmail.com
+License: MIT
+Description: NAV scrap
+Keywords: NAV
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
