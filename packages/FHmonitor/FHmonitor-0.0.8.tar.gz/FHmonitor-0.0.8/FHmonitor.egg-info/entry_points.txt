@@ -1,0 +1,7 @@
+[console_scripts]
+calibrate_current = FHmonitor.command_line:calibrate_current
+calibrate_voltage = FHmonitor.command_line:calibrate_voltage
+hello_monitor = FHmonitor.command_line:hello_monitor
+start_service = FHmonitor.command_line:start_service
+status_service = FHmonitor.command_line:status_service
+
