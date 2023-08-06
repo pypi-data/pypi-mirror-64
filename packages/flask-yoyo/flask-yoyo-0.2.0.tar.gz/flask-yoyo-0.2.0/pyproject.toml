@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "flask-yoyo"
+version = "0.2.0"
+description = "Dead-simple database migration with Yoyo for your Flask app"
+authors = ["Étienne BERSAC <bersace03@cae.li>"]
+license = "BSD-3-Clause"
+readme = "README.md"
+homepage = "https://pypi.org/project/flask-yoyo"
+
+[tool.poetry.dependencies]
+python = "^3.5"
+yoyo-migrations = "^7.0.2"
+flask = "^1.1.1"
+
+[tool.poetry.dev-dependencies]
+psycopg2-binary = "^2.8.4"
+flake8 = "^3.7.9"
+
+[tool.poetry.plugins."flask.commands"]
+yoyo = "flask_yoyo:cli"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
