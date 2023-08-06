@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: fuelcell
+Version: 1.0.0
+Summary: data processing for fuel cell and electrolyzer experiments
+Home-page: https://github.com/samaygarg/fuelcell
+Author: Samay Garg
+Author-email: samay.garg@berkeley.edu
+License: MIT
+Keywords: tintin,snowy,haddock,fuelcell
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+
+# fuelcell
+
+fuelcell is a python package to streamline the data processing and visualization process.
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install fuelcell.
+
+```bash
+pip install fuelcell
+```
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
+
