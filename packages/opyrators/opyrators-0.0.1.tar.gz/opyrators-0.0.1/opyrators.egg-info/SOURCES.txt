@@ -1,0 +1,12 @@
+README.md
+setup.py
+opyrators/__init__.py
+opyrators/fermions.py
+opyrators/spins.py
+opyrators.egg-info/PKG-INFO
+opyrators.egg-info/SOURCES.txt
+opyrators.egg-info/dependency_links.txt
+opyrators.egg-info/requires.txt
+opyrators.egg-info/top_level.txt
+tests/__init__.py
+tests/test_operators.py
