@@ -1,0 +1,14 @@
+numpy
+scipy
+ipython
+matplotlib
+astropy
+h5py
+ipyvolume
+pythreejs
+cython
+betagen
+tqdm
+numba
+pandas
+networkx
