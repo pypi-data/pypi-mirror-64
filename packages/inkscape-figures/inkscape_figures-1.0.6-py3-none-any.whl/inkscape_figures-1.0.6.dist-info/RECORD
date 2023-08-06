@@ -1,0 +1,11 @@
+inkscape_figures-1.0.6.data/scripts/inkscape-figures,sha256=IGVvStqEedLwehjidllseTFGkmYF6JxpR1HcaQIOZ24,48
+inkscapefigures/__init__.py,sha256=-SvaBaB80vy4KPM0jl3FrSq06Y7nMqAFV2_mYtdC9pg,45
+inkscapefigures/main.py,sha256=aNL5R6qTjGIJ2JflcFsqkhPegX8kToposPl4Nm_Jbs4,8796
+inkscapefigures/picker.py,sha256=XnHkK18DUaiGE-MsTKORt4SMpoFA92tK7w8TL5eJaww,1595
+inkscapefigures/rofi.py,sha256=XPAjP89q-CY2UrCN7GivHlR5bacVtEU3NNQ6NTiPylA,877
+inkscapefigures/template.svg,sha256=xHbbGAxh_dnQph9Ri_E7xQusrL2NLQBpSH-iTR-vFcM,1892
+inkscape_figures-1.0.6.dist-info/LICENSE,sha256=4ShbOsLJkUoEZ5cw6x_3Ugstyc3YC5bZQdSFCxLTkeU,1053
+inkscape_figures-1.0.6.dist-info/METADATA,sha256=hfnL8VILuiDRoeXJET9sE6rb08DpM4_O5CSw2YSlCA0,4253
+inkscape_figures-1.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+inkscape_figures-1.0.6.dist-info/top_level.txt,sha256=Adp4jfecmDev_HD3imC7jOK2SIyiwIqB9JLwsifGdEw,16
+inkscape_figures-1.0.6.dist-info/RECORD,,
