@@ -1,0 +1,16 @@
+.pep8
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/python/config_man.egg-info/PKG-INFO
+src/python/config_man.egg-info/SOURCES.txt
+src/python/config_man.egg-info/dependency_links.txt
+src/python/config_man.egg-info/requires.txt
+src/python/config_man.egg-info/top_level.txt
+src/python/config_man.egg-info/zip-safe
+src/python/configman/__init__.py
+src/python/configman/configman.py
+src/python/configman/exceptions.py
+src/python/configman/py.typed
