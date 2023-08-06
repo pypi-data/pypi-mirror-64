@@ -1,0 +1,11 @@
+hbp-service-client
+nameparser
+requests
+
+[reports]
+Jinja2
+beautifulsoup4
+pyppdf
+
+[utils]
+sciunit
