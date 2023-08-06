@@ -1,0 +1,11 @@
+pandas
+scipy
+numpy
+italian_csv_type_prediction
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
+codacy-coverage
