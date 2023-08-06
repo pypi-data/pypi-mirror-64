@@ -1,0 +1,8 @@
+setup.py
+newtonraphson/__init__.py
+newtonraphson/code.py
+newtonraphson.egg-info/PKG-INFO
+newtonraphson.egg-info/SOURCES.txt
+newtonraphson.egg-info/dependency_links.txt
+newtonraphson.egg-info/not-zip-safe
+newtonraphson.egg-info/top_level.txt
