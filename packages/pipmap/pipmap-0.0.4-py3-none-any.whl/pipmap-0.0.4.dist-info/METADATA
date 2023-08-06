@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: pipmap
+Version: 0.0.4
+Summary: Mapping the installed packages with its top level modules
+Home-page: https://github.com/audiua/pipmap
+Author: Kostiantyn Tarnashynskyi
+Author-email: kostia.tarnashynskyi@gmail.com
+License: MIT
+Keywords: package module
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pipmap
+Mapping package with its top level modules
+
+
+# Install
+```bash
+pip install pipmap
+```
+
+
+## Test
+```bash
+python setup.py test
+```
+
+
