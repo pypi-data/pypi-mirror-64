@@ -1,0 +1,4 @@
+beautifulsoup4
+PySimpleGUI
+youtube-dl
+py3exiv2
