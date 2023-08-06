@@ -1,0 +1,3 @@
+requests>=2.23.0
+argparse-prompt>=0.0.4
+lxml>=4.5.0
