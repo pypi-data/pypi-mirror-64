@@ -1,0 +1,8 @@
+README.md
+setup.py
+zuydbot_api/APIConnection.py
+zuydbot_api/__init__.py
+zuydbot_api.egg-info/PKG-INFO
+zuydbot_api.egg-info/SOURCES.txt
+zuydbot_api.egg-info/dependency_links.txt
+zuydbot_api.egg-info/top_level.txt
