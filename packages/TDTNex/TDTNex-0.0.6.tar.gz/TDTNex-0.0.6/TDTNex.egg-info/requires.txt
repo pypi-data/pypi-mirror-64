@@ -1,0 +1,5 @@
+pandas
+numpy
+matplotlib
+tdt==0.3.4
+neo
