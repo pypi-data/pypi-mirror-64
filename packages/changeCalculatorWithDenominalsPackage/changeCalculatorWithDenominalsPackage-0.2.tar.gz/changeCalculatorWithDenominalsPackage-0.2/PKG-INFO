@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: changeCalculatorWithDenominalsPackage
+Version: 0.2
+Summary: calculates minimum amount of coins for amount 
+Home-page: https://gitlab.com/rokasalech/topkek
+Author: Rokas Alechnavicius
+Author-email: rokasalech@gmail.com
+License: MIT
+Download-URL: https://gitlab.com/rokasalech/topkek/-/archive/REL3/topkek-REL3.tar.gz
+Description: UNKNOWN
+Keywords: test
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
