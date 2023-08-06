@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: akeyless-kfm-api
+Version: 0.1.0
+Summary: KFM - Application API
+Home-page: https://www.akeyless-security.com/
+Author: UNKNOWN
+Author-email: refael@akeyless-security.com
+License: UNKNOWN
+Keywords: Swagger,KFM - Application API
+Platform: UNKNOWN
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+KFM manages and stores key fragments. The core operations of each KFM instance are as follows: Creating secure random encryption keys which will be used as an encryption key fragment. Managing data storage for key fragments. Performing a key fragment derivation function, which generates a derived fragment from the original key fragment.  # noqa: E501
+
+
