@@ -1,0 +1,12 @@
+jigglypuffRL/__init__.py,sha256=KHuUeTgUKp74FW5yU8i70rMMMG-LyXznxUSTWfAdKTk,37
+jigglypuffRL/common/__init__.py,sha256=u4yClyQYcLgH8kUwDUxrgMz09BAbALd7SbCH0tMK6jU,142
+jigglypuffRL/common/policies.py,sha256=Fb84RYgs0c9cI4FPg8qHz3_mcjXn6-SUo519RKzWjwk,2572
+jigglypuffRL/common/values.py,sha256=cwEPMGY_jyyRXXHRNTGSiK5o9zUYxSDnO7sU57Ua5GE,1447
+jigglypuffRL/deeprl/__init__.py,sha256=yDanfU_h3ILiA2aJ3J5PjHVugzFqkAT06PWRBrpL_7o,42
+jigglypuffRL/deeprl/ppo1/__init__.py,sha256=U1qfWQkVmZSaD8lvl33zxTOxZyqYR_h-cYjHhUav8BM,47
+jigglypuffRL/deeprl/ppo1/ppo1.py,sha256=dAfXis1WsB_e__gxY15-lJGf4E3zmK_dauKp6JUYprI,8160
+jigglypuff_rl-0.0.2.dev2.dist-info/LICENSE,sha256=lthHRdUSuJc1YTi9-x7PxzUskFHph6UZpfssCNv2f-4,1075
+jigglypuff_rl-0.0.2.dev2.dist-info/METADATA,sha256=PMo2N69YO95gWWVgGUXFGgvP8XKgL-4pRJ8BOS26VGk,1799
+jigglypuff_rl-0.0.2.dev2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jigglypuff_rl-0.0.2.dev2.dist-info/top_level.txt,sha256=Y3mrr6lTfJL5b6lDIJc1tpfbGmgg31W6gvJ9_IrOnDE,13
+jigglypuff_rl-0.0.2.dev2.dist-info/RECORD,,
