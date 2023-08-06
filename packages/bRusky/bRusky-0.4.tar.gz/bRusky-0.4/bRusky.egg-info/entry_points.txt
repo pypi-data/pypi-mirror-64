@@ -1,0 +1,3 @@
+[console_scripts]
+bRusky = bRusky.commands:bRusky
+
