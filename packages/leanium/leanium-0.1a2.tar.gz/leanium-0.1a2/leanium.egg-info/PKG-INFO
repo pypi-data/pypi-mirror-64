@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: leanium
+Version: 0.1a2
+Summary: A lean wrapper around Selenium to handle common try, except, else scenarios
+Home-page: UNKNOWN
+Author: Brenden Hyde
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: #  leanium
+        A lean wrapper around Selenium to handle common try, except, else scenarios
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
