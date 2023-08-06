@@ -1,0 +1,40 @@
+import logging
+
+from django.core.management import BaseCommand
+from django.db import transaction, connection
+from tqdm import tqdm
+
+from kaf_pas.ckk.models.item import Item
+from kaf_pas.ckk.models.item_refs import Item_refs
+from kaf_pas.ckk.views.item_view import audo_top_level
+
+logger = logging.getLogger(__name__)
+logger1 = logging.getLogger(f'{__name__}_1')
+
+
+class Command(BaseCommand):
+    help = "Перенос чертежей в подпапку"
+
+    def handle(self, *args, **options):
+
+        logger.info(self.help)
+
+        with connection.cursor() as cursor:
+            cursor.execute('''select count(*)
+                            from ckk_item
+                            where id not in (select child_id from ckk_item_refs)''')
+            cnt, = cursor.fetchone()
+
+        self.pbar = tqdm(total=cnt)
+
+        with transaction.atomic():
+            for item in Item.objects.raw('''select *
+                                                    from ckk_item
+                                                    where id not in (select child_id from ckk_item_refs)'''):
+                Item_refs.objects.get_or_create(child=item, parent_id=int(audo_top_level))
+
+                if self.pbar:
+                    self.pbar.update()
+
+        if self.pbar:
+            self.pbar.close()
