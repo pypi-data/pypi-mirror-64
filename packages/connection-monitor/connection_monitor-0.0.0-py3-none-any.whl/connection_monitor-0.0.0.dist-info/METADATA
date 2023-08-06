@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: connection-monitor
+Version: 0.0.0
+Summary: Connection monitoring utility
+Home-page: https://framagit.org/ojob/connection-monitor
+Author: Joël Bourgault
+Author-email: joel.bourgault@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: psutil
+Requires-Dist: requests
+
+README
+======
+
+This package provides a long-running command to measure network performance.
+
+Following figures are recorded to a csv file:
+
+* packets sent
+* packets received
+* network latency
+
+Installation
+------------
+
+1. Clone the repo and ``cd`` in created folder;
+2. Install the package: ``pip install -e .``
+
+If you wish to contribute, after step 1. and before step 2., do the
+following:
+
+* Create a ``virtualenv``, activate it, and ``python -m pip install --upgrade pip``
+* Install the dev dependencies: ``pip install -r dev-requirement.txt``
+
+
+Usage
+-----
+
+Open a terminal, activate the virtualenv if appropriate, and simply type::
+
+    monitor
+
+Available options:
+
+* ``-o FILENAME``
+
+  Filename to write the stats into. By default, the stats go in current
+  folder, in file named ``'network_data.csv'``.
+
+  Writing is in append mode; previous data is kept.
+
+* ``-h HOST``
+
+  Address to connect to, to measure latency. Currently defaults to
+  ``'http://siinergy.net'`` (my company server).
+
+* ``-v``
+
+  Verbosity of the logging message. Use it to show measurements to command
+  line.
+
+
