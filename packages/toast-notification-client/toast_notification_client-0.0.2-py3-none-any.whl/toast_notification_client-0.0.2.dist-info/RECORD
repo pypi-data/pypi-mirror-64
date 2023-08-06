@@ -1,0 +1,8 @@
+toast/__init__.py,sha256=tWtKI3EU7ggr7S5WX-sQZwDw3AO3Y4FEij8cCNf8G8o,86
+toast/schema.py,sha256=sNYQDANBZlQ3qpz_zXC8tZjgFYJPSECfN9911FcpLaA,7162
+toast/toast_sms_client.py,sha256=sDLg_Ye6AXOHv8f-v9IC2uvAYBbkw6vcF3fW5ZSrul0,6703
+toast_notification_client-0.0.2.dist-info/LICENSE,sha256=RxyfVPLB5rivG_gpqDIhCe62pwadJyCAl8vmvXtRvXA,1065
+toast_notification_client-0.0.2.dist-info/METADATA,sha256=YUe6IYps2UKAeNyboQeKyMcW0tucTsmp4QTHBeQZJ4w,905
+toast_notification_client-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+toast_notification_client-0.0.2.dist-info/top_level.txt,sha256=w0BbZev__MR6RUttBSpoDes429nx4jEGPuKvyQFW9s4,6
+toast_notification_client-0.0.2.dist-info/RECORD,,
