@@ -1,0 +1,16 @@
+README.md
+setup.py
+EpiClass.egg-info/PKG-INFO
+EpiClass.egg-info/SOURCES.txt
+EpiClass.egg-info/dependency_links.txt
+EpiClass.egg-info/entry_points.txt
+EpiClass.egg-info/not-zip-safe
+EpiClass.egg-info/requires.txt
+EpiClass.egg-info/top_level.txt
+epiclass/__init__.py
+epiclass/__main__.py
+epiclass/analyzing.py
+epiclass/arguments.py
+epiclass/logger.py
+epiclass/plotting.py
+epiclass/reading.py
