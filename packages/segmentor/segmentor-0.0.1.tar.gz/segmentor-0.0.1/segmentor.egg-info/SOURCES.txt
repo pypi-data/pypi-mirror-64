@@ -1,0 +1,7 @@
+README.md
+setup.py
+segmentor/__init__.py
+segmentor.egg-info/PKG-INFO
+segmentor.egg-info/SOURCES.txt
+segmentor.egg-info/dependency_links.txt
+segmentor.egg-info/top_level.txt
