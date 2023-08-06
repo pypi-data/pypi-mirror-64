@@ -1,0 +1,12 @@
+toolmaker/__init__.py,sha256=iN_03kCzyisdIVjAtlqSowE5LPECrkXnubDDJK9PpwA,120
+toolmaker/__main__.py,sha256=8LJuyV9bVMZyO0Y70_cUsV35Z1VVQGyLgVKbyBkRk9I,108
+toolmaker/_i18n.py,sha256=PjV1zNWCGfbi6T7-HqStfK-UBJaaOCxJy_lNOLcDSag,102
+toolmaker/_meta.py,sha256=xQzn4itD30lipoKFt58dQt3I6UpNEr7e2Fi8kZMQUKQ,146
+toolmaker/cli.py,sha256=h8IGg5t_gv1rRfEBgATVaXEvGFICgG6zL-5grKVzVR8,2504
+toolmaker/core.py,sha256=3r97dbhHBHIMS8ZCCpSG_3hmePfRvDgLR0IluKREoIk,7890
+toolmaker-0.0.5.dist-info/LICENSE.txt,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+toolmaker-0.0.5.dist-info/METADATA,sha256=13-RTd1keSBc52W7udhqYFxCl4mTXITE0n6frMBnLgI,4067
+toolmaker-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+toolmaker-0.0.5.dist-info/entry_points.txt,sha256=hODG42OXfRZrcUAOUDaqfqgD3q_xbKMoGD4ruuK7n-U,50
+toolmaker-0.0.5.dist-info/top_level.txt,sha256=WKLmt2Vc730zqfcqzlSI-oaLdIFm-zwJF6xzuDgnS1M,10
+toolmaker-0.0.5.dist-info/RECORD,,
