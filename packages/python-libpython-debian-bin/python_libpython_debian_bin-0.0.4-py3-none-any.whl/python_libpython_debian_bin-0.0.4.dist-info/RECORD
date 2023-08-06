@@ -1,0 +1,6 @@
+libpython/__init__.py,sha256=jbKzMJ1kfbxptyKK0xg-quGOdSWkAHZM1KLVKNN3eDQ,157
+libpython/libpython2.7.so.1.0,sha256=rXcyGqbqU67fFokNX8RnylafUQqDSZejmW_ah2UxRaY,3595192
+python_libpython_debian_bin-0.0.4.dist-info/METADATA,sha256=Z3gf8RUhWJmiYO3ou74JL8UTHPM41yT_QvmA2w_IChw,417
+python_libpython_debian_bin-0.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+python_libpython_debian_bin-0.0.4.dist-info/top_level.txt,sha256=fn3Ditd8P0m65a8GXZ12VcsCLldMy0o_wwxr1AIR8EQ,10
+python_libpython_debian_bin-0.0.4.dist-info/RECORD,,
