@@ -1,0 +1,11 @@
+s2geometry/s2PYTHON_wrap.cxx,sha256=5ljZAJXewM6IJvDzA0uh_X8DJ49EvCIOx8edmvXRes4,711033
+s2geometry/_pywraps2.so,sha256=PicO_JuUGfr72SoeZousSsqhF9bA3APykuDm1wPPxkE,4012560
+s2geometry/pywraps2.py,sha256=9MbZdG5F7nIiK84juMIfOaSWNwIPd52JYPRIrnbZQPU,44831
+s2geometry/__init__.py,sha256=x4GCF4Anw87WgC5H5E_3GxrItsUIr02cBm4fypQ51PM,24
+s2geometry/.libs/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+s2geometry-0.9.0.dist-info/NOTICE,sha256=W1u5LHBMHvpoCmL-3L2ikzNVYT19aUGQODdz5J5cGRM,148
+s2geometry-0.9.0.dist-info/RECORD,,
+s2geometry-0.9.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+s2geometry-0.9.0.dist-info/WHEEL,sha256=RrA44C0GwDjgGl70FfkQxkWz-IXWgAW3rbo1GvkXOA8,112
+s2geometry-0.9.0.dist-info/top_level.txt,sha256=iLQq3FxU3Q2M1FqBi5u7R1ezchg1jcC0Qc81BOOR8fw,11
+s2geometry-0.9.0.dist-info/METADATA,sha256=_DI0o_lJ0Vyg4aADB4vAmrng9tcwEswPV_KfmGhIVMk,901
