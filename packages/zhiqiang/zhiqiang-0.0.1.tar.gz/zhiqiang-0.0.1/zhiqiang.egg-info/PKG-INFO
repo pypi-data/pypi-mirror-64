@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: zhiqiang
+Version: 0.0.1
+Summary: A package for reinforcement learning algorithms.
+Home-page: https://github.com/Li-Ming-Fan/zhiqiang
+Author: Ming-Fan Li
+Author-email: li_m_f@163.com
+Maintainer: Ming-Fan Li
+Maintainer-email: li_m_f@163.com
+License: UNKNOWN
+Description: # zhiqiang
+        
+        zhiqiang, 之强, become strong. Similar to ziqiang, 自强, Self-strengthening.
+        
+        A package for reinforcement learning agorithms. PyTorch.
+        
+        
+        ## Description
+        
+        TODO
+        
+        
+        ## Installation
+        
+        From PyPI distribution system:
+        
+        ```
+        pip install zhiqiang
+        ```
+        
+        
+        ## Usage
+        
+        TODO
+        
+        
+        </br>
+        
+Platform: any
+Description-Content-Type: text/markdown

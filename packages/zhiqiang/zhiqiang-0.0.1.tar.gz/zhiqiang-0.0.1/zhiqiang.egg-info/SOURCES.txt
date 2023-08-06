@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+zhiqiang/__init__.py
+zhiqiang.egg-info/PKG-INFO
+zhiqiang.egg-info/SOURCES.txt
+zhiqiang.egg-info/dependency_links.txt
+zhiqiang.egg-info/top_level.txt
