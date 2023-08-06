@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: convex
+Version: 0.0.2
+Summary: A Light-weight Python NLP Library
+Home-page: https://github.com/nilansaha/convex
+Author: Nilan Saha
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm (==4.31.1)
+Requires-Dist: torch (==1.3.1)
+Requires-Dist: nltk (==3.4.5)
+
+## Convex
+
+**A Light-weight and Fast Python NLP Library**
+
+The plan is to provide light-weight neural models for various downstream NLP tasks such as POS Taggging, Named Entity Recognition, Sentiment Analysis, etc. However, right now POS Tagging is the only task that is supported.
+
+### Installation
+
+**pip**
+
+`pip install convex`
+
+**From Source**
+
+```
+git clone https://github.com/nilansaha/convex.git
+cd convex
+pip install -e .
+```
+
+### Usage
+
+The model only needs to be downloaded the first time the tagger is used or after the package is updated
+
+```python
+import convex
+convex.download() # Download all the necessary models
+tagger = convex.PosTagger() # Initialize the Pos Tagging Pipeline
+tagger("Let's see how this new tagger works.") # Tag a sentence
+```
+
+Output -
+
+`[('Let', 'VERB'), ("'s", 'PRON'), ('see', 'VERB'), ('how', 'ADV'), ('well', 'ADV'), ('this', 'DET'), ('new', 'ADJ'), ('tagger', 'NOUN'), ('works', 'NOUN')]`
+
+
+
+
+
+
