@@ -1,0 +1,5 @@
+environment.*
+aiohttp_spotify_version.py
+build
+dist
+demo/config.toml
