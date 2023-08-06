@@ -1,0 +1,7 @@
+README.md
+setup.py
+pkg_sydilkupa.egg-info/PKG-INFO
+pkg_sydilkupa.egg-info/SOURCES.txt
+pkg_sydilkupa.egg-info/dependency_links.txt
+pkg_sydilkupa.egg-info/top_level.txt
+segmentor/__init__.py
