@@ -1,0 +1,15 @@
+copier/__init__.py,sha256=DX7-tEJZ9CxpFUTzVEqe7hZcK_NMERk5pWY9FrQZS7Y,198
+copier/cli.py,sha256=Q_gN2t4dUDOiZ2VjW2iqtivt6fWUmc7-hzoMOHcGFXA,5707
+copier/config/__init__.py,sha256=zWcWCQsaIVZw-_gIHs1dtl7-qx3BJkyhNbwY_VXyObM,41
+copier/config/factory.py,sha256=1Rzmo3HdcmccbFx1HLU_ZG7cOfWzoPgiwa9tRWVT3oI,3398
+copier/config/objects.py,sha256=UdJMvPKN_rPliOAeaC557RiW849sj0IrACm72RlI1fw,3142
+copier/config/user_data.py,sha256=f2y216ZV-UOO3YfwZxHHEgDFpSoSb-OJvRXjX75BhHg,4676
+copier/main.py,sha256=AZ18f4Jo4Kq4ZLXmkytZA2bbrQEo31Jial3KB1Tx_ig,10850
+copier/tools.py,sha256=goRs5s8yuDfHhcgTfzaPwAXHg6EeStfxk9w5tPTkKRA,5649
+copier/types.py,sha256=SVKLwWsUgk1Gn5AWJ5tr7uotjCRpV9nQR5AqF9UCJp0,651
+copier/vcs.py,sha256=rMyrZoUjgWgzs3YF53T7s-LbZWaMCQShlYrB0z3P8PQ,2528
+copier-3.0.4.dist-info/entry_points.txt,sha256=JR2TAvfOGxxoLdcfAie1J3I_els_rDx-iMia4gIhbRU,51
+copier-3.0.4.dist-info/LICENSE,sha256=kGSSEkV_bCVvVF2NprDF_RYL9pRiknBVHgb-eILnCnA,1076
+copier-3.0.4.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+copier-3.0.4.dist-info/METADATA,sha256=Uq3PFgPhqOyiMuZo0BOgWbUVVb-hOuZCQ97JeCeu-gA,17327
+copier-3.0.4.dist-info/RECORD,,
