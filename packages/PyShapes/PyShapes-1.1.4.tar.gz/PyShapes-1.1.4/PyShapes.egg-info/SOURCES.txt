@@ -1,0 +1,8 @@
+README.md
+setup.py
+PyShapes/PyShape.py
+PyShapes/__init__.py
+PyShapes.egg-info/PKG-INFO
+PyShapes.egg-info/SOURCES.txt
+PyShapes.egg-info/dependency_links.txt
+PyShapes.egg-info/top_level.txt
