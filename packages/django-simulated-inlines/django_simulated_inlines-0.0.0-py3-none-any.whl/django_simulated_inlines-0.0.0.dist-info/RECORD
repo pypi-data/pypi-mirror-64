@@ -1,0 +1,11 @@
+django_simulated_inlines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_simulated_inlines/admin.py,sha256=Vy9ByGZfBSZuZL_fVkVO9HjGU_yeqO_8E89sQKdXx0E,8475
+django_simulated_inlines/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_simulated_inlines/static/django_simulated_inlines/js/simulated_inlines.js,sha256=AV8q8irlB0EVrf0SIO8l1Y4L_NkZPV1oEafLV0kn9EY,2508
+django_simulated_inlines/templates/admin/django_simulated_inlines/change_form.html,sha256=Szv4iD1mVcLpVis3Ch35iofwxatm-QyU5Lusgb1dGa4,327
+django_simulated_inlines/templates/admin/django_simulated_inlines/list.html,sha256=lzbTQcCVqBPCt6Idxwx1VhXb-MRYJN-xrLtg0whP_BM,3602
+django_simulated_inlines-0.0.0.dist-info/LICENSE,sha256=vnRWQ7O02YUf_J_Th16gSoHAJXkVXb0AloMBnDDRFC8,1074
+django_simulated_inlines-0.0.0.dist-info/METADATA,sha256=Zm6_IPLEqQwjtmOpJU_0c9hrGmWRSZpgOccdqi75aXU,2826
+django_simulated_inlines-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+django_simulated_inlines-0.0.0.dist-info/top_level.txt,sha256=dSqvVJG3nhZnBzgwlGldb9hPv7dYTKt2SrlpYvA6BO8,25
+django_simulated_inlines-0.0.0.dist-info/RECORD,,
