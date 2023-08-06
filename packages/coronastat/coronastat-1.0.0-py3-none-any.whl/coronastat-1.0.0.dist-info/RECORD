@@ -1,0 +1,10 @@
+corona/__init__.py,sha256=ioHiOSVneqpf_kx8HL5xQr3kLphmowNeGKnGelDJ1c0,537
+corona/corona.py,sha256=HZJe32VMHrau2Up-46uHxFqTp-IVYRS9Xl9Y3uCfvak,3645
+corona/proxy.py,sha256=VjnUoN32HZl7SMQRQfTrXupL3xiGekDBT7-m3ITkn2w,1426
+corona/utils.py,sha256=MYkRv77NzrJZmBmXv3M_9KC0JxDpCb7j7yweNCZQWBk,4203
+coronastat-1.0.0.dist-info/LICENSE,sha256=R7Vev3zPv0ONk5GI2wJNs7aZ7tdQfmbk93OnGfsMciw,1067
+coronastat-1.0.0.dist-info/METADATA,sha256=MkN6V14An4IIcPtMRaS8N3fYHNXCNQmVceUxG3jkp6M,891
+coronastat-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+coronastat-1.0.0.dist-info/entry_points.txt,sha256=Wba8UGZHfJq356PwQpNJ1yLlDHxjfxQ3ZzOhGrNHoJQ,53
+coronastat-1.0.0.dist-info/top_level.txt,sha256=wnygLpQzBpMmUmHsGw-EACrwMM3PU-DD-tTxbB0Veb8,7
+coronastat-1.0.0.dist-info/RECORD,,
