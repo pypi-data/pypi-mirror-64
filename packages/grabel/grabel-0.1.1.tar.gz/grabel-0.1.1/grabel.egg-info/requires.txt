@@ -1,0 +1,6 @@
+fastcap
+minadb
+xmltodict
+planter>=0.2.2
+opencv-python
+numpy

@@ -1,0 +1,8 @@
+README.md
+setup.py
+grabel/__init__.py
+grabel.egg-info/PKG-INFO
+grabel.egg-info/SOURCES.txt
+grabel.egg-info/dependency_links.txt
+grabel.egg-info/requires.txt
+grabel.egg-info/top_level.txt
