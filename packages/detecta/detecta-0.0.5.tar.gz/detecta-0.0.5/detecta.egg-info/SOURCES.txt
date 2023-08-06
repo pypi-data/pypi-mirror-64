@@ -1,0 +1,11 @@
+README.md
+setup.py
+detecta/__init__.py
+detecta/detect_cusum.py
+detecta/detect_onset.py
+detecta/detect_peaks.py
+detecta/detect_seq.py
+detecta.egg-info/PKG-INFO
+detecta.egg-info/SOURCES.txt
+detecta.egg-info/dependency_links.txt
+detecta.egg-info/top_level.txt
