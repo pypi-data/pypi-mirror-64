@@ -1,0 +1,13 @@
+webscraping_ai/__init__.py,sha256=nJraWB-3LxVmRzGe86mj0bK8yG62chuCQ75GKy31aUE,923
+webscraping_ai/api_client.py,sha256=a7CoHctMjP7btKbaRVTYFILcXRXdx4eRfcF9v86eeRA,25564
+webscraping_ai/configuration.py,sha256=7BWGDUqPls9klTVS6ip3moEFdDv_8cmIyq9lOv0Nhro,13389
+webscraping_ai/exceptions.py,sha256=lJenm-GV1oasLT9PNukVjTPDq2EAL3vnHtUBtBgUWGM,3810
+webscraping_ai/rest.py,sha256=C3NVeT-okN8E63wf9oF5ln9w3rAc8KL2kU06mDqG6-I,12519
+webscraping_ai/api/__init__.py,sha256=Eqsg7XUbaG-4s3m8kB6KKYOFbgY6doXLKejxUQZu3Qk,135
+webscraping_ai/api/html_api.py,sha256=4-J2xYpAiR4f2VjpzKkEhXdxejtapTG1iSyMkQHXhLo,7772
+webscraping_ai/models/__init__.py,sha256=Tl1JGXUDKJDpHecx8Ys--aY9lpxO69LfCQpSSt3sJig,439
+webscraping_ai/models/scrapped_page.py,sha256=IRSCIb1JJi5mc6iepqo3HUWNvDPfgCjhSXxU4owQobY,5845
+webscraping_ai-1.0.0.dist-info/METADATA,sha256=HABnwbwfjm5y0WLbOEM85PRsDSBtdQ6wnPNQduLhPk8,531
+webscraping_ai-1.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+webscraping_ai-1.0.0.dist-info/top_level.txt,sha256=HE1sLbWQyNg1Ce7rCoV7GW0T_qaQynti4cIhi38dfhI,15
+webscraping_ai-1.0.0.dist-info/RECORD,,
