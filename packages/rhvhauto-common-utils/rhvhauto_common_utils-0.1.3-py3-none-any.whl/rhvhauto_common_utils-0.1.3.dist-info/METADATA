@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: rhvhauto-common-utils
+Version: 0.1.3
+Summary: common utils for rhvh auto project
+Author: dracher
+Author-email: dracher@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: ovirt-engine-sdk-python (>=4.4.1,<5.0.0)
