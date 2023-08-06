@@ -1,0 +1,15 @@
+transip/__init__.py,sha256=BKlFEoc7g99uGntFYda9i6BQI9Qeo-r71LyIpW3ALug,201
+transip/client.py,sha256=QOdX-I2dG5dMnyzps3B6i44l_dnrG6ElkCPwPG2qBS0,7145
+transip/transip_cli.py,sha256=fYwg7GqyLyghemkaQ8i0DT_dC_Ytqvss0SuLQlHQS1g,4804
+transip/service/__init__.py,sha256=5RYUK9sdzLxtZWsBOwEDhWF1dWlE-21PFinPXVeSJxo,188
+transip/service/domain.py,sha256=-8gdA4uA_a0gxeuvzGQ5DIK-NyMNbgfnSLro70fR9Q0,8708
+transip/service/haip.py,sha256=_R_p_XhWnpwl15QQTq7CSYotcmnrPii2nwMLL-ab3zE,1149
+transip/service/objects.py,sha256=Gtb_6JFaoS2IObfDAxYyai-lkRqVhGjHbPfods3azTA,7751
+transip/service/vps.py,sha256=SNNmHdtgz2KtmHNfKfl_pNcUbws8fVGUmXWcHN1Vyyg,15433
+transip/service/webhosting.py,sha256=DAJ53kWw3A9w2GxgetBJiOEF-VYjmLdQjdwQFkWxdd4,2612
+transip-2.1.2.dist-info/LICENSE,sha256=U5W80x6aRGY0unUTGtasQKBpricExDK9GRAJoXt95Jo,1135
+transip-2.1.2.dist-info/METADATA,sha256=5NolUWUO7pBAt7OC7LjgCooewTNyY8o-yKt0ZNyGElQ,4584
+transip-2.1.2.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+transip-2.1.2.dist-info/entry_points.txt,sha256=vycPqjPX8o6m2kCimgkH2pXc-JaIHaBiC_8YCxxAnvo,58
+transip-2.1.2.dist-info/top_level.txt,sha256=xV5LTYooIpidc0pDm-we_5gurQqwfWjvwIrWCT0Ocek,8
+transip-2.1.2.dist-info/RECORD,,
