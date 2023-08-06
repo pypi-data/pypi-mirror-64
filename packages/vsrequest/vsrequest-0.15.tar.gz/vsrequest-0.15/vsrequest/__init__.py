@@ -1,0 +1,1 @@
+from vsrequest import bing
