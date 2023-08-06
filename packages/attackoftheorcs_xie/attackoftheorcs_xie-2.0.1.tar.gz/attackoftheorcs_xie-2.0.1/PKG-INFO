@@ -1,0 +1,37 @@
+Metadata-Version: 1.0
+Name: attackoftheorcs_xie
+Version: 2.0.1
+Summary: test attackoftheorcs ignore
+Home-page: https://test.pypi.org/manage/project/attackoftheorcs_xie/
+Author: rsp8266
+Author-email: 1316547041@qq.com
+License: LICENSE.txt
+Description: Test package .
+        ==================
+        
+        Introduction
+        -------------
+        This is a command line test pkg. ignore.
+        
+        Documentation
+        --------------
+        Documentation can be found at...
+        
+        Example Usage
+        --------------
+        Here is an example to import the modules from this package.
+        
+        .. code:: python
+        
+            from wargame.attackoftheorcs import AttackOfTheOrcs
+            game = AttackOfTheOrcs()
+            game.play()
+        
+        LICENSE
+        -------
+        See LICENSE.txt file.
+        
+        
+        
+        
+Platform: UNKNOWN
