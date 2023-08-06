@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: aioaws
+Version: 0.2
+Summary: Data validation and settings management using python 3.6 type hinting
+Home-page: https://github.com/samuelcolvin/aioaws
+Author: Samuel Colvin
+Author-email: s@muelcolvin.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic (>=1.4)
+Requires-Dist: httpx (>=0.12.1)
+
+# aioaws
+
+**(Just a sandbox for now, not production ready)**
+
+Asyncio compatible SDK for aws services.
+
+
