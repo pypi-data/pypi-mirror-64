@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: fastTF
+Version: 1.0.1
+Summary: Converts Pandas Dataframe to Tensorflow TFRecord
+Home-page: https://github.com/azfar154/fastTF
+Author: Azfar Mohamed
+Author-email: azfarmah@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: tensorflow (>=2.0.0)
+
+![Logo](https://i.ibb.co/zZ88YRq/3ee77eca-5573-4591-b911-b0a01ea0ad3a-200x200.png)
+
+[![Build Status](https://travis-ci.com/azfar154/fastTF_.svg?token=f7cQs9ipscGj1qwuxd1Q&branch=master)](https://travis-ci.com/azfar154/fastTF_)
+
+
+fastTF is a easy way to convert a Pandas DataFrame into a Tensorflow TFRecord. Also with fastTF you will be able to get the example_spec. 
+### Why would you do so?
+
+  - With a TFRecord file you will be able to make your input pipeline faster
+  - Binary data takes up less space on disk, takes less time to copy and can be read much more efficiently from disk.
+### Tech
+
+fastTF uses a number of open source projects to work properly:
+* [Tensorflow](https://www.tensorflow.org/) - "An end-to-end open source machine learning platform"
+* [Pandas](https://pandas.pydata.org/) - "pandas is a fast, powerful, flexible and easy to use open source data analysis and manipulation tool,
+built on top of the Python programming language."
+
+### Installation
+
+tfFast requires [Python](https://www.python.org/downloads/release/python-360/) 3.6 to run.
+
+Install the necessary packages and dependencies
+
+```sh
+$ pip3 install tensorflow
+$ pip3 install pandas
+```
+
+
+### Development
+
+Want to contribute? Great!
+
+fastTF uses Tensorflow + Pandas for fast development.
+
+Fork these repository and change app.py. 
+
+Open your Terminal and run these commands to edit the files
+```sh
+$ cd fastTF
+$ nano app.py
+```
+###  Example
+
+````
+def test_function():
+    """
+        Test the package
+        :return: if the program was successful.
+        >>> test_function()
+        True
+
+    """
+    data = pd.read_csv('diabetes.csv')
+    test = tfRecordWriter(data)
+    test.write('new.tfrecords')
+
+    with open('example_spec.pickle','rb') as f:
+        example_spec = pickle.load(f)
+    assert example_spec == test.get_example_spec()
+
+    data = tf.data.TFRecordDataset('new.tfrecords')
+    func = lambda x: tf.io.parse_single_example(x,example_spec)
+    data = data.map(func)
+    y = data.take(1)
+    for x in y:
+      assert x['Age'].numpy() == 50
+    return True
+````
+### Metrics
+
+### Memory Test
+```sh
+Memory Test
+
+Line #    Mem usage    Increment   Line Contents
+================================================
+     1                             import pandas as pd
+     2                             from fastTF import tfRecordWriter
+     3                             import tensorflow as tf
+     4                             import pickle
+     5                             import doctest
+     6                             import pytest
+     7                             
+     8    300.7 MiB    300.7 MiB   
+     9    301.0 MiB      0.2 MiB   def test_function():
+    10    301.0 MiB      0.0 MiB       """
+    11    301.0 MiB      0.0 MiB           Test the package
+    12                                     >>> test_function()
+    13    301.0 MiB      0.0 MiB           True
+    14    301.0 MiB      0.0 MiB       
+    15    301.0 MiB      0.0 MiB       """
+    16                                 data = pd.read_csv('diabetes.csv')
+    17    301.0 MiB      0.0 MiB       test = tfRecordWriter(data)
+    18    301.0 MiB      0.0 MiB       test.write('new.tfrecords')
+    19    301.0 MiB      0.0 MiB   
+    20    301.0 MiB      0.0 MiB       with open('example_spec.pickle','rb') as f:
+    21    301.3 MiB      0.2 MiB           example_spec = pickle.load(f)
+    22    301.3 MiB      0.0 MiB       assert example_spec == test.get_example_spec()
+    23                             
+    24                                 data = tf.data.TFRecordDataset('new.tfrecords')
+    25                                 func = lambda x: tf.io.parse_single_example(x,example_spec)
+    26                                 data = data.map(func)
+    27                                 y = data.take(1)
+    28                                 for x in y:
+    29                                   assert x['Age'].numpy() == 50
+    30                                 return True
+
+````
+### Speed Test
+````sh
+Timer unit: 1e-06 s
+
+Total time: 0.644076 s
+File: /notebooks/package/tests/test_sample.py
+Function: test_function at line 8
+
+Line #      Hits         Time  Per Hit   % Time  Line Contents
+==============================================================
+     8                                           def test_function():
+     9         1       6395.0   6395.0      1.0      data = pd.read_csv('diabetes.csv')
+    10         1        602.0    602.0      0.1      test = tfRecordWriter(data)
+    11         1     589870.0 589870.0     91.6      test.write('new.tfrecords')
+    12                                           
+    13         1         57.0     57.0      0.0      with open('example_spec.pickle','rb') as f:
+    14         1         79.0     79.0      0.0          example_spec = pickle.load(f)
+    15         1         28.0     28.0      0.0      assert example_spec == test.get_example_spec()
+    16                                           
+    17         1       8591.0   8591.0      1.3      data = tf.data.TFRecordDataset('new.tfrecords')
+    18         1          3.0      3.0      0.0      func = lambda x: tf.io.parse_single_example(x,example_spec)
+    19         1      25952.0  25952.0      4.0      data = data.map(func)
+    20         1        245.0    245.0      0.0      y = data.take(1)
+    21         2      12227.0   6113.5      1.9      for x in y:
+    22         1         27.0     27.0      0.0        assert x['Age'].numpy() == 50
+
+````
+### Another Example
+```sh
+>>> import pandas as pd
+>>> data = pd.read_csv('diabetes.csv')
+>>> from fastTF import tfRecordWriter
+>>> demo = tfRecordWriter(data)
+>>> demo.write("name.tfrecord")
+>>> test.get_example_spec()
+{'Pregnancies': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'Glucose', FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'BloodPressure': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None),  'SkinThickness': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'Insulin': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'Age': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'Outcome': FixedLenFeature(shape=(), dtype=tf.int64, default_value=None), 'BMI': FixedLenFeature(shape=(), dtype=tf.float32, default_value=None), 'DiabetesPedigreeFunction': FixedLenFeature(shape=(), dtype=tf.float32, default_value=None)}
+```
+
+
+
+### Todos
+
+ - Write more Tests
+ - Make the app faster
+
+
+
