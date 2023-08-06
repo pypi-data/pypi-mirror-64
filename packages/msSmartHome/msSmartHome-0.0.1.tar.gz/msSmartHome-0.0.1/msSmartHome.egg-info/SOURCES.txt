@@ -1,0 +1,8 @@
+README.md
+setup.py
+msSmartHome/__init__.py
+msSmartHome/smartHomeLibrary.py
+msSmartHome.egg-info/PKG-INFO
+msSmartHome.egg-info/SOURCES.txt
+msSmartHome.egg-info/dependency_links.txt
+msSmartHome.egg-info/top_level.txt
