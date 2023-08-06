@@ -1,0 +1,13 @@
+tensorflow
+pandas
+numpy
+numba
+keras_bed_sequence>=1.1.0
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
+codacy-coverage
+silence_tensorflow
