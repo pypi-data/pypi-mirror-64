@@ -1,0 +1,15 @@
+iaccess/__init__.py,sha256=v6jxBKe_lJae98Wzx8ahx_ODyrT10LBODhruscyRw48,168
+iaccess/compiler.py,sha256=7_QnPvk2AJ8nD1U0Ydbp61c2Pp5QKqM82Lokfo5eMyk,3193
+iaccess/connector.py,sha256=UAP2bRabbgUzA3nEWBRQCAdNq1mf73hxko_KxeTFNdc,798
+iaccess/dialect.py,sha256=SsZPHh8HJ5N00-QXYkllTLBl0ZnSPOzeyLJeBVzGTvE,12707
+iaccess/provision.py,sha256=_xAnPqWgUjH-dkJLN7hivUySxt6QkUFW4G7-Sv3kRtM,219
+iaccess/requirements.py,sha256=qXEedxjiy8Hbqbn-Z54miGEVG6HpM6vTpP0bET-ahAk,1618
+iaccess/information_schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+iaccess/information_schema/iseries.py,sha256=w3fPeeY6ha6NEjki05S3Rs5fAE8AeVau461EtybibgU,3067
+iaccess-0.1.0.dist-info/AUTHORS.rst,sha256=2sgbivsZ1_MQ_SYG04YcVQOmxhGoPIXd1iNYJuWcup8,184
+iaccess-0.1.0.dist-info/LICENSE,sha256=CMQRd7GdpHxDvU5X49rlMjjrgmsMnvG040lxLhhpUmE,1101
+iaccess-0.1.0.dist-info/METADATA,sha256=Hw7kJSnXtf_GfjiHul7BpAerS1_uITbHck04maHeQlI,2977
+iaccess-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+iaccess-0.1.0.dist-info/entry_points.txt,sha256=Oo830FMUddAIqMdzrTV2ZehopbrmQ7qUJPQ85LDcHEc,70
+iaccess-0.1.0.dist-info/top_level.txt,sha256=NKnmmYZvkDfPWvgWCE8I_qAaIM_v1J2Nt3zL69Jvgz0,8
+iaccess-0.1.0.dist-info/RECORD,,
