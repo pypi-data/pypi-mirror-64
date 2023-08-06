@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: oom
+Version: 0.0.3
+Summary: Prevents your machine from freezing when it's running out of RAM
+Home-page: https://gitlab.com/aduard.kononov/oom
+Author: Eduard Konanau
+Author-email: aduard.kononov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Out Of ~~Mana~~ Memory
+
+Provides a function that keeps an eye on your RAM and stops executing of the process if you are running out of memory.
+
+### Example:
+```python
+from oom import exit_on_out_of_ram
+
+one_gigabyte = 1 << 30
+exit_on_out_of_ram(one_gigabyte)
+
+# explode your RAM
+extremely_big_number = 1 << 9999999
+_ = [i for i in range(extremely_big_number)]
+```
+
