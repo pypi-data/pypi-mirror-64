@@ -1,0 +1,13 @@
+wxbreads/__init__.py,sha256=l7rhcrWAR6oj-K-OX5VftTr6HFv0swHW4A6J6baAqzM,132
+wxbreads/base.py,sha256=XDQtpb8004VPJ8POKX5Vp9eKGOx135l5KUSWLRnEEFs,21225
+wxbreads/filebrowser.py,sha256=sxCHhmkgcBBDtw1c3vP-gLoLCrivu1EnePRIQJ4js-k,3269
+wxbreads/images.py,sha256=lgJt8bq9Ke_iTMJ3_nrhbr21-AoIjuSmqqFQBAo_Hn0,217511
+wxbreads/login.py,sha256=51IUTLEOsio0UMt2si2_DzFxc0fQxHTqjIXCfnbsU5k,7125
+wxbreads/trayicon.py,sha256=YMwXNCVvrxWUReNtIE3QjqB_eh6j7e6vwDDrd6KBgc0,1892
+wxbreads/utils.py,sha256=8a9LWcGC2R1GleXDYbxG56U-Fz3aEFn-JB1l3ZmdkUA,8408
+wxbreads/widgets.py,sha256=NUcXQeWSMsD5VfmfpQEiusz8hAQc_7vW_V0KQw_239k,42012
+wxbreads-0.7.7.dist-info/LICENSE,sha256=4lzePC1xiApdpN63JV3AsvXGmRtit_XS-j5pTA5eOjU,1312
+wxbreads-0.7.7.dist-info/METADATA,sha256=AKINTRbPF9-g-h8knvXUoyVVo4t11mAjjDvYKoaVM4Q,809
+wxbreads-0.7.7.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+wxbreads-0.7.7.dist-info/top_level.txt,sha256=Z7-MHkTcxZu2Jwv0bMpke8VIg-ZHNc1kG7AAkJamlKQ,9
+wxbreads-0.7.7.dist-info/RECORD,,
