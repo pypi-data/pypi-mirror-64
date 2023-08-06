@@ -1,0 +1,3 @@
+[console_scripts]
+kanapy = kanapy.cli:start
+

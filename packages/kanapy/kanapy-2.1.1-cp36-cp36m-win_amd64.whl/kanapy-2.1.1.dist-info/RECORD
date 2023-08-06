@@ -1,0 +1,17 @@
+kanapy/__init__.py,sha256=M_V9i2HTtGfzYbwuHeokBwpOnhbx1yYrTPmXBjfx3Lc,163
+kanapy/analyze_texture.py,sha256=MVYu8fqCXQy_yYFnuZT9R2SgnSClkJXakqA2e649tng,12680
+kanapy/base.cp36-win_amd64.pyd,sha256=o-SaBiq5X8CtXHMXsShj5eZRGf0hSBz-yzW4HaM10d0,230912
+kanapy/cli.py,sha256=7X6vHHc0v2V7g1i7ScAQvoJihq2pAfh_bdwWBExguH8,14646
+kanapy/collision_detect_react.py,sha256=vec3B06L6VaWgCXP7VaC_O72gduVkwLStj9nwPtz2O4,5469
+kanapy/entities.py,sha256=E1od2MoD5tIJbfxjoGH2KBLYeg2DoN7975icU-y4MTE,38464
+kanapy/input_output.py,sha256=p55Joy9XX6qzom0oG9__t-b4QsC-YtB9ObtZCD1IYzM,76635
+kanapy/packing.py,sha256=ro66sNGJFmpV72DZu0fweQd6s1tw88-K2bYEHzfi7jI,8694
+kanapy/util.py,sha256=sBLeqBp3iSklijsanS2reCguxCUCv-twwJwTS3i2peQ,285
+kanapy/voxelization.py,sha256=0uiMX1eOZrPRjV_5JM7-De3CeXZ4BhYhId_lSgiCt5E,19608
+kanapy-2.1.1.dist-info/AUTHORS.rst,sha256=kLawpyVphxiKxKBZUNdLx7dA-r3SHhEyZa9GtXA1wDM,276
+kanapy-2.1.1.dist-info/LICENSE,sha256=XULNdqg-_JL1Fw5qSoLiaV5VbeV9QWLFeKnaKR5iAGU,15998
+kanapy-2.1.1.dist-info/METADATA,sha256=YobGCr738-EvlonCFLpH8bB3rcFqyQGU8bPYPWzh3To,441
+kanapy-2.1.1.dist-info/WHEEL,sha256=Mp7cNSJkwOccBZaxEtyYhlze1HXRCLLX3tIlVLTix2E,106
+kanapy-2.1.1.dist-info/entry_points.txt,sha256=IcanMOvHepmNvkcYUyomcOWAJy3i9PMqnqstpvThD18,45
+kanapy-2.1.1.dist-info/top_level.txt,sha256=6Cz89RVLDj8O50Xs-50WguUI6vWRx5Hh8Q5LcCqGNeo,19
+kanapy-2.1.1.dist-info/RECORD,,
