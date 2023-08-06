@@ -1,0 +1,14 @@
+pygqlc/GraphQLClient.py,sha256=fWb4Aps8KCj8HOJQ23U_iv6_pa98_MY6Dt5y_8uFKVU,13438
+pygqlc/MutationBatch.py,sha256=UR-Psfec1At8LQDm1nUOXrX3BiYEFTXgrY9jWZyZf4I,3416
+pygqlc/MutationParser.py,sha256=dk_rBhgRbi5uV0Gqk04QM84J66DCq0BrUJTpN9wz4Ek,1471
+pygqlc/QueryBatch.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygqlc/QueryParser.py,sha256=vQEAS1q13TIWxVFQxTZqqK10l7veUOLComzUPKtS_oI,761
+pygqlc/SubscriptionParser.py,sha256=2ntfO1ySVtVaRrm8R3yus0Wta6jmrICGRslBMWT3Gvw,124
+pygqlc/__init__.py,sha256=vzPW4ZAdBmeG5GtP8vDUxzz5gXzcuSiAzQJMf4Ek8vI,275
+pygqlc/__main__.py,sha256=7sXKJ-br-qYOpzZXPORle0oDN9WlnzCra3AbVeXXf6s,338
+pygqlc-1.1.2.dist-info/LICENCE,sha256=47pMjd5mYuoE3r19jWOOfKeLxHLfJ7P8a0UoXMwJhgQ,1074
+pygqlc-1.1.2.dist-info/METADATA,sha256=9Ft7RuorBfyHrzRFf1u5IW9CFLb6lhb0YE2yaPR1ZV4,4189
+pygqlc-1.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pygqlc-1.1.2.dist-info/entry_points.txt,sha256=Kl-sPoBSM-cFDsXOfW4u4CO6bCnC9F0nNqeNUfBoXgQ,49
+pygqlc-1.1.2.dist-info/top_level.txt,sha256=vUl4jKTMQtg6sjruC4Vu4HVqy6HtsZJTeVFW24FsWMY,7
+pygqlc-1.1.2.dist-info/RECORD,,
