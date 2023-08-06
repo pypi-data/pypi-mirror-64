@@ -1,0 +1,15 @@
+pamqp<4,>=3.0.0a6
+yarl<2,>=1.4.2
+
+[test]
+coverage
+flake8
+flake8-comprehensions
+flake8-deprecated
+flake8-import-order
+flake8-print
+flake8-quotes
+flake8-rst-docstrings
+flake8-tuple
+mypy
+pygments
