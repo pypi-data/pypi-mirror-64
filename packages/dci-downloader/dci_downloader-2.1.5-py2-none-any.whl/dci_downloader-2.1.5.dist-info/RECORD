@@ -1,0 +1,17 @@
+dci_downloader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dci_downloader/api.py,sha256=wy81HXNk8e4LsCkPLrmyrRJwWwi-iOllzApyhwyxqlc,6625
+dci_downloader/cli.py,sha256=XhjI757qYWYk7LT3O3EcSII309ZsqbmF60ufgnqP95w,3359
+dci_downloader/downloader.py,sha256=7yxugBmD4-1HCQvSuSdwpbLBKok5hTgilxejsuntIDI,1717
+dci_downloader/files_list.py,sha256=sMaBKLTEWR0DNY3HKMJKXi4avkQm83V84I15amOM9sA,1581
+dci_downloader/filters.py,sha256=3ajeZv105--r3pgwFCu_i2DtELh3NVMGst-XbQBIpUs,1282
+dci_downloader/fs.py,sha256=9ItdSev6F5vJ2GSOjsRt3CRCRB0qFFjNEhqqc0W2QBg,1514
+dci_downloader/main.py,sha256=LKZgH4Q8mOZX7ysHuQR8JyYeyCD5YfeDXdi3ffGqiQI,2372
+dci_downloader/settings.py,sha256=DIuWk30SeXwnScgPl7bTjdb7G2dsf_PQC4dw4TI_b5A,4763
+dci_downloader/stats.py,sha256=JFtU91-LS2gQeQoJCOE45EzrSR_YhjMvOcYlw8AHn9A,803
+dci_downloader/version.py,sha256=Ol8KeLnnX1kAXAFgJsZj4d_cZMypHQtaiyICJpuzp64,22
+dci_downloader-2.1.5.dist-info/LICENSE,sha256=RVVnHNsitM_UrrOOZTEpvbjNHs-IZ4wgkeaWaYeNXRE,11337
+dci_downloader-2.1.5.dist-info/METADATA,sha256=gO5kp_ppb9QksXbQSttim0RbTFQeiLiiEAVjQGqFyNY,5123
+dci_downloader-2.1.5.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+dci_downloader-2.1.5.dist-info/entry_points.txt,sha256=LYoV3EWHqNzxwdSucyWt5T5Wxj5nu5DMinlo7I1LZsI,61
+dci_downloader-2.1.5.dist-info/top_level.txt,sha256=i6tjAastniixoWC_mAByuNRpZD7nKI7DUCJFHqbPaKQ,15
+dci_downloader-2.1.5.dist-info/RECORD,,
