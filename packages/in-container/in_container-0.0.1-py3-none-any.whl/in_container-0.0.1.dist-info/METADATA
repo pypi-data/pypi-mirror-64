@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: in-container
+Version: 0.0.1
+Summary: Check if running inside a Docker container
+Home-page: https://github.com/ZiggerZZ/in_container
+Author: Zigfrid Zvezdin
+Author-email: ziggerzz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# In_container
+
+*In_container* allows you to check if you are running your program inside a Docker container.
+
+Like this:
+```python
+from in_container import in_container
+print(in_container()) # True or False
+```
+
