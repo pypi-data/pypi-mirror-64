@@ -1,0 +1,10 @@
+spectra,/Users/xuesong/OneDrive/2022/tool/pipasic_test/example/data/example.mgf
+instrument,FT-Hybrid
+protease,Trypsin
+DB,/Users/xuesong/OneDrive/2022/tool/pipasic_test/example/ref/species2_decoy.trie
+mod,57.021464,C,fix
+mod,15.994915,M
+mod,42.010565,*,nterminal
+mods,2
+ParentPPM,10
+IonTolerance,0.8

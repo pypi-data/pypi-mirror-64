@@ -1,0 +1,11 @@
+spectra,./ref/simulFiles/fer2_Biofilm_sampl100MSSim_sample1000.mgf
+instrument,FT-Hybrid
+protease,Trypsin
+DB,./ref/fer2_Biofilm_decoy.trie
+# Protecting group on cysteine:
+mod,57.021464,C
+mod,0.984016,NQ
+mod,15.994915,M
+mods,2
+ParentPPM,10
+IonTolerance,0.8
