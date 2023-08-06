@@ -1,0 +1,9 @@
+README.md
+setup.py
+test_numpy_setuptools/__init__.py
+test_numpy_setuptools/test_numpy_setuptools_main.py
+test_numpy_setuptools/test_numpy_setuptools_multi.py
+test_numpy_setuptools.egg-info/PKG-INFO
+test_numpy_setuptools.egg-info/SOURCES.txt
+test_numpy_setuptools.egg-info/dependency_links.txt
+test_numpy_setuptools.egg-info/top_level.txt
