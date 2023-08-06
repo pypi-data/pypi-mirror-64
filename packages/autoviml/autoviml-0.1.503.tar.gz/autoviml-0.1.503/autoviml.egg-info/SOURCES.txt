@@ -1,0 +1,21 @@
+.gitignore
+Auto_ViML_Demo.ipynb
+CONTRIBUTING.md
+LICENSE
+README.md
+logo.png
+requirements.txt
+setup.py
+Example Notebook/DSN COM with autovimal.ipynb
+autoviml/Auto_ViML.py
+autoviml/QuickML_Ensembling.py
+autoviml/QuickML_Stacking.py
+autoviml/Transform_KM_Features.py
+autoviml/__init__.py
+autoviml/custom_scores.py
+autoviml/custom_scores_HO.py
+autoviml.egg-info/PKG-INFO
+autoviml.egg-info/SOURCES.txt
+autoviml.egg-info/dependency_links.txt
+autoviml.egg-info/requires.txt
+autoviml.egg-info/top_level.txt
