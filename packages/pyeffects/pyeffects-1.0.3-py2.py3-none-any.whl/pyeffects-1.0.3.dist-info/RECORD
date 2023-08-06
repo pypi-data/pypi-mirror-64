@@ -1,0 +1,12 @@
+pyeffects/Either.py,sha256=UIgt4aJCRnub8VwXBaCu8dduQO6i1up6Vfnui5ZZd6Q,2161
+pyeffects/Future.py,sha256=ZIod-DIwOFYEDzBxzb9FV3XEfc9J2plUl_Lup5i8Smk,5362
+pyeffects/Monad.py,sha256=2w8nbZaRKU_DwgTIVkTqaY-ayCGJ3XnPTZS1rtolyXM,1327
+pyeffects/Option.py,sha256=txK3q0gdQ3C1dei5rnJCvs5wwPsICV8JAJvbVvUumRo,2097
+pyeffects/Try.py,sha256=NqQu85Daqs937ldbL3DZGzUSGg4yuQ_7SQNuUyT7khA,4190
+pyeffects/__init__.py,sha256=ceVWfcWzgDy30dtO4Y0aha6BGgSoJhDPJD12u6SuCII,512
+pyeffects/__version__.py,sha256=L6pQG3QtMHYfSBIjb62B6FK2rI2WawmkumCxS5tphMo,321
+pyeffects-1.0.3.dist-info/LICENSE,sha256=Yh3RQj3eovfM0C7fzqSZ3jUEM5OLHR6ysRATOV3T4Fk,10392
+pyeffects-1.0.3.dist-info/METADATA,sha256=94pbm7wiadX0z024xIbq4hIYpfdj3TsKDc695MbCDPs,3073
+pyeffects-1.0.3.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pyeffects-1.0.3.dist-info/top_level.txt,sha256=tr3USHVo44RiWrSjCqjwDLtuAn72UTaB3Pb4aempaGQ,10
+pyeffects-1.0.3.dist-info/RECORD,,
