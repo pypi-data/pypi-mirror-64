@@ -1,0 +1,10 @@
+command_history/__init__.py,sha256=YqYi7zP-9x0cD6yjI3Coc4qzEyx7FVDJLzqLMUeFruE,132
+command_history/history.py,sha256=e_YCstZmnOttEq88hAVqAJ4yGgw-ZDDltEY1I2ADpnA,47
+command_history/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+command_history/tests/test_command_line.py,sha256=S80VlPpRw8fqh7QaSMbjqwnodKcBvP_Kb9zC_rTvtrc,131
+command_history/tests/test_history.py,sha256=3SZK5mANqbVZu0fmoFjIH1NPfKeS5Z7rjSBrZyWded0,144
+command_history-0.0.0.dist-info/LICENSE,sha256=rEx2Ed_i0Z4AfMHzTWCYXAwIz4yKXroESPuoB3cOWMQ,1066
+command_history-0.0.0.dist-info/METADATA,sha256=xT1YzbaOW-KZM8bqBrFUmyCzQjT18yoylE1ZQwR_Ilw,470
+command_history-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+command_history-0.0.0.dist-info/top_level.txt,sha256=5TYSOWvuECt3eICYxRcmXM1TVQ-R-cpgTtenofzthvc,16
+command_history-0.0.0.dist-info/RECORD,,
