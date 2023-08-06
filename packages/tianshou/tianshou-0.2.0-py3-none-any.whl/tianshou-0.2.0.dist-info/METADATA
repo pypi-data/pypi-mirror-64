@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: tianshou
+Version: 0.2.0
+Summary: A Library for Deep Reinforcement Learning
+Home-page: https://github.com/thu-ml/tianshou
+Author: TSAIL
+Author-email: trinkle23897@gmail.com
+License: MIT
+Keywords: reinforcement learning platform
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: tqdm
+Requires-Dist: numpy
+Requires-Dist: cloudpickle
+Requires-Dist: tensorboard
+Requires-Dist: torch (>=1.4.0)
+
+# Tianshou
+
+![Unittest](https://github.com/thu-ml/tianshou/workflows/Unittest/badge.svg) [![Documentation Status](https://readthedocs.org/projects/tianshou/badge/?version=latest)](https://tianshou.readthedocs.io/en/latest/?badge=latest) ![GitHub license](https://img.shields.io/github/license/thu-ml/tianshou)
+
+## Installation
+
+`pip3 install .`
+
+## Run Demo
+
+`python3 test/*.py`
+
+
+
+
+
+
+
+- Policy Gradient (PG)
+- [Deep Q-Network (DQN)](https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+- [Double DQN (DDQN)](https://arxiv.org/pdf/1509.06461.pdf)
+- [Advantage Actor-Critic (A2C)](http://incompleteideas.net/book/RLbook2018.pdf)
+- [Deep Deterministic Policy Gradient (DDPG)](https://arxiv.org/pdf/1509.02971.pdf)
+- [Proximal Policy Optimization (PPO)](https://arxiv.org/pdf/1707.06347.pdf)
+- TD3
+- [Soft Actor-Critic (SAC)](https://arxiv.org/pdf/1812.05905.pdf)
+
+
+
+```
+@misc{tianshou,
+  author = {Jiayi Weng},
+  title = {Tianshou},
+  year = {2020},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/thu-ml/tianshou}},
+}
+```
+
