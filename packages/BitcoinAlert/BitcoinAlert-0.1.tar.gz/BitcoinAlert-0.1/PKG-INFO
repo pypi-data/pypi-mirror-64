@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: BitcoinAlert
+Version: 0.1
+Summary: Sends bitcoin alerts !
+Home-page: https://github.com/praveenNagaraj97-au7/bitcoinAlertWithTelegram
+Author: Praveen
+Author-email: praveenacchusn123@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

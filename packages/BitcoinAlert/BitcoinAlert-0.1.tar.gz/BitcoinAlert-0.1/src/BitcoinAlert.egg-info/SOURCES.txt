@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/bitcoinInitialize.py
+src/BitcoinAlert.egg-info/PKG-INFO
+src/BitcoinAlert.egg-info/SOURCES.txt
+src/BitcoinAlert.egg-info/dependency_links.txt
+src/BitcoinAlert.egg-info/requires.txt
+src/BitcoinAlert.egg-info/top_level.txt
