@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: yavin
+Version: 1.0.1
+Summary: Python API client for the Yavin API
+Home-page: https://github.com/yavinapi/yavin-python-client
+Author: Yavin
+Author-email: tech@yavin.com
+License: MIT
+Description: # Yavin API Python Client
+        
+        Python client for Yavin API
+        
+        ## Getting started
+        
+        Register or sign up to get your developer API key: [my.yavin.com](https://my.yavin.com)
+        
+        Read our documentation: [api.yavin.com/docs](https://api.yavin.com/docs/?python)
+        
+        ## Install 
+        
+            pip install yavin
+        
+        
+        ## Example
+        
+        ```python
+        from yavin import Client
+        
+        yavin_client = Client('<yavin_secret_key>')
+        yavin_client.transactions.get({
+            'start_date': '2019-12-12',
+            'end_date': '2020-03-03',
+            'limit': 2
+        })
+        print(yavin_client.transactions.data)
+        ```
+        
+        
+        
+        Learn more about our Yavin : [www.yavin.com](https://www.yavin.com)
+        
+        
+        # Changelog
+        
+        
+        1.0.0 (2020-03-30)
+        ------------------
+        
+        - Create a Python client for Yavin.
+        - Make transactions endpoint available.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
