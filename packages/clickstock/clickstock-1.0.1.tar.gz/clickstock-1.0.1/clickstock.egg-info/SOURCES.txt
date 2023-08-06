@@ -1,0 +1,10 @@
+README.md
+setup.py
+clickstock/__init__.py
+clickstock/__main__.py
+clickstock/operation.py
+clickstock.egg-info/PKG-INFO
+clickstock.egg-info/SOURCES.txt
+clickstock.egg-info/dependency_links.txt
+clickstock.egg-info/entry_points.txt
+clickstock.egg-info/top_level.txt
