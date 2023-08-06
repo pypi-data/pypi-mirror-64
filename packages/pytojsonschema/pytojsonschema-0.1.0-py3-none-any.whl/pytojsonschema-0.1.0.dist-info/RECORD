@@ -1,0 +1,10 @@
+pytojsonschema/__init__.py,sha256=8KuCwjHPGIpKlI9-qQV-x4bMtFY9-_EqMLXoeZFi2z8,246
+pytojsonschema/common.py,sha256=cnq3PVHpTd9fY7WR6FNci4hx7c4bTSR16ygf8gGfU64,295
+pytojsonschema/jsonschema.py,sha256=eyh5hO4iCWntHyoMxc7_gorUaK1DxytxJfIvywXCU1s,3586
+pytojsonschema/types.py,sha256=Ts-LRq2IZxeI4eVVB7dvQGXjueI2Qmj4Avu1iCuOOwQ,5115
+pytojsonschema/utils.py,sha256=LGp8ip9KnyvgBsg5e7k4UdKRn2fCglDuYTL8OBRcLW0,1182
+pytojsonschema-0.1.0.dist-info/LICENSE,sha256=k4RTxtZ-QpkdbV9lQnWcnR5YHd9kKyhkDRIWd6CYPco,1068
+pytojsonschema-0.1.0.dist-info/METADATA,sha256=v-7i9DWTEs7DKk_avDlQtGtEtpG8VVVoSXREWiLSnGc,805
+pytojsonschema-0.1.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pytojsonschema-0.1.0.dist-info/top_level.txt,sha256=MfY3YAOdvNb-6d-KI1PMnTlxKKgZu09YK6AVlxYcTBc,15
+pytojsonschema-0.1.0.dist-info/RECORD,,
