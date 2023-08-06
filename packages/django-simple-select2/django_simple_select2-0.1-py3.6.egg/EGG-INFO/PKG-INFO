@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: django-simple-select2
+Version: 0.1
+Summary: Tweaks for existing built-in Django"s autocomplete feature
+Home-page: https://github.com/jerinpetergeorge/django-simple-select2
+Author: Jerin Peter George
+Author-email: jerinpetergeorge@gmail.com
+License: MIT-Zero
+Download-URL: https://github.com/jerinpetergeorge/django-simple-select2/tarball/0.1
+Description: UNKNOWN
+Platform: UNKNOWN
