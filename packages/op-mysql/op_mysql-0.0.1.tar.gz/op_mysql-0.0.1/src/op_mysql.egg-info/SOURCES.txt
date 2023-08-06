@@ -1,0 +1,5 @@
+setup.py
+src/op_mysql.egg-info/PKG-INFO
+src/op_mysql.egg-info/SOURCES.txt
+src/op_mysql.egg-info/dependency_links.txt
+src/op_mysql.egg-info/top_level.txt
