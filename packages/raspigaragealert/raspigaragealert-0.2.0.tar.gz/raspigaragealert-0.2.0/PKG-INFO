@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: raspigaragealert
+Version: 0.2.0
+Summary: Generate an alert when your garage door is left open
+Home-page: https://github.com/djotaku/raspi_garage_alert
+Author: Eric Mesa
+Author-email: eric@ericmesa.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Raspberry Pi
+Platform: UNKNOWN
