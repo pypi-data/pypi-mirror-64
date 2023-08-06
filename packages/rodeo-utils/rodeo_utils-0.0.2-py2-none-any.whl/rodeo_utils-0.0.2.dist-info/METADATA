@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rodeo-utils
+Version: 0.0.2
+Summary: A parser and a set of useful functions for handling RODEO output
+Home-page: https://github.com/bikdm12/rodeo_utils
+Author: Dmitry Bikmetov
+Author-email: bikdm12@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# rodeo_utils
+python 2.7 package for parsing [RODEO2](https://github.com/the-mitchell-lab/rodeo2) output
+
+
