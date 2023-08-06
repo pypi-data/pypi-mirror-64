@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pint-mtools
+Version: 0.12.3
+Summary: Physical quantities module (modified for unitdoc)
+Home-page: https://github.com/hgrecco/pint
+Author: Hernan E. Grecco
+Author-email: hernan.grecco@gmail.com
+License: BSD
+Requires-Dist: funcsigs; python_version == "2.7"
+
+Pint: makes units easy
+
+
