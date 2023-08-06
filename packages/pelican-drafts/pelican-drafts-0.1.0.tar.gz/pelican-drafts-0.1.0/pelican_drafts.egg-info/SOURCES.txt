@@ -1,0 +1,16 @@
+CHANGELOG.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+drafts/__about__.py
+drafts/__init__.py
+drafts/defaults.py
+drafts/generators.py
+pelican_drafts.egg-info/PKG-INFO
+pelican_drafts.egg-info/SOURCES.txt
+pelican_drafts.egg-info/dependency_links.txt
+pelican_drafts.egg-info/not-zip-safe
+pelican_drafts.egg-info/requires.txt
+pelican_drafts.egg-info/top_level.txt

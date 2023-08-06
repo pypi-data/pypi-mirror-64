@@ -1,0 +1,8 @@
+pelican>=4.2.0
+
+[qa]
+pytest-cov
+flake8
+
+[test]
+pytest<5.4
