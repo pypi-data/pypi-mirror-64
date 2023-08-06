@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: xmapper
+Version: 1.0.0
+Summary: Easy XML format converter
+Home-page: https://github.com/xxh840912/xmapper
+Author: Alex xi
+Author-email: alexxi0213@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: lxml (==4.4.2)
+Requires-Dist: PyYAML (==5.2)
+Requires-Dist: untangle (==1.1.1)
+
+
+xmapper
+--------
+xmapper is a XML format convert tool.
+
+See https://github.com/xxh840912/xmapper
+
+
