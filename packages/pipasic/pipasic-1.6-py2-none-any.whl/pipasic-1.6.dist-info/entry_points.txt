@@ -1,0 +1,4 @@
+[console_scripts]
+dddd = src:main
+pipasic = pipasic_src:pipasic
+

@@ -1,0 +1,9 @@
+spectra,./data/spectra/example.mgf
+instrument,FT-Hybrid
+protease,Trypsin
+DB,./data/reference/species2_decoy.trie
+# Protecting group on cysteine
+mod,57.021464,C,fix
+mods,2
+ParentPPM,10
+IonTolerance,0.8
