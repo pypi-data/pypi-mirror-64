@@ -1,0 +1,6 @@
+README.md
+setup.py
+swapnilpkg.egg-info/PKG-INFO
+swapnilpkg.egg-info/SOURCES.txt
+swapnilpkg.egg-info/dependency_links.txt
+swapnilpkg.egg-info/top_level.txt
