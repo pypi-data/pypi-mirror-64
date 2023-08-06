@@ -1,0 +1,12 @@
+motpy/__init__.py,sha256=63e266-DyvD11P6gv3mvodr7Mt9TPLRZA8KrWmqEJng,173
+motpy/core.py,sha256=JE3VfACk77HKmnvbwO9Wbst3qpTGIOvW2bj80i3FECQ,1011
+motpy/metrics.py,sha256=8-tPaftRucm0JuKJ2xiy6JiY-wa0WKjww08M-Eg-rjU,1059
+motpy/model.py,sha256=D7ov0oZbWjJy7uAs-PY64UG8Q_6PZ9QI_Ff6c46ycJs,5558
+motpy/testing.py,sha256=tULLKXpnufOaEEAw5xcC2DKAsbGQNQsfbd4wub0iyfo,3368
+motpy/testing_viz.py,sha256=2VagqUsuOvBnE6ynsKKASXldtUOZhbC2JJoxYCSUSeg,2437
+motpy/tracker.py,sha256=FLDWgn88uKPxtHzSN0Cm9jkh5Lu6Ffh5LHsIFBB9J1w,11037
+motpy-0.0.8.dist-info/LICENSE,sha256=6qpFzta7zVauSiF1Re3esVUm5eqeqG8HekqGTXIV5Pk,1068
+motpy-0.0.8.dist-info/METADATA,sha256=NeEsRluEl1t6GSJvddLwFeHgCVByQpJ6gpITz_BKWtg,5350
+motpy-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+motpy-0.0.8.dist-info/top_level.txt,sha256=zWMzA1dycf49jOeIqkWpzTIk6zjmgTNrzJuxXWOdA7Y,6
+motpy-0.0.8.dist-info/RECORD,,
