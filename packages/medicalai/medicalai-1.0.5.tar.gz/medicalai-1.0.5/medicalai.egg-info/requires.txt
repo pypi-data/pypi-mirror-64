@@ -1,0 +1,11 @@
+pandas
+tensorflow
+numpy
+matplotlib
+plotly
+pandas
+seaborn
+sklearn
+
+[test]
+pytest
