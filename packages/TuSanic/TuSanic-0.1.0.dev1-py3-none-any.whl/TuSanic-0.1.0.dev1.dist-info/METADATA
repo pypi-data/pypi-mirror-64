@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: TuSanic
+Version: 0.1.0.dev1
+Summary: TUS protocol implementation for sanic
+Home-page: https://github.com/avi-av/TuSanic.git
+Author: Avi_av
+License: MIT
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: sanic
+Requires-Dist: pony
+Requires-Dist: loguru
+
+
+TuSanic
+-------------
+
+Implements the tus.io server-side file-upload protocol
+visit http://tus.io for more information
+
+The project code is based on the code written by @matthoskins1980
+
+
