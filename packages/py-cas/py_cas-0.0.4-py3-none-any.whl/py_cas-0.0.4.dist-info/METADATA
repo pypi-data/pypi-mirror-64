@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: py-cas
+Version: 0.0.4
+Summary: python client of c.a.s
+Home-page: https://github.com/includeamin/c.a.s
+Author: includeamin
+Author-email: includeamin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (<2.23.0)
+Requires-Dist: pydantic (==1.4)
+Requires-Dist: certifi (>=2017.4.17)
+
+# CAS Python Client
+py_cas make usage of CAS  super easy
+
+in this version of py_cas you have:
+- using function instead of HTTP request
+
+in next version you will have:
+- enable over Websocket communication instead of REST
+
+## Installation
+```sh 
+pip3 install py_cas
+```
+
+## Usage
+```python
+from py_cas.CAS import CAS
+from py_cas.Models import InitConfig
+
+conf = InitConfig(service_address='CAS_HOST:PORT')
+client = CAS(conf=conf)
+result = client.validate_token("user_token")
+```
+
