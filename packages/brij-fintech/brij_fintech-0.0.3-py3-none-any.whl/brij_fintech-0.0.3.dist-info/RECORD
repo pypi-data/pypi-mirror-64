@@ -1,0 +1,11 @@
+brij/Auth.py,sha256=MCD8cqkjsZNV4VfYCVukCNkZZ42VGD71pnjWYXyF89Q,606
+brij/MpesaServices.py,sha256=metByJ20KjKAd1Jf2e59C7eKEcFY6OF5uIMiAVsBfBs,2373
+brij/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+brij/base.py,sha256=MCD8cqkjsZNV4VfYCVukCNkZZ42VGD71pnjWYXyF89Q,606
+brij/mpesa.py,sha256=M_Hzc_HW8KjCf5_FZzn_caus3jQaB-Avv6M-mbRw7GE,2378
+brij/urls.py,sha256=wRxL0ywC9gp8ZwZjYWDacs7XjvUw05ZgXaRCRutoWZI,150
+brij_fintech-0.0.3.dist-info/LICENSE.txt,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+brij_fintech-0.0.3.dist-info/METADATA,sha256=Re9Y_Fn0OFh1LAF8vazYdcUu8qV5TEyUUzA1UtDUimE,481
+brij_fintech-0.0.3.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+brij_fintech-0.0.3.dist-info/top_level.txt,sha256=bFQzhGRHLpALUkIbZQ56Ax7my6ZJmdLUaljCDPcCKto,5
+brij_fintech-0.0.3.dist-info/RECORD,,
