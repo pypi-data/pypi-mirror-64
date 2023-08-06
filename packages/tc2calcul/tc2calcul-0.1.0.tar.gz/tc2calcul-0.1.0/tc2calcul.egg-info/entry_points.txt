@@ -1,0 +1,3 @@
+[console_scripts]
+tc2calcul = tc2calcul.cli:main
+
