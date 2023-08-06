@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: denstatbank
+Version: 0.6.0
+Summary: A Python API wrapper to Statistics Denmark's DataBank API
+Home-page: https://github.com/gmohandas/denstatbank.git
+Author: Gopakumar Mohandas
+Author-email: gopakumarmohandas@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==19.3.0)
+Requires-Dist: certifi (==2019.11.28)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.9)
+Requires-Dist: importlib-metadata (==1.5.0)
+Requires-Dist: more-itertools (==8.2.0)
+Requires-Dist: numpy (==1.18.2)
+Requires-Dist: packaging (==20.3)
+Requires-Dist: pandas (==1.0.2)
+Requires-Dist: pluggy (==0.13.1)
+Requires-Dist: py (==1.8.1)
+Requires-Dist: pyparsing (==2.4.6)
+Requires-Dist: pytest (==5.4.1)
+Requires-Dist: python-dateutil (==2.8.1)
+Requires-Dist: pytz (==2019.3)
+Requires-Dist: requests (==2.23.0)
+Requires-Dist: six (==1.14.0)
+Requires-Dist: wcwidth (==0.1.8)
+Requires-Dist: zipp (==3.1.0)
+
+# denstatbank
+![denstatbank](https://github.com/gmohandas/denstatbank/workflows/denstatbank/badge.svg)
+
+A python wrapper to Statistics Denmark's Databank API.
+The package allows you to easily gather data on a variety of topics made available by [Statistics Denmark](https://www.dst.dk/en).
+
+The package provides a simple interface for professional statisticians, academics, policymakers, students, 
+and anyone interested in quantitative facts about Denmark.
+
+
+### Installation
+
+The package is listed on pypi and can be installed with pip:
+```
+pip install --upgrade denstatbank
+```
+
+### Usage
+
+Simple Example:
+
+Get population data for the years from 2002 to 2019 and make a simple timeseries plot with the data.
+
+```python
+>>> from denstatbank import StatBankClient
+>>> sbc = StatBankClient(lang='en')
+>>> years = [str(y) for y in list(range(2002, 2020))]
+>>> tid = sbc.variable_dict(code='Tid', values=years)
+>>> df = sbc.data(table_id='bef5', variables=[tid], as_df=True))
+>>> df.plot(style='o-', figsize=(10, 6))
+```
+<img src="images/bef5en.png" width="600">
+
+denstatbank utilizes the power of `pandas`, a fast and flexible library
+eminently suited for data handling and analysis. 
+
+### Documentation
+The package documentation can be found [here](https://denstatbank.readthedocs.io/en/latest/).
+
+The official API documentation can be found [here](https://www.dst.dk/en/Statistik/statistikbanken/api)
+
+### Todo
+
+Examples demonstrating statistical analysis of data
+
+
