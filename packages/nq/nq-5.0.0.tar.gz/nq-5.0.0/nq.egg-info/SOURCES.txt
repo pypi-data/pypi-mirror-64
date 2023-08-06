@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+nq/VERSION
+nq/__init__.py
+nq/filters.py
+nq/flags.py
+nq/nested_query.py
+nq.egg-info/PKG-INFO
+nq.egg-info/SOURCES.txt
+nq.egg-info/dependency_links.txt
+nq.egg-info/entry_points.txt
+nq.egg-info/requires.txt
+nq.egg-info/top_level.txt
