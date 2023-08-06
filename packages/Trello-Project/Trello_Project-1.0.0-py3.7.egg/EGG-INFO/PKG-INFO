@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Trello-Project
+Version: 1.0.0
+Summary: Demo Package for trello command line interface interractor.
+Home-page: UNKNOWN
+Author: Marwa Ayeb
+Author-email: ayeb.maroua94@gmail.com
+License: MIT
+Description: Package made for a Epilot mini project consisting on cli application to interract with trello .
+Keywords: trello cli interractor webservice REST article python package marwayeb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
