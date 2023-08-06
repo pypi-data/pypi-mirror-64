@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: django-shadow-tasks
+Version: 0.0.6
+Summary: Run tasks in background workers
+Home-page: https://git.supl.biz/web-back-tools/django-shadow-tasks
+Author: Supl.biz
+Author-email: tech@supl.biz
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
