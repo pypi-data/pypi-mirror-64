@@ -1,0 +1,11 @@
+dosk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dosk/command_line.py,sha256=tx7c0tvlsFG3vmLTOff-vMLLEDheUAKE9eH1B3NiAnM,677
+dosk/yaml_reader/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dosk/yaml_reader/yaml_reader.py,sha256=tGWmma1tuzQxeVh6ro3w-qfZcFAO47jA_Wf_J_5EWHM,238
+dosk-0.0.5.data/scripts/dosk_cli.py,sha256=Sk7FiS418Yujoe-GXLbGKlCfpVFOneznIYeLDo9iJn8,663
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/min_max_test.py,sha256=Sw0epEH0bojNwycsvXbP63fCns72bH8ZYKf99RLWZos,214
+dosk-0.0.5.dist-info/METADATA,sha256=H1WGlt5PfZdHDJK04GA-Sr-m5XFJ180NxXu-0AhYxpA,444
+dosk-0.0.5.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+dosk-0.0.5.dist-info/top_level.txt,sha256=JrgzSuXop8MESJyLwnZcjRmDpsNfMlAAJcdKv8PARso,11
+dosk-0.0.5.dist-info/RECORD,,
