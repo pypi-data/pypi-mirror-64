@@ -1,0 +1,12 @@
+datasetops/__init__.py,sha256=NK2oexGMshmkl0xXvn0RPGp3Qz3C5RgNPnZfMBMiGr4,432
+datasetops/abstract.py,sha256=sk2g4XkaPEkog6uajT8zQc0YVZPMoevAMU0usIaZwtE,1039
+datasetops/compose.py,sha256=blI2ytpVPipFKx9eOwZXMwXYkLhOurTlXC-vSKAXIek,5344
+datasetops/dataset.py,sha256=KLITAn1o14S1LmfHfyi0XcoJa2gLhwh5A2fG72kv_rk,35447
+datasetops/examples.py,sha256=-eUWOywruDGNaBhp1qoLOW3W01Dv-9FV3BiIjkmcyls,2188
+datasetops/loaders.py,sha256=icDnqPXYH1BkhOlnNfPTvHPHiX7aftHtDzV32dsGfDI,7106
+datasetops/types.py,sha256=50fJlHaUdhjJKY7tEHKKHJ-Dv-ZnAEJo6yepNfPxaDk,550
+datasetops-0.0.6.dist-info/LICENSE,sha256=MZ9C-9BynXRnNsHUKCCm8JioUEflEN73J2xIEv7-hFc,1072
+datasetops-0.0.6.dist-info/METADATA,sha256=LBPdOhPcZ7e-iVGtufeAwxXJWqFqkIJ5JEojLv8Y97M,7959
+datasetops-0.0.6.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+datasetops-0.0.6.dist-info/top_level.txt,sha256=lFFdXtuIOHLsLO1dHzxdtmE7O-EWaO6wAorHderA-w8,11
+datasetops-0.0.6.dist-info/RECORD,,
