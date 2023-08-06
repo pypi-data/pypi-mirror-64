@@ -1,0 +1,13 @@
+oc_assistant/__init__.py,sha256=vaw9hZCBeyTmgqaZhXVPcnz7qs1MbsjG3TmjIN4Z_wM,122
+oc_assistant/cli.py,sha256=69WPkQYLODmiN0MPbHQSNjlR0r8i1XjV-k1c29WUeUA,2845
+oc_assistant/connector.py,sha256=vJBHBCZHew9_HzFNMyYaGiRkxvtOFhrj6LZb_TLrWa8,7834
+oc_assistant/constants.py,sha256=BRFvf74DoAd73sfW8nZZrO0bqYZeWgtZnoufyZIma4o,504
+oc_assistant/oc_api.py,sha256=Mpqi_HMy_wn8SbXOIPx74-3TIZWwW7ghh9bne2zAk-M,11824
+oc_assistant/utils.py,sha256=xYxersybha5fkrdxi0tvenhjLoxJVLdTEUByRB8IPF8,1990
+oc_assistant-0.2.0.dist-info/AUTHORS.rst,sha256=9daF8zbTq4lNXPp2TV7zom8rDhH28Ga1-q6KVPZOenQ,128
+oc_assistant-0.2.0.dist-info/LICENSE,sha256=ugBznNGVTLqiOh5xJtCOLSiM3WWT7LNUHTL2JMtYAgs,1565
+oc_assistant-0.2.0.dist-info/METADATA,sha256=UxQgLnwgDvkp6VXLaWj7ZtcJMnuAJK6iQj0xSeD0tdI,1817
+oc_assistant-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+oc_assistant-0.2.0.dist-info/entry_points.txt,sha256=Hcs38in7VdoCYkThJGdLISQXMdLIFjFi133X3k5WiFk,56
+oc_assistant-0.2.0.dist-info/top_level.txt,sha256=7ygcW8g3Qw6aDzSMeCSC-C2fhv95ftANVXzWOtVN-Bg,13
+oc_assistant-0.2.0.dist-info/RECORD,,
