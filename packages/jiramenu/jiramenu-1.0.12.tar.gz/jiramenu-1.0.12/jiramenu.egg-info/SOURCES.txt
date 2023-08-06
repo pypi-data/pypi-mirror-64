@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+readme.md
+setup.py
+jiramenu/jiramenu.py
+jiramenu.egg-info/PKG-INFO
+jiramenu.egg-info/SOURCES.txt
+jiramenu.egg-info/dependency_links.txt
+jiramenu.egg-info/entry_points.txt
+jiramenu.egg-info/requires.txt
+jiramenu.egg-info/top_level.txt
