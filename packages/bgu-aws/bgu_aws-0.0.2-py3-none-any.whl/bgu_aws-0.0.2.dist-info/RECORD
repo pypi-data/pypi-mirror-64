@@ -1,0 +1,13 @@
+bgu-aws-utils/__init__.py,sha256=WrYvSpIGxRsSpxOtseFasGmi_qStyqrx6eRxT-wd6No,37
+bgu-aws-utils/launch_aws.py,sha256=uBGeZ9KVgl4dhL7QVur1kyFxsxhEtapcZu1-Bsn-vug,1804
+bgu-aws-utils/manage_instance.py,sha256=2MbcjOP0IlXEiL-z2C5O37DHzM8-UtWfKiGcCPo8-b8,1674
+bgu_aws/__init__.py,sha256=S_2e6ToIOU1132hReVWiNb2CyKH6oEqN3pIJFiITTGU,59
+bgu_aws/launch_aws.py,sha256=uBGeZ9KVgl4dhL7QVur1kyFxsxhEtapcZu1-Bsn-vug,1804
+bgu_aws/manage_instance.py,sha256=2MbcjOP0IlXEiL-z2C5O37DHzM8-UtWfKiGcCPo8-b8,1674
+bgu_aws-0.0.2.dist-info/METADATA,sha256=9uVqAxMb2eQ7n1ssvI0J0R1NdVVuiV0V0QzlR48NzxA,547
+bgu_aws-0.0.2.dist-info/RECORD,,
+bgu_aws-0.0.2.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+bgu_aws-0.0.2.dist-info/top_level.txt,sha256=vZtiS7jft2g85WIQ-3nn7zjFnYIULIcljJYbVhHovrQ,8
+bgu_aws_utils/__init__.py,sha256=WrYvSpIGxRsSpxOtseFasGmi_qStyqrx6eRxT-wd6No,37
+bgu_aws_utils/launch_aws.py,sha256=uBGeZ9KVgl4dhL7QVur1kyFxsxhEtapcZu1-Bsn-vug,1804
+bgu_aws_utils/manage_instance.py,sha256=2MbcjOP0IlXEiL-z2C5O37DHzM8-UtWfKiGcCPo8-b8,1674
