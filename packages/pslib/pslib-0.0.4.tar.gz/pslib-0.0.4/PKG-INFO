@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: pslib
+Version: 0.0.4
+Summary: A python library for interacting with Pokémon Showdown
+Home-page: https://github.com/vberlier/pslib
+License: MIT
+Keywords: pokemon-showdown,pokemon-showdown-bot,websockets,client,pslib
+Author: Valentin Berlier
+Author-email: berlier.v@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: aiohttp (>=3.6.2,<4.0.0)
+Requires-Dist: websockets (>=8.1,<9.0)
+Project-URL: Documentation, https://github.com/vberlier/pslib
+Project-URL: Repository, https://github.com/vberlier/pslib
+Description-Content-Type: text/markdown
+
+# pslib
+
+[![Build Status](https://travis-ci.com/vberlier/pslib.svg?branch=master)](https://travis-ci.com/vberlier/pslib)
+[![PyPI](https://img.shields.io/pypi/v/pslib.svg)](https://pypi.org/project/pslib/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pslib.svg)](https://pypi.org/project/pslib/)
+
+> A python library for interacting with Pokémon Showdown.
+
+**🚧 Work in progress 🚧**
+
+```python
+import asyncio
+import pslib
+
+async def join_battles(client):
+    while True:
+        for battle in await client.query_battles():
+            await battle.join()
+
+async def display_logs(client):
+    async for message in client.listen(pslib.WinMessage, all_rooms=True):
+        print(message.room.logs)
+        await message.room.leave()
+
+async def main():
+    async with pslib.connect() as client:
+        await asyncio.gather(join_battles(client), display_logs(client))
+
+asyncio.run(main())
+```
+
+## Installation
+
+The package can be installed with `pip`.
+
+```bash
+$ pip install pslib
+```
+
+---
+
+License - [MIT](https://github.com/vberlier/pslib/blob/master/LICENSE)
+
