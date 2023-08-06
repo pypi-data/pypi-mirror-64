@@ -1,0 +1,1 @@
+count_wc: '{fs_prefix}/{df}/profile/count/{preproc}/{sample}/{sample}_{strand}.count' 

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: assnake-core-preprocessing
+Version: 0.5.2
+Summary: Reads preprocessing module for assnake
+Home-page: https://github.com/ASSNAKE/assnake-core-preprocessing
+Author: Dmitry Fedorov
+Author-email: fedorov.de@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: ILLUMINA,NGS,METAGENOMIC,DATA
+Platform: UNKNOWN

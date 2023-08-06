@@ -1,0 +1,6 @@
+trimmomatic_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_R1.fastq.gz'
+fastq_gz_tmtic_R1_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_R1.fastq.gz'
+fastq_gz_tmtic_R2_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_R2.fastq.gz'
+fastq_gz_tmtic_S_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_S.fastq.gz'
+fastq_gz_tmtic_unpaired1_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_R1_unpaired.fastq'
+fastq_gz_tmtic_unpaired2_wc: '{fs_prefix}/{df}/reads/{preproc}__tmtic_{params}/{sample}_R2_unpaired.fastq'

@@ -1,0 +1,3 @@
+[assnake.plugins]
+assnake-core-preprocessing = assnake_core_preprocessing.snake_module_setup:snake_module
+
