@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bi-get
+Version: 0.1.1
+Summary: 关于B站的一个爬虫，可以获取视频的信息，下载视频等
+Home-page: https://github.com/ujay-zheng/bi-get
+Author: ujay
+Author-email: 897013045@qq.com
+License: UNKNOWN
+Description: 具体见https://github.com/ujay-zheng/bi-get
+Keywords: pip,bilibili,video download,spider
+Platform: any
