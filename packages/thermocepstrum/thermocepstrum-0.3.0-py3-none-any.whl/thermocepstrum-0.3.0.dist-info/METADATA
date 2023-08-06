@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: thermocepstrum
+Version: 0.3.0
+Summary: Cepstral Data Analysis of current time series for Green-Kubo transport coefficients
+Home-page: https://github.com/lorisercole/thermocepstrum
+Author: Loris Ercole, Riccardo Bertossa, Sebastiano Bisacchi
+Author-email: loris.ercole@epfl.ch
+License: GPL 3
+Keywords: cepstral data analysis thermal conductivity transport coefficients physics green-kubo
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Environment :: Console
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.12.0)
+Requires-Dist: scipy (>=0.18.1)
+Requires-Dist: matplotlib (>=2.2.0)
+Requires-Dist: future-fstrings (>=0.1.0)
+Requires-Dist: markdown2 (>=2.0.0)
+Requires-Dist: pillow (>=5.4.0)
+Requires-Dist: uncertainties (>=2.4)
+Provides-Extra: notebook
+Requires-Dist: jupyter (==1.0.0) ; extra == 'notebook'
+Provides-Extra: pre-commit
+Requires-Dist: pre-commit (>1.11.0) ; extra == 'pre-commit'
+Requires-Dist: yapf (>0.24.0) ; extra == 'pre-commit'
+Provides-Extra: testing
+Requires-Dist: tox (>=2.0) ; extra == 'testing'
+Requires-Dist: pytest (>=4.0) ; extra == 'testing'
+
+# thermocepstrum
+Code to compute thermal conductivity through cepstral analysis of heat flux time series, as described in papers:
+
+ - (cepstral analysis) [Ercole, Marcolongo, Baroni, *Sci. Rep.* **7**, 15835 (2017)](https://doi.org/10.1038/s41598-017-15843-2)
+ - (multicomponent systems) [Bertossa, Grasselli, Ercole, Baroni, *Phys. Rev. Lett.* **122**, 255901 (2019)](https://doi.org/10.1103/PhysRevLett.122.255901) ([arXiv](https://arxiv.org/abs/1808.03341))
+ - (review) [Baroni, Bertossa, Ercole, Grasselli, Marcolongo, *Handbook of Materials Modeling* (2018)](https://doi.org/10.1007/978-3-319-50257-1_12-1) ([arXiv](https://arxiv.org/abs/1802.08006))
+
+**Acknowledgment**  The development of this software is part of the scientific program of the EU MaX Centre of Excellence for Supercomputing Applications (Grant No. 676598, 824143) and has been partly funded through it.
+
+### Usage
+There is a [**GUI**](README_GUI.md) that you can try after installing everything (only Python 3).
+
+The code can be used as a **library**, for example in a Jupyter notebook.
+In the [`examples`](examples/) folder you can find some examples.
+
+Alternatively, you can run the code `analysis.py` from the **command line** without any installation procedure.
+It can execute most of the cepstral analysis routines, returning the results in a series of data files and PDF plots.
+See the [`examples/example_commandline_NaCl`](examples/example_commandline_NaCl/) folder and the help (`python analysis.py --help`) for more information.
+
+### Requirements
+#### only cepstral analysis (command line interface)
+ - Python 2.7 or 3.x
+ - numpy
+ - scipy
+ - matplotlib
+#### graphical user interface
+ - all the requirements of cepstral analysis
+ - Python 3 only
+ - tkinter
+ - future-fstrings
+ - pillow (you may need upgrade it)
+ - tk-html-widgets
+ - markdown2
+
+### Installation
+  You can simply pip-install thermocepstrum downloading it from PyPI with `pip install thermocepstrum`.
+
+  Alternatively:
+
+  1. Clone this repository: `git clone https://github.com/lorisercole/thermocepstrum.git`
+  2. Install the package with pip (dependencies will be automatically downloaded). For example:
+```
+cd thermocepstrum
+pip install .
+```
+  You are done! You can check that the installation is working by trying to run the command `thermocepstrum-analysis`.
+
+  If you use Python 3, the Graphical User Interface will be installed and can be started with the command `thermocepstrum-gui`.
+
+### Issues
+  You are strongly encouraged to report any issue on the [official](https://github.com/lorisercole/thermocepstrum/issues) GitHub issues page.
+
+
