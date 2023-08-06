@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: thaicovid19
+Version: 0.0.1
+Summary: Thai Covid-19 API
+Home-page: https://github.com/kittinan/thaicovid19
+Author: Kittinan Srithaworn
+License: MIT
+Project-URL: Bug Reports, https://github.com/kittinan/thaicovid19/issues
+Project-URL: Source, https://github.com/kittinan/thaicovid19
+Keywords: thaicovid19
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# thaicovid19
+https://covid19.th-stat.com/th/api
+
+
