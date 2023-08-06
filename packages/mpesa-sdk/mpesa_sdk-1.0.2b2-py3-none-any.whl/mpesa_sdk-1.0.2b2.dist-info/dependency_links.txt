@@ -1,0 +1,1 @@
+https://github.com/sartim/mpesa-sdk/master#egg=package-1.0
