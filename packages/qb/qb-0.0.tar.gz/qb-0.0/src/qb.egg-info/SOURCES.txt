@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.py
+src/qb/__init__.py
+src/qb.egg-info/PKG-INFO
+src/qb.egg-info/SOURCES.txt
+src/qb.egg-info/dependency_links.txt
+src/qb.egg-info/not-zip-safe
+src/qb.egg-info/top_level.txt
