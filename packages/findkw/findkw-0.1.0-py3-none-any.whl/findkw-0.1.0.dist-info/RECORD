@@ -1,0 +1,10 @@
+finder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+finder/finder.py,sha256=uRPK57AmEQGYQkJdfs-ISBqsBSXE2pggO_j74MPSdLg,5149
+findkw/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+findkw/findkw.py,sha256=uRPK57AmEQGYQkJdfs-ISBqsBSXE2pggO_j74MPSdLg,5149
+findkw-0.1.0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+findkw-0.1.0.dist-info/METADATA,sha256=U6H5xgTuQFQ1_eh6lV90-MdHGetpw6ytqskeNMoWxOI,3230
+findkw-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+findkw-0.1.0.dist-info/entry_points.txt,sha256=7BQ_cUBzNaJWxIad06xabk3Ge8hzSJkexq4wk5MKjr0,47
+findkw-0.1.0.dist-info/top_level.txt,sha256=9f2m83MeoRVM-JZ7dJIP1pld9NbBEkJ5z6hPceyPPF0,7
+findkw-0.1.0.dist-info/RECORD,,
