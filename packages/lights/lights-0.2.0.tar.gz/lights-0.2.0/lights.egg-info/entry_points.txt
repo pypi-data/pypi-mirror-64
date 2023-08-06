@@ -1,0 +1,6 @@
+[console_scripts]
+lights = lights.__init__:main
+
+[gui_scripts]
+lightsw = lights.__init__:main
+
