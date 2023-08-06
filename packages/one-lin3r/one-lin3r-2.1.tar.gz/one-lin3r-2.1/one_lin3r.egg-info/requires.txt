@@ -1,0 +1,7 @@
+terminaltables
+pyperclip
+prompt_toolkit
+
+[:platform_system == "Windows"]
+win_unicode_console
+colorama

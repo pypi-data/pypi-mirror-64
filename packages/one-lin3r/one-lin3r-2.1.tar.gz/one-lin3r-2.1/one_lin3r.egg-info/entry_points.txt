@@ -1,0 +1,3 @@
+[console_scripts]
+one-lin3r = one_lin3r.main:main
+
