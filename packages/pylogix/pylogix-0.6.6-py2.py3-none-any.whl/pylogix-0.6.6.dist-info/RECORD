@@ -1,0 +1,8 @@
+pylogix/__init__.py,sha256=LJsHaBxQBb79f3M82KNeYQJEf4P3-4RbNql9MvZxfi8,140
+pylogix/eip.py,sha256=p9hkhWihG01dnrYkeJx0ypG4i6F0PsBvXxzy1Tt1en4,80707
+pylogix/lgxDevice.py,sha256=xkxqRj1ZbIjxUjnzSxJ9pu3GToi-VbW2jyTl7VDuF_o,54805
+pylogix-0.6.6.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pylogix-0.6.6.dist-info/METADATA,sha256=q6uor-zcK4dlRQv83qkWuH-Xpfj7SYE1w8P9WVTWOks,3090
+pylogix-0.6.6.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+pylogix-0.6.6.dist-info/top_level.txt,sha256=14uNVvAcRk594HTWgxyp6WPkeskEOz-WKNEfMso2odw,8
+pylogix-0.6.6.dist-info/RECORD,,
