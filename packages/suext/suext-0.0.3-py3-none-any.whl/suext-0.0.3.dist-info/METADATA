@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: suext
+Version: 0.0.3
+Summary: Utility for showing any file extension and MIME type info. Support show files information in a directory as list or table.
+Home-page: https://github.com/arsensokolov/ext
+Author: Arseny Sokolov
+Author-email: me@arsen.pw
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Operating System :: Microsoft :: Windows :: Windows 7
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8
+Classifier: Operating System :: Microsoft :: Windows :: Windows 8.1
+Classifier: Operating System :: Microsoft :: Windows :: Windows Vista
+Classifier: Operating System :: Microsoft :: Windows :: Windows XP
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: BSD :: FreeBSD
+Classifier: Operating System :: POSIX :: BSD :: OpenBSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: Systems Administration
+Classifier: Topic :: System :: System Shells
+Classifier: Topic :: Utilities
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Requires-Dist: python-magic (==0.4.15)
+Requires-Dist: tabulate (==0.8.7)
+
+*****************
+``suext`` Utility
+*****************
+
+**Installation**
+
+``pip install suext``
+
+**Usage:**
+
+- ``suext [-t|--table] [-m|--mime] [-d|--description] <filename>``
+- ``suext [-t|--table] [-m|--mime] [-d|--description] <dirname>``
+- ``suext -h|--help``
+- ``suext -v|--version``
+
+**Options:**
+
+- ``<filename>`` Full or relative path to filename for showing file extension.
+- ``<dirname>`` Full or relative path to directory for showing all files extension in this directories.
+- ``-t --table`` Display result as table.
+- ``-m --mime`` Display mime type.
+- ``-d --description`` Display mime type description.
+- ``-h --help`` Show help screen.
+- ``-v --version`` Show current utility version.
+
+Examples
+****************
+
+**Get 1 file extension:**
+
+``$ suext README.rst``
+
+Output:
+
+``rst``
+
+**Get file extension with filename and MIME type:**
+
+``$ suext -m README.rst``
+
+Output:
+
+::
+
+    README.rst
+    rst
+    text/plain
+
+**Get file extension with filename and MIME description:**
+
+``$ suext -d README.rst``
+
+Output:
+
+::
+
+    README.rst
+    rst
+    ASCII text
+
+**Get file extension with filename, MIME type and descriptin as table:**
+
+``$ suext -t -m -d README.rst``
+
+Output:
+
+::
+
+    File name    File extension    MIME type    MIME description
+    -----------  ----------------  -----------  ------------------
+    README.rst   rst               text/plain   ASCII text
+
+**Get files extensions with filenames, MIME types and descriptions in current directory as table:**
+
+``$ suext -t -m -d .``
+
+Output:
+
+::
+
+    File name         File extension    MIME type                 MIME description
+    ----------------  ----------------  ------------------------  ------------------------------------------------
+    .gitignore        gitignore         text/plain                ASCII text
+    LICENSE           LICENSE           text/plain                ASCII text
+    README.rst        rst               text/plain                ASCII text
+    requirements.txt  txt               text/plain                ASCII text
+    setup.py          py                text/x-python             Python script, ASCII text executable
+    suext.py          py                text/x-python             Python script, ASCII text executable
+    suext.pyc         pyc               application/octet-stream  python 2.7 byte-compiled
+    upload.sh         sh                text/x-shellscript        Bourne-Again shell script, ASCII text executable
+
+
