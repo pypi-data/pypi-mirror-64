@@ -1,0 +1,12 @@
+gaussianlda/__init__.py,sha256=G6D87SaANuZDZl_E-KQqzswUiu6lEccL3e5uI_HedtE,123
+gaussianlda/model.py,sha256=a3szfC7_YX0KlDjYFI85XQakL3I2nCxePWyDR_Bv6UU,7334
+gaussianlda/prior.py,sha256=pznXX49C0TtrvSjX2zsntCdvqrNRKlskEZXPMvsFWS8,549
+gaussianlda/utils.py,sha256=KyDX7jss4uu-f0AP_tvveaiAuyzsvbDinzPqqQMWFVU,1807
+gaussianlda/trainer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gaussianlda/trainer/chol.py,sha256=P8sfVOVMe65RpQfxlj0kuHO3I0dPwWsSnop3jvaszcA,33618
+gaussianlda/trainer/chol_alias.py,sha256=XlzirbW_4D5DhwrfTLx2-3_QPfa_Qi2N3NAzc9vpGDk,39474
+gaussianlda-0.2.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+gaussianlda-0.2.0.dist-info/METADATA,sha256=0nEAHJ7HX7z_rC0Q3GtKxP2T-XjfIUC6zlDorDotJfo,3567
+gaussianlda-0.2.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+gaussianlda-0.2.0.dist-info/top_level.txt,sha256=vGUz8xAY_GIq0g7eRY3upjhDiMrs98DPuazYiwu1rYM,12
+gaussianlda-0.2.0.dist-info/RECORD,,
