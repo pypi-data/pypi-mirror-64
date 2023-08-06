@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_simulated_inlines/__init__.py
+django_simulated_inlines/admin.py
+django_simulated_inlines.egg-info/PKG-INFO
+django_simulated_inlines.egg-info/SOURCES.txt
+django_simulated_inlines.egg-info/dependency_links.txt
+django_simulated_inlines.egg-info/top_level.txt
+django_simulated_inlines/migrations/__init__.py
+django_simulated_inlines/static/django_simulated_inlines/js/simulated_inlines.js
+django_simulated_inlines/templates/admin/django_simulated_inlines/change_form.html
+django_simulated_inlines/templates/admin/django_simulated_inlines/list.html
