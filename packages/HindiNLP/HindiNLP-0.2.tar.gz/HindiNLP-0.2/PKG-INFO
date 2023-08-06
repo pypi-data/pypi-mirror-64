@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: HindiNLP
+Version: 0.2
+Summary: Specialized NLP library which provides tools to perform basic NLP tasks on Hindi Datasets
+Home-page: https://github.com/avinsit123/HindiNLPTools
+Author: avinash_swaminathan
+Author-email: s.avinash.it.17@nsit.net.in
+License: MIT
+Download-URL: https://github.com/avinsit123/HindiNLPTools/archive/v1.1.tar.gz
+Description: UNKNOWN
+Keywords: Hindi-NLP,NER,Classifier
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
