@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+vvlab/__init__.py
+vvlab/__version__.py
+vvlab.egg-info/PKG-INFO
+vvlab.egg-info/SOURCES.txt
+vvlab.egg-info/dependency_links.txt
+vvlab.egg-info/requires.txt
+vvlab.egg-info/top_level.txt
