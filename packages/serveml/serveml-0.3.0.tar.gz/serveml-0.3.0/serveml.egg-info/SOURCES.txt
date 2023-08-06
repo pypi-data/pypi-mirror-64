@@ -1,0 +1,15 @@
+README.md
+setup.py
+serveml/__init__.py
+serveml/api.py
+serveml/inputs.py
+serveml/loader.py
+serveml/outputs.py
+serveml/predictions.py
+serveml/utils.py
+serveml.egg-info/PKG-INFO
+serveml.egg-info/SOURCES.txt
+serveml.egg-info/dependency_links.txt
+serveml.egg-info/not-zip-safe
+serveml.egg-info/requires.txt
+serveml.egg-info/top_level.txt
