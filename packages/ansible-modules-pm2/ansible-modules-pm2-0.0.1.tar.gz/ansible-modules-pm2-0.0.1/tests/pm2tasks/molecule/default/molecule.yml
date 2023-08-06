@@ -1,0 +1,13 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+platforms:
+  - name: instance0
+    dockerfile: Dockerfile
+    image: pm2tasks-test
+provisioner:
+  name: ansible
+verifier:
+  name: ansible
