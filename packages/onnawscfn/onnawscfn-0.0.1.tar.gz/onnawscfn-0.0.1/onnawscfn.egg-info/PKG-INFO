@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: onnawscfn
+Version: 0.0.1
+Summary: Convenience Python module for AWS CloudFormation
+Home-page: https://onnawscfn.oznetnerd.com
+Author: Will Robinson
+Author-email: will@oznetnerd.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
