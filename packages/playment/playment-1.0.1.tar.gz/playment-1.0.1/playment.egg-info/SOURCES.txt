@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+playment/__init__.py
+playment/client_handler.py
+playment/config.py
+playment/exception.py
+playment/requests.py
+playment/response.py
+playment/utilities.py
+playment.egg-info/PKG-INFO
+playment.egg-info/SOURCES.txt
+playment.egg-info/dependency_links.txt
+playment.egg-info/requires.txt
+playment.egg-info/top_level.txt
