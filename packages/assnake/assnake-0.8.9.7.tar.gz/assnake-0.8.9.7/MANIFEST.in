@@ -1,0 +1,6 @@
+include fastentrypoints.py
+include assnake/config_internal.ini
+include setup_requirements.py
+
+recursive-include assnake/snake/ *
+recursive-include assnake/ *

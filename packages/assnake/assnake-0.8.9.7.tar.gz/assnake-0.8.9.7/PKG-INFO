@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: assnake
+Version: 0.8.9.7
+Summary: System for metagenomics data analysis
+Home-page: https://github.com/ASSNAKE/assnake
+Author: Dmitry Fedorov
+Author-email: fedorov.de@gmail.com
+License: MIT
+Download-URL: https://github.com/ASSNAKE/assnake/archive/v0.8.8.tar.gz
+Description: UNKNOWN
+Keywords: ILLUMINA,NGS,METAGENOMIC,DATA
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
