@@ -1,0 +1,14 @@
+README.rst
+setup.py
+qrpic/__init__.py
+qrpic/main.py
+qrpic.egg-info/PKG-INFO
+qrpic.egg-info/SOURCES.txt
+qrpic.egg-info/dependency_links.txt
+qrpic.egg-info/entry_points.txt
+qrpic.egg-info/requires.txt
+qrpic.egg-info/top_level.txt
+qrpic/geom/__init__.py
+qrpic/itertools/__init__.py
+qrpic/svgdom/__init__.py
+qrpic/svgdom/transforms.py
