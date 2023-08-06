@@ -1,0 +1,11 @@
+dotted/__init__.py,sha256=5EbXQ9xqS8gqrZEAGenchcN1wJff3FLN58ocbIvKr-A,126
+dotted/__main__.py,sha256=dkJsFn6FksZS5jZx6dSKBonNJxBe_vW1TtbbSHnxyoM,63
+dotted/api.py,sha256=VY8bdH3puEwe3IgJsf4_W_mC05Dym2VrI2nK99EDpFo,4240
+dotted/elements.py,sha256=-X1o3UlInJOW2bSE0kgK65RQLKNEzihOXR1QZGvt5Nw,10958
+dotted/grammar.py,sha256=J5QrysN7uULgHbQaHLuDQ9MC9cNqaENXg6LgwWivbFc,1493
+dotted/transforms.py,sha256=ldrj3sit0_cs33-nRUomQynXbYjGp9_xxY55ueNG2C0,3148
+dotted_notation-0.0.8.dist-info/LICENSE,sha256=tfaXh_Z7MeQfIHLg0fXMJDZMTHQuOiAv50Wdg2YWHbA,1066
+dotted_notation-0.0.8.dist-info/METADATA,sha256=z443DtYqxbfueptZXefkwH13ehnh-ePXMImihQPtT8Y,2946
+dotted_notation-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dotted_notation-0.0.8.dist-info/top_level.txt,sha256=WIOKmKD3PZSQxgvCgeuMB97AcNIXfzkZfTytgwtubHg,7
+dotted_notation-0.0.8.dist-info/RECORD,,
