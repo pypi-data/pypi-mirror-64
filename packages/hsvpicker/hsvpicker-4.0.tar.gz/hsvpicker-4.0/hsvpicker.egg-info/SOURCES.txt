@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+hsvpicker/__init__.py
+hsvpicker/hsv.py
+hsvpicker/test.py
+hsvpicker.egg-info/PKG-INFO
+hsvpicker.egg-info/SOURCES.txt
+hsvpicker.egg-info/dependency_links.txt
+hsvpicker.egg-info/requires.txt
+hsvpicker.egg-info/top_level.txt
