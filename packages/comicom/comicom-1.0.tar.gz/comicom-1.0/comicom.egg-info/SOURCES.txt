@@ -1,0 +1,15 @@
+README.md
+comgui-launcher.py
+comicom.py
+setup.py
+comicom/__init__.py
+comicom/arguments.py
+comicom/comgui.py
+comicom/compiler.py
+comicom/entities.py
+comicom/imgmag.py
+comicom/logger.py
+comicom.egg-info/PKG-INFO
+comicom.egg-info/SOURCES.txt
+comicom.egg-info/dependency_links.txt
+comicom.egg-info/top_level.txt
