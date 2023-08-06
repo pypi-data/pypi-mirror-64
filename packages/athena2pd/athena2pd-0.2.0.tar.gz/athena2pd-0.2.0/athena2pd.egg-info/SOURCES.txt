@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+athena2pd/__init__.py
+athena2pd/core.py
+athena2pd.egg-info/PKG-INFO
+athena2pd.egg-info/SOURCES.txt
+athena2pd.egg-info/dependency_links.txt
+athena2pd.egg-info/not-zip-safe
+athena2pd.egg-info/requires.txt
+athena2pd.egg-info/top_level.txt
