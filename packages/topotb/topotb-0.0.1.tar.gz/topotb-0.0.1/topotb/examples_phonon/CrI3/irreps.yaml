@@ -1,0 +1,303 @@
+q-position: [    0.0000000,    0.0000000,    0.0000000 ]
+transformation_matrix:
+- matrix:
+  - [  1,  0,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [  0, -1,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  0,  1,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [ -1,  1,  0 ]
+  - [ -1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  1, -1,  0 ]
+  - [  1,  0,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [  0, -1,  0 ]
+  - [ -1,  0,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [  0,  1,  0 ]
+  - [  1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [ -1,  1,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [  1, -1,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  1,  0,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- band_indices: [ 1, 2, 3 ]
+  energy: -0.0000000156  
+  ir_label: 1.0000000000040417 * GM2- + 0.9999999999979734 * GM3-
+- band_indices: [ 4, 5 ]
+  energy: 0.0072702326   
+  ir_label: 0.9999999999978835 * GM3+
+- band_indices: [ 6 ]
+  energy: 0.0093250765   
+  ir_label: 0.9999999999953662 * GM2-
+- band_indices: [ 7 ]
+  energy: 0.0162962760   
+  ir_label: 0.9999999999959522 * GM1+
+- band_indices: [ 8, 9 ]
+  energy: 0.0194784396   
+  ir_label: 0.9999999999998654 * GM3-
+- band_indices: [ 10 ]
+  energy: 0.0253145251   
+  ir_label: 0.9999999999955573 * GM2+
+- band_indices: [ 11, 12 ]
+  energy: 0.0335869906   
+  ir_label: 0.9999999999991017 * GM3+
+- band_indices: [ 13, 14 ]
+  energy: 0.0352161636   
+  ir_label: 0.9999999999978831 * GM3+
+- band_indices: [ 15, 16 ]
+  energy: 0.0389375159   
+  ir_label: 0.9999999999995965 * GM3-
+- band_indices: [ 17 ]
+  energy: 0.0523965501   
+  ir_label: 0.9999999999982594 * GM1+
+- band_indices: [ 18 ]
+  energy: 0.0526319542   
+  ir_label: 0.9999999999994846 * GM1-
+- band_indices: [ 19 ]
+  energy: 0.1380696320   
+  ir_label: 0.9999999999999625 * GM2+
+- band_indices: [ 20, 21 ]
+  energy: 0.1520296298   
+  ir_label: 0.9999999999999412 * GM3-
+- band_indices: [ 22, 23 ]
+  energy: 0.1770095199   
+  ir_label: 0.9999999999999976 * GM3+
+- band_indices: [ 24 ]
+  energy: 0.2190445807   
+  ir_label: 0.9999999999998981 * GM2-
+q-position: [    0.3333333,    0.3333333,    0.0000000 ]
+transformation_matrix:
+- matrix:
+  - [  1,  0,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  0, -1,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [ -1,  1,  0 ]
+  - [ -1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  0,  1,  0 ]
+  - [  1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [  1, -1,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- band_indices: [ 1, 2 ]
+  energy: 0.0037159607   
+  ir_label: 1.0000000004432243 * K3
+- band_indices: [ 3 ]
+  energy: 0.0060738061   
+  ir_label: 0.9999999999860567 * K1
+- band_indices: [ 4, 5 ]
+  energy: 0.0092488007   
+  ir_label: 0.9999999997605153 * K3
+- band_indices: [ 6 ]
+  energy: 0.0121659272   
+  ir_label: 0.9999999999593544 * K2
+- band_indices: [ 7, 8 ]
+  energy: 0.0126126576   
+  ir_label: 1.0000000001939502 * K3
+- band_indices: [ 9 ]
+  energy: 0.0163968654   
+  ir_label: 0.9999999999733108 * K1
+- band_indices: [ 10 ]
+  energy: 0.0258533678   
+  ir_label: 0.9999999999537508 * K1
+- band_indices: [ 11, 12 ]
+  energy: 0.0274665458   
+  ir_label: 0.9999999996337504 * K3
+- band_indices: [ 13 ]
+  energy: 0.0327838716   
+  ir_label: 0.9999999999965778 * K2
+- band_indices: [ 14, 15 ]
+  energy: 0.0397362783   
+  ir_label: 1.0000000000071214 * K3
+- band_indices: [ 16 ]
+  energy: 0.0428491420   
+  ir_label: 0.9999999999978343 * K1
+- band_indices: [ 17, 18 ]
+  energy: 0.0507106343   
+  ir_label: 0.9999999999942878 * K3
+- band_indices: [ 19 ]
+  energy: 0.1475292802   
+  ir_label: 0.9999999999994698 * K2
+- band_indices: [ 20, 21 ]
+  energy: 0.1558522372   
+  ir_label: 1.0000000004386642 * K3
+- band_indices: [ 22, 23 ]
+  energy: 0.1883667089   
+  ir_label: 0.9999999994613163 * K3
+- band_indices: [ 24 ]
+  energy: 0.1974112004   
+  ir_label: 0.9999999999993061 * K1
+q-position: [    0.5000000,    0.0000000,    0.0000000 ]
+transformation_matrix:
+- matrix:
+  - [  1,  0,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [  1,  0,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0, -1 ]
+- translation:
+  - [  0,  0, -1 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  1 ]
+- band_indices: [ 1 ]
+  energy: 0.0015784591   
+  ir_label: 0.9999999999988278 * M2+
+- band_indices: [ 2 ]
+  energy: 0.0034493931   
+  ir_label: 0.9999999999988975 * M2-
+- band_indices: [ 3 ]
+  energy: 0.0043450296   
+  ir_label: 0.9999999999954461 * M2+
+- band_indices: [ 4 ]
+  energy: 0.0083262374   
+  ir_label: 0.9999999999969358 * M1+
+- band_indices: [ 5 ]
+  energy: 0.0118292950   
+  ir_label: 0.9999999999765914 * M2-
+- band_indices: [ 6 ]
+  energy: 0.0122702355   
+  ir_label: 0.9999999999754055 * M1-
+- band_indices: [ 7 ]
+  energy: 0.0130743302   
+  ir_label: 0.9999999999969194 * M1+
+- band_indices: [ 8 ]
+  energy: 0.0150592103   
+  ir_label: 0.9999999999991938 * M2-
+- band_indices: [ 9 ]
+  energy: 0.0200548567   
+  ir_label: 0.9999999999990383 * M1-
+- band_indices: [ 10 ]
+  energy: 0.0207473639   
+  ir_label: 0.9999999999976406 * M2+
+- band_indices: [ 11 ]
+  energy: 0.0235085724   
+  ir_label: 0.9999999999982361 * M1+
+- band_indices: [ 12 ]
+  energy: 0.0341368670   
+  ir_label: 0.9999999953573716 * M2-
+- band_indices: [ 13 ]
+  energy: 0.0343335358   
+  ir_label: 0.9999999953571859 * M1-
+- band_indices: [ 14 ]
+  energy: 0.0372740713   
+  ir_label: 0.9999999999954212 * M2+
+- band_indices: [ 15 ]
+  energy: 0.0400399720   
+  ir_label: 0.999999999995447 * M1+
+- band_indices: [ 16 ]
+  energy: 0.0410543890   
+  ir_label: 0.999999999999386 * M2-
+- band_indices: [ 17 ]
+  energy: 0.0504162069   
+  ir_label: 0.9999999999998079 * M1-
+- band_indices: [ 18 ]
+  energy: 0.0515297793   
+  ir_label: 0.9999999999997811 * M1+
+- band_indices: [ 19 ]
+  energy: 0.1405177035   
+  ir_label: 0.9999999999999666 * M2+
+- band_indices: [ 20 ]
+  energy: 0.1540395383   
+  ir_label: 0.999999999999472 * M2-
+- band_indices: [ 21 ]
+  energy: 0.1651378357   
+  ir_label: 0.9999999999994381 * M1-
+- band_indices: [ 22 ]
+  energy: 0.1874167688   
+  ir_label: 0.9999999996695762 * M1+
+- band_indices: [ 23 ]
+  energy: 0.1880493952   
+  ir_label: 0.9999999996695892 * M2+
+- band_indices: [ 24 ]
+  energy: 0.1964777324   
+  ir_label: 0.9999999999999594 * M2-

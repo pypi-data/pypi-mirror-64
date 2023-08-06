@@ -1,0 +1,80 @@
+q-position: [    0.0000000,    0.0000000,    0.0000000 ]
+transformation_matrix:
+- matrix:
+  - [  1,  0,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  1, -1,  0 ]
+  - [  1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  0, -1,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [ -1,  1,  0 ]
+  - [ -1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  0,  1,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  0,  1,  0 ]
+  - [  1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  1,  0,  0 ]
+  - [  1, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  1, -1,  0 ]
+  - [  0, -1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [  0, -1,  0 ]
+  - [ -1,  0,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [ -1,  0,  0 ]
+  - [ -1,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- matrix:
+  - [ -1,  1,  0 ]
+  - [  0,  1,  0 ]
+  - [  0,  0,  1 ]
+- translation:
+  - [  0,  0,  0 ]
+- band_indices: [ 1 ]
+  energy: -3.0000000000  
+  ir_label: 1.0 * GM1
+- band_indices: [ 2 ]
+  energy: 3.0000000000   
+  ir_label: 1.0 * GM4
