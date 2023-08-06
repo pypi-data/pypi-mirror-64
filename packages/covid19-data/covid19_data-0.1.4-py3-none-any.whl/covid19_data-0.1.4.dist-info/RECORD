@@ -1,0 +1,10 @@
+covid19_data/__init__.py,sha256=xE14yIAOBp4erMfz_GdzQrtaJ1qmq71nodCsugmCWbM,2369
+covid19_data/get_data.py,sha256=hBHhxHAKVuyjPWDnTUYcl-0hV0cmuGhjzM8e6Eqbhl8,1163
+covid19_data/get_object.py,sha256=7wVcw33TFAUbjrpNGBZCobtvSHL7d4hSc3HbDYBg6B0,3789
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_get_data.py,sha256=w3yH7Z1u8iUOuvwxY-oZnBptSS-jb9kAwmek8KPaxhk,1757
+tests/test_get_object.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covid19_data-0.1.4.dist-info/METADATA,sha256=xMChVta_7V4PCKEWJlXQ0ZaT7JagCbdlUnCx9uV7VtU,1179
+covid19_data-0.1.4.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+covid19_data-0.1.4.dist-info/top_level.txt,sha256=ToAgwqJE9N7GQkU1vIyvoMjOWTQCKiEdxGgXPVNSals,19
+covid19_data-0.1.4.dist-info/RECORD,,
