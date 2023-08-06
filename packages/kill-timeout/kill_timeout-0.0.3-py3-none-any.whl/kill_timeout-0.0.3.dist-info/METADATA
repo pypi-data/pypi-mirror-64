@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: kill-timeout
+Version: 0.0.3
+Summary: Limit the function execution time
+Home-page: https://github.com/ei-grad/kill-timeout
+Author: Andrew Grigorev
+Author-email: andrew@ei-grad.ru
+License: MIT
+Project-URL: Bug Tracker, https://github.com/ei-grad/kill-timeout/issues
+Project-URL: Source Code, https://github.com/ei-grad/kill-timeout.git
+Keywords: kill,timeout
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: tblib
+
+Limit the function execution time
+=================================
+
+This module provides a decorator which runs the function in a separate
+multiprocessing.Process and sends SIGKILL after the specified timeout if the
+function didn't complete.
+
+Requirements
+------------
+
+* Python 3.7+ (needed for multiprocessing.Process.kill)
+
+Install
+-------
+
+```bash
+pip install kill-timeout
+```
+
+Usage
+-----
+
+```python
+from kill_timeout import kill_timeout
+
+
+limit_in_seconds = 5
+
+
+@kill_timeout(limit_in_seconds)
+def long_running_function(**parameters):
+    """Function which makes some computations
+
+    It could take too long for some parameters.
+    """
+    ...
+
+try:
+    result = long_running_function(iterations=9001)
+    print("Function returned: %r" % result)
+except TimeoutError:
+    print("Function didn't finished in %d seconds" % limit_in_seconds)
+except Exception:
+    print("Function failed with its internal error! Its original traceback:")
+    raise
+```
+
+
+
