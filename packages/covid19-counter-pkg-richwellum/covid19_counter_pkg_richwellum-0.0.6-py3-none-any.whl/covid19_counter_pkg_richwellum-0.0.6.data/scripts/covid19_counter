@@ -1,0 +1,502 @@
+#!python
+"""Display information about COVID19.
+
+Runs on a loop checking the number of Confirmed, Deaths and the percentage died.
+
+All data pulled from: https://github.com/CSSEGISandData/COVID-19
+
+This data is used by the John Hopkins website, but should be noted that it
+updates very slowly and has a lot of issues open complaining about the accuracy
+of the data.
+
+User can specify the interval to check, the type of display (for small
+displays), and display the record of any changes. The user can request a tweet
+on data change or force a tweet if needed.
+
+In addition there's a test option which allows you to enter your own data
+files, or make modifications.
+"""
+
+import argparse
+import json
+import os
+import shutil
+import sys
+import time
+from argparse import RawDescriptionHelpFormatter
+from datetime import datetime
+from pathlib import Path
+
+import pandas as pd
+import requests
+import urllib3
+from colorama import init
+from termcolor import colored
+from twython import Twython
+
+try:
+    from auth import ACCESS_TOKEN, ACCESS_TOKEN_SECRET, CONSUMER_KEY, CONSUMER_SECRET
+except Exception as err:
+    print(f"Note: No auth.py file found in repo: {err}\n")
+
+# Globals used to save previous vaues when a change occurs
+PREV_CONFIRMED = 0
+PREV_DEATHS = 0
+PREV_PERCENTAGE = 0
+
+# Use Colorama to make Termcolor work
+init(autoreset=True)
+
+HOME = str(Path.home())
+HISTORY_FILE = "{}/covid19_history.dat".format(HOME)
+TWEET_HASH_TAGS = "#coronavirus #covid19 #breaking #covid_19 #coronavirusoutbreak #covid2019 #coronaviruspandemic #corona #coronavirusupdates #pandemic"
+
+
+class AbortScriptException(Exception):
+    """Abort the script and clean up before exiting."""
+
+
+def parse_args():
+    """Parse sys.argv and return args."""
+    parser = argparse.ArgumentParser(
+        formatter_class=RawDescriptionHelpFormatter,
+        description="Dowload and display the latest aggregated COVID19 data from: https://github.com/CSSEGISandData/COVID-19",
+        epilog="E.g.: covid19_counter -i 600 -c",
+    )
+    parser.add_argument(
+        "-i",
+        "--interval",
+        type=int,
+        default="3600",
+        help="interval in seconds between retrieving the data again, default one hour(3600s)",
+    )
+    parser.add_argument(
+        "-s",
+        "--stored",
+        action="store_true",
+        help="view a record of all changes in a continuously running loop",
+    )
+    parser.add_argument(
+        "-c",
+        "--compact",
+        action="store_true",
+        help="compact the display to fit smaller terminals",
+    )
+    parser.add_argument(
+        "-t",
+        "--tweet",
+        action="store_true",
+        help="sends tweets on data changes, needs developer account",
+    )
+    parser.add_argument(
+        "-ft",
+        "--force_tweet",
+        action="store_true",
+        help="send a one-time tweet with current status, needs developer account",
+    )
+    parser.add_argument(
+        "-f",
+        "--force",
+        action="store_true",
+        help="bypass safety rails - very dangerous",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="store_true",
+        help="turn on verbose messages, commands and outputs",
+    )
+    parser.add_argument(
+        "-test", "--test", action="store_true", help="run with a test file",
+    )
+
+    return parser.parse_args()
+
+
+def print_banner(description):
+    """
+    Display a bannerized print.
+
+    E.g.     banner("Kubernetes Join")
+    """
+    banner = len(description)
+    if banner > 200:
+        banner = 200
+
+    # First banner
+    print("\n")
+    for _ in range(banner):
+        print("*", end="")
+
+    # Add description
+    print("\n%s" % description)
+
+    # Final banner
+    for _ in range(banner):
+        print("*", end="")
+    print("\n")
+
+
+def get_symbol(now, handle):
+    """Calculate whether the number has increased or decreased.
+
+    Provide a symbol showing direction of change, amount of change and whether
+    to store the change
+
+    Called each time for a different statistic so the handle is unique.
+    """
+    global PREV_CONFIRMED
+    global PREV_DEATHS
+    global PREV_PERCENTAGE
+
+    # If 'now' is zero, there is an issue with the data and we should not
+    # store any data, or tweet results
+    if now == 0:
+        data_changed = False
+    else:
+        data_changed = True
+
+    # Calculate the difference and marker
+    if handle == "deaths":
+        if PREV_DEATHS == 0 or PREV_DEATHS == now:
+            # Nothing has changed or nothing stored (loop started)
+            symbol = "<->"
+            diff = 0
+            data_changed = False
+        elif now > PREV_DEATHS:
+            # Number of deaths has increased
+            symbol = "^"
+            diff = "+{}".format(now - PREV_DEATHS)
+        else:
+            # Number of deaths has decreased (not possible)
+            symbol = "v"
+            diff = "-{}".format(PREV_DEATHS - now)
+            # Store new previous deaths
+        PREV_DEATHS = now
+
+    elif handle == "confirmed":
+        if PREV_CONFIRMED == 0 or PREV_CONFIRMED == now:
+            # Nothing has changed or nothing stored (loop started)
+            symbol = "<->"
+            diff = 0
+            data_changed = False
+        elif now > PREV_CONFIRMED:
+            # Number of confirmed has increased
+            symbol = "^"
+            diff = "+{}".format(now - PREV_CONFIRMED)
+        else:
+            # Number of confirmed has decreased (not possible)
+            symbol = "v"
+            diff = "-{}".format(PREV_CONFIRMED - now)
+            # Store new previous confirmed
+        PREV_CONFIRMED = now
+
+    else:  # percentage_deaths
+        now = round(now, 2)
+        if PREV_PERCENTAGE == 0 or PREV_PERCENTAGE == now:
+            # Nothing has changed or nothing stored (loop started)
+            symbol = "<->"
+            diff = 0
+            data_changed = False
+        elif now > PREV_PERCENTAGE:
+            # Number of percent_died_round has increased
+            symbol = "^"
+            diff = round(float(now - PREV_PERCENTAGE), 2)
+            diff = "+{}".format(diff)
+        else:
+            # Number of percent_died_round has decreased
+            symbol = "v"
+            diff = "-{}".format(PREV_PERCENTAGE - now)
+            diff = round(float(diff), 2)
+            # Store new previous percent_died_round
+        PREV_PERCENTAGE = now
+
+    return (symbol, diff, data_changed)
+
+
+class Covid19:
+    """Process all inputs from the user."""
+
+    pd.options.display.max_rows = None
+    pd.options.display.max_columns = None
+    pd.options.display.width = None
+
+    def __init__(self, args):
+        """Initialize all variables from argparse if any."""
+        self.force = args.force
+        self.verbose = args.verbose
+        self.stored = args.stored
+        self.test = args.test
+        self.interval = args.interval
+
+    def get_rest(self, url):
+        """Get the REST API and process the results."""
+        response = requests.request("GET", url)
+        response.raise_for_status()  # raise exception if invalid response
+        if self.verbose:
+            json_object = json.loads(response.text)
+            json_formatted_str = json.dumps(json_object, indent=2)
+            print(json_formatted_str)
+        return response.json()
+
+    def display_stored(self):
+        """Display contents of the history file.
+
+        Create it the first time.
+        """
+        if self.test:
+            return
+
+        # Create the file if it's the first time and it doesn't exist
+        if not os.path.exists(HISTORY_FILE):
+            with open(HISTORY_FILE, "w"):
+                pass
+        # Printing an empty file is boring
+        if os.stat(HISTORY_FILE).st_size == 0:
+            return
+        # Print the current stats
+        with open(HISTORY_FILE, "r") as covid_file:
+            print(colored(covid_file.read(), "red", "on_grey", ["bold"]))
+
+    def download_file(self, url):
+        """Download a url contents using urllib3."""
+        if self.test:
+            return url  # The file in the test command
+
+        http = urllib3.PoolManager()
+        local_filename = url.split("/")[-1]
+        with http.request("GET", url, preload_content=False) as req, open(
+            local_filename, "wb"
+        ) as out_file:
+            shutil.copyfileobj(req, out_file)
+        return local_filename
+
+    def display_user_inputs(self):
+        """Display all user inputs in a pretty way."""
+        if not self.verbose:
+            return
+
+        print_banner(
+            "Force = {}, Verbose = {}, History = {}, Test = {}, Interval = {}".format(
+                self.force, self.verbose, self.stored, self.test, self.interval
+            )
+        )
+
+    def get_csv_crunch_total(self, url):
+        """Grab all the confirmed cases."""
+        file = self.download_file(url)
+        df_pandas = pd.read_csv(file)
+        if not self.test:
+            os.remove(file)
+
+        if self.verbose:
+            print(df_pandas)
+
+        # Remove all but last (most recent) column
+        df_pandas = df_pandas.iloc[:, -1]
+
+        if self.verbose:
+            print(df_pandas)
+
+        total = df_pandas.sum()
+        return total
+
+
+def main():
+    """Call everything."""
+    args = parse_args()
+    if args.test:
+        sleep_interval = 10
+    else:
+        sleep_interval = args.interval
+
+    while True:
+        try:
+            covid19 = Covid19(args)
+            covid19.display_user_inputs()
+
+            # Purely view the statistics on a running loop
+            if args.stored:
+                while True:
+                    print_banner(
+                        "Historical Data {}, five minute loop:".format(HISTORY_FILE)
+                    )
+                    covid19.display_stored()
+                    time.sleep(350)  # Sleep 5m
+                    print(chr(27) + "[2J")
+
+            # datetime object containing current date and time
+            now = datetime.now()
+
+            if args.test:
+                url = "Test_Data/Deaths.csv"
+            else:
+                url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv"
+            deaths = int(covid19.get_csv_crunch_total(url))
+            deaths_symbol, deaths_diff, death_store = get_symbol(deaths, "deaths")
+
+            if args.test:
+                url = "Test_Data/Confirmed.csv"
+            else:
+                url = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv"
+            confirmed = int(covid19.get_csv_crunch_total(url))
+            confirmed_symbol, confirmed_diff, confirmed_store = get_symbol(
+                confirmed, "confirmed"
+            )
+
+            percent_died = ((deaths / confirmed) * 100) if confirmed != 0 else 0
+            percent_died_symbol, percent_died_diff, percentage_died_store = get_symbol(
+                percent_died, "percent_died_round"
+            )
+
+            dt_string = now.strftime("%m/%d/%Y %H:%M:%S")
+            message = "COVID19 Report({}):: Confirmed({})({}): {}, Deaths({})({}): {}, % Died({})({}): {}\n".format(
+                dt_string,
+                confirmed_symbol,
+                confirmed_diff,
+                confirmed,
+                deaths_symbol,
+                deaths_diff,
+                deaths,
+                percent_died_symbol,
+                percent_died_diff,
+                round(percent_died, 2),
+            )
+
+            # One time tweet of the latest data
+            if args.force_tweet:
+                tweet_message = "{} {}".format(message, TWEET_HASH_TAGS)
+                twitter = Twython(
+                    CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
+                )
+                twitter.update_status(status=tweet_message)
+                print("Tweeted: {}".format(tweet_message))
+
+            # If any change store in a file for historical purposes
+            # and send tweet if requested
+            if (
+                death_store or confirmed_store or percentage_died_store
+            ) and not args.test:
+
+                # Update log file
+                covid_file = open(HISTORY_FILE, "a+")
+                covid_file.write(message)
+                covid_file.close()
+                print("Stored: {}: '{}'".format(covid_file, message))
+
+                # If twitter alerts enable send tweet
+                if args.tweet:
+                    tweet_message = "{} {}".format(message, TWEET_HASH_TAGS)
+                    twitter = Twython(
+                        CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET
+                    )
+                    twitter.update_status(status=tweet_message)
+                    print("Tweeted: {}".format(tweet_message))
+
+            # Print header
+            test_str = ""
+            if args.test:
+                test_str = " (Test Data)"
+
+            interval_str = " {}s".format(sleep_interval)
+            print()
+            if args.compact:
+                print(
+                    colored(
+                        "({}{}) Covid19 Report{}: \n".format(
+                            dt_string, interval_str, test_str
+                        ),
+                        "cyan",
+                    )
+                )
+            else:
+                print(
+                    colored(
+                        "({}{}) Covid19 Report:{} ".format(dt_string, interval_str, test_str),
+                        "cyan",
+                    ),
+                    end="",
+                )
+
+            # Data can't be zero - or something has gone wrong - so print an
+            # error instead. Will not store or tweet either (unless forced)
+            if not (confirmed == 0 or deaths == 0):
+                # Set sleep interval to the default or inputted
+                if args.test:
+                    sleep_interval = 10
+                else:
+                    sleep_interval = args.interval
+
+                # Print Confirmed
+                print(
+                    colored(
+                        "Confirmed({})({}): {},".format(
+                            confirmed_symbol, confirmed_diff, confirmed
+                        ),
+                        "blue",
+                    ),
+                    end="",
+                )
+
+                # Print Deaths
+                print(
+                    colored(
+                        " Deaths({})({}): {},".format(
+                            deaths_symbol, deaths_diff, deaths
+                        ),
+                        "red",
+                    ),
+                    end="",
+                )
+
+                # Print percentage died
+                if args.compact:
+                    print(
+                        colored(
+                            " % Died({})({}): {}".format(
+                                percent_died_symbol,
+                                percent_died_diff,
+                                round(percent_died, 2),
+                            ),
+                            "magenta",
+                        )
+                    )
+                else:
+                    print(
+                        colored(
+                            " Percentage Died({})({}): {}".format(
+                                percent_died_symbol,
+                                percent_died_diff,
+                                round(percent_died, 2),
+                            ),
+                            "magenta",
+                        )
+                    )
+                print()
+            else:
+                # Under error condition, speed up checking for data to heal quicker
+                sleep_interval = 60
+                print(
+                    colored(
+                        "Error: data issue - Confirmed {}, Deaths {}".format(
+                            confirmed, deaths
+                        ),
+                        "red",
+                        "on_white",
+                        ["bold", "blink"],
+                    )
+                )
+
+            if args.force_tweet:
+                sys.exit()
+
+        except Exception:
+            print("Exception caught:")
+            print(sys.exc_info())
+            raise
+
+        time.sleep(sleep_interval)
+
+
+if __name__ == "__main__":
+    main()
