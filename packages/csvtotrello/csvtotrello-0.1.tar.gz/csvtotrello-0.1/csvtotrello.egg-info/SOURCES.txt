@@ -1,0 +1,9 @@
+setup.py
+csvtotrello/__init__.py
+csvtotrello/bulk_import.py
+csvtotrello.egg-info/PKG-INFO
+csvtotrello.egg-info/SOURCES.txt
+csvtotrello.egg-info/dependency_links.txt
+csvtotrello.egg-info/not-zip-safe
+csvtotrello.egg-info/requires.txt
+csvtotrello.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: csvtotrello
+Version: 0.1
+Summary: A package to bulk import csv backlog into Trello
+Home-page: https://github.com/qeude/csvtotrello
+Author: Quentin Eude
+Author-email: quentineude@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
