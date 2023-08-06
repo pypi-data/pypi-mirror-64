@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+GEDIpy/pygedi.py
+GEDIpy.egg-info/PKG-INFO
+GEDIpy.egg-info/SOURCES.txt
+GEDIpy.egg-info/dependency_links.txt
+GEDIpy.egg-info/top_level.txt
