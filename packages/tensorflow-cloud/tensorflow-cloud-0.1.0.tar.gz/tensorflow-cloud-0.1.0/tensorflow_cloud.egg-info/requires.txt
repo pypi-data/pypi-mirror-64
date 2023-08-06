@@ -1,0 +1,7 @@
+docker
+google-api-python-client
+
+[tests]
+flake8
+mock
+pytest
