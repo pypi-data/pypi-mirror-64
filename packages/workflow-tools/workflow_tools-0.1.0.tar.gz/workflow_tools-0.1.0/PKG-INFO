@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: workflow_tools
+Version: 0.1.0
+Summary: GitHub Workflow Tools
+Home-page: https://github.com/anna-money/workflow-tools
+Author: Absolutely No Nonsense Admin Ltd.
+Author-email: hello@anna.money
+License: UNKNOWN
+Description: workflow-tools
+        ==============
+        
+        CLI tools for GitHub Actions
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Topic :: Internet
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4
+Description-Content-Type: text/x-rst
