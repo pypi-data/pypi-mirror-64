@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: covasim
+Version: 0.20.0
+Summary: COVID-19 agent-based simulator
+Home-page: UNKNOWN
+Author: Cliff Kerr, Robyn Stuart, Romesh Abeysuriya, Dina Mistry, Lauren George, and Daniel Klein, on behalf of the IDM COVID-19 Response Team
+Author-email: covid@idmod.org
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Covid-19,coronavirus,SARS-CoV-2,stochastic,agent-based model
+Platform: OS Independent
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.7
