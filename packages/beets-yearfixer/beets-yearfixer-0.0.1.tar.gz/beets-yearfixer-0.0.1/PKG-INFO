@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: beets-yearfixer
+Version: 0.0.1
+Summary: ('A beets plugin for fixing `original_year` and `year` tags on audio items.',)
+Home-page: https://github.com/adamjakab/BeetsPluginTemplate
+Author: Adam Jakab
+Author-email: adam@jakab.pro
+License: MIT
+Description: [![Build Status](https://travis-ci.com/adamjakab/BeetsPluginYearFixer.svg?branch=master)](https://travis-ci.com/adamjakab/BeetsPluginYearFixer)
+        [![Coverage Status](https://coveralls.io/repos/github/adamjakab/BeetsPluginYearFixer/badge.svg?branch=master)](https://coveralls.io/github/adamjakab/BeetsPluginYearFixer?branch=master)
+        [![PyPi](https://img.shields.io/pypi/v/beets-yearfixer.svg)](https://pypi.org/project/beets-yearfixer/)
+        
+        
+        # YearFixer (Beets Plugin)
+        
+        The *beets-yearfixer* plugin finds the original_year for each of your songs by querying the MB database and finding the first release date that is associated with a specific recording.
+        
+        
+        ## Installation
+        The plugin can be installed via:
+        
+        ```shell script
+        $ pip install beets-yearfixer
+        ```
+        
+        
+Platform: ALL
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: tests
