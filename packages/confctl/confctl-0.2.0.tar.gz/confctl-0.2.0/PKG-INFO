@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: confctl
+Version: 0.2.0
+Summary: Simple configuration management
+Home-page: https://github.com/miphreal/confctl
+License: MIT
+Author: miphreal
+Author-email: miphreal@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: jinja2 (>=2.11.1,<3.0.0)
+Project-URL: Repository, https://github.com/miphreal/confctl
+Description-Content-Type: text/markdown
+
+# confctl
+
+Helps to organize you configs and how they generated, installed.
+
+
+## Installation
+
+```sh
+$ pip install confctl
+```
+
+
+## Getting started
+
+TBD
