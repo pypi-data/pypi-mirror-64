@@ -1,0 +1,16 @@
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+huiqanghui_mllib/__init__.py
+huiqanghui_mllib/_nbdev.py
+huiqanghui_mllib/huqianghuiNN.py
+huiqanghui_mllib.egg-info/PKG-INFO
+huiqanghui_mllib.egg-info/SOURCES.txt
+huiqanghui_mllib.egg-info/dependency_links.txt
+huiqanghui_mllib.egg-info/entry_points.txt
+huiqanghui_mllib.egg-info/not-zip-safe
+huiqanghui_mllib.egg-info/requires.txt
+huiqanghui_mllib.egg-info/top_level.txt
