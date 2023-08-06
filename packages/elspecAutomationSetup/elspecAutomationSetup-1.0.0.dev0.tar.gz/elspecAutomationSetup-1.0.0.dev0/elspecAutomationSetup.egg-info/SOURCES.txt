@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+elspecAutomationSetup.egg-info/PKG-INFO
+elspecAutomationSetup.egg-info/SOURCES.txt
+elspecAutomationSetup.egg-info/dependency_links.txt
+elspecAutomationSetup.egg-info/entry_points.txt
+elspecAutomationSetup.egg-info/not-zip-safe
+elspecAutomationSetup.egg-info/requires.txt
+elspecAutomationSetup.egg-info/top_level.txt
+elspecsetup/SetupScript.py
+elspecsetup/__init__.py

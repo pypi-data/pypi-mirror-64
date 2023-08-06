@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: elspecAutomationSetup
+Version: 1.0.0.dev0
+Summary: Setup for Elspec Automation
+Home-page: https://github.com/ElspecAuto/elspecsetup
+Author: Elspec Automation
+Author-email: nissimd@elspec-ltd.com
+License: MIT
+Description: Libraries needed for automation
+Keywords: elspec
+Platform: UNKNOWN
