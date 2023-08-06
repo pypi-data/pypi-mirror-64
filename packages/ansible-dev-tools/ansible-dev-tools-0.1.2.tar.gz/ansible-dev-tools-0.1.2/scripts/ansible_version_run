@@ -1,0 +1,107 @@
+#!/bin/bash
+
+# ansible_version_run - a hackish script to quickly test various ansible versions.
+#
+# Install:
+#   1) ensure ~/bin is in your $PATH
+#   2) copy the script into ~/bin twice, named ansible and ansible-playbook
+#   3) export ANSBILE_VERSION as whatever version you want to use, it defaults to latest
+#   4) run ansible or ansible-playbook (it will take a few seconds to cache the tarball)
+
+#CACHE=".vcache"
+#CACHE="/tmp/vcache"
+CACHE="/var/lib/awx/projects/.vcache"
+TARCACHE="$CACHE/tars"
+EXTRACTCACHE="$CACHE/extracted"
+
+if [[ ! -d $TARCACHE ]]; then
+    mkdir -p $TARCACHE
+fi
+if [[ ! -d $EXTRACTCACHE ]]; then
+    mkdir -p $EXTRACTCACHE
+fi
+
+download_versions() {
+    URL="https://releases.ansible.com/ansible"
+    curl --silent -o $CACHE/releases.txt ${URL}/
+    if [ "$#" -eq 0 ]; then
+        #echo "GETTING TARS"
+        TARS=$(egrep -o 'href=.*\.gz"' $CACHE/releases.txt | sed -e 's/href=//g' -e 's/\"//g' | egrep -v latest | tail -n1)
+    else
+        TARS=$(egrep -o 'href=.*\.gz"' $CACHE/releases.txt | sed -e 's/href=//g' -e 's/\"//g' | egrep -v latest | fgrep $1)
+    fi
+    for TAR in $TARS; do
+        #echo $TAR
+        TARDST="$TARCACHE/$TAR"
+        TARSRC="$URL/$TAR"
+        if [[ ! -f $TARDST ]]; then
+            #echo $TARSRC
+            curl --silent -o $TARDST $TARSRC
+            #curl -o $TARDST $TARSRC
+        fi
+    done
+}
+
+extract_versions() {
+    for TAR in $(ls $TARCACHE); do
+        #echo $TAR
+        DST="$EXTRACTCACHE/$(echo $TAR | sed 's/\.tar\.gz//')"
+        #echo $DST
+        if [[ ! -d $DST ]]; then
+            tar xzf $TARCACHE/$TAR -C $EXTRACTCACHE
+        fi
+    done
+}
+
+create_hacking() {
+    for TAR in $(ls $TARCACHE); do
+        #echo $TAR
+        DST="$EXTRACTCACHE/$(echo $TAR | sed 's/\.tar\.gz//')/hacking"
+        #echo $DST
+        if [[ ! -d $DST ]]; then
+            mkdir -p $DST
+            curl --silent -o $DST/env-setup https://raw.githubusercontent.com/ansible/ansible/devel/hacking/env-setup
+            #curl -o $DST/env-setup https://raw.githubusercontent.com/ansible/ansible/devel/hacking/env-setup
+        fi
+    done
+}
+
+#download_versions
+#extract_versions
+#create_hacking
+
+if [[ -z "$ANSIBLE_VERSION" ]]; then
+    if [[ -f $CACHE/version.lock ]]; then
+        ANSIBLE_VERSION=$(cat $CACHE/version.lock)
+        download_versions $ANSIBLE_VERSION
+        extract_versions
+        create_hacking
+    else
+        download_versions
+        extract_versions
+        create_hacking
+        ANSIBLE_VERSION=$(ls $EXTRACTCACHE | tail -n1 | sed 's/ansible-//g')
+    fi
+else
+    download_versions $ANSIBLE_VERSION
+    extract_versions
+    create_hacking
+fi
+
+
+echo "------------------------------------------------" >> $CACHE/run.log
+echo "DATE:$(date)" >> $CACHE/run.log
+echo "VERSION:$ANSIBLE_VERSION" >> $CACHE/run.log
+echo "CMD:$(basename $0) $@" >> $CACHE/run.log
+echo "ENV1:$(env)" >> $CACHE/run.log
+
+BIN_DIR="$EXTRACTCACHE/ansible-${ANSIBLE_VERSION}/bin"
+HACKING_DIR="$EXTRACTCACHE/ansible-${ANSIBLE_VERSION}/hacking"
+if [[ ! -d $HACKING_DIR ]]; then
+    echo "$HACKING_DIR does not exist"
+    exit 255
+fi
+
+source $HACKING_DIR/env-setup > /dev/null 2>&1
+echo "ENV2:$(env)" >> $CACHE/run.log
+$BIN_DIR/$(basename $0) $@
