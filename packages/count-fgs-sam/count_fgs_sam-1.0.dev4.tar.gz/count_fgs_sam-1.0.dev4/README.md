@@ -1,0 +1,390 @@
+# count_fgs_sam
+
+Count Functional Genomics Screen alignments in a SAM/BAM file with filtering
+----------------------------------------------------------------------------
+
+This program will count the alignments in a SAM/BAM file. The number of primary
+alignments that are mapped to each reference sequence are counted. The
+alignments are filtered for various criteria before counting, and (optionally)
+additional buckets of counts (for each reference) are produced.
+
+This script uses the [pysam] module. It is designed for alignments produced by
+[Bowtie 2], and relies on the AS and XS score tags.
+
+[pysam]: https://github.com/pysam-developers/pysam
+[Bowtie 2]: http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml
+
+See below for Bowtie 2 parameters to produce compatible alignments.
+
+### Command-line parameters
+
+```
+usage: count_fgs_sam [-h] [--version] [-v] [-p PERFECTSCORE]
+                     [-l EXPECTEDLENGTH] [-a UNAMBIGUOUSDELTA]
+                     [-c ACCEPTABLESCORE] [-m ACCEPTABLEMINLENGTH]
+                     [-M ACCEPTABLEMAXLENGTH] [-o OUTPUTFILE]
+                     [--show-unacceptable] [--show-ambiguous] [--show-length]
+                     [-d]
+                     inputfile
+
+positional arguments:
+  inputfile             Input SAM/BAM file, type determined by extension
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -v, --verbose         Increase logging verbosity (levels 0 to 3) (default:
+                        0)
+  -p PERFECTSCORE, --perfectscore PERFECTSCORE
+                        Cutoff for perfect alignments, must have alignment
+                        score (AS) of at least this (AS>=cutoff) (default:
+                        200)
+  -l EXPECTEDLENGTH, --expectedlength EXPECTEDLENGTH
+                        Expected length of reads, reads filtered by this
+                        length (length==expectedlength) (default: 20)
+  -a UNAMBIGUOUSDELTA, --unambiguousdelta UNAMBIGUOUSDELTA
+                        Cutoff for unambiguous alignments, reads filtered for
+                        unambiguous alignments that have alignment score (AS)
+                        minus alternative score (XS) less than equal this (AS-
+                        XS<=cutoff), XS assumed to be 0 if not present for an
+                        alignment (default: 3)
+  -c ACCEPTABLESCORE, --acceptablescore ACCEPTABLESCORE
+                        Cutoff for acceptable alignments AS>=cutoff; if
+                        specified and different from --perfectscore, counts of
+                        acceptable reads are shown (default: None)
+  -m ACCEPTABLEMINLENGTH, --acceptableminlength ACCEPTABLEMINLENGTH
+                        Minimum length for acceptable alignments (length
+                        >=minlength); if specified and different from
+                        --expectedlength, counts of shorter reads are reported
+                        (default: None)
+  -M ACCEPTABLEMAXLENGTH, --acceptablemaxlength ACCEPTABLEMAXLENGTH
+                        Maximum length for acceptable alignments (length
+                        <=maxlength); if specified and different from
+                        --expectedlength, counts of longer reads are reported
+                        (default: None)
+
+optional output options:
+  Options to included additional count buckets in output
+
+  -o OUTPUTFILE, --outputfile OUTPUTFILE
+                        Output TSV file, output to stdout if absent (default:
+                        None)
+  --show-unacceptable   Show counts of ambiguous alignments (default: False)
+  --show-ambiguous      Show counts of unacceptable alignments (default:
+                        False)
+  --show-length         Show overall counts of reads by length classes, not
+                        filtered by any other criteria; counts outside
+                        specified lengths counted as 'length-out-of-range'
+                        (default: False)
+  -d, --detailed        Turn on all optional count buckets (--show* options
+                        enabled, as well as any buckets enabled with
+                        additional threshold parameters). Note that these
+                        optional count buckets may all be zero if
+                        corresponding parameters are not used. (default:
+                        False)
+```
+
+### Detail on scoring parameters
+
+The following are parameters for scoring the alignments:
+
+  - Alignment score: The alignment score is read from the `AS` tag in the
+    alignment entry in the SAM/BAM file.
+
+  - Read length: The read length is inferred from the CIGAR alignment, or
+    if the read is unmapped, the read length is obtained from the sequence
+    in the SAM/BAM file.
+
+  - Alternative alignment score: The alternative alignment score is read from
+    the `XS` tag in the alignment entry in the SAM/BAM file.
+
+  - Alignment score delta: This is calculated as the alignment score (`AS`)
+    minus the alternative alignment score (`XS`) (i.e. `delta = AS-XS`). It
+    represents how much better the primary alignment is from the next best
+    alignment, i.e. a larger delta indicates the primary alignment is clearly
+    better than any alternatives, while a small delta may indicate that the
+    'best' alignment is ambiguous.
+
+This script expects an input file consisting of unpaired reads aligned to the
+forward strand of the references and only primary alignments. Reads/alignments
+with various SAM flags are processed as follows:
+
+  - Only primary alignments are processed by this script. All secondary or
+    supplementary alignments (SAM flags `0x100` or `0x800`)  are ignored, with a
+    warning produced by the script.  
+
+  - Any reads with the QC failed (`0x200`) or PCR/optical duplicate (`0x400`)
+    flags are ignored. No warning is produced but counts of these are logged.
+
+  - A warning is produced if paired reads (`0x1`) or alignments to the reverse
+    strand (`0x10`) are detected, although any such alignments are processed
+    normally.
+
+### Filtering criteria
+
+Based on the scoring parameters, the following filtering criteria are applied
+prior to counting the alignments:
+
+  - Perfect alignment score (`-p` or `--perfectscore`): Alignment score must be
+    at least (>=) this value for the alignment to be considered `perfect`. In
+    addition, an alignment must be of `expected-length` (below) to be considered
+    `perfect`. Therefore, any alignments with score >= this value that are not
+    of `expected-length` can be at best considered `acceptable` (below).  Any
+    read/alignment that is not `perfect` or `acceptable` is considered
+    `unacceptable`. This includes any unmapped reads. By default, only `perfect`
+    alignments are counted and reported.
+
+  - Expected length (`l` or `--expectedlength`): The read length must be equal
+    (==) to this length for an alignment resulting from the read to be
+    considered as being of `expected-length`. An alignment must be of
+    `expected-length` to be considered `perfect`, although an alignment that is
+    not of `expected-length` can still be considered to be `acceptable` if it
+    meets the `shorter` or `longer` criteria (below). Any alignment that is
+    outside expected or acceptable lengths is considered `unacceptable`. By
+    default, only alignments that are `perfect` and therefore of
+    `expected-length` are counted and reported.
+
+  - Unambiguous delta (`-a` or `--unambiguousdelta`): The alignment score delta
+    must be greater (>) than this value for the alignment to be considered
+    `unambiguous`. Any alignment with a delta less than or equal (<=) to this
+    value is considered `ambiguous`. By default, only alignments that are
+    `unambiguous` are counted and reported. Care should be used when choosing
+    this value based on the scoring scheme used. If set to too high, it is
+    possible that all alignments to certain references may be considered
+    ambiguous and not counted.  
+
+    If any reads with perfect alignments scores are found to be ambiguous, a
+    warning will be displayed since these will always be excluded from the
+    counts. It is likely that this is a configuration error. This may occur
+    if there are replicated sequences among the references (which should be
+    consolidated into a single reference sequence, and the reads realigned to
+    this new set of references), or the unambiguous delta is set too high.
+
+  - Acceptable alignment score (`-c` or `--acceptablescore`): Any non-`perfect`
+    alignments may be considered `acceptable` if their scores are at least (>=)
+    this value. By default, no `acceptable` are allowed. Providing an acceptable
+    alignment score will enable counting and reporting of `acceptable`
+    alignments, these still have to be of `expected-length` unless acceptable
+    minimum or maximum lengths are also provided.
+
+  - Acceptable minimum length (`-m` or `--acceptableminlength`): An alignment
+    from a read that is below (<) the expected length but greater than or equal
+    (>=) the acceptable minimum length will be considered `shorter`. Providing
+    an acceptable minimum length will enable counting and reporting of `shorter`
+    alignments. Alignments that are `shorter` will be considered `acceptable` if
+    they meet the acceptable alignment score threshold. If no acceptable
+    alignment score is provided, any `shorter` alignment that meets the perfect
+    score threshold will be considered `acceptable`, but in typical usage a
+    `shorter` alignment could not have a perfect alignment score and this option
+    should be combined with an acceptable alignment score.
+
+  - Acceptable maximum length (`-M` or `--acceptablemaxlength`): An alignment
+    from a read that is above (>) the expected length but less than or equal
+    (<=) the acceptable maximum length will be considered `longer`. Providing an
+    acceptable maximum length will enable counting and reporting of `longer`
+    alignments. Alignments that are `longer` will be considered `acceptable` if
+    they meet the acceptable alignment score threshold. If no acceptable
+    alignment score is provided, any `longer` alignment that meets the perfect
+    score threshold will be considered `acceptable`.
+
+These filtering criteria determine which count buckets each read/alignment
+goes into.
+
+### Count buckets
+
+Various buckets of counts are produced for each reference sequence. Each
+reference sequence is a row in the output file, with the reference sequence name
+(`ref-name`) and length (`ref-length`) reported. The buckets in the output are
+the columns (see further below for example output). In addition to the reference
+sequences, there are rows in the output file to count unmapped reads *if* they
+are included in the criteria for that count bucket (row has `ref-name` of
+`*unmapped`), the sum of all counted reads (including any counted unmapped
+reads; `**total_counted`), any excluded alignment/reads that don't meet the
+bucket criteria (`**excluded`), and the grand total of all reads
+(`***grand_total`). Note that for the `*unmapped` row, unmapped reads are
+automatically considered unacceptable and therefore excluded for most buckets
+(i.e. only counted under `**excluded` rather than being counted under
+`*unmapped`), apart for `unacceptable` buckets. The buckets that can be produced
+are given below:
+
+  - `perfect/unambiguous/expected-length` (default)
+
+  - `acceptable/unambiguous/expected-length` (enabled if an acceptable alignment
+    score is provided)
+
+  - `acceptable/unambiguous/shorter` (enabled if an acceptable minimum length is
+    provided)
+
+  - `acceptable/unambiguous/longer` (enabled if an acceptable maximum length is
+    provided)
+
+  - `perfect/ambiguous/expected-length` (enabled with `--show-ambiguous`)
+
+  - `acceptable/ambiguous/expected-length` (enabled with `--show-ambiguous` and
+     if an acceptable alignment score is provided)
+
+  - `acceptable/ambiguous/shorter` (enabled with `--show-ambiguous` and
+     if an acceptable minimum length is provided)
+
+  - `acceptable/ambiguous/longer` (enabled with `--show-ambiguous` and
+     if an acceptable maximum length is provided)
+
+  - `unacceptable/expected-length` (enabled with `--show-unacceptable`)
+
+  - `unacceptable/shorter` (enabled with `--show-unacceptable` and
+     if an acceptable minimum length is provided)
+
+  - `unacceptable/longer` (enabled with `--show-unacceptable` and
+     if an acceptable maximum length is provided)
+
+  - `unacceptable/length-out-of-range` (enabled with `--show-unacceptable`)
+
+All of the above buckets are mutually exclusive. A read cannot be in more than
+one of the above buckets (excluding the total rows). This means, for example,
+that downstream analyses should sum `perfect/unambiguous/expected-length` and
+`acceptable/unambiguous/expected-length` counts if both perfect and acceptable
+counts are to be included. Buckets for ambiguous and unacceptable counts are
+primarily meant to be used for diagnostic purposes.
+
+The following buckets for overall (total) counts can also be produced:
+
+  - `expected-length`: counts all reads that are of `expected-length`,
+    regardless of score or delta criteria (enabled with `--show-length`)
+
+  - `shorter`: counts all reads that are `shorter`, regardless of score or
+    delta criteria (enabled with `--show-length` and if an acceptable minimum
+    length is provided)
+
+  - `longer`: counts all reads that are `longer`, regardless of score or
+    delta criteria (enabled with `--show-length` and if an acceptable maximum
+    length is provided)
+
+  - `length-out-of-range`: counts all reads that are not in any of the above
+    length categories, including any shorter/longer reads where acceptable
+    minimum or maximum lengths are not provided (enabled with `--show-length`)
+
+  - `any`: counts all reads regardless of score, delta or length criteria
+    (default)
+
+By default, only `perfect/unambiguous/expected-length` and `any` counts are
+produced.
+
+
+
+Example output (formatted with spaces for presentation, actual output is
+tab-separated):
+```
+ref-name                ref-length  perfect/unambiguous/expected-length  any
+Non-Targeting___76442   20          21                                   25
+Non-Targeting___76443   20          22                                   22
+...
+*unmapped               nan         0                                    4803
+**total_counted         nan         17078                                23015
+**excluded              nan         5937                                 0
+***grand_total          nan         23015                                23015
+
+
+```
+### Suggested Bowtie 2 parameters
+
+The suggested parameters for Bowtie 2 are as follows:
+
+`
+bowtie2 --ma=10 --mp=-4,-6 --np=-6 --rdg=0,1 --rfg=0,1 --score-min=C,150,0
+--n-ceil=C,2,0 --local --norc --gbar 1 -D 20 -R 1 -N 0 -L 10 -i L,1,0
+`
+
+This uses local alignment with bonus scoring for matches (match bonus
+`--ma=10`), (lower) bonus scoring for mismatches/Ns (mismatch penalty
+`--mp=-4,-6`, N penalty `--np=-6`; negative values turn this into a bonus) and
+small gap penalties (read and reference gap penalties `--rdg=0,1 --rfg=0,1`;
+gaps at ends of the read are not penalised during local alignment, but all gaps
+are also penalised by a lack of match/mismatch bonus, i.e -10 compared to a
+match).
+
+The minimum alignment score can be set leniently (`--score-min=C,150,0`) as this
+script will do additional filtering of alignments prior to counting. The
+remaining options set a maximum of 2 Ns (`--n-ceil=C,2,0`) and the optimal
+parameters for producing to most mapped reads (determined mostly by trial and
+error `--local --norc --gbar 1 -D 20 -R 1 -N 0 -L 10 -i L,1,0`).
+
+For reads with length of 20 bp, these options will produce a perfect alignment
+score of 200, and alignment score of at least 194 with one mismatch, and a score
+of 189 to 190 with one gap (depending of whether it is internal or at ends). For
+reads of 19 bp, a maximum score of 189 to 190 is possible for alignments with no
+mismatches depending on the position of the gap. For reads of 21 bp, a maximum
+score of 200 is possible even with the additional unmatched nucleotide at the
+read ends. Ambiguous alignments can be detected based on the alternative
+alignment score, an additional mismatch will reduce the score by at least 4 and
+an additional gap will reduce the score by at least 10. Changes in the position
+of the gap or an character of a mismatch will alter score by only 0, -1 or -2.
+
+With these Bowtie 2 parameters, a perfect alignment score of 200, expected
+length of 20 and an unambiguous delta of 3 will count perfect, unambiguous
+alignments of the expected length (default parameters of `--perfectscore 200
+--expectedlength 20 --unambiguousdelta 3`). An acceptable alignment score of 194
+can be used to count alignments with one mismatch (additional parameter
+`--acceptablescore 194`). An acceptable alignment score of 189, and acceptable
+minimum and maximum lengths of 19 and 21 can also be included to detect
+unambiguous alignments with one mismatch or one gap, including those from reads
+1 nucleotide shorter or longer than expected (additional parameters
+`--acceptablescore 189 --acceptableminlength 19 --acceptablemaxlength 21`).
+
+The input SAM/BAM file does not need to be sorted or indexed prior to use in
+this script, by sorting generally reduces the size of a BAM file.
+
+
+### Performance
+
+This script is implemented in Python but has been through basic optimisations to
+increase performance. On a 3.8 Ghz Ryzen 9, this script produces detailed counts
+for about 6M reads in about 80 seconds. No multi-threading is implemented, but
+if multiple input files are to be processed, processing of each file could be
+performed in parallel.
+
+-------------------------------------------------------------------------------
+
+Author        |Tet Woo Lee
+--------------|----------------------------
+Created       | 2020-03-12
+Copyright     | © 2020 Tet Woo Lee
+License       | GPLv3
+Dependencies  | pysam, tested with v0.15.4
+
+
+### Change log
+
++ version 1.0.dev4 2020-03-28  
+  Minor improvements & additional checks/tests
+   - added different levels of verbosity
+   - warnings now produced using Python warnings module
+   - added warning for length of reference(s) not equal expected length
+   - unit tests for warnings: reference length issues, ignored alignments,
+     ambiguous perfect alignments
+   - unit test input file now has alternative alignment scores
+   - added processing additional flags: warning if paired reads detected,
+     ignore/report QC fail or duplicates, warning if reverse alignments
+     detected
+   - specifying `--acceptablescore` to be the same as `--perfectscore`, and
+     `--acceptableminlength` or `--acceptablemaxlength` to be the same as
+     `--expectedlength` produces same results as not using these parameters
+
+
++ version 1.0.dev3 2020-03-26  
+  First production version  
+   - added unit tests  
+   - PyPi and conda packaging  
+   - add additional output options  
+
+
++ version 1.0.dev2 2020-03-17  
+  Modifications to improve performance, total 5.5x speedup:
+    - 468 s to 350 s (6.4M reads) by switching from Flag to IntFlag
+    - 350 s to 134 s by modifying to use int rather than IntFlag in add_counts
+    - 134 s to 85 s by modifying to use int with flag addition or operations
+    - Further improvements possible, e.g. 70 s possible by Cythonizing as-is
+      but current performance should suffice.
+
+
++ version 1.0.dev1 2020-03-15  
+  First working version
