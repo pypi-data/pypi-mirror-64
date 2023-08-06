@@ -1,0 +1,12 @@
+README.md
+__init__.py
+agent.py
+manage.py
+setup.py
+rest_agent.egg-info/PKG-INFO
+rest_agent.egg-info/SOURCES.txt
+rest_agent.egg-info/dependency_links.txt
+rest_agent.egg-info/entry_points.txt
+rest_agent.egg-info/requires.txt
+rest_agent.egg-info/top_level.txt
+rest_agent.egg-info/zip-safe
