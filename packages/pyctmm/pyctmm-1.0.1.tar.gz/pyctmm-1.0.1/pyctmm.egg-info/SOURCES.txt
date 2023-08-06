@@ -1,0 +1,13 @@
+MANIFEST.in
+pyctmmmodule.c
+setup.py
+include/DLL_defines.h
+include/ctmm.h
+pyctmm/__init__.py
+pyctmm/libctmm.so
+pyctmm.egg-info/PKG-INFO
+pyctmm.egg-info/SOURCES.txt
+pyctmm.egg-info/dependency_links.txt
+pyctmm.egg-info/not-zip-safe
+pyctmm.egg-info/requires.txt
+pyctmm.egg-info/top_level.txt
