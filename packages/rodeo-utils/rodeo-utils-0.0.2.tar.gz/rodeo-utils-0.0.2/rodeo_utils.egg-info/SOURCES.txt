@@ -1,0 +1,9 @@
+README.md
+setup.py
+rodeo_utils/__init__.py
+rodeo_utils/rodeo2antismash.py
+rodeo_utils/rodeo_utils.py
+rodeo_utils.egg-info/PKG-INFO
+rodeo_utils.egg-info/SOURCES.txt
+rodeo_utils.egg-info/dependency_links.txt
+rodeo_utils.egg-info/top_level.txt
