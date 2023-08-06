@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+haziris/__init__.py
+haziris/version.py
+haziris.egg-info/PKG-INFO
+haziris.egg-info/SOURCES.txt
+haziris.egg-info/dependency_links.txt
+haziris.egg-info/not-zip-safe
+haziris.egg-info/top_level.txt
