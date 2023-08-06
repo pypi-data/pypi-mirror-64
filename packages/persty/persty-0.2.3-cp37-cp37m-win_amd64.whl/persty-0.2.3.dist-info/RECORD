@@ -1,0 +1,10 @@
+persty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+persty/c_util.cp37-win_amd64.pyd,sha256=ODcJ-RW_mHOTxBK9Q-8hrbh7Z2USQzIgV_8yq-E4yUU,14848
+persty/delaunay.py,sha256=BGxIXuYiTBXi8slPBlwe3JJsEkQzJIRb7J8EQnjBHWI,1240
+persty/minibox.cp37-win_amd64.pyd,sha256=CtoySuRNRPmXAAldu65rfjhbLyfWVh5KFD88ABT30KQ,12288
+persty/util.py,sha256=jkaFtbmwQQgN-56o52wte54t2mAKI_t5EZd6PlBJQnc,3354
+persty-0.2.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+persty-0.2.3.dist-info/METADATA,sha256=327a9sCgriCbeyeONOgnFY9hw_CR461ZL3vdrq_6W2M,3560
+persty-0.2.3.dist-info/WHEEL,sha256=g8eocn77V_iXxq9laUIPSuxdwRHlhOsH3tLpu1uKUvQ,106
+persty-0.2.3.dist-info/top_level.txt,sha256=syr6_iGVLdzwOGbn-nXvwoCgFarmS5IvWllEAmfgPUY,7
+persty-0.2.3.dist-info/RECORD,,
