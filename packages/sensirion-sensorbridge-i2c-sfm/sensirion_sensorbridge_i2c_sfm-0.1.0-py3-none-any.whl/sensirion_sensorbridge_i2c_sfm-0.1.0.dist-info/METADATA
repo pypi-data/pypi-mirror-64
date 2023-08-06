@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: sensirion-sensorbridge-i2c-sfm
+Version: 0.1.0
+Summary: I2C Driver for Sensirion Flow Sensors via Sensorbridge
+Home-page: https://github.com/Sensirion/python-sensorbridge-i2c-sfm
+Author: Christian Jaeggi
+Author-email: christian.jaeggi@sensirion.com
+License: BSD
+Keywords: sensirion i2c driver sfm sfm3003 sfm3019 ventilator
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, <4
+Requires-Dist: sensirion-shdlc-sensorbridge (~=0.1.1)
+Requires-Dist: enum34 ; python_version < "3.4"
+Provides-Extra: test
+Requires-Dist: flake8 (~=3.6.0) ; extra == 'test'
+Requires-Dist: mock (~=3.0.0) ; extra == 'test'
+Requires-Dist: pytest (~=3.10.0) ; extra == 'test'
+Requires-Dist: pytest-cov (~=2.6.0) ; extra == 'test'
+
+sensirion-sensorbridge-i2c-sfm
+==============================
+
+This repository contains the Python driver to communicate with Sensirion flow
+sensors over a `SensorBridge <https://www.sensirion.com/sensorbridge/>`_ using
+the IÂ²C interface.
+
+Install the package with ``pip install sensirion-sensorbridge-i2c-sfm``
+
+CHANGELOG
+---------
+0.1.0
+:::::
+- Initial release with SFM3019 support
+
+
