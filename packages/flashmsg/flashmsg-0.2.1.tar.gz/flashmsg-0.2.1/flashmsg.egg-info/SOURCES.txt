@@ -1,0 +1,7 @@
+README.md
+flashmsg.py
+setup.py
+flashmsg.egg-info/PKG-INFO
+flashmsg.egg-info/SOURCES.txt
+flashmsg.egg-info/dependency_links.txt
+flashmsg.egg-info/top_level.txt
