@@ -1,0 +1,35 @@
+<head>
+	<script type="text/javascript" src="{{ url_for('static', filename='socket.io.slim.js') }}"></script>
+	<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles.css') }}">
+	<script type="text/javascript" src="{{ url_for('static', filename='main.js') }}"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<!--	<script type="text/javascript" src="{{ url_for('static', filename='vue.min.js') }}"></script>-->
+	<style> {{css}} </style>
+</head>
+<body>
+	<div id='app'>
+	<div class='cell' v-for="cell in cells" v-bind:key='cell.hash' id='cell.hash'>
+	<div class='top'>
+	[[ cell.time ]]
+	</div>
+	<div class='maincode'>
+	<div v-html='cell.code'></div>
+	</div>
+	<div class='bottom'>
+	<div class='termout'>
+	<div class='stdout' v-if='cell.stdout'>
+	Standard Output:<br>
+	<div v-html='cell.stdout'></div>
+	</div>
+	<div class='stderr' v-if='cell.stderr'>
+	Standard Error:<br>
+	<div v-html='cell.stderr'></div>
+	</div>
+	</div>
+	<div class='plot'>
+	<div v-html='cell["image/png"]'></div>
+	</div>
+	</div>
+	</div>
+	</div>
+</body>
