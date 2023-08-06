@@ -1,0 +1,7 @@
+README.md
+setup.py
+cjkstr/__init__.py
+cjkstr.egg-info/PKG-INFO
+cjkstr.egg-info/SOURCES.txt
+cjkstr.egg-info/dependency_links.txt
+cjkstr.egg-info/top_level.txt
