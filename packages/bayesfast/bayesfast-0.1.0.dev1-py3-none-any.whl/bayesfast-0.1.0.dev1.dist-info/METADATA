@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: bayesfast
+Version: 0.1.0.dev1
+Summary: Next generation Bayesian analysis tools for efficient posterior sampling and evidence estimation.
+Home-page: https://github.com/HerculesJack/bayesfast
+Author: He Jia and Uros Seljak
+Maintainer: He Jia
+Maintainer-email: he.jia.phy@gmail.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: cython
+Requires-Dist: dask
+Requires-Dist: distributed
+Requires-Dist: numdifftools
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
+UNKNOWN
+
+
