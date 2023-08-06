@@ -1,0 +1,27 @@
+include README.rst
+include CHANGES.rst
+
+include ez_setup.py
+include setup.py
+include setup.cfg
+
+recursive-include imexam *
+recursive-include docs *
+recursive-include licenses *
+recursive-include scripts *
+recursive-include wrappers *
+recursive-include cextern *
+
+
+exclude cextern/xpa/.git
+exclude cextern/xpa/.gitignore
+exclude cextern/xpa/man
+exclude cextern/xpa/doc
+exclude cextern/xpa/notes
+global-exclude *.pyc *.o
+
+
+prune docs/build
+prune docs/api
+prune build
+prune dist

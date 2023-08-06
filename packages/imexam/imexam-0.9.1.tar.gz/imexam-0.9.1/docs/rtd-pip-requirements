@@ -1,0 +1,11 @@
+astropy
+scipy
+numpy
+matplotlib
+Cython
+ginga
+ipython
+astropy-sphinx-theme
+pytest-astropy 
+sphinx-astropy
+sphinx-automodapi

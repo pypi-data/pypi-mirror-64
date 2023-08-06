@@ -1,0 +1,16 @@
+numpy>=1.14
+scipy>=0.18
+astropy>=3.0
+matplotlib
+
+[docs]
+sphinx
+sphinx-automodapi
+sphinx-astropy
+graphviz
+
+[photometry]
+photutils
+
+[tests]
+pytest

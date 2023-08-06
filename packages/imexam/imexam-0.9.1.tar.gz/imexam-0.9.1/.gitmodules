@@ -1,0 +1,3 @@
+[submodule "cextern/xpa"]
+	path = cextern/xpa
+	url = https://github.com/ericmandel/xpa.git
