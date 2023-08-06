@@ -1,0 +1,14 @@
+vsc/__init__.py,sha256=ByjLkfqWZTBwYCCxFecifGDLn0bxSRqRRqzyKqeEM7M,1882
+vsc/__main__.py,sha256=6aJ379hOCikfftTwvxPVPjFanHqAqfHBliuIMy9dRCs,902
+vsc/attrs.py,sha256=MK6J-0qDKahgTaWCh1MTn7wuE9Y1NgQgerQCh6Ivtec,1541
+vsc/constraints.py,sha256=t1HaMBiQA1rtvoAna8nbyARlqx-OVBM3E7ViYsB3Yvs,5921
+vsc/coverage.py,sha256=El9jrHdaEqyevo-pZUiBxNA6dJTkRTgtRZgrZSDm2d0,17000
+vsc/methods.py,sha256=G2EXR-lp7DQW4BDMpbGq0dXSWPjcw5SxVzFMoQSEgrU,1736
+vsc/rand_obj.py,sha256=5TUa8ALTDapdZH9dxPjRD9NfSpRtIGqUZcIV9-7DMfU,13612
+vsc/types.py,sha256=Lk-GQ23zBifoPQAy2_8JE9f1qBXWnUy7ARWUfbwQBHw,12383
+pyvsc-0.0.1.20200327.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyvsc-0.0.1.20200327.1.dist-info/METADATA,sha256=7AHgvrOt9VkzdtY5WCWOOQC2IerjIJDnvG1x073MHtY,461
+pyvsc-0.0.1.20200327.1.dist-info/WHEEL,sha256=kGT74LWyRUZrL4VgLh6_g12IeVl_9u9ZVhadrgXZUEY,110
+pyvsc-0.0.1.20200327.1.dist-info/entry_points.txt,sha256=Dbo9akIaPDhCtLwevcwH9qEFCt-lyDdfyLV2gyhD1Gs,43
+pyvsc-0.0.1.20200327.1.dist-info/top_level.txt,sha256=GgPgqj2KcQ-10o6VsQQY0JHQbvGF-3RkKO4Tm5qPN_Q,4
+pyvsc-0.0.1.20200327.1.dist-info/RECORD,,
