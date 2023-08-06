@@ -1,0 +1,9 @@
+setup.py
+calctc21.egg-info/PKG-INFO
+calctc21.egg-info/SOURCES.txt
+calctc21.egg-info/dependency_links.txt
+calctc21.egg-info/entry_points.txt
+calctc21.egg-info/not-zip-safe
+calctc21.egg-info/requires.txt
+calctc21.egg-info/top_level.txt
+funniest/__init__.py

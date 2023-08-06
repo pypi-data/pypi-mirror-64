@@ -1,0 +1,3 @@
+[console_scripts]
+calctc2 = calctc2.cli:main
+

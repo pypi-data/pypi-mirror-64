@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: calctc21
+Version: 1.1.0
+Summary: Python Boilerplate contains all the boilerplate you need to create a Python package.
+Home-page: https://github.com/marklaszlo9/calctc2
+Author: Mark
+Author-email: audreyr@example.com
+License: MIT license
+Description: UNKNOWN
+Keywords: calctc21
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
