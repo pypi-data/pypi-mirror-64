@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: llabs
+Version: 1.1.0
+Summary: LLabs - Automatic DLA finder algorithm for D/H candidates
+Home-page: https://gitlab.com/astroquasar/programs/llabs
+Author: Vincent Dumont
+Author-email: vincentdumont@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: matplotlib
+Requires: scipy
+Requires: pandas

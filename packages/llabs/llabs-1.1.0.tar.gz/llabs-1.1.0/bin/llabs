@@ -1,0 +1,131 @@
+#!/usr/bin/env python
+###############################################################################
+# Copyright (c) 2019, DLA finder.
+# Produced at the Lawrence Berkeley National Laboratory..
+# Written by V. Dumont (vincentdumont11@gmail.com).
+# All rights reserved.
+# This file is part of LLABS.
+# For details, see astroquasar.gitlab.io/llabs
+# For details about use and distribution, please read LLABS/LICENSE.
+###############################################################################
+
+import llabs,os,sys,argparse,numpy,pandas
+parser = argparse.ArgumentParser(prog='llabs',description='Damped Lyman-Alpha systems finder.',epilog='NOTE: In order to stop scanning the spectra from the infile.dat, you can type "touch stop" in the terminal in the running directory, the loop will stop after completion of the currently processed spectrum.')
+parser.add_argument('operation',help='Operation to be performed.',choices=['scan','replot','update','metallicity','hist','regions','key','stat','metals','multi','allstats'])
+parser.add_argument('filename', help='List of quasar spectra, output log file, or single quasar spectrum path.')
+parser.add_argument('-b','--bin',metavar='',type=int,default=47,help='Change binning for histogram')
+parser.add_argument('--dlafit',action='store_true',help='Fit the DLA candidate')
+parser.add_argument('--dlasearch',action='store_true',help='Search for DLA candidate')
+parser.add_argument('--dvlyamax',metavar='',type=float,default=20000,help='Maximum velocity dispersion for Lyman alpha line')
+parser.add_argument('--dvtrans',metavar='',type=float,default=50,help='Velocity dispersion of higher Lyman transitions')
+parser.add_argument('--irange',metavar='',type=int,default=10,help='Pixel interval over which fluctuations are evaluated')
+parser.add_argument('--fit',action='store_true',help='Performed fitting of plotted data')
+parser.add_argument('--limshift',metavar='',type=float,default=10000,help='Shift upper limit for unphysically large shifts')
+parser.add_argument('--limsnr',metavar='',type=float,default=0,help='SNR lower limit to discard noisy candidates')
+parser.add_argument('--manual',action='store_true',help='Manually select the edges and the limit Lyman')
+parser.add_argument('--maskwidth',metavar='',type=float,default=0.5,help='Additional fraction of the saturated region')
+parser.add_argument('--metals',metavar='',help='Provide list of metal transitions for statistical plots')
+parser.add_argument('--nodla',action='store_true',help='Do not look for Damped Lyman system')
+parser.add_argument('--noplot',action='store_true',help="Don't plot the figures")
+parser.add_argument('-o','--output',metavar='',help='Output figure filename')
+parser.add_argument('--replot',action='store_true',help='Plot the figures based on the log file results')
+parser.add_argument('--reset',action='store_true',help='Uncomment infile.dat content and re-scan the spectra')
+parser.add_argument('--resolution',required=True,help='Spectrograph used',choices=['low','high'])
+parser.add_argument('--reval',action='store_true',help='Re-evaluate SNR and metal absorption for each system')
+parser.add_argument('--stdev',metavar='',type=float,default=2.5,help='Standard deviation threshold for significant SNR')
+parser.add_argument('-v','--verbose',action='store_true',help='Do verbose')
+parser.add_argument('-x','--xlimits',metavar='',type=int,nargs=2,default=[0,10000],help='Limit on x axis.')
+parser.add_argument('--zabs',metavar='',type=float,help='Specify DLA absorption redshift')
+args = parser.parse_args()
+
+###############################################################################
+# Perform spectrum scanning and search for Lyman-limit region
+###############################################################################
+
+if args.operation=='scan' and args.filename.endswith('log')==False:
+    if 'infile' in sys.argv[1]:
+        if 'z3399255' not in os.getenv('PWD') and '--reset' in sys.argv:
+            os.system("sed -i '' 's,!,,' "+sys.argv[1])
+        qsolist = np.loadtxt(sys.argv[1],dtype=object,comments='!',ndmin=2)
+        qsolist = dict(zip(qsolist[0], qsolist[1:].T))
+    else:
+        qsolist = {}
+        qsolist['path'] = [sys.argv[1]]
+    n = 1
+    for i in range(len(qsolist['path'])):
+        proceed         = False
+        wa,fl = [],[]
+        filename   = qsolist['path'][i]
+        spectrum   = re.split(r'[/.]',filename)
+        qsoname    = spectrum[-2]
+        zalpha     = float(qsolist['zabs'][i]) if ('zabs' in qsolist and qsolist['zabs'][i]!='-') else zabs if zabs!=None else float('nan')
+        dvshift    = float('nan')
+        dlawidth   = float('nan')
+        waalpha    = float('nan')
+        walldla    = float('nan')
+        N          = float('nan')
+        b          = float('nan')
+        flag       = None
+        if os.path.exists('./candidates/dla/'+qsoname+'.pdf'):
+            os.system('rm ./candidates/dla/'+qsoname+'.pdf')
+        if os.path.exists('./candidates/limit/'+qsoname+'.pdf'):
+            os.system('rm ./candidates/limit/'+qsoname+'.pdf')
+        if os.path.exists('./candidates/spec/'+qsoname+'.pdf'):
+            os.system('rm ./candidates/spec/'+qsoname+'.pdf')
+        if os.path.exists(filename)==True:
+            proceed = True
+            print('\n',n,' ======================================',qsoname,'\n')
+            llabs.readspec()
+            if len(wa)==0:
+                print('|  |- Zero flux everywhere, spectrum not usable.')
+                proceed = False
+                n += 1
+        if proceed==True:
+            if '--manual' in sys.argv:
+                llabs.ManualScan()
+            else:
+                print('|- Start automatic scanning...')
+                llabs.AutoScan()
+            if '--dlafit' in sys.argv:
+                llabs.maskdef()
+                llabs.fitHI()
+            llabs.equiwidth()
+            llabs.fraction()
+            llabs.snrestimator()
+            llabs.update()
+            if '--noplot' not in sys.argv:
+                if flag=='dlafound':
+                    llabs.plotdla()
+                else:
+                    llabs.wholespec()
+            print('|- End of scanning.')
+            n += 1
+        if 'z3399255' not in os.getenv('PWD') and sys.argv[1]=='infile.dat':
+            os.system("sed -i '' 's,"+filename+",!"+filename.replace('!','')+",' "+sys.argv[1])
+        if os.path.exists('./stop')==True:
+            os.system('rm stop')
+            break
+
+###############################################################################
+# Produce statistical plots
+###############################################################################
+
+if args.operation!='scan':
+    data = pandas.read_fwf(args.filename)
+    iremove1 = numpy.where(data['shift']>args.limshift)[0]
+    iremove2 = numpy.where(data['SNR']<args.limsnr)[0]
+    iremove = numpy.append(iremove1,iremove2)
+    data = data.drop(iremove)
+    print('|-',len(data['QSO']),'Lyman limit shifts reported.')
+if args.operation=='replot': llabs.replot(data)
+if args.operation=='update': llabs.update()
+if args.operation=='metallicity': llabs.getmetallicity(data,args.metals)
+if args.operation=='hist': llabs.llhist(data,args.bin,args.output,args.fit,args.xlimits)
+if args.operation=='regions': llabs.llregions2()
+if args.resolution=='high':
+    if args.operation=='key': llabs.keyfig()
+    if args.operation=='stat': llabs.statplots()
+    if args.operation=='metals': llabs.metalplots()
+    if args.operation=='multi': llabs.multiplots()
+elif args.operation in ['key','stat','metals','multi']:
+    print('Operation {%s} only available for high-resolution systems. Abort.'%args.operation)

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Create histogram for SDSS DR12
+llabs infile.log \
+      --resolution low \
+      --bin 20
+# To run from /runs/criteria4/UVES+HIRES
+llabs infile.log \
+      --resolution high \
+      --ntrans 5
