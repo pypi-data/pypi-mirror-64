@@ -1,0 +1,14 @@
+codc.py,sha256=5wVLMnNxV1jf0hSfzZ_SJrJlWGweEM-CcieulXgnPwM,16512
+pyodc/__init__.py,sha256=2eBTu7obp3d7I6J4k5Fa3KojS98EnsT3CLeZcbE53lE,172
+pyodc/codec.py,sha256=SaPWsx4BFeTVmIGEPKUIpttwNIGb4yDi1BGp1yf0YSU,13974
+pyodc/constants.py,sha256=eOrLAAE03toKQxAhAIp7X_w-A5sCpxIw-529-8KujUQ,954
+pyodc/encoder.py,sha256=87p79lDxD5hZLAkblL3B0uiPC-sIQdoQJAyhFMg1G8M,6000
+pyodc/frame.py,sha256=5X6z_3EcHSMPTcjLcR0tBwItRDPF0N86P24_Eb7IGOw,7307
+pyodc/reader.py,sha256=DHZs7z1I8XrKQtQocYBy7W4AXhD77KB0hnzXTNjKcJk,1471
+pyodc/stream.py,sha256=nJKtIdwiwZxsDkMk8xKII55sQbxo_iXCOZnv60sPaNo,2807
+pyodc-1.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyodc-1.0.1.dist-info/METADATA,sha256=70LrWqpOjxMDCPnUnje6UELLsF5svuILfGBiFcFWAPA,2886
+pyodc-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pyodc-1.0.1.dist-info/top_level.txt,sha256=ltqgoTmYoglimXOojd7WVtN0raECgx8VjmgjKzm4GWU,11
+pyodc-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyodc-1.0.1.dist-info/RECORD,,
