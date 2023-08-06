@@ -1,0 +1,11 @@
+rsparam/__init__.py,sha256=6BU9bTrdCywoiuXYGTJ0Xh2P4MPP3Lb_KPswoyan21o,8229
+rsparam/cli.py,sha256=OhfqV3ngJVowZX87TBX4thHJ4OHUwouVrjTXjxCfMLg,12407
+rsparam/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsparam/tests/clitests.sh,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsparam/tests/file1.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsparam/tests/file2.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rsparam-0.1.15.dist-info/entry_points.txt,sha256=iyYc8qrdVlQI1KQ8icJ2lqotcYqo7S0ceEflTvCuf6s,44
+rsparam-0.1.15.dist-info/LICENSE,sha256=Jfmre2DUtoThnHUesmF3esW8mA0xw1BhbAtJiTEB-0c,1073
+rsparam-0.1.15.dist-info/WHEEL,sha256=VCdoNBk3hWpF-6e5lKoFTDe2J_z3c2Yvza9_dZz7drc,99
+rsparam-0.1.15.dist-info/METADATA,sha256=7O2Lj_jCrKK3lSbD_jtv1ad3-LO2u5wSN89C2IQ5NKk,365
+rsparam-0.1.15.dist-info/RECORD,,
