@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: django-sqs-mq
+Version: 0.0.1
+Summary: A simple wrapper for boto3 for receive, and sending, to an AWS SQS queue.
+Home-page: https://github.com/firestarry/django-sqs.git
+Author: whj
+Author-email: whj@linuxbs.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: django (>=1.11.29)
+Requires-Dist: boto3 (>=1.12.33)
+
+# python-sqs-queue
+
+# 概括
+
+## 说明
+本包名字为*packer*,使用方法包括...
+
+### 打包方法
+
+### 安装方法
+
+### 参数说明
+
+### 错误反馈
+
