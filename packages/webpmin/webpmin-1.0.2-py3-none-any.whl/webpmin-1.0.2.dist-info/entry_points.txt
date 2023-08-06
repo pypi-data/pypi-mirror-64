@@ -1,0 +1,3 @@
+[console_scripts]
+webpmin = webpmin.__main__:main
+
