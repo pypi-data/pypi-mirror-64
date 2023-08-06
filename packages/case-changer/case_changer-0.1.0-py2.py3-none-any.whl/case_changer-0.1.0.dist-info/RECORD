@@ -1,0 +1,11 @@
+case_changer/__init__.py,sha256=WHfCxo1rAL6-lUuzCBcBD3sidMwrCU54ABhlXkdoMVs,388
+case_changer/__main__.py,sha256=UVBSy1jW31FxTpzSuQNs-Udpm5otB9a3JmmRzNGxe00,385
+case_changer/changers.py,sha256=ugtwnqNR1M_WsIQ1jvMHaWtFHg80fPK78f87d4D9ypQ,7450
+case_changer/cli.py,sha256=EwdGkikNgmvSTZv5dJ-9ywG9fdlwJffxGr3AhoUKG5o,990
+case_changer-0.1.0.dist-info/AUTHORS.rst,sha256=s0rizm-IXBXv0mwndGlNzZhvFKjF727dMCuUz6mv_kc,67
+case_changer-0.1.0.dist-info/LICENSE,sha256=j6AIwIf_K1aqB5zeLJwYyO8YA3KcupZFF_UJJyUspmY,1110
+case_changer-0.1.0.dist-info/METADATA,sha256=K3tUmEEwohDM4WRWPqOCorN6yOpcEbMmUMOvSesibqU,2407
+case_changer-0.1.0.dist-info/WHEEL,sha256=6T3TYZE4YFi2HTS1BeZHNXAi8N52OZT4O-dJ6-ome_4,116
+case_changer-0.1.0.dist-info/entry_points.txt,sha256=htlsgy23rH3ugfH846Y4CGsGBtDl9u0zDo-t5c_mBP4,55
+case_changer-0.1.0.dist-info/top_level.txt,sha256=16l7Wo8iXUU73XNm1WbewEp6O7GqNIlxTKLfReGAI_Q,13
+case_changer-0.1.0.dist-info/RECORD,,
