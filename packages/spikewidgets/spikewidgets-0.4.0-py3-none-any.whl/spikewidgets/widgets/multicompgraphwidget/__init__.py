@@ -1,0 +1,1 @@
+from .multicompgraphwidget import plot_multicomp_graph
