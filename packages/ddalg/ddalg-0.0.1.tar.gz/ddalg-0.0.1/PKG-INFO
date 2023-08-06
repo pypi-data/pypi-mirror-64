@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ddalg
+Version: 0.0.1
+Summary: Algorithms and data structures for my Python projects
+Home-page: https://github.com/ielis/ddalg
+Author: Daniel Danis
+Author-email: daniel.gordon.danis@gmail.com
+License: GPLv3
+Description: # ddalg
+        Algorithms and data structures for my Python projects
+        
+Keywords: algorithms python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
