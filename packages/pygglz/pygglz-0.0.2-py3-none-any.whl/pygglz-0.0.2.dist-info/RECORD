@@ -1,0 +1,13 @@
+pygglz/__init__.py,sha256=-kwFuI3SnwirHr2411jbLISwuoiaVts2sWiSjDjQshE,136
+pygglz/context_locator.py,sha256=sWc3WO5paXkSS_IAbpTDSxItpThtVMZ2eqMGc_YxYLY,891
+pygglz/dynamodb_repository.py,sha256=Otu3aewqg2VJ4HebXaZ5D3hqyEe6nqF-GDLMHVNzhQw,1553
+pygglz/feature_context.py,sha256=8l3cWUttzwYK64FlBwMYiZmvpbZjD7yAneAnOlrohLM,1948
+pygglz/feature_snapshot.py,sha256=rnn0NybCxDfYJbyvC9VPEeZm7cjuEeyTU9SYhEffVnw,900
+pygglz/feature_state.py,sha256=9ZwJcwnD0XPSwhqPUVVvhRUPlhlfvVBg0OP9gLIArS0,142
+pygglz/features.py,sha256=eEu04LkNgSeoSDVNLBtaYRkPasg2HXDsAVVj12S9oDU,2112
+pygglz/file_repository.py,sha256=VBcYgbWzDMIDwd93dTkPTAK80BSHjxdNXk_yhdg5toA,722
+pygglz/state_repository.py,sha256=1EqKXMn35M9LO5omcD66venhXMeo6Hqiz7kQz0J_aWY,877
+pygglz-0.0.2.dist-info/METADATA,sha256=y2jSaqRQTPQd3oI1Uv8_0DiOQj6i3wQ5O-xhTSSxsRk,1480
+pygglz-0.0.2.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+pygglz-0.0.2.dist-info/top_level.txt,sha256=V18jl9fI3ueXJX38KLVkVfaEmK6wq4aLZz_FyuZbzqU,7
+pygglz-0.0.2.dist-info/RECORD,,
