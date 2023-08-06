@@ -1,0 +1,9 @@
+README.md
+setup.py
+pomegranate_mathematica/__init__.py
+pomegranate_mathematica.egg-info/PKG-INFO
+pomegranate_mathematica.egg-info/SOURCES.txt
+pomegranate_mathematica.egg-info/dependency_links.txt
+pomegranate_mathematica.egg-info/not-zip-safe
+pomegranate_mathematica.egg-info/requires.txt
+pomegranate_mathematica.egg-info/top_level.txt
