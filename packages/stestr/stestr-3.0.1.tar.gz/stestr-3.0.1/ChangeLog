@@ -1,0 +1,120 @@
+CHANGES
+=======
+
+3.0.1
+-----
+
+* use python-requires metadata instead of requires-python
+* Remove universal flag from release job
+
+3.0.0
+-----
+
+* Update README\_ja.rst
+* Update README in preparation for release 3.0.0
+* Update test-requirements to be py3 only
+* Remove six usage from testr\_to\_stestr
+* Bump python-subunit minimum to 1.4.0
+* Remove universal wheel tag from setup.cfg
+* Remove six from tests and requirements
+* Fix line length issue from pyupgrade
+* Treat bytes and strings differently
+* Remove outdated tox envs
+* Run pyupgrade on repo
+* Fix import issues
+* Remove 2.7 ci jobs
+* Remove six usage from stestr code
+* Fix typo bug in list\_tests() error code
+* Remove sys.version switches for python2.7
+* Update package metadata for python2 removal
+
+2.6.0
+-----
+
+* Add python 3.8 macOS and windows ci jobs
+* Update test\_processor.py
+* Update config\_file.py
+* Update cli.py
+* Remove 3.8 azure pipelines jobs
+* Update stestr/scheduler.py
+* Update to recent hacking version
+* Add Python 3.8 support
+* Add --pdb flag to stestr run
+* Add unit tests around repo initialize
+* Handle empty .stestr directory to initialize
+* Update issue templates
+* Escape Windows paths
+* Stop encoding attachments text
+
+2.5.1
+-----
+
+* Remove stray reference to removed short form of --random
+* Remove abbreviated option for stestr run --random
+* Only use stdlib based unittest runner for py >=3.5
+
+2.5.0
+-----
+
+* Handle NoneType timestamps in subunit results
+* Add links to translated version README
+* Add README\_ja.rst
+* Update docs
+* Revert to the trimmed stdout usage
+* Revert to previous stdout and remove usage modification
+* Revert "Add back more of the \_get\_runner() logic"
+* Add back more of the \_get\_runner() logic
+* Remove unused bits from test runner
+* Use StringIO instead of tempfile
+* Remove console script entrypoint for the runner
+* Add license to package metadata
+* Add unit tests for output functions
+* Add mailmap file to deduplicate authors list
+* Add custom test runner and remove testtools runner dependency
+* Fix edge case where there are no test times in output
+* Mention IRC channel in README
+
+2.4.0
+-----
+
+* Add macOS azure pipelines
+* Use Azure DevOps build badge instead of appveyor
+* Add Deprecation warning on cli usage with py2.7
+* Remove appveyor config
+* Install vcpython27 when python.version is 2.7
+* Set up CI with Azure Pipelines
+* Add release automation for pypi artifacts
+* Rework logic for suppress attachments and all attachments
+* Add readme note about python 2 eol in readme
+* Cap sphinx version <2.0.0 when python2.7
+* Add flag to print all attachments for successful tests
+* Add skips on windows
+* Discover python executable when discover is not used
+* Update copyright year
+* Use str instead of six.text\_type for python2.7
+* Fix pep8 error
+* Update stestr/repository/memory.py
+* Add support to repositories for storing run metadata
+* Use yaml.safe\_load instead of yaml.load
+* Take care of 'concurrency is None' case
+
+2.3.1
+-----
+
+* Add sanity check unittests
+* Use to\_int in both CLI and Python API
+* Ensure concurrency is always an int
+
+2.3.0
+-----
+
+* Update package metadata in setup.cfg
+* Inline CONTRIBUTING.rst in README.rst and add to docs
+* Add links to GitHub repo and project-urls to metadata
+* Move from get\_description() to class docstrings part-2
+* Switch from get\_descripition() to class docstrings
+* Fix whitespace lint
+* Gracefully handle the case when sys.executable is None
+* Add error message for invalid concurrency value
+* Turn on debug loggin by default
+* Update docs for exit codes with --subunit flags
