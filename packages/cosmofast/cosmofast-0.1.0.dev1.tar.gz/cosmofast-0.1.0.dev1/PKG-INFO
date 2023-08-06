@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: cosmofast
+Version: 0.1.0.dev1
+Summary: Cosmology add-ons for the BayesFast package.
+Home-page: https://github.com/HerculesJack/cosmofast
+Author: He Jia and Uros Seljak
+Maintainer: He Jia
+Maintainer-email: he.jia.phy@gmail.com
+License: Apache License, Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3

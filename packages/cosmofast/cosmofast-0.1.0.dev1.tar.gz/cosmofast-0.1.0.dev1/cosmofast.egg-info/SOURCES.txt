@@ -1,0 +1,7 @@
+README.md
+setup.py
+cosmofast.egg-info/PKG-INFO
+cosmofast.egg-info/SOURCES.txt
+cosmofast.egg-info/dependency_links.txt
+cosmofast.egg-info/requires.txt
+cosmofast.egg-info/top_level.txt
