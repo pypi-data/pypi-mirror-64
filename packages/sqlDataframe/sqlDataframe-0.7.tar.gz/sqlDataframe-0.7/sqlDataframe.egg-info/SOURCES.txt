@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+sqlDataframe/__init__.py
+sqlDataframe/main.py
+sqlDataframe.egg-info/PKG-INFO
+sqlDataframe.egg-info/SOURCES.txt
+sqlDataframe.egg-info/dependency_links.txt
+sqlDataframe.egg-info/requires.txt
+sqlDataframe.egg-info/top_level.txt
