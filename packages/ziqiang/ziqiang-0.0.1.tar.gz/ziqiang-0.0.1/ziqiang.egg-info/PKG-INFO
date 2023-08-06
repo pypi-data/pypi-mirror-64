@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ziqiang
+Version: 0.0.1
+Summary: A package for reinforcement learning algorithms.
+Home-page: https://github.com/Li-Ming-Fan/ziqiang
+Author: Ming-Fan Li
+Author-email: li_m_f@163.com
+Maintainer: Ming-Fan Li
+Maintainer-email: li_m_f@163.com
+License: UNKNOWN
+Description: # ziqiang
+        
+        ziqiang, 自强, Self-strengthening. zhiqiang, 之强, become strong.
+        
+        Please use zhiqiang.
+        
+        Please see https://github.com/Li-Ming-Fan/zhiqiang
+        
+        
+Platform: any
+Description-Content-Type: text/markdown
