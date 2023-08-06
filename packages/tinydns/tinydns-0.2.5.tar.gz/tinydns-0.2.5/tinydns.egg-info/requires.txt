@@ -1,0 +1,4 @@
+docopt
+gevent
+dnslib
+dnspython
