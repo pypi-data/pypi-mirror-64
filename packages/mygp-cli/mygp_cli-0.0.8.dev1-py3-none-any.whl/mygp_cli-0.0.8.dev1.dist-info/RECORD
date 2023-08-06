@@ -1,0 +1,24 @@
+docs/mygp-cli how to use.md,sha256=xp1XQ2xepdgEjkmYj-VdlxvGBlfS3OvrH2DPcL9MObI,3075
+mygp_cli/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+mygp_cli/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mygp_cli/cli/add_gateways.py,sha256=tkPQBMpisoLjJbRX9qBMlqIkAyN0Z_hD3zC9xuvLdL0,3177
+mygp_cli/cli/add_outlets.py,sha256=5YhYHI2k_rWwmDSb18PGNhYyLu7bZrBCeP3cqmDiRbw,3104
+mygp_cli/cli/command.py,sha256=aCW9eNpjqNGy4jqE6Q1OIXi_6xFidEmjqvhsrRAZHf0,4828
+mygp_cli/cli/create_sandbox_customer.py,sha256=N9xRH-dePF7iDX0Pe0FkvX83R8fElTIQGuQDHDD2gwI,3108
+mygp_cli/cli/obtain_access_token.py,sha256=A1BMmlUajMO_dTaznn7CPKALXWoC2cHoxqJKEUdyXiE,2569
+mygp_cli/cli/parsed_arguments.py,sha256=E-oHnTL3AFO3poby91oh-tARg_cSaJ1YtOTXGi1iT8s,155
+mygp_cli/cli/set_auth_params.py,sha256=WNpyYhrmBbIm3pLzPKf9aTiWC28RukUBxjRzKfsbwoc,3261
+mygp_cli/cli/shell.py,sha256=RTpQuUv7xvUf2tyt-agzgGZ5BrjcDtigZaltf6oAB88,2546
+mygp_cli/envar.py,sha256=V-fZaCu_1lRouEYaNOi9jGgzTCaGtjKxT27jSTbUfe0,539
+mygp_cli/main.py,sha256=zYp9DkvX6vWTSDUCafFM5CVQLomj4Eg0sUMWFyowTGU,656
+mygp_cli/model.py,sha256=a2sQWgmSeJqGc4viXCy88PPtFZ1FJ1u07y3KVtxwxnU,1050
+mygp_cli/requests_handling/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mygp_cli/requests_handling/messenger.py,sha256=hoUdFKE_yr1pYVZQBengDX23YMb0-dGWn9R0SCrcYwc,2660
+mygp_cli/requests_handling/request_data.py,sha256=tzjSwrwAe8Upg8zbISm0h5KiGEpsvLGsvVboC6RVB6A,1026
+mygp_cli/requests_handling/response_data.py,sha256=F0jekEEf7d35vzDpLA_5pSrTSl9S3c0_2akDaNSvxrI,925
+mygp_cli/state.py,sha256=rFGbKLCy8W9J9WYnIm5--SlOb-bcCmUnKSXlcMzXaOo,2067
+mygp_cli/state_storage.py,sha256=TEhUSm1A04xX9SdypCaYwC-gpvedsmNZZtPL3bX7uQ8,1015
+mygp_cli-0.0.8.dev1.dist-info/entry_points.txt,sha256=NcvmO6bKYbbDJM3esxlhqkqwytDIItFwo1bVFMNQGQg,47
+mygp_cli-0.0.8.dev1.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+mygp_cli-0.0.8.dev1.dist-info/METADATA,sha256=0KBKQKBjjVy8YX9Jg_XNez-ptrVT1KWcxjx_N10heHc,393
+mygp_cli-0.0.8.dev1.dist-info/RECORD,,
