@@ -1,0 +1,8 @@
+README.md
+setup.py
+thaicovid19/__init__.py
+thaicovid19.egg-info/PKG-INFO
+thaicovid19.egg-info/SOURCES.txt
+thaicovid19.egg-info/dependency_links.txt
+thaicovid19.egg-info/requires.txt
+thaicovid19.egg-info/top_level.txt
