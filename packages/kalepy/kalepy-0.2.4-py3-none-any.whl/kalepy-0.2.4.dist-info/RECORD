@@ -1,0 +1,14 @@
+kalepy/VERSION.txt,sha256=FyW_plJMUmXnwXHPBlaEF9OblH__ScJC8DhZR5yCM0s,6
+kalepy/__init__.py,sha256=FlnuOI9_5upVt3D55P2sB6kCGSOeMmMFQL71apqYxws,960
+kalepy/__main__.py,sha256=Z0dvCOy2Nl4P-T7dopVCsLf4HgPcq2LxcCnfi0cq2zY,79
+kalepy/bandwidths.py,sha256=MXXwpyyI8x6hsizTLd0DqtcICs5AaghCZ2IflZXl99A,4186
+kalepy/kde_base.py,sha256=DCGbpwR7leXBU0Zm-vUdUefdrU0o75axyaT1ytuYVYk,18714
+kalepy/kernels.py,sha256=6DS78aeN7PRBcz7QElO2M6QKCKfEYAv6y-quXgkXQW8,26779
+kalepy/utils.py,sha256=AJpAvBNDSH0_WOV76RODvGEM6AcyMabNaRKUdV8E-cw,23147
+kalepy/tests/test_kde.py,sha256=KWdX3y8sFYKphUWQ1V5gVBfjTMrBd1AU5x9OZcmdcNg,18772
+kalepy/tests/test_kernels.py,sha256=XKEsQVr35pqmO1A4Pe8PcLeUREXHeQEOgDMPO-QGDLM,5184
+kalepy/tests/test_utils.py,sha256=cPdaauBTchxJqMUl9b85Ik0IxscqMdRUffSFtMuwgrU,13170
+kalepy-0.2.4.dist-info/METADATA,sha256=Od3yAd2VfR_0HJvgZGajP_SVEsSoGznYjerk2v7W7z0,4918
+kalepy-0.2.4.dist-info/RECORD,,
+kalepy-0.2.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+kalepy-0.2.4.dist-info/top_level.txt,sha256=6zIbVI-i55-KDroRr9m6UHXTls782GXuWxMd_-5DY40,7
