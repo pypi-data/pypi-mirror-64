@@ -1,0 +1,8 @@
+confctl/__init__.py,sha256=N-Eat6wLMhvd5199Fe5RQCCn9tSrOjHM1C8N0mrJhv0,30
+confctl/__main__.py,sha256=0g3iknXOS9gZUcpL_trgAcuCJnZZKjdsT_xt61WOVb4,60
+confctl/cli.py,sha256=zmr8JcXd2v0ixqoo25Tv5Q-iUoTaGLzfytU5zV-WWuk,4677
+confctl/conf.py,sha256=mhMXACqFb2Sd_EtlW-6EtWVZa9hyR427hFggAhwTc98,10692
+confctl-0.2.0.dist-info/entry_points.txt,sha256=PsZ2Q5ytByLaKSaDzbVw4jX_ELVaPk_kt0mKmncZwZ0,43
+confctl-0.2.0.dist-info/WHEEL,sha256=xSvaL1DM8LOHfdyo0cCcwjZu1tC6CnCsRGWUgazvlbM,83
+confctl-0.2.0.dist-info/METADATA,sha256=YOPd7oaAlSTSKpIL86ffLZdudN4PPb4N-rIF0GRiqoY,713
+confctl-0.2.0.dist-info/RECORD,,
