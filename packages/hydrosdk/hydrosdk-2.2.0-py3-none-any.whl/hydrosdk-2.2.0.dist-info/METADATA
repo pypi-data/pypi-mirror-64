@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hydrosdk
+Version: 2.2.0
+Summary: Hydro-serving SDK
+Home-page: https://hydrosphere.io/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: hydro-serving-grpc (==2.1.0)
+Requires-Dist: sseclient-py (~=1.7)
+Requires-Dist: numpy
+Requires-Dist: pyyaml (~=5.1.2)
+Requires-Dist: requests (~=2.22.0)
+Requires-Dist: requests-toolbelt (~=0.9.1)
+
+UNKNOWN
+
+
