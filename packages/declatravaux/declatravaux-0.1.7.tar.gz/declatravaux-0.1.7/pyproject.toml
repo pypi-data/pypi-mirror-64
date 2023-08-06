@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "declatravaux"
+version = "0.1.7"
+description = "Utilitaire de transmission de déclarations issues de la plateforme http://www.reseaux-et-canalisations.ineris.fr/"
+authors = ["Pierre Gobin <contact@pierregobin.fr>"]
+license = "CeCILL-2.1"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+keyring = "^21.2.0"
+PyPDF2 = "^1.26.0"
+PyQt5 = "5.14"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

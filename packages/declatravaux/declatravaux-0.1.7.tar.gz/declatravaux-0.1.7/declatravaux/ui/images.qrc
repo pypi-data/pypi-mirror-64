@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>cancel.svg</file>
+        <file>checked.svg</file>
+    </qresource>
+    <qresource prefix="/icons">
+        <file>icons/about.svg</file>
+        <file>icons/cancel.svg</file>
+        <file>icons/checked.svg</file>
+        <file>icons/exit.svg</file>
+        <file>icons/new.svg</file>
+        <file>icons/next.svg</file>
+        <file>icons/previous.svg</file>
+        <file>icons/settings.svg</file>
+    </qresource>
+</RCC>

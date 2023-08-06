@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: declatravaux
+Version: 0.1.7
+Summary: Utilitaire de transmission de déclarations issues de la plateforme http://www.reseaux-et-canalisations.ineris.fr/
+License: CECILL-2.1
+Author: Pierre Gobin
+Author-email: contact@pierregobin.fr
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: PyPDF2 (>=1.26.0,<2.0.0)
+Requires-Dist: PyQt5 (==5.14)
+Requires-Dist: keyring (>=21.2.0,<22.0.0)
