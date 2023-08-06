@@ -1,0 +1,3 @@
+[console_scripts]
+sameWidther = sameWidther:main
+
