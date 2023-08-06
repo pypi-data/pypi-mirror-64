@@ -1,0 +1,12 @@
+README.md
+setup.py
+tflyrics/__init__.py
+tflyrics/constants.py
+tflyrics/genius.py
+tflyrics/lyrics_ds.py
+tflyrics/poet.py
+tflyrics.egg-info/PKG-INFO
+tflyrics.egg-info/SOURCES.txt
+tflyrics.egg-info/dependency_links.txt
+tflyrics.egg-info/requires.txt
+tflyrics.egg-info/top_level.txt
