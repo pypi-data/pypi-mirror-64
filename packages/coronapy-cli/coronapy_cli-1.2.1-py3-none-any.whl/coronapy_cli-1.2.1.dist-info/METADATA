@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: coronapy-cli
+Version: 1.2.1
+Summary: A command line tool to fetch worldwide data about Corona Virus
+Home-page: https://github.com/MouadBH/coronapy-cli
+Author: MouadBH
+Author-email: mouad123b@gmail.com
+License: MIT
+Keywords: corona,covid-19,cli,corona-cli
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+Requires-Dist: pyfiglet
+Requires-Dist: prettytable
+Requires-Dist: yaspin
+Requires-Dist: termgraph
+Requires-Dist: colorama
+Requires-Dist: termcolor
+
+# coronapy-cli
+
+Track the Coronavirus disease (COVID-19) Strain & Saty Home.
+
+- ðŸš€ Get worldwide Coronavirus disease (COVID-19) reporting
+- ðŸ¤¯ Active daily reporting of your country's COVID-19 statistics
+
+### Prerequisites
+
+```
+Python 3.7
+```
+
+## Contributing
+
+Give us a star, Fork repo & make a PR.
+
+## Authors
+
+* **MouadBH**
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
+
