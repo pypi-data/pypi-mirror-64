@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: tfjeeves
+Version: 0.2.4
+Summary: Utilities to help train models with tensorflow2 and keras
+Home-page: https://github.com/soumendra/tfjeeves
+License: MIT
+Author: Soumendra Dhanee
+Author-email: soumendra@gmail.com
+Maintainer: Soumendra Dhanee
+Maintainer-email: soumendra@gmail.com
+Requires-Python: ==3.7.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: attrdict (>=2.0.1,<3.0.0)
+Requires-Dist: boto (>=2.49.0,<3.0.0)
+Requires-Dist: boto3 (>=1.10.44,<2.0.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: hyperdash (>=0.15.3,<0.16.0)
+Requires-Dist: loguru (>=0.4.0,<0.5.0)
+Requires-Dist: pandas (>=1.0.0,<2.0.0)
+Requires-Dist: pillow (>=6.2.1,<7.0.0)
+Requires-Dist: py3nvml (>=0.2.5,<0.3.0)
+Requires-Dist: tensorflow (==2.1.0)
+Requires-Dist: tensorflow-estimator (==2.1.0)
+Requires-Dist: tqdm (>=4.41.1,<5.0.0)
+Project-URL: Documentation, https://github.com/soumendra/tfjeeves
+Project-URL: Repository, https://github.com/soumendra/tfjeeves
+Description-Content-Type: text/markdown
+
+# tfjeeves
+
+`poetry run python train.py --config=configs/cifar10.py --data=assets/cifar10`
+
+https://flynn.gg/blog/software-best-practices-python-2019/
+
