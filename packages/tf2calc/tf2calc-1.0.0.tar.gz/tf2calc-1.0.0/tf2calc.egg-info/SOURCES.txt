@@ -1,0 +1,8 @@
+setup.py
+tf2calc/__init__.py
+tf2calc/tf2calc.py
+tf2calc.egg-info/PKG-INFO
+tf2calc.egg-info/SOURCES.txt
+tf2calc.egg-info/dependency_links.txt
+tf2calc.egg-info/requires.txt
+tf2calc.egg-info/top_level.txt

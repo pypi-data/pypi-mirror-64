@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: tf2calc
+Version: 1.0.0
+Summary: python package to calculate tf2 prices
+Home-page: https://github.com/Mark7888/tf2clac
+Author: Mark7888
+Author-email: l.mark7888@gmail.com
+License: MIT
+Description: # PricesTF Python API
+        
+        This modul is a simple python package to calcualte tf2 prices.
+        
+        ### Installation
+        
+        This module requires [Python](https://www.python.org/) v3+ to run.
+        
+        For install the module type this to your command line...
+        
+        ```sh
+        pip install tf2calc
+        ```
+        
+        ### Syntax
+        ```text
+        calculate(<amount>, <"type">)
+        - amount (intriger)
+        - type (string):
+          - "scrap"
+          - "rec"
+          - "ref"
+          - "key"
+          - "earbuds"
+        ```
+        
+        ### Quick Example
+        ```py
+        from tf2clac import *
+        
+        calculation = calculate(1, "ref")
+        ```
+        
+        It will return a dictionary with the calculated values.
+        ```json
+        {"scrap": 9, "rec": 3, "ref": 1, "key": 0.02, "earbuds": 0.0}
+        ```
+        If you write an unknown type, it will return `0`.
+        
+        License
+        ----
+        
+        MIT
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3
+Description-Content-Type: text/markdown
