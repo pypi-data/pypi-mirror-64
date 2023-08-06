@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: packagedummy
+Version: 0.0.2
+Summary: A dummy project for python packaging.
+Home-page: https://github.com/wangzhenj321/packagedummy
+Author: wangzhenj321
+Author-email: wangzhenj321@gmail.com
+License: MIT
+Keywords: dummy
+Platform: UNKNOWN
+
+============
+packagedummy
+============
+
+A dummy project is to test for packaging and distributing python application.
+

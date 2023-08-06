@@ -1,0 +1,4 @@
+#!python
+from packagedummy import main
+
+main.main()
