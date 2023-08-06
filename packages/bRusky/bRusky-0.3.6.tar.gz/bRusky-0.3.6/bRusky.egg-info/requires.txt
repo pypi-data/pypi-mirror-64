@@ -1,0 +1,4 @@
+requests
+transliterate
+pysocks
+requests[socks]
