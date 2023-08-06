@@ -1,0 +1,13 @@
+README.md
+setup.py
+mafia_rl_discord_bot/__init__.py
+mafia_rl_discord_bot/discord_bot.py
+mafia_rl_discord_bot/game.py
+mafia_rl_discord_bot/voting.py
+mafia_rl_discord_bot.egg-info/PKG-INFO
+mafia_rl_discord_bot.egg-info/SOURCES.txt
+mafia_rl_discord_bot.egg-info/dependency_links.txt
+mafia_rl_discord_bot.egg-info/entry_points.txt
+mafia_rl_discord_bot.egg-info/requires.txt
+mafia_rl_discord_bot.egg-info/top_level.txt
+mafia_rl_discord_bot/config/points.json
