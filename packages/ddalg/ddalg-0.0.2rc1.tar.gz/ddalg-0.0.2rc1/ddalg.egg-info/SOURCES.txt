@@ -1,0 +1,11 @@
+README.md
+setup.py
+ddalg/__init__.py
+ddalg.egg-info/PKG-INFO
+ddalg.egg-info/SOURCES.txt
+ddalg.egg-info/dependency_links.txt
+ddalg.egg-info/requires.txt
+ddalg.egg-info/top_level.txt
+ddalg/itree/__init__.py
+ddalg/itree/_itree.py
+ddalg/itree/test__itree.py
