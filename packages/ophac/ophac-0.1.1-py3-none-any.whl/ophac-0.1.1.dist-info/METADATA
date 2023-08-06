@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ophac
+Version: 0.1.1
+Summary: Order Preserving Hierarchical Agglomerative Clustering
+Home-page: https://bitbucket.org/Bakkelund/ophac/src/v01/
+Author: Daniel Bakkelund
+Author-email: daniel.bakkelund@ifi.uio.no
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
