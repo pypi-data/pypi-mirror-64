@@ -1,0 +1,10 @@
+wagtail_whoosh/__init__.py,sha256=ewXTO2J5eLHxFtrnVmUU0q_w65aWWoAJ7I3sOpCuc7E,62
+wagtail_whoosh/apps.py,sha256=j0wm2KUrMapT3PcS-fns_gNgPKRV4nzweratwKuW2c8,102
+wagtail_whoosh/backend.py,sha256=0eZ30XeD8u3ZXthtR61xAfCMRzPtRnr5ahzoBsm3sUY,19318
+wagtail_whoosh/utils.py,sha256=eHFmc_HZbHlh3HzQUZ20z9O_Fk1VdidKZtaL-BSEyiI,1119
+wagtail_whoosh-0.2.4.dist-info/DESCRIPTION.rst,sha256=yZcvd2M8CkLztFhGXgRrFXkbXAKWq6ehhFlc91mLO84,33
+wagtail_whoosh-0.2.4.dist-info/METADATA,sha256=ht9NL_iemayBotsOtnf5pmcjC_956COY-yPcvcKXmGY,1070
+wagtail_whoosh-0.2.4.dist-info/RECORD,,
+wagtail_whoosh-0.2.4.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+wagtail_whoosh-0.2.4.dist-info/metadata.json,sha256=eXzUH5WZpIGKVVvOnsa0fsktRyr1q8CATV4cOxZAuns,1117
+wagtail_whoosh-0.2.4.dist-info/top_level.txt,sha256=9EIMZ2zVyopzDDTi4X_LR1CobB_Sy0F17xdIOatoO_o,15
