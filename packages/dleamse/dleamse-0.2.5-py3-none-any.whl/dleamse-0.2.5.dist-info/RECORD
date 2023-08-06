@@ -1,0 +1,8 @@
+dleamse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dleamse/dleamse_encode_and_embed.py,sha256=gVnvQ04WMgUXjnljDpBEh7x91JMUqulD5P8c4XRDodo,36441
+dleamse/dleamse_faiss_index_writer.py,sha256=N88bZFMpuZvERW3WGINYMGOSeXkfmuch43J6SXNLrkg,9997
+dleamse-0.2.5.dist-info/LICENSE,sha256=pOSyRoUE5UdBuliaLdPC05RpUR1sgFlR424sXJlDzK4,11555
+dleamse-0.2.5.dist-info/METADATA,sha256=Br5XpaP6rKKWpyurLT97W8du8fDl_-3u9Z4H2B97DNA,6708
+dleamse-0.2.5.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+dleamse-0.2.5.dist-info/top_level.txt,sha256=LW1a2PM1cZz4bcrIoGDwE0aNBSzWME80OtC0VSTn1YU,8
+dleamse-0.2.5.dist-info/RECORD,,
