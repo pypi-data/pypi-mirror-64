@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: QuickWall
+Version: 0.0.3.post2
+Summary: Set any wallpaper from commandline
+Home-page: http://github.com/deepjyoti30/QuickWall
+Author: Deepjyoti Barman
+Author-email: deep.barman30@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: pywal
+Requires-Dist: downloader-cli
+Requires-Dist: beautifulsoup4
+Requires-Dist: dbus-python
+
+Set any wallpaper from Unsplash from the commandline
+
+
