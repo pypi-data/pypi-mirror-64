@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "pydstools"
+author = "Juan Manuel Mauricio"
+author-email = "jmmauricio6@gmail.com"
+classifiers = ["License :: OSI Approved :: MIT License"]
+
