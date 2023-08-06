@@ -1,0 +1,13 @@
+dotted/__init__.py,sha256=5EbXQ9xqS8gqrZEAGenchcN1wJff3FLN58ocbIvKr-A,126
+dotted/__main__.py,sha256=dkJsFn6FksZS5jZx6dSKBonNJxBe_vW1TtbbSHnxyoM,63
+dotted/api.py,sha256=VY8bdH3puEwe3IgJsf4_W_mC05Dym2VrI2nK99EDpFo,4240
+dotted/elements.py,sha256=d3JLcXsgXwW8MHzGC-oAlOczUH0hALE0iT91QFzJZ18,10976
+dotted/grammar.py,sha256=J5QrysN7uULgHbQaHLuDQ9MC9cNqaENXg6LgwWivbFc,1493
+dotted/transforms.py,sha256=ldrj3sit0_cs33-nRUomQynXbYjGp9_xxY55ueNG2C0,3148
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_appender.py,sha256=RE_7LsRJeIguwfrauAxLud1Y-2k8k5jiDsa35Bep7AA,640
+dotted_notation-0.0.9.dist-info/LICENSE,sha256=tfaXh_Z7MeQfIHLg0fXMJDZMTHQuOiAv50Wdg2YWHbA,1066
+dotted_notation-0.0.9.dist-info/METADATA,sha256=WBP9EqtCL4hribQeMHsoDrDRDdGmu-gvq5cwcmO86dA,2946
+dotted_notation-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dotted_notation-0.0.9.dist-info/top_level.txt,sha256=tVYcYdxsYpQ3jBD8850z6H0HR7huY2HvOspD0PUZg2Y,13
+dotted_notation-0.0.9.dist-info/RECORD,,
