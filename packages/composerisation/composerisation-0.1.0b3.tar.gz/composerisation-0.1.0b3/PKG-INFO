@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: composerisation
+Version: 0.1.0b3
+Summary: A tool used to convert between Docker compose and Docker run.
+Home-page: https://gitlab.com/hmajid2301/composerisation
+Author: Haseeb Majid
+Author-email: hello@haseebmajid.dev
+License: Apache License
+Description: UNKNOWN
+Keywords: Python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: ~=3.6
