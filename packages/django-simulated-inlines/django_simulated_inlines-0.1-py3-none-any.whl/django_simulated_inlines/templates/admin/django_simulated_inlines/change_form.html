@@ -1,0 +1,14 @@
+{% extends "admin/change_form.html" %}
+
+{% block inline_field_sets %}
+{{ block.super }}
+{% block simulated_inlines %}
+  {% if simulated_inlines and simulated_inlines.show %}
+    {% for s_inline in simulated_inlines.inlines %}
+      {% include s_inline.template %}
+    {% endfor %}
+  {% endif %}
+{% endblock %}
+
+{% endblock %}
+
