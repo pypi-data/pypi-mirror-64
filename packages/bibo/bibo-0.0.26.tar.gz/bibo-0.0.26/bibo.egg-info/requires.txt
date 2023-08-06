@@ -1,0 +1,13 @@
+click
+click-plugins
+requests
+pyperclip
+
+[dev]
+black
+bumpversion
+coverage
+codecov
+pytest
+sphinx
+sphinx-click
