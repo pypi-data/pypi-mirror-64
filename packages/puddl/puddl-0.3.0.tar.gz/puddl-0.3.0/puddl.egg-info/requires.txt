@@ -1,0 +1,8 @@
+django
+requests
+psycopg2-binary
+tinytag
+supervisor
+Click
+ffmpeg-python
+filetype
