@@ -1,0 +1,4 @@
+click
+SQLAlchemy
+ass
+chardet
