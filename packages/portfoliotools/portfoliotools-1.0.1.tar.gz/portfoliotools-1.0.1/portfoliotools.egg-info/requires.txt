@@ -1,0 +1,11 @@
+beautifulsoup4
+pandas
+numpy
+mftool
+requests
+TA-Lib
+plotly
+stocktrends
+scipy
+scikit-learn
+seaborn
