@@ -1,0 +1,16 @@
+pycountry>=16.10.23rc1
+
+[all]
+PyYAML
+tablib<1.0.0,>=0.11.3
+openpyxl<2.5.0
+
+[babel]
+Babel
+
+[formats]
+tablib<1.0.0,>=0.11.3
+openpyxl<2.5.0
+
+[yaml]
+PyYAML
