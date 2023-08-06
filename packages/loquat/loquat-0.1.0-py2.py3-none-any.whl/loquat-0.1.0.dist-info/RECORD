@@ -1,0 +1,12 @@
+loquat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loquat/settings.py,sha256=yAJ92tKWLtvqhFUx7SRBuXMAutDmuV4-_6Zz_5IOhp4,582
+loquat/web.py,sha256=KAbr5K7idi0QRp4yXuMOmjLu3QJDH_pKTQTGrUFVNGc,2042
+loquat/handlers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loquat/handlers/base.py,sha256=KffqGBX8kyx-VIuKR9qEv_TC-35ZIvi-98ORI-V_PIE,559
+loquat/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+loquat/utils/utils.py,sha256=TtiPTkqavEjiLmvqdkicYe1FpZZ4ZZL3S6rNrE3hG_g,737
+loquat-0.1.0.dist-info/LICENSE,sha256=yie1HsgR6OYhtI1pcEtQ4UayuLA2pR5Hrl_bOeTBTwI,1062
+loquat-0.1.0.dist-info/METADATA,sha256=6SYAK5lEnaRkrtt3B9TvMZHh9DrMwoMRtJ0e2sOklCw,1649
+loquat-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+loquat-0.1.0.dist-info/top_level.txt,sha256=gAZuQ3GYN7y_4xtmnxiOC5LuRbh8fQR4SArIZWAR23M,7
+loquat-0.1.0.dist-info/RECORD,,
