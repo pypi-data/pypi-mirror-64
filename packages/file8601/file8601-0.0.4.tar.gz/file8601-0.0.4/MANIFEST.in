@@ -1,0 +1,3 @@
+include file8601/VERSION.cfg
+include README.md
+include LICENSE
