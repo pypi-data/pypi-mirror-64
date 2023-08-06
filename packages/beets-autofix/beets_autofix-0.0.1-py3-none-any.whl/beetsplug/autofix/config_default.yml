@@ -1,0 +1,14 @@
+max_exec_time: 300
+tasks:
+  missing_file_checker:
+    enabled: no
+  audio_conversion:
+    enabled: no
+  tag_cleaner:
+    enabled: no
+  ab_data_fetcher:
+    enabled: no
+  genre_finder:
+    enabled: no
+  xtractor:
+    enabled: no
