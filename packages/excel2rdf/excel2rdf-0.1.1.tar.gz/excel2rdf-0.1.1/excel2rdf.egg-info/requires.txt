@@ -1,0 +1,4 @@
+rdflib
+click
+pandas
+xlrd
