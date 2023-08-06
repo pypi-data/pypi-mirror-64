@@ -1,0 +1,176 @@
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+# ddup
+
+Compare images in two image lists and find dulplicate ones.
+
+## Install
+
+```bash
+pip install ddup
+```
+
+## Usage
+
+- Use it in command line
+
+```bash
+ddup {--list1 img1 img2 img3| --path1 imglist_path} \
+     [{--list2 img1 img2 img3| --path2 imglist_path}] \
+     [--out output_dir] [--log]
+```
+
+Compare result will be sved in `ddup_output.json`
+
+## Example 1
+
+Compare images in list file1 to those in list file2 and save results in
+the specified fodler.
+
+```bash
+ddup --path1 imglist1.txt --path2 imglist2.txt --out /mnt/Storage
+```
+
+### Input for Ex1
+
+- `path1`
+
+  imglist1.txt
+
+```
+/mnt/Storage/test1/000001.jpg
+/mnt/Storage/test1/000002.jpg
+```
+
+- `path2`
+
+  imglist2.txt
+
+```
+/mnt/Storage/test2/000001.jpg
+/mnt/Storage/test2/000002.jpg
+/mnt/Storage/test2/000003.jpg
+```
+
+- `out`
+
+```
+/mnt/Storage
+```
+
+### Output for Ex1
+
+- `hash1.hdf5`
+
+  Store the hashes of images in list1 in .hdf5 format.
+
+- `hash2.hdf5`
+
+  Store the hashes of images in list2 in .hdf5 format.
+
+- `ddup_output.json`
+
+  Store the comparision results in json format. Each image in list1
+  will correspond to one or more images in list2 if they are similar.
+
+```json
+{
+  "/mnt/Storage/test1/000001.jpg": ["/mnt/Storage/test2/000001.jpg"],
+  "/mnt/Storage/test1/000002.jpg": ["/mnt/Storage/test2/000002.jpg", "/mnt/Storage/test2/000003.jpg"]
+}
+```
+
+## Example 2
+
+Compare a list of images to themselves.
+
+You can give a single list, or give two same lists.
+
+```bash
+ddup --list1 1.jpg 2.jpg 3.jpg 4.jpg
+ddup --list1 1.jpg 2.jpg 3.jpg 4.jpg --list2 1.jpg 2.jpg 3.jpg 4.jpg
+```
+
+### Input for Ex2
+
+```py
+["1.jpg", "2.jpg", "3.jpg", "4.jpg"]
+```
+
+### Output for Ex2
+
+- `hash1.hdf5`
+
+  Store thephashes of images in list1 in .hdf5 format.
+
+- `ddup_output.json`
+
+  Store the comparision results in json format.
+
+  For self comparison, similar images will be orginized into groups
+  with the first image in the group be the key and the whole group be the
+  value.
+
+```json
+{
+  "1.jpg": ["1.jpg", "2.jpg", "3.jpg"]
+}
+```
+
+## Parameters
+
+`list1` and `path1` are considered as `input1`.
+
+**One and only one** of them must be provided.
+
+`list2` and `path2` are considered as `input2`.
+
+**None or one** of them can be provided.
+
+If none of them are provided, `input1` will be compared with **itself**.
+
+If one of them is provided, `input1` will be compared with `input2`.
+
+- `list1`
+
+  Directly give paths of several images.
+
+```bash
+--list1 1.jpg img/2.jpg img2/3.jpg
+```
+
+- `path1`
+
+  Path of the first image list file.
+
+  If there are many images to be compared with, an image list file can be
+  provided instead.
+
+  Image paths in the list should be **Absolute path**.
+
+```bash
+--path1 imglist1.txt
+```
+
+- `list2`
+
+  Same as `list1`
+
+- `path2`
+
+  Same as `path1`
+
+- `out`[optional]
+
+  To specify a folder to save the results files.
+
+  The folder will be created if it does not exist.
+
+  Default is folder `ddup_output` in current path.
+
+- `--log`[optional]
+
+  With this option added, the program will print detail log for each thread and
+  each dulplicate image pair.
+  This may cause message flush on screen so it is recommended to pipe
+  it in to a log file.
