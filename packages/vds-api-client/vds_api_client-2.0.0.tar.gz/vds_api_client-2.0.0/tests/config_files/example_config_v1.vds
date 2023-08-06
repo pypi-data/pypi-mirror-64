@@ -1,0 +1,21 @@
+# Configuration file
+#
+# getarea:              products, date, lat_min, lat_max, lon_min, lon_max, file_format, meta
+# get-time-series:      products, lat, lon, date_start, date_end, meta
+# get-roi-time-series:  products, roi,      date_start, date_end, meta
+outfold = path/to/outfolder
+
+# get-area
+date = 2002-06-01
+lat_min = 51.9001
+lat_max = 52.1001
+lon_min = 4.9001
+lon_max = 5.1001
+meta = false
+
+# time-series
+lat = 52.345
+lon = 4.567
+date_start = 2018-01-01
+date_end = 2018-01-31
+products = SM-LN_V001_100, SM-C1N_V001_100

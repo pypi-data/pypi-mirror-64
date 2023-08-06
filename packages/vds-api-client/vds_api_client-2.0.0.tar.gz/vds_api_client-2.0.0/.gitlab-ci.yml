@@ -1,0 +1,63 @@
+variables:
+  PIP_EXTRA_INDEX_URL: 'http://vds-dev:8888/simple'
+  PIP_TRUSTED_HOST: 'vds-dev'
+
+stages:
+  - test
+  - upload-docs
+  - upload-local-pypi
+
+test:python3.7:
+  stage: test
+  script:
+    - conda create --name api_client_37_test python=3
+    - conda env update --name api_client_37_test --file conda_environment37.yml
+    - source activate api_client_37_test
+    - pip install -r test-requirements.txt
+    - pip install -e .
+    - vds-api
+    - vds-api test
+    - vds-api info
+    - vds-api grid --help
+    - vds-api ts --help
+    - python setup.py test
+
+upload-docs-master:
+  stage: upload-docs
+  only:
+    - master
+  script:
+    - conda create --name docs python=3
+    - source activate docs
+    - pip install sphinx
+    - python setup.py docs
+    - cd docs/_build/html
+    - apt-get install zip curl -y
+    - zip -r archive.zip *
+    - curl -X POST -F filedata=@archive.zip -F name="$CI_PROJECT_NAME" -F version="master" -F description="$CI_PROJECT_NAME" http://vds-dev:5000/hmfd
+
+upload-docs-tagged:
+  stage: upload-docs
+  only:
+    - tags
+  script:
+    - conda create --name docs python=3
+    - source activate docs
+    - pip install sphinx
+    - python setup.py docs
+    - cd docs/_build/html
+    - apt-get install zip curl -y
+    - zip -r archive.zip *
+    - curl -X POST -F filedata=@archive.zip -F name="$CI_PROJECT_NAME" -F version="$CI_COMMIT_TAG" -F description="$CI_PROJECT_NAME" http://vds-dev:5000/hmfd
+
+upload-pypi-tagged:
+  stage: upload-local-pypi
+  variables:
+    TWINE_USERNAME: ""
+    TWINE_PASSWORD: ""
+  only:
+    - tags
+  script:
+    - pip install twine
+    - python setup.py sdist
+    - twine upload --repository-url http://vds-dev:8888 dist/*${CI_COMMIT_TAG:1:${#CI_COMMIT_TAG}-1}*.tar.gz
