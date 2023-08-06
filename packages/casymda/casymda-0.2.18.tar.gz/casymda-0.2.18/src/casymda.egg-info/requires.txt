@@ -1,0 +1,9 @@
+Pillow
+flask
+flask-cors
+gym
+networkx
+simpy
+stable-baselines
+tensorflow==1.15.2
+xmltodict
