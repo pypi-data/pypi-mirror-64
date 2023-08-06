@@ -1,0 +1,11 @@
+README.md
+setup.py
+fita/__init__.py
+fita/runner.py
+fita/runner_test.py
+fita.egg-info/PKG-INFO
+fita.egg-info/SOURCES.txt
+fita.egg-info/dependency_links.txt
+fita.egg-info/not-zip-safe
+fita.egg-info/requires.txt
+fita.egg-info/top_level.txt
