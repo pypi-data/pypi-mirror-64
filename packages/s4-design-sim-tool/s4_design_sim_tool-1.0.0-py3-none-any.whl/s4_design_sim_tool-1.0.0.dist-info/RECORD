@@ -1,0 +1,13 @@
+s4_design_sim_tool/__init__.py,sha256=J-j-u0itpEFT6irdmWmixQqYMadNl1X91TxUmoiLHMI,22
+s4_design_sim_tool/_nbdev.py,sha256=9kNXi6xVPksr0eNKpkP2YAfHjeyZQ8Exqz-U0Gy_2fc,1215
+s4_design_sim_tool/atmosphere.py,sha256=fzliTCoSDwlpch01N5DqTYPyhSLTp9QYXPRGXnGP22Q,2454
+s4_design_sim_tool/cli.py,sha256=mWiMOE_nForsnnPBhTmHsSZpdt24KiVFO4z4xiPJMmI,5767
+s4_design_sim_tool/core.py,sha256=v-IgFZGqJV1bnxDoR2vHv8RYywxzRH6gOojlouGlUg8,1112
+s4_design_sim_tool/foregrounds.py,sha256=lPipp0feaIs-OazyQOi5gAYJyRUfyx_L8J2m1bH0AVg,2067
+s4_design_sim_tool/noise.py,sha256=EUIIk745W3yU6SqeXVQ-JIZm9bOVHdTBvvgnLIwSiO0,3113
+s4_design_sim_tool-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+s4_design_sim_tool-1.0.0.dist-info/METADATA,sha256=VtpUwlNTD5ErZ-y7Ua7tMRK_p83akBA2OD6kbq0sAW8,5438
+s4_design_sim_tool-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+s4_design_sim_tool-1.0.0.dist-info/entry_points.txt,sha256=HILAv7PSMifJJvwGRbf8luxtQ4srDROjAy-wNkUSMoo,83
+s4_design_sim_tool-1.0.0.dist-info/top_level.txt,sha256=o5388DDX5jWIpeed8vDyxAo-LVpwpVMpfBppp_GVBRg,19
+s4_design_sim_tool-1.0.0.dist-info/RECORD,,
