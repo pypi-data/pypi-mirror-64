@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: pyipx800
+Version: 0.0.3
+Summary: Package to control IPX800v4 from GCEElectronics
+Home-page: https://github.com/slashx57/pyipx800
+Author: slashx57
+Author-email: boiselet@free.fr
+License: UNKNOWN
+Description: ![PyPI](https://github.com/slashx57/pyipx800/workflows/Upload%20Python%20Package/badge.svg)
+        
+        # pyipx800
+        Package Python pour contrôler le module IPX800v4 de GCE-Electronics.
+        
+        ## Utilisation
+        
+        	from pyipx800 import pyipx800
+        
+        	ipx = pyipx800.pyipx800("ipx800_v4", 80, "apikey")
+        	ipx.configure()
+        
+        	d1 = ipx.inputs[0]
+        	print("Input %d : <%s> = %d" % (d1.id, d1.name, d1.state))
+        
+        
+        
+        ## License Information
+        
+        [READ LICENSE FILE](LICENSE)
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
