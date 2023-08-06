@@ -1,0 +1,10 @@
+setup.py
+distributionsilkexercise/Binomialdistribution.py
+distributionsilkexercise/Gaussiandistribution.py
+distributionsilkexercise/Generaldistribution.py
+distributionsilkexercise/__init__.py
+distributionsilkexercise.egg-info/PKG-INFO
+distributionsilkexercise.egg-info/SOURCES.txt
+distributionsilkexercise.egg-info/dependency_links.txt
+distributionsilkexercise.egg-info/not-zip-safe
+distributionsilkexercise.egg-info/top_level.txt
