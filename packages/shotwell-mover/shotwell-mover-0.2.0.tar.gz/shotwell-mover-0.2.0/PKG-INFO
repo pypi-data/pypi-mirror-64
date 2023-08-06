@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: shotwell-mover
+Version: 0.2.0
+Summary: Tool for changing paths of media stored in Shotwell's database
+Home-page: https://github.com/tjanez/showell-mover
+License: GPL-3.0-or-later
+Keywords: shotwell,tool,database,mover
+Author: Tadej Janež
+Author-email: tadej.j@nez.si
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Dist: click (>=7.1.1,<8.0.0)
+Project-URL: Repository, https://github.com/tjanez/showell-mover
+Description-Content-Type: text/markdown
+
+# shotwell-mover
+
+A tool for changing paths of media files stored in [Shotwell]'s database.
+
+[Shotwell]: https://wiki.gnome.org/Apps/Shotwell
+
