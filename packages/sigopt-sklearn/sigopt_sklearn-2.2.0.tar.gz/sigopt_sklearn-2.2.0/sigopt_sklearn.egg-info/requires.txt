@@ -1,0 +1,7 @@
+joblib>=0.9.4
+numpy>=1.9
+scikit-learn<0.21,>=0.19
+sigopt>=2.6.0
+
+[ensemble]
+xgboost<0.90,>=0.4a30
