@@ -1,0 +1,24 @@
+asciistuff
+bitstring
+codext
+coloredlogs
+colorful
+ipaddress
+markdown2
+mdv
+netaddr
+netifaces
+patchy
+pathlib
+pip
+pynput
+pypandoc
+python-slugify
+six
+tqdm
+virtualenv
+
+[:python_version >= "3.4"]
+numpy
+pandas
+weasyprint
