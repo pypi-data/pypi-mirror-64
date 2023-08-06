@@ -1,0 +1,72 @@
+﻿'''_2205.py
+
+ClutchSystemDeflection
+'''
+
+
+from mastapy.system_model.analyses_and_results.system_deflections import _2203, _2223
+from mastapy._internal import constructor
+from mastapy.system_model.part_model.couplings import _2090
+from mastapy.system_model.analyses_and_results.static_loads import _6046
+from mastapy.system_model.analyses_and_results.power_flows import _3214
+from mastapy._internal.python_net import python_net_import
+
+_CLUTCH_SYSTEM_DEFLECTION = python_net_import('SMT.MastaAPI.SystemModel.AnalysesAndResults.SystemDeflections', 'ClutchSystemDeflection')
+
+
+__docformat__ = 'restructuredtext en'
+__all__ = ('ClutchSystemDeflection',)
+
+
+class ClutchSystemDeflection(_2223.CouplingSystemDeflection):
+    '''ClutchSystemDeflection
+
+    This is a mastapy class.
+    '''
+
+    TYPE = _CLUTCH_SYSTEM_DEFLECTION
+
+    __hash__ = None
+
+    def __init__(self, instance_to_wrap: 'ClutchSystemDeflection.TYPE'):
+        super().__init__(instance_to_wrap)
+
+    @property
+    def clutch_connection(self) -> '_2203.ClutchConnectionSystemDeflection':
+        '''ClutchConnectionSystemDeflection: 'ClutchConnection' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_2203.ClutchConnectionSystemDeflection)(self.wrapped.ClutchConnection) if self.wrapped.ClutchConnection else None
+
+    @property
+    def assembly_design(self) -> '_2090.Clutch':
+        '''Clutch: 'AssemblyDesign' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_2090.Clutch)(self.wrapped.AssemblyDesign) if self.wrapped.AssemblyDesign else None
+
+    @property
+    def assembly_load_case(self) -> '_6046.ClutchLoadCase':
+        '''ClutchLoadCase: 'AssemblyLoadCase' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_6046.ClutchLoadCase)(self.wrapped.AssemblyLoadCase) if self.wrapped.AssemblyLoadCase else None
+
+    @property
+    def power_flow_results(self) -> '_3214.ClutchPowerFlow':
+        '''ClutchPowerFlow: 'PowerFlowResults' is the original name of this property.
+
+        Note:
+            This property is readonly.
+        '''
+
+        return constructor.new(_3214.ClutchPowerFlow)(self.wrapped.PowerFlowResults) if self.wrapped.PowerFlowResults else None
