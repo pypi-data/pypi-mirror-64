@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+compose4py/__init__.py
+compose4py/misc.py
+compose4py.egg-info/PKG-INFO
+compose4py.egg-info/SOURCES.txt
+compose4py.egg-info/dependency_links.txt
+compose4py.egg-info/top_level.txt
