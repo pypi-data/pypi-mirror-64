@@ -1,0 +1,21 @@
+CHANGES
+=======
+
+v0.0.3
+------
+
+* multiprocessing.Process.kill requires Python>=3.7
+
+v0.0.2
+------
+
+* Inherit TimeoutError from TimeoutError
+* Add a note about zombie processes
+* Update README.md
+
+v0.0.1
+------
+
+* Build universal wheels
+* Use tblib to provide proper traceback
+* Initial commit
