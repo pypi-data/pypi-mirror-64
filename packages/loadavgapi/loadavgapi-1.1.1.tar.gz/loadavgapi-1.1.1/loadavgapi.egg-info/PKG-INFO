@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: loadavgapi
+Version: 1.1.1
+Summary: API DEVELOPMENT FOR LOADAVG
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description: simple api for monitoring of loadaverage.ir
+Keywords: python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
