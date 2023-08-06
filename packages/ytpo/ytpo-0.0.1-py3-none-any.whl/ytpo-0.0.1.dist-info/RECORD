@@ -1,0 +1,8 @@
+ytpo/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+ytpo/ytpo.py,sha256=dufdbg-MgaEO-caCCVb88Z8_bKcUlZCTrdpli0HUXdc,15451
+ytpo/secrets/client_secret.json,sha256=JopTDtw8F8v11csCi1zndU6_k1NbZZyWrkwQ-bSytyQ,428
+ytpo-0.0.1.dist-info/METADATA,sha256=qjl2Iomrv26lFP5u_eZuuAJ-aL8tWCJsQXRfxh2t5Rg,532
+ytpo-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ytpo-0.0.1.dist-info/entry_points.txt,sha256=XFd-NGr79b8realHULdBGZ920kJ1y5t9w4UuWFxuScw,59
+ytpo-0.0.1.dist-info/top_level.txt,sha256=QTmQAG4fpANADsoFTtdhVRGrqA-wuygDa-5JCByEAxA,5
+ytpo-0.0.1.dist-info/RECORD,,
