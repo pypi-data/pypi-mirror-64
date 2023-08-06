@@ -1,0 +1,8 @@
+setup.py
+testeroozz/__init__.py
+testeroozz/sum_module.py
+testeroozz.egg-info/PKG-INFO
+testeroozz.egg-info/SOURCES.txt
+testeroozz.egg-info/dependency_links.txt
+testeroozz.egg-info/requires.txt
+testeroozz.egg-info/top_level.txt
