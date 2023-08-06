@@ -1,0 +1,15 @@
+sockssl/__init__.py,sha256=9F6Zec31pgwAYsgsnY05Z29GV41S8bUC_7xLHZT0yN4,104
+sockssl/certstore.py,sha256=Fjivnp9KUMhh7vWoS1VA-iBcbQU_73Nh4vf2s2k1_Zk,5730
+sockssl/cli.py,sha256=EfbwR3uiKrw9M1RUx2MmIQ6OyEe-m9LVGKJuV_1VslE,3901
+sockssl/myfactory.py,sha256=S1fTpFmRc4vLKcoKS-rj2HEgSQHzAsJgbQNol5zUW7Y,2685
+sockssl/mylog.py,sha256=4Px9WpjYnltzn-6Idf_tN2t7ltSIvD_HmlIN5iAd7_8,1057
+sockssl/myservice.py,sha256=RswaTmHrTjUK57jq7aEqwHl2vTI4I3MimwCWCuMKwpI,1403
+sockssl/mysocks4.py,sha256=zseH8e2P-f84UaMKM567ctcdVYFayr9lGhX0jMSOfrU,1212
+sockssl/mysocks5.py,sha256=60xdNbE0fLhg-hCCyY8HTps83OHvNP7kpIln1ensCgo,7648
+sockssl/tls_client_hello.py,sha256=M6DDzf5lViPgUWSfu8VfuZ03zptw3drIbwAJbh-7-vI,7055
+pysockssl-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pysockssl-0.1.dist-info/METADATA,sha256=U7k0VlHulTmSEX1zROW7tPjGkax0mYzZOqHvCcmaWBA,2338
+pysockssl-0.1.dist-info/WHEEL,sha256=YUYzQ6UQdoqxXjimOitTqynltBCkwY6qlTfTh2IzqQU,97
+pysockssl-0.1.dist-info/entry_points.txt,sha256=eL2Ts8feoVvFrKxwiDuB15calSDSl_kpvF-Y3TKOhVI,45
+pysockssl-0.1.dist-info/top_level.txt,sha256=LmUybO6a0SnyDW0aAnA4ucUMvbITCoYfm9S1VWlsIAQ,8
+pysockssl-0.1.dist-info/RECORD,,

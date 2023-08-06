@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: pysockssl
+Version: 0.1
+Summary: Simple TCP/TLS mitm engine supports SOCKSv4 + SOCKSv5 + Cert store
+Home-page: https://github.com/trichimtrich/pysockssl
+Author: trichimtrich
+Author-email: trichimtrich@gmail.com
+License: GPL v3
+Keywords: mitm,proxy,ssl,tls,socksv4,socksv5,socks4,socks5
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: twisted
+Requires-Dist: kaitaistruct
+Requires-Dist: pyOpenSSL
+Requires-Dist: service-identity
+Requires-Dist: click
+
+# pysockssl
+
+[![Python 3](https://img.shields.io/badge/python-3-blue.svg)](https://www.python.org/downloads/)
+
+Similar to 
+- [Burpsuite](https://portswigger.net/burp) 
+- [mitmproxy](https://mitmproxy.org/)
+- [Charles Proxy](https://www.charlesproxy.com/)
+- [Fiddler](https://www.telerik.com/fiddler)
+- and many more ...
+
+But more simple and focus on TCP/TLS stream capture ONLY - NO data analyzing 🤐
+
+## Support
+
+- TCP only
+- SOCKSv4 + user auth
+- SOCKSv5 + user/pwd auth
+- [Dummy] cert generator
+- SSL/TLS man-in-the-middle 😎
+
+## Install
+
+```bash
+pip3 install pysockssl
+```
+
+or
+
+```bash
+git clone https://github.com/trichimtrich/pysockssl
+cd pysockssl
+python3 setup.py install
+```
+
+## Usage
+
+```bash
+$ sockssl --help
+Usage: sockssl [OPTIONS] COMMAND [ARGS]...
+
+Options:
+  --help  Show this message and exit.
+
+Commands:
+  genca  Generate root CA
+  run    Run a standalone SOCKS server
+```
+
+- Generate root CA
+
+```
+sockssl genca rootCA.crt rootCA.key -org mycompany -cn myCA
+```
+
+- Run server
+
+```bash
+# Socks4/Socks5 no TLS mitm
+sockssl run v4
+sockssl run v5
+
+# Mitm Socks4
+sockssl run v4 -c rootCA.crt -k rootCA.key -h 0.0.0.0 -p 9999
+
+# Mitm Socks4 + auth with multiple usernames
+sockssl run v4 -c rootCA.crt -k rootCA.key -h 0.0.0.0 -p 9999 -u user1 -u user2
+
+# Mitm Socks5
+sockssl run v5 -c rootCA.crt -k rootCA.key -h 0.0.0.0 -p 9999
+
+# Mitm Socks5 + auth with multiple users + passwords
+sockssl run v5 -c rootCA.crt -k rootCA.key -h 0.0.0.0 -p 9999 -u user1 pass1 -u user2 pass2
+```
+
+- Proxy your clients
+
+- Don't forget to trust `rootCA.crt` if you want to capture TLS data
+
+## TODO
+
+- Interactive interface
+- API to use captured data
+
+## License
+
+GNU GPL
+
+
