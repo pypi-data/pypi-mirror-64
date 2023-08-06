@@ -1,0 +1,15 @@
+aiocouch/__init__.py,sha256=8mr0_M64LPgs5Pof0Qw6XYxpcxA5K8Fdi_cVfG41J-A,482
+aiocouch/attachment.py,sha256=ZCBOZcIDfADk0Ait2o917aNgRNBirHsRhqd31yz1X5I,2424
+aiocouch/bulk.py,sha256=U_4WQ7KImnOSGZ6Xak-GHJC8m7voLfpkGKp05HDmcpg,2392
+aiocouch/couchdb.py,sha256=UxHa2VaFdOVqNKX1cNUbenlMP15v_DTvtq5q1ZBqfKA,1203
+aiocouch/database.py,sha256=xsvWpyyk4EH3NxMfi1rqesYWeAxFGv5wvHsS5qxalFA,4966
+aiocouch/design_document.py,sha256=ViKcjcauOMbgeoo5oGvm7USW4lOizleoyvx4DWrkQAw,1384
+aiocouch/document.py,sha256=DUMJwOvj21qpBDXF9eKzbEENY3Nt0bWlGpBtxtkG_DM,7500
+aiocouch/exception.py,sha256=BDy7tqGUqnkqz9z3rreeTkmA8Qo0PpAGuJoiqmX7kvc,2465
+aiocouch/remote.py,sha256=I6AXcYqM4KuX0BwmKRawQ2kXHwD6Zj34P9Re6ghn_fk,14631
+aiocouch/view.py,sha256=bzV29fUbfX_jOOcNTRzy7EAEXN5ky2D0Iyrsb38fggk,2906
+aiocouch-1.0.1.dist-info/LICENSE,sha256=s8AdnLMudgvcW2Q3IuBtmwThs0UvQ34kXVMEf3UM_uo,1515
+aiocouch-1.0.1.dist-info/METADATA,sha256=stYhMw9YAtssttwAb27epHmxSPpGqoQTb13u0-mAUlk,1134
+aiocouch-1.0.1.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+aiocouch-1.0.1.dist-info/top_level.txt,sha256=MQ7yAh_Q-dv7Dd5-4Q4igoKwZz5tkheSdBWIT2tUFGQ,9
+aiocouch-1.0.1.dist-info/RECORD,,
