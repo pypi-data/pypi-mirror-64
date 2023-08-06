@@ -1,0 +1,9 @@
+README.md
+hitac.py
+setup.py
+hitac.egg-info/PKG-INFO
+hitac.egg-info/SOURCES.txt
+hitac.egg-info/dependency_links.txt
+hitac.egg-info/requires.txt
+hitac.egg-info/top_level.txt
+hitac_pkg/__init__.py
