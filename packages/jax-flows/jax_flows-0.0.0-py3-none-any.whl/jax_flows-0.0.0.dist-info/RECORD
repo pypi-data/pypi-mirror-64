@@ -1,0 +1,12 @@
+examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flows/__init__.py,sha256=Gqu1u6Py1GinsqIx5gmdaSd3RqXf1DtVh-K81rFCahg,76
+flows/distributions.py,sha256=YLn0tD1adO6ZI1mBrsXxChSW7XAIkm6cKgdGz4kws8M,1192
+flows/transformations.py,sha256=-NOLCj_Ov_vz8bnI3JDZBEeOlTfWZWmf7MJaAqk1yu0,7015
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_distributions.py,sha256=TGD9FV1KjkBwCYrsdH6xC8sBHtWKdBVSG6Mm-yVMJds,380
+tests/test_transformations.py,sha256=5X6QHUPaqGZGFIzKY0FQhACR3WYZnaBhZTI6gU5Yo5o,3265
+jax_flows-0.0.0.dist-info/LICENSE,sha256=M4ZWw18P5TaOTpD_10SaWtOgfCyLQ0MPEgQX99kZcqw,1069
+jax_flows-0.0.0.dist-info/METADATA,sha256=jjCxLMszb8ROmdYvmLjKcOkb2S8n-App2ajr1TMFkag,7245
+jax_flows-0.0.0.dist-info/WHEEL,sha256=g4nMs7d-Xl9-xC9XovUrsDHGXt-FT0E17Yqo92DEfvY,92
+jax_flows-0.0.0.dist-info/top_level.txt,sha256=N6b591avOWYKxyHZMra5o0fxdJbP3MuZOYwx6HqSLAc,21
+jax_flows-0.0.0.dist-info/RECORD,,
